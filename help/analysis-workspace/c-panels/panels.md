@@ -4,7 +4,7 @@ title: Paneler - översikt
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 1%
@@ -107,7 +107,7 @@ Panelkalendern styr rapportens datumintervall för tabeller och visualiseringar 
 ![Kalenderfönstret visar det valda datumintervallet.](assets/panel-calendar.png)
 
 1. Välj ett datumintervall genom att först markera startdatumet och sedan slutdatumet.
-Du kan också välja en **[!UICONTROL Preset]** i listrutan [!UICONTROL *Välj en förinställning*].
+Du kan också välja en **[!UICONTROL Preset]** i listrutan [!UICONTROL *Välj en förinställning*] .
 
 1. Du kan också välja **[!UICONTROL Show advanced settings]** för att:
 

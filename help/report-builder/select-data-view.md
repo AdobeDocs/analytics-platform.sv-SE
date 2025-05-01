@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Välj en datavy
 
-Du kan välja en datavy i listrutan eller välja en datavy från en cell och automatiskt uppdatera datablocket med en ny datavy.
+Du kan välja en datavy från den nedrullningsbara menyn eller välja en datavy från en cell och automatiskt uppdatera datablocket med en ny datavy.
 
 ## Välj datavy från en cell
 

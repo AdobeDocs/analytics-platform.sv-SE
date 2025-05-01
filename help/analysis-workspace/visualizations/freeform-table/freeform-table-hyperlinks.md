@@ -4,7 +4,7 @@ description: Lär dig skapa hyperlänkar för dimensionsobjekt i en frihandstabe
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1595'
 ht-degree: 0%
@@ -17,11 +17,11 @@ Du kan skapa hyperlänkar för dimensionsobjekt för att göra dem klickbara i e
 
 Den här funktionen är särskilt användbar när du skapar hyperlänkar för följande typer av dimensionsobjekt:
 
-* Dimensioner som har URL-värden (t.ex. sidans URL-dimension).
+* Dimension-objekt som har URL-värden (t.ex. sidans URL-dimension).
 
-* Dimensioner som innehåller uppdelningar som har URL-värden (t.ex. en sidnamnsdimension som har en uppdelning av sidans URL-dimension).
+* Dimension-objekt som innehåller uppdelningar som har URL-värden (t.ex. en sidnamnsdimension som har en uppdelning av sidans URL-dimension).
 
-* Dimension av objekt eller uppdelningar som har värden som är en del av en URL (till exempel en sidnamnsdimension som är en del av en URL).
+* Dimension-objekt eller uppdelningar som har värden som är en del av en URL (till exempel en sidnamnsdimension som är en del av en URL).
 
 
 >[!BEGINSHADEBOX]

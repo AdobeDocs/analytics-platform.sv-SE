@@ -5,7 +5,7 @@ exl-id: b8b234c6-a7d9-40e9-8380-1db09610b941
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 4%
@@ -101,7 +101,7 @@ Information om tillgängliga förfalloinställningar.
 
 ## [!UICONTROL Binding Dimension]
 
-En nedrullningsbar lista där du kan binda ett dimensionsvärdes beständighet till dimensionsvärden i en annan dimension. Giltiga alternativ är andra dimensioner som ingår i datavyn.
+En nedrullningsbar meny där du kan binda ett dimensionsvärdes beständighet till dimensionsvärden i en annan dimension. Giltiga alternativ är andra dimensioner som ingår i datavyn.
 
 Se [Använda bindningsdimensioner och mätvärden i Customer Journey Analytics](../../use-cases/data-views/binding-dimensions-metrics.md) för exempel på hur du effektivt använder bindningsdimensioner.
 
@@ -115,7 +115,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindningsdimensio
 
 ## [!UICONTROL Binding Metric]
 
-En nedrullningsbar lista där du kan välja ett mått som fungerar som en bindningsutlösare. Giltiga alternativ är mätvärden som ingår i datavyn.
+En nedrullningsbar meny där du kan välja ett mätvärde som fungerar som en bindningsutlösare. Giltiga alternativ är mätvärden som ingår i datavyn.
 
 Den här inställningen visas bara när Binding Dimension är lägre i objektarrayen än komponenten. När bindningsmåttet finns i en händelse kopieras dimensionsvärden från händelsenivådimensionen ned till den lägre schemanivån för bindningsdimensionen.
 

@@ -2,9 +2,9 @@
 title: Översikt över delade mått och mått
 description: Använd samma mått eller måttreferens för flera datavyer.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: 4bb24fae7c7d53a0fde3bb2dc35ef27f91701d5a
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Alla delade mått och mått visas under de fyra översiktskorten.
    * **[!UICONTROL Created by]**: Visa endast komponenter som har skapats av en viss användare.
    * **[!UICONTROL Duplicates]**: Visa endast komponenter som har samma komponent-ID som en annan komponent. De här filtren är identiska med att granska komponenter via översiktskorten.
 * **Sök**: Använd ikonen ![Sök ](../../assets/icons/Search.svg) för att söka efter en komponent efter namn.
-* **[!UICONTROL Connection]**: En listruta som ändrar [anslutningen](/help/connections/overview.md). Delade mått och mätvärden är alltid specifika för en enda anslutning.
+* **[!UICONTROL Connection]**: En nedrullningsbar meny som ändrar [anslutningen](/help/connections/overview.md). Delade mått och mätvärden är alltid specifika för en enda anslutning.
 * **[!UICONTROL Customize table]**: Välj ikonen ![Anpassa tabell](/help/assets/icons/ColumnSetting.svg) om du vill visa eller dölja kolumner i tabellen. Tillgängliga alternativ är:
    * **[!UICONTROL Field name]**: Namnet på den delade dimensionen eller måttet. Det här fältet visas alltid.
    * **[!UICONTROL Type]**: Anger om komponenten är en dimension eller ett mått. Det här fältet visas alltid.

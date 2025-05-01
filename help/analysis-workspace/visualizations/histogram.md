@@ -4,7 +4,7 @@ title: Histogram
 feature: Visualizations
 exl-id: 5901eb15-51cf-45a0-a80b-5824adf33bdd
 role: User
-source-git-commit: c94e97723a4ed30e675144e02196c93016b13235
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 2%

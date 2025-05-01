@@ -5,9 +5,9 @@ title: Lägga till eller flytta mappar
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
-source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Så här flyttar du projekt till en mapp från [projektlistan](/help/analysis-wo
 
 1. Välj ![FolderAddTo](/help/assets/icons/FolderAddTo.svg) **Flytta till** i listan över möjliga [åtgärder](/help/analysis-workspace/build-workspace-project/freeform-overview.md#actions). Dialogrutan **[!UICONTROL Select Folder]** visas.
 
-1. Välj ett mappnamn i listrutan **[!UICONTROL Folder]**. I listrutan kan du gå igenom mapphierarkin och välja en undermapp på valfri nivå.
+1. Välj ett mappnamn i listrutan **[!UICONTROL Folder]**. Med listrutan kan du gå igenom mapphierarkin och välja en undermapp på valfri nivå.
 
    ![Vyn Välj mapp som visar listrutan och tillgängliga undermappar.](/help/analysis-workspace/build-workspace-project/assets/add-projects.png)
 

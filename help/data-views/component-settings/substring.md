@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: a763027e-68f7-4f0a-8082-85db5283c8e3
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 0%
@@ -32,12 +32,12 @@ ht-degree: 0%
 
 ## Från vänster/höger
 
-Ta en del av en sträng baserat på dess position till början eller slutet av en sträng. Metoderna **[!UICONTROL From the Left]** och **[!UICONTROL From the Right]** har två listrutor: **[!UICONTROL From]** (där utdata börjar) och **[!UICONTROL To]** (där utdata slutar).
+Ta en del av en sträng baserat på dess position till början eller slutet av en sträng. Metoderna **[!UICONTROL From the Left]** och **[!UICONTROL From the Right]** har två nedrullningsbara menyer: **[!UICONTROL From]** (där utdata börjar) och **[!UICONTROL To]** (där utdata slutar).
 
 * **[!UICONTROL String Start]**: Strängens början.
 * **[!UICONTROL String End]**: Strängslutet.
 * **[!UICONTROL Position]**: Ett statiskt antal tecken från vänster eller höger, beroende på metoden.
-* **[!UICONTROL String]**: Matcha ett tecken eller en teckensekvens för att ange början eller slutet av en sträng. Den här listrutan visar även ytterligare alternativ:
+* **[!UICONTROL String]**: Matcha ett tecken eller en teckensekvens för att ange början eller slutet av en sträng. I den här listrutan visas även ytterligare alternativ:
    * **[!UICONTROL Match]**: Strängen som ska matchas. Om indata inte matchar det här fältet kan [Inga värdealternativ](no-value-options.md) användas.
    * **[!UICONTROL Index]**: **[!UICONTROL Match]**-villkoret kan finnas flera gånger i en sträng. Det här heltalet avgör vilken matchning som ska användas för att starta eller avsluta utdata, beroende på metoden. Ett index på `1` representerar till exempel den första matchningen. Om indexvärdet är högre än antalet matchningar som är tillgängliga, gäller [inga värdealternativ](no-value-options.md).
    * **[!UICONTROL Include String]**: En kryssruta som innehåller strängen **[!UICONTROL Match]** i utdata om den är aktiverad.

@@ -4,7 +4,7 @@ title: Visualisering av kombinationsdiagram
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Kom ihåg att:
 
 1. Lägg till en ![kommentar](/help/assets/icons/ComboChart.svg) [!UICONTROL Combo]-visualisering. Se [Lägga till en visualisering på en panel](freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 
-1. Välj en dimension för X-axeln och ett mått för Y-axeln i listrutan.
+1. I listrutorna väljer du en dimension för X-axeln och ett mått för Y-axeln.
 
 1. Välj den typ av [!UICONTROL Line comparison] som du vill använda.
 

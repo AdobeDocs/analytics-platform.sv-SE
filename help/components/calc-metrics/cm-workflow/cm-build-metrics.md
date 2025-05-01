@@ -3,7 +3,7 @@ description: Med verktyget Beräknade mätvärden kan du dra och släppa dimensi
 title: Bygg beräknade värden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -196,7 +196,7 @@ Om du vill lägga till en funktionsbehållare kan du använda:
 * Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** inifrån en behållare:
 
    1. Välj **[!UICONTROL Function]**.
-   1. I behållaren väljer du en funktion i listrutan [!UICONTROL *Välj...*].
+   1. Välj en funktion i listrutan [!UICONTROL *Välj...*] i behållaren.
 
 Funktionsbehållaren namnges efter funktionskomponenten. Exempel: ![Funktion](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**. Välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) om du vill visa ett popup-fönster med information om funktionen. Välj **[!UICONTROL Learn more]** om du vill ha mer information om funktionen.
 

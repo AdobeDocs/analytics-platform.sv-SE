@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 836c793ae74185728af03636b0ba3e838f46f05d
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '6347'
 ht-degree: 0%
@@ -609,8 +609,8 @@ För en profildatauppsättning i en kontobaserad anslutning anger du:
 | Inställning | Beskrivning |
 | --- | --- |
 | **[!UICONTROL Person ID]** | Välj ett person-ID i listrutan med tillgängliga identiteter. Dessa identiteter definierades i datauppsättningsschemat i Experience Platform. Mer information om hur du använder identitetskartan som ett person-ID finns i [Använd identitetskarta som ett person-ID](#id-map).<p>Om det inte finns några person-ID:n att välja bland definieras inga person-ID:n i schemat. Mer information finns i [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity). <p>Värdet för det valda person-ID:t anses vara skiftlägeskänsligt. `abc123` och `ABC123` är till exempel två olika värden. |
-| **[!UICONTROL Global Account field]** | Välj ett globalt kontofält för att stödja kontobaserad rapportering för datauppsättningen i listrutan med tillgängliga identiteter. Gäller när du har lagt till ett globalt konto som en behållare i anslutningen. |
-| **[!UICONTROL Account field]** | Välj ett kontofält som ska ha stöd för kontobaserad rapportering för datauppsättningen i listrutan med tillgängliga identiteter. Gäller när du inte har lagt till ett globalt konto som en behållare i anslutningen. |
+| **[!UICONTROL Global Account field]** | Välj ett globalt kontofält som ska ha stöd för kontobaserad rapportering för datauppsättningen från den nedrullningsbara menyn med tillgängliga identiteter. Gäller när du har lagt till ett globalt konto som en behållare i anslutningen. |
+| **[!UICONTROL Account field]** | Välj ett kontofält som ska ha stöd för kontobaserad rapportering för datauppsättningen från den nedrullningsbara menyn med tillgängliga identiteter. Gäller när du inte har lagt till ett globalt konto som en behållare i anslutningen. |
 | **[!UICONTROL Data source type]** | Välj en typ av datakälla. Typer av datakällor är bland annat: <ul><li>[!UICONTROL Web data]</li><li>[!UICONTROL Mobile App data]</li><li>[!UICONTROL POS data]</li><li>[!UICONTROL CRM data]</li><li>[!UICONTROL Survey data]</li><li>[!UICONTROL Call Center data]</li><li>[!UICONTROL Product data]</li><li> [!UICONTROL Accounts data]</li><li> [!UICONTROL Transaction data]</li><li>[!UICONTROL Customer Feedback data]</li><li> [!UICONTROL Other]</li></ul>Det här fältet används för att undersöka vilka typer av datakällor som används. |
 | **[!UICONTROL Data source description]** | En beskrivning av datakällan när du har valt Annan som datakälltyp. |
 
@@ -646,7 +646,7 @@ För en uppslagsdatauppsättning i en kontobaserad anslutning kan du ange:
 |---|---|
 | **[!UICONTROL Key]** | Nyckeln som ska användas för en uppslagsdatauppsättning. |
 | **[!UICONTROL Matching key type]** | Välj hur du vill gå med i datauppsättningarna: baserat på en **[!UICONTROL Match by field]** eller **[!UICONTROL Match by container]**. Mer information finns i [Matcha efter fältbehållare](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field). |
-| **[!UICONTROL Matching key]** | Den matchande nyckeln som ska användas i en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd. <br/><br/>Baserat på din **[!UICONTROL Matching key type]** väljer du lämpligt värde:<ul><li>**[!UICONTROL Match by field]**: ![Matcha efter fält](assets/match-by-field.png)<br/>Välj ett fält på den nedrullningsbara menyn **[!UICONTROL Matching key]** som ska anslutas till en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd.</li><li>**[!UICONTROL Match by container]**: ![Matcha efter behållare](assets/match-by-container.png)<br/>Välj en behållare på den nedrullningsbara menyn **[!UICONTROL Matching key]** som ska användas för att ansluta till en av händelsedatamängderna. Behållarna som du tog med som en del av konfigurationen av anslutningen avgör vilka behållare som är tillgängliga att välja. Om listan är tom har du förmodligen inte konfigurerat en eller flera behållare.</li></ul> |
+| **[!UICONTROL Matching key]** | Den matchande nyckeln som ska användas i en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd. <br/><br/>Baserat på din **[!UICONTROL Matching key type]** väljer du lämpligt värde:<ul><li>**[!UICONTROL Match by field]**: ![Matcha efter fält](assets/match-by-field.png)<br/>Välj ett fält på den nedrullningsbara menyn **[!UICONTROL Matching key]** för att ansluta till en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd.</li><li>**[!UICONTROL Match by container]**: ![Matcha efter behållare](assets/match-by-container.png)<br/>Välj en behållare på den nedrullningsbara menyn **[!UICONTROL Matching key]** som ska användas för att ansluta till en av händelsedatamängderna. Behållarna som du tog med som en del av konfigurationen av anslutningen avgör vilka behållare som är tillgängliga att välja. Om listan är tom har du förmodligen inte konfigurerat en eller flera behållare.</li></ul> |
 | **[!UICONTROL Global Account field]** | Det globala konto-ID som ska användas för kontobaserad rapportering. |
 
 

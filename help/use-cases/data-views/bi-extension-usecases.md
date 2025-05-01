@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 463ddbba0bd6765bd5fde1b2098c5603b48b10e4
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '11965'
 ht-degree: 0%
@@ -529,7 +529,7 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
    1. Dra och släpp **[!UICONTROL Daterangeday]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Columns]**.
       * Välj **[!UICONTROL Day]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL DAY(Daterangeday)]**.
    1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
-   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -541,7 +541,7 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 1. Kontrollera att bladet **[!UICONTROL Data]** är markerat. I vyn **[!UICONTROL Data]**:
    1. Välj **[!UICONTROL Show me]** längst upp till höger och välj **[!UICONTROL Text table]** (övre vänstra visualiseringen) för att ändra innehållet i datavyn till en tabell.
    1. Välj **[!UICONTROL Swap Rows and Columns]** i verktygsfältet.
-   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -666,7 +666,7 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
    1. Dra och släpp **[!UICONTROL Daterangehour]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Columns]**.
       * Välj **[!UICONTROL More]** > **[!UICONTROL Hours]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL HOUR(Daterangeday)]**.
    1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
-   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -678,7 +678,7 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
 1. Kontrollera att bladet **[!UICONTROL Data]** är markerat. I vyn **[!UICONTROL Data]**:
    1. Välj **[!UICONTROL Show me]** längst upp till höger och välj **[!UICONTROL Text table]** (övre vänstra visualiseringen) för att ändra innehållet i datavyn till en tabell.
    1. Dra **[!UICONTROL HOUR(Daterangeday)]** från **[!UICONTROL Columns]** till **[!UICONTROL Rows]**.
-   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -834,7 +834,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
    1. Dra och släpp **[!UICONTROL Daterangeday]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Columns]**.
       * Välj **[!UICONTROL MONTH]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL MONTH(Daterangeday)]**.
    1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
-   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -846,7 +846,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 1. Kontrollera att bladet **[!UICONTROL Data]** är markerat. I datavyn:
    1. Välj **[!UICONTROL Show me]** längst upp till höger och välj **[!UICONTROL Text table]** (övre vänstra visualiseringen) för att ändra innehållet i datavyn till en tabell.
    1. Dra **[!UICONTROL MONTH(Daterangeday)]** från **[!UICONTROL Columns]** till **[!UICONTROL Rows]**.
-   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** på den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
+   1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -1082,7 +1082,7 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
       1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
          ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Välj **[!UICONTROL Save]**.
-   1. Välj **[!UICONTROL Custom Measure]** en gång till i listrutan **[!UICONTROL + Add]**. I dialogrutan **[!UICONTROL Create custom]**:
+   1. Välj **[!UICONTROL Custom Measure]** en gång till på den nedrullningsbara menyn **[!UICONTROL + Add]**. I dialogrutan **[!UICONTROL Create custom]**:
       1. Välj **[!UICONTROL Purchases]** i listrutan **[!UICONTROL Field to measure]**.
       1. Välj **[!UICONTROL Sum]** i listrutan **[!UICONTROL Measure type]**.
       1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Sum of Purchases`.
@@ -1340,7 +1340,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
       1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
          ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png){zoomable="yes"}
       1. Välj **[!UICONTROL Save]**.
-   1. Välj **[!UICONTROL Custom Measure]** en gång till i listrutan **[!UICONTROL + Add]**. I dialogrutan **[!UICONTROL Create custom]**:
+   1. Välj **[!UICONTROL Custom Measure]** en gång till på den nedrullningsbara menyn **[!UICONTROL + Add]**. I dialogrutan **[!UICONTROL Create custom]**:
       1. Välj **[!UICONTROL Purchases]** i listrutan **[!UICONTROL Field to measure]**.
       1. Välj **[!UICONTROL Sum]** i listrutan **[!UICONTROL Measure type]**.
       1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Sum of Purchases`.
@@ -2720,7 +2720,7 @@ Customer Journey Analytics-objekten är tillgängliga i sidlisten **[!UICONTROL 
 
 **Dimensioner**
 Dimensioner från Customer Journey Analytics identifieras av [!UICONTROL Component name] . [!UICONTROL Component name] definieras i datavyn för Customer Journey Analytics. Dimensionen **[!UICONTROL Product Name]** i Customer Journey Analytics har till exempel en [!UICONTROL Component name] **[!UICONTROL Product Name]** som är namnet på dimensionen i Tableau. Alla dimensioner identifieras av **[!UICONTROL Abc]**.
-Datumintervallsdimensioner från Customer Journey Analytics, som **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]** och mer, är tillgängliga som **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]** med flera. När du använder en datumintervalldimension måste du välja en lämplig definition av datum och tid som ska användas på den datumintervalldimensionen i listrutan. Exempel: **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Month]**, **[!UICONTROL Day]**.
+Datumintervallsdimensioner från Customer Journey Analytics, som **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]** och mer, är tillgängliga som **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]** med flera. När du använder en datumintervalldimension måste du välja en lämplig definition av datum och tid som ska användas för datumintervalldimensionen i den nedrullningsbara menyn. Exempel: **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Month]**, **[!UICONTROL Day]**.
 
 **Mätvärden**
 Mätvärden från Customer Journey Analytics identifieras av [!UICONTROL Component Name] . [!UICONTROL Component Name] definieras i datavyn för Customer Journey Analytics. Måttet **[!UICONTROL Purchase Revenue]** i Customer Journey Analytics har till exempel [!UICONTROL Component Name] **[!UICONTROL Purchase Revenue]** som är namnet på måttet i Tableau. Alla mått identifieras av **[!UICONTROL #]**. När du använder ett mätvärde i en visualisering får måttet det nya namnet **[!UICONTROL Sum(*metric *)]**.
@@ -3110,7 +3110,7 @@ Var och en av de BI-verktyg som stöds har några kavattningar i arbetet med Cus
 >[!TAB Skrivbord för Tablet PC]
 
 * Datumfiltreringen för Tableu är exklusiv. För slutdatumet måste du välja ett som är efter dagen som du vill rapportera på.
-* När du lägger till ett datum- eller datum-/tidsmått som **[!UICONTROL Daterangemonth]** på raderna i ett blad, radbryts fältet i en **[!UICONTROL YEAR()]**-funktion.  För att få det du vill ha måste du markera dimensionen och välja den datumfunktion som du vill använda i listrutan.  Ändra till exempel **[!UICONTROL Year]** till **[!UICONTROL Month]** när du försöker använda **[!UICONTROL Daterangemonth]**.
+* När du lägger till ett datum- eller datum-/tidsmått som **[!UICONTROL Daterangemonth]** på raderna i ett blad, radbryts fältet i en **[!UICONTROL YEAR()]**-funktion.  För att få det du vill ha måste du markera dimensionen och välja den datumfunktion du vill använda i listrutan.  Ändra till exempel **[!UICONTROL Year]** till **[!UICONTROL Month]** när du försöker använda **[!UICONTROL Daterangemonth]**.
 * Det är inte uppenbart att resultaten begränsas till de övre *X* i skrivbordet i Tableu. Du kan begränsa resultaten explicit eller använda ett beräkningsfält och funktionen **[!UICONTROL INDEX()]**.  Om du lägger till ett översta *X*-filter i en dimension genereras komplex SQL med hjälp av en inre koppling som inte stöds.
 
 >[!TAB Sökare]

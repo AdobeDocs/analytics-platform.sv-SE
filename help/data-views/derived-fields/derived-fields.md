@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '8489'
+source-wordcount: '8502'
 ht-degree: 2%
 
 ---
@@ -1948,7 +1948,7 @@ Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 
 - Du kan använda högst tio olika schemafält (exklusive standardfält) när du definierar regler för ett härlett fält.
    - Från det här maxantalet på tio olika schemafält tillåts bara maximalt tre sökschemafält eller profilschemafält.
-- Du kan ha högst 100 härledda fält per Customer Journey Analytics-anslutning.
+- Du kan ha maximalt antal härledda fält per Customer Journey Analytics-anslutning beroende på vilket paket du licensierar. Mer information finns i [Produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html){target="_blank"}.
 
 
 ### Sammanfattning av funktionsbegränsningar

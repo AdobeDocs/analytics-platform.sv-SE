@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 1%
@@ -109,7 +109,7 @@ Du kan filtrera dimensionsobjekt baserat på om alla villkor är uppfyllda eller
 
 Så här anger du filtervillkor:
 
-1. Välj en operator i den nedrullningsbara listan operator. Som standard är **[!UICONTROL Contains the phrase]** markerat
+1. Välj en operator i listrutan operator. Som standard är **[!UICONTROL Contains the phrase]** markerat
 
    ![Operatorlistan.](./assets/image31.png){zoomable="yes"}
 

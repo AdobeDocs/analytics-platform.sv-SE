@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: e2e04432682f94b18bf9ed25d15f906c05bfd59d
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1141'
 ht-degree: 2%
 
 ---
@@ -93,7 +93,7 @@ För att sammanfattningsdata ska kunna användas korrekt i rapporter och analyse
 
 ### Kornighet och tidszon
 
-När du konfigurerar datauppsättningen som innehåller sammanfattningsdata i Customer Journey Analytics, märker du att granulariteten automatiskt kommer från dessa data. Markeringarna för listrutan **[!UICONTROL Timestamp]** och **[!UICONTROL Timezone]** är inaktiverade eftersom båda är härledda från schemadefinitionen.
+När du konfigurerar datauppsättningen som innehåller sammanfattningsdata i Customer Journey Analytics, märker du att granulariteten automatiskt kommer från dessa data. Markeringarna för **[!UICONTROL Timestamp]** och **[!UICONTROL Timezone]**-listrutan är inaktiverade eftersom båda är härledda från schemadefinitionen.
 
 #### Kornighet
 

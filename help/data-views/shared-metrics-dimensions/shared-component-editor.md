@@ -2,9 +2,9 @@
 title: Redigerare för delad komponent
 description: Skapa eller redigera delade dimensioner och mätvärden.
 exl-id: 3f6a808a-d6ac-4a47-a5e2-63b9f17952e8
-source-git-commit: 62df631eeac40f2009304d91c93950c38a260dab
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Gränssnittet innehåller tre huvudkolumner/avsnitt:
 
 * **Schemafältväljare**: Leta reda på önskade schemafält och dra dem till det inkluderade komponentområdet.
    * **Anslutning**: Den aktiva anslutningen. Ändra den aktiva anslutningen i [hanteraren för delade mått](smd-overview.md).
-   * **Listrutan Komponentlista**: Du kan välja mellan att välja [!UICONTROL Schema fields] (nya delade dimensioner och mått) eller [!UICONTROL Metrics & Dimensions] (befintliga delade komponenter).
+   * **Komponentlista**: Du kan välja mellan att välja [!UICONTROL Schema fields] (nya delade dimensioner och mått) eller [!UICONTROL Metrics & Dimensions] (befintliga delade komponenter) i listrutan.
    * **Sök**: Använd textsökningen ![Sök ikon](/help/assets/icons/Search.svg) för att hitta det önskade schemafältet eller den delade komponenten efter namn. Du kan också använda filtren ![Filterikon](/help/assets/icons/Filter.svg) för att begränsa komponentlistan. Filtret `Is not deprecated` är aktivt som standard.
    * **Skapa härlett fält**: Gör att du kan [skapa ett härlett fält](/help/data-views/derived-fields/derived-fields.md).
 * **Inkluderade komponenter**: De komponenter som du konfigurerar att delas. När du skapar delade komponenter kan du dra mer än ett schemafält till det här området för att skapa flera komponenter samtidigt. När du redigerar delade komponenter kan du markera flera komponenter som ska redigeras, som visar alla markerade komponenter i det här området.

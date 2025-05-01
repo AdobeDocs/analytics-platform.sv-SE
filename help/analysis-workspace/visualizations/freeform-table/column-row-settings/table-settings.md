@@ -4,7 +4,7 @@ title: Radinställningar
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Så här ändrar du antalet rader som visas:
 
 1. Klicka på siffran bredvid **[!UICONTROL Rows]** överst i tabellens första kolumn.
 
-   ![Friformstabell som visar listrutan för antalet rader som visas. 400 rader är markerade.](assets/change-row-count.gif)
+   ![Friformstabell som visar den nedrullningsbara menyn för det antal rader som visas. 400 rader är markerade.](assets/change-row-count.gif)
 
 1. I listrutan väljer du det antal rader som du vill att tabellen ska visa.
 

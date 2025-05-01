@@ -5,7 +5,7 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: e0615e3b4b1a4f0cd675de4bf4bb84d73eab8b8c
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '2624'
 ht-degree: 0%
@@ -203,7 +203,7 @@ Uppdelningar förfinar analysen genom att dela upp mätvärden efter dimensionso
 
 ![Breakdown_view](assets/break_view.png)
 
-Varje dimension som läggs till i rutan visas i en nedrullningsbar lista i appens detaljerade vy. Den verkställande användaren kan sedan välja bland alternativen i listrutan.
+Varje dimension som läggs till i rutan visas i en nedrullningsbar meny i den detaljerade vyn av programmet. Den verkställande användaren kan sedan välja bland de alternativ som listas i listrutan.
 
 ## Anpassa detaljbilder {#customize-detail-slide}
 
@@ -264,7 +264,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Databerättelser 
 >[!ENDSHADEBOX]
 
 
-**Skapa en dataartikel** {#data-story-create}
+**Så här skapar du en dataartikel** {#data-story-create}
 
 Bygg din databerättelse genom att lägga till flera detaljbilder i en ruta.
 

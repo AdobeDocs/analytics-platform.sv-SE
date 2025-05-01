@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Så här skapar du en gruppering av dimensioner:
 1. Välj en dimension.
 1. Välj ![SparrNed](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Summary data group]**.
 1. Aktivera **[!UICONTROL Create grouping]**.
-1. Välj en dimension i listrutan **[!UICONTROL Dimension]** som du vill gruppera med den valda dimensionen från det första steget. Observera att endast dimensioner som du redan har lagt till i datavyn är tillgängliga i listrutan.
+1. Välj en dimension från den nedrullningsbara menyn **[!UICONTROL Dimension]** som du vill gruppera med den valda dimensionen från det första steget. Observera att endast dimensioner som du redan har lagt till i datavyn är tillgängliga i listrutan.
 1. Du kan även aktivera **[!UICONTROL Hide in reporting]** för att dölja den grupperade dimensionen från rapportering. Att aktivera det här alternativet liknar att konfigurera **[!UICONTROL Hide in reporting]** för den grupperade dimensionen separat. Mer information finns i [Komponentinställningar](overview.md).
 1. Om du vill lägga till ytterligare dimensioner till grupperingen väljer du ![Lägg till](/help/assets/icons/Add.svg) **[!UICONTROL Add dimension to group]**.<br/>Du kan lägga till upp till nio dimensioner, eftersom en sammanfattningsdatagrupp har en gräns på tio dimensioner.
 

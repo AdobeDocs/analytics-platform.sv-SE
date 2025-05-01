@@ -4,9 +4,9 @@ title: Snabbsegment
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: e9516455416c0e5f228d62d17dee5ef87c368337
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Rubrikområdet bestämmer snabbsegmentets namn, typ och omfång. Den visar ocks�
 | **[!UICONTROL Name]** | Namnet hämtas automatiskt från snabbsegmentsdefinitionen. |
 | **[!UICONTROL People]** <br/>![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) ![Alert](/help/assets/icons/Alert.svg) | Förhandsvisa visuella data som är resultatet av snabbsegmentet. En stapel och ett procenttal ger insikt i hur mycket av de totala data som är en del av resultatet av snabbsegmentet. En röd ![varning](/help/assets/icons/Alert.svg) signalerar att snabbsegmentet inte returnerar data. |
 | **[!UICONTROL Include]**<br/>**[!UICONTROL Exclude]** | Välj i listrutan ![ChevronDown](/help/assets/icons/ChevronDown.svg) om du vill ta med eller exkludera resultatet av snabbsegmentet från data på panelen. |
-| **[!UICONTROL Event]**<br/>**[!UICONTROL Session]**<br/>**[!UICONTROL Person]** | I listrutan ![SparronDown](/help/assets/icons/ChevronDown.svg) väljer du snabbsegmentets omfång. |
+| **[!UICONTROL Event]**<br/>**[!UICONTROL Session]**<br/>**[!UICONTROL Person]** | Välj snabbsegmentets omfång på den nedrullningsbara menyn ![SparronDown](/help/assets/icons/ChevronDown.svg). |
 
 ### Villkorsområde
 
@@ -94,7 +94,7 @@ Villkorsområdet anger villkoren (upp till högst tre). För varje villkor kan d
 
 | Knapp | Beskrivning |
 |---|---|
-| **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | Endast tillgängligt när du definierar mer än ett villkor. Välj i listrutan ![ChevronDown](/help/assets/icons/ChevronDown.svg) mellan villkoren. Markeringen avgör den booleska logiken för snabbsegmentet. Du kan inte blanda logik när du har tre villkor. Den booleska logiken är antingen **[!UICONTROL AND]** eller **[!UICONTROL OR]**. |
+| **[!UICONTROL AND]**<br/>**[!UICONTROL OR]** | Endast tillgängligt när du definierar mer än ett villkor. Välj i listrutan ![SparrrDown](/help/assets/icons/ChevronDown.svg) mellan villkoren. Markeringen avgör den booleska logiken för snabbsegmentet. Du kan inte blanda logik när du har tre villkor. Den booleska logiken är antingen **[!UICONTROL AND]** eller **[!UICONTROL OR]**. |
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | Lägger till ytterligare ett villkor i ditt snabbsegment. Den här knappen är bara tillgänglig när du har definierat ett eller två villkor för snabbsegmentet. |
 | **[!UICONTROL Apply]** | Använd ändringarna på snabbsegmentet. |
 | **[!UICONTROL Open builder]** | Du uppmanas att bekräfta med en **[!UICONTROL Are your sure?]**-dialogruta. Om du väljer **[!UICONTROL OK]** kan du inte längre ändra ditt segment i [snabbsegmentsverktyget](#quick-filter-builder). Snabbsegmentets namn ändras till **[!UICONTROL Segment]** och har nu ett mörkare blått tunt fält till vänster.<br/>Det vanliga [segmentverktyget](filter-builder.md) öppnas med alternativet **[!UICONTROL Make this segment available to all your projects and add it to your component list]**. <ul><li>Om du väljer det här alternativet och väljer **[!UICONTROL Apply]** läggs segmentet till i komponentlistan ![ Segment](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segment]** på komponentpanelen.</li><li>Om du inte markerar det här alternativet och väljer **[!UICONTROL Apply]** förblir segmentet bara för Workspace-projekt.</li></ul> |

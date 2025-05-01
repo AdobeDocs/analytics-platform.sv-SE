@@ -4,9 +4,9 @@ title: Panelen Snabbinsikter
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1081'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ När du börjar använda [!UICONTROL Analysis Workspace] kanske du undrar:
 * var ett segment ska skapas,
 * med mera.
 
-För att hjälpa till med dessa frågor använder [!UICONTROL Quick insights] en algoritm som ger dig de populäraste dimensionerna, måtten, segmenten och datumintervallen som ditt företag använder. Den här algoritmen baseras på ditt företags användning av datakomponenter i [!UICONTROL Analysis Workspace]. Dimensioner, mätvärden och segment som taggats med [!UICONTROL POPULAR] visas i listrutan, vilket visas här:
+För att hjälpa till med dessa frågor använder [!UICONTROL Quick insights] en algoritm som ger dig de populäraste dimensionerna, måtten, segmenten och datumintervallen som ditt företag använder. Den här algoritmen baseras på ditt företags användning av datakomponenter i [!UICONTROL Analysis Workspace]. Dimensioner, mätvärden och segment som taggats med [!UICONTROL POPULAR] visas i den nedrullningsbara menyn, vilket visas här:
 
 ![Panelen Snabbinsikter.](assets/popular-tag.png)
 
@@ -94,7 +94,7 @@ Du kan ange byggblocken på tre sätt:
 
 * Dra och släpp komponenter från den vänstra panelen.
 * Börja skriva i ett av byggblocksfälten. När indata påträffas fylls byggblocksfältet automatiskt i med möjliga värden.
-* Ange en listruta för byggblock (till exempel `Country` i **[!UICONTROL Analyze]**) och sök i listan med möjliga värden (med ![Sparrhöger](/help/assets/icons/ChevronRight.svg)) efter det värde du vill använda (till exempel **[!UICONTROL Country code]**).
+* Ange en rullgardinsmeny för byggblock (till exempel `Country` i **[!UICONTROL Analyze]**) och sök i listan med möjliga värden (med ![Sparrhöger](/help/assets/icons/ChevronRight.svg)) efter det värde du vill använda (till exempel **[!UICONTROL Country code]**).
 
 Välj **[!UICONTROL Clear]** om du vill rensa alla inmatningsfält.
 
