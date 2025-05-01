@@ -7,9 +7,9 @@ feature: Use Cases
 hidefromtoc: true
 hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: d48a6fc306a84eeeb189e1b272bfded7ed26ed70
+source-git-commit: a03505aeb56f99b28f50819765a496705876b89c
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '766'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ I de här stegen förutsätts att du använder taggar i Adobe Experience Platfor
 
 Mer information finns i dokumentationen för [Quantum Metric-taggtillägget](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric).
 
-## Steg 1: Skapa ett schemafält för kvantmetriska data
+## Steg 1: Skapa ett schemafält för kvantmetriskt sessions-ID
 
 Det här användningsfallet kräver ett dedikerat schemafält att skicka data till. Du kan skapa det här fältet på valfri plats i ditt schema och ge det vilket namn du vill. Exempelvärden anges om din organisation inte har någon inställning för namn eller plats.
 
