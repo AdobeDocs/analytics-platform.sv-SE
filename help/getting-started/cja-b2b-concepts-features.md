@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: f13d0f7afcfe2ebb334062b79b409219169c1aee
+source-git-commit: e16bfa01dd3bedc96a147b2510ba33f4b88b01b9
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -90,3 +90,4 @@ Om en postdatauppsättning använder en matchning per fält behandlas postdataup
 ## Rapport om person- och kontouppgifter
 
 Om du vill rapportera om personbaserade behållare (och personidentiteter) och kontobaserade behållare (och kontoidentiteter) bör du skapa två separata anslutningar i Customer Journey Analytics. En anslutning där du väljer Person som primärt ID och en anslutning där du väljer Konto som primärt ID. Customer Journey Analytics stöder inte personbaserad och kontobaserad rapportering från en enda behållarhierarki.
+

@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: d695fcb8dbd98675914c687f3dfaf8c5f0017073
+source-git-commit: 63c6a5d6148c1562b7f6ac8e4a1cac5919e2dd2e
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
@@ -15,7 +15,6 @@ ht-degree: 0%
 # Content Analytics datainsamling
 
 I den här artikeln beskrivs i detalj hur Content Analytics samlar in data
-
 
 ## Definitioner
 
@@ -40,7 +39,6 @@ Content Analytics bibliotek samlar in data när:
 * Sidans URL har konfigurerats i [Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, som ingår i det inkluderade taggbiblioteket.
 
 
-
 ## Content Analytics event
 
 Ett Content Analytics-event består av:
@@ -52,7 +50,6 @@ Ett Content Analytics-event består av:
 * Upplev klickningar (om sådana finns och har konfigurerats)
 * Resursvyer (om sådana finns, och om de är konfigurerade)
 * Resursklickningar (om sådana finns, och om de har konfigurerats)
-
 
 Content Analytics-event samlas in som en sekvens av:
 
@@ -86,7 +83,7 @@ En klickning spelas in när:
 
 ### Utlösare för att skicka en Content Analytics-händelse
 
-För att minska antalet samtal som lämnar sidan samlar Content Analytics in information men skickar inte informationen direkt. Information om innehållsinteraktion samlas in och en händelse som innehåller den informationen skickas bara när någon av följande utlösare inträffar:
+För att minska antalet samtal som lämnar sidan samlar Content Analytics in information men skickar inte informationen direkt. Information om innehållsinteraktion samlas in och en händelse som innehåller den informationen skickas endast när någon av följande utlösare inträffar:
 
 * Web SDK eller AppMeasurement skickar en händelse. Tidsstämpeln för den här händelsen är
 * Synligheten ändras till dold, till exempel:

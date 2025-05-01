@@ -4,7 +4,7 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: f39cf7c386c42488d6607154fc7922911df5527c
+source-git-commit: e16bfa01dd3bedc96a147b2510ba33f4b88b01b9
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 2%
@@ -25,11 +25,11 @@ Få en glimt av de senaste förbättringarna i Customer Journey Analytics-produk
 
 >[!TAB Content Analytics]
 
-Med Adobe Content Analytics kan ni snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering.
+Med Content Analytics kan ni snabbt och enkelt undersöka stora volymer innehållsdata för att identifiera trender, upptäcka avvikelser, identifiera innehållets trötthet och få insikter från exponering.
 
 [![bild](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
->[!TAB Delade mått och dimensioner]
+>[!TAB Delade mått ]
 
 Gemensamma mätvärden och dimensioner utgör en central plats för att hantera mått och mätvärden som kan användas i ett valfritt antal datavyer. Dessa komponenter är särskilt användbara för organisationer som använder flera datavyer, särskilt om dessa datavyer har gemensamma gemensamma komponentinställningar.
 
