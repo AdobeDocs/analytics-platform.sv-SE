@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: d695fcb8dbd98675914c687f3dfaf8c5f0017073
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Ett Content Analytics-event består av:
 Content Analytics-event samlas in som en sekvens av:
 
 1. [En inspelad vy eller klicka på](#recorded-view-or-click).
-1. [En vanlig eller specifik (beteendemässig) händelse](#regular-or-specific-behaviorial-event).
+1. [En utlösare för att skicka en Content Analytics-händelse](#trigger-to-send-a-content-analytics-event).
 
 Content Analytics samlar in data på det här sättet för att återspegla den sekvensen, i stället för att samla in en vy eller klicka separat från att samla in händelsen direkt efter den vyn eller klickningen. Detta sätt att samla in innehållsanalysdata minskar också mängden data som samlas in.
 
@@ -84,11 +84,11 @@ En klickning spelas in när:
 * Alla klick sker på en länk på sidan där upplevelserna är aktiverade.
 
 
-### Regelbunden eller specifik (beteendemässig) händelse
+### Utlösare för att skicka en Content Analytics-händelse
 
-Utlösare för att utlösa en vanlig eller specifik (beteendemässig) händelse i Content Analytics:
+För att minska antalet samtal som lämnar sidan samlar Content Analytics in information men skickar inte informationen direkt. Information om innehållsinteraktion samlas in och en händelse som innehåller den informationen skickas bara när någon av följande utlösare inträffar:
 
-* Web SDK eller AppMeasurement skickar en händelse.
+* Web SDK eller AppMeasurement skickar en händelse. Tidsstämpeln för den här händelsen är
 * Synligheten ändras till dold, till exempel:
    * Sidan tas bort
    * Fliken Växla
