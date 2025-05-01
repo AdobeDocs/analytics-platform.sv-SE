@@ -5,9 +5,9 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 8972a195554971006eb4315bdd216947d6cf79f3
 workflow-type: tm+mt
-source-wordcount: '2432'
+source-wordcount: '2473'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,7 @@ I följande tabell visas funktioner som är tillgängliga i Customer Journey Ana
 | **Researbetsyta** | [Researbetsytan](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/visualizations/journey-canvas/journey-canvas?lang=en) är en visualisering i arbetsytan Analys som gör att du kan analysera hur personer går igenom eller faller bort från en definierad resa. |
 | **Produktanvändning** | [Produktanvändningen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) visar hur din organisation använder Customer Journey Analytics. |
 | **Omformningar vid rapporttillfället** | [Med datavyer](/help/data-views/data-views.md) i Customer Journey Analytics kan du tolka data ytterligare från en anslutning. Du kan ändra eller ta bort data utan att ändra implementeringen, använda delsträngar för att ändra dimensioner, skapa mätvärden från valfritt värde eller filtrera delmängder. Alla dessa omformningar görs på ett icke-förstörande sätt. Adobe Analytics har begränsade möjligheter genom virtuella rapportsviter och anpassad sessionslängd. |
+| **Delade mått och mått mellan datavyer** | Gör att du kan [använda mått- och måttinställningar för flera datavyer](/help/data-views/shared-metrics-dimensions/smd-overview.md). Ändringar som görs i en delad dimension eller mätvärde gäller för alla instanser av den dimensionen eller mätvärdet i alla tillämpliga datavyer. |
 | **SQL-åtkomst** | Med hjälp av alternativet Data Distiller kan Customer Journey Analytics ta bort begränsningarna för data som samlats in på Adobe backend-bearbetning. Du kan ändra dina data med SQL, skapa värden och datauppsättningar som är unika för ditt företag och fortsätta utforska. Analytics stöder inte någon form av SQL-åtkomst till dess data. |
 | **Stitching** | [Stitching](/help/stitching/overview.md) är en kraftfull funktion som höjer en händelsedatamängds lämplighet för flerkanalsanalys. Flerkanalsanalys är ett vanligt användningsfall som Customer Journey Analytics kan hantera och som gör det möjligt att smidigt kombinera och köra rapporter på flera datauppsättningar från olika kanaler, baserat på en gemensam identifierare (person-ID). |
 | **Mallar i Adobe Journey Optimizer** | Anpassa det nya rapporteringsgränssnittet i Adobe Journey Optimizer genom att skapa eller redigera en [mall](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/create-templates?lang=en) i Customer Journey Analytics och sedan spara mallen som ska användas på rapportsidan i Journey Optimizer. |
