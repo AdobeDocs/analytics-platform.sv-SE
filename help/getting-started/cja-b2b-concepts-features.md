@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: f13d0f7afcfe2ebb334062b79b409219169c1aee
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -19,59 +19,74 @@ ht-degree: 0%
 
 {{draft-b2b}}
 
-I den här artikeln förklaras allmänna koncept och funktioner för datauppsättningar och behållare och hur dessa skiljer sig åt mellan standarden och B2B edition för Customer Journey Analytics.
-
-Datauppsättningar är källor för en anslutning. Som en del av konfigurationen av en anslutning definierar du datauppsättningar som ska ingå i den anslutningen.
-
-Behållare används i Customer Journey Analytics för att stödja och underlätta funktioner som segment, beräknade värden och avancerade analysfunktioner.
+I den här artikeln beskrivs begrepp som anslutningar, identifierare, behållare och datauppsättningar, som ofta används i Customer Journey Analytics. Och hur Customer Journey Analytics B2B edition lägger till ytterligare funktioner i dessa koncept.
 
 
+## Anslutningar och identifierare
+
+I Customer Journey Analytics väljer du en vanlig identifierare, som kallas person-ID, för att ansluta dina händelsedata till andra datauppsättningar som profildatauppsättningar och uppslagsdatauppsättningar. Denna typ av anslutning kallas en personbaserad anslutning som underlättar personbaserad rapportering och analys.
+
+I Customer Journey Analytics B2B edition kan du välja mellan en personbaserad anslutning eller en kontobaserad anslutning. En kontobaserad anslutning underlättar kontobaserad rapportering och analys.
+
+* För en personbaserad anslutning väljer du Person som primär identifierare. Du kan sedan konfigurera och konfigurera dina projekt för anslutning, datavy och arbetsyta för personbaserad rapportering.
+* För en kontobaserad anslutning väljer du Konto som primär identifierare. Du kan sedan välja att lägga till ytterligare behållare för Global Account, Buying Group och Opportunity. Baserat på om du lägger till ett globalt konto eller inte är din primära identifierare en kontoidentifierare eller en global kontoidentifierare.
 
 
-## Standardbehållare
+## Behållare
 
-*standardversionen* av Customer Journey Analytics bygger på konceptet med tre behållare: Person, Session och Event. I en standardkonfiguration av Customer Journey Analytics genereras dessa relevanta behållare implicit baserat på din konfiguration.
+I Customer Journey Analytics genereras behållare som en del av konfigurationen av en anslutning och datavy. Behållare lagrar bara identifierare för att underlätta snabb och prestandaexekvering av funktioner som segmentering, uppdelningar med mera.
 
-Du kan definiera om hur de här behållarna ska namnges när du konfigurerar en datavy, men konceptuellt sett använder standardversionen en personbaserad behållarhierarki.
+### Standardbehållare
+
+Customer Journey Analytics bygger på konceptet med tre behållare: Person, Session och Event. Under en konfiguration genereras dessa behållare implicit.
+
+Du kan definiera om hur de här behållarna ska namnges när du konfigurerar en datavy, men hierarkin och relationerna mellan behållarna är förbestämda. Sessionsbehållaren genereras baserat på hur du definierar en session i [sessionsinställningarna](/help/data-views/session-settings.md) i datavyn.
 
 ![B2C](assets/b2c-containers.svg){zoomable="yes"}
 
-I anslutningen lägger du till datauppsättningarna Event, Profile och Lookup, och du väljer vilka identiteter som ska användas för att definiera anslutningen mellan dessa datauppsättningar. Som en del av anslutningen genereras en personbaserad behållarhierarki automatiskt. I den hierarkin definieras sessionsbehållaren av [sessionsinställningarna](/help/data-views/session-settings.md) i datavyn.
 
+### B2B-behållare
 
-## B2B-behållare
+I Customer Journey Analytics B2B edition läggs en kontobehållare till i listan över genererade behållare. Och du kan konfigurera genereringen av ytterligare behållare, som t.ex. Global Account, Buying Group och Opportunity.
 
-I Customer Journey Analytics B2B edition läggs en kontobehållare till i listan över genererade behållare.  Och du kan konfigurera genereringen av ytterligare behållare, som t.ex. Global Account, Buying Group och Opportunity.
+Hierarkin och relationerna mellan behållarna är förbestämda. Affärsmöjlighet, inköpsgrupp och person är alla jämställda behållare för kontobehållaren. I den hierarkin genereras sessionsbehållaren mellan personbehållaren och händelsebehållaren baserat på hur du definierar en session i [sessionsinställningarna](/help/data-views/session-settings.md) i datavyn. Ytterligare sessionsbehållare, till exempel mellan behållaren Konto och Händelsebehållaren, genereras och stöds för närvarande inte. I tabellen nedan finns en beskrivning och grundläggande användning av B2B-behållarna.
 
 ![B2B](assets/b2b-containers.svg){zoomable="yes"}
 
-I anslutningen lägger du till datauppsättningarna Event, Account, Global Account, Opportunity, Buying Group och annan Lookup. Du väljer Konto som primärt ID för anslutningen så att du kan använda kontobaserade identiteter för att definiera anslutningen mellan datauppsättningarna. Som en del av anslutningen genereras en kontobaserad behållarhierarki automatiskt. I den hierarkin definieras sessionsbehållaren mellan personbehållaren och händelsebehållaren av [sessionsinställningarna](/help/data-views/session-settings.md) i datavyn. Dessutom stöds inte sessionsbehållare, till exempel mellan konto och händelse.
-
-Affärsmöjlighet, inköpsgrupp och person är alla jämställda behållare för kontobehållaren. Se tabellen nedan för en beskrivning och grundläggande användning.
-
 | B2B-behållare | Beskrivning<br/>Grundläggande användningsfall |
 |---|---|
-| Konto | Ett företag som är kund eller potentiell kund till ditt företag. Detta kan vara ett dotterbolag eller en division i en större organisation. Kontot representerar den organisation som du säljer till och vill spåra på den organisationsnivån. |
-| Globalt konto (valfritt) | Det översta moderföretaget i en grupp av närstående företag. Ett globalt konto har inget moderföretag, men kan ha dotterföretag eller divisioner som tillhör det globala kontot. Ett konto som inte har något överordnat eller dotterföretag ska listas både i kontofältet och i det globala kontofältet, om båda är aktiverade som en del av konfigurationen av en anslutning. |
-| Möjligheter (valfritt) | En samling produkter och tjänster som säljs tillsammans. En affärsmöjlighet involverade ofta olika faser i säljprocessen som skulle avslutas som en försäljning.<br>Du använder affärsmöjlighetsdata för att mäta säljprojektets förlopp genom säljprocessen. Till exempel en rapport som ger information om de viktigaste möjligheterna som flyttades från affärsfas 3 till fas 4. |
-| Köpgrupp (valfritt) | En samling personer inom en organisation som deltar i beslutsprocessen för att köpa en produkt eller tjänst. <br/>Du använder inköpsgruppdata för att spåra inköpsgrupper via kampanjhantering. Du kan till exempel köpa ett målgruppssegment av nyckelköpgrupper.<br/> Du vill troligen ha en sökning från inköpsgruppen till profildata, så att du kan rapportera om personerna i en inköpsgrupp. |
+| Konto | Ett företag som är kund eller potentiell kund till ditt företag. Företaget kan vara ett dotterbolag eller en division i en större organisation. Kontot representerar den organisation som du säljer till och vill spåra på den organisationsnivån. |
+| Global konto (valfritt) | Det översta moderföretaget i en grupp av närstående företag. Ett globalt konto har inget moderföretag, men kan ha dotterföretag eller divisioner som tillhör det globala kontot. När du har konfigurerat behållaren för det globala kontot i din anslutning, ska ett konto som inte har något överordnat eller dotterbolag listas både i kontofältet och i det globala kontofältet. |
+| Möjligheter (valfritt) | En samling produkter och tjänster som säljs tillsammans. En affärsmöjlighet omfattade ofta olika faser i säljcykeln fram till försäljningsavslut.<br>Du använder data för att mäta säljprojektets förlopp genom säljprocessen. Till exempel en rapport som innehåller information om de viktigaste möjligheterna som flyttades från fas 3 till fas 4. |
+| Köpgrupp (valfritt) | En samling personer inom en organisation som deltar i beslutsprocessen för att köpa en produkt eller tjänst. <br/>Du använder inköpsgruppdata för att spåra inköpsgrupper via kampanjhantering. Du kan t.ex. skapa ett målgruppssegment av nyckelinköpsgrupper.<br/> Du vill troligen ha en sökning från inköpsgruppen till profildata, så att du kan rapportera om personerna i en inköpsgrupp. |
 | Person | En person som ofta identifieras av en unik e-postadress som har interagerat med företaget. <br/>Du använder profildata för att identifiera personer som arbetar för ett konto. Till exempel: rikta alla personer på ett konto som har registrerat sig för en konferens. |
 
+>[!IMPORTANT]
+>
+>* Om du har **aktiverat** som global kontobehållare i en kontobaserad anslutning, ska alla poster i dina händelsedatamängder innehålla ett konto-ID och ett globalt konto-ID. Annars hoppas posten över.
+>* Om du **inte har aktiverat** som global kontobehållare i en kontobaserad anslutning, ska alla poster i dina händelsedatamängder innehålla ett konto-ID. Annars hoppas posten över.
+
+## Datauppsättningar
+
+När du konfigurerar [datauppsättningsinställningar](/help/connections/create-connection.md#dataset-settings) för din kontobaserade anslutning i Customer Journey Analytics B2B edition beror alternativen som är tillgängliga för vissa av inställningarna på [datamängdstypen](/help/connections/create-connection.md#dataset-types). Du måste till exempel:
+
+* Ange identifierare för var och en av behållarna som du har konfigurerat för dina händelsedatamängder.
+* Definiera ett kontofält eller globalt kontofält för dina profildatauppsättningar.
+* Definiera nycklar och matcha dessa nycklar (efter fältbehållare) för uppslagsdatauppsättningar.
 
 ## Matcha efter behållare eller fält
 
-När du definierar en anslutning i Customer Journey Analytics kan du definiera datamängden för varje post (profil eller sökning), oavsett om den datauppsättningen matchas av behållare eller matchas av fält.
+Du kan definiera för varje uppslagsdatauppsättning, oavsett om du matchar datauppsättningen per fält eller per behållare.
 
 ### Matcha efter behållare
 
-Om en postdatamängd matchas av en behållare, till exempel Buying Group, behandlas postdatamängden som en profildatamängdstyp och som en profildatamängd i användargränssnittet.
+Om en postdatamängd använder en matchning per behållare behandlas postdatamängden som en profildatamängdstyp och som en profildatamängd i användargränssnittet. Använd matchning efter behållare för datauppsättningar som stöder dina konfigurerade behållare. Exempel: en Buying Group-datauppsättning.
 
 ### Matcha efter fält
 
-Om en postdatamängd matchas av fält, till exempel Marknadsföringslistmedlem, behandlas postdatamängden som en uppslagsdatatyp och som en uppslagsdatamängd i användargränssnittet.
-
+Om en postdatauppsättning använder en matchning per fält behandlas postdatauppsättningen som en uppslagsdatatyp och som en uppslagsdatauppsättning i användargränssnittet. Använd matchning efter fält på datauppsättningar som stöder ytterligare information via sökning Till exempel en medlemsdatamängd för marknadsföringslista eller en produktinformationsuppsättning.
 
 
 ## Rapport om person- och kontouppgifter
 
-Om du vill rapportera om personbaserade behållare (och personidentiteter) och kontobaserade behållare (och kontoidentiteter) bör du skapa två separata anslutningar i Customer Journey Analytics. En anslutning där du väljer Person som primärt ID och en anslutning där du väljer Konto som primärt ID. Customer Journey Analytics stöder inte personbaserad och kontobaserad rapportering från samma behållare.
+Om du vill rapportera om personbaserade behållare (och personidentiteter) och kontobaserade behållare (och kontoidentiteter) bör du skapa två separata anslutningar i Customer Journey Analytics. En anslutning där du väljer Person som primärt ID och en anslutning där du väljer Konto som primärt ID. Customer Journey Analytics stöder inte personbaserad och kontobaserad rapportering från en enda behållarhierarki.

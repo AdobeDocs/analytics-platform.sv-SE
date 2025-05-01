@@ -5,9 +5,9 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: f13d0f7afcfe2ebb334062b79b409219169c1aee
 workflow-type: tm+mt
-source-wordcount: '6347'
+source-wordcount: '6351'
 ht-degree: 0%
 
 ---
@@ -331,8 +331,8 @@ Du [lägger till en eller flera datauppsättningar](#add-datasets) eller [redige
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_matchingkey"
->title="Matchningsnyckel"
->abstract="Välj hur du vill förena: baserat på en matchande nyckel eller en matchande behållare.<br/><br/>**[!UICONTROL Matching key]**: Välj ett fält som du vill koppla ihop med en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd.<br/>**[!UICONTROL Matching container]**: Välj en behållare som ska användas för att ansluta till en av händelsedatamängderna. Om listan är tom har du förmodligen inte konfigurerat en eller flera behållare."
+>title="Matchande nyckeltyp"
+>abstract="Välj hur du vill ansluta: baserat på en matchning per fält eller matchning per behållare.<br/><br/>**[!UICONTROL Match by field]**: Välj ett fält som du vill koppla ihop med en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd.<br/>**[!UICONTROL Match by container]**: Välj en behållare som ska användas för att ansluta till en av händelsedatamängderna. Om listan är tom har du förmodligen inte konfigurerat en eller flera behållare."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -446,8 +446,8 @@ Du [lägger till en eller flera datauppsättningar](#add-datasets) eller [redige
 
 >[!CONTEXTUALHELP]
 >id="connection_matchingkey"
->title="Matchningsnyckel"
->abstract="Välj hur du vill förena: baserat på en matchande nyckel eller en matchande behållare.<br/><br/>**[!UICONTROL Matching key]**: Välj ett fält som du vill koppla ihop med en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd.<br/>**[!UICONTROL Matching container]**: Välj en behållare som ska användas för att ansluta till en av händelsedatamängderna. Om listan är tom har du förmodligen inte konfigurerat en eller flera behållare."
+>title="Matchande nyckeltyp"
+>abstract="Välj hur du vill ansluta: baserat på en matchning per fält eller matchning per behållare.<br/><br/>**[!UICONTROL Match by field]**: Välj ett fält som du vill koppla ihop med en av händelsedatamängderna. Om den här listan är tom har du förmodligen inte lagt till eller konfigurerat någon händelsedatamängd.<br/>**[!UICONTROL Match by container]**: Välj en behållare som ska användas för att ansluta till en av händelsedatamängderna. Om listan är tom har du förmodligen inte konfigurerat en eller flera behållare."
 
 <!-- markdownlint-enable MD034 -->
 
