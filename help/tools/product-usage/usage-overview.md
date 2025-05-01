@@ -2,9 +2,9 @@
 title: Översikt över produktanvändning
 description: Få insikter och rapporter om hur er organisation använder Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: a4615907f61b4d63393a9481fdd7b45b7b9b6262
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -126,3 +126,11 @@ När du aktiverar produktanvändning är följande dimensioner tillgängliga. Om
    * [!UICONTROL Venn]
 
 Produktanvändningen spårar inte enskilda projektkomponenter när ett projekt bara öppnas eller visas. Användaråtgärden för att öppna ett projekt spåras emellertid.
+
+## Tillgänglig mall
+
+Det finns en [Adobe-mall](/help/analysis-workspace/templates/use-templates.md) som använder de komponenter som genereras automatiskt från den här funktionen.
+
+**[!UICONTROL Adobe templates]** > **[!UICONTROL Other]** > **[!UICONTROL Product usage overview]**
+
+Välj datavyn som produktanvändningen automatiskt skapade i datavyväljaren och välj sedan mallen **[!UICONTROL Product usage overview]**. Välj **[!UICONTROL Preview]** om du vill se vilka paneler som mallen använder och lära dig mer om idealiska användningsfall, eller välj **[!UICONTROL Use template]** om du vill öppna den i Analysis Workspace.
