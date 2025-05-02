@@ -4,9 +4,9 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 915c1ecff6dcbe42a6ed81c74f4ec5b4a24eaaa5
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,17 @@ ht-degree: 0%
 >id="workspace_flow_container"
 >title="Flödesbehållare"
 >abstract="Välj den behållare som ska användas för att visa (siffror för) banan."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_disabled"
+>title="Inkludera upprepningar (inaktiverat)"
+>abstract="Upprepningar kan inte tas bort från Flödesvisualiseringar som innehåller flervärdesdimensioner."
+
+>[!CONTEXTUALHELP]
+>id="workspace_flow_include_repeats_default"
+>title="Inkludera upprepningar "
+>abstract="Flödesvisualiseringar baseras på instanser av en dimension. Den här inställningen ger dig möjlighet att inkludera eller exkludera upprepade instanser, till exempel: Sidomladdning."
+
 
 
 Flödesvisualiseringar hjälper er att förstå den resa som följer av en specifik konverteringshändelse på er webbplats eller i er app. Eller leda upp till en viss konverteringshändelse. Visualiseringen spårar en bana genom dina dimensioner (och dimensionsobjekt) eller mätvärden.
