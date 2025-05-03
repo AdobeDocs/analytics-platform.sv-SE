@@ -4,9 +4,9 @@ title: Konfigurera en flödesvisualisering
 feature: Visualizations
 exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
-source-git-commit: 2a2e158c0eb0f60591a92ed98572bbb6c344e3be
+source-git-commit: 933b4005724aa438c3daeb58191e940821b5bb5f
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,10 @@ ht-degree: 0%
 >title="Objekt utökade per kolumn"
 >abstract="Det här fältet kan bara anges för den första versionen. Om du vill uppdatera det här fältet väljer du **[!UICONTROL Reset]** för att skapa en ny flödesvisualisering."
 
+>[!CONTEXTUALHELP]
+>id="workspace_flow_resettoupdate"
+>title="Återställ till uppdatering"
+>abstract="Det här fältet kan bara anges för den första versionen. Om du vill uppdatera det här fältet väljer du **[!UICONTROL Reset]** för att skapa en ny flödesvisualisering."
 
 
 Flödesvisualiseringar hjälper er att förstå den resa som följer av en specifik konverteringshändelse på er webbplats eller i er app. Eller leda upp till en viss konverteringshändelse. Visualiseringen spårar en bana genom dina dimensioner (och dimensionsobjekt) eller mätvärden.
