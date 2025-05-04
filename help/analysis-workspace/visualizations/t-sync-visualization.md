@@ -5,9 +5,9 @@ title: Hantera datakällor
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8f9c03607130bdeaf6cb7a32d8dd465712a47ea5
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,15 @@ ht-degree: 0%
 >id="workspace_freeformtable_lockselection_showtable"
 >title="Visa tabell"
 >abstract="Om du väljer **[!UICONTROL Show table]** genereras en ny datakälla för den aktuella visualiseringen, som är skild från den ursprungliga datakällan."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="workspace_freeformtable_showtable"
+>title="Visa tabell"
+>abstract="Välj **[!UICONTROL Show table]** om du vill generera en ny datakälla för den aktuella visualiseringen, som är skild från den ursprungliga datakällan."
 
 <!-- markdownlint-enable MD034 -->
 
