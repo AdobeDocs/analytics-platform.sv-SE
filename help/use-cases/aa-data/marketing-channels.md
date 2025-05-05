@@ -14,12 +14,12 @@ ht-degree: 0%
 
 # Använd mått för marknadsföringskanal
 
-Om din organisation använder [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) för att hämta rapportsvitsdata till Customer Journey Analytics kan du konfigurera en anslutning i Customer Journey Analytics för att rapportera om dimensionerna för marknadsföringskanalen.
+Om din organisation använder [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=sv-SE) för att hämta rapportsvitsdata till Customer Journey Analytics kan du konfigurera en anslutning i Customer Journey Analytics för att rapportera om dimensionerna för marknadsföringskanalen.
 
 ## Förutsättningar
 
-* Rapportsvitens data måste redan importeras till Adobe Experience Platform med [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). Andra datakällor stöds inte, eftersom marknadsföringskanaler använder bearbetningsregler i en Analytics-rapportserie.
-* Bearbetningsregler för marknadsföringskanaler måste redan vara konfigurerade. Se [Bearbetningsregler för marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html) i guiden för Adobe Analytics-komponenter.
+* Rapportsvitens data måste redan importeras till Adobe Experience Platform med [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=sv-SE). Andra datakällor stöds inte, eftersom marknadsföringskanaler använder bearbetningsregler i en Analytics-rapportserie.
+* Bearbetningsregler för marknadsföringskanaler måste redan vara konfigurerade. Se [Bearbetningsregler för marknadsföringskanaler](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-rules.html?lang=sv-SE) i guiden för Adobe Analytics-komponenter.
 
 ## Schemaelement för marknadsföringskanal
 
@@ -27,8 +27,8 @@ När du har upprättat Analytics-källkopplingen för en önskad rapportsvit ska
 
 1. [Skapa en anslutning](/help/connections/create-connection.md) som innehåller en datauppsättning baserad på Analytics-källkopplingen.
 2. [Skapa en datavy](/help/data-views/create-dataview.md) som innehåller följande dimensioner:
-   * **`channel.typeAtSource`**: Motsvarar dimensionen [Marknadskanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html).
-   * **`channel._id`**: Motsvarar [Marknadskanalinformationen](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html)
+   * **`channel.typeAtSource`**: Motsvarar dimensionen [Marknadskanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=sv-SE).
+   * **`channel._id`**: Motsvarar [Marknadskanalinformationen](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-detail.html?lang=sv-SE)
 3. Ge varje dimension önskad attribueringsmodell och beständighet. Om du vill ha både den första och sista beröringsdimensionen drar du varje marknadsföringskanaldimension till komponentområdet flera gånger. Ge varje dimension önskad attribueringsmodell och beständighet. Adobe rekommenderar också att du ger varje dimension ett visningsnamn som gör det enklare att använda i Workspace.
 4. Skapa datavyn.
 
@@ -46,7 +46,7 @@ Nu kan du använda dina mått för marknadsföringskanalen i Analysis Workspace.
 
 >[!NOTE]
 >
->För att maximera effekten av marknadsföringskanaler för Attribution IQ och Customer Journey Analytics har vi publicerat [reviderade best practices](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html).
+>För att maximera effekten av marknadsföringskanaler för Attribution IQ och Customer Journey Analytics har vi publicerat [reviderade best practices](https://experienceleague.adobe.com/docs/analytics/components/marketing-channels/mchannel-best-practices.html?lang=sv-SE).
 
 Inställningarna för marknadsföringskanaler fungerar annorlunda mellan plattformsdata och rapportsvitsdata. Tänk på följande skillnader när du skapar marknadsföringskanaler för Customer Journey Analytics:
 
@@ -71,5 +71,5 @@ Eftersom Adobe Experience Platform arkitektur skiljer sig från Adobe Analytics 
 * Kontrollera att de arkitektoniska skillnader som anges ovan inte påverkar jämförelsen. Detta inkluderar borttagning av kanaler som inte åsidosätter den senaste beröringskanalen och borttagning av regelvillkor som är den första träffen av ett besök (session).
 * Kontrollera att din anslutning använder samma rapportserie som Adobe Analytics. Om din anslutning till Customer Journey Analytics innehåller flera rapportsviter med egna regler för bearbetning av marknadsföringskanaler är det inte enkelt att jämföra den med Adobe Analytics. Du vill skapa en separat anslutning för varje rapportsserie för att jämföra data.
 * Se till att du jämför samma datumintervall och att tidszonsinställningen i datavyn är densamma som rapportsvitens tidszon.
-* Använd en anpassad attribueringsmodell när du visar rapportsvitens data. Använd till exempel dimensionen [Marknadskanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html) med mått som använder en icke-standardattribueringsmodell. Adobe rekommenderar att du inte jämför standardmåtten [Första beröringskanalen](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html) eller [Sista beröringskanalen](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html) eftersom de är beroende av attribuering som samlas in i rapportsviten. Customer Journey Analytics förlitar sig inte på rapportsvitens attribueringsdata, utan beräknas när en Customer Journey Analytics-rapport körs.
+* Använd en anpassad attribueringsmodell när du visar rapportsvitens data. Använd till exempel dimensionen [Marknadskanal](https://experienceleague.adobe.com/docs/analytics/components/dimensions/marketing-channel.html?lang=sv-SE) med mått som använder en icke-standardattribueringsmodell. Adobe rekommenderar att du inte jämför standardmåtten [Första beröringskanalen](https://experienceleague.adobe.com/docs/analytics/components/dimensions/first-touch-channel.html?lang=sv-SE) eller [Sista beröringskanalen](https://experienceleague.adobe.com/docs/analytics/components/dimensions/last-touch-channel.html?lang=sv-SE) eftersom de är beroende av attribuering som samlas in i rapportsviten. Customer Journey Analytics förlitar sig inte på rapportsvitens attribueringsdata, utan beräknas när en Customer Journey Analytics-rapport körs.
 * Vissa mätvärden har ingen rimlig jämförelse på grund av skillnader i arkitektur mellan rapportsvitdata och plattformsdata. Exempel är besök/sessioner, personer/människor och förekomster/evenemang.

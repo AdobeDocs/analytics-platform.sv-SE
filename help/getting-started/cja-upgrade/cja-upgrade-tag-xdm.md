@@ -29,7 +29,7 @@ När du har [skapat taggen och lagt till Web SDK-tillägget](/help/getting-start
 
 ## Konfigurera dataelement
 
-Dataelement är byggstenarna för dataordlistan (eller datamappningen). Använd dataelement för att samla in, ordna och leverera data över marknadsförings- och annonseringsteknologier. Du ställer in dataelement i taggen som läser från datalagret och kan användas för att leverera data till Adobe Experience Platform. (Mer information om dataelement finns i [Dataelement](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements) i taggdokumentationen.)
+Dataelement är byggstenarna för dataordlistan (eller datamappningen). Använd dataelement för att samla in, ordna och leverera data över marknadsförings- och annonseringsteknologier. Du ställer in dataelement i taggen som läser från datalagret och kan användas för att leverera data till Adobe Experience Platform. (Mer information om dataelement finns i [Dataelement](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/ui/data-elements) i taggdokumentationen.)
 
 I följande avsnitt beskrivs föreslagna dataelement och andra vanliga dataelement som du kan konfigurera.
 
@@ -213,7 +213,7 @@ Så här definierar du en regel:
 >
 >Du kan använda regler på olika sätt i taggen för att hantera variabler (med dataelementen).
 >
->Mer information finns i [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html).
+>Mer information finns i [Regler](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=sv-SE).
 
 1. Logga in på experience.adobe.com med dina Adobe ID-uppgifter.
 
@@ -257,7 +257,7 @@ Så här definierar du en regel:
 
 1. Upprepa den här processen för varje regel som du vill lägga till på webbplatsen.
 
-   Mer information om regler finns i [Regler](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules) i taggdokumentationen.
+   Mer information om regler finns i [Regler](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/ui/rules) i taggdokumentationen.
 
 1. Fortsätt med [Skapa och publicera taggen](#build-and-publish-your-tag).
 
@@ -265,7 +265,7 @@ Så här definierar du en regel:
 
 När du har definierat dataelement och regler måste du skapa och publicera taggen. När du skapar en biblioteksversion måste du tilldela den till en miljö. Byggnadens tillägg, regler och dataelement kompileras sedan och placeras i den tilldelade miljön. Varje miljö har en unik inbäddningskod som gör att du kan integrera den tilldelade inbäddningen på din plats.
 
-Adobe Experience Platform Tags hanterar enkla till komplexa publiceringsflöden som passar din användning av Adobe Experience Platform Web SDK. Mer information finns i [Översikt över publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
+Adobe Experience Platform Tags hanterar enkla till komplexa publiceringsflöden som passar din användning av Adobe Experience Platform Web SDK. Mer information finns i [Översikt över publicering](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=sv-SE).
 
 Så här skapar och publicerar du en tagg:
 

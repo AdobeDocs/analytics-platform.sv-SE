@@ -53,7 +53,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
 * **Contractual access**: Om du inte kan använda Data Insights Agent i AI Assistant kontaktar du organisationens administratör eller Adobe Account Representant. Innan din organisation kan använda Data Insights Agent måste du godkänna vissa GenAI-relaterade juridiska villkor.
 
-* **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data visualization]** åtkomsten till det här verktyget. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console]:
+* **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL AI Assistant: Data visualization]** åtkomsten till det här verktyget. En [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console]:
    1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
    1. Välj titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL AI Assistant: Product Knowledge].
    1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.
@@ -86,7 +86,7 @@ Mer information finns i [Åtkomstkontroll](/help/technotes/access-control.md#acc
 
    * **[!UICONTROL AI Assistant: Data Analysis]**
 
-   Mer information finns i [dessa instruktioner](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access).
+   Mer information finns i [dessa instruktioner](https://experienceleague.adobe.com/sv/docs/experience-platform/ai-assistant/access).
 
    ![AI Assistant-ikon](/help/assets/ai-asst-icon.png)
 

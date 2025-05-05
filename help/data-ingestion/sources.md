@@ -119,7 +119,7 @@ Så här konfigurerar du ditt schema:
 
    Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
-   Mer information finns i [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile).
+   Mer information finns i [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE#profile).
 
    >[!IMPORTANT]
    >
@@ -131,7 +131,7 @@ Så här konfigurerar du ditt schema:
 
 Du har skapat ett minimalt schema som modellerar de lojalitetsdata som du kan importera till Adobe Experience Platform. Schemat gör att profiler kan identifieras med e-postadressen. Genom att aktivera schemat för profilen ser du till att data från din strömningskälla läggs till i kundprofilen i realtid.
 
-Mer information om hur du lägger till och tar bort fältgrupper och enskilda fält i ett schema finns i [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html).
+Mer information om hur du lägger till och tar bort fältgrupper och enskilda fält i ett schema finns i [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE).
 
 ### Konfigurera en datauppsättning
 
@@ -167,7 +167,7 @@ Så här konfigurerar du datauppsättningen:
 
    ![Aktivera schema för profilen](./assets/loyalty-dataset-profile.png)
 
-Mer information om hur du visar, förhandsgranskar, skapar och tar bort en datauppsättning finns i [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html). Och hur man aktiverar en datauppsättning för kundprofil i realtid.
+Mer information om hur du visar, förhandsgranskar, skapar och tar bort en datauppsättning finns i [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=sv-SE). Och hur man aktiverar en datauppsättning för kundprofil i realtid.
 
 
 ## Använda en källkoppling
@@ -176,11 +176,11 @@ Beroende på varifrån du får lojalitetsdata väljer du den relevanta källkopp
 
 Ni kan importera data från en mängd olika källor. Nedan följer bara några av alla tillgängliga källor:
 
-- Adobe-program (källanslutningar omfattar [Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) med flera)
+- Adobe-program (källanslutningar omfattar [Adobe Analytics](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) med flera)
 
-- Molnlagring (källanslutningar omfattar [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) med flera)
+- Molnlagring (källanslutningar omfattar [Amazon S3](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/cloud-storage/blob) med flera)
 
-- Databaser (källanslutningar omfattar [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server) med flera)
+- Databaser (källanslutningar omfattar [Snowflake](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/sql-server) med flera)
 
 Så här konfigurerar du en källkoppling:
 
@@ -214,7 +214,7 @@ Mer information om hur du använder Adobe Analytics-källkopplingen finns i [Imp
 
 Mer information om hur du använder HTTP API-källkopplingen finns i [Importera och använda direktuppspelade data](./streaming.md).
 
-Se [Översikt över Source Connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) för en översikt över källanslutningar, inklusive länkar till mer information för varje anslutning.
+Se [Översikt över Source Connectors](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=sv-SE#terms-and-conditions) för en översikt över källanslutningar, inklusive länkar till mer information för varje anslutning.
 
 
 ## Konfigurera en anslutning

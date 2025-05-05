@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Du måste installera taggen på den webbplats som du vill spåra, vilket innebär att du måste placera koden i rubriktaggen för webbplatsens mall.
 
-I följande process beskrivs hur du hämtar koden som refererar till din tagg. Mer information finns i [Implementeringsguiderna för taggar och vidarebefordran av händelser](https://experienceleague.adobe.com/en/docs/experience-platform/tags/get-started/implementation-guides) i Experience Platform-dokumentationen.
+I följande process beskrivs hur du hämtar koden som refererar till din tagg. Mer information finns i [Implementeringsguiderna för taggar och vidarebefordran av händelser](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/get-started/implementation-guides) i Experience Platform-dokumentationen.
 
 Så här hämtar du koden som refererar till din tagg:
 
@@ -53,6 +53,6 @@ Så här hämtar du koden som refererar till din tagg:
 
    I stället för koden för utvecklingsmiljön kan du ha valt en annan miljö (staging, production) baserat på var du håller på att distribuera Adobe Experience Platform Web SDK.
 
-   Mer information finns i [Miljö](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?).
+   Mer information finns i [Miljö](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=sv-SE&).
 
 {{upgrade-final-step}}

@@ -93,7 +93,7 @@ Det finns tre möjliga konsekvenser för en överföring:
 
 Ett av de största användningsområdena för överföring av mediefiler är vid uppgradering från Adobe Analytics till Customer Journey Analytics.
 
-Med funktionen [Komponentmigrering](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/component-migration) i Adobe Analytics kan du migrera administratörsägda projekt till andra administratörer. Alla komponenter som ingår i dessa projekt återskapas sedan i Customer Journey Analytics och mottagaradministratören äger alla dessa komponenter, oavsett vem som skapade dem.
+Med funktionen [Komponentmigrering](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-tools/component-migration/component-migration) i Adobe Analytics kan du migrera administratörsägda projekt till andra administratörer. Alla komponenter som ingår i dessa projekt återskapas sedan i Customer Journey Analytics och mottagaradministratören äger alla dessa komponenter, oavsett vem som skapade dem.
 
 Med det här verktyget kan administratörer sedan omtilldela komponenter till sina rättsinnehavare, oavsett om de är administratörer eller inte.
 

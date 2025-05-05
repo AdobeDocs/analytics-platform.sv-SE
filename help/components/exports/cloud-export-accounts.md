@@ -92,7 +92,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
      >[!AVAILABILITY]
      >
-     >Detta avsnitt gäller för implementeringar av Experience Platform som körs på Amazon Web Services (AWS). Experience Platform som körs på AWS är för närvarande tillgängligt för ett begränsat antal kunder. Mer information om den Experience Platform-infrastruktur som stöds finns i [Översikt över flera moln i Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/multi-cloud).
+     >Detta avsnitt gäller för implementeringar av Experience Platform som körs på Amazon Web Services (AWS). Experience Platform som körs på AWS är för närvarande tillgängligt för ett begränsat antal kunder. Mer information om den Experience Platform-infrastruktur som stöds finns i [Översikt över flera moln i Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/multi-cloud).
 
      Dialogrutan [!UICONTROL **Konto skapat**] visas.
 
@@ -112,9 +112,9 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
       1. Om du inte redan har det hämtar du [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-      1. Följ stegen som beskrivs i [Ansluta din Data Landing Zone-behållare till Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer) i Adobe Experience Platform-dokumentationen.
+      1. Följ stegen som beskrivs i [Ansluta din Data Landing Zone-behållare till Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=sv-SE#connect-your-data-landing-zone-container-to-azure-storage-explorer) i Adobe Experience Platform-dokumentationen.
 
-         Du kan hoppa över de uppgifter som beskrivs i avsnitten [Hämta autentiseringsuppgifterna för din Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) och [Uppdatera autentiseringsuppgifter för Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials) eftersom den URI som du kopierade innehåller dessa autentiseringsuppgifter.
+         Du kan hoppa över de uppgifter som beskrivs i avsnitten [Hämta autentiseringsuppgifterna för din Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=sv-SE#retrieve-dlz-credentials) och [Uppdatera autentiseringsuppgifter för Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=sv-SE#update-dlz-credentials) eftersom den URI som du kopierade innehåller dessa autentiseringsuppgifter.
 
       1. När du följer Adobe Experience Platform-dokumentationen och kommer till fältet [!UICONTROL **Plumbibehållare-SAS-URL**] klistrar du in den SAS-URI som du kopierade i steg 3.
 

@@ -28,9 +28,9 @@ När du har skapat en [anslutning](../connections/overview.md) och [datavy](../d
 
 1. Kontrollera att du har rätt åtkomstkontroll:
 
-   * Du måste ha system- eller produktadministratörsbehörighet för en organisation som har en Experience Platform-produkt. Mer information finns i [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#platform-permissions).
+   * Du måste ha system- eller produktadministratörsbehörighet för en organisation som har en Experience Platform-produkt. Mer information finns i [Översikt över åtkomstkontroll](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=sv-SE#platform-permissions).
 
-   * Du måste vara användare i produktprofilen AEP-Default-All-Users. Fråga administratören om du inte har behörighet att lägga till dig själv i den här profilen. Mer information finns i [Åtkomstkontrollhierarki och arbetsflöde](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html#access-control-hierarchy-and-workflow).
+   * Du måste vara användare i produktprofilen AEP-Default-All-Users. Fråga administratören om du inte har behörighet att lägga till dig själv i den här profilen. Mer information finns i [Åtkomstkontrollhierarki och arbetsflöde](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=sv-SE#access-control-hierarchy-and-workflow).
 
 
 1. Navigera till användargränssnittet för Adobe Experience Platform.

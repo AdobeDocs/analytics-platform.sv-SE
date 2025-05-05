@@ -62,7 +62,7 @@ Tidigare behandlades heltal automatiskt som mätvärden i Customer Journey Analy
 
 Du kan använda en numerisk dimension för att hämta mätvärden till din [!UICONTROL &#x200B; Flow]-visualisering.
 
-1. Dra schemafältet [!UICONTROL Marketing Channels] till området [!UICONTROL Metrics] under [!UICONTROL Included components] på fliken [Komponenter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview) i datavyer.
+1. Dra schemafältet [!UICONTROL Marketing Channels] till området [!UICONTROL Metrics] under [!UICONTROL Included components] på fliken [Komponenter](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview) i datavyer.
 2. I Workspace-rapporter visar det här flödet [!UICONTROL Marketing Channels] som flödar in i [!UICONTROL Orders]:
 
 ![Marknadskanalen flödar från e-post till Avsluta/beställ.](../assets/flow.png)
@@ -73,7 +73,7 @@ Den här funktionen gäller specifikt för matrisbaserade fält. Med funktionern
 
 Använd till exempel funktionerna för att inkludera/exkludera i datavyer om du bara vill fokusera på produkter som genererade mer än 50 dollar för försäljning. Om du har en beställning som innehåller ett produktköp på 50 USD och ett produktköp på 25 USD tar funktionen för att inkludera/exkludera bort produktinköpet på 25 USD, inte hela beställningen.
 
-1. Dra schemafältet **[!UICONTROL Revenue]** till området **[!UICONTROL Metrics]** under [!UICONTROL Included components] på fliken [Komponenter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview) i datavyer.
+1. Dra schemafältet **[!UICONTROL Revenue]** till området **[!UICONTROL Metrics]** under [!UICONTROL Included components] på fliken [Komponenter](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview) i datavyer.
 1. Markera måtten och konfigurera följande på höger sida:
 a. Välj **[!UICONTROL Currency]** under **[!UICONTROL Format]**.
 b. Välj **[!UICONTROL USD]** under **[!UICONTROL Currency]**.
@@ -112,11 +112,11 @@ Du kan avgöra om en session är den första sessionen någonsin för en använd
 
 En dimension och två mätvärden underlättar den här rapporteringen:
 
-* [Sessionstyp](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Den här dimensionen har två värden: [!UICONTROL New] och [!UICONTROL Returning]. Radobjektet [!UICONTROL New] innehåller allt beteende (d.v.s. mått mot den här dimensionen) från en session som har fastställts vara en persons definierade första session. Allt annat ingår i radobjektet [!UICONTROL Returning] (förutsatt att allt tillhör en session). Om mätvärden inte ingår i någon session hamnar de i&quot;Inte tillämpligt&quot;-haken för den här dimensionen.
+* [Sessionstyp](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-reference) - Den här dimensionen har två värden: [!UICONTROL New] och [!UICONTROL Returning]. Radobjektet [!UICONTROL New] innehåller allt beteende (d.v.s. mått mot den här dimensionen) från en session som har fastställts vara en persons definierade första session. Allt annat ingår i radobjektet [!UICONTROL Returning] (förutsatt att allt tillhör en session). Om mätvärden inte ingår i någon session hamnar de i&quot;Inte tillämpligt&quot;-haken för den här dimensionen.
 
-* [Första sessionen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference). Mätvärdet för förstagångssessioner definieras som en persons definierade första session i rapportfönstret.
+* [Första sessionen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-reference). Mätvärdet för förstagångssessioner definieras som en persons definierade första session i rapportfönstret.
 
-* [Retursessioner](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) Måttet på retursessioner är antalet sessioner som inte var en persons första session.—>
+* [Retursessioner](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-reference) Måttet på retursessioner är antalet sessioner som inte var en persons första session.—>
 
 Så här kommer du åt komponenterna:
 

@@ -23,7 +23,7 @@ Konfigurationen av Content Analytics består av följande steg:
 1. Endast när du [manuellt publicerar](manual.md) taggegenskapen distribueras din Content Analytics-konfiguration och datainsamlingen startas.
 
 1. Du kan bara göra vissa mindre ändringar i en implementerad konfiguration med guiden [guidad konfiguration](guided.md). Ändra till exempel [datavyn](/help/data-views/data-views.md).
-1. Du kan göra andra ändringar i en implementerad konfiguration med [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) i den associerade taggegenskapen.
+1. Du kan göra andra ändringar i en implementerad konfiguration med [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview) i den associerade taggegenskapen.
 1. Endast när du [manuellt återpublicerar ](manual.md) taggegenskapen distribueras konfigurationsändringarna effektivt och datainsamling, baserat på dina ändringar, startas.
 
 
@@ -32,12 +32,12 @@ Konfigurationen av Content Analytics består av följande steg:
 Innan du konfigurerar Content Analytics måste du kontrollera att följande krav uppfylls:
 
 * Du har angett användaragenten och IP-adressen som tillåtet för den funktionstjänst som används i Content Analytics. Den användaragentsträng som ska konfigureras är: <code>AdobeFeaturization/1.0</code>.
-* Om du har implementerat [Web SDK med JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library){target="_blank"} för normal beteendedatainsamling måste du kontrollera att du använder standardnamnlegeringen <code>.</code> för JavaScript Library.
+* Om du har implementerat [Web SDK med JavaScript](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/install/library){target="_blank"} för normal beteendedatainsamling måste du kontrollera att du använder standardnamnlegeringen <code>.</code> för JavaScript Library.
 * Du har en Customer Journey Analytics-produktadministratörsroll med de extra behörigheterna att hantera anslutningar och hantera datavyer.
 * Om du funderar på att samla in Content Analytics-upplevelser ska du kontrollera att du har konfigurerat och uppdaterat [Content Analytics-versionshantering](manual.md#versioning) baserat på ändringar på dina webbsidor.
-* Du måste ha [behörighet för datainsamling](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions){target="_blank"}:
-   * [Experience Platform-behörigheter](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
-   * [Experience Platform Data Collection permissions](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
+* Du måste ha [behörighet för datainsamling](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/permissions){target="_blank"}:
+   * [Experience Platform-behörigheter](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"}
+   * [Experience Platform Data Collection permissions](https://experienceleague.adobe.com/sv/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}
 * Du har noga övervägt följande viktiga konfigurationsalternativ:
 
    * Din webbplats passar för upplevelserapporter. Korrekt erfarenhetsrapportering är bara möjligt när följande villkor är uppfyllda:

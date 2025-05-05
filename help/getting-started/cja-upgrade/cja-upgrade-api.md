@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Du kan installera Platform Web SDK genom att installera NPM-paketet för att styra byggprocessen för Adobe Experience Platform Web SDK JavaScript.
 
-1. Följ informationen i avsnittet [Alternativ 3: Använda NPM-paketet](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) i [Installera Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) i Web SDK Guide.
+1. Följ informationen i avsnittet [Alternativ 3: Använda NPM-paketet](https://experienceleague.adobe.com/sv/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) i [Installera Web SDK](https://experienceleague.adobe.com/sv/docs/experience-platform/edge/fundamentals/installing-the-sdk) i Web SDK Guide.
 
 {{upgrade-final-step}}
 

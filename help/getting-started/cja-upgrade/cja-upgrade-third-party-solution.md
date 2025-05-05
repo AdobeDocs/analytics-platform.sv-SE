@@ -39,7 +39,7 @@ Använd följande process när du går över till Customer Journey Analytics fr�
 
    * Du kan inte migrera projekt och komponenter från en lösning som inte är från Adobe Analytics.
 
-   * Beroende på din analyslösning kan det finnas en källanslutning för inhämtning av historiska data. Mer information finns i [Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#analytics) i [Source Connectors overview](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home) i Experience Platform-dokumentationen.
+   * Beroende på din analyslösning kan det finnas en källanslutning för inhämtning av historiska data. Mer information finns i [Analytics](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home#analytics) i [Source Connectors overview](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home) i Experience Platform-dokumentationen.
 
 
 Kontakta Adobe om du behöver mer specifik rådgivning, vägledning eller support.

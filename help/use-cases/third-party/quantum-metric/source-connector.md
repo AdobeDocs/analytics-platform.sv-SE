@@ -28,7 +28,7 @@ CJA frigör rapporttidskontrollen av QM-data, sekventiell dataanalys, avancerad 
 1. Navigera till [!UICONTROL Experience Platform] > [!UICONTROL Connections] > [!UICONTROL Sources].
 1. Lägg till källkopplingen för kvantmetrisk källa och följ anvisningarna för att slutföra.
 
-Mer information finns i [Adobe Experience Platform-källanslutningar](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home).
+Mer information finns i [Adobe Experience Platform-källanslutningar](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/home).
 
 ## Steg 2: Skapa en anslutning i Customer Journey Analytics
 
@@ -40,7 +40,7 @@ Om du skapar en källanslutning för Quantum Metric-data skapas automatiskt en d
 1. Klicka på **[!UICONTROL Save]**.
 
 >[!NOTE]
->Du kan lägga till kvantmätdata i samma anslutning som övriga Customer Journey Analytics-data, men dessa data kan inte sammanfogas utan ett gemensamt person-ID mellan de två datauppsättningarna. Om du vill använda det här beteendet rekommenderar Adobe att du använder [taggtillägget](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) i stället för källkopplingen.
+>Du kan lägga till kvantmätdata i samma anslutning som övriga Customer Journey Analytics-data, men dessa data kan inte sammanfogas utan ett gemensamt person-ID mellan de två datauppsättningarna. Om du vill använda det här beteendet rekommenderar Adobe att du använder [taggtillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/analytics/quantum-metric) i stället för källkopplingen.
 
 ## Steg 3: Skapa en datavy i Customer Journey Analytics
 

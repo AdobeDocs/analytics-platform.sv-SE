@@ -35,7 +35,7 @@ Du kan också dela en länk till en viss del av ett projekt, till exempel en pan
 * Välj **[!UICONTROL Get panel link]** på snabbmenyn för en panelrubrik
 * Välj **[!UICONTROL Get visualization link]** på snabbmenyn för ett visualiseringshuvud
 
-[Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) om hur du skapar länkar och använder dem för att dirigera mottagare till specifika delar av projektet.
+[Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=sv-SE) om hur du skapar länkar och använder dem för att dirigera mottagare till specifika delar av projektet.
 
 ![Listrutan när du högerklickar på rubriken med länken Hämta visualisering markerad.](assets/get-viz-link.png)
 
@@ -43,6 +43,6 @@ Du kan också dela en länk till en viss del av ett projekt, till exempel en pan
 
 Ett tips för att utnyttja de olika länkalternativen är att alltid inkludera en innehållsförteckning högst upp i ditt Workspace-projekt. I innehållsförteckningen kan du länka till andra relevanta projekt, särskilda paneler och specifika visualiseringar. Detta gör det enklare för projektmottagaren att navigera.
 
-[Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html) om hur du skapar en innehållsförteckning med hjälp av länkar och Workspace RTF-redigerare.
+[Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=sv-SE) om hur du skapar en innehållsförteckning med hjälp av länkar och Workspace RTF-redigerare.
 
 ![En projektinnehållsförteckning.](assets/toc.png)

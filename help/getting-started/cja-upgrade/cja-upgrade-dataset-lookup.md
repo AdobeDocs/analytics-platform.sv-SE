@@ -95,7 +95,7 @@ Så här skapar du en uppslagsdatauppsättning som ska användas med ett schema 
 
    Plattformen ger automatiskt intelligenta rekommendationer för automatiskt mappade fält baserat på det målschema eller den datamängd du valt. Du kan justera mappningsreglerna manuellt så att de passar dina användningsfall.
 
-   Mer information om mappningsprocessen finns i [Mappa en CSV-fil till ett befintligt XDM-schema](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) i Experience Platform-dokumentationen.
+   Mer information om mappningsprocessen finns i [Mappa en CSV-fil till ett befintligt XDM-schema](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema) i Experience Platform-dokumentationen.
 
 1. Välj **[!UICONTROL Finish]**.
 

@@ -40,5 +40,5 @@ Med fasade versioner kan Adobe bättre anpassa driftsättningsprocessen och se t
 
 | Fråga | Svar |
 | --- | --- |
-| Kan jag begära tidig åtkomst till en funktion? | Nej. Tidig tillgång kommer inte att beviljas.<br>Om du vill testa tidiga Analytics-koncept rekommenderar vi att du provar [Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html) för att få feedback på våra branschledande innovationer. |
+| Kan jag begära tidig åtkomst till en funktion? | Nej. Tidig tillgång kommer inte att beviljas.<br>Om du vill testa tidiga Analytics-koncept rekommenderar vi att du provar [Adobe Analytics Labs](https://experienceleague.adobe.com/docs/analytics/analyze/labs.html?lang=sv-SE) för att få feedback på våra branschledande innovationer. |
 | Påverkar den här versionsstrategin min tillgång till funktioner? | Nej. När en funktion har nått GA får du tillgång till funktionen om den ingår i Analytics-paketet. |

@@ -36,7 +36,7 @@ ht-degree: 0%
 
 Du kan installera Platform Web SDK manuellt genom att lägga till baskoden direkt på varje sida i implementeringen.
 
-1. Följ stegen i avsnittet [Alternativ 2: Installera den fördefinierade fristående versionen](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version) i [Installera Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) i Web SDK Guide.
+1. Följ stegen i avsnittet [Alternativ 2: Installera den fördefinierade fristående versionen](https://experienceleague.adobe.com/sv/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version) i [Installera Web SDK](https://experienceleague.adobe.com/sv/docs/experience-platform/edge/fundamentals/installing-the-sdk) i Web SDK Guide.
 
 {{upgrade-final-step}}
 

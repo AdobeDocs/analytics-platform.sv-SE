@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Etiketter och profiler
 
-När du skapar en datauppsättning i Experience Platform kan du skapa [dataanvändningsetiketter](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference) för vissa eller alla element i datauppsättningen. Du kan visa dessa etiketter och profiler i Customer Journey Analytics.
+När du skapar en datauppsättning i Experience Platform kan du skapa [dataanvändningsetiketter](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/reference) för vissa eller alla element i datauppsättningen. Du kan visa dessa etiketter och profiler i Customer Journey Analytics.
 
 Följande etiketter är av särskilt intresse för Customer Journey Analytics:
 
@@ -25,7 +25,7 @@ Följande etiketter är av särskilt intresse för Customer Journey Analytics:
 >
 >Dataanvändningsetiketter sprids inte automatiskt till sammanslagna datauppsättningar. De kan dock läggas till manuellt.
 
-Etikettering i sig innebär inte att dessa dataanvändningsetiketter används. Det är det policyer används för. Du kan skapa principer med [Experience Platform-gränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/policies/user-guide) eller via [principtjänstens API ](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/api/overview) i Experience Platform.
+Etikettering i sig innebär inte att dessa dataanvändningsetiketter används. Det är det policyer används för. Du kan skapa principer med [Experience Platform-gränssnittet](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/policies/user-guide) eller via [principtjänstens API ](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/api/overview) i Experience Platform.
 
 Det finns två Adobe-definierade policyer i Experience Platform som kan användas i Customer Journey Analytics och påverka rapportering och dataexport:
 
@@ -85,6 +85,6 @@ Du måste först lösa konflikten (t.ex. ta bort komponenterna från datavyn).
 
 >[!MORELIKETHIS]
 >
->[Vad är begränsade etiketter i Report Builder?](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-reportbuilder/restricted-labels)
+>[Vad är begränsade etiketter i Report Builder?](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-reportbuilder/restricted-labels)
 
 

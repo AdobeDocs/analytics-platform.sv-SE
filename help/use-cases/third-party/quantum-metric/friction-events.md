@@ -40,7 +40,7 @@ Det här användningsfallet kräver ett dedikerat schemafält att skicka data ti
 
 ## Steg 2: Fånga friktionshändelser med tillägget Quantum Metric-tagg
 
-Se [Tillägg för kvantmetrisk datatyp](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) i guiden för destinationer för Adobe Experience Platform om du vill ha anvisningar om hur du ställer in dina taggar så att de inkluderar kvantmetrisk data. När du använder det här tillägget skickas fler rader till en befintlig datauppsättning.
+Se [Tillägg för kvantmetrisk datatyp](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/analytics/quantum-metric) i guiden för destinationer för Adobe Experience Platform om du vill ha anvisningar om hur du ställer in dina taggar så att de inkluderar kvantmetrisk data. När du använder det här tillägget skickas fler rader till en befintlig datauppsättning.
 
 Använd taggar i Adobe Experience Platform Data Collection för att manuellt ange namnet på friktionshändelsen så att den kan inkluderas i XDM-objektet och analyseras. Ett sätt att göra detta är i regelns egen kod:
 

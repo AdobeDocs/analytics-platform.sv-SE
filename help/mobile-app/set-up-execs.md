@@ -18,7 +18,7 @@ I vissa fall kan företagsledare behöva lite extra hjälp för att komma åt oc
 
 ## Se till att appanvändare har tillgång till Adobe Analytics
 
-1. Konfigurera nya användare i [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html).
+1. Konfigurera nya användare i [Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=sv-SE).
 
 1. Om du vill kunna dela styrkort måste du ge programanvändare behörighet att komma åt styrkortskomponenter som Analysis Workspace, de datavyer som styrkort baseras på samt segment, mått och mått.
 

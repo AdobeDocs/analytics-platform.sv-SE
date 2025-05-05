@@ -92,7 +92,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Importera Google 
 >
 >Om du tänker importera både tidigare och liveströmmande Google Analytics-data måste du använda samma schema för båda datauppsättningarna. Du kan sammanfoga datauppsättningarna i en Customer Journey Analytics med en [kombinerad datauppsättning](/help/connections/combined-dataset.md).
 
-Du kan mappa GA-händelsedata till en befintlig datauppsättning som du skapade tidigare, eller skapa en datauppsättning med det XDM-schema som du väljer. När du har valt schemat använder Experience Platform maskininlärning för att automatiskt mappa varje fält i Google Analytics-data till ditt [XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html#ui).
+Du kan mappa GA-händelsedata till en befintlig datauppsättning som du skapade tidigare, eller skapa en datauppsättning med det XDM-schema som du väljer. När du har valt schemat använder Experience Platform maskininlärning för att automatiskt mappa varje fält i Google Analytics-data till ditt [XDM-schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv-SE#ui).
 
 ![Schemamappning som markerar GA-datafälten och målschemamappningar](../../assets/schema-map.png)
 

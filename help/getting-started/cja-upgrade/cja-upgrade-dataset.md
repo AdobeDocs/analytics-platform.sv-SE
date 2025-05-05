@@ -59,6 +59,6 @@ Så här skapar du en datauppsättning:
 
    ![Aktivera schema för profilen](assets/aepwebsdk-dataset-profile.png)
 
-   Mer information om hur du visar, förhandsgranskar, skapar och tar bort en datauppsättning finns i [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html). Du kan även lära dig hur du aktiverar en datauppsättning för kundprofil i realtid.
+   Mer information om hur du visar, förhandsgranskar, skapar och tar bort en datauppsättning finns i [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=sv-SE). Du kan även lära dig hur du aktiverar en datauppsättning för kundprofil i realtid.
 
 {{upgrade-final-step}}

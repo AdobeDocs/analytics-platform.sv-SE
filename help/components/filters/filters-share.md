@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I [segmenthanteraren](manage-filters.md) kan du dela segment. Beroende på dina behörigheter kan du dela segment med hela organisationen, grupper eller enskilda användare:
 
-* **Administratörer**: Administratörer kan dela segment med hela organisationen, med grupper inom en organisation och med enskilda användare. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/enterprise/using/manage-products.html).
+* **Administratörer**: Administratörer kan dela segment med hela organisationen, med grupper inom en organisation och med enskilda användare. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/se/enterprise/using/manage-products.html).
 * **Icke-administratörer**: Icke-administratörer kan bara dela de segment som de har skapat och endast med enskilda användare. |
 
 Dela ett eller flera segment:

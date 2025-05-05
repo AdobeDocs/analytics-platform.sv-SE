@@ -17,7 +17,7 @@ Adobe Customer Journey Analytics ligger hos datacenter i företagsklass från le
 
 Vid etableringen anger kunderna i vilken region deras Adobe Experience Platform-data kommer att finnas. De data som hämtas in till CJA från Adobe Experience Platform datasjön lagras i samma region.
 
-Mer information finns i [Regional datainsamling](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) i Adobe Experience Cloud-dokumentationen.
+Mer information finns i [Regional datainsamling](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/rdc) i Adobe Experience Cloud-dokumentationen.
 
 ## Azure
 

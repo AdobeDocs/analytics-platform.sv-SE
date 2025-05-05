@@ -270,5 +270,5 @@ När du använder det här beräknade måttet visas det önskade resultatet:
 
 ## Begränsningar
 
-Det finns begränsningar för arrayer i data som används av Customer Journey Analytics och modelleras som en del av ett schema i Experience Platform. Se [Begränsningar för datamodell](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) och [Begränsningar för datastorlek](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) i [standardguarutorna för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails).
+Det finns begränsningar för arrayer i data som används av Customer Journey Analytics och modelleras som en del av ett schema i Experience Platform. Se [Begränsningar för datamodell](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails#data-model-limits) och [Begränsningar för datastorlek](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails#data-size-limits) i [standardguarutorna för kundprofildata och segmentering i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/guardrails).
 

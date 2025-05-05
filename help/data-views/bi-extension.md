@@ -18,7 +18,7 @@ ht-degree: 0%
 
 [!DNL Customer Journey Analytics BI extension] aktiverar SQL-åtkomst till de [datavyer](./data-views.md) som du har definierat i Customer Journey Analytics. Dina datatekniker och analytiker kanske känner bättre till Power BI, Tableau Desktop eller andra verktyg för affärsintelligens och visualisering (kallas även BI-verktyg). De kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder när de skapar sina Analysis Workspace-projekt.
 
-Adobe Experience Platform [frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. När [!DNL Customer Journey Analytics BI extension] är aktiverat utökas funktionaliteten för [!DNL Query Service] så att du kan se dina Customer Journey Analytics-datavyer som tabeller eller vyer i en [!DNL Query Service] -session. Det innebär att de verktyg för affärsintelligens som använder [!DNL Query Service] som PostgresSQL-gränssnitt sömlöst drar nytta av den här utökade funktionen.
+Adobe Experience Platform [frågetjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/query/home) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. När [!DNL Customer Journey Analytics BI extension] är aktiverat utökas funktionaliteten för [!DNL Query Service] så att du kan se dina Customer Journey Analytics-datavyer som tabeller eller vyer i en [!DNL Query Service] -session. Det innebär att de verktyg för affärsintelligens som använder [!DNL Query Service] som PostgresSQL-gränssnitt sömlöst drar nytta av den här utökade funktionen.
 
 De viktigaste fördelarna är:
 
@@ -28,7 +28,7 @@ De viktigaste fördelarna är:
 
 ## Förutsättningar
 
-Om du vill använda den här funktionen kan du använda förfallande eller ej förfallande autentiseringsuppgifter för att ansluta BI-verktyg till [!DNL Customer Journey Analytics BI extension]. Guiden [Autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) innehåller mer information om hur du anger förfallodatum för autentiseringsuppgifter eller ej förfallande autentiseringsuppgifter.
+Om du vill använda den här funktionen kan du använda förfallande eller ej förfallande autentiseringsuppgifter för att ansluta BI-verktyg till [!DNL Customer Journey Analytics BI extension]. Guiden [Autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials) innehåller mer information om hur du anger förfallodatum för autentiseringsuppgifter eller ej förfallande autentiseringsuppgifter.
 Nedan visas ytterligare steg för att konfigurera CJA-behörigheter
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
@@ -95,7 +95,7 @@ I Adobe Experience Platform:
 
 +++
 
-Mer information finns i [Användargränssnittsguiden för frågeredigeraren](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide).
+Mer information finns i [Användargränssnittsguiden för frågeredigeraren](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/user-guide).
 
 
 ### BI-verktyg
@@ -128,7 +128,7 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
       1. Klistra in parametern **[!UICONTROL ** Database **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Database &#x200B;**]** .
 
-         Lägg till `?FLATTEN` i parametern **[!UICONTROL **&#x200B; Database &#x200B;**]**, så den blir som `prod:cja?FLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+         Lägg till `?FLATTEN` i parametern **[!UICONTROL **&#x200B; Database &#x200B;**]**, så den blir som `prod:cja?FLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
       1. Välj **[!UICONTROL DirectQuery]** när du uppmanas till **[!UICONTROL Data Connectivity]**-läge.
 
@@ -141,7 +141,7 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
    Alla dimensioner och mätvärden som är kopplade till en eller flera markerade tabeller visas i den högra rutan, redo att användas i dina visualiseringar.
 
-   Mer information finns i [Anslut Power BI till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
+   Mer information finns i [Anslut Power BI till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/power-bi). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
 
 +++
 
@@ -171,7 +171,7 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
       1. Klistra in parametern **[!UICONTROL ** Database **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Database &#x200B;**]** .
 
-         Lägg till `%3FFLATTEN` i parametern **[!UICONTROL **&#x200B; Database &#x200B;**]**, så den blir som `prod:cja%3FFLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+         Lägg till `%3FFLATTEN` i parametern **[!UICONTROL **&#x200B; Database &#x200B;**]**, så den blir som `prod:cja%3FFLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
       1. Välj **[!UICONTROL ** Användarnamn och lösenord **]** i listan **[!UICONTROL **&#x200B; Autentisering &#x200B;**]**.
 
@@ -187,7 +187,7 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
    Nu kan du arbeta med data från datavytabellerna för att skapa rapporter och visualiseringar.
 
-   Mer information finns i [Ansluta tabell till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
+   Mer information finns i [Ansluta tabell till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/tableau). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
 
 +++
 
@@ -214,7 +214,7 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
    Nu kan du arbeta med data från datavytabellerna för att skapa rapporter och visualiseringar.
 
-   Mer information finns i [Anslut sökare till frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/looker). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
+   Mer information finns i [Anslut sökare till frågetjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/looker). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
 
 +++
 
@@ -238,7 +238,7 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
    När det är klart kan du arbeta med data för att skapa rapporter och visualiseringar.
 
-   Mer information finns i [Ansluta Jupyter-anteckningsbok till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/jupyter-notebook). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
+   Mer information finns i [Ansluta Jupyter-anteckningsbok till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/jupyter-notebook). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
 
 +++
 
@@ -262,11 +262,11 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
    När det är klart kan du arbeta med data för att skapa rapporter och visualiseringar.
 
-   Mer information finns i [Anslut RStudio till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/rstudio). Se även [BI-tilläggsanvändningsfall](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel (som använder RPostgres-paketet i stället).
+   Mer information finns i [Anslut RStudio till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/rstudio). Se även [BI-tilläggsanvändningsfall](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel (som använder RPostgres-paketet i stället).
 
 +++
 
-Se [Ansluta klienter till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview) för en översikt och mer information om de olika verktygen som finns.
+Se [Ansluta klienter till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/overview) för en översikt och mer information om de olika verktygen som finns.
 
 Se [Användningsexempel](/help/use-cases/data-views/bi-extension-usecases.md) om hur du slutför ett antal användningsfall med Customer Journey Analytics BI-tillägget.
 
@@ -297,7 +297,7 @@ prod:all=> \dv
 
 ### Kapslade kontra separerade
 
-Som standard använder schemat för datavyer kapslade strukturer, precis som de ursprungliga XDM-schemana. Integrationen stöder även alternativet `FLATTEN`. Du kan använda det här alternativet för att tvinga schemat för datavyer (och andra tabeller i sessionen) att förenklas. Förenkling gör det enklare att använda i BI-verktyg som inte stöder strukturerade scheman. Mer information finns i [Arbeta med kapslade datastrukturer i frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+Som standard använder schemat för datavyer kapslade strukturer, precis som de ursprungliga XDM-schemana. Integrationen stöder även alternativet `FLATTEN`. Du kan använda det här alternativet för att tvinga schemat för datavyer (och andra tabeller i sessionen) att förenklas. Förenkling gör det enklare att använda i BI-verktyg som inte stöder strukturerade scheman. Mer information finns i [Arbeta med kapslade datastrukturer i frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 
 ### Standardvärden och begränsningar
@@ -316,7 +316,7 @@ Följande ytterligare standardvärden och begränsningar gäller när du använd
 
 ### SQL som stöds
 
-Mer information om vilken typ av SQL som stöds finns i [SQL-referens för frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/overview).
+Mer information om vilken typ av SQL som stöds finns i [SQL-referens för frågetjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/query/sql/overview).
 
 Se tabellen nedan för exempel på den SQL du kan använda.
 

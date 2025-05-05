@@ -162,6 +162,6 @@ När du är klar med projektet och samlar in åtgärdbara insikter kan andra vil
 ## Ytterligare resurser {#resources}
 
 - Sidan [Learning landing](/help/getting-started/landing.md#learning) i Customer Journey Analytics. Den här sidan är ett bra sätt att lära känna Analysis Workspace. Speciellt om Workspace Basic. I den här mallen beskrivs vanliga termer och steg för hur du skapar din första analys i Workspace
-- Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview).
-- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
+- Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/overview).
+- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/sv/docs/release-notes/experience-cloud/current).
 

@@ -28,10 +28,10 @@ Vissa brandväggskonfigurationer blockerar domäner som Customer Journey Analyti
 
 ## Adobe Experience Cloud domäner
 
-Förutom ovanstående domäner använder Adobe Experience Cloud flera domäner för datainsamling och export av rapporter. Se [Domäner som används av Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) för den här listan över domäner.
+Förutom ovanstående domäner använder Adobe Experience Cloud flera domäner för datainsamling och export av rapporter. Se [Domäner som används av Adobe Experience Cloud](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/domains) för den här listan över domäner.
 
 >[!MORELIKETHIS]
 >
 >[IP-adresser som används av Customer Journey Analytics](ip-addresses.md)
 >
->[Domäner som används av Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)
+>[Domäner som används av Adobe Experience Cloud](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/domains)

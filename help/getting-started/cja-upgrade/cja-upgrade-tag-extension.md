@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Du kan använda taggfunktionen i Adobe Experience Platform för att implementera kod på din webbplats för att samla in data. Med tagghanteringslösningen kan ni driftsätta kod tillsammans med andra taggningskrav. Taggar är smidiga att integrera med Adobe Experience Platform via Adobe Experience Platform Web SDK.
 
-Följande information beskriver hur du lägger till tillägget Web SDK i taggen. Ytterligare information finns i [Konfigurera SDK-taggtillägget för webben](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) i Experience Platform-dokumentationen. SDK-webben innehåller [!UICONTROL Adobe Experience Cloud ID Service] internt, så du behöver inte lägga till ID-tjänsttillägget till din tagg.
+Följande information beskriver hur du lägger till tillägget Web SDK i taggen. Ytterligare information finns i [Konfigurera SDK-taggtillägget för webben](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) i Experience Platform-dokumentationen. SDK-webben innehåller [!UICONTROL Adobe Experience Cloud ID Service] internt, så du behöver inte lägga till ID-tjänsttillägget till din tagg.
 
 När du har [skapat en tagg](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md) måste du konfigurera den med tillägget Adobe Experience Platform Web SDK. Detta garanterar att du kan skicka data till Adobe Experience Platform (via din datastream).
 

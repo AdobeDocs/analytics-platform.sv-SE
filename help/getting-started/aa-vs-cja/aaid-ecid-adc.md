@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # AAID, ECID, AACUSTOMID och Analytics-källkopplingen
 
-Adobe Analytics data innehåller flera identitetsfält. Tre viktiga identitetsfält får särskild behandling av [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html): AAID, ECID, AACUSTOMID.
+Adobe Analytics data innehåller flera identitetsfält. Tre viktiga identitetsfält får särskild behandling av [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=sv-SE): AAID, ECID, AACUSTOMID.
 
 ## STÖD
 
-Adobe Analytics ID (AAID) är den primära enhetsidentifieraren i Adobe Analytics och finns garanterat för varje händelse som skickas via Analytics-källkopplingen. AAID kallas ibland för &quot;Legacy Analytics ID&quot; eller `s_vi` cookie ID. Ett AAID skapas dock även om cookien `s_vi` inte finns. AAID representeras av kolumnerna `post_visid_high/post_visid_low` i [Adobe Analytics-dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html#columns%2C-descriptions%2C-and-data-types).
+Adobe Analytics ID (AAID) är den primära enhetsidentifieraren i Adobe Analytics och finns garanterat för varje händelse som skickas via Analytics-källkopplingen. AAID kallas ibland för &quot;Legacy Analytics ID&quot; eller `s_vi` cookie ID. Ett AAID skapas dock även om cookien `s_vi` inte finns. AAID representeras av kolumnerna `post_visid_high/post_visid_low` i [Adobe Analytics-dataflöden](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=sv-SE#columns%2C-descriptions%2C-and-data-types).
 
-I Analytics-källkopplingen omvandlas AID till `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. AAID-fältet för en viss händelse innehåller en enda identitet som kan vara en av flera olika typer enligt beskrivningen i [Operationsordning för analys-ID:n](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html). (Inom en hel rapportserie kan AAID innehålla en blandning av typer för olika händelser. Typen för varje händelse anges i kolumnen `post_visid_type` i Analytics-dataflöden.) Se även: [Datakolumnreferens](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html).
+I Analytics-källkopplingen omvandlas AID till `HEX(post_visid_high) + "-" + HEX(post_visid_low)`. AAID-fältet för en viss händelse innehåller en enda identitet som kan vara en av flera olika typer enligt beskrivningen i [Operationsordning för analys-ID:n](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-order-of-operations.html?lang=sv-SE). (Inom en hel rapportserie kan AAID innehålla en blandning av typer för olika händelser. Typen för varje händelse anges i kolumnen `post_visid_type` i Analytics-dataflöden.) Se även: [Datakolumnreferens](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=sv-SE).
 
 ## ECID
 
-ECID (Experience Cloud-ID), som ibland kallas MCID (Marketing Cloud-ID), är ett separat enhetsidentifieringsfält som fylls i i Adobe Analytics när Analytics implementeras med [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html). ECID representeras av kolumnen `mcvisid` i Adobe Analytics-dataflöden.
+ECID (Experience Cloud-ID), som ibland kallas MCID (Marketing Cloud-ID), är ett separat enhetsidentifieringsfält som fylls i i Adobe Analytics när Analytics implementeras med [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=sv-SE). ECID representeras av kolumnen `mcvisid` i Adobe Analytics-dataflöden.
 
-Om det finns ett ECID för en händelse kan AAID baseras på ECID, beroende på om [respitperioden](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html) för Analytics har konfigurerats. Se även: [Analytics och Experience Cloud ID Requests](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html).
+Om det finns ett ECID för en händelse kan AAID baseras på ECID, beroende på om [respitperioden](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=sv-SE) för Analytics har konfigurerats. Se även: [Analytics och Experience Cloud ID Requests](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=sv-SE).
 
 ## AACUSTOMID
 

@@ -24,7 +24,7 @@ Med varningar kan du:
 * Skapa&quot;staplade&quot; aviseringar som fångar in flera mätvärden i en enda avisering
 * Bygg aviseringar baserade på avvikelser (tröskelvärdena 90 %, 95 %, 99 %, 99,75 % och 99,9 %, % förändring, över/under) (endast tillgängligt för Customer Journey Analytics-kunder med något av paketen Select, Prime eller Ultimate)
 
-I följande videofilm visas en grundläggande översikt över aviseringar: [Varningar](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
+I följande videofilm visas en grundläggande översikt över aviseringar: [Varningar](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=sv-SE) (5:34)
 
 ## Förstå hur varningar skiljer sig
 

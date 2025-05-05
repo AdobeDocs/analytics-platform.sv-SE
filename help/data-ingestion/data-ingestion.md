@@ -20,7 +20,7 @@ Det finns flera sätt att importera data till Customer Journey Analytics. Vissa 
 >
 >I alla scenarier är de data som du vill _använda_ i Customer Journey Analytics faktiskt _inkapslade_ i Adobe Experience Platform.
 
-Se Customer Journey Analytics-arkitekturen på hög nivå som visades tidigare i [Översikt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html):
+Se Customer Journey Analytics-arkitekturen på hög nivå som visades tidigare i [Översikt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE):
 
 ![Customer Journey Analytics-arkitektur som beskrivs i det här avsnittet](./assets/cja-architecture.png)
 
@@ -95,7 +95,7 @@ Mer information finns i [Importera och använda strömmande data](./streaming.md
 
 ## Importera och använda data med hjälp av källkopplingar
 
-Du har data tillgängliga från en källa som stöds av en källkoppling. Source-anslutningar är konfigurerbara så att du kan importera data från Adobe, program från första part och program från tredje part till Adobe Experience Platform. Se [Översikt över Source-anslutningar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) för en översikt över tillgängliga källanslutningar. Med källkopplingen kan du enkelt importera data från källan till Adobe Experience Platform och sedan använda, kombinera och analysera dem med data från andra kanaler och datakällor i Customer Journey Analytics.
+Du har data tillgängliga från en källa som stöds av en källkoppling. Source-anslutningar är konfigurerbara så att du kan importera data från Adobe, program från första part och program från tredje part till Adobe Experience Platform. Se [Översikt över Source-anslutningar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=sv-SE) för en översikt över tillgängliga källanslutningar. Med källkopplingen kan du enkelt importera data från källan till Adobe Experience Platform och sedan använda, kombinera och analysera dem med data från andra kanaler och datakällor i Customer Journey Analytics.
 
 Mer information finns i [Importera och använda data med hjälp av källanslutningar](./sources.md).
 

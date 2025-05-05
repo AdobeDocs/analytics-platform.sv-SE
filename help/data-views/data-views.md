@@ -64,8 +64,8 @@ Med datavyer kan du ändra inställningar för schemaelement spontant utan att b
 ## Krav för datavyer {#prerequisites}
 
 * Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar till Experience Platform datamängder](/help/connections/create-connection.md).
-* Om du vill skapa eller hantera en datavy behöver du en [uppsättning behörigheter i Adobe Admin Console](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview).
-* Om du använder [Adobe Analytics-källkopplingen](/help/data-ingestion/analytics.md) eller har bakgrundskunskap om Adobe Analytics, kanske du vill förstå hur fält i dina scheman och datamängder relaterar till Adobe Analytics-motsvarigheter. Mer information finns i [Mappningar av analysfält](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics).
+* Om du vill skapa eller hantera en datavy behöver du en [uppsättning behörigheter i Adobe Admin Console](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview).
+* Om du använder [Adobe Analytics-källkopplingen](/help/data-ingestion/analytics.md) eller har bakgrundskunskap om Adobe Analytics, kanske du vill förstå hur fält i dina scheman och datamängder relaterar till Adobe Analytics-motsvarigheter. Mer information finns i [Mappningar av analysfält](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics).
 
 ## Datavy settings you can override in Workspace {#settings-override}
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 När ni antar Customer Journey Analytics kan det finnas vissa skillnader i data mellan Adobe Analytics och Customer Journey Analytics. Detta är normalt och kan inträffa av flera orsaker. Customer Journey Analytics är utformat för att du ska kunna förbättra vissa begränsningar av dina data i AA. Oväntade och oavsiktliga avvikelser kan dock förekomma. Den här artikeln är utformad för att hjälpa dig att diagnostisera och lösa de skillnaderna så att du och ditt team kan använda Customer Journey Analytics utan hinder av dataintegritetsfrågor.
 
-Låt oss anta att du importerade Adobe Analytics-data till Adobe Experience Platform via [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) och sedan skapade en Customer Journey Analytics-anslutning med den här datauppsättningen.
+Låt oss anta att du importerade Adobe Analytics-data till Adobe Experience Platform via [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=sv-SE) och sedan skapade en Customer Journey Analytics-anslutning med den här datauppsättningen.
 
 ![Dataflödet från Adobe Analytics via dataanslutningen till Adobe Experience Platform och till kundreseanalys med CJA-anslutningar.](assets/compare.png)
 
@@ -33,7 +33,7 @@ Här följer några steg för att jämföra dina ursprungliga Adobe Analytics-da
 
 ## Steg 1: Kör förekomstmåttet i Adobe Analytics
 
-Måttet [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html) visar antalet träffar där en given dimension angavs eller beständig.
+Måttet [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=sv-SE) visar antalet träffar där en given dimension angavs eller beständig.
 
 1. I Analytics > [!UICONTROL Workspace] drar du datumintervallet som du vill rapportera som en dimension till en [!UICONTROL Freeform]-tabell.
 
@@ -51,7 +51,7 @@ Totalt antal poster efter tidsstämplar bör matcha med förekomster, förutsatt
 >
 >Detta fungerar endast för vanliga datamängder med mellanvärden, inte sammanfogade datamängder (via [Stitching](/help/stitching/overview.md)). Observera att redovisning av det person-ID som används i Customer Journey Analytics är avgörande för att jämförelsen ska fungera. Det är kanske inte alltid lätt att återskapa i Adobe Analytics, särskilt om du har aktiverat funktionen för att markera alternativet.
 
-1. Kör följande [!UICONTROL Total Records by timestamps]-fråga i Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html):
+1. Kör följande [!UICONTROL Total Records by timestamps]-fråga i Adobe Experience Platform [Query Services](https://experienceleague.adobe.com/docs/experience-platform/query/best-practices/adobe-analytics.html?lang=sv-SE):
 
    ```sql
    SELECT
@@ -66,9 +66,9 @@ Totalt antal poster efter tidsstämplar bör matcha med förekomster, förutsatt
    ORDER BY Day; 
    ```
 
-1. I [Analysdatafeeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html) kan du utifrån rådata identifiera om vissa rader kan ha filtrerats bort av Analytics Source-kopplingen.
+1. I [Analysdatafeeds](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=sv-SE) kan du utifrån rådata identifiera om vissa rader kan ha filtrerats bort av Analytics Source-kopplingen.
 
-   Source-kopplingen [Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html) kan filtrera vissa rader under omvandlingen till XDM-schemat. Det kan finnas flera orsaker till att hela raden inte kan omformas. Om något av följande Analytics-fält har dessa värden kommer hela raden att filtreras bort.
+   Source-kopplingen [Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=sv-SE) kan filtrera vissa rader under omvandlingen till XDM-schemat. Det kan finnas flera orsaker till att hela raden inte kan omformas. Om något av följande Analytics-fält har dessa värden kommer hela raden att filtreras bort.
 
    | Analysfält | Värden som gör att en rad tas bort |
    | --- | --- |
@@ -79,7 +79,7 @@ Totalt antal poster efter tidsstämplar bör matcha med förekomster, förutsatt
    | Hit_source | 0, 3, 5, 7, 8, 9, 10 |
    | Page_event | 53, 63 |
 
-   Mer information om hit\_source finns i: [Datakolumnreferens](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html). Mer information om page\_event finns i: [Sökning efter sidhändelser](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html).
+   Mer information om hit\_source finns i: [Datakolumnreferens](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=sv-SE). Mer information om page\_event finns i: [Sökning efter sidhändelser](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-page-event.html?lang=sv-SE).
 
 1. Om kopplingens filtrerade rader tar du bort de raderna från måttet [!UICONTROL Occurrences]. Resultatet ska matcha antalet händelser i Adobe Experience Platform datamängder.
 

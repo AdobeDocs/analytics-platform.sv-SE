@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Kundhanterade nycklar
 
-Adobe Customer Journey Analytics ger kunderna möjlighet att använda kundhanterade nycklar (CMK) för data från Customer Journey Analytics för [Vårdsköld](https://www.adobe.com/trust/compliance/hipaa-ready.html) och Privacy &amp; Security Shield. Observera att den här processen är skild från [Adobe Experience Platform CMK-inställningen](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys/overview). Kundhanterade nycklar är bara tillgängliga för organisationer som har köpt tilläggserbjudandet [Healthcare Shield eller Privacy &amp; Security Shield](https://experienceleague.adobe.com/en/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield) .
+Adobe Customer Journey Analytics ger kunderna möjlighet att använda kundhanterade nycklar (CMK) för data från Customer Journey Analytics för [Vårdsköld](https://www.adobe.com/trust/compliance/hipaa-ready.html) och Privacy &amp; Security Shield. Observera att den här processen är skild från [Adobe Experience Platform CMK-inställningen](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys/overview). Kundhanterade nycklar är bara tillgängliga för organisationer som har köpt tilläggserbjudandet [Healthcare Shield eller Privacy &amp; Security Shield](https://experienceleague.adobe.com/sv/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield) .
 
 ## Ställ in kundhanterade nycklar för Customer Journey Analytics på Azure
 
@@ -32,12 +32,12 @@ Följ de här stegen för att konfigurera CMK för Customer Journey Analytics so
 
 1. Adobe kundtjänst bekräftar att CMK-programmet har slutförts på dina Customer Journey Analytics-data.
 
-Alla data som används av Platform krypteras under överföring och i vila för att skydda dina data, med eller utan kundhanterade nycklar. Mer information om Adobe Experience Platform-kryptering finns i [Datakryptering i Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption).
+Alla data som används av Platform krypteras under överföring och i vila för att skydda dina data, med eller utan kundhanterade nycklar. Mer information om Adobe Experience Platform-kryptering finns i [Datakryptering i Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/governance-privacy-security/encryption).
 
 ## Ställ in kundhanterade nycklar för Customer Journey Analytics på Amazon Web Services
 
 >[!AVAILABILITY]
 >
->Detta avsnitt gäller för implementeringar av Experience Platform som körs på Amazon Web Services (AWS). Experience Platform som körs på AWS är för närvarande tillgängligt för ett begränsat antal kunder. Mer information om den Experience Platform-infrastruktur som stöds finns i [Översikt över flera moln i Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/multi-cloud).
+>Detta avsnitt gäller för implementeringar av Experience Platform som körs på Amazon Web Services (AWS). Experience Platform som körs på AWS är för närvarande tillgängligt för ett begränsat antal kunder. Mer information om den Experience Platform-infrastruktur som stöds finns i [Översikt över flera moln i Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/multi-cloud).
 
 Om din organisation använder Adobe Experience Platform som körs på Amazon Web Services är CMK redan konfigurerat för dig. Ingen ytterligare konfiguration behövs.

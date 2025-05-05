@@ -117,7 +117,7 @@ Så här konfigurerar du ditt schema:
 
    Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
-   Mer information finns i [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile).
+   Mer information finns i [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE#profile).
 
    >[!IMPORTANT]
    >
@@ -129,7 +129,7 @@ Så här konfigurerar du ditt schema:
 
 Du har skapat ett minimalt schema som modellerar de lojalitetsdata som du kan importera till Adobe Experience Platform. Schemat gör att profiler kan identifieras med e-postadressen. Genom att aktivera schemat för profilen ser du till att data från din strömningskälla läggs till i kundprofilen i realtid.
 
-Mer information om hur du lägger till och tar bort fältgrupper och enskilda fält i ett schema finns i [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html).
+Mer information om hur du lägger till och tar bort fältgrupper och enskilda fält i ett schema finns i [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE).
 
 ### Konfigurera en datauppsättning
 
@@ -165,7 +165,7 @@ Så här konfigurerar du datauppsättningen:
 
    ![Aktivera schema för profilen](./assets/loyalty-dataset-profile.png)
 
-Mer information om hur du visar, förhandsgranskar, skapar och tar bort en datauppsättning finns i [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html). Och hur man aktiverar en datauppsättning för kundprofil i realtid.
+Mer information om hur du visar, förhandsgranskar, skapar och tar bort en datauppsättning finns i [Användargränssnittshandbok för datauppsättningar](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=sv-SE). Och hur man aktiverar en datauppsättning för kundprofil i realtid.
 
 
 ## Konfigurera en HTTP API-direktuppspelningsanslutning
@@ -238,7 +238,7 @@ Så här skapar du en HTTP API-källkoppling:
 
 Du kan kopiera URL:en för direktuppspelningsslutpunkten och använda den för att konfigurera ditt lojalitetsprogram så att data direktuppspelas i Adobe Experience Platform lojalitetsdatauppsättning.
 
-Se [Skapa en HTTP API-direktuppspelningsanslutning med användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) för en mer utförlig självstudiekurs som förklarar:
+Se [Skapa en HTTP API-direktuppspelningsanslutning med användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=sv-SE) för en mer utförlig självstudiekurs som förklarar:
 
 - hur autentisering används,
 - hur du mappar data när dina inkommande data inte är kompatibla med ditt XDM-schema, och

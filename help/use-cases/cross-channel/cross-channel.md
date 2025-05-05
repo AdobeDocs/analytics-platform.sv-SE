@@ -29,9 +29,9 @@ Flerkanalsanalys ger en samlad bild av kundernas beteende i olika kanaler genom 
 
 ![Flöde för implementeringssteg enligt beskrivningen i det här avsnittet.](../assets/cca-architecture.png)
 
-1. [Skapa scheman](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) för data som ska importeras.
-1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html) för data som ska importeras.
-1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html):
+1. [Skapa scheman](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE) för data som ska importeras.
+1. [Skapa datauppsättningar](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=sv-SE) för data som ska importeras.
+1. [Infoga data i Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=sv-SE):
    1. Händelsebaserad ![datahändelse](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) från webbplats eller mobilapp via Edge Network- eller Analytics-källkopplingen.
    2. Profildata ![profil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (till exempel från ett CRM-system, ett callcenter-program, ett lojalitetsprogram).
    3. Uppslagsdata ![uppslag](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (t.ex. produktnamn, kategori från ett produktinformationssystem).

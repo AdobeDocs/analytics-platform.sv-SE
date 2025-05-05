@@ -96,7 +96,7 @@ Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Cha
 
 Om du vill använda segment på enskilda plattor drar du ett segment från den vänstra panelen och släpper det direkt ovanpå plattan.
 
-Om du vill använda segmentet på alla plattor i styrkortet, släpper du plattan ovanpå styrkortet. Du kan också tillämpa segment genom att markera dem på segmentmenyn under datumintervallen. Du [konfigurerar och tillämpar segment för dina styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Customer Journey Analytics Workspace.
+Om du vill använda segmentet på alla plattor i styrkortet, släpper du plattan ovanpå styrkortet. Du kan också tillämpa segment genom att markera dem på segmentmenyn under datumintervallen. Du [konfigurerar och tillämpar segment för dina styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=sv-SE) på samma sätt som i Customer Journey Analytics Workspace.
 
 ![Segmentlistruteväljare som markerar byggsegmenten](assets/segment_ui.png)
 

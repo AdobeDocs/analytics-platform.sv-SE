@@ -54,7 +54,7 @@ Om du vill använda Analytics-källkopplingen för att hämta historiska data ti
 
 ## Skapa Analytics-källkopplingen och kartfälten
 
-När du har skapat ett anpassat schema måste du skapa Adobe Analytics-källkopplingen för att kunna använda för historiska data. (Mer utförliga allmänna riktlinjer om hur du skapar en källanslutning finns i [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).)
+När du har skapat ett anpassat schema måste du skapa Adobe Analytics-källkopplingen för att kunna använda för historiska data. (Mer utförliga allmänna riktlinjer om hur du skapar en källanslutning finns i [Skapa en Adobe Analytics-källanslutning i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=sv-SE).)
 
 Så här skapar du en Adobe Analytics-källanslutning som ska användas för historiska data:
 

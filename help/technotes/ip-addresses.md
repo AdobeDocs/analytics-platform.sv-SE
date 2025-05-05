@@ -144,4 +144,4 @@ Den här sidan innehåller IP-adresser som du måste lägga till i tillåtelseli
 >
 >[Domäner som används av Customer Journey Analytics](domains.md)
 >
->[IP-adresser som används av Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)
+>[IP-adresser som används av Adobe Experience Cloud](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/ip-addresses)

@@ -32,13 +32,13 @@ Du har förmodligen redan målgrupper i RTCP som kan ha kommit från olika käll
 
 ## Steg 2: Skapa en profilunionsdatauppsättning för exporten
 
-Om du vill exportera målgruppen till en datauppsättning som till slut kan läggas till i en anslutning i Customer Journey Analytics måste du skapa en datauppsättning vars schema är en [unionsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas) för profilen.
+Om du vill exportera målgruppen till en datauppsättning som till slut kan läggas till i en anslutning i Customer Journey Analytics måste du skapa en datauppsättning vars schema är en [unionsschema](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=sv-SE#understanding-union-schemas) för profilen.
 
 Unionsscheman består av flera scheman som delar samma klass och har aktiverats för profilen. Med unionsschemat kan du se en sammanslagning av alla fält i scheman som delar samma klass. Kundprofilen i realtid använder unionsschemat för att skapa en helhetsbild av varje enskild kund.
 
 ## Steg 3: Exportera en målgrupp till profilunionens datauppsättning via API-anrop {#export}
 
-Innan du kan ta in en målgrupp i Customer Journey Analytics måste du exportera den till en Adobe Experience Platform-datauppsättning. Detta kan bara göras med segmenterings-API:t, och specifikt med [API-slutpunkten för exportjobb](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html).
+Innan du kan ta in en målgrupp i Customer Journey Analytics måste du exportera den till en Adobe Experience Platform-datauppsättning. Detta kan bara göras med segmenterings-API:t, och specifikt med [API-slutpunkten för exportjobb](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=sv-SE).
 
 Du kan skapa ett exportjobb med det målgrupps-ID du väljer och skicka resultatet i den Adobe Experience Platform-datauppsättning för profilunionen som du skapade i steg 2. Även om du kan exportera olika attribut/händelser för målgruppen behöver du bara exportera det specifika profil-ID-fält som matchar det person-ID-fält som används i den Customer Journey Analytics-anslutning som du ska använda (se steg 5 nedan).
 
@@ -89,6 +89,6 @@ Du kan nu rapportera `audienceMembershipId`, `audienceMembershipIdName` och `per
 * Du bör utföra den här processen regelbundet så att målgruppsdata uppdateras kontinuerligt i Customer Journey Analytics.
 * Du kan importera flera målgrupper inom en enda Customer Journey Analytics-anslutning. Detta gör processen ännu mer komplicerad, men det är möjligt. För att detta ska fungera måste du göra några ändringar i ovanstående process:
    1. Utför den här processen för varje målgrupp i målgruppssamlingen inom RTCP.
-   1. Customer Journey Analytics har stöd för arrayer/objektarrayer i profildatamängder. Det bästa alternativet är att använda en [array med objekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html) för audiensMembershipId eller audiensMembershipIdName.
+   1. Customer Journey Analytics har stöd för arrayer/objektarrayer i profildatamängder. Det bästa alternativet är att använda en [array med objekt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=sv-SE) för audiensMembershipId eller audiensMembershipIdName.
    1. I datavyn skapar du en ny dimension med delsträngsomformningen i fältet `audienceMembershipId` för att konvertera den kommaavgränsade värdesträngen till en array. Obs! Det finns för närvarande en gräns på 10 värden i arrayen.
    1. Du kan nu rapportera om den nya dimensionen `audienceMembershipIds` i Customer Journey Analytics Workspace.

@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Genom att utnyttja den senaste tekniken inom maskininlärning och djupinlärning under övervakning kan en företagsanvändare (marknadsförare) med personaliserad optimering definiera affärsmål och använda sina kunddata för att utbilda affärsorienterade modeller för att leverera personaliserade erbjudanden och maximera nyckeltal.
 
-1. Följ informationen i [Personlig optimeringsmodell](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) i Journey Optimizer Guide.
+1. Följ informationen i [Personlig optimeringsmodell](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/decisioning/offer-decisioning/rankings/ai-models/personalized-optimization-model) i Journey Optimizer Guide.
 
 {{upgrade-final-step}}
 

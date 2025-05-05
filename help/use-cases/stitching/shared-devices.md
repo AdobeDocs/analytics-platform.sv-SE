@@ -49,7 +49,7 @@ Stitching kan attribuera delade enhetsdata med antingen senaste-auth-attribuerin
 
 ### Senaste auktoriseringsattribuering
 
-Senaste autentiseringsattributen för all okänd aktivitet från en delad enhet till den användare som senast autentiserades. Experience Platform Identity Service bygger diagrammet baserat på den senaste autentiseringsattribueringen och används som sådan i diagrambaserade stygn. Mer information finns i [Länkningsregler för identitetsdiagram](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details).
+Senaste autentiseringsattributen för all okänd aktivitet från en delad enhet till den användare som senast autentiserades. Experience Platform Identity Service bygger diagrammet baserat på den senaste autentiseringsattribueringen och används som sådan i diagrambaserade stygn. Mer information finns i [Länkningsregler för identitetsdiagram](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details).
 
 När senaste-auth-attribuering används för sammanfogning tolkas Stitched ID:n som i tabellen nedan.
 

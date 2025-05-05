@@ -16,7 +16,7 @@ ht-degree: 1%
 
 I det här användningsexemplet beskrivs hur du använder funktionerna i härledda fält för att ange mål för en viss dimension och sedan använda dessa mål i ditt Workspace-projekt.
 
-Om du inte känner till härledda fält kan du få en introduktion i [självstudiekursen](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html) och [dokumentationen](../data-views/derived-fields/derived-fields.md) .
+Om du inte känner till härledda fält kan du få en introduktion i [självstudiekursen](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=sv-SE) och [dokumentationen](../data-views/derived-fields/derived-fields.md) .
 
 
 ## Definiera mål

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Virtuella rapportsviter, datavyer, Adobe Experience Platform-sandlådor och källkopplingen för Analytics
 
-Adobe har ett antal sätt att skapa virtuella rapportmiljöer och sandlådemiljöer. Det är praktiskt att förstå likheterna och skillnaderna mellan följande funktioner och hur dessa funktioner relaterar till [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html):
+Adobe har ett antal sätt att skapa virtuella rapportmiljöer och sandlådemiljöer. Det är praktiskt att förstå likheterna och skillnaderna mellan följande funktioner och hur dessa funktioner relaterar till [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=sv-SE):
 
 * Adobe Analytics virtuella rapportsviter
 * Customer Journey Analytics datavyer
@@ -21,7 +21,7 @@ Adobe har ett antal sätt att skapa virtuella rapportmiljöer och sandlådemilj�
 
 ## Adobe Analytics virtuella rapportsviter
 
-Mer information finns i: [Översikt över virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html).
+Mer information finns i: [Översikt över virtuella rapportsviter](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-about.html?lang=sv-SE).
 
 En virtuell rapportsvit:
 
@@ -29,9 +29,9 @@ En virtuell rapportsvit:
 * Kan tillämpas på både historiska och nya data på ett icke-förstörande sätt.
 * Med det här alternativet kan du skapa en eller flera virtuella vyer ovanpå en Adobe Analytics-rapportserie som kan användas av olika affärsteam.
 * Kan användas för att styra åtkomst till och strukturera olika typer av data för olika användare i Adobe Analytics.
-* Tillhandahåller tillvalsfunktioner för [rapporttidsbearbetning](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html) för Adobe Analytics. I det här fallet kan en virtuell rapportserie användas för att skapa en anpassad definition för&quot;besök&quot;.
+* Tillhandahåller tillvalsfunktioner för [rapporttidsbearbetning](https://experienceleague.adobe.com/docs/analytics/components/virtual-report-suites/vrs-report-time-processing.html?lang=sv-SE) för Adobe Analytics. I det här fallet kan en virtuell rapportserie användas för att skapa en anpassad definition för&quot;besök&quot;.
 * Används vid rapportkörning, ungefär som vid segmentutvärdering. Detta är _efter_ att data har samlats in och lagrats i Adobe Analytics.
-* Krävs för [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html) i Adobe Analytics.
+* Krävs för [Cross-Device Analytics](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=sv-SE) i Adobe Analytics.
 * Har tillgång till samma antal variabler som kan användas som en vanlig Analytics Report Suite (250 eVars, 250 props, 1 000 händelser), även om kurationen i den virtuella rapportsviten kan begränsa vilka variabler som exponeras för användarna.
 * Stöder anpassade kalenderalternativ.
 
@@ -44,7 +44,7 @@ En virtuell rapportsvit är inte:
 
 ## Customer Journey Analytics datavyer
 
-Mer information finns i: [Översikt över datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html).
+Mer information finns i: [Översikt över datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views.html?lang=sv-SE).
 
 En datavy:
 
@@ -81,4 +81,4 @@ En Adobe Experience Platform-sandlåda gör inte följande:
 Observera att:
 
 * Data från olika sandlådor kan inte kombineras i Customer Journey Analytics.
-* Analytics Source Connector skickar rapportsvitsdata _till_ för en specifik sandlåda. Varje rapportsvit kan konfigureras som en källa för en enskild sandlåda. Mer information finns i [dokumentationen för Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
+* Analytics Source Connector skickar rapportsvitsdata _till_ för en specifik sandlåda. Varje rapportsvit kan konfigureras som en källa för en enskild sandlåda. Mer information finns i [dokumentationen för Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=sv-SE).
