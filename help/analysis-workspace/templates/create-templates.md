@@ -57,7 +57,7 @@ Mer information om hur användare kan skapa ett projekt baserat på en mall finn
 
 Administratörer kan redigera eller ta bort företagsmallar.
 
-1. I Analysis Workspace väljer du fliken [!UICONTROL **Workspace**] och sedan **[!UICONTROL _login_company_name _-mallar]**under **[!UICONTROL Templates]**i den vänstra listen.
+1. I Analysis Workspace väljer du fliken [!UICONTROL **Workspace**] och sedan **[!UICONTROL _login_company_name _-mallar]**&#x200B;under **[!UICONTROL Templates]**&#x200B;i den vänstra listen.
 
 1. Om du visar mallar i en kolumnvy ![kolumnvisningsikon](assets/column-view-icon.png):
 

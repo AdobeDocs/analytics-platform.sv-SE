@@ -44,6 +44,6 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_Det finns för närvarande ingen kartvisualisering tillgänglig i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) om du vill ha information om visualisering av kartor i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
+_Det finns för närvarande ingen kartvisualisering tillgänglig i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) om du vill ha information om visualisering av kartor i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
 
 >[!ENDSHADEBOX]

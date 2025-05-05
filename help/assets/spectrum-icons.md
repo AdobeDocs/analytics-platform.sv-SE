@@ -17,7 +17,7 @@ ht-degree: 2%
 
 I den här tabellen visas alla spektrumikoner som är tillgängliga via konfigurationen av spektrumikoner. Använd namnet för att lägga till fragmentet i din markering och visa spektrumikonen.
 
-Titta på [Wiki-sidan](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) om det finns några uppdateringar.
+Titta på [Wiki-sidan] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) om det finns några uppdateringar.
 
 ![](https://reportbuilder.an.adobe.com/assets/AdobeAnalyticsLogo-80.png)
 

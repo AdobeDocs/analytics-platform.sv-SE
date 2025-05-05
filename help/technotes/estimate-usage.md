@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Använd [**[!UICONTROL Usage]**-gränssnittet](/help/connections/manage-connections.md#usage) för att** visa **hur inkapslade och rapportbara rader används i alla anslutningar i Customer Journey Analytics.
+>Använd [**[!UICONTROL Usage]**-gränssnittet](/help/connections/manage-connections.md#usage) för att **&#x200B; visa &#x200B;** hur inkapslade och rapportbara rader används i alla anslutningar i Customer Journey Analytics.
 
 
 

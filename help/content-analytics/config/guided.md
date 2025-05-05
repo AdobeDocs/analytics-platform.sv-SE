@@ -329,7 +329,7 @@ För en befintlig konfiguration kan du inte redigera taggegenskapen. Du kan dock
 
 När du har angett all nödvändig information visas en sammanfattning med information om de artefakter som skapas eller ändras.
 
-* En **[!UICONTROL You're almost ready to implement _konfigurationsnamn _för innehållsanalys]**visas när du implementerar en ny konfiguration.
+* En **[!UICONTROL You're almost ready to implement _konfigurationsnamn _för innehållsanalys]**&#x200B;visas när du implementerar en ny konfiguration.
 
 * För befintliga implementerade konfigurationer visas ett **[!UICONTROL You have implemented _konfigurationsnamn _för en sammanfattning av innehållsanalys]**.
 

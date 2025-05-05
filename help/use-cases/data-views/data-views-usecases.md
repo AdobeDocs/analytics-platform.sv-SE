@@ -60,7 +60,7 @@ Tidigare behandlades heltal automatiskt som mätvärden i Customer Journey Analy
 
 ## Använd numeriska mått som mått i flödesdiagram {#numeric}
 
-Du kan använda en numerisk dimension för att hämta mätvärden till din [!UICONTROL  Flow]-visualisering.
+Du kan använda en numerisk dimension för att hämta mätvärden till din [!UICONTROL &#x200B; Flow]-visualisering.
 
 1. Dra schemafältet [!UICONTROL Marketing Channels] till området [!UICONTROL Metrics] under [!UICONTROL Included components] på fliken [Komponenter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview) i datavyer.
 2. I Workspace-rapporter visar det här flödet [!UICONTROL Marketing Channels] som flödar in i [!UICONTROL Orders]:

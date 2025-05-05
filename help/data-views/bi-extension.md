@@ -66,9 +66,9 @@ Du kan använda funktionerna direkt i SQL-satser med antingen Frågeredigeraren 
 
 I Adobe Experience Platform:
 
-1. Välj **[!UICONTROL ** Frågor **]** från **[!UICONTROL ** DATAHANTERING **]** i den vänstra listen.
+1. Välj **[!UICONTROL ** Frågor **]** från **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]** i den vänstra listen.
 
-1. Välj ![Skapa fråga](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Skapa fråga **]**.
+1. Välj ![Skapa fråga](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **&#x200B; Skapa fråga &#x200B;**]**.
 
 1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
@@ -81,13 +81,13 @@ I Adobe Experience Platform:
 
 1. Söka efter och kopiera dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]**).
 
-   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
+   1. Välj **[!UICONTROL **&#x200B; Autentiseringsuppgifter &#x200B;**]** i det övre fältet.
 
    1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
-   1. Om du vill kopiera kommandosträngen använder du ![Kopiera](assets/Smock_Copy_18_N.svg) i avsnittet **[!UICONTROL ** PSQL-kommando **]**.
+   1. Om du vill kopiera kommandosträngen använder du ![Kopiera](assets/Smock_Copy_18_N.svg) i avsnittet **[!UICONTROL **&#x200B; PSQL-kommando &#x200B;**]**.
 
 1. Öppna ett kommando eller ett terminalfönster.
 
@@ -106,9 +106,9 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]**).
 
-   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
+   1. Välj **[!UICONTROL **&#x200B; Autentiseringsuppgifter &#x200B;**]** i det övre fältet.
 
    1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
@@ -116,28 +116,28 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. I Power BI:
 
-   1. I huvudfönstret väljer du **[!UICONTROL ** Hämta data **]** i det övre verktygsfältet.
+   1. I huvudfönstret väljer du **[!UICONTROL **&#x200B; Hämta data &#x200B;**]** i det övre verktygsfältet.
 
    1. Välj **[!UICONTROL More...]** i den vänstra listen.
 
-   1. På skärmen **Hämta data** söker du efter `PostgresSQL` och väljer **[!UICONTROL ** PostgresSQL-databasen **]** i listan.
+   1. På skärmen **Hämta data** söker du efter `PostgresSQL` och väljer **[!UICONTROL **&#x200B; PostgresSQL-databasen &#x200B;**]** i listan.
 
-   1. I dialogrutan **[!UICONTROL ** PostProgressSQL-databas **]**:
+   1. I dialogrutan **[!UICONTROL **&#x200B; PostProgressSQL-databas &#x200B;**]**:
 
-      1. Klistra in parametern **[!UICONTROL ** Host **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Server **]**.
+      1. Klistra in parametern **[!UICONTROL ** Host **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Server &#x200B;**]**.
 
-      1. Klistra in parametern **[!UICONTROL ** Database **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Database **]** .
+      1. Klistra in parametern **[!UICONTROL ** Database **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Database &#x200B;**]** .
 
-         Lägg till `?FLATTEN` i parametern **[!UICONTROL ** Database **]**, så den blir som `prod:cja?FLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+         Lägg till `?FLATTEN` i parametern **[!UICONTROL **&#x200B; Database &#x200B;**]**, så den blir som `prod:cja?FLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
       1. Välj **[!UICONTROL DirectQuery]** när du uppmanas till **[!UICONTROL Data Connectivity]**-läge.
 
       1. Du uppmanas att ange **[!UICONTROL Username]** och **[!UICONTROL Password]**. Använd motsvarande parametrar från Experience Platform Queries [!UICONTROL Credentials].
 
 
-   1. När inloggningen är klar visas datavytabellerna för Customer Journey Analytics i Power BI:er **[!UICONTROL ** Navigator **]**.
+   1. När inloggningen är klar visas datavytabellerna för Customer Journey Analytics i Power BI:er **[!UICONTROL **&#x200B; Navigator &#x200B;**]**.
 
-   1. Markera de datavytabeller som du vill använda och välj **[!UICONTROL ** Läs in **]**.
+   1. Markera de datavytabeller som du vill använda och välj **[!UICONTROL **&#x200B; Läs in &#x200B;**]**.
 
    Alla dimensioner och mätvärden som är kopplade till en eller flera markerade tabeller visas i den högra rutan, redo att användas i dina visualiseringar.
 
@@ -149,9 +149,9 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]**).
 
-   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
+   1. Välj **[!UICONTROL **&#x200B; Autentiseringsuppgifter &#x200B;**]** i det övre fältet.
 
    1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
@@ -159,29 +159,29 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. I Tableau Desktop:
 
-   1. Välj **[!UICONTROL ** Mer **]** från **[!UICONTROL ** Till en server **]** i den vänstra listen.
+   1. Välj **[!UICONTROL ** Mer **]** från **[!UICONTROL **&#x200B; Till en server &#x200B;**]** i den vänstra listen.
 
-   1. Välj **[!UICONTROL ** PostgresSQL **]** i listan.
+   1. Välj **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]** i listan.
 
    1. I dialogrutan [!UICONTROL PostgresSQL]:
 
-      1. Klistra in parametern **[!UICONTROL ** Host **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Server **]**.
+      1. Klistra in parametern **[!UICONTROL ** Host **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Server &#x200B;**]**.
 
-      1. Klistra in parametern **[!UICONTROL ** Port **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Port **]**.
+      1. Klistra in parametern **[!UICONTROL ** Port **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Port &#x200B;**]**.
 
-      1. Klistra in parametern **[!UICONTROL ** Database **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Database **]** .
+      1. Klistra in parametern **[!UICONTROL ** Database **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Database &#x200B;**]** .
 
-         Lägg till `%3FFLATTEN` i parametern **[!UICONTROL ** Database **]**, så den blir som `prod:cja%3FFLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+         Lägg till `%3FFLATTEN` i parametern **[!UICONTROL **&#x200B; Database &#x200B;**]**, så den blir som `prod:cja%3FFLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
-      1. Välj **[!UICONTROL ** Användarnamn och lösenord **]** i listan **[!UICONTROL ** Autentisering **]**.
+      1. Välj **[!UICONTROL ** Användarnamn och lösenord **]** i listan **[!UICONTROL **&#x200B; Autentisering &#x200B;**]**.
 
-      1. Klistra in parametern **[!UICONTROL ** Användarnamn **]** från Experience Platform-frågor [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Användarnamn **]**.
+      1. Klistra in parametern **[!UICONTROL ** Användarnamn **]** från Experience Platform-frågor [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Användarnamn &#x200B;**]**.
 
-      1. Klistra in parametern **[!UICONTROL ** Password **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Password **]** .
+      1. Klistra in parametern **[!UICONTROL ** Password **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Password &#x200B;**]** .
 
-      1. Välj **[!UICONTROL ** Logga in **]**.
+      1. Välj **[!UICONTROL **&#x200B; Logga in &#x200B;**]**.
 
-   1. Customer Journey Analytics datavyer visas som tabeller i listan **[!UICONTROL ** Tabell **]**.
+   1. Customer Journey Analytics datavyer visas som tabeller i listan **[!UICONTROL **&#x200B; Tabell &#x200B;**]**.
 
    1. Dra de tabeller som du vill använda på arbetsytan.
 
@@ -195,9 +195,9 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]**).
 
-   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
+   1. Välj **[!UICONTROL **&#x200B; Autentiseringsuppgifter &#x200B;**]** i det övre fältet.
 
    1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
@@ -222,9 +222,9 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]**).
 
-   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
+   1. Välj **[!UICONTROL **&#x200B; Autentiseringsuppgifter &#x200B;**]** i det övre fältet.
 
    1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
@@ -246,9 +246,9 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]**).
 
-   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
+   1. Välj **[!UICONTROL **&#x200B; Autentiseringsuppgifter &#x200B;**]** i det övre fältet.
 
    1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 

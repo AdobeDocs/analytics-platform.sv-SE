@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras panelen Nästa eller Föregående objekt i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Se [Nästa eller föregående objektpanel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras panelen Nästa eller Föregående objekt i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Nästa eller föregående objektpanel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/next-previous) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 

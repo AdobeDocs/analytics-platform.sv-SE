@@ -121,7 +121,7 @@ Så här anger du filtervillkor:
 
 Du kan inkludera upp till 10 villkorsobjekt.
 
-### **[!UICONTROL  Specific]**
+### **[!UICONTROL &#x200B; Specific]**
 
 Med alternativet **[!UICONTROL Specific]** kan du skapa en fast lista med dimensionsobjekt för varje dimension. Använd filtertypen **[!UICONTROL Specific]** för att ange exakt vilka dimensionsobjekt som ska inkluderas i filtret. Du kan markera objekt från en lista eller från ett cellintervall.
 

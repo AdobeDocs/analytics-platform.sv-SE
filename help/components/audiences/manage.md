@@ -80,9 +80,9 @@ Följande är vanliga åtgärder i hanteraren för schemalagda projekt. Du kan v
 
 | Ikon | Åtgärd | Beskrivning |
 |:---:|---|---|
-| ![Etiketter](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Tagga de valda målgrupperna. I dialogrutan **[!UICONTROL Update tags: *målgruppsnamn *]**väljer du taggar i listrutan eller skriver en eller flera nya taggar. Välj **[!UICONTROL Save]**att spara. |
+| ![Etiketter](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Tagga de valda målgrupperna. I dialogrutan **[!UICONTROL Update tags: *målgruppsnamn *]**&#x200B;väljer du taggar i listrutan eller skriver en eller flera nya taggar. Välj **[!UICONTROL Save]**&#x200B;att spara. |
 | ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort de valda målgrupperna. |
-| ![Redigera](/help/assets/icons/Edit.svg) | **[!UICONTROL Rename]** | Byt namn på den valda målgruppen. Använd dialogrutan **[!UICONTROL Rename: *målgruppsnamn *]**om du vill byta namn på målgruppen och välja **[!UICONTROL Save]**att spara. |
+| ![Redigera](/help/assets/icons/Edit.svg) | **[!UICONTROL Rename]** | Byt namn på den valda målgruppen. Använd dialogrutan **[!UICONTROL Rename: *målgruppsnamn *]**&#x200B;om du vill byta namn på målgruppen och välja **[!UICONTROL Save]**&#x200B;att spara. |
 
 Följande åtgärder är tillgängliga i det blå åtgärdsfältet när du väljer ett eller flera schemalagda projekt.
 

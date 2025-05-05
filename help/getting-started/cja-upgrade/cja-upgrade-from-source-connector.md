@@ -54,7 +54,7 @@ Här följer en högnivåprocess för övergång från exklusiv användning av A
 
 1. Mappa varje Adobe Analytics-dimension från Analytics-källkopplingen till dimensionen i Web SDK-schemat.
 
-   1. 
+   1. &#x200B;
       <!-- how do you get here -->
 
    1. Välj fliken **[!UICONTROL Custom]** i avsnittet **[!UICONTROL Map standard fields]**.

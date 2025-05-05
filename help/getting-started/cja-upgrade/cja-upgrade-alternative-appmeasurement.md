@@ -84,7 +84,7 @@ De grundläggande stegen för att migrera en Adobe Analytics-implementering (ant
       |----------|---------|
       | <p>Fördelarna med att använda Adobe Analytics-schemat är bland annat:</p><ul><li>Enkel uppgradering<p>Om du redan skickar data till Adobe Analytics med Adobe Experience Platform Web SDK kan du lägga till ytterligare en tjänst i ditt datastam för att skicka data till Adobe Experience Platform (som sedan kan användas i din Customer Journey Analytics-konfiguration).</p></li></ul> | <p>Nackdelar med att använda Adobe Analytics-schemat är:</p><ul><li>När du använder Adobe Analytics-schemat begränsas du inte i termer av hur det kan användas med andra plattformsprogram, men det resulterar i ett schema som är mer komplext än det annars skulle kunna vara. Detta beror på att Adobe Analytics-schemat innehåller många objekt som är specifika för Adobe Analytics och som sannolikt inte kommer att användas av din organisation.<p>När du behöver ändra schemat måste du gå igenom tusentals oanvända fält för att hitta det fält som behöver uppdateras.</p></li></ul> |
 
-+++
+      +++
 
       +++Skapa ett XDM-schema
 
@@ -92,7 +92,7 @@ De grundläggande stegen för att migrera en Adobe Analytics-implementering (ant
       |----------|---------|
       | <ul><p>Fördelarna med att uppdatera till ditt eget XDM-schema är bland annat:</p><ul><li>Ett smidigt schema som är anpassat efter organisationens behov och de plattformsspecifika program som du använder.</li><p>När du behöver ändra schemat behöver du inte gå igenom tusentals oanvända fält för att hitta det fält som behöver uppdateras.</p></ul> | <p>Nackdelar med att uppdatera till ditt eget XDM-schema:</p><ul><li>Att uppdatera schemat är en tidsödande process som krävs innan du börjar skicka data till plattformen.</li></ul> |
 
-+++
+      +++
 
    1. Använd datastream-mappning för att mappa alla fält i dataobjektet till ditt XDM-schema.
 

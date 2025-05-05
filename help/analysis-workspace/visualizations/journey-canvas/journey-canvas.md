@@ -51,7 +51,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras visualiseringen av arbetsytan på resan i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Det finns ingen motsvarande visualisering i **Adobe Analytics**._
+_I den här artikeln dokumenteras visualiseringen av arbetsytan på resan i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Det finns ingen motsvarande visualisering i **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 

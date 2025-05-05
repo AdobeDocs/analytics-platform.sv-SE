@@ -114,7 +114,7 @@ Nodarna i den här resan innehåller följande statistik när fältet **[!UICONT
 
 +++
 
-++ + Procent av totalt
++++ Procent av totalt
 
 Nodarna i den här resan innehåller följande statistik när fältet **[!UICONTROL Percentage value]** är inställt på **[!UICONTROL Percent of total]**:
 
