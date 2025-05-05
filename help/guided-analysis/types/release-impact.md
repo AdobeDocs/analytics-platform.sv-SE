@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Analysen ![Release](/help/assets/icons/Release.svg) **[!UICONTROL Release impact]** visar en jämförelse av hur nyckelindikatorer utfördes före och efter ett visst datum. Den vågräta axeln i den här rapporten är ett tidsintervall, medan den lodräta axeln mäter de önskade nyckelindikatorerna. Ett lodrätt streck mitt i diagrammet representerar det datum som du vill jämföra före och efter. Detta datum är vanligtvis en betydande ändring av den produkt som du vill mäta mot, till exempel en uppdatering av produkten eller en kampanjstart.
 
->[!VIDEO](https://video.tv.adobe.com/v/3421665/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432439/?quality=12&learn=on&captions=swe)
 
 ## Användningsexempel
 

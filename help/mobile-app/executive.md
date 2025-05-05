@@ -19,7 +19,7 @@ Följande information ger chefsanvändare information om de effektivaste strateg
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hjälpa chefer att komma åt mobilstyrkort](https://video.tv.adobe.com/v/343460/){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hjälpa chefer att komma åt mobilstyrkort](https://video.tv.adobe.com/v/3444840?captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

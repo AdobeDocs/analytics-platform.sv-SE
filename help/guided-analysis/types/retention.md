@@ -30,7 +30,7 @@ ht-degree: 0%
 
 I den här analysen representerar diagrammets x-axel tiden sedan en användares första starthändelse och y-axeln den procentandel användare som interagerar med en eller flera returhändelser. Du kan visa både kvarhållning och kurvor över varaktigheter, och varaktigheterna som visas kan anpassas med frågeinställningarna. Under diagrammet innehåller en tabell aggregerade data med alternativet att visa enskilda kohorter, som är en grupp personer som utförde starthändelsen på samma datum.
 
->[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435782/?quality=12&learn=on&captions=swe)
 
 
 ## Användningsexempel

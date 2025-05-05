@@ -41,7 +41,7 @@ Ungefär som i analysen [Aktiv](active-growth.md) definieras användare enligt f
 >
 >Upprepade användare tas inte med i beräkningen eftersom de inte representerar någon ökning eller förlust av användare.
 
->[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432442/?quality=12&learn=on&captions=swe)
 
 
 ## Användningsexempel

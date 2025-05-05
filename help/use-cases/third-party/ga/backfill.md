@@ -83,7 +83,7 @@ Navigera till **Exportera > Exportera till GCS** i Google Cloud Platform. När d
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Importera Google Analytics-data till Adobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Importera Google Analytics-data till Adobe Experience Platform](https://video.tv.adobe.com/v/3437170?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

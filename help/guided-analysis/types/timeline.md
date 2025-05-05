@@ -34,7 +34,7 @@ Med analysen ![Tidslinje](/help/assets/icons/Timeline.svg) **[!UICONTROL Timelin
 >* **Administratörer**: *Egenskapen PersonID krävs för den här analysen. Lägg till person-ID i datavyn.*
 >* **Icke-administratörer**: *Egenskapen PersonID krävs för den här analysen. Samarbeta med Customer Journey Analytics-administratören för att lägga till person-ID i datavyn.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435771/?quality=12&learn=on&captions=swe)
 
 
 

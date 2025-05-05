@@ -27,7 +27,7 @@ ht-degree: 0%
 Analysen ![Konverteringstrender](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Conversion trends]** ger en visualisering av konverteringsgraden över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421662/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432445/?quality=12&learn=on&captions=swe)
 
 
 ## Användningsexempel

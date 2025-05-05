@@ -26,7 +26,7 @@ ht-degree: 0%
 Analysen ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL First use impact]** visar en jämförelse av hur nyckelindikatorer som har utförts före och efter det att en användare använder en produktfunktion för första gången. Den vågräta axeln i den här rapporten är ett relativt tidsintervall före och efter händelsen, medan den lodräta axeln mäter de önskade nyckelindikatorerna. Ett lodrätt streck i mitten av diagrammet representerar dag 0 när en funktion först används av en viss användare. Eftersom användare inte alltid använder funktioner på samma dag och dina rollouter kan inträffa under flera dagar, kan dag 0 betyda något som skiljer sig åt för varje enskild användare.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421661/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432447/?quality=12&learn=on&captions=swe)
 
 
 ## Användningsexempel

@@ -33,7 +33,7 @@ Funktioner som pekar mot toppen av den här visualiseringen visar att de ofta an
 * Funktionerna längst ned till vänster i matrisen har **låg effekt** och används inte särskilt mycket.
 * Funktionerna längst ned till höger i matrisen är dina **engångs**-funktioner. De används ofta, men inte ofta.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447471?captions=swe)
 
 
 ## Användningsexempel
