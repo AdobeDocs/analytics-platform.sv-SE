@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
-source-git-commit: c26829d7a53e9ba8d5faf731a8a1dca2e741bf21
+source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '960'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-[Kund-AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=sv-SE), som en del av Adobe Experience Platform Intelligent Services, ger marknadsförarna möjlighet att generera kundprognoser på individnivå.
+[Kund-AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html), som en del av Adobe Experience Platform Intelligent Services, ger marknadsförarna möjlighet att generera kundprognoser på individnivå.
 
 Med hjälp av inflytelserika faktorer kan kundens AI tala om för er vad en kund kan tänkas göra och varför. Dessutom kan marknadsförarna dra nytta av kundernas AI-prognoser och insikter för att personalisera kundupplevelser genom att leverera de lämpligaste erbjudandena och budskapen.
 
-Kundens AI bygger på individuella beteendedata och profildata för benägenhetsbedömning. Kundens AI är flexibelt eftersom det kan användas i flera datakällor, bland annat Adobe Analytics, Adobe Audience Manager, data för kundupplevelsehändelser och händelsedata för upplevelsehändelser. Om du använder källkopplingen för Experience Platform för att hämta in Adobe Audience Manager- och Adobe Analytics-data, hämtar modellen automatiskt standardhändelsetyperna för att utbilda och poängsätta modellen. Om du tar med din egen Experience Event-datauppsättning utan standardhändelsetyper måste alla relevanta fält mappas som anpassade händelser eller profilattribut om du vill använda dem i modellen. Detta kan göras i kundens AI-konfigurationssteg i Experience Platform.
+Kundens AI bygger på individuella beteendedata och profildata för benägenhetsbedömning. Kundens AI är flexibelt eftersom det kan användas i flera datakällor, bland annat Adobe Analytics, Adobe Audience Manager, data för kundupplevelsehändelser och händelsedata för upplevelsehändelser. Om du använder Experience Platform källanslutning för att hämta in Adobe Audience Manager- och Adobe Analytics-data hämtar modellen automatiskt standardhändelsetyperna för att utbilda och poängsätta modellen. Om du tar med din egen Experience Event-datauppsättning utan standardhändelsetyper måste alla relevanta fält mappas som anpassade händelser eller profilattribut om du vill använda dem i modellen. Detta kan du göra i kundens AI-konfigurationssteg i Experience Platform.
 
 Kundens AI kan integreras med Customer Journey Analytics i den utsträckning som kundens AI-aktiverade datauppsättningar kan utnyttjas i datavyer och rapporter i Customer Journey Analytics. Ni kan:
 
@@ -49,11 +49,11 @@ Så här integrerar du kundens AI-data med Customer Journey Analytics:
 
 ## Steg 1: Konfigurera en AI-instans för kund
 
-När du har förberett dina data och har alla dina autentiseringsuppgifter och scheman på plats börjar du med att följa guiden [Konfigurera en AI-kundinstans](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html?lang=sv-SE) i Adobe Experience Platform.
+När du har förberett dina data och har alla dina autentiseringsuppgifter och scheman på plats börjar du med att följa guiden [Konfigurera en AI-kundinstans](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/user-guide/configure.html) i Adobe Experience Platform.
 
 ## Steg 2: Konfigurera en Customer Journey Analytics-anslutning till kundens AI-datauppsättningar
 
-I Customer Journey Analytics kan du nu [skapa en eller flera anslutningar](/help/connections/create-connection.md) till datauppsättningar från Experience Platform som har instrumenterats för kundens AI. Varje förutsägelse, som&quot;Sannolikhet att uppgradera konto&quot;, motsvarar en datauppsättning. Dessa datauppsättningar visas med prefixet&quot;Customer AI Scores in EE Format - name_of_application&quot;.
+I Customer Journey Analytics kan du nu [skapa en eller flera anslutningar](/help/connections/create-connection.md) till Experience Platform-datauppsättningar som har instrumenterats för kundens AI. Varje förutsägelse, som&quot;Sannolikhet att uppgradera konto&quot;, motsvarar en datauppsättning. Dessa datauppsättningar visas med prefixet&quot;Customer AI Scores in EE Format - name_of_application&quot;.
 
 >[!IMPORTANT]
 >
@@ -71,13 +71,13 @@ Här är ett exempel på ett XDM-schema som Customer Journey Analytics tar med s
 
 ## Steg 3: Skapa datavyer baserade på dessa anslutningar
 
-I Customer Journey Analytics kan du nu fortsätta till [skapa datavyer](/help/data-views/create-dataview.md) med de dimensioner (till exempel poäng, poängdatum, sannolikhet o.s.v.) och mätvärden som togs in som en del av anslutningen som du upprättade.
+I Customer Journey Analytics kan du nu fortsätta till [skapa datavyer](/help/data-views/create-dataview.md) med de dimensioner (till exempel poäng, poängdatum, sannolikhet och så vidare) och mått som togs med som en del av anslutningen som du upprättade.
 
-![Skapa datavy-fönster](assets/create-dataview.png)
+![Skapa datavyfönster](assets/create-dataview.png)
 
 ## Steg 4: Rapport om CAI-poäng i Workspace
 
-Skapa ett nytt projekt i Customer Journey Analytics Workspace och dra in visualiseringar.
+Skapa ett nytt projekt och dra in visualiseringar i Customer Journey Analytics Workspace.
 
 ### Betyg för trendbenägenhet
 

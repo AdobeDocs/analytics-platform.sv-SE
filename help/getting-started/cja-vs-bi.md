@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
 workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 0%
@@ -75,7 +75,7 @@ De inbyggda visualiseringskomponenterna är smarta funktioner som:
 * **Curation and Democratization**: Följande instrumentpaneler kan skapas i Customer Journey Analytics:
 
    * [Kuraterad](/help/analysis-workspace/curate-share/curate.md) till andra personer i organisationen för kontinuerlig utforskning,
-   * Exporterad till Excel med [Report Builder](/help/report-builder/report-buider-overview.md) (ett dedikerat plugin-program),
+   * Exporterad till Excel med [Report Builder](/help/report-builder/rb-overview.md) (ett dedikerat plugin-program),
    * [Delade](/help/analysis-workspace/curate-share/share-projects.md) i olika format, bland annat [PDF](/help/analysis-workspace/export/download-send.md), [CSV](/help/analysis-workspace/export/download-send.md) och via en [dedikerad mobilapp](/help/mobile-app/home.md), till dem som är intresserade av slutrapporterna och/eller visualiseringarna.
 
 Det är svårt att jämföra Customer Journey Analytics visualiseringsfunktioner med vad BI-verktyg erbjuder på grund av de många olika visualiseringar som finns. Vissa BI-verktyg har mer avancerade visualiseringar, men Customer Journey Analytics fokuserar på interaktiva och kompatibla visualiseringar av kundresan, som gör att ni kan dela upp data på bara några sekunder utan att&quot;debitera&quot; er för varje ytterligare fråga.

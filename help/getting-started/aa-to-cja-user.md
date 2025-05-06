@@ -5,7 +5,7 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
 workflow-type: tm+mt
 source-wordcount: '1427'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Mycket av det du är bekant med på rapporteringssidan har inte ändrats.
 
 * Du kan fortfarande använda kraften i [Analysis Workspace](/help/analysis-workspace/home.md) för att analysera dina data. Workspace fungerar på samma sätt som i traditionella Adobe Analytics.
 * Samma version av [Adobe Analytics-kontrollpaneler](/help/mobile-app/home.md) är tillgänglig och fungerar på liknande sätt mellan Customer Journey Analytics och Adobe Analytics.
-* [Report Builder](/help/report-builder/report-buider-overview.md) har ett nytt gränssnitt och kan köras i MS Windows, MacOS och webbversionen av Excel. (Före den här versionen av Report Builder kunde du inte använda den i Mac om du inte körde den på VMware.) Den här versionen stöder inte traditionell databegäran från AA ännu.
+* [Report Builder](/help/report-builder/rb-overview.md) har ett nytt gränssnitt och kan köras i MS Windows, MacOS och webbversionen av Excel. (Före den här versionen av Report Builder kunde du inte använda den i Mac om du inte körde den på VMware.) Den här versionen stöder inte traditionell databegäran från AA ännu.
 
 ## Ändringar i rapportering
 
@@ -36,7 +36,7 @@ Ni har tillgång till betydligt fler flerkanalsdata som kan analyseras. Du kan t
 
 Customer Journey Analytics hämtar data från Adobe Experience Platform. Med Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och kanaler och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser.
 
-Kunddata i Experience Platform lagras som datauppsättningar, som består av ett [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=sv-SE) och datagrupper. Mer information om plattformen finns i [Översikt över Adobe Experience Platform-arkitekturen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=sv-SE).
+Kunddata i Experience Platform lagras som datauppsättningar, som består av ett [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) och datagrupper. Mer information om plattformen finns i [Översikt över Adobe Experience Platform-arkitekturen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html).
 
 Din Customer Journey Analytics-administratör upprättar [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Experience Platform. De skapar sedan [datavyer](/help/data-views/data-views.md) med dessa anslutningar. Datavyer liknar konceptuellt virtuella rapportsviter och är grunden för rapportering i Customer Journey Analytics. Eftersom Experience Platform hämtar alla data för rapportering finns inte längre rapportsviterna som databehållare.
 
@@ -76,7 +76,7 @@ Med den här flexibiliteten kan du råka ut för situationer där ett enda schem
 
 ## Förändringar av segmentkonceptet
 
-Även om segment inte är tekniskt migrerade från Adobe Analytics till Customer Journey Analytics kan du använda komponentmigreringsverktyget för att återskapa dina Adobe Analytics-segment i Customer Journey Analytics. Segmenten återskapas i Customer Journey Analytics baserat på de dimensioner och mätvärden som mappas. Mer information finns i [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=sv-SE).
+Även om segment inte är tekniskt migrerade från Adobe Analytics till Customer Journey Analytics kan du använda komponentmigreringsverktyget för att återskapa dina Adobe Analytics-segment i Customer Journey Analytics. Segmenten återskapas i Customer Journey Analytics baserat på de dimensioner och mätvärden som mappas. Mer information finns i [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html).
 
 Även om du ännu inte kan dela eller publicera [!UICONTROL segments] ([!UICONTROL segments]) från [!DNL Customer Journey Analytics] till Experience Platform enhetliga profil är den här funktionen under utveckling.
 
