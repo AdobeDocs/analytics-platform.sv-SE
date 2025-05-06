@@ -26,7 +26,7 @@ Det här dokumentet fokuserar på arbetsflödet som är specifikt för implement
 
 För att implementera Customer Journey Analytics B2B edition gäller följande krav:
 
-* Du har den åtkomstkontroll och de behörigheter ](/help/technotes/access-control.md) som krävs för att tillhandahålla administrationsåtgärder i Customer Journey Analytics.[
+* Du har den åtkomstkontroll och de behörigheter [&#128279;](/help/technotes/access-control.md) som krävs för att tillhandahålla administrationsåtgärder i Customer Journey Analytics.
 * Du har köpt Customer Journey Analytics B2B edition-tilläggspaketet.
 
 
