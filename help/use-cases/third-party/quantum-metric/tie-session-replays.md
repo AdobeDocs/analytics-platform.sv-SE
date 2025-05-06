@@ -4,12 +4,10 @@ description: Länka Quantum Metric-sessionen spelas upp igen med CJA-data för a
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: fcc36457-4ce9-4c93-93e2-de03becfd5da
-source-git-commit: a03505aeb56f99b28f50819765a496705876b89c
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
@@ -22,7 +20,7 @@ Genom att länka Quantum Metric-sessionsuppspelningar till CJA-data kan kunderna
 
 I de här stegen förutsätts att du använder taggar i Adobe Experience Platform Data Collection. Du kan anpassa datainsamlingsmetoderna till en manuell implementering av Web SDK om din organisation inte använder taggar.
 
-Mer information finns i dokumentationen för [Quantum Metric-taggtillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/analytics/quantum-metric).
+Mer information finns i dokumentationen för [Quantum Metric-taggtillägget](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric).
 
 ## Steg 1: Skapa ett schemafält för kvantmetriskt sessions-ID
 
@@ -109,6 +107,8 @@ Skapa en friformstabell i Workspace och konfigurera den så att sessions-ID-vär
 1. Klicka på **[!UICONTROL Create]**.
 
 Varje sessions-ID är nu en klickbar länk. Mer information om hur du lägger till hyperlänkar i Analysis Workspace-dimensionsobjekt finns i [Skapa hyperlänkar i en frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md).
+
+![Sessionsuppspelning](assets/session-replay.png)
 
 ## Steg 5: Visa sessioner från Customer Journey Analytics
 

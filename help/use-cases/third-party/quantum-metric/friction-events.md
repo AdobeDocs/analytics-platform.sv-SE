@@ -4,12 +4,10 @@ description: Lägg in friktionshändelser från Quantum Metric i Customer Journe
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: 1b7d5159-39b2-4ba4-be64-f448ae53c70e
-source-git-commit: 11dc62cda2ceb7afabd3abd0944420601c8fa235
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -40,7 +38,7 @@ Det här användningsfallet kräver ett dedikerat schemafält att skicka data ti
 
 ## Steg 2: Fånga friktionshändelser med tillägget Quantum Metric-tagg
 
-Se [Tillägg för kvantmetrisk datatyp](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/analytics/quantum-metric) i guiden för destinationer för Adobe Experience Platform om du vill ha anvisningar om hur du ställer in dina taggar så att de inkluderar kvantmetrisk data. När du använder det här tillägget skickas fler rader till en befintlig datauppsättning.
+Se [Tillägg för kvantmetrisk datatyp](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric) i guiden för destinationer för Adobe Experience Platform om du vill ha anvisningar om hur du ställer in dina taggar så att de inkluderar kvantmetrisk data. När du använder det här tillägget skickas fler rader till en befintlig datauppsättning.
 
 Använd taggar i Adobe Experience Platform Data Collection för att manuellt ange namnet på friktionshändelsen så att den kan inkluderas i XDM-objektet och analyseras. Ett sätt att göra detta är i regelns egen kod:
 
@@ -74,6 +72,8 @@ Med händelsedata från Quantum Metric-friktionen som samlas in tillsammans med 
 1. Välj ett befintligt projekt eller skapa ett projekt.
 1. Skapa en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md).
 1. Dra önskade mått och mätvärden till Workspace Canvas för analys.
+
+![Friktionsdiagram](assets/friction-graph.png)
 
 Exempel på analysidéer är:
 

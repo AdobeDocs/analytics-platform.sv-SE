@@ -4,12 +4,10 @@ description: Bättre förstå sidnivåsengagemang och optimera sidor baserat på
 role: User, Admin
 solution: Customer Journey Analytics
 feature: Use Cases
-hidefromtoc: true
-hide: true
 exl-id: d861135f-42a4-45ac-8b11-41f151bfce92
-source-git-commit: 25a2c549c27918f80202bde4cd30e305f4a295f3
+source-git-commit: 95a107c6bbc6dce6cc43c4a1b51beeaa1fa7aff1
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -24,7 +22,7 @@ Tabellen returnerar alla sessioner i det segmentet och du kan klicka på någon 
 
 Du måste vara berättigad till Quantum Metric-paketet **UX Ops** för att komma åt Quantum Metrics heatmap-funktioner.
 
-## Steg 1: Skapa en frihandstabell i Workspace och konfigurera den så att sessions-ID-värdena är länkar direkt till kvantmätvärden.
+## Steg 1: Konfigurera länkar i Analysis Workspace
 
 1. Logga in på [experience.adobe.com](https://experience.adobe.com).
 1. Navigera till Customer Journey Analytics och välj **[!UICONTROL Workspace]** på den översta menyn.
@@ -41,6 +39,8 @@ Du måste vara berättigad till Quantum Metric-paketet **UX Ops** för att komma
 
 1. Klicka på **[!UICONTROL Create]**.
 1. Testa en av länkarna för att se om den öppnas i URL:en med tillägget Quantum Metric synligt. Länkarna öppnas på en ny flik så att ditt Workspace-projekt förblir öppet.
+
+![Heatmap](assets/heatmap.png)
 
 ## Steg 2: Visa heatmaps genom att klicka på länkar i Customer Journey Analytics
 
