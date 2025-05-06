@@ -20,7 +20,7 @@ Genom att länka Quantum Metric-sessionsuppspelningar till CJA-data kan kunderna
 
 I de här stegen förutsätts att du använder taggar i Adobe Experience Platform Data Collection. Du kan anpassa datainsamlingsmetoderna till en manuell implementering av Web SDK om din organisation inte använder taggar.
 
-Mer information finns i dokumentationen för [Quantum Metric-taggtillägget](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/analytics/quantum-metric).
+Mer information finns i dokumentationen för [Quantum Metric-taggtillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/catalog/analytics/quantum-metric).
 
 ## Steg 1: Skapa ett schemafält för kvantmetriskt sessions-ID
 
