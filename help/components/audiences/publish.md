@@ -4,9 +4,9 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2277'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 
 
-I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics till [kundprofilen i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/home) i Adobe Experience Platform för kundanpassning och personalisering.
+I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics till [kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) i Adobe Experience Platform för kundanpassning och personalisering.
 
 Läs den här [översikten](/help/components/audiences/audiences-overview.md) om du vill bekanta dig med konceptet Customer Journey Analytics målgrupper.
 
@@ -86,7 +86,7 @@ Läs den här [översikten](/help/components/audiences/audiences-overview.md) om
 1. Kontrollera målgruppskonfigurationen och välj **[!UICONTROL Publish]**.
 Du får ett bekräftelsemeddelande om att publiken publiceras. Publiceringen tar bara en minut eller två att visa för den här publiken i Experience Platform.
 
-1. Välj **[!UICONTROL View audience in AEP]** i samma meddelande så dirigeras du till [segmentgränssnittet](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/overview) i Adobe Experience Platform. Mer information finns nedan.
+1. Välj **[!UICONTROL View audience in AEP]** i samma meddelande så dirigeras du till [segmentgränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview) i Adobe Experience Platform. Mer information finns nedan.
 
 ## Audience Builder
 
@@ -116,15 +116,19 @@ Panelen Förhandsgranska data innehåller följande information.
 | **[!UICONTROL Estimated to return]** | Detta nummer ger ett uppskattat antal återkommande kunder under den tidsperiod som du valde. Det här talet beräknas med hjälp av den historiska bortfallstakten för den här målgruppen. |
 | **[!UICONTROL Preview metrics]** | Du kan välja ett specifikt mått för att se hur data för det måttet baseras på den målgrupp du anger.  Varje förhandsvisningsmått visar en summa för måttet baserat på målgruppen. Och en procentandel av målgruppsbaserade mätvärden från den totala summan av mätvärdena, enligt datavyn. Exempelvis är 381 personer (det mätvärde du valde) resultatet av din målgruppsdefinition, som är 5 % av det totala antalet personer som är tillgängliga i datavyn. Du kan välja alla mätvärden som är tillgängliga i datavyn. |
 | **[!UICONTROL Namespaces included]** | De specifika namnutrymmen som är associerade med personerna i din publik. Exempel är ECID, CRM-ID, e-postadresser osv. |
-| **[!UICONTROL Sandbox]** | Den [Experience Platform-sandlåda](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home) som den här publiken finns i. När du publicerar den här målgruppen på Platform kan du bara arbeta med målgruppen inom gränserna för den här sandlådan. |
+| **[!UICONTROL Sandbox]** | Den [Experience Platform-sandlåda](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) som den här publiken finns i. När du publicerar den här målgruppen på Platform kan du bara arbeta med målgruppen inom gränserna för den här sandlådan. |
 
 {style="table-layout:auto"}
 
 ## Vad händer när en publik har skapats och publicerats? {#after-audience-created}
 
-När du har skapat och publicerat en målgrupp i Customer Journey Analytics är målgruppen tillgänglig i Experience Platform. Ett Adobe Experience Platform-direktuppspelningssegment skapas bara om din organisation är inställd för direktuppspelningssegmentering.
+När du har skapat och publicerat en målgrupp i Customer Journey Analytics är målgruppen tillgänglig i Experience Platform och kan visas på [målportalen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal). Med målgruppen i Experience Platform kan den användas i andra Experience Platform-program, till exempel Adobe Journey Optimizer.
 
-* Publiken i Platform har samma namn och beskrivning som Customer Journey Analytics-publiken. Namnet läggs till med Customer Journey Analytics målgrupps-ID för att säkerställa att målgruppen är unik.
+Ett Adobe Experience Platform-direktuppspelningssegment skapas bara om din organisation är inställd för direktuppspelningssegmentering.
+
+Tänk på följande när du arbetar med målgrupper som publiceras från Customer Journey Analytics till Experience Platform:
+
+* Publiken i Experience Platform har samma namn och beskrivning som Customer Journey Analytics. Namnet läggs till med Customer Journey Analytics målgrupps-ID för att säkerställa att målgruppen är unik.
 * Alla ändringar som görs i namn eller beskrivning av målgruppen i Customer Journey Analytics återspeglas i Experience Platform.
 * Om en målgrupp tas bort i Customer Journey Analytics är målgruppen fortfarande tillgänglig i Experience Platform tills profilmedlemskapet för målgruppen upphör. Profilmedlemskapet upphör efter 420 dagar för en engångspublik och efter 16 dagar för återkommande målgrupper.
 
@@ -167,7 +171,7 @@ Så här visar du Customer Journey Analytics-målgrupper i Platform:
 
    * Använd sökfältet ![Sök](/help/assets/icons/Search.svg).
 
-Mer information om hur du använder publiker i plattformar finns i avsnittet [Publiker](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder) i [gränssnittshandboken för segmentbyggaren](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder) i Experience Platform-dokumentationen.
+Mer information om hur du använder publiker i plattformar finns i avsnittet [Publiker](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) i [gränssnittshandboken för segmentbyggaren](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) i Experience Platform-dokumentationen.
 
 ### Förstå skillnader i antal målgrupper
 
@@ -234,7 +238,7 @@ Customer Journey Analytics strömmar data till Real-Time Customer Data Platform 
 
 +++**Vilka identiteter skickar Customer Journey Analytics?**
 
-Vilka identitets-/namnområdespar som angavs i [anslutningsinställningen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/create-connection). Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som person-ID.
+Vilka identitets-/namnområdespar som angavs i [anslutningsinställningen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection). Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som person-ID.
 
 +++
 
