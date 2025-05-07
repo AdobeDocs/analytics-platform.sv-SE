@@ -31,7 +31,7 @@ Analysen av ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Act
 Alla aktiva användare (nya + upprepning + retur) visas som en provton ovanför den vågräta axeln, medan alla vilande användare visas i orange under den vågräta axeln.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421667/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432436/?quality=12&learn=on&captions=swe)
 
 ## Användningsexempel
 

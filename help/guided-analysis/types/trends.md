@@ -26,7 +26,7 @@ ht-degree: 0%
 Analysen ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Trends]** ger värdefull information om produktens prestanda eller användarnas beteende över tid. Den vågräta axeln i den här rapporten är ett tidsintervall, medan den lodräta axeln mäter dina önskade händelser.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3421666/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432438/?quality=12&learn=on&captions=swe)
 
 ## Användningsexempel
 
