@@ -5,9 +5,9 @@ exl-id: b632475f-371e-4156-9ffc-b138325aa120
 feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: e42f04eaa06a761803e76b64a5a16674fb4af57d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 Analysen ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Trends]** ger värdefull information om produktens prestanda eller användarnas beteende över tid. Den vågräta axeln i den här rapporten är ett tidsintervall, medan den lodräta axeln mäter dina önskade händelser.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3432438/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3421666/?quality=12&learn=on)
 
 ## Användningsexempel
 
@@ -47,7 +47,7 @@ Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL View]**: Växla mellan den här analysen och [frekvens](frequency.md).
 * **[!UICONTROL Events & Metrics]**: De händelser eller mått som du vill mäta. Varje markering representeras som en diagramserie och tabellrad. Det går inte att kombinera händelser och mätvärden i frågan. När du har gjort ditt första val måste de återstående frågevalen vara av samma typ. Du kan ta med upp till fem markeringar.
-* **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är Händelser, Sessioner, Användare, Procent användare, Händelser per session och Händelser per användare. Räknat som alternativ kan endast användas för händelsefrågor och tas bort för metriska frågor.
+* **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. <ul><li>**[!UICONTROL Options]** omfattar [!UICONTROL Users], [!UICONTROL Events], [!UICONTROL Sessions], [!UICONTROL Percentage of users], [!UICONTROL Events per session] och [!UICONTROL Events per user].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Additional **[!UICONTROL B2B options]** är tillgängligt för Customer Journey Analytics B2B edition: [!UICONTROL Global accounts], [!UICONTROL Accounts], [!UICONTROL Buying groups], [!UICONTROL Opportunities], [!UICONTROL Percentage of global accounts], [!UICONTROL Percentage of accounts], [!UICONTROL Percentage of buying groups], [!UICONTROL Percentage of opportunities], [!UICONTROL Events per global account], [!UICONTROL Events per account], [!UICONTROL Events per buying group] och [!UICONTROL Events per opportunity].</li></ul>Räknat som alternativ kan endast användas för händelsefrågor och tas bort för metriska frågor.
 * **[!UICONTROL Segments]**: Segmenten som du vill mäta. Varje markerat segment dubblerar antalet diagramserier och tabellrader. Du kan inkludera upp till fem segment.
 * **[!UICONTROL Breakdown property]**: Delar upp diagramserien och tabellraderna med värdena för den valda egenskapen. En enda uppdelningsegenskap stöds. De översta 20 värdena visas i tabellen och upp till tio värden kan visas i diagrammet. Du kan dölja eller visa en rad i diagrammet genom att växla ikonen ![Visa/dölj](../assets/hide-in-chart.png) .
 

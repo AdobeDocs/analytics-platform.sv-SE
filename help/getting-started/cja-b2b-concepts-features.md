@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 326a82e93c0c8d57db224023ed5f3a7ab94a8997
+source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ I Customer Journey Analytics B2B edition kan du välja mellan en personbaserad a
 
 ## Behållare
 
-I Customer Journey Analytics genereras behållare som en del av konfigurationen av en anslutning och datavy. Behållare lagrar bara identifierare för att underlätta snabb och prestandaexekvering av funktioner som segmentering, uppdelningar med mera.
+I Customer Journey Analytics genereras behållare som en del av konfigurationen av en anslutning och datavy. Behållare lagrar grupper av identifierare för att underlätta snabb och prestandakörning av funktioner som segmentering, uppdelningar med mera.
 
 ### Standardbehållare
 
@@ -67,6 +67,24 @@ Hierarkin och relationerna mellan behållarna är förbestämda. Affärsmöjligh
 
 ## Datauppsättningar
 
+Customer Journey Analytics B2B skiljer mellan följande datatyper och datamängder.
+
+| Datatyp | Tidsserie | Behållarposter | Fältposter |
+|---|---|---|---|
+| **Datauppsättningar** | **Händelsedatamängder**<br/> Till exempel:<ul><li>Digital analys</li><li>CRM-händelser</li><li>Personliga händelser</li><li>Data för kundtjänst</li></ul> | **Profildatauppsättningar**<br/> Exempel:<ul><li>CRM-poster</li><li>AJO B2B</li><li>CDP-poster</li><ul> | **Klasser**<br/> Exempel:<ul><li>Kampanjposter</li><li>Marknadsföringslistposter</li><li>Metadata för innehåll</li><li>Produktposter</li></ul> |
+| Krav | **Tidsstämpel**<br> Alla poster behöver:<ul><li>Konto-ID</li><li>ID för globalt konto</li><li>Person-ID</li></ul> | **Konto-ID**<br> Poster behöver ett behållar-ID, som:<ul><li>Konto</li><li>Person</li><li>Möjligheter</li><li>Buying Group</li></ul> | **Matchande nyckel**<br> Poster behöver ett ID i en behållare eller i en händelsedatamängd, som:<ul><li>Kampanj-ID</li><li>Innehålls-ID</li><li>Produkt-ID</li></ul> |
+
+{style="table-layout:fixed"}
+
+Ett exempel på en kontobaserad anslutning i Customer Journey Analytics B2B edition:
+
+![Exempel på kontobaserad anslutning](assets/b2b-datasets.svg)
+
+Customer Journey Analytics B2B edition har gränssnittet [Anslutningskarta](/help/connections/create-connection.md#connection-map) som ger dig en översikt över relationerna mellan datauppsättningar i anslutningen.
+
+
+På samma sätt som Customer Journey Analytics är händelsebaserade tidsseriedata kärnan i Customer Journey Analytics B2B edition. Den största skillnaden för en kontobaserad anslutning är att du behöver ett konto-ID för alla poster i din händelsedatamängd i stället för ett person-ID.
+
 När du konfigurerar [datauppsättningsinställningar](/help/connections/create-connection.md#dataset-settings) för din kontobaserade anslutning i Customer Journey Analytics B2B edition beror alternativen som är tillgängliga för vissa av inställningarna på [datamängdstypen](/help/connections/create-connection.md#dataset-types). Du måste till exempel:
 
 * Ange identifierare för var och en av behållarna som du har konfigurerat för dina händelsedatamängder.
@@ -79,11 +97,11 @@ Du kan definiera för varje uppslagsdatauppsättning, oavsett om du matchar data
 
 ### Matcha efter behållare
 
-Om en postdatamängd använder en matchning per behållare behandlas postdatamängden som en profildatamängdstyp och som en profildatamängd i användargränssnittet. Använd matchning efter behållare för datauppsättningar som stöder dina konfigurerade behållare. Exempel: en Buying Group-datauppsättning.
+Om en postdatamängd använder en matchning per behållare behandlas postdatamängden som en profildatamängdstyp och som en profildatamängd i användargränssnittet. Använd matchning efter behållare för datauppsättningar som innehåller behållarposter och som stöder dina konfigurerade behållare. Exempel: en Buying Group-datauppsättning.
 
 ### Matcha efter fält
 
-Om en postdatauppsättning använder en matchning per fält behandlas postdatauppsättningen som en uppslagsdatatyp och som en uppslagsdatauppsättning i användargränssnittet. Använd matchning efter fält på datauppsättningar som stöder ytterligare information via sökning Till exempel en medlemsdatamängd för marknadsföringslista eller en produktinformationsuppsättning.
+Om en postdatauppsättning använder en matchning per fält behandlas postdatauppsättningen som en uppslagsdatatyp och som en uppslagsdatauppsättning i användargränssnittet. Använd matchning efter fält på datauppsättningar som innehåller ytterligare klassificeringsinformation via sökning. Till exempel en medlemsuppsättning för marknadsföringslista eller en produktinformationsuppsättning.
 
 
 ## Rapport om person- och kontouppgifter

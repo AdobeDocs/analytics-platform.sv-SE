@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Ungefär som i analysen [Aktiv](active-growth.md) definieras användare enligt f
 >
 >Upprepade användare tas inte med i beräkningen eftersom de inte representerar någon ökning eller förlust av användare.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432442/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
 
 
 ## Användningsexempel
@@ -62,7 +62,7 @@ Med frågerefältet kan du konfigurera följande komponenter:
 
 * **[!UICONTROL View]**: Växla mellan den här analysen och [Aktiv tillväxt](active-growth.md).
 * **[!UICONTROL Events]**: Den händelse som du vill mäta. Eftersom den här analysen är användarbaserad räknas en användare som interagerar med händelsen en gång inom perioden som en aktiv användare. Du kan inkludera en händelse i en fråga.
-* **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är [!UICONTROL Number of users] och [!UICONTROL Percentage of users].
+* **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. <ul><li>**[!UICONTROL Options]** omfattar [!UICONTROL Number of users] och [!UICONTROL Percentage of users].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Ytterligare **[!UICONTROL B2B options]** är tillgängliga för Customer Journey Analytics B2B edition: [!UICONTROL Global accounts], [!UICONTROL Accounts], [!UICONTROL Buying groups], [!UICONTROL Opportunities], [!UICONTROL Percentage of global accounts], [!UICONTROL Percentage of accounts], [!UICONTROL Percentage of buying groups] och [!UICONTROL Percentage of opportunities].</li></ul>
 * **[!UICONTROL Segments]**: Det segment som du vill mäta. Du kan inkludera ett segment i en fråga.
 
 ### Tidsjämförelse
