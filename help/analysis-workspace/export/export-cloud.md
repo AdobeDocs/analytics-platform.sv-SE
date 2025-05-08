@@ -5,7 +5,7 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 158d75f81490edca2b5219a9b3ede2fbcdcc5901
+source-git-commit: 0fb04c116864f50b396ffbd1f22e2d6dad3da983
 workflow-type: tm+mt
 source-wordcount: '2285'
 ht-degree: 1%
@@ -123,7 +123,7 @@ En manifestfil med filnamnet `cja-export-{reportInstanceId}-{idx}.json.gz` ingå
 
 <!-- add in  what the file name, structure, and file format will be -->
 
-## Fördelar med att exportera till molnet
+## Fördelar med att exportera till molnet {#advantages}
 
 Genom att exportera Customer Journey Analytics-data till molnet kan du:
 
@@ -217,7 +217,7 @@ Om en attribueringsmodell som inte är standard används i en rapport ignoreras 
   >
   >Flerdimensionella rapporter stöds bara när data exporteras till molnet, vilket beskrivs i den här artikeln.
 
-## Jämförelse av fullständig tabellexport (i Customer Journey Analytics) till Data Warehouse (i Adobe Analytics)
+## Jämförelse av fullständig tabellexport (i Customer Journey Analytics) till Data Warehouse (i Adobe Analytics) {#comparison}
 
 Om du tidigare använde Data Warehouse för att exportera Adobe Analytics-data kan följande tabell hjälpa dig att förstå skillnaden mellan att exportera fullständiga tabeller i Customer Journey Analytics och att exportera data med Data Warehouse i Adobe Analytics.
 
