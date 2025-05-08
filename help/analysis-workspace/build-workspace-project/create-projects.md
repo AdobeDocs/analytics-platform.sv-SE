@@ -4,7 +4,7 @@ title: Skapa projekt
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 191693bc970fcf59ee51706365abde0ee30e3d3d
+source-git-commit: de0b51096c772ceb180e759b2dd992e3cf2a009d
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 2%
@@ -12,15 +12,6 @@ ht-degree: 2%
 ---
 
 # Skapa projekt {#create-projects}
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_project_countrepeatinstances"
->title="Antal upprepande instanser"
->abstract="Anger om upprepade instanser räknas i rapporter.<br/><br/>Obs! Den här inställningen gäller inte för visualiseringar av flöde och utfall."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Med [Projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md) i Analysis Workspace kan du skapa och visa affärskritiska analyser.  Dessa analyser kan delas med intressenter inom eller utanför organisationen.
@@ -56,23 +47,21 @@ Nu när du har skapat ett tomt Workspace-projekt måste du känna till användar
 
 ## Projektinformation och inställningar {#project-info-settings}
 
-<!-- markdownlint-disable MD034 -->
+>[!CONTEXTUALHELP]
+>id="workspace_project_countrepeatinstances"
+>title="Antal upprepande instanser"
+>abstract="Anger om upprepade instanser räknas i rapporter.<br/><br/>Obs! Den här inställningen gäller inte för visualiseringar av flöde och utfall."
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_repeatinstances"
 >title="Antal upprepande instanser"
 >abstract="Anger om upprepade instanser räknas i rapporter.<br/>Obs! Den här inställningen gäller inte för visualiseringar av flöde och utfall."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_commenting"
 >title="Tillåt kommentarer"
 >abstract="När det här alternativet är aktiverat finns det ett kommentarsområde till höger om projektet i Analysis Workspace."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Projektinställningar innehåller information på projektnivå om det aktiva projektet.
