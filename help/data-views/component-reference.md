@@ -61,7 +61,7 @@ Valfria standardkomponenter finns under **[!UICONTROL Data views]** > **[!UICONT
 | [!UICONTROL Day of Week] | Tidsdelningsdimension | Måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag |
 | [!UICONTROL Day of Year] | Tidsdelningsdimension | 1-366 |
 | [!UICONTROL Hour of Day] | Tidsdelningsdimension | 0-23 |
-| [!UICONTROL  Month of Year] | Tidsdelningsdimension | Januari-december |
+| [!UICONTROL &#x200B; Month of Year] | Tidsdelningsdimension | Januari-december |
 | [!UICONTROL First-time Sessions] | Mått | En persons definierade första session i rapportfönstret. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
 | [!UICONTROL Return Sessions] | Mått | Antalet sessioner som inte var en persons första session. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat) |
 | [!UICONTROL Person ID] | Dimension | Varje datamängdsschema som definieras i Experience Platform kan ha en egen uppsättning av en eller flera identiteter som är definierade och associerade med ett identitetsnamnområde. Alla dessa identiteter kan användas som person-ID. Exempel är cookie-ID, Stitched ID, User ID, Tracking Code och så vidare. Dimensionen [!UICONTROL Person ID] är grunden för att kombinera datauppsättningar och identifiera unika personer i Customer Journey Analytics.<p>Möjliga användningsområden:<ul><li>Skapa ett segment för ett specifikt person-ID-värde för att segmentera allt ända ner till användarens beteende.</li><li>Felsökning: Kontrollera att det finns data för ett specifikt cookie-ID (eller ett specifikt kund-ID).</li><li>Identifiera de användare som ringde in till ett callcenter.</li></ul> |
