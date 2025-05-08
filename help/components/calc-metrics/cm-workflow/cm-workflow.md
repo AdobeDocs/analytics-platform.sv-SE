@@ -3,9 +3,9 @@ description: Lär dig hur du skapar beräknade värden.
 title: Skapa beräknade mått
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Administratörer kan dock ge användare behörighet **[!UICONTROL Calculated Met
 
 Du kan skapa ett beräknat mått på följande sätt:
 
-![Olika sätt att skapa ett beräknat mått](assets/create-metric.png)
+![Olika sätt att skapa ett mått](assets/create-metric.png)
 
 * **A**. I huvudgränssnittet väljer du **[!UICONTROL Components]** och sedan **[!UICONTROL Calculated metrics]**. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Add]**] i [[!UICONTROL Calculated metrics] manager](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 * **B**. I ett Workspace-projekt väljer du ![Lägg till](/help/assets/icons/Add.svg) vid ![Händelse](/help/assets/icons/Event.svg) **Mätvärden** från den vänstra panelen Komponenter.
@@ -29,18 +29,15 @@ Du kan skapa ett beräknat mått på följande sätt:
 
 Om du vill definiera det nya beräknade måttet använder du verktyget [Beräknade mätvärden](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
-<!--
+Lär dig mer om hur du skapar beräknade mätvärden.
 
-Learn about the steps to take for creating calculated metrics.
-
-| Workflow Task | Description |
+| Arbetsflödesuppgift | Beskrivning |
 | --- | --- |
-| Plan Calculated Metrics | Especially for metrics that are going to be officially "approved", it makes sense to outline which calculated metrics will be widely used and how they will be defined. |
-| [Build](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) Calculated Metrics | Build and edit calculated and advanced calculated metrics for use in [!DNL Customer Journey Analytics] components. |
-| [Tag](cm-tagging.md) Calculated Metrics | Tag calculated metrics for ease of organization and sharing. See how to plan and assign tags for simple and advanced searches and organization. |
-| [Approve](cm-approving.md) Calculated Metrics | Approve calculated metrics to make them canonical. |
-| Apply Calculated Metrics | You can apply metrics directly from a report, from the Metric Selector (to access it, click [!UICONTROL Show Metrics]). |
-| Filter Calculated Metrics | In the Metric Selector, click [!UICONTROL Advanced Selection] and filter by tags, owners, and other filters (Show All, Mine, Shared With me, Favorites, and Approved.) |
-| Mark Calculated Metrics as [Favorites](cm-finding.md) | Marking metrics as favorites is another way to organize them for ease of use.|
+| Planera beräknade värden | I synnerhet för mätvärden som kommer att bli officiellt&quot;godkända&quot; är det rimligt att beskriva vilka beräknade mätvärden som kommer att användas i stor omfattning och hur de kommer att definieras. |
+| [Bygg](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) beräknade värden | Bygg och redigera beräknade och avancerade beräknade mätvärden för användning i [!DNL Customer Journey Analytics]-komponenter. |
+| [Tagg](cm-tagging.md) Beräknade mått | Märk beräknade mätvärden för enkel organisation och delning. Se hur du planerar och tilldelar taggar för enkla och avancerade sökningar och organisation. |
+| [Godkänn](cm-approving.md) beräknade värden | Godkänn beräknade värden för att göra dem kanoniska. |
+| Använd beräknade värden | Du kan använda mätvärden direkt från en rapport från mätväljaren (om du vill komma åt den klickar du på [!UICONTROL Show Metrics]). |
+| Filtrera beräknade värden | Klicka på [!UICONTROL Advanced Selection] i mätväljaren och filtrera efter taggar, ägare och andra filter (Visa alla, Min, Delad med mig, Favoriter och Godkänd). |
+| Markera beräknade mått som [Favoriter](cm-finding.md) | Att markera mätvärden som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda. |
 
--->
