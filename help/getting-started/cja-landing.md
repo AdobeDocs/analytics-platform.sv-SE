@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '737'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Med Customer Journey Analytics kan ni styra hur ni kopplar samman online- och of
 
 ## Vad är nytt?
 
-Få en glimt av de senaste förbättringarna i Customer Journey Analytics-produkten och -dokumentationen! En omfattande lista med funktioner, förbättringar och korrigeringar finns i den detaljerade [versionsinformationen](../release-notes/latest.md). Besök sidan [Dokumentationsuppdateringar](../release-notes/doc-changes.md) om du vill hålla dig uppdaterad med de senaste ändringarna.
+Få en glimt av de senaste förbättringarna i Customer Journey Analytics-produkten och -dokumentationen! En omfattande lista med funktioner, förbättringar och korrigeringar finns i den detaljerade [versionsinformationen](../release-notes/latest.md). Besök sidan [dokumentationsuppdateringar](../release-notes/doc-changes.md) om du vill hålla dig uppdaterad med de senaste dokumentationsuppdateringarna.
 
 >[!BEGINTABS]
 
@@ -29,47 +29,60 @@ Med Content Analytics kan ni snabbt och enkelt undersöka stora volymer innehål
 
 [![bild](assets/learn-more-button.svg)](/help/content-analytics/content-analytics.md)
 
+>[!TAB Händelsedjup]
+
+Händelsedjup är en ny standarddimension som ger nya sätt att mäta och bättre förstå hur händelser placeras i kundsessioner. Dimensionen Händelsedjup möjliggör detaljerad spårning och analys av var specifika händelser inträffar i det sekventiella flödet av användarinteraktioner i en session.
+
+[![bild](assets/learn-more-button.svg)](/help/components/dimensions/overview.md#standard-dimensions)
+
+
 >[!TAB Delade mått ]
 
 Gemensamma mätvärden och dimensioner utgör en central plats för att hantera mått och mätvärden som kan användas i ett valfritt antal datavyer. Dessa komponenter är särskilt användbara för organisationer som använder flera datavyer, särskilt om dessa datavyer har gemensamma gemensamma komponentinställningar.
 
 [![bild](assets/learn-more-button.svg)](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
->[!TAB AI-assistenten]
 
-AI Assistant är en konversationsupplevelse som gör det möjligt för yrkesverksamma att utföra uppgifter snabbt - oavsett om de förstår koncept, felsöker problem eller söker igenom information. Det gör det även möjligt för icke-experter att utföra expertuppgifter och ökar den övergripande kvaliteten på arbetet.
+<!--
+>[!TAB AI Assistant] 
 
-[![bild](assets/learn-more-button.svg)](/help/ai-assistant.md)
+AI Assistant is a conversational experience that allows practitioners to perform tasks at a fast pace - whether its understanding concepts, troubleshooting problems, or searching through information. It also allows non-experts to perform expert tasks and increases the overall quality of work.
 
-
->[!TAB Guidad analys]
-
-Guidad analys är nu tillgängligt direkt från Analysis Workspace, så att användare kan skapa instrumentpaneler med omfattande insikter från paneler, visualiseringar och guidade analyser.
-
-[![bild](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
+[![image](assets/learn-more-button.svg)](/help/ai-assistant.md)
 
 
->[!TAB Intelligenta bildtexter v2]
+>[!TAB Guided Analysis] 
 
-Intelligenta bildtexter stöds nu, med ytterligare gränssnittsförbättringar, för visualiseringar för [Rad](/help/analysis-workspace/visualizations/line.md) (inklusive flera rader), [Stapel](/help/analysis-workspace/visualizations/bar.md), [Vågrätt streck](/help/analysis-workspace/visualizations/horizontal-bar.md), [Område](/help/analysis-workspace/visualizations/area.md) (inklusive flera riktningslinjer), [Ring upp](/help/analysis-workspace/visualizations/donut.md), [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) och [Flöde ](/help/analysis-workspace/visualizations/c-flow/flow.md) .
+Guided Analysis is now available directly from within Analysis Workspace, enabling users to create dashboards with comprehensive insights from panels, visualizations, and guided analyses.
 
-[![bild](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
-
->[!TAB Larm]
-
-Med varningar kan du meddelas baserat på ändrade procentsatser eller specifika datapunkter. Du kan förhandsgranska hur ofta en avisering kommer att utlösas, skicka aviseringar via e-post eller SMS, skapa staplade aviseringar med mera.
-
-[![bild](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+[![image](assets/learn-more-button.svg)](/help/guided-analysis/overview.md)
 
 
->[!TAB Sammanfattningsdata]
 
-Gör att du kan hämta in tidsseriedata som inte har något person-ID. Dessa tidsseriedata kan användas för att stödja olika användningsfall, t.ex.
+>[!TAB Intelligent captions v2] 
 
-- Presentera högnivåindikatorer som en del av eller bredvid data på händelsenivå.
-- Överför mål per timme eller dag och positionera sedan dessa mål mot händelsenivåstatistik.
+Intelligent captions are now supported, with additional interface improvements, for [Line](/help/analysis-workspace/visualizations/line.md) (including multi-line), [Bar](/help/analysis-workspace/visualizations/bar.md), [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md), [Area](/help/analysis-workspace/visualizations/area.md) (including multiple Area lines), [Donut](/help/analysis-workspace/visualizations/donut.md), [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), and [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) visualizations.
 
-[![bild](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+
+>[!TAB Alerts] 
+
+Alerts allow you to be notified based on changed percentages or specific data points. You can preview how often an alert will trigger, send alerts by email or SMS, create stacked alerts, and more.
+
+[![image](assets/learn-more-button.svg)](/help/components/c-intelligent-alerts/intelligent-alerts.md)
+
+
+>[!TAB Summary data] 
+
+Allows you to bring in time-series data that does not have a person ID. This time-series data can be used to support various use cases, such as 
+
+- Presenting high-level performance indicators as part of or next to event-level data. 
+- Uploading targets or goals at an hourly or daily basis, then positioning these targets or goals against event-level metrics. 
+
+[![image](assets/learn-more-button.svg)](/help/data-views/summary-data.md)
+
+-->
 
 >[!TAB Diagrambaserad utjämning*]
 
@@ -163,7 +176,7 @@ Jämför Customer Journey Analytics med Adobe Analytics. Och hur ni får in era 
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Självstudiekurser</a> - <a href="https://helpx.adobe.com/se/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics produktbeskrivning</a> - <a href="https://helpx.adobe.com/se/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics-tillägg) produktbeskrivning</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics-API:er</a> - <a href="/help/ai-assistant.md">AI-assistenten</a>
+<a href="https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Självstudiekurser</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics produktbeskrivning</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics-tillägg) produktbeskrivning</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics-API:er</a> - <a href="/help/ai-assistant.md">AI-assistenten</a>
 </td>
 <td><strong>Datainmatning</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Översikt</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">Batch</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Källor</a> - <a href="/help/data-ingestion/serverapi.md">Server-API</a>
 </td>

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3ca1004fc1bbe3b60f32348d7da84718aef3a057
+source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
 workflow-type: tm+mt
-source-wordcount: '3995'
+source-wordcount: '5072'
 ht-degree: 0%
 
 ---
@@ -255,3 +255,44 @@ Använd följande information för att välja den visualisering som bäst passar
 | **[!UICONTROL Dataset]** | Datauppsättningens namn. |
 | **[!UICONTROL Preview: *datauppsättningsnamn *]** | Förhandsgranskar datauppsättningen för de första 10 raderna och de första 10 kolumnerna. |
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Remove]** | Du kan [ta bort en datauppsättning](/help/connections/create-connection.md#delete-a-dataset) utan att ta bort hela anslutningen. Borttagningen av en datauppsättning från en anslutning minskar kostnaderna för datainmatning och den krångliga processen att återskapa hela anslutningen och tillhörande datavyer. |
+
+## Standarddimensioner {#standard-dimensions}
+
+| Komponentnamn | Anteckningar |
+|---|---|
+| 15 minuter | Var 15:e minut som en viss händelse inträffade (avrundat nedåt). Den första dimensionsuppgiften är de första 15 minuterna i datumintervallet och den sista dimensionsuppgiften är de sista 15 minuterna i datumintervallet. |
+| 30 minuter | Var 30:e minut som en viss händelse inträffade (avrundat nedåt). Den första dimensionsuppgiften är de första 30 minuterna i datumintervallet och den sista dimensionsuppgiften är de sista 30 minuterna i datumintervallet. |
+| 5 minuter | Var femte minut som en viss händelse inträffade (avrundat nedåt). Den första dimensionsuppgiften är de första 15 minuterna i datumintervallet och den sista dimensionsuppgiften är de sista 5 minuterna i datumintervallet. |
+| [!UICONTROL Day] | Dagen då en viss händelse inträffade. Den första dimensionsartikeln är den första dagen i datumintervallet och den sista dimensionsuppgiften är den sista dagen i datumintervallet. |
+| [!UICONTROL Day of Month] | Den dag i månaden som en viss händelse inträffade. Den första dimensionsuppgiften är den första dagen i månaden i datumintervallet, och den sista dimensionsuppgiften är den sista dagen i månaden i datumintervallet. |
+| [!UICONTROL Day of Week] | Veckodagen då en viss händelse inträffade. Den första dimensionsuppgiften är den första dagen i veckan i datumintervallet, och den sista dimensionsuppgiften är den sista dagen i veckan i datumintervallet. |
+| [!UICONTROL Day of Month] | Den dag i månaden som en viss händelse inträffade. Den första dimensionsuppgiften är den första dagen i månaden i datumintervallet, och den sista dimensionsuppgiften är den sista dagen i månaden i datumintervallet. |
+| Händelsedjup | Tilldelar sekventiella numeriska värden (1, 2, 3 osv.) till varje händelseinteraktion i en session. Med den här dimensionen kan du aktivera detaljerad spårning och analys av var specifika händelser inträffar i det sekventiella flödet av användarinteraktioner i en session. Du kan spåra händelseförloppet från början till slut i en avgränsad session. Exempel: En besökare kommer till din hemsida (händelse 1, sessionsstart), använder sökfunktionen (händelse 2), visar en produktinformationssida (händelse 3), lägger till i kundvagn (händelse 4), fortsätter till kassan (händelse 5) och slutför ett köp (händelse 6, sessionsslut). Du kan använda [!UICONTROL Event depth] nu i en segmentdefinition för att segmentera data baserat på interaktionsdjup. |
+| [!UICONTROL Hour] | Den timme då en viss händelse inträffade (avrundad nedåt). Den första dimensionsartikeln är den första timmen i datumintervallet, och den sista dimensionsartikeln är den sista timmen i datumintervallet. |
+| [!UICONTROL Hour of Day] | Timmen på dagen då en viss händelse inträffade (avrundad nedåt). Den första dimensionsartikeln är den första timmen av dagen i datumintervallet, och den sista dimensionsartikeln är den sista timmen av dagen i datumintervallet. |
+| [!UICONTROL Minute] | Den minut som en viss händelse inträffade (avrundad nedåt). Den första dimensionsposten är den första minuten i datumintervallet och den sista dimensionsposten är den sista minuten i datumintervallet. |
+| [!UICONTROL Minute of Hour] | Den minut i timmen då en viss händelse inträffade (avrundad nedåt). Den första dimensionsartikeln är den första minuten av timmen i datumintervallet, och den sista dimensionsposten är den sista minuten av timmen i datumintervallet. |
+| [!UICONTROL Month] | Den månad då en viss händelse inträffade. Den första dimensionsuppgiften är den första månaden i datumintervallet och den sista dimensionsuppgiften är den sista månaden i datumintervallet. |
+| [!UICONTROL Month of Year] | Månad på året då en viss händelse inträffade. Den första dimensionsuppgiften är den första månaden på året i datumintervallet, och den sista dimensionsuppgiften är den sista månaden på året i datumintervallet. |
+| [!UICONTROL Quarter] | Det kvartal som en viss händelse inträffade. Den första dimensionsuppgiften är det första kvartalet i datumintervallet, och den sista dimensionsuppgiften är det sista kvartalet i datumintervallet. |
+| [!UICONTROL Quarter of Year] | Kvartalet på året som en viss händelse inträffade. Den första dimensionsuppgiften är årets första kvartal i datumintervallet, och den sista dimensionsuppgiften är årets sista kvartal i datumintervallet. |
+| [!UICONTROL Second] | Den andra händelsen inträffade (avrundad nedåt). Den första dimensionsuppgiften är den första sekunden i datumintervallet och den sista dimensionsuppgiften är den sista sekunden i datumintervallet. |
+| [!UICONTROL Week] | Veckan då en viss händelse inträffade. Den första dimensionsuppgiften är den första veckan i datumintervallet och den sista dimensionsuppgiften är den sista veckan i datumintervallet. |
+| [!UICONTROL Week of year] | Veckan på året som en viss händelse inträffade. Den första dimensionsuppgiften är den första veckan på året i datumintervallet, och den sista dimensionsuppgiften är den sista veckan på året i datumintervallet. |
+| [!UICONTROL Year] | Det år då en viss händelse inträffade. Den första dimensionsuppgiften är det första året i datumintervallet och den sista dimensionsuppgiften är det senaste året i datumintervallet. |
+
+
+## Standardmått {#standard-metrics}
+
+| Komponentnamn | Anteckningar |
+| --- | --- |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Accounts] | Baserat på det konto-ID som anges i en [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Buying Group] | Köpgrupperna, baserat på det inköpsgrupp-ID som anges i [!UICONTROL Connection]. |
+| [!UICONTROL Events] | Antalet rader från alla händelsedatamängder i en [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Global Accounts] | Baserat på det globala konto-ID som anges i [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Opportunities] | Affärsmöjligheterna, baserat på det säljprojekt-ID som anges i [!UICONTROL Connection]. |
+| [!UICONTROL People] | Baserat på det person-ID som anges i en [!UICONTROL Connection]. |
+| [!UICONTROL Session Ends] | Antalet händelser som var den sista händelsen i en session. På liknande sätt som [!UICONTROL Session Starts] kan den även användas i en segmentdefinition för att segmentera saker ned till den sista händelsen i varje session.<p>Den här komponenten måste inkluderas i datavyn för att följande [beräknade mått](/help/components/calc-metrics/default-calcmetrics.md) ska vara tillgängliga i Workspace: <ul><li>Sessionens sluthastighet</li></p> |
+| [!UICONTROL Session Starts] | Antalet händelser som var den första händelsen i en session. När den används i en segmentdefinition (t.ex. [!UICONTROL Session Starts] finns) segmenteras den bara till den första händelsen i varje session.<p>Den här komponenten måste inkluderas i datavyn för att följande [beräknade mått](/help/components/calc-metrics/default-calcmetrics.md) ska vara tillgängliga i Workspace: <ul><li>Starthastighet för session</li></p> |
+| [!UICONTROL Sessions] | Baserat på sessionsinställningarna i datavyn. |
+| [!UICONTROL Time Spent (seconds)] | Sammanställer tiden mellan två olika värden för en dimension.<p>Den här komponenten måste inkluderas i datavyn för att följande [beräknade mått](/help/components/calc-metrics/default-calcmetrics.md) ska vara tillgängliga i Workspace: <ul><li>Tilldelad tid per person</li><li>Tilldelad tid per session</li></p> |
