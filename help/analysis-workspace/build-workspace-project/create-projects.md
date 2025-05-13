@@ -4,9 +4,9 @@ title: Skapa projekt
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: de0b51096c772ceb180e759b2dd992e3cf2a009d
+source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '496'
 ht-degree: 2%
 
 ---
@@ -31,18 +31,18 @@ Nu när du har skapat ett tomt Workspace-projekt måste du känna till användar
 
 ![Exempelprojekt](assets/example-project.png)
 
-* Lägg till [paneler](/help/analysis-workspace/c-panels/panels.md) i ditt projekt. Till exempel ➊ **[!DNL Example Panel]**.
+* Lägg till [paneler](/help/analysis-workspace/c-panels/panels.md) i ditt projekt. Till exempel **[!DNL Example Panel]** ➊.
 
 * Lägg till [visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) på panelerna. Exempel:
-   * **[!DNL Line Graph]** [➋ ](/help/analysis-workspace/visualizations/line.md)
-   * **[!DNL Countries]** [➌ ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) i frihandstabell
+   * **[!DNL Line Graph]** [Radvisualisering ](/help/analysis-workspace/visualizations/line.md) ➋
+   * **[!DNL Countries]** [Visualisering av frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ➌
 * Lägg till [komponenter](/help/components/overview.md) i dina visualiseringar. Exempel:
-   * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md)
-   * **[!DNL People]** [mätvärde](/help/components/apply-create-metrics.md),
-   * **[!DNL Avg Order Value]** [beräknat ➏](/help/components/calc-metrics/calc-metr-overview.md)
+   * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
+   * **[!DNL People]** [metrisk](/help/components/apply-create-metrics.md) ➎
+   * **[!DNL Avg Order Value]** [beräknat mått ](/help/components/calc-metrics/calc-metr-overview.md) ➏
    * **[!DNL Mobile App Sessions]** [segment](/help/components/filters/filters-overview.md) ➐
    * **[!DNL Last Month]** [datumintervall](/help/components/date-ranges/overview.md) ➑
-   * **[!DNL Example]** [➒](/help/components/annotations/overview.md)
+   * **[!DNL Example]** [anteckning](/help/components/annotations/overview.md) ➒
 
 
 ## Projektinformation och inställningar {#project-info-settings}
@@ -81,14 +81,7 @@ Inställningarna inkluderar:
 | Visa anteckningar | Ange om anteckningar ska visas för det här projektet eller inte. |
 | [Projektfärgpalett](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Du kan ändra den kategoriska färgpalett som används i Workspace genom att välja bland färdiga paletter som har optimerats för färgblindhet, eller genom att ange en anpassad palett. Den här funktionen påverkar många saker i Workspace, bland annat de flesta visualiseringar. |
 | [Visa densitet](/help/analysis-workspace/build-workspace-project/view-density.md) | Gör att du kan se mer data på skärmen genom att minska den lodräta utfyllnaden för den vänstra panelen, frihandstabeller och kohorttabeller. |
-
-<!--
-
-Add this to the table above - exchange - for pipe: (End of April, 2025 when project commenting is GA)
-
-Allow commenting - When this option is enabled, a comments area is available in the right rail of the project in Analysis Workspace. For more information, see [Add and manage comments in projects](/help/analysis-workspace/build-workspace-project/comment-projects.md). 
-
--->
+| Tillåt kommentarer | **Obs!** Den här funktionen är i den begränsade testfasen av versionen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Customer Journey Analytics funktionsreleaser](/help/release-notes/releases.md). <p>När det här alternativet är aktiverat finns det ett kommentarsområde till höger om projektet i Analysis Workspace. Mer information finns i [Lägga till och hantera kommentarer i projekt](/help/analysis-workspace/build-workspace-project/comment-projects.md).</p> |
 
 
 

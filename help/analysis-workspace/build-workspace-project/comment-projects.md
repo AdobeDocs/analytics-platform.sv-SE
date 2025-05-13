@@ -3,10 +3,8 @@ description: Lär dig kommentera ett projekt i Analysis Workspace
 title: Lägga till och visa kommentarer i projekt
 feature: Workspace Basics
 role: User
-hide: true
-hidefromtoc: true
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: ca619cfd0c4f4329c7069e387b5b4d919a53e9fb
+source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
 workflow-type: tm+mt
 source-wordcount: '1647'
 ht-degree: 0%
@@ -14,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Lägga till och hantera kommentarer i projekt {#comment-on-projects}
+
+{{release-limited-testing}}
 
 Med kommentarerna i Analysis Workspace kan du dela insikter och ställa frågor i samband med ett Analysis Workspace-projekt. Detta kan effektivisera diskussioner om data och hålla konversationer inom ramen för de data som ska diskuteras.
 
