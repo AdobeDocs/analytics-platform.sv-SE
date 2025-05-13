@@ -3,9 +3,9 @@ title: Översikt över dimensioner
 description: Lär dig vilka dimensioner som är och hur de används i Customer Journey Analytics
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: 6cabedc5ed58dac450577fc3505be5f95b7a959d
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '235'
 ht-degree: 1%
 
 ---
@@ -45,3 +45,9 @@ När du skapar en datavy läggs följande komponenter till som standard som dime
 ## Lägg till dimensionsbeskrivningar
 
 Customer Journey Analytics-administratörer kan lägga till beskrivningar för dimensioner och andra komponenter antingen i datavyn eller direkt i Analysis Workspace. Mer information om hur du lägger till beskrivningar till dimensioner finns i [Lägg till komponentbeskrivningar](/help/components/add-component-descriptions.md).
+
+>[!MORELIKETHIS]
+>
+>[Identifiera djupare kundinsikter med händelsedjupsfunktionen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
+>
+
