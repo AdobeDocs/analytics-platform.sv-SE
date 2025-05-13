@@ -5,9 +5,9 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 0fb04c116864f50b396ffbd1f22e2d6dad3da983
+source-git-commit: 9482dd11ecf4aa6f3f8a45c90c3838a4a3389c73
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2312'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,16 @@ Använd följande process när du exporterar fullständiga tabeller till molnet:
 
 ![Hela tabellexportprocessen som beskrivs i steg 1 till 4.](assets/export-full-table-process.png)
 
-## Exportera hela tabeller från Analysis Workspace
+## Exportera hela tabeller från Analysis Workspace {#export-from-workspace}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="export-manifest"
+>title="Manifest-fil"
+>abstract="När det här alternativet är aktiverat inkluderas en manifestfil i alla slutförda exportleveranser. Manifestfilen gör att du kan bekräfta att alla filer har levererats."
+
+<!-- markdownlint-enable MD034 -->
 
 >[!NOTE]
 >
