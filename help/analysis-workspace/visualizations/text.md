@@ -4,9 +4,9 @@ title: Text
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 75d45cd6a2149bb44949ec6e0f3808ea4a6995f5
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras textvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Text](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/text) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras textvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Text](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/text) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -58,6 +58,10 @@ Om du vill lägga till en hyperlänk markerar du texten och väljer ![Länk](/he
 
 ## Lägg till bilder {#images}
 
-Om du vill lägga till en bild i projektet väljer du ![Bild](/help/assets/icons/Image.svg) på menyn och infogar en URL för en offentlig bild. Bildens URL måste vara tillgänglig för alla, börja med `https` och ha formatet `.png`, `.jpeg`, `.jpg` eller `.gif`. Statiska och animerade bilder stöds.
+Om du vill lägga till en bild i projektet väljer du ![Bild](/help/assets/icons/Image.svg) på menyn och anger en bild-URL i **[!UICONTROL Image URL]** (till exempel `https://www.adobe.com/uploads/2018/06/Adobe.png`) och väljer **[!UICONTROL Save]**.
+
+Bildens URL måste vara tillgänglig för alla, börja med `https` och ha formatet `.png`, `.jpeg`, `.jpg` eller `.gif`. Statiska och animerade bilder stöds.
+
+Tänk på att infogning av en bild genom att dra och släppa inte stöds.
 
 ![Textalternativ med bildikonen markerad.](assets/image.png)
