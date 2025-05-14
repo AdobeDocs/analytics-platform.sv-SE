@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: d0dfcce1a9ba2a2f3e55abc63116ed07a33c9411
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 {{draft-b2b}}
 
-Adobe Analytics började som ett webb- och digitalt analysverktyg för marknadsförare, medan Customer Journey Analytics breddade räckvidden till att omfatta data för flera kanaler, offline och plattformsövergripande.  Båda verktygen hjälper B2C-företag (Business to Consumer) att analysera och optimera sina marknadsföringssatsningar och kundupplevelser.
+Adobe Analytics började som ett webb- och digitalt analysverktyg för marknadsförare, medan Customer Journey Analytics breddade räckvidden till att omfatta data för flera kanaler, offline och plattformsövergripande.  Båda verktygen hjälper B2C-företag (Business to Consumer) att analysera och optimera sina marknadsföringssatsningar och kundupplevelser. Och fokusera på **personbaserad rapportering och analys**: förstå kundresan, där kunden är en person som interagerar med varumärket över flera kanaler.
 
-Vid B2B-försäljning (business-to-business) innebär köpresan flera parter, kontaktytor online och offline samt viktiga steg innan ett avtal sluts. B2B-företag måste spåra alla dessa interaktioner i en enhetlig kundresa för att effektivt kunna analysera och optimera sina marknadsföringsinsatser och kontoupplevelser.
+Customer Journey Analytics B2B edition lägger till **kontobaserad rapportering och analys**. Vid B2B-försäljning (business-to-business) innebär köpresan flera parter, kontaktytor online och offline samt viktiga steg innan ett avtal sluts. B2B-företag måste spåra alla dessa interaktioner i en enhetlig kundresa för att effektivt kunna analysera och optimera sina marknadsföringsinsatser och kontoupplevelser.
 
 Typiska B2B-försäljningsegenskaper är:
 
