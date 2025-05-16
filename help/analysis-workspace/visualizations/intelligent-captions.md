@@ -4,9 +4,9 @@ title: Intelligenta bildtexter
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: 4d566411778774d21be04c4f3d6cf2ffabed6db2
+source-git-commit: af8d4f07498211931e9549cadd4746eebb9f56f4
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '705'
 ht-degree: 0%
 
 ---
@@ -16,65 +16,10 @@ ht-degree: 0%
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_area"
->title="Intelligenta bildtexter: Område"
+>id="workspace_intelligentcaptions"
+>title="Intelligenta bildtexter"
 >abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_bar"
->title="Intelligent captions: Bar"
->abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_donut"
->title="Intelligenta bildtexter: Donut"
->abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_horizontalbar"
->title="Intelligenta bildtexter: Vågrät liggande stapel"
->abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_line"
->title="Intelligenta bildtexter: Line"
->abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_fallout"
->title="Intelligenta bildtexter: Utfall"
->abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="workspace_intelligentcaptions_flow"
->title="Intelligenta bildtexter: Flöde"
->abstract="Generera insikter i naturspråksformulär som hjälper er att enklare förstå och tolka data för den här visualiseringen."
-
-<!-- markdownlint-enable MD034 -->
 
 Funktionen för intelligenta bildtexter använder avancerad generativ AI för att ge viktiga insikter om de vanligaste Workspace-visualiseringarna på naturspråket.
 
@@ -85,7 +30,7 @@ Intelligenta bildtexter inriktas på följande:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligenta bildtexter](https://video.tv.adobe.com/v/3443142/?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligenta bildtexter](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -168,7 +113,7 @@ Du kan ge feedback på de genererade intelligenta bildtexterna (feedback kan bar
 
 ### Exportera {#export}
 
-Du kan exportera intelligenta bildtexter som en del av PDF, förutsatt att projektet sparas med de intelligenta bildtexter som skapas.
+Du kan exportera intelligenta bildtexter som en del av en PDF-fil så länge som projektet sparas med de intelligenta bildtexter som skapas.
 
 ### Växla av {#toggle}
 
@@ -184,7 +129,7 @@ Om du inte vill visa intelligenta bildtexter kan du inaktivera funktionen.
 
 ## Intelligenta bildtexter i Mobile Scorecards
 
-Intelligenta bildtexter finns också i [mobilstyrkort](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) i Customer Journey Analytics.
+Intelligenta bildtexter finns också i Customer Journey Analytics [mobilstyrkort](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions).
 
 ## Funktionsåtkomst
 
@@ -192,9 +137,9 @@ Följande parametrar styr åtkomsten till intelligenta bildtexter:
 
 * **Åtkomst till lösning**: Funktionen för intelligenta bildtexter är tillgänglig i Customer Journey Analytics, men inte i Adobe Analytics.
 
-* **Kontraktsåtkomst**: Om du inte kan använda intelligenta bildtexter kontaktar du organisationens administratör eller Adobe Account Representant (Admin). Innan du kan använda intelligenta bildtexter i din organisation måste du godkänna vissa allmänna AI-relaterade juridiska villkor.
+* **Kontraktsåtkomst**: Om du inte kan använda intelligenta bildtexter kontaktar du organisationens administratör eller kontorepresentant för Adobe (Admin). Innan du kan använda intelligenta bildtexter i din organisation måste du godkänna vissa allmänna AI-relaterade juridiska villkor.
 
-* **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Intelligent Captions]** åtkomsten. En [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console]:
+* **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Intelligent Captions]** åtkomsten. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console]:
    1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**.
    1. Välj namnet på den produktprofil som du vill ge tillgång till intelligenta bildtexter för.
    1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.
