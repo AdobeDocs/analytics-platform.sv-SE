@@ -4,11 +4,10 @@ description: Hur man validerar sammanfogning
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hide: true
-hidefromtoc: true
-source-git-commit: 7c293f2ab0f46695a53572d1231fb866a23688cd
+exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
+source-git-commit: 3b402e367d2385b336c84ef52897ab34387a948d
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1123'
 ht-degree: 0%
 
 ---
@@ -29,7 +28,7 @@ Analysmetoderna innehåller [inställningar för datavykomponenten](/help/data-v
 
 >[!NOTE]
 >
->Den här artikeln behandlar inte det övergripande värdet för en Customer Journey Analytics-konfiguration som har alla datauppsättningar i Experience Platform justerade mot samma ID-namnutrymme. Och att alla dessa datauppsättningar är väl sammanfogade för att kunna utföra analyser under hela kundresan.
+>Sammanfogning (validering av) av en eller flera datauppsättningar bidrar i slutändan till bättre analyser och insikter. I den här artikeln beskrivs emellertid inte det övergripande värdet för en Customer Journey Analytics-konfiguration som har alla datauppsättningar i Experience Platform justerade mot samma ID-namnutrymme. Och att alla dessa datauppsättningar är väl sammanfogade för att kunna utföra analyser under hela kundresan.
 
 
 ## Krav för datavy
@@ -47,7 +46,7 @@ Dessutom måste du lägga till två sammanslagningsmått som baseras på föreko
 
 1. Använd fältet som innehåller Person-ID:t från den sammanslagna datauppsättningen för att konfigurera ett mätvärde som definierar om ett Person-ID har angetts. Lägg till det här person-ID:t även om du använder diagrambaserade häftningar som person-ID:t för att skapa en baslinje. Om person-ID:t inte finns i datauppsättningen är baslinjen 0 %.
 
-   I exemplet nedan fungerar `personalEmail.address` som identitet och används för att skapa måttet **[!UICONTROL &#x200B; _Email set]**.
+   I exemplet nedan fungerar `personalEmail.address` som identitet och används för att skapa måttet **[!UICONTROL  _Email set]**.
    ![Mätvärde för e-postuppsättning](assets/emailset-metric.png)
 
 1. Använd fältet `stitchedID.namespae.code` för att skapa en **[!UICONTROL Email stitched namespace]**-dimension. Se till att du anger [Inkludera komponentinställningar för utelämna värden](/help/data-views/component-settings/include-exclude-values.md), så du bör bara ta hänsyn till värden i namnområdet som du försöker höja dataraderna till.
@@ -88,7 +87,7 @@ När du skapar en anslutning måste du definiera vilket fält eller vilken ident
 
 Du vill mäta identifieringsprestanda före och efter sammanfogning. Om du vill göra det skapar du ytterligare tre beräknade mått:
 
-1. Ett **[!UICONTROL Stitched authentication rate]** beräknat mått som beräknar antalet händelser där namnutrymmet som sammanfogats har angetts till önskad identitet över det totala antalet händelser. När du konfigurerade datavyn skapade du ett **[!UICONTROL Email stitched namespace]**-mått som innehöll ett filter som bara räknas när en händelse har ett namnutrymme som är inställt på e-post. Det beräknade måttet använder det här **[!UICONTROL Email stitched namespace]**-måttet för att ge en indikation på vilken procentandel av data som har den önskade identiteten.
+1. Ett **[!UICONTROL Stitched authentication rate]** beräknat mått som beräknar antalet händelser där namnutrymmet som sammanfogats har angetts till önskad identitet över det totala antalet händelser. När du konfigurerade datavyn skapade du ett **[!UICONTROL Email stitched namespace]**-mått som innehöll ett filter som endast skulle räknas när en händelse har ett namnutrymme som är inställt på e-post. Det beräknade måttet använder det här **[!UICONTROL Email stitched namespace]**-måttet för att ge en indikation på vilken procentandel av data som har den önskade identiteten.
    ![Beräknad autentiseringsfrekvens för statiska element ](assets/calcmetric-stitchedauthenticationrate.png)
 
 1. Ett **[!UICONTROL Percent increase]** beräknat mått som beräknar den råa procentuella ändringen mellan den aktuella identifieringsfrekvensen och den sammanslagna.

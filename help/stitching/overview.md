@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: c27d5f44243e2cda252ac6a484a70964f0999dfc
+source-git-commit: 1a697ce0372d1cb544940778850714a198a000ec
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -36,12 +36,12 @@ Customer Journey Analytics stöder två typer av sammanfogning: [fältbaserad sa
 
 Innan du använder stygn bör du kontrollera att din organisation har förberetts med följande:
 
-- Stitching inkluderar sammanfogning av autentiserade och oautentiserade användardata. Se till att du följer tillämpliga lagar och bestämmelser, inklusive att erhålla nödvändiga slutanvändarbehörigheter, innan du aktiverar sammanfogning av en händelsedatamängd. Mer information finns i [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/fields/identity).
+- Stitching inkluderar sammanfogning av autentiserade och oautentiserade användardata. Se till att du följer tillämpliga lagar och bestämmelser, inklusive att erhålla nödvändiga slutanvändarbehörigheter, innan du aktiverar sammanfogning av en händelsedatamängd. Mer information finns i [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity).
 
 - Importera önskade data till Adobe Experience Platform:
 
    - Information om Adobe Analytics finns i [Använda Adobe Analytics rapportsvitsdata i Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
-   - Andra typer av data finns i [Skapa ett schema](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/tutorials/create-schema-ui) och [Infoga data](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/home) i Adobe Experience Platform-dokumentationen.
+   - Andra typer av data finns i [Skapa ett schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui) och [Infoga data](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) i Adobe Experience Platform-dokumentationen.
 
 Du kan dra nytta av flerkanalsanalys om du kombinerar en eller flera av dina sammanfogade datauppsättningar med andra datauppsättningar, till exempel callcenter-data, som en del av arbetet med att definiera din Customer Journey Analytics-anslutning. Den här anslutningskonfigurationen förutsätter att dessa andra datauppsättningar redan innehåller ett person-ID på varje rad, som liknar det sammanfogade ID:t.
 
@@ -55,7 +55,7 @@ Du kan dra nytta av flerkanalsanalys om du kombinerar en eller flera av dina sam
 >
 >- Om du tar bort källdatauppsättningen avbryts bearbetningen av den sammanfogade datauppsättningen och tas bort av systemet.
 >
->- Dataanvändningsetiketter sprids inte automatiskt till det sammanslagna dataset-schemat. Om du har använt dataanvändningsetiketter på källdataschemat måste du använda dessa dataanvändningsetiketter manuellt på det sammanslagna dataset-schemat. Mer information finns i [Hantera dataanvändningsetiketter i Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview).
+>- Dataanvändningsetiketter sprids inte automatiskt till det sammanslagna dataset-schemat. Om du har använt dataanvändningsetiketter på källdataschemat måste du använda dessa dataanvändningsetiketter manuellt på det sammanslagna dataset-schemat. Mer information finns i [Hantera dataanvändningsetiketter i Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview).
 
 Stitching är en banbrytande och robust funktion, men har begränsningar för hur den kan användas.
 
@@ -74,5 +74,6 @@ Försäkra dig om att du inte förväxlar stygn med:
 >[Fältbaserad häftning](fbs.md)
 >[Diagrambaserad sammanfogning ](gbs.md)
 >[Använd sammanfogning](use-stitching.md)
+>[Validera sammanfogning ](validate.md)
 >[Vanliga frågor om stygn](faq.md)
 
