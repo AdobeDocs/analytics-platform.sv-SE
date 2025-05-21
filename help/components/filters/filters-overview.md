@@ -4,7 +4,7 @@ description: Förstå vilka segment som används för och hur du skapar ett enke
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters, Segments
 role: User
-source-git-commit: 85a22d1e57925f0512ce0cc658cfba1008339d91
+source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%
@@ -37,7 +37,7 @@ I synnerhet som administratör förbättrar den korrekta planeringen av segment 
 
    - När ska jag använda det här segmentet?
 
-- **Omfång**: Vilken [segmentbehållare](#filter-containers) är bäst för de data du är ute efter? Använd den minsta möjliga behållaren.
+- **Omfång**: Vilken [segmentbehållare](#segment-containers) är bäst för de data du är ute efter? Använd den minsta möjliga behållaren.
 
 - **Komponenter**: Bestäm vilka komponenter som ska inkluderas i segmentdefinitionen och mot vilka värden villkoren ska validera.
 
@@ -165,7 +165,7 @@ Händelsebehållare innehåller värdebaserade, enkelsidiga uppdelningar för:
 
 ### B2B-behållare
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 När du har tillgång till [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) finns det fler behållare som kan användas i segment. Mer information om hur du använder dessa ytterligare behållare finns i [B2B-koncept och -funktioner](/help/getting-started/cja-b2b-concepts-features.md).
 

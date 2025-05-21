@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 7c293f2ab0f46695a53572d1231fb866a23688cd
+source-git-commit: d56605b1ae7fd6d83853ad54ce823464090e0192
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1241'
 ht-degree: 10%
 
 ---
@@ -433,7 +433,13 @@ ht-degree: 10%
       + [Använd mått för marknadsföringskanal](../use-cases/aa-data/marketing-channels.md)
       + [Kombinera rapportsviter med olika scheman](../use-cases/aa-data/combine-report-suites.md)
    + B2B {#b2b}
-      + [Ett exempel på ett B2B-projekt](../use-cases/b2b/example.md)
+      + [Ett exempel på ett personbaserat B2B-projekt](../use-cases/b2b/example.md)
+      + B2B edition {#b2b-edition}
+         + [Översikt över användningsfall](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+         + [Inställningar](/help/use-cases/b2b/b2b-edition/setup.md)
+         + [Optimera kontomarknadsföring](/help/use-cases/b2b/b2b-edition/optimize-account-marketing.md)
+         + [Utöka nyckelkonton](/help/use-cases/b2b/b2b-edition/grow-key-accounts.md)
+         + [Skapa produktvärde](/help/use-cases/b2b/b2b-edition/build-product-value.md)
    + Komplexa data {#complex-data}
       + [Använda arrayer med objekt](../use-cases/object-arrays.md)
    + Flerkanalsdata {#cross-channel}

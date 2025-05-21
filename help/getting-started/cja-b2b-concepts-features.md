@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
+source-git-commit: 6bfd54148736d4b3434eac3ee3aa6fc8a838d57a
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ I Customer Journey Analytics B2B edition kan du välja mellan en personbaserad a
 
 ## Behållare
 
-I Customer Journey Analytics genereras behållare som en del av konfigurationen av en anslutning och datavy. Behållare lagrar grupper av identifierare för att underlätta snabb och prestandakörning av funktioner som segmentering, uppdelningar med mera.
+I Customer Journey Analytics genereras behållare som en del av konfigurationen av en anslutning och datavy och tillhandahåller datastruktur och omfattning. Behållare lagrar grupper av identifierare för att sekvensera alla händelsetidsstämplar med unika identifierare. Lagringsutrymmet underlättar snabb och effektiv körning av funktioner som segmentering, attribuering och visualiseringar.
 
 ### Standardbehållare
 
@@ -64,6 +64,23 @@ Hierarkin och relationerna mellan behållarna är förbestämda. Affärsmöjligh
 >
 >* Om du har **aktiverat** som global kontobehållare i en kontobaserad anslutning, ska alla poster i dina händelsedatamängder innehålla ett konto-ID och ett globalt konto-ID. Annars hoppas posten över.
 >* Om du **inte har aktiverat** som global kontobehållare i en kontobaserad anslutning, ska alla poster i dina händelsedatamängder innehålla ett konto-ID. Annars hoppas posten över.
+
+Du kan använda B2B-behållare för specifika B2B-funktioner i Analysis Workspace:
+
+* **Segmentering**: [B2B-segmentbehållare](/help/components/filters/filters-overview.md#b2b-containers) gör att du kan skapa segment med ett behållaromfång bortom person, session eller händelse. Exempel: ett konto med ett händelseregistreringssegment, eller ett amerikanskt konto med inköpsgrupper och affärssegment på stadium 5.
+
+  >[!NOTE]
+  >
+  >Data för B2B-händelser i en kontobaserad konfiguration i Customer Journey Analytics B2B edition kan innehålla datarader utan person eller session. Till exempel: en rad som innehåller information om förloppet för affärsmöjlighetsfasen. När du utvärderar ditt segment bör du tänka på att personer och sessioner kanske inte längre är rätt kriterier.
+  >
+
+* **Attribution**: Du kan använda de nya B2B-behållarna i [attribueringspanelen](/help/analysis-workspace/c-panels/attribution.md), i [attribueringskomponentsinställningarna](/help/data-views/component-settings/attribution.md), i [beräknade värden](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) eller i [kolumner i en frihandstabell](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). Kontosökningar förlängs till 13 månader.
+
+* **Visualiseringar**: [Fall out](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md), [Journey Canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) och [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) har stöd för de nya B2B-behållarna. Du kan till exempel använda de nya behållarna för att förstå hur köpgrupper konsumerar innehåll eller hur affärsmöjlighetskohorter rör sig mot slutet av en försäljning.
+Du kan också ange standardbehållaren för den här visualiseringen i [användarinställningarna](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+
+Segment, attribuering och visualiseringar tillsammans med B2B-behållare ger stöd för djupgående B2B-analyser och insikter.
+
 
 ## Datauppsättningar
 
