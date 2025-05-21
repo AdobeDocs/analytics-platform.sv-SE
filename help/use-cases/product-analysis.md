@@ -2,7 +2,7 @@
 title: Produktanalys i Customer Journey Analytics
 description: Lär dig vilka funktioner du kan använda i Customer Journey Analytics för att effektivt utföra produktanalyser.
 exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
-source-git-commit: 40e6fbd49a92690253855e314e9999da28a7d2f6
+source-git-commit: 3d8ebd90156f0e44e4c45913a524ed91360dd39e
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -31,9 +31,9 @@ Korrekta produktdata är hörnstenen i en effektiv produktanalys. Intag av data 
 Följande funktioner i Adobe Experience Platform och Customer Journey Analytics gör att du kan importera och hantera dina produktdata i stor skala:
 
 * Adobe Experience Platform
-   * [Datauppsättningar &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/overview)
-   * [&#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/data-prep/home)
-   * [Data Distiller &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/query/data-distiller/overview)
+   * [Datauppsättningar &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)
+   * [&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/home)
+   * [Data Distiller &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [&#x200B;](/help/connections/overview.md)
    * [Datavyer](/help/data-views/data-views.md), inklusive [härledda fält &#x200B;](/help/data-views/derived-fields/derived-fields.md)
@@ -50,8 +50,6 @@ Produkttillväxt är beroende av användbara insikter från de viktigaste funkti
 
 ![Aktiv tillväxt](/help/guided-analysis/assets/active.png)
 
-![Intresseanalys](/help/guided-analysis/assets/feature-matrix.png)
-
 Med följande funktioner i Customer Journey Analytics kan ni effektivt mäta både förvärv och aktivering:
 
 * [Guidad analys &#x200B;: aktiv tillväxt](/help/guided-analysis/types/active-growth.md)
@@ -63,6 +61,8 @@ Med följande funktioner i Customer Journey Analytics kan ni effektivt mäta bå
 ## Mät engagemang och användning
 
 Om du skaffar nya användare utökas den främsta delen av produkttratten. Engagemanget fokuserar på att vägleda användarna ytterligare nedåt och undanröja hinder för deras framgång. Deras framgångar driver direkt företagets framgång.
+
+![Intresseanalys](/help/guided-analysis/assets/feature-matrix.png)
 
 Följande funktioner i Customer Journey Analytics hjälper dig att spåra produktengagemang och produktanvändning:
 
@@ -98,9 +98,9 @@ Med följande funktioner i Experience Cloud kan ni agera effektivt utifrån insi
 
 * [Skapa och publicera målgrupper](/help/components/audiences/publish.md) &#x200B; för aktivering från Customer Journey Analytics
 * Aktivera målgrupper med Experience Cloud-produkter:
-   * [Kör experiment](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) i AJO och Adobe Target och mät effekten av variationer i Customer Journey Analytics med [Experimentationspanelen](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Leverera appengagemang](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/channels/in-app/get-started-in-app) till användare i AJO
-* [Aktivera målgrupper](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/activation-overview) till externa mål med Adobe CDP-&#x200B; i realtid
+   * [Kör experiment](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) i AJO och Adobe Target och mät effekten av variationer i Customer Journey Analytics med [Experimentationspanelen](/help/analysis-workspace/c-panels/experimentation.md)
+   * [Leverera appengagemang](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) till användare i AJO
+* [Aktivera målgrupper](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) till externa mål med Adobe CDP-&#x200B; i realtid
 
 ## Dela insikter till &#x200B;
 
