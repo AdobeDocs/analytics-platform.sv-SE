@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: 509c68e1-a8cc-48ac-9e9d-50c703356dbc
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # Skapa produktvärde
+
+{{draft-b2b}}
 
 Ni vill leverera B2B-produktvärdesinsikter till produktchefer och marknadschefer eller koncernchefer. Till exempel genom en datadriven bortfallsanalys eller -prognoser. Och gör dessa insikter lättlästa via mobilpaneler.
 
@@ -61,5 +65,3 @@ Du vill skapa ett mobilstyrkort som kombinerar information om konton, affärsmö
 1. Använd **[!UICONTROL Preview]** för att förhandsgranska instrumentpanelen. Instrumentpanelen är nu tillgänglig från Adobe Analytics-instrumentpanelsappen som finns i [App Store](https://apps.apple.com/us/app/adobe-analytics-dashboards/id1509062264) eller [Google Play](https://play.google.com/store/apps/details?id=com.adobe.analyticsdashboards).
 
    ![Användningsexempel B2B - Skapa produktvärde - Demokratisera insikter - förhandsvisning av mobilstyrkort](assets/b2b-uc-build-product-value-mobile-scorecard-preview.png)
-
-

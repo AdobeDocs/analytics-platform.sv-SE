@@ -6,14 +6,18 @@ feature: Use Cases
 role: User, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # Översikt över användningsfall i B2B edition
+
+{{draft-b2b}}
 
 I det här avsnittet av dokumentationen beskrivs några specifika B2B-användningsfall som syftar till att ge insikter i den ofta mer komplexa B2B-köpresan. Ett typiskt B2B-köp innefattar inköpsgrupper, kontaktpunkter mellan olika intressenter, möjligheter i olika faser av säljcykeln och mycket annat.
 

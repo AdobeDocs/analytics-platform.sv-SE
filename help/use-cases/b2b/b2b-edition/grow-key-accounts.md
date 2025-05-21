@@ -6,14 +6,18 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: d0268ce9ba22228c5c42d600c173f39cd1001638
+badgePremium: label="B2B edition"
+exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
+source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
 
 # Utöka nyckelkonton
+
+{{draft-b2b}}
 
 Att utöka och behålla nyckelkonton är en hög prioritet för B2B-företag. En förutsättning för att se till att avtalsutvecklingen går framåt är att kommunicera med viktiga intressenter i målkontona vid rätt tidpunkt.
 
@@ -51,4 +55,3 @@ Du kan använda följande funktioner i Customer Journey Analytics B2B edition:
 1. [Intelligenta aviseringar](/help/components/c-intelligent-alerts/intelligent-alerts.md)
 1. [Dela med användare av arbetsytan eller med vem som helst](/help/analysis-workspace/curate-share/share-projects.md)
 1. [Kommentarer](/help/analysis-workspace/build-workspace-project/comment-projects.md)
-
