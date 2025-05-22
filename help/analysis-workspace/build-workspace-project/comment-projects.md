@@ -4,9 +4,9 @@ title: Lägga till och visa kommentarer i projekt
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: fb7e0e911de2a4a702d6069ca2f53d7769ec608b
+source-git-commit: df147b92e19b6dee66fcf6346113596f1cde6fd1
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1687'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Alla kommentarer som görs i ett Analysis Workspace-projekt visas i kommentarsom
 
    ![Kommentarsområdet stängt](assets/comments-area-closed.png)
 
-   Varje kommentar visar en tidsstämpel för den dag kommentaren publicerades. Om kommentaren bokfördes den aktuella dagen visas tidpunkten på dagen. För musen över dag eller tid för att visa hela datumet och tiden som kommentaren bokfördes.
+   Varje kommentar visar en tidsstämpel för dagen som kommentaren publicerades. Om kommentaren bokfördes den aktuella dagen visas tidpunkten på dagen. För musen över dag eller tid för att visa hela datumet och tiden som kommentaren bokfördes.
 
 1. (Valfritt) Om du vill söka i kommentarområdet väljer du sökikonen ![sökikonen](assets/comments-search-icon.png) och skriver sedan ett ord eller en fras. Kommentarsområdet filtreras så att det bara innehåller kommentarer som innehåller det ordet eller den frasen.
 
@@ -66,7 +66,7 @@ Så här kommenterar du ett visst område i projektet (till exempel ett måttvä
 
 1. Med projektet öppet i Analysis Workspace högerklickar du på det område i projektet där du vill infoga kommentaren.
 
-   Alla visualiseringar har stöd för kommentarsemblem i visningsrubriken, men endast följande visualiseringar har stöd för kommentarsemblem på specifika datapunkter i visualiseringen:
+   Alla visualiseringar har stöd för kommentarmärken i visualiseringshuvudet, men endast följande visualiseringar har stöd för kommentarmärken på specifika datapunkter i visualiseringen:
 
    * Frihandsregister
    * Kohortabell
@@ -104,19 +104,23 @@ Så här lägger du till kommentarer i ett projekt i Analysis Workspace:
 
 ## Inkludera andra i en kommentar
 
-Kommentarsfunktionen i Analysis Workspace gör det enklare att samarbeta med andra. Så här tar du med en annan person i kommentaren:
+Kommentarsfunktionen i Analysis Workspace gör det enklare att samarbeta med andra.
+
+Tänk på följande när du använder symbolen @ för att inkludera personer i en kommentar:
+
+* Personer som du inkluderar får meddelanden baserade på deras meddelandeinställningar för Adobe Experience Cloud. Som standard får de ett [Experience Cloud-meddelande](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications).
+
+  Dessutom kan användare konfigurera sina inställningar för Experience Cloud-meddelanden så att de får e-postmeddelanden och Slack-meddelanden genom att [prenumerera på e-postmeddelanden](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) och [prenumerera på Slack-meddelanden](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+
+* Du kan inkludera vem som helst i organisationen i en kommentar, men om du gör det får de inte automatiskt åtkomst till projektet. Endast personer som redan har åtkomst till projektet kan komma åt det.
+
+Så här tar du med en annan person i kommentaren:
 
 1. Skriv in @-symbolen och börja sedan skriva förnamnet, efternamnet eller e-postadressen för den person som du vill ta med.
 
    ![tagga användare](assets/comments-tag-user.png)
 
 1. Markera personens namn när det visas i listrutan.
-
-Tänk på följande när du använder symbolen @ för att inkludera personer i en kommentar:
-
-* Personer som du inkluderar får ett e-postmeddelande och ett Pulse-meddelande.
-
-* Du kan inkludera vem som helst i organisationen i en kommentar, men detta ger dem inte automatiskt åtkomst till projektet. Endast personer som redan har åtkomst till projektet kan komma åt det.
 
 ## Svara på en kommentar
 
@@ -126,7 +130,7 @@ Tänk på följande när du använder symbolen @ för att inkludera personer i e
 
    eller
 
-   Om du vill att svaret ska innehålla texten i kommentaren som du svarar på, med den ursprungliga texten omsluten av en citattagg, markerar du 3-punktsikonen bredvid den specifika kommentaren eller det svar som du vill svara på och väljer sedan **[!UICONTROL Quote reply]**. Ett svar på en offert är ett bra sätt att tydligt ange kommentaren eller svara på dina kommentarer.
+   Om du vill ta med texten i kommentaren som du svarar på, med den ursprungliga texten omsluten av en citattagg, markerar du 3-punktsikonen bredvid den specifika kommentaren eller det svar som du vill svara på och väljer sedan **[!UICONTROL Quote reply]**. Ett svar på en offert är ett bra sätt att ange vilken kommentar eller vilket svar din kommentar hänvisar till.
 
 1. Ange din kommentar i fältet **[!UICONTROL New comment]**.
 
@@ -182,7 +186,7 @@ Så här kopierar du länken till en kommentar:
 
 ## Kopiera texten i en kommentar
 
-Du kan kopiera brödtexten en kommentar och dela den med andra.
+Du kan kopiera brödtexten i en kommentar och dela den med andra.
 
 Så här kopierar du brödtexten i en kommentar:
 
@@ -208,7 +212,7 @@ Så här tar du bort en kommentar:
 
 1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen ![i kommentarområdet ](assets/comments-area-icon.png) i den högra listen i Analysis Workspace.
 
-1. Markera ikonen ![comment-more-icon](assets/comment-more-icon.png) bredvid den kommentar du vill ta bort och välj sedan **[!UICONTROL Delete]**.
+1. Markera mer-ikonen ![comment-more-icon](assets/comment-more-icon.png) bredvid den kommentar du vill ta bort och välj sedan **[!UICONTROL Delete]**.
 
 1. Välj **[!UICONTROL Delete]** igen för att bekräfta borttagningen.
 
