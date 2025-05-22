@@ -108,9 +108,9 @@ Kommentarsfunktionen i Analysis Workspace gör det enklare att samarbeta med and
 
 Tänk på följande när du använder symbolen @ för att inkludera personer i en kommentar:
 
-* Personer som du inkluderar får meddelanden baserade på deras meddelandeinställningar för Adobe Experience Cloud. Som standard får de ett meddelande i appen som visas från [Experience Cloud-ikonen ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-meddelandeikonen](assets/experience-cloud-notification.png) i Customer Journey Analytics.
+* Personer som du inkluderar får meddelanden baserade på deras meddelandeinställningar för Adobe Experience Cloud. Som standard får de ett meddelande i appen som visas från [Experience Cloud-ikonen ](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-meddelandeikonen](assets/experience-cloud-notification.png) i Customer Journey Analytics.
 
-  Dessutom kan användare konfigurera sina inställningar för Experience Cloud-meddelanden så att de får e-postmeddelanden och Slack-meddelanden genom att [prenumerera på e-postmeddelanden](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) och [prenumerera på Slack-meddelanden](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+  Dessutom kan användare konfigurera sina inställningar för Experience Cloud-meddelanden så att de får e-postmeddelanden och Slack-meddelanden genom att [prenumerera på e-postmeddelanden](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) och [prenumerera på Slack-meddelanden](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#slack).
 
 * Du kan inkludera vem som helst i organisationen i en kommentar, men om du gör det får de inte automatiskt åtkomst till projektet. Endast personer som redan har åtkomst till projektet kan komma åt det.
 
