@@ -1,7 +1,7 @@
 ---
-source-git-commit: a7350b6fc8fa75de07238543ed0db48af42b7577
+source-git-commit: c936ebbc191353d9993cc3c56892df3f29a1a1df
 workflow-type: tm+mt
-source-wordcount: '5081'
+source-wordcount: '5040'
 ht-degree: 0%
 
 ---
@@ -264,7 +264,6 @@ Använd följande information för att välja den visualisering som bäst passar
 | 30 minuter | Var 30:e minut som en viss händelse inträffade (avrundat nedåt). Den första dimensionsuppgiften är de första 30 minuterna i datumintervallet och den sista dimensionsuppgiften är de sista 30 minuterna i datumintervallet. |
 | 5 minuter | Var femte minut som en viss händelse inträffade (avrundat nedåt). Den första dimensionsuppgiften är de första 15 minuterna i datumintervallet och den sista dimensionsuppgiften är de sista 5 minuterna i datumintervallet. |
 | [!UICONTROL Day] | Dagen då en viss händelse inträffade. Den första dimensionsartikeln är den första dagen i datumintervallet och den sista dimensionsuppgiften är den sista dagen i datumintervallet. |
-| [!UICONTROL Day of Month] | Den dag i månaden som en viss händelse inträffade. Den första dimensionsuppgiften är den första dagen i månaden i datumintervallet, och den sista dimensionsuppgiften är den sista dagen i månaden i datumintervallet. |
 | [!UICONTROL Day of Week] | Veckodagen då en viss händelse inträffade. Den första dimensionsuppgiften är den första dagen i veckan i datumintervallet, och den sista dimensionsuppgiften är den sista dagen i veckan i datumintervallet. |
 | [!UICONTROL Day of Month] | Den dag i månaden som en viss händelse inträffade. Den första dimensionsuppgiften är den första dagen i månaden i datumintervallet, och den sista dimensionsuppgiften är den sista dagen i månaden i datumintervallet. |
 | Händelsedjup | Tilldelar sekventiella numeriska värden (1, 2, 3 osv.) till varje händelseinteraktion i en session. Med den här dimensionen kan du aktivera detaljerad spårning och analys av var specifika händelser inträffar i det sekventiella flödet av användarinteraktioner i den [bundna upplevelsesessionen som du har definierat för datavyn](/help/data-views/session-settings.md#session-settings). Du kan spåra händelseförloppet från början till slut i en avgränsad session. Exempel: En besökare kommer till din hemsida (händelse 1, sessionsstart), använder sökfunktionen (händelse 2), visar en produktinformationssida (händelse 3), lägger till i kundvagn (händelse 4), fortsätter till kassan (händelse 5) och slutför ett köp (händelse 6, sessionsslut). Du kan använda [!UICONTROL Event depth] nu i en segmentdefinition för att segmentera data baserat på interaktionsdjup. |
@@ -286,11 +285,11 @@ Använd följande information för att välja den visualisering som bäst passar
 
 | Komponentnamn | Anteckningar |
 | --- | --- |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Accounts] | Baserat på det konto-ID som anges i en [!UICONTROL Connection]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Buying Group] | Köpgrupperna, baserat på det inköpsgrupp-ID som anges i [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Accounts] | Baserat på det konto-ID som anges i en [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Buying Group] | Köpgrupperna, baserat på det inköpsgrupp-ID som anges i [!UICONTROL Connection]. |
 | [!UICONTROL Events] | Antalet rader från alla händelsedatamängder i en [!UICONTROL Connection]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Global Accounts] | Baserat på det globala konto-ID som anges i [!UICONTROL Connection]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Opportunities] | Affärsmöjligheterna, baserat på det säljprojekt-ID som anges i [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Global Accounts] | Baserat på det globala konto-ID som anges i [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Opportunities] | Affärsmöjligheterna, baserat på det säljprojekt-ID som anges i [!UICONTROL Connection]. |
 | [!UICONTROL People] | Baserat på det person-ID som anges i en [!UICONTROL Connection]. |
 | [!UICONTROL Session Ends] | Antalet händelser som var den sista händelsen i en session. På liknande sätt som [!UICONTROL Session Starts] kan den även användas i en segmentdefinition för att segmentera saker ned till den sista händelsen i varje session.<p>Den här komponenten måste inkluderas i datavyn för att följande [beräknade mått](/help/components/calc-metrics/default-calcmetrics.md) ska vara tillgängliga i Workspace: <ul><li>Sessionens sluthastighet</li></p> |
 | [!UICONTROL Session Starts] | Antalet händelser som var den första händelsen i en session. När den används i en segmentdefinition (t.ex. [!UICONTROL Session Starts] finns) segmenteras den bara till den första händelsen i varje session.<p>Den här komponenten måste inkluderas i datavyn för att följande [beräknade mått](/help/components/calc-metrics/default-calcmetrics.md) ska vara tillgängliga i Workspace: <ul><li>Starthastighet för session</li></p> |
