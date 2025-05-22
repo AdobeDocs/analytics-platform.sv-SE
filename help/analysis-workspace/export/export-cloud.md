@@ -5,9 +5,9 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: c503b5bc65565b342e5e6bea8c019d8e1ee1e429
+source-git-commit: 0891aa2bed446e704b0222eff992c5f5bc200f82
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2340'
 ht-degree: 1%
 
 ---
@@ -156,9 +156,9 @@ Följande funktioner stöds inte och tas automatiskt bort från export i fulltab
 * Statiska rader
 * Datumjustering
 * Mätvärden från sammanfattningsdatauppsättningar
-* Dynamiska dimensioner
+* Dynamiska dimensionsobjekt
 
-  Mer information finns i [Dynamiska och statiska dimensionsobjekt i frihandstabeller](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
+  Dynamiska dimensionsobjekt skapas när du släpper en dimension i en kolumnrubrik i en friformstabell, vilket gör att kolumnen filtreras dynamiskt av de fem övre dimensionsobjekten. I Analysis Workspace uppdateras dessa fem viktigaste dimensionsobjekt varje gång du läser in projektet. Vid en export i fullformat blir dessa dimensionsobjekt statiska. Mer information finns i [Dynamiska och statiska dimensionsobjekt i frihandstabeller](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md).
 * Dimensionerna i den första uppdelningen konverteras och läggs till som en sekundär dimension i raden i den exporterade tabellen. Andra uppdelningar tas inte med i tabellen
 * Sortering stöds inte för de flesta datauppsättningar. Data kan sorteras för små datauppsättningar
 
