@@ -3,9 +3,9 @@ description: Läs mer om mätningstyp och attribuering
 title: Mättyp och attribut
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 2d182004b12eb44f54ec9b4b5f63cb9072594aec
+source-git-commit: 2b193e1ff612ab00335898164dc84afb08673fff
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -132,11 +132,14 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 >abstract="Krediten bestäms dynamiskt utifrån en statistisk algoritm."
 
 
+>[!CONTEXTUALHELP]
+>id="components_calculatedmetrics_attribution_container"
+>title="Behållare"
+>abstract="Välj en behållare för att ange önskat omfång för attribueringen."
+
 
 {{attribution-models-details}}
 
-
-### Fönstret Lookback {#lookback-window}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -145,7 +148,6 @@ I [Exempel](#example) finns ett exempel på hur du använder en attribueringsmod
 >title="Fönstret Lookback"
 >abstract="Den här inställningen bestämmer fönstret för den dataattribuering som ska användas för varje konvertering."
 
-<!-- markdownlint-enable MD034 -->
 
 {{attribution-lookback-window}}
 
