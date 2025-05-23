@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: e82179f3436dc6b66ebe3f2f9b11986cadd135d9
+source-git-commit: bef00aa251831cdb809a6243b5d5a8e2c0dda9bb
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Data Insights Agent är tillgänglig för berättigade Customer Journey Analytics-kunder fram till 30 november 2025. Efter detta datum krävs en licens om du vill fortsätta använda Data Insights Agent. Kontakta Adobe kontoteam för hjälp med licensprocessen.
+>Agenten för datainsikter är tillgänglig för berättigade kunder under en begränsad tid. Åtkomsten till Data Insights Agent upphör 30 november 2025. Om du vill fortsätta använda en Data Insights Agent utan avbrott kan du kontakta din Adobe-kontorepresentant för att få mer information om hur du licensierar Data Insights Agent.
 
 Agenten för datainsikter, som nås från AI Assistant i Customer Journey Analytics, är en generativ AI-konversationsagent som snabbt och effektivt besvarar frågor om dina data. Det bygger upp relevanta visualiseringar i Analysis Workspace med komponenter från datavyn och med era faktiska data.
 
@@ -41,13 +41,13 @@ Med Data Insights Agent kan du besvara datacentrerade frågor i Analysis Workspa
 
 Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey Analytics:
 
-* **lösningsåtkomst**: Data Insights-agenten är tillgänglig för Customer Journey Analytics Prime- och Ultimate-kunder. Det finns inte i Adobe Analytics.
+* **lösningsåtkomst**: Data Insights Agent är tillgänglig för alla Customer Journey Analytics-kunder som en del av ett program med begränsad åtkomst till och med den 30 november 2025. Det finns inte i Adobe Analytics.
 
 * **Contractual access**: Om du inte kan använda Data Insights Agent i AI Assistant kontaktar du organisationens administratör eller Adobe-kontoteam. Innan din organisation kan använda Data Insights Agent måste du godkänna vissa juridiska villkor som rör generativ AI.
 
 * **Behörigheter**: Nödvändiga behörigheter måste beviljas i [!UICONTROL Adobe Admin Console] innan användare kan komma åt Data Insights-agenten.
 
-  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
+  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
    1. I **[!UICONTROL Admin Console]** väljer du fliken **[!UICONTROL Products]** för att visa sidan **[!UICONTROL All products and services]**.
    1. Välj **[!UICONTROL Customer Journey Analytics]**.
    1. På fliken **[!UICONTROL Product Profiles]** väljer du titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL AI Assistant: Product Knowledge].
