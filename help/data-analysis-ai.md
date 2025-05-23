@@ -5,16 +5,18 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: bef00aa251831cdb809a6243b5d5a8e2c0dda9bb
+source-git-commit: 730464719f05026eae141c8e6cc656fb0fe4f819
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
 
 # Visualisera data med Data Insights Agent i Customer Journey Analytics
 
-{{release-limited-testing}}
+>[!AVAILABILITY]
+>
+>Den funktionalitet som beskrivs i den här artikeln är tillgänglig för alla berättigade kunder som en del av en fasversion från och med 28 maj 2025 och är kanske inte tillgänglig i din miljö ännu. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Customer Journey Analytics funktionsreleaser](/help/release-notes/releases.md).
 
 >[!AVAILABILITY]
 >
@@ -31,7 +33,7 @@ Med Data Insights Agent kan du besvara datacentrerade frågor i Analysis Workspa
 | Funktion | I omfånget | Odefinierad |
 | --- | --- | --- |
 | **Visualiseringstyper** | <ul><li>Linje</li><li>Flera rader</li><li>Frihandsregister</li><li>Liggande</li><li>Munk</li><li>Sammanfattningsnummer</li></ul> | <ul><li>Flöde</li><li>Utfall</li><li>Kohortabell</li><li>Område, staplat område</li><li>Stapel, staplad</li><li>Punkt</li><li>Kombination</li><li>Histogram</li><li>Vågrätt streck, vågrätt streck</li><li>Sammanfattning av nyckelmått</li><li>Spridning</li><li>Sammanfattningsändring</li><li>Text</li><li>Treemap</li><li>Venn</li></ul> |
-| **Workspace-åtgärder och agentfunktioner** | <ul><li>Skapa och uppdatera visualiseringar<p>Skapar en friformstabell och tillhörande visualisering (t.ex. en linje, streck, munstycke).<p>Exempel: *Vad är vinsten för SKU:er från februari till maj?*</p></li><li>Ställ uppföljningsfrågor</li><li>Svara på en fråga i sammanhanget från tidigare uppmaningar<p>Exempel:</p> <ul><li>Fråga 1: *Trendhändelser från mars.*</li><li>Fråga 2: *Visa data från mars till april i stället*</li></ul> </li><li>Odefinierad snabb upptäckt<p>Om du skickar en fråga som ligger utanför omfånget, till exempel *Exportera det här projektet*, svarar Data Insights-agenten genom att informera dig om att frågan ligger utanför omfånget.</p></li></ul> | <ul><li>Gränssnittsknappar för sammanhangsberoende åtgärder (lägg till i diagram, ny panel, ny tabell)</li><li>Dela</li><li>Exportera</li><li>Ladda ned</li><li>Hantera användarinställningar</li><li>Kurva</li><li>Hantera datavy</li><li>Analytics Dashboards-app</li><li>Tillskrivning</li><li>Sammanfattning eller svar direkt<p>Agenten för datainsikter kan inte svara direkt i chattfältet med ett kortfattat svar på en användarfråga. Exempel på uppmaningar som inte omfattas är *Ge mig en sammanfattning av insikterna från min senaste fråga* och *Sammanfatta markeringarna från radvisualiseringen.*</p></li></ul> |
+| **Workspace-åtgärder och agentfunktioner** | <ul><li>Skapa och uppdatera visualiseringar<p>Skapar en friformstabell och tillhörande visualisering (t.ex. en linje, streck, munstycke).<p>Exempel: *Vad är vinsten för SKU:er från februari till maj?*</p></li><li>Ställ uppföljningsfrågor<p>Svara på en fråga i sammanhanget från tidigare uppmaningar. Exempel:</p> <ul><li>Fråga 1: *Trendhändelser från mars.*</li><li>Fråga 2: *Visa data från mars till april i stället*</li></ul> </li><li>Odefinierad snabb upptäckt<p>Om du skickar en fråga som ligger utanför omfånget, till exempel *Exportera det här projektet*, svarar Data Insights-agenten genom att informera dig om att frågan ligger utanför omfånget.</p></li></ul> | <ul><li>Dela</li><li>Exportera</li><li>Ladda ned</li><li>Hantera användarinställningar</li><li>Hantera datavy</li><li>Analytics Dashboards-app</li><li>Tillskrivning</li><li>Sammanfattning eller svar direkt<p>Agenten för datainsikter kan inte svara direkt i chattfältet med ett kortfattat svar på en användarfråga. Exempel på uppmaningar som inte omfattas är *Ge mig en sammanfattning av insikterna från min senaste fråga* och *Sammanfatta markeringarna från radvisualiseringen.*</p></li></ul> |
 | **Tydligare frågor** | Om du ställer en fråga som inte har tillräckligt kontext för att en Data Insights-agent ska kunna svara, eller är för generisk, svarar Data Insights-agenten med en klargörande fråga eller föreslagna alternativ. <p>Följande klargörande frågor är exempel på komponentrelaterade frågor:</p><ul><li>Mått: *Vilket intäktsmått menade du?*</li><li>Dimension: *Vilka av nedanstående &quot;regioner&quot; vill du fokusera på?*</li><li>Segment: *Vilket kontosegment vill du tillämpa?*</li><li>Datumintervall: *Med&quot;förra månaden&quot;, menade du den senaste hela månaden eller de senaste 30 dagarna?*</li></ul><p>Följande klargörande fråga är ett exempel på en fråga som rör dimensionsobjekt:</p> <ul><li>Vilket &quot;butiksnamn&quot; menade du? (Exempel: Store #5274, Store #2949 osv.)</li></ul> | Tydliga frågor är begränsade till komponenter och dimensionsobjekt. Data Insights Agent kan inte förtydliga saker som datavyer, visualiseringar, datakornighet, jämförelse och omfång. När klarläggandefrågor inte kan användas, används agenten som standard det som du troligen efterfrågar. Om det returnerar en oväntad visualisering eller datagranularitet kan du ställa en uppföljningsfråga eller justera visualisering och data. |
 | **Datasäkerhet och -korrekthet** | Datasäkerheten och korrektheten kan bekräftas genom att man visar den genererade frihandstabellen och datavisualiseringen. <p>Om du till exempel ber Data Insights Agent att *Trendbeställa förra månaden* kan du bekräfta att rätt mått (&quot;order&quot;) och datumintervall (&quot;sista månaden&quot;) har valts i den nyligen genererade panelen, datavisualisering och frihandstabellen. | Data Insights Agent svarar inte genom att informera dig om vilka komponenter eller visualiseringar som lagts till.</p> |
 | **Återkopplingsmekanismer** | <ul><li>Tummen upp</li><li>Tummen ned</li><li>Flagga</li></ul> |  |
@@ -47,7 +49,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
 * **Behörigheter**: Nödvändiga behörigheter måste beviljas i [!UICONTROL Adobe Admin Console] innan användare kan komma åt Data Insights-agenten.
 
-  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
+  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
    1. I **[!UICONTROL Admin Console]** väljer du fliken **[!UICONTROL Products]** för att visa sidan **[!UICONTROL All products and services]**.
    1. Välj **[!UICONTROL Customer Journey Analytics]**.
    1. På fliken **[!UICONTROL Product Profiles]** väljer du titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL AI Assistant: Product Knowledge].
@@ -72,7 +74,9 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
       >[!IMPORTANT]
       >
-      >Agenten för datainsikter kan referera till de inkluderade datavyerna någon gång under samma dag som du aktiverar dem i Admin Console.
+      >Tänk på följande när du aktiverar datavyer:
+      >* Du kan aktivera maximalt 50 datavyer per IMS-organisation. Om du aktiverar mer än 50 datavyer över alla produktprofiler för en viss organisation, kommer Data Insights Agent att använda de 50 mest använda datavyer.
+      >* Agenten för datainsikter kan referera till de inkluderade datavyerna någon gång under samma dag som du aktiverar dem i Admin Console.
 
    1. Sök efter eller bläddra till de datavyer som du vill aktivera och välj sedan plusikonen ![AddCircle](/help/assets/icons/AddCircle.svg) bredvid namnet på varje datavy.
 
