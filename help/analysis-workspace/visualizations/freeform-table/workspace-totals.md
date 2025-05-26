@@ -4,23 +4,19 @@ title: Workspace summor
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '427'
 ht-degree: 1%
 
 ---
 
 # Workspace summor {#workspace-totals}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_grandtotal"
 >title="Summa"
->abstract="Summan stöds inte för tabeller eller uppdelningar med statiska rader"
-
-<!-- markdownlint-enable MD034 -->
+>abstract="Summan stöds inte för tabeller eller uppdelningar med statiska rader."
 
 
 I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan visa två summor:
@@ -28,7 +24,7 @@ I frihandstabeller visas en summeringsrad på varje uppdelningsnivå och kan vis
 ![Friformstabell som visar totalsumman och tabellsumman.](assets/total-row.png)
 
 * **[!UICONTROL Table total]** ➊ - Denna summa är vanligtvis lika med eller en delmängd av [!UICONTROL Grand total]. Summan återspeglar alla tabellsegment som används i friformstabellen, inklusive alternativet [!UICONTROL Include None].
-* **[!UICONTROL Grand total]** (**[!UICONTROL out of]** *number*) ➋ - Det här totala antalet representerar alla händelser som har samlats in. När ett segment används antingen på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar segmentvillkoren återspeglas.
+* **[!UICONTROL Grand total]** (**[!UICONTROL out of]** *number*) ➋ - Den här summan representerar alla händelser som har samlats in. När ett segment används antingen på panelnivå eller i friformstabellen justeras det totala värdet så att alla händelser som matchar segmentvillkoren återspeglas.
 
 
 

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: dd4adc5acd05aecf0a67072df6688a344e1ce5c9
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -60,13 +60,9 @@ Content Analytics använder webbbildvisningsdata i händelsedatamängder i Exper
 
 >[!NOTE]
 >
->Om du har licensierat tillägget Sekretess och säkerhetssköld ska du vara medveten om att (alla data som genereras av) upplevelser och resurser, som är föremål för Content Analytics, inte omfattas av DULE-märkning eller Kundhanterade nycklar.
+>Om du har licensierat tillägget Sekretess och säkerhetssköld ska du vara medveten om att (alla data som genereras av) upplevelser och resurser, som är föremål för Content Analytics, inte omfattas av DULE-märkning eller Kundhanterade nycklar. Dessutom är Content Analytics inte en HIPAA-Ready-tjänst.
 >
 
->[!NOTE]
->
->Content Analytics [skickar ytterligare händelser](config/datacollection.md#content-analytics-event) som troligen påverkar definitioner av studsfrekvens som baseras på antalet händelser i en session eller på en sida.
->
 
 >[!MORELIKETHIS]
 >

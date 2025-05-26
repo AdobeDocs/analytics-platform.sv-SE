@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 63c6a5d6148c1562b7f6ac8e4a1cac5919e2dd2e
+source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Content Analytics kräver att Experience Platform Edge Network Web SDK samlar in
 Content Analytics bibliotek samlar in data när:
 
 * Content Analytics ingår i taggbiblioteket som är inläst på sidan.
-* Sidans URL har konfigurerats i [Content Analytics-tillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, som ingår i det inkluderade taggbiblioteket.
+* Sidans URL har konfigurerats i [Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, som ingår i det inkluderade taggbiblioteket.
 
 
 ## Content Analytics event
@@ -94,6 +94,11 @@ För att minska antalet samtal som lämnar sidan samlar Content Analytics in inf
    * Lås skärm
 * URL-adressen ändras, vilket resulterar i en ändrad relevant URL-adress.
 * Inspelade resursvyer som är klara att skickas överskrider antalet 32.
+
+>[!NOTE]
+>
+>De ytterligare Content Analytics-händelserna påverkar troligen alla definitioner av studsfrekvens som baseras på antalet händelser i en session eller på en sida.
+>
 
 
 ## Scheman
