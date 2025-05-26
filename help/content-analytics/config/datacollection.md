@@ -36,7 +36,7 @@ Content Analytics kräver att Experience Platform Edge Network Web SDK samlar in
 Content Analytics bibliotek samlar in data när:
 
 * Content Analytics ingår i taggbiblioteket som är inläst på sidan.
-* Sidans URL har konfigurerats i [Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, som ingår i det inkluderade taggbiblioteket.
+* Sidans URL har konfigurerats i [Content Analytics-tillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, som ingår i det inkluderade taggbiblioteket.
 
 
 ## Content Analytics event
