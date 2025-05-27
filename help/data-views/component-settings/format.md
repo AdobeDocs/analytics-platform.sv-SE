@@ -92,7 +92,7 @@ Så här avgör du hur valutor visas och konverteras för ett givet mätvärde:
 
    * I fältet [!UICONTROL **Välj valutakoddimension**] väljer du den dimension som representerar valutan som du konverterar från (valutan som dina data baseras på). Välj till exempel en dimension med namnet [!UICONTROL **Valutakod**].
 
-     Om du inte har någon dimension i ditt aktuella dataschema som innehåller ett valutakodfält kan du skapa ett nytt valutakodfält med [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html) eller [Härledda fält](/help/data-views/derived-fields/derived-fields.md). Data Prep är endast lämpligt för nya implementeringar eftersom det bara är på framåtgående basis. Beroende på en organisations inställningar kan Data Distiller och härledda fält användas för att komma åt valutakodvärden historiskt.
+     Om du inte har någon dimension i ditt aktuella dataschema som innehåller ett valutakodfält kan du skapa ett nytt valutakodfält med [Dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=sv-SE), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=sv-SE) eller [Härledda fält](/help/data-views/derived-fields/derived-fields.md). Data Prep är endast lämpligt för nya implementeringar eftersom det bara är på framåtgående basis. Beroende på en organisations inställningar kan Data Distiller och härledda fält användas för att komma åt valutakodvärden historiskt.
 
    * I fältet [!UICONTROL **Konvertera och visa valuta i**] väljer du den valuta i vilken du vill att data ska konverteras.
 
