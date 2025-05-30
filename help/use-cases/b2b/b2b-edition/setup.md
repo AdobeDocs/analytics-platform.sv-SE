@@ -4,11 +4,9 @@ description: Läs om hur du konfigurerar Customer Journey Analytics B2B edition 
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: true
-hidefromtoc: true
 badgePremium: label="B2B edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
-source-git-commit: f66df039c56fc1df3fb0e102745f500a3782d26d
+source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
 workflow-type: tm+mt
 source-wordcount: '1652'
 ht-degree: 0%
@@ -288,9 +286,9 @@ Definiera en kontobaserad anslutning i Customer Journey Analytics för att impor
    ![B2B-anslutning - lägg till datauppsättningar](assets/b2b-connection-add-datasets.png)
 
 1. Välj **[!UICONTROL Next]** om du vill konfigurera inställningarna för var och en av de markerade datauppsättningarna.
-1. För händelsedatauppsättningen måste du välja lämpliga eVars som motsvarar identiteterna för **[!UICONTROL Account ID]**, **[!UICONTROL Global Account ID]**, **[!UICONTROL Opportunity ID]**, **[!UICONTROL Buying Group ID]** och **[!UICONTROL Person ID]**.
+1. För händelsedatauppsättningen måste du välja rätt fält som motsvarar identiteterna för **[!UICONTROL Account ID]**, **[!UICONTROL Global Account ID]**, **[!UICONTROL Opportunity ID]**, **[!UICONTROL Buying Group ID]** och **[!UICONTROL Person ID]**.
 
-   ![B2B-anslutning - lägg till händelsedatamängd](assets/b2b-connection-add-datasets-event-data.png).
+   ![B2B-anslutning - lägg till händelsedatamängd](assets/b2b-connection-add-datasets-event-data.png)
 
 1. Bläddra nedåt för att konfigurera datauppsättningen för kontoposter. Se till att du väljer rätt identifierare (**[!UICONTROL Account_ID]**) för att matcha kontot med behållaren **[!UICONTROL Global Account]**. Välj rätt identifierare (**[!UICONTROL Account_ID]**) som **[!UICONTROL Global Account field]**.
 

@@ -5,11 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
-hide: true
-hidefromtoc: true
-source-git-commit: c0446bd85b65109fd3311d54e33f9fb33af28f88
+exl-id: d0e6398b-8080-4e36-b178-0cb91945d0c5
+source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -24,9 +23,11 @@ Artikeln förutsätter att du redan använder Customer Journey Analytics i viss 
 
 * Du har [anslutningar](/help/connections/overview.md) som importerar data till Customer Journey Analytics.
 * Du har [datavyer](/help/data-views/data-views.md) som använder data från dessa anslutningar.
-* Du har [projekt](/help/analysis-workspace/home.md) med rapporter och visualisering som utnyttjar dessa datavyer.
+* Du har [projekt](/help/analysis-workspace/home.md) med rapporter och visualiseringar som utnyttjar dessa datavyer.
 
 Om du inte har använt Customer Journey Analytics tidigare läser du [snabbstartsguiden för B2B edition](cja-b2b-quick-start-guide.md).
+
+Om du är Adobe Analytics-användare och tänker använda Customer Journey Analytics B2B edition ska du först läsa [uppgraderingen från Adobe Analytics till dokumentationen för Customer Journey Analytics](cja-upgrade/cja-upgrade-recommendations.md).
 
 
 ## Befintlig implementering

@@ -6,7 +6,7 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 6bfd54148736d4b3434eac3ee3aa6fc8a838d57a
+source-git-commit: 1a7b877d989764e737d7f35c05f515efe3e7a307
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Du kan använda B2B-behållare för specifika B2B-funktioner i Analysis Workspac
 * **Attribution**: Du kan använda de nya B2B-behållarna i [attribueringspanelen](/help/analysis-workspace/c-panels/attribution.md), i [attribueringskomponentsinställningarna](/help/data-views/component-settings/attribution.md), i [beräknade värden](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) eller i [kolumner i en frihandstabell](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). Kontosökningar förlängs till 13 månader.
 
 * **Visualiseringar**: [Fall out](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md), [Journey Canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) och [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) har stöd för de nya B2B-behållarna. Du kan till exempel använda de nya behållarna för att förstå hur köpgrupper konsumerar innehåll eller hur affärsmöjlighetskohorter rör sig mot slutet av en försäljning.
-Du kan också ange standardbehållaren för den här visualiseringen i [användarinställningarna](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+Du kan också ange standardbehållaren för dessa visualiseringar i [användarinställningarna](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 
 Segment, attribuering och visualiseringar tillsammans med B2B-behållare ger stöd för djupgående B2B-analyser och insikter.
 
