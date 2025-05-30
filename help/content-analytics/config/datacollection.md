@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: c10d88c27d4a3c92e02179da4a73a6a499d2a8c2
+source-git-commit: 7909388273af4c19d2dfda671c2af8eac470fff9
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Content Analytics kräver att Experience Platform Edge Network Web SDK samlar in
 Content Analytics bibliotek samlar in data när:
 
 * Content Analytics ingår i taggbiblioteket som är inläst på sidan.
-* Sidans URL har konfigurerats i [Content Analytics-tillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, som ingår i det inkluderade taggbiblioteket.
+* Sidans URL har konfigurerats i [Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, som ingår i det inkluderade taggbiblioteket.
 
 
 ## Content Analytics event
@@ -85,7 +85,7 @@ En klickning spelas in när:
 
 För att minska antalet samtal som lämnar sidan samlar Content Analytics in information men skickar inte informationen direkt. Information om innehållsinteraktion samlas in och en händelse som innehåller den informationen skickas endast när någon av följande utlösare inträffar:
 
-* Web SDK eller AppMeasurement skickar en händelse. Tidsstämpeln för den här händelsen är
+* Web SDK eller AppMeasurement skickar en händelse.
 * Synligheten ändras till dold, till exempel:
    * Sidan tas bort
    * Fliken Växla
