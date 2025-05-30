@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 07f9a224d43658a58779abecd6473fceb7109ef4
+source-git-commit: f578b8e381f59abb1f22e00718531f216fefaef8
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2293'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Innehåller övergripande inställningar för datavyn.
 >id="dataview_dataviewsinadobejourneyoptimizer"
 >title="Datavyer i Journey Optimizer"
 >abstract="Customer Journey Analytics måste använda en anslutning och datavy som är kompatibel med Adobe Journey Optimizer. Som standard skapas en anslutning och en datavy automatiskt för detta.<br/>Du kan också aktivera det här alternativet om du vill göra den här datavyn till standarddatavyn som används i Adobe Journey Optimizer-rapporter. När det här alternativet är aktiverat läggs alla nödvändiga komponenter som krävs för Journey Optimizer till i datavyn, och alla nödvändiga Journey Optimizer-datauppsättningar läggs till i anslutningen som är kopplad till datavyn."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/integrations/ajo#connection" text="Vilka komponenter och datauppsättningar som läggs till."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Vilka komponenter och datauppsättningar som läggs till."
 
 
 Innehåller inställningar som är tillämpliga när du använder Adobe Journey Optimizer förutom Customer Journey Analytics.
@@ -100,10 +100,10 @@ Anger namnet på behållare för datavyn. Behållarnamn används ofta i [segment
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Global Account container name]** | `Global Account` (standard). Behållaren [!UICONTROL Global Account] innehåller alla sessioner och händelser för globala konton inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Account container name]** | `Account` (standard). Behållaren [!UICONTROL Account] innehåller alla sessioner och händelser för konton inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Opportunity container name]** | `Opportunity` (standard). Behållaren [!UICONTROL Opportunity] innehåller alla sessioner och händelser för affärsmöjligheter inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Buying group container name]** | `Buying Group` (standard). Behållaren [!UICONTROL Buying group] innehåller alla sessioner och händelser för att köpa grupper inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Global Account container name]** | `Global Account` (standard). Behållaren [!UICONTROL Global Account] innehåller alla sessioner och händelser för globala konton inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Account container name]** | `Account` (standard). Behållaren [!UICONTROL Account] innehåller alla sessioner och händelser för konton inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Opportunity container name]** | `Opportunity` (standard). Behållaren [!UICONTROL Opportunity] innehåller alla sessioner och händelser för affärsmöjligheter inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Buying group container name]** | `Buying Group` (standard). Behållaren [!UICONTROL Buying group] innehåller alla sessioner och händelser för att köpa grupper inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
 | **[!UICONTROL Person container name]** | `Person` (standard). Behållaren [!UICONTROL Person] innehåller alla sessioner och händelser för personer inom den angivna tidsramen. Om din organisation använder en annan term (till exempel &quot;Besökare&quot; eller &quot;Användare&quot;) kan du byta namn på behållaren här. |
 | **[!UICONTROL Session container name]** | `Session` (standard). Med behållaren [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på den här behållaren till &#39;Besök&#39; eller någon annan term som din organisation föredrar. |
 | **[!UICONTROL Event container name]** | `Event` (standard). Behållaren [!UICONTROL Event] definierar enskilda händelser i en datamängd. Om din organisation använder en annan term (till exempel &quot;träffar&quot; eller &quot;Sidvisningar&quot;) kan du byta namn på behållaren här. |
@@ -140,9 +140,9 @@ Sedan kan du ange komponenterna i en datavy, vilket betyder att du kan skapa må
 
 1. Sök efter ett schemafält med hjälp av ![sökikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search schema fields]** eller hitta ett fält genom att flytta till någon av datauppsättningssamlingarna, till exempel ![mappikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]** .<br/>Du kan också skapa ett härlett fält med hjälp av ![dataikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Skapa härlett fält** . Mer information finns i [Härledda fält](./derived-fields/derived-fields.md).
 
-1. När du har hittat ett specifikt schemafält eller definierat ditt härledda fält, drar du det fältet, till exempel ![Handle icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Page Name]** , från den vänstra listen till avsnittet Metrics (mått) eller Dimensions.
-Du kan dra samma schemafält till dimensionerna eller måttavsnitten flera gånger och konfigurera samma mått eller mätvärden på olika sätt. I fältet pageName kan du till exempel skapa en dimension med namnet&quot;Produktsidor&quot; och en annan&quot;Felsidor&quot; genom att använda olika [komponentinställningar](component-settings/overview.md) till höger.
-Om du drar en mapp för schemafält från den vänstra listen sorteras de automatiskt i vanliga avsnitt. Strängfält hamnar i avsnittet [!UICONTROL Dimensions] och numeriska schematyper hamnar i avsnittet [!UICONTROL Metrics]. Du kan också klicka på **[!UICONTROL Add all]** och lägga till alla schemafält på deras respektive platser.
+1. När du har hittat ett specifikt schemafält eller definierat det härledda fältet drar du fältet, till exempel ![Handle icon](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Page Name]** , från den vänstra listen till avsnittet **[!UICONTROL Metrics]** eller **[!UICONTROL Dimensions]** under **[!UICONTROL Included components]** .
+Du kan dra samma schemafält till dimensionerna eller måttavsnitten flera gånger och konfigurera samma mått eller mätvärden på olika sätt. Du kan till exempel skapa en dimension med namnet `Product Pages` och en annan med namnet `Error pages` i fältet pageName genom att använda olika [komponentinställningar](component-settings/overview.md) till höger.
+Om du drar en mapp för schemafält från den vänstra listen sorteras fälten i mappen automatiskt till rätt avsnitt. Strängfält hamnar i avsnittet [!UICONTROL Dimensions] och numeriska schematyper hamnar i avsnittet [!UICONTROL Metrics]. Du kan också klicka på **[!UICONTROL Add all]** och alla schemafält läggs till i respektive avsnitt.
 
 1. När du har valt en komponent visas inställningarna till höger.
 
@@ -161,11 +161,11 @@ Om du drar en mapp för schemafält från den vänstra listen sorteras de automa
 
 1. Välj **[!UICONTROL Save and continue]** om du vill fortsätta konfigurera den nya eller befintliga datavyn. Välj **[!UICONTROL Save]** om du vill spara konfigurationen för den befintliga datavyn.
 
-**Duplicerade mått eller dimensioner**
+### Duplicera mått eller dimensioner
 
 Att duplicera mått och dimensioner och sedan ändra specifika inställningar är ett enkelt sätt att skapa flera mått eller dimensioner från ett enda schemafält. Välj inställningen [!UICONTROL Duplicate] under måttets eller dimensionens namn högst upp till höger. Ändra den nya dimensionen eller måttet och spara det under ett mer beskrivande namn.
 
-**Filtrera schemafält eller datauppsättningar**
+### Filtrera schemafält eller datauppsättningar
 
 Du kan filtrera ![Filterikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) schemafält i den vänstra listen efter [!UICONTROL data type], [!UICONTROL datasets], [!UICONTROL data governance] och [!UICONTROL other] villkor ([!UICONTROL contains data], [!UICONTROL is identity] och [!UICONTROL is not deprecated]):
 
@@ -174,6 +174,71 @@ Du kan filtrera ![Filterikonen](https://spectrum.adobe.com/static/icons/workflow
 >[!TIP]
 >
 >Om komponenterna inte läses in korrekt i datavyn och du ser ett felmeddelande i stället kan du läsa [Ingen behörighet](../troubleshooting/lack-of-permissions.md) för att få en lösning.
+
+
+### Inkluderade komponenter {#included-components}
+
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_custom"
+>title="Egna etiketter"
+>abstract="Förutom etiketterna från Adobe kan du även definiera egna etiketter för din organisation."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_contract"
+>title="Kontraktsetiketter"
+>abstract="Kontraktsetiketter (C) används för att kategorisera data som har avtalsmässiga skyldigheter eller som är relaterade till organisationens policyer för datastyrning."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_identity"
+>title="Identitetsetiketter"
+>abstract="Identity (I)-etiketter används för att kategorisera data som kan identifiera eller kontakta en viss person."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_sensitive"
+>title="Känsliga etiketter"
+>abstract="Känsliga (S) etiketter används för att kategorisera data som du, och din organisation, anser vara känsliga."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_partner_ecosystem"
+>title="Partnerekosystem"
+>abstract="P-etiketter (Partner Ecosystem) används för att kategorisera data som delas med tredjepartspartners."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_datagovernance_policies"
+>title="Policyer"
+>abstract="För att dataanvändningsetiketter effektivt ska stödja regelefterlevnad måste dataanvändningsprinciper implementeras. Dataanvändningspolicyer är regler som beskriver den typ av marknadsföringsåtgärder som du tillåts eller begränsas från att utföra på data inom Experience Platform. Filtren Profiler tillämpar den aktiverade principen på datavyn."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+
+
+>[!CONTEXTUALHELP]
+>id="dataview_includedcomponents_filter_responsible_engagement"
+>title="Ansvariga interaktionsetiketter"
+>abstract="Ansvariga interaktionsetiketter används för att stödja ansvarsfullt engagemang."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+
+
+**[!UICONTROL Included components]** innehåller listan med **[!UICONTROL Metrics]** och **[!UICONTROL Dimensions]** som du konfigurerar för datavyn.
+
+* Om du vill söka efter komponenter använder du ![Sök](/help/assets/icons/Search.svg) **[!UICONTROL _Sök efter komponenter_]**.
+* Om du vill filtrera de inkluderade komponenterna väljer du ![Filter](/help/assets/icons/Filter.svg).
+
+  ![Dialogrutan Inkludera komponentfilter](assets/dataview_includedcomponents_filter.png)
+
+  I dialogrutan **[!UICONTROL Filter field by]** kan du filtrera efter följande kategorier:
+
+   * **[!UICONTROL Data type]** - Du kan välja en eller flera av följande datatyper: [!UICONTROL String], [!UICONTROL Integer], [!UICONTROL Short], [!UICONTROL Boolean], [!UICONTROL Double], [!UICONTROL Byte], [!UICONTROL Long], [!UICONTROL Date] eller [!UICONTROL Date-time].
+   * **[!UICONTROL Datasets]** - Välj en eller flera datauppsättningar.
+   * **[!UICONTROL Data governance]**: Välj en eller flera etiketter från underkategorierna [!UICONTROL Custom labels], [!UICONTROL Contract labels], [!UICONTROL Identity labels], [!UICONTROL Sensitivity labels], P[!UICONTROL artner ecosystem] eller [!UICONTROL Policies].
+   * **[!UICONTROL Other]** - Välj ett eller flera av alternativen [!UICONTROL Contains data], [!UICONTROL Is identity] eller [!UICONTROL Is not deprecated].
+
+  Välj **[!UICONTROL Apply]** om du vill använda filtren.
 
 
 
