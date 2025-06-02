@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: dfc9ba843fbddc135c0f8160fb672adb36e9146f
+source-git-commit: 105b235c1a4791fd59cf65ae7f543a5fc08fc55d
 workflow-type: tm+mt
 source-wordcount: '3268'
 ht-degree: 0%
@@ -43,7 +43,7 @@ När du har tillräckligt med historiska data i Experience Platform Web SDK och 
 
    * Högpresterande rapportering och datatillgänglighet eftersom Adobe Experience Platform är byggt för personalisering i realtid
 
-   * Konsolidera implementering för Adobe Experience Cloud datainsamling mellan andra Experience Cloud-produkter (AJO, RTCDP o.s.v.)
+   * Konsolidera implementeringen för Adobe Experience Cloud datainsamling mellan andra Experience Cloud-produkter (AJO, RTCDP osv.)
 
    * Inte beroende av Adobe Analytics nomenklatur (prop, eVar, event osv.)
 
@@ -69,27 +69,27 @@ I följande steg beskrivs den rekommenderade processen för uppgradering från A
 
 Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. Följ länken för varje steg och slutför de tillhörande uppgifterna. Återgå sedan till den här sidan och fortsätt till nästa steg i processen.
 
-1. [Planera din XDM-schemaarkitektur](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+1. [Planera din XDM-schemaarkitektur](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md){target="_blank"}.
 
-1. [Skapa ett anpassat schema i Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md).
+1. [Skapa ett anpassat schema i Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md){target="_blank"}.
 
    Tänk på följande alternativ när du skapar ditt schema:
 
-   * Om du vill integrera Customer Journey Analytics med RTCDP måste du aktivera alternativet **[!UICONTROL Profile]** i ditt schema enligt beskrivningen i [Skapa ett XDM-schema som ska användas med Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md). När det här alternativet är aktiverat sammanfogas data i kundprofilen i realtid när data hämtas till datauppsättningar som baseras på det här schemat.
+   * Om du vill integrera Customer Journey Analytics med RTCDP måste du aktivera alternativet **[!UICONTROL Profile]** i ditt schema enligt beskrivningen i [Skapa ett XDM-schema som ska användas med Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md){target="_blank"}. När det här alternativet är aktiverat sammanfogas data i kundprofilen i realtid när data hämtas till datauppsättningar som baseras på det här schemat.
 
-   * Om du vill inkludera strömmande mediedata måste du [konfigurera ditt schema så att det kan importera och använda strömmande data](/help/data-ingestion/streaming.md).
+   * Om du vill inkludera strömmande mediedata måste du [konfigurera ditt schema så att det kan importera och använda strömmande data](/help/data-ingestion/streaming.md){target="_blank"}.
 
-1. [Skapa en datauppsättning i Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md).
+1. [Skapa en datauppsättning i Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-dataset.md){target="_blank"}.
 
 1. (Valfritt) Om du använder klassificeringsdata i Adobe Analytics kan du lägga till klassificeringsdata i datauppsättningen i Customer Journey Analytics.
 
-   Det gör du genom att [skapa en uppslagsdatauppsättning för varje dimension som innehåller klassificeringsdata](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md).
+   Det gör du genom att [skapa en uppslagsdatauppsättning för varje dimension som innehåller klassificeringsdata](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md){target="_blank"}.
 
-1. För Adobe Analytics-implementeringar som använder AppMeasurement eller Analytics-tillägget (taggar) [skapar du ett datastam i Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md). <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
+1. För Adobe Analytics-implementeringar som använder AppMeasurement eller Analytics-tillägget (taggar) [skapar du ett datastam i Adobe Experience Platform](/help/getting-started/cja-upgrade/cja-upgrade-datastream.md){target="_blank"}. <!-- Is this correct? Will customers on the Web SDK already have a datastream that they only need to add AEP as a service to? Or does this step apply to everyone?-->
 
-   För Adobe Analytics-implementeringar som använder Web SDK finns det redan ett datastream. Mer information finns i [Konfigurera din befintliga Adobe Analytics Web SDK-implementering för att skicka data till plattformen](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md).
+   För Adobe Analytics-implementeringar som använder Web SDK finns det redan ett datastream. Mer information finns i [Konfigurera din befintliga Adobe Analytics Web SDK-implementering för att skicka data till plattformen](/help/getting-started/cja-upgrade/cja-upgrade-existing-adobe-analytics-websdk.md){target="_blank"}.
 
-1. [Lägg till Adobe Experience Platform som en tjänst i ditt datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md).
+1. [Lägg till Adobe Experience Platform som en tjänst i ditt datastream](/help/getting-started/cja-upgrade/cja-upgrade-datastream-addplatform.md){target="_blank"}.
 
 1. (Valfritt) Om du vill integrera Customer Journey Analytics med Adobe Journey Optimizer använder du personaliseringsobjektet i implementeringen för användning i Adobe Journey Optimizer.
 
@@ -97,23 +97,23 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
    +++Manuell implementering (JS-fil)
 
-   1. [Lägg till alloy.js på din plats](https://experienceleague.adobe.com/sv/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version%22).
+   1. [Lägg till alloy.js på din plats](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version%22){target="_blank"}.
 
    1. Fyll i ett XDM-objekt och skicka det till datastream.
 
-   +++
++++
 
    +++Taggar
 
-   1. [Skapa en taggegenskap och lägg till Adobe Experience Platform Web SDK-tillägget](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md).
+   1. [Skapa en taggegenskap och lägg till Adobe Experience Platform Web SDK-tillägget](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md){target="_blank"}.
 
-   1. [Lägg till Adobe Experience Platform Web SDK-tillägget i taggegenskapen](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md)
+   1. [Lägg till Adobe Experience Platform Web SDK-tillägget i taggegenskapen](/help/getting-started/cja-upgrade/cja-upgrade-tag-extension.md){target="_blank"}.
 
    1. [Implementera inläsartaggen på din plats](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).
 
-   1. [Lägg till logik för XDM-datainsamling i taggen ](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md).
+   1. [Lägg till logik för XDM-datainsamling i taggen ](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md){target="_blank"}.
 
-   +++
++++
 
 +++ API
 
@@ -121,31 +121,31 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
 +++
 
-1. [Verifiera att din Web SDK-implementering skickar data till en datamängd](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md).
+1. [Verifiera att din Web SDK-implementering skickar data till en datamängd](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md){target="_blank"}.
 
-1. [Skapa en anslutning i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-connection.md).
+1. [Skapa en anslutning i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-connection.md){target="_blank"}.
 
 1. (Valfritt) Koppla webbdata till data från andra kanaler, som callcenter-data.
 
-   Du uppnår detta genom att lägga till ytterligare datauppsättningar till din Customer Journey Analytics-anslutning, vilket beskrivs i [Importera callcenter och webbdata](/help/use-cases/cross-channel/call-center.md).
+   Du uppnår detta genom att lägga till ytterligare datauppsättningar till din Customer Journey Analytics-anslutning, vilket beskrivs i [Importera callcenter och webbdata](/help/use-cases/cross-channel/call-center.md){target="_blank"}.
 
-1. [Skapa en datavy i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md).
+1. [Skapa en datavy i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md){target="_blank"}.
 
-1. [Verifiera att data flödar in i datavyn i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md).
+1. [Verifiera att data flödar in i datavyn i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md){target="_blank"}.
 
-1. I din Adobe Analytics-miljö [använder du Analytics Inventory](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-tools/analytics-inventory) för att se en omfattande översikt över din Adobe Analytics-miljö, inklusive antalet projekt och komponenter, rapportsviter, användare och mycket mer.
+1. I din Adobe Analytics-miljö [använder du Analytics Inventory](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/analytics-inventory){target="_blank"} för att se en omfattande översikt över din Adobe Analytics-miljö, inklusive antalet projekt och komponenter, rapportsviter, användare och mycket mer.
 
-1. [Migrera projekt och komponenter](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
+1. [Migrera projekt och komponenter](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration){target="_blank"}.
 
    <!-- You might not want to do this, based on the schema? Ask Zach. Will it work if you have all new schema fields? What would you want to just build from scratch. Maybe everything? -->
 
-1. (Valfritt) Om du använder marknadsföringskanaler i Adobe Analytics kan du [skapa ett marknadsföringskanalhärlett fält i Customer Journey Analytics](/help/data-views/derived-fields/derived-fields.md#marketing-channels).
+1. (Valfritt) Om du använder marknadsföringskanaler i Adobe Analytics kan du [skapa ett marknadsföringskanalhärlett fält i Customer Journey Analytics](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"}.
 
    Härledda fält är en viktig aspekt av realtidsrapporter i Customer Journey Analytics. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare.
 
    Ett sätt att använda härledda fält är att definiera ett härlett fält för marknadsföringskanal som fastställer rätt marknadsföringskanal baserat på ett eller flera villkor (till exempel URL-parameter, sidadress eller sidnamn).
 
-   Använd [marknadsföringskanalernas funktionsmall](/help/data-views/derived-fields/derived-fields.md#marketing-channels) i härledda fält för att snabbt skapa ett härlett fält för marknadsföringskanaler.
+   Använd [marknadsföringskanalernas funktionsmall](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"} i härledda fält för att snabbt skapa ett härlett fält för marknadsföringskanaler.
 
 1. Jämför data i Adobe Analytics från din gamla implementering med data i Customer Journey Analytics från din nya implementering och se till att du förstår eventuella skillnader och varför de finns. <!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
 
@@ -155,17 +155,17 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
    >
    >Följ de här stegen om du inte tidigare har skapat någon källkoppling för Analytics.
    >
-   >Om du redan använder Analytics-källkopplingen med Customer Journey Analytics följer du stegen i [Övergång från Analytics-källkopplingen till Web SDK för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
+   >Om du redan använder Analytics-källkopplingen med Customer Journey Analytics följer du stegen i [Övergång från Analytics-källkopplingen till Web SDK för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md){target="_blank"}.
 
-   1. [Skapa ett XDM-schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md)
+   1. [Skapa ett XDM-schema för Analytics-källkopplingen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-schema.md){target="_blank"}.
 
-   1. Om du inte redan har en Analytics-källkoppling [skapar du Analytics-källkopplingen och mappar fält till XDM-schemat](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md).
+   1. Om du inte redan har en Analytics-källkoppling [skapar du Analytics-källkopplingen och mappar fält till XDM-schemat](/help/getting-started/cja-upgrade/cja-upgrade-source-connector.md){target="_blank"}.
 
       eller
 
-      Om du redan har en Analytics-källkoppling mappar [fält från källkopplingen till ditt XDM-schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md).
+      Om du redan har en Analytics-källkoppling mappar [fält från källkopplingen till ditt XDM-schema](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md){target="_blank"}.
 
-   1. [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md).
+   1. [Lägg till Analytics-källanslutningsdatauppsättningen i anslutningen](/help/getting-started/cja-upgrade/cja-upgrade-source-connector-dataset.md){target="_blank"}.
 
 1. Planera användarnas introduktion.
 
@@ -173,15 +173,15 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
    Du bör ge dina användare god tid (3-6 månader) att bekanta sig med de viktigaste skillnaderna mellan Analysis Workspace i Customer Journey Analytics.
 
-   Mer information om några av de viktigaste skillnaderna mellan Adobe Analytics och Customer Journey Analytics finns i [Användarhandbok för Adobe Analytics-användare](/help/getting-started/aa-to-cja-user.md).
+   Mer information om några av de viktigaste skillnaderna mellan Adobe Analytics och Customer Journey Analytics finns i [Användarhandbok för Adobe Analytics-användare](/help/getting-started/aa-to-cja-user.md){target="_blank"}.
 
-1. Läs mer om stöd för [funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md). De flesta Adobe Analytics-funktioner stöds i Customer Journey Analytics och många andra funktioner finns i Customer Journey Analytics.
+1. Läs mer om stöd för [funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md){target="_blank"}. De flesta Adobe Analytics-funktioner stöds i Customer Journey Analytics och många andra funktioner finns i Customer Journey Analytics.
 
 1. Inaktivera Adobe Analytics när implementeringen av Customer Journey Analytics Web SDK är klar och du känner dig trygg med de data du samlar in.
 
    Adobe rekommenderar att du håller Adobe Analytics-miljön igång under en tid efter att du har implementerat Customer Journey Analytics.
 
-   Mer information om hur Adobe Analytics används under och efter en uppgradering, samt den föreslagna tidpunkten för inaktivering av Adobe Analytics, finns i [Utvärdera hur länge du behöver Adobe Analytics efter uppgradering till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md).
+   Mer information om hur Adobe Analytics används under och efter en uppgradering, samt den föreslagna tidpunkten för inaktivering av Adobe Analytics, finns i [Utvärdera hur länge du behöver Adobe Analytics efter uppgradering till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md){target="_blank"}.
 
 ## Generera uppgraderingssteg dynamiskt för organisationen
 
@@ -213,7 +213,7 @@ Så här genererar du uppgraderingssteg dynamiskt för organisationens unika oms
    | Fråga | Tillgängliga svar | Ytterligare information |
    |---------|----------|---------|
    | Välj det alternativ som beskriver din nuvarande Adobe Analytics-implementering. Den här informationen kan påverka andra uppgraderingsalternativ som kan vara tillgängliga när du uppgraderar till Customer Journey Analytics. | Välj en: <ul><li>**AppMeasurement:**<br/> En JavaScript-implementering som läser in AppMeasurement.js på en sida och skickar data till Adobe med objektet s (till exempel s.eVar1).</li><li>**Adobe Analytics-tillägg (taggar):** <br/>En taggimplementering som läser in Adobe Experience Platform Data Collection (kallades tidigare Launch). Taggen har tillägget Adobe Analytics installerat.</li><li>**Experience Platform Web SDK-tillägg (taggar):**<br/> En taggimplementering som läser in Adobe Experience Platform Data Collection (kallades tidigare Launch). Taggen har Web SDK-tillägget installerat.</li><li>**Experience Platform Web SDK (alloy.js):** En JavaScript-implementering som läser in Web SDK-biblioteket (alloy.js) på en sida och skickar data till Adobe med en JSON-nyttolast.</li><li>**API för datainfogning i grupp:**<br/> En implementering som använder API:t för datainfogning eller API:t för satsvis datainfogning.</li><li>**Experience Platform Mobile SDK:**<br/> En implementering som använder Adobe Experience Platform Mobile SDK.</li><li>**AppMeasurement som använder ett tagghanteringsverktyg från tredje part:**<br/> En implementering som använder ett tagghanteringsverktyg från tredje part.</li><li>**En produkt som inte är från Adobe Analytics:**<br/> En implementering som samlar in data för en annan produkt än Adobe Analytics, till exempel Google Analytics. Om du väljer det här alternativet inaktiveras flera alternativ i uppgraderingsguiden som inte gäller när du uppgraderar till Customer Journey Analytics från en produkt som inte är från Adobe Analytics. </li><li>**Jag vet inte:**<br/> Om du inte är den person som hanterar implementeringen kan du tillfälligt välja det här alternativet.</li></ul><p>Välj om tillämpligt:<ul><li>**I vår implementering används för närvarande Analytics-källanslutningen:**<br/> Med Analytics-källkopplingen kan du enkelt få värde från Customer Journey Analytics, men du måste betala för både Adobe Analytics och Customer Journey Analytics. Den här guiden hjälper dig att gå mot en oberoende implementering av SDK för webben.</li></ul></p> | <ul><li>[Förstå implementeringen av Adobe Analytics och hur den påverkar din uppgradering till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md#understand-your-adobe-analytics-implementation-and-how-it-affects-your-upgrade-to-customer-journey-analytics)</li><li>[Övergång från Analytics-källkopplingen till Web SDK för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)</li></ul> |
-   | De flesta Adobe Analytics-funktioner är tillgängliga i Customer Journey Analytics. Följande funktioner måste dock beaktas under uppgraderingsprocessen. Välj något som du tänker använda. | Markera allt som gäller:<ul><li>**Historiska data från Adobe Analytics:**</br> Lägg in tidigare data från Adobe Analytics rapportsvit i Adobe Experience Platform och Customer Journey Analytics.</li><li>**Komponenter och projekt från Adobe Analytics:**</br> Komponenter från Adobe Analytics omfattar: Projekt (med tillhörande frihandstabeller och visualiseringar), segment och beräknade värden.</li><li>**Aktivitetskarta - övertäckning och länkspårning:**</br> Ett webbläsartillägg som gör att du kan visa länkspårningsdata som en övertäckning på webbplatsen.</li><li>**Klassificeringsdata:**</br> Gruppera eller kategorisera data som separata dimensioner.</li><li>**Marknadskanaler:**</br> Skapa regler som kategoriserar hur kunderna kommer till din webbplats.</li><li>**Data Warehouse:**</br> Exportera bearbetade data från Adobe Analytics i kalkylbladsformat.</li><li>**Dataflöden:**&#x200B;Det finns ännu ingen exakt ersättning för datafeeds i Customer Journey Analytics. Liknande funktionalitet kan dock uppnås med funktioner som fullständig tabellexport, export av plattformsdatauppsättningar, integrering med BI-verktyg och API:t för rapportering.</br></li><li>**Direktuppspelande mediedata:**</br> Ett tillägg till Adobe Analytics och Customer Journey Analytics som specialiserar sig på datainsamling av media, till exempel ljud, video eller direktuppspelat innehåll.</li></ul> | <ul><li>[Förstå Adobe Analytics funktionssupport vid uppgradering till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)</li></ul> |
+   | De flesta Adobe Analytics-funktioner är tillgängliga i Customer Journey Analytics. Följande funktioner måste dock beaktas under uppgraderingsprocessen. Välj något som du tänker använda. | Markera allt som gäller:<ul><li>**Historiska data från Adobe Analytics:**</br> Lägg in tidigare data från Adobe Analytics rapportsvit i Adobe Experience Platform och Customer Journey Analytics.</li><li>**Komponenter och projekt från Adobe Analytics:**</br> Komponenter från Adobe Analytics omfattar: Projekt (med tillhörande frihandstabeller och visualiseringar), segment och beräknade värden.</li><li>**Aktivitetskarta - övertäckning och länkspårning:**</br> Ett webbläsartillägg som gör att du kan visa länkspårningsdata som en övertäckning på webbplatsen.</li><li>**Klassificeringsdata:**</br> Gruppera eller kategorisera data som separata dimensioner.</li><li>**Marknadskanaler:**</br> Skapa regler som kategoriserar hur kunderna kommer till din webbplats.</li><li>**Data Warehouse:**</br> Exportera bearbetade data från Adobe Analytics i kalkylbladsformat.</li><li>**Dataflöden:**Det finns ännu ingen exakt ersättning för datafeeds i Customer Journey Analytics. Liknande funktionalitet kan dock uppnås med funktioner som fullständig tabellexport, export av plattformsdatauppsättningar, integrering med BI-verktyg och API:t för rapportering.</br></li><li>**Direktuppspelande mediedata:**</br> Ett tillägg till Adobe Analytics och Customer Journey Analytics som specialiserar sig på datainsamling av media, till exempel ljud, video eller direktuppspelat innehåll.</li></ul> | <ul><li>[Förstå Adobe Analytics funktionssupport vid uppgradering till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)</li></ul> |
    | De flesta nya funktioner är tillgängliga i Customer Journey Analytics. Följande funktioner måste dock beaktas under uppgraderingsprocessen. Välj något som du tänker använda. | Markera allt som gäller:<ul><li>**Lägg samman insamlade data med data från andra källor (t.ex. kontaktcenterdata):**</br>(Rekommenderas) Koppla data från olika webb-, mobil- och offlineegenskaper för att skapa en enda, konsoliderad vy över kundbeteenden. Denna möjlighet att kombinera analysdata från andra kanaler är det primära användningsområdet för Customer Journey Analytics.</li><li>**Häftar träffar från andra datauppsättningar med en anpassad dimension:**<br/> Om någon av dina datauppsättningar inte delar någon primär identifierare (till exempel ett Experience Cloud-id) kan du ändå sammanfoga dessa data med en annan dimension, till exempel inloggningsanvändarnamn eller e-postadress.</li><li>**Integrera med Adobe Journey Optimizer:**<br/> Leverera sammankopplade, kontextuella och personaliserade upplevelser till kunder.</li><li>**Integrera med Adobe Real-Time CDP:**<br/> Kombinera profildata från flera källor för att generera målgrupper och segment baserat på användaregenskaper.</li><li>**Integrera med Adobe Target (A4T):**<br/> Adobe rekommenderar integrering med Adobe Journey Optimizer för användningsfall inom personalisering. Det är möjligt att integrera med Adobe Target, men det är en kortsiktig lösning.</li><li>**Integrera med Adobe Audience Manager:**<br/> Adobe rekommenderar integrering med Adobe CDP i realtid för målgruppsbaserade användningsfall. Det är möjligt att integrera med Audience Manager, men det är en kortsiktig lösning.</li></ul> | [Förstå unika funktioner för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md) |
    | Ange hur du tänker använda Adobe Analytics och Customer Journey Analytics i slutändan: | Välj en: <ul><li>**Jag tänker flytta helt till Customer Journey Analytics från Adobe Analytics:**<br/>(rekommenderas) Adobe rekommenderar att du går över från Adobe Analytics till Customer Journey Analytics. Under övergångsperioden bör du köra Adobe Analytics tillsammans med Customer Journey Analytics för att kunna jämföra data sida vid sida. När du känner dig trygg med data kan du inaktivera Adobe Analytics.</li><li>**Jag tänker behålla båda Analytics-produkterna:**<br/>(rekommenderas inte) Om du väljer det här alternativet innehåller ditt avtal med Adobe både Adobe Analytics och Customer Journey Analytics, vilket kan vara dyrare för din organisation över tid.</li></ul> | [Utvärdera när Adobe Analytics ska inaktiveras efter uppgradering till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md) |
    | Ange hur du vill konfigurera ditt Customer Journey Analytics-schema: | Välj en: <ul><li>**Jag vill använda ett schema som är anpassat till min organisation:**</br>(Rekommenderas) Om du anpassar ditt schema kan din organisation bara spåra det du behöver och undvika de overheadfält som är kopplade till röriga och onödiga fält. Det här alternativet inkluderar fältgrupper som lagts till av Web SDK och fältgrupper som är anpassade efter din organisation.</li><li>**Jag vill använda standardschemat för Adobe Analytics:**</br>(rekommenderas inte) Adobe Analytics-schemat innehåller fler än tusen fält, vilket kan leda till ett rörigt och komplext schema. Din organisation måste fortsätta att följa konceptet med props och eVars, som är ett gammalt koncept som inte används i Customer Journey Analytics. Det är svårare att integrera med andra Adobe Experience Platform-tjänster.</li></ul> | [Välj ditt schema för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) |
