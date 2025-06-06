@@ -4,9 +4,9 @@ title: Lägga till och visa kommentarer i projekt
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 5831f1eea0d46000c15d0e2269717816785ee881
+source-git-commit: 02b85db81c384c78f7d388b19c8ad53d0028de43
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1780'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,9 @@ Du kan visa kommentarer från kommentarområdet i den högra listen eller från 
 
 Alla kommentarer som görs i ett Analysis Workspace-projekt visas i kommentarsområdet i den högra listen.
 
-1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen till höger i Analysis Workspace.
+1. Som standard utökas kommentarsområdet för varje projekt i Analysis Workspace första gången du öppnar ett projekt.
+
+   Välj ikonen för kommentarområdet till höger om ett projekt för att öppna eller stänga kommentarsområdet.
 
    ![Kommentarsområdet stängt](assets/comments-area-closed.png)
 
@@ -113,11 +115,11 @@ Kommentarsfunktionen i Analysis Workspace gör det enklare att samarbeta med and
 
 Tänk på följande när du använder symbolen @ för att inkludera personer i en kommentar:
 
-* Personer som du inkluderar får meddelanden baserade på deras meddelandeinställningar för Adobe Experience Cloud. Som standard får de ett meddelande i appen som visas från [Experience Cloud-ikonen ](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-meddelandeikonen](assets/experience-cloud-notification.png) i Customer Journey Analytics.
+* Personer som du inkluderar får meddelanden baserade på deras meddelandeinställningar för Adobe Experience Cloud.
 
-  Dessutom kan användare konfigurera sina inställningar för Experience Cloud-meddelanden så att de får e-postmeddelanden och Slack-meddelanden genom att [prenumerera på e-postmeddelanden](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) och [prenumerera på Slack-meddelanden](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#slack).
+  Mer information finns i [Få meddelanden om kommentarer](#receive-notifications-about-comments).
 
-* Du kan inkludera vem som helst i organisationen i en kommentar, men om du gör det får de inte automatiskt åtkomst till projektet. Endast personer som redan har åtkomst till projektet kan komma åt det.
+* Du kan inkludera vem som helst i en kommentar som finns i din organisation och har tillgång till Customer Journey Analytics, men om du gör det får de inte automatiskt åtkomst att redigera projektet.
 
 Så här tar du med en annan person i kommentaren:
 
@@ -144,6 +146,12 @@ Så här tar du med en annan person i kommentaren:
 1. (Valfritt) Meddela en annan person om din kommentar genom att skriva @-symbolen följt av namnet på personen. Mer information om hur du använder @-symbolen för att meddela andra finns i [Inkludera andra i en kommentar](#include-others-in-a-comment).
 
 1. Välj **[!UICONTROL Submit]**.
+
+## Få meddelanden om kommentarer
+
+Projektägare och [specifika personer som du anger](#include-others-in-a-comment) får meddelanden baserat på deras Adobe Experience Cloud-meddelandeinställningar. Som standard får de ett meddelande i appen som visas från [Experience Cloud-ikonen ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-meddelandeikonen](assets/experience-cloud-notification.png) i Customer Journey Analytics.
+
+Dessutom kan användare konfigurera sina inställningar för Experience Cloud-meddelanden så att de får e-postmeddelanden och Slack-meddelanden genom att [prenumerera på e-postmeddelanden](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) och [prenumerera på Slack-meddelanden](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Placera ett emblem för en befintlig kommentar
 
