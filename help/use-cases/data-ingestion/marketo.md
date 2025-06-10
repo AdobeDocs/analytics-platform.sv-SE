@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -18,15 +18,15 @@ Ni kan utnyttja de nya Marketo Engage-datamängderna i Adobe Experience Platform
 
 ## Steg 1: Mappa Marketo-källdatafält till deras XDM-mål
 
-Mappa objekten [Personer](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=sv-SE#persons) och [Aktiviteter](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html?lang=sv-SE#activities) till deras respektive målfält för XDM-schemat.
+Mappa objekten [Personer](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#persons) och [Aktiviteter](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo.html#activities) till deras respektive målfält för XDM-schemat.
 
 ## Steg 2: Infoga Marketo-data i Adobe Experience Platform
 
-Använd [Marketo Engage-anslutningen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=sv-SE) för att hämta data från Marketo till Experience Platform och hålla dessa data uppdaterade med plattformsanslutna program.
+Använd [Marketo Engage-anslutningen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html) för att hämta data från Marketo till Experience Platform och hålla dessa data uppdaterade med plattformsanslutna program.
 
 ## Steg 3: Konfigurera en anslutning till datauppsättningen i Customer Journey Analytics
 
-För att kunna rapportera om Experience Platform datauppsättningar måste du först upprätta en anslutning mellan datauppsättningar i Experience Platform och Customer Journey Analytics. Mer information finns i [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=sv-SE).
+För att kunna rapportera om Experience Platform datauppsättningar måste du först upprätta en anslutning mellan datauppsättningar i Experience Platform och Customer Journey Analytics. Mer information finns i [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html).
 
 ## Steg 4: Skapa en eller flera datavyer
 
@@ -39,7 +39,7 @@ Ett exempel du kan utforska är: Hur många webbsidesbesök av leads hade vi i a
 1. Öppna [Analytics Workspace](/help/analysis-workspace/home.md) och skapa ett nytt projekt.
 Kunder med B2B/B2P CDP kan göra analyser i B2C-stil i Customer Journey Analytics. B2B-objekt är ännu inte tillgängliga.
 
-1. Skapa ett [segment](/help/components/filters/create-filters.md) för webbsidesvyer enligt följande - Händelsetyp = web.webpagedetails.pageViews:
+1. Skapa ett [segment](/help/components/segments/seg-create.md) för webbsidesvyer enligt följande - Händelsetyp = web.webpagedetails.pageViews:
 
    ![Definitionsfönster med händelse- och händelsetyp](../assets/marketo-filter.png)
 

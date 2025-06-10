@@ -5,7 +5,7 @@ feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Om sorteringsmåttet är ett beräknat mått, använder servern måtten i det be
 
 Det bästa sättet att hantera stora kardinalitetsmått är att begränsa antalet dimensionsobjekt som en rapport behandlar. Eftersom alla rapporter bearbetas när de begärs kan du justera rapportparametrarna för att få omedelbara resultat. Adobe rekommenderar någon av följande optimeringar av kardinalitetsdimensioner:
 
-* Använd ett [segment](/help/components/filters/create-filters.md). Segmenten tillämpas när varje server bearbetar en delmängd av data.
+* Använd ett [segment](/help/components/segments/seg-create.md). Segmenten tillämpas när varje server bearbetar en delmängd av data.
 * Använd en sökning. Dimension-objekt som utesluts från söktermen tas bort från rapportresultaten, vilket gör det lättare att se de önskade dimensionsobjekten.
 * Använd en dimension för uppslagsdatauppsättning. Dimensionerna för uppslagsdatauppsättningen kombinerar dimensionsobjekt för händelsedatamängd, som begränsar antalet unika värden som returneras.
 * Använd komponentinställningen [Inkludera/exkludera](/help/data-views/component-settings/include-exclude-values.md) i datavyhanteraren.

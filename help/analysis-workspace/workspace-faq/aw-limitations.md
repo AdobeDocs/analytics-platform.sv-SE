@@ -4,7 +4,7 @@ title: Kända begränsningar i Analysis Workspace
 feature: FAQ
 exl-id: 334cfe24-a4b2-43be-94df-5a2df90612f0
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Här är en lista över kända begränsningar i Analysis Workspace och dess komp
 ## Segment
 
 * Vissa mått och mått kan inte segmenteras, som [!UICONTROL Events], [!UICONTROL Persons] osv.
-* Ad hoc-segment som skapats i [panelens dropzone](/help/analysis-workspace/c-panels/panels.md) är en typ av snabbsegment. De visas inte i den vänstra panelen av Workspace eller segmenthanteraren såvida de inte är offentliga. Mer information finns i [Snabbsegment](/help/components/filters/quick-filters.md).
+* Ad hoc-segment som skapats i [panelens dropzone](/help/analysis-workspace/c-panels/panels.md) är en typ av snabbsegment. De visas inte i den vänstra panelen av Workspace eller segmenthanteraren såvida de inte är offentliga. Mer information finns i [Snabbsegment](/help/components/segments/seg-quick.md).
 
 ## Beräknade mätvärden
 

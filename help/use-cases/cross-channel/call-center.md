@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Customer Journey Analytics har den värdefulla och robusta möjligheten att komb
 
 ## Importera webb- och callcenterdata till plattformen
 
-Importera data till Adobe Experience Platform. Se [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE) och [Infoga data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE) i Adobe Experience Platform-dokumentationen.
+Importera data till Adobe Experience Platform. Se [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Infoga data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
 
 När du importerar data till plattformen kan följande tips hjälpa dig att få bättre insikter i de resulterande rapporterna:
 
@@ -69,7 +69,7 @@ Följande visualiseringar kan användas för att få insikter från din sammansl
 
 Denna visualisering hjälper er att förstå hur väl CCA sammanfogar data.
 
-1. Skapa två segment. Variabeln som används i de här två segmenten är samma variabel som nämns ovan som återspeglar datakällan för varje händelse. Mer information finns i [Skapa ett segment](/help/components/filters/create-filters.md).
+1. Skapa två segment. Variabeln som används i de här två segmenten är samma variabel som nämns ovan som återspeglar datakällan för varje händelse. Mer information finns i [Skapa ett segment](/help/components/segments/seg-create.md).
    * Personbehållare där datauppsättnings-ID är lika med dina webbdata
    * Personbehållare där datauppsättnings-ID är lika med dina kundtjänstdata
 2. Dra en [Vennbildvisualisering](/help/analysis-workspace/visualizations/venn.md) till arbetsytan i Analysis Workspace.

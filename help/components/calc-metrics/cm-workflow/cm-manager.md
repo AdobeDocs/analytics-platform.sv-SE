@@ -3,9 +3,9 @@ description: Med hanteraren för beräknade mätvärden kan du dela, filtrera, t
 title: Beräknad måtthanterare
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '851'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ Den beräknade metadatahanteraren har följande gränssnittselement:
 
 ### Filterlista
 
-Filterlistan ➊ visa alla beräknade värden som du äger eller som har delats med dig. Listan innehåller följande kolumner:
+Filterlistan ➊ visar alla beräknade värden som du äger eller som har delats med dig. Listan innehåller följande kolumner:
 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 
 | Kolumn | Beskrivning |
 | --- | --- | 
-| ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill prioritera ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) ett beräknat mått. Se [Markera beräknat mått som favorit](/help/components/filters/filters-favorite.md) |
+| ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill prioritera ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) ett beräknat mått. Se [Markera beräknat mått som favorit](/help/components/segments/seg-favorite.md) |
 | **[!UICONTROL Title and description]** | Om du vill redigera det beräknade måttet väljer du titellänken, som öppnar verktyget [Beräknade mått](cm-build-metrics.md). Ett delat beräknat mått har indikerats med ![Dela](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Data view]** | De datavyer som det här beräknade måttet gäller för. |
 | **[!UICONTROL Owner]** | Ägare till det beräknade måttet. Som användare ser du bara de anteckningar du äger eller de anteckningar som delas med dig. |
@@ -49,7 +49,7 @@ Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att ange vil
 
 ### Åtgärdsfält
 
-Du kan använda åtgärdsfältets ➋ för att utföra åtgärder på filter. Åtgärdsfältet innehåller följande åtgärder:
+Du kan använda åtgärdsfältet ➋ för att utföra åtgärder på filter. Åtgärdsfältet innehåller följande åtgärder:
 
 | Ikon | Åtgärd | Beskrivning |
 |:---:|---|---|
@@ -65,11 +65,11 @@ Du kan använda åtgärdsfältets ➋ för att utföra åtgärder på filter. Å
 
 ### Aktivt filterfält
 
-Filterfältet ➌ de aktiva filter som tillämpas från filterpanelen till listan med beräknade mätvärden (om sådana finns). Du kan snabbt ta bort ett filter med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett filter har angetts kan du ta bort alla filter med **[!UICONTROL Remove all]**.
+Filterfältet ➌ visar de aktiva filter som tillämpas från filterpanelen till listan med beräknade mått (om sådana finns). Du kan snabbt ta bort ett filter med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett filter har angetts kan du ta bort alla filter med **[!UICONTROL Remove all]**.
 
 ### Panelen Filter
 
-Du kan filtrera listan med beräknade mått med den vänstra panelen ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]**. Filterpanelen visar typen av filter och antalet beräknade värden som följer det specifika filtret. Välj ![Filter](/help/assets/icons/Filter.svg) för att växla visningen av filterpanelen.
+Du kan filtrera listan med beräknade mått med den vänstra panelen ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** ➍. Filterpanelen visar typen av filter och antalet beräknade värden som följer det specifika filtret. Välj ![Filter](/help/assets/icons/Filter.svg) för att växla visningen av filterpanelen.
 
 Mer information finns i [Filtrera listan med beräknade värden](cm-filter.md).
 

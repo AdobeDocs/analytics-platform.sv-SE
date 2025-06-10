@@ -6,9 +6,9 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 9f954709a3dde01b4e01581e34aece07fe0256b1
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1334'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ De viktigaste funktionerna i Analysis Workspace finns på knapppanelen:
 | ![Webbsida](/help/assets/icons/WebPage.svg) | **[!UICONTROL Panels]** | [Paneler](/help/analysis-workspace/c-panels/panels.md) används för att ordna din analys i ett projekt och kan innehålla många tabeller och visualiseringar. Många av panelerna i Analysis Workspace genererar en komplett uppsättning analyser baserade på några få indata från användarna. |
 | ![Guidad analys](/help/assets/icons/GuidedAnalysis.svg) | **[!UICONTROL Guided Analysis]** | [Med guidad analys](../guided-analysis/overview.md) kan du självbetjäna data och insikter av hög kvalitet om kundresan via guidade arbetsflöden. Du kan skapa en analys som ska ingå i ditt Workspace-projekt eller inkludera en befintlig analys som du sparat tidigare. |
 | ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | **[!UICONTROL Visualizations]** | [Visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md), t.ex. en stapel eller ett linjediagram, kan användas för att ge data liv. På den vänstra panelen väljer du den mittersta **[!UICONTROL Visualizations]**-ikonen för att visa en fullständig lista över tillgängliga visualiseringar. |
-| ![Kurva](/help/assets/icons/Curate.svg) | **[!UICONTROL Components]** | [Komponenter](/help/components/overview.md) innehåller följande element:<ul><li>![Dimensioner](/help/assets/icons/Dimensions.svg) [Dimensioner](/help/components/dimensions/overview.md)</li><li>![Händelse](/help/assets/icons/Event.svg) [Mätvärden](/help/components/apply-create-metrics.md)</li><li>![Segmentering](/help/assets/icons/Segmentation.svg) [Segment](/help/components/filters/filters-overview.md)</li><li>![Kalender](/help/assets/icons/Calendar.svg) [Datumintervall](/help/components/date-ranges/overview.md)</li></ul> |
+| ![Kurva](/help/assets/icons/Curate.svg) | **[!UICONTROL Components]** | [Komponenter](/help/components/overview.md) innehåller följande element:<ul><li>![Dimensioner](/help/assets/icons/Dimensions.svg) [Dimensioner](/help/components/dimensions/overview.md)</li><li>![Händelse](/help/assets/icons/Event.svg) [Mätvärden](/help/components/apply-create-metrics.md)</li><li>![Segmentering](/help/assets/icons/Segmentation.svg) [Segment](/help/components/segments/seg-overview.md)</li><li>![Kalender](/help/assets/icons/Calendar.svg) [Datumintervall](/help/components/date-ranges/overview.md)</li></ul> |
 | ![VisaLista](/help/assets/icons/ViewList.svg) | **[!UICONTROL Table of contents]** | Innehållsförteckningen organiserar alla paneler och visualiseringar som ingår i projektet i en lista som kan komprimeras, så att du snabbt kan komma åt en viss panel eller visualisering. |
 | ![Bokmärke](/help/assets/icons/Bookmark.svg) | **Dataordlista** | [Dataordlistan](/help/components/data-dictionary/data-dictionary-overview.md) hjälper både användare och administratörer att hålla reda på och förstå komponenterna i sin Analytics-miljö bättre. |
 
@@ -106,7 +106,7 @@ I tabellerna nedan finns en översikt över de tillgängliga menyerna.
 
 | **[!UICONTROL Components]** | Genväg till Mac | Kortkommando i Windows | Beskrivning |
 |---|---|---|---|
-| **[!UICONTROL Create segment...]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+Ctrl+e *]** | Skapa ett nytt [segment](/help/components/filters/create-filters.md). |
+| **[!UICONTROL Create segment...]** | **[!UICONTROL *shift+cmd+e *]** | **[!UICONTROL *shift+Ctrl+e *]** | Skapa ett nytt [segment](/help/components/segments/seg-create.md). |
 | **[!UICONTROL Create metric...]** | **[!UICONTROL *shift+cmd+c *]** | **[!UICONTROL *shift+Ctrl+c *]** | Skapa ett nytt [beräknat mått](/help/components/calc-metrics/calc-metr-overview.md). |
 | **[!UICONTROL Create date range...]** | **[!UICONTROL *shift+cmd+d *]** | **[!UICONTROL *shift+Ctrl+d *]** | Skapa ett nytt [datumintervall](/help/components/date-ranges/overview.md). |
 | **[!UICONTROL Create annotation...]** | **[!UICONTROL *shift+cmd+o *]** | **[!UICONTROL *shift+Ctrl+o *]** | Skapa en ny [anteckning](/help/components/annotations/overview.md). |
@@ -162,6 +162,6 @@ När du är klar med projektet och samlar in åtgärdbara insikter kan andra vil
 ## Ytterligare resurser {#resources}
 
 - Sidan [Learning landing](/help/getting-started/landing.md#learning) i Customer Journey Analytics. Den här sidan är ett bra sätt att lära känna Analysis Workspace. Speciellt om Workspace Basic. I den här mallen beskrivs vanliga termer och steg för hur du skapar din första analys i Workspace
-- Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/overview).
-- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/sv/docs/release-notes/experience-cloud/current).
+- Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview).
+- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
 

@@ -3,7 +3,7 @@ description: Genom att segmentera enskilda mätvärden kan ni göra måttjämfö
 title: Segmenterade mätvärden
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -16,7 +16,7 @@ I [verktyget för beräknade mätvärden](cm-build-metrics.md#definition-builder
 
 >[!NOTE]
 >
->Segmentdefinitioner uppdateras via [segmentbyggaren](/help/components/filters/filter-builder.md). Om du ändrar ett segment uppdateras det automatiskt överallt där det används, inklusive om segmentet ingår i en beräknad måttdefinition.
+>Segmentdefinitioner uppdateras via [segmentbyggaren](/help/components/segments/seg-builder.md). Om du ändrar ett segment uppdateras det automatiskt överallt där det används, inklusive om segmentet ingår i en beräknad måttdefinition.
 >
 
 Ni vill jämföra mätvärden för tyska människor som interagerar med ert varumärke med människor utanför Tyskland. Du kan alltså svara på frågor som:
@@ -30,7 +30,7 @@ Se avsnitten nedan för att illustrera hur segmenterade mätvärden kan hjälpa 
 ## Populära sidor
 
 1. [Skapa ett beräknat mått](cm-workflow.md) från ett Workspace-projekt med namnet `German people`.
-1. I [kalkylerade måttbyggare](cm-build-metrics.md) [skapar du ett segment ](/help/components/filters/filter-builder.md) med namnet `Germany` som använder fältet CRM-land från dina CRM-data för att avgöra var en person kommer ifrån.
+1. I [kalkylerade måttbyggare](cm-build-metrics.md) [skapar du ett segment ](/help/components/segments/seg-builder.md) med namnet `Germany` som använder fältet CRM-land från dina CRM-data för att avgöra var en person kommer ifrån.
 
    >[!TIP]
    >

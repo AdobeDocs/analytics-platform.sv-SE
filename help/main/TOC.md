@@ -9,7 +9,7 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: c0446bd85b65109fd3311d54e33f9fb33af28f88
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1243'
 ht-degree: 10%
@@ -325,20 +325,20 @@ ht-degree: 10%
       + [Tidsdelningsdimensioner](../components/dimensions/time-parting-dimensions.md)
       + [Höga kardinaldimensioner](../components/dimensions/high-cardinality.md)
    + [Mätvärden](../components/apply-create-metrics.md)
-   + Segment {#cja-filters}
-      + [Översikt](../components/filters/filters-overview.md)
-      + [Skapa segment](../components/filters/create-filters.md)
-      + [Skapa segment](../components/filters/filter-builder.md)
-      + [Snabbsegment](../components/filters/quick-filters.md)
-      + [Sekventiella segment](../components/filters/seg-sequential-build.md)
-      + [Dela segment](../components/filters/filters-share.md)
-      + [Tagga segment](../components/filters/filters-tag.md)
-      + [Filtrera listan med segment](../components/filters/filters-filter.md)
-      + [Markera segment som favoriter](../components/filters/filters-favorite.md)
-      + [Godkänn segment](../components/filters/filters-approve.md)
-      + [Kopiera segment](../components/filters/filters-copy.md)
-      + [Hantera segment](../components/filters/manage-filters.md)
-      + [Operatorer](../components/filters/operators.md)
+   + Segment {#segments}
+      + [Översikt](/help/components/segments/seg-overview.md)
+      + [Skapa segment](/help/components/segments/seg-create.md)
+      + [Skapa segment](/help/components/segments/seg-builder.md)
+      + [Snabbsegment](/help/components/segments/seg-quick.md)
+      + [Sekventiella segment](/help/components/segments/seg-sequential-build.md)
+      + [Dela segment](/help/components/segments/seg-share.md)
+      + [Tagga segment](/help/components/segments/seg-tag.md)
+      + [Filtrera listan med segment](/help/components/segments/seg-filter.md)
+      + [Markera segment som favoriter](/help/components/segments/seg-favorite.md)
+      + [Godkänn segment](/help/components/segments/seg-approve.md)
+      + [Kopiera segment](/help/components/segments/seg-copy.md)
+      + [Hantera segment](/help/components/segments/seg-manage.md)
+      + [Operatorer](/help/components/segments/seg-operators.md)
    + Beräknade mått {#cja-calcmetrics}
       + [Översikt](../components/calc-metrics/calc-metr-overview.md)
       + Arbetsflöde för beräknade mätvärden {#cm-workflow}

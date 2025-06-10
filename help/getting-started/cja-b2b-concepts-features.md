@@ -6,7 +6,7 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 1a7b877d989764e737d7f35c05f515efe3e7a307
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Hierarkin och relationerna mellan behållarna är förbestämda. Affärsmöjligh
 
 Du kan använda B2B-behållare för specifika B2B-funktioner i Analysis Workspace:
 
-* **Segmentering**: [B2B-segmentbehållare](/help/components/filters/filters-overview.md#b2b-containers) gör att du kan skapa segment med ett behållaromfång bortom person, session eller händelse. Exempel: ett konto med ett händelseregistreringssegment, eller ett amerikanskt konto med inköpsgrupper och affärssegment på stadium 5.
+* **Segmentering**: [B2B-segmentbehållare](/help/components/segments/seg-overview.md#b2b-containers) gör att du kan skapa segment med ett behållaromfång bortom person, session eller händelse. Exempel: ett konto med ett händelseregistreringssegment, eller ett amerikanskt konto med inköpsgrupper och affärssegment på stadium 5.
 
   >[!NOTE]
   >

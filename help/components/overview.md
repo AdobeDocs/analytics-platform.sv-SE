@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 2%
@@ -23,14 +23,14 @@ Så här hanterar du komponenter från Customer Journey Analytics huvudgränssni
 
 Du kan hantera följande komponenter:
 
-* [Segment](filters/filters-overview.md): Skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i dina rapporter. Med segment kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner.
+* [Segment](segments/seg-overview.md): Skapa, hantera, dela och tillämpa kraftfulla, fokuserade målgruppssegment i dina rapporter. Med segment kan du identifiera delmängder av personer baserat på egenskaper eller interaktioner.
 * [Beräknade mått](calc-metrics/calc-metr-overview.md): Använd mått och formler som nya komponenter för rapportering
 * [Datumintervall](date-ranges/create.md): Anpassa och förfina datumintervall som Analysis Workspace erbjuder.
 * [Anteckningar](/help/components/annotations/overview.md): Kommunicera kontextuella datanunkter och insikter till din organisation.
 * [Intelligenta aviseringar](/help/components/c-intelligent-alerts/intelligent-alerts.md): Gör att du kan meddelas baserat på ändrade procentsatser eller specifika datapunkter.
 * [Schemalagda projekt](/help/analysis-workspace/export/t-schedule-report.md#scheduled-projects-manager): Hantera dina schemalagda projekt.
 * [Inställningar](/help/analysis-workspace/user-preferences.md): Hantera inställningarna för Analysis Workspace.
-* [Publiker](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper från Customer Journey Analytics till [Real-Time Customer Data Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/home) i Experience Platform för målinriktning och personalisering.
+* [Publiker](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper från Customer Journey Analytics till [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) i Experience Platform för målinriktning och personalisering.
 * [Exportera](/help/components/exports/manage-export-locations.md): Hantera ditt exportkonto och platser.
 
 
@@ -72,7 +72,7 @@ Du kan hantera komponenter (individuellt eller genom att markera flera).
    | ![Dela](/help/assets/icons/ShareAlt.svg) [!UICONTROL **Dela**] | Dela komponenter med användare i organisationen. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel segment eller beräknade värden. |
    | ![Ta bort](/help/assets/icons/Delete.svg) [!UICONTROL **Ta bort**] | Ta bort komponenter som du inte längre behöver. Det här alternativet är endast tillgängligt för anpassade komponenter, till exempel segment eller beräknade värden. |
 
-Anpassade komponenter kan också hanteras med respektive komponenthanterare. Se till exempel [Hantera segment](/help/components/filters/manage-filters.md).
+Anpassade komponenter kan också hanteras med respektive komponenthanterare. Se till exempel [Hantera segment](/help/components/segments/seg-manage.md).
 
 ## Hantera komponentlistan
 

@@ -4,9 +4,9 @@ title: Hantera värden
 feature: Workspace Basics
 role: User, Admin
 exl-id: 174c3ebd-a77b-4403-ae9a-bb0cff4bcca6
-source-git-commit: a85efff8720d8fdf02b0d1290fedf17654be48e3
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Du kan filtrera, tagga, ta bort, byta namn på, kopiera, aktivera, inaktivera f�
 
 * Välj **[!UICONTROL Components]** i huvudgränssnittet och välj sedan **[!UICONTROL Alerts]**.
 
-Varningshanteraren är strukturerad som [Segmenthanteraren](/help/components/filters/manage-filters.md) och [hanteraren för beräknade värden](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+Varningshanteraren är strukturerad som [Segmenthanteraren](/help/components/segments/seg-manage.md) och [hanteraren för beräknade värden](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 
 ## Varningshanteraren
@@ -29,7 +29,7 @@ Varningshanteraren har följande gränssnittselement:
 
 ### Varningslista
 
-➊ visar alla aviseringar du äger, aviseringar som har omfattats av alla dina projekt och aviseringar som har delats med dig. Listan innehåller följande kolumner:
+Aviseringslistan ➊ visar alla aviseringar som du äger, aviseringar som har omfattats av alla dina projekt och aviseringar som har delats med dig. Listan innehåller följande kolumner:
 
 | Kolumn | Beskrivning |
 |---|---|
@@ -49,7 +49,7 @@ Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att ange vil
 
 ### Åtgärdsfält
 
-Du kan använda åtgärdsfältets ➋ för att göra aviseringar. Åtgärdsfältet innehåller följande åtgärder:
+Du kan använda åtgärdsfältet ➋ för att utföra åtgärder för aviseringar. Åtgärdsfältet innehåller följande åtgärder:
 
 | Ikon | Åtgärd | Beskrivning |
 |:---:|---|---|
@@ -66,12 +66,12 @@ Du kan använda åtgärdsfältets ➋ för att göra aviseringar. Åtgärdsfält
 
 ### Aktivt filterfält
 
-➌ i filterfältet visas de aktiva filter som använts från filterpanelen i listan med varningar (om sådana finns). Du kan snabbt ta bort ett filter med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett filter har angetts kan du ta bort alla filter med **[!UICONTROL Remove all]**.
+Filterfältet ➌ visar de aktiva filter som använts från filterpanelen till listan med varningar (om sådana finns). Du kan snabbt ta bort ett filter med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett filter har angetts kan du ta bort alla filter med **[!UICONTROL Remove all]**.
 
 
 ### Panelen Filter
 
-Du kan filtrera listan med varningar med den vänstra panelen ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]**. Filterpanelen visar typ av filter och antalet varningar som följer det specifika filtret.
+Du kan filtrera listan med varningar med hjälp av den vänstra panelen ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Filter]** ➍ . Filterpanelen visar typ av filter och antalet varningar som följer det specifika filtret.
 
 
 1. Välj ![Filter](/help/assets/icons/Filter.svg) för att öppna panelen Filter. Om du behöver mer utrymme för varningslistan kan du välja ![Filter](/help/assets/icons/Filter.svg) en gång till för att stänga panelen.

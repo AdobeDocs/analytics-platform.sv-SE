@@ -4,7 +4,7 @@ title: Paneler - översikt
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '2003'
 ht-degree: 1%
@@ -77,7 +77,7 @@ Ni kan:
 
 ## Datavy
 
-Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**&#x200B;i listrutan längst upp till höger på panelen.
+Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**i listrutan längst upp till höger på panelen.
 
 När du skapar ett tomt Workspace-projekt är standarddatavyn för den första panelen datavyn som du senast arbetade med i Customer Journey Analytics.
 
@@ -144,10 +144,10 @@ Dra och släpp segment från den vänstra panelen i panelens släppzon för att 
 
 #### Snabbsegment
 
-Komponenter som inte tillhör segment kan också dras direkt till släppzonen för att skapa snabbsegment, vilket sparar tid och arbete med att gå till [segmentbyggaren](/help/components/filters/filter-builder.md). Segment som skapas på det här sättet definieras automatiskt som händelsenivåsegment. Du kan snabbt ändra den här definitionen genom att välja ![Redigera](/help/assets/icons/Edit.svg) bredvid segmentnamnet.
+Komponenter som inte tillhör segment kan också dras direkt till släppzonen för att skapa snabbsegment, vilket sparar tid och arbete med att gå till [segmentbyggaren](/help/components/segments/seg-builder.md). Segment som skapas på det här sättet definieras automatiskt som händelsenivåsegment. Du kan snabbt ändra den här definitionen genom att välja ![Redigera](/help/assets/icons/Edit.svg) bredvid segmentnamnet.
 
 
-Mer information finns i [Snabbsegment](/help/components/filters/quick-filters.md).
+Mer information finns i [Snabbsegment](/help/components/segments/seg-quick.md).
 
 ![Ad hoc-segment som är offentliga och släpps i släppzonen](assets/adhoc-segment-filter.png)
 

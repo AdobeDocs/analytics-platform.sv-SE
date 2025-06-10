@@ -4,7 +4,7 @@ title: Reseduk
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '6207'
 ht-degree: 0%
@@ -297,7 +297,7 @@ Noderna ansluts av en pil. Både pilens riktning och bredd har betydelse:
 
 #### Logisk vid anslutning av noder
 
-När du ansluter noder på en arbetsyta i Journey ansluts de med hjälp av operatorn THEN. Detta kallas även [sekventiell segmentering](/help/components/filters/seg-sequential-build.md).
+När du ansluter noder på en arbetsyta i Journey ansluts de med hjälp av operatorn THEN. Detta kallas även [sekventiell segmentering](/help/components/segments/seg-sequential-build.md).
 
 Noderna är sammankopplade som en&quot;slutgiltig sökväg&quot;, vilket innebär att besökare räknas så länge de så småningom går från en nod till en annan, oavsett händelser som inträffar mellan de två noderna. Den tid som användarna får förflytta sig längs banan bestäms av behållarinställningen. <!-- It can also be controlled by [adding a time constraint](#add-a-time-constraint-between-nodes). -->
 
@@ -546,7 +546,7 @@ Så här visar du trenddata:
 
 Du kan skapa ett nytt segment baserat på en nod eller pil inom en resa. När segmentet har skapats kan du använda det var som helst i Analysis Workspace.
 
-Segment som har skapats från arbetsytan på resan använder [sekventiell segmentering](/help/components/filters/seg-sequential-build.md). Det innebär att segmentet använder operatorn THEN för att länka samman sekvensen av händelser (resan) som människor flödade genom, vilket leder upp till den valda noden eller pilen. Alla händelser som matchar den valda noden eller pilen inkluderas i segmentet.
+Segment som har skapats från arbetsytan på resan använder [sekventiell segmentering](/help/components/segments/seg-sequential-build.md). Det innebär att segmentet använder operatorn THEN för att länka samman sekvensen av händelser (resan) som människor flödade genom, vilket leder upp till den valda noden eller pilen. Alla händelser som matchar den valda noden eller pilen inkluderas i segmentet.
 
 Om du skapar ett segment baserat på en nod som har flera banor som flödar in i det, inkluderas alla banor i segmentet. Separata banor förenas med operatorn OR.
 
@@ -558,7 +558,7 @@ Så här skapar du ett segment:
 
    Segmentbyggaren visas. I avsnittet [!UICONTROL **Definition**] skapas segmentdefinitionen baserat på noden eller pilen som du valde och dess kontext inom resan.
 
-1. Ange en rubrik för segmentet och gör eventuella andra ändringar. Mer information om hur du skapar ett segment finns i [Segmentbyggare](/help/components/filters/filter-builder.md).
+1. Ange en rubrik för segmentet och gör eventuella andra ändringar. Mer information om hur du skapar ett segment finns i [Segmentbyggare](/help/components/segments/seg-builder.md).
 
 1. Välj [!UICONTROL **Spara**] om du vill spara segmentet.
 

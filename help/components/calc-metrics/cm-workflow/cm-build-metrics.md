@@ -3,9 +3,9 @@ description: Med verktyget Beräknade mätvärden kan du dra och släppa dimensi
 title: Bygg beräknade värden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >id="components_calculatedmetrics_productcompatibility"
 >title="Produktkompatibilitet"
 >abstract="Anger var i Customer Journey Analytics det här beräknade måttet kan användas, t.ex. i Analysis Workspace, Report Builder o.s.v. Vissa beräknade värden kan inte användas med experimenterande."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -74,7 +74,7 @@ Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa n
    | **[!UICONTROL Description]** | Ange en beskrivning för segmentet, till exempel `Calculated metric to define the conversion rate.` Det finns ingen anledning att beskriva formeln för det beräknade måttet eftersom formeln redan är automatiskt tillgänglig i [!UICONTROL Summary]. |
    | **[!UICONTROL Format]** | Välj ett format för det beräknade måttet: Du kan välja mellan **[!UICONTROL Decimal]**, **[!UICONTROL Time]**, **[!UICONTROL Percent]** och **[!UICONTROL Currency]**. |
    | **[!UICONTROL Decimal places]** | Ange antalet decimaler för det valda formatet. Endast aktiverat när det valda formatet är Decimal, Currency och Percent. |
-   | **[!UICONTROL Show upward trend as]** | Ange om en uppåtgående trend för det beräknade måttet ska visas som mellanrum **[!UICONTROL Good (Green)]** eller som ▼ **[!UICONTROL Bad (Red)]**. |
+   | **[!UICONTROL Show upward trend as]** | Ange om en uppåtgående trend för det beräknade måttet visas som ▲ **[!UICONTROL Good (Green)]** eller som ▼ **[!UICONTROL Bad (Red)]**. |
    | **[!UICONTROL Currency]** | Ange valutan för det beräknade måttet. Endast aktiverat när det valda formatet är Valuta. |
    | **[!UICONTROL Tags]** | Organisera det beräknade måttet genom att skapa eller använda en eller flera taggar. Börja skriva för att hitta befintliga taggar som du kan markera. Eller tryck på **[!UICONTROL ENTER]** för att lägga till en ny tagg. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tagg. |
    | **[!UICONTROL Preview]** | Förhandsvisningen täcker de senaste 90 dagarna och är ett sätt att mäta om du har definierat mätvärdena korrekt. |
@@ -218,6 +218,6 @@ Om du vill ta bort en behållare väljer du ![Stäng](/help/assets/icons/Close.s
 >[!MORELIKETHIS]
 >
 >[Använda funktioner](cm-using-functions.md)
->[Segment](/help/components/filters/filters-overview.md)
+>>[Segment](/help/components/segments/seg-overview.md)
 >
 

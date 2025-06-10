@@ -4,7 +4,7 @@ description: Frihandsregister är grunden för dataanalys i Workspace
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras frihandstabellens visualisering i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Frihandstabell](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras frihandstabellens visualisering i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Frihandstabell](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ Så här skapar och konfigurerar du en [!UICONTROL Freeform table]:
 
 ## Automatiserade tabeller
 
-Det snabbaste sättet att skapa en tabell är att släppa komponenter direkt i ett tomt projekt, en panel eller en frihandstabell. En frihandstabell har skapats i det format som rekommenderas. [Titta på självstudiekursen](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace).
+Det snabbaste sättet att skapa en tabell är att släppa komponenter direkt i ett tomt projekt, en panel eller en frihandstabell. En frihandstabell har skapats i det format som rekommenderas. [Titta på självstudiekursen](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace).
 
 ![En ny panel med besökskomponenten släppt på arbetsytan.](assets/automated-table.png)
 
@@ -64,7 +64,7 @@ Du kan interagera med och anpassa en frihandstabell på flera olika sätt:
 * Du kan anpassa fler rader till en enda skärm genom att justera projektets [visningstäthet](/help/analysis-workspace/build-workspace-project/view-density.md).
 * Varje dimensionsrad kan visa upp till 400 rader, innan sidnumreringen görs. Markera siffran bredvid **[!UICONTROL Rows]** i den första kolumnrubriken om du vill visa fler rader på en sida. Navigera till en annan sida med ![SparronRight](/help/assets/icons/ChevronRight.svg) i den första kolumnrubriken.
 * Du kan dela upp rader med ytterligare komponenter. Om du vill dela upp flera rader samtidigt markerar du flera rader och drar sedan nästa komponent ovanpå de markerade raderna. Läs mer om [uppdelningar](/help/components/dimensions/t-breakdown-fa.md).
-* Rader kan [segmenteras](/help/components/filters/filters-overview.md) om du vill visa en reducerad uppsättning med artiklar. Ytterligare inställningar är tillgängliga under [Radinställningar](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
+* Rader kan [segmenteras](/help/components/segments/seg-overview.md) om du vill visa en reducerad uppsättning med artiklar. Ytterligare inställningar är tillgängliga under [Radinställningar](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md).
 
 ### Kolumner
 
@@ -97,7 +97,7 @@ Följande [snabbmeny](../freeform-analysis-visualizations.md#context-menu)-alter
 
 | Alternativ | Beskrivning |
 | --- | --- |
-| **[!UICONTROL Insert copied visualization]**&#x200B;n | Klistra in (infoga) en kopierad visualisering på en annan plats i projektet, eller i ett helt annat projekt. |
+| **[!UICONTROL Insert copied visualization]**n | Klistra in (infoga) en kopierad visualisering på en annan plats i projektet, eller i ett helt annat projekt. |
 | **[!UICONTROL Copy data to clipboard]** | Kopiera data från visualiseringen till Urklipp. |
 | **[!UICONTROL Copy selection to clipboard]** | Kopiera markeringen från visualiseringen till Urklipp. |
 | **[!UICONTROL Download items as CSV (*dimensionsnamn *)]** | Ladda omedelbart ned dimensionsobjekten (högst 50 000) av visualiseringen till din lokala enhet. Högst 50 000 dimensionsartiklar för den valda dimensionen. |
@@ -113,6 +113,6 @@ Följande [snabbmeny](../freeform-analysis-visualizations.md#context-menu)-alter
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
