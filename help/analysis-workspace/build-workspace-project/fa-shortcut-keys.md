@@ -18,11 +18,11 @@ Snabbtangenter (kortkommandon) finns i Analysis Workspace för smidig navigering
 
 Observera att följande symboler kan användas på tangentbordet:
 
-- **⇧** för **[!UICONTROL ** shift **]**.
-- **⌘** för **[!UICONTROL ** cmd **]** (kommando).
-- **⌃** för **[!UICONTROL ** ctrl **]** (kontroll).
-- **⌥** för **[!UICONTROL ** opt **]** (alternativ).
-- **⎇** för **[!UICONTROL ** alt **]** (alternativ).
+- **⇧** för **[!UICONTROL **&#x200B; shift &#x200B;**]**.
+- **⌘** för **[!UICONTROL **&#x200B; cmd &#x200B;**]** (kommando).
+- **⌃** för **[!UICONTROL **&#x200B; ctrl &#x200B;**]** (kontroll).
+- **⌥** för **[!UICONTROL **&#x200B; opt &#x200B;**]** (alternativ).
+- **⎇** för **[!UICONTROL **&#x200B; alt &#x200B;**]** (alternativ).
 
 ## Navigeringsåtgärder
 
