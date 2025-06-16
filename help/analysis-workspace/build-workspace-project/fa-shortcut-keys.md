@@ -5,9 +5,9 @@ feature: Workspace Basics
 title: Använda Workspace snabbtangenter
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: 61a7e21d3e5d586c341a5b0f12490e3da1054382
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Snabbtangenter (kortkommandon) finns i Analysis Workspace för smidig navigering
 
 Observera att följande symboler kan användas på tangentbordet:
 
-- **⇧** för **[!UICONTROL **&#x200B; shift &#x200B;**]**.
-- **⌘** för **[!UICONTROL **&#x200B; cmd &#x200B;**]** (kommando).
-- **⌃** för **[!UICONTROL **&#x200B; ctrl &#x200B;**]** (kontroll).
-- **⌥** för **[!UICONTROL **&#x200B; opt &#x200B;**]** (alternativ).
-- **⎇** för **[!UICONTROL **&#x200B; alt &#x200B;**]** (alternativ).
+- **⇧** för **[!UICONTROL ** shift **]**.
+- **⌘** för **[!UICONTROL ** cmd **]** (kommando).
+- **⌃** för **[!UICONTROL ** ctrl **]** (kontroll).
+- **⌥** för **[!UICONTROL ** opt **]** (alternativ).
+- **⎇** för **[!UICONTROL ** alt **]** (alternativ).
 
 ## Navigeringsåtgärder
 
@@ -35,8 +35,8 @@ Observera att följande symboler kan användas på tangentbordet:
 | Gå till rutan Komponenter | **[!UICONTROL *opt + shift + 3 *]** | **[!UICONTROL *alt + Skift + 3 *]** |
 | Komprimera/expandera alla paneler | **[!UICONTROL *opt + m *]** | **[!UICONTROL *alt + m *]** |
 | Visa/dölj aktiv panel | **[!UICONTROL *opt + cmd + m *]** | **[!UICONTROL *alt + Ctrl + m *]** |
-| Flytta till nästa panel | **[!UICONTROL *opt *+ ▶︎]** | **[!UICONTROL *alt *+ ▶︎]** |
-| Flytta till föregående panel | **[!UICONTROL *opt *+ ◀︎]** | **[!UICONTROL *alt *+ ◀︎]** |
+| Flytta till nästa panel | **[!UICONTROL *opt *+ {2 }︎]**▶ | **[!UICONTROL *alt *+ {2 }︎]**▶ |
+| Flytta till föregående panel | **[!UICONTROL *opt *+ {2 }︎]**◀ | **[!UICONTROL *alt *+ {2 }︎]**◀ |
 
 ## Analysåtgärder
 
@@ -67,6 +67,13 @@ Observera att följande symboler kan användas på tangentbordet:
 | Nytt linjediagram | **[!UICONTROL *opt + 2 *]** | **[!UICONTROL *alt + 2 *]** |
 | Nytt stapeldiagram | **[!UICONTROL *opt + 3 *]** | **[!UICONTROL *alt + 3 *]** |
 | Nytt kombinationsdiagram | **[!UICONTROL *opt + 4 *]** | **[!UICONTROL *alt + 4 *]** |
+
+## Flytta panelåtgärder
+
+| Åtgärd | Genväg till Mac | Kortkommando i Windows |
+| --- | --- | --- | 
+| Flytta panelen uppåt | **[!UICONTROL *cmd + opt + up *]** | **[!UICONTROL *alt + Ctrl + uppåt *]** |
+| Flytta panelen nedåt | **[!UICONTROL *cmd + opt + down *]** | **[!UICONTROL *alt + Ctrl + nedåt *]** |
 
 ## Demokratiseringsåtgärder
 
