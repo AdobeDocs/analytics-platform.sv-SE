@@ -4,9 +4,9 @@ title: Lägga till och visa kommentarer i projekt
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 02b85db81c384c78f7d388b19c8ad53d0028de43
+source-git-commit: 29db477c96ad5ca7c69a7f7055c1a7fd3c06eb04
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1785'
 ht-degree: 0%
 
 ---
@@ -51,15 +51,15 @@ Alla kommentarer som görs i ett Analysis Workspace-projekt visas i kommentarsom
 
 ### Visa kommentarsemblem i ett projekt
 
-Kommentarer som görs [ i ett visst område i projektet ](#comment-on-a-specific-area-of-the-project) har ett **kommentarsemblem** ![som visas över det område i projektet som kommentaren hör till.](assets/comment-indicator.png) Välj ett märke för att visa kommentaren. När du har valt märket kan du markera själva kommentaren för att markera kommentaren i kommentarområdet till höger.
+Kommentarer som görs [ i ett visst område i projektet ](#comment-on-a-specific-area-of-the-project) har ett **kommentarsemblem** ![som visas över det område i projektet som kommentaren hör till.](assets/comment-indicator.svg) Välj ett märke för att visa kommentaren. När du har valt märket kan du markera själva kommentaren för att markera kommentaren i kommentarområdet till höger.
 
-Nummer visas på varje emblem i ett projekt och ordnas i den ordning som de skapades. Om flera kommentarer placeras i samma område i ett projekt, visar märket 3 punkter ![kommentarsemblem flera](assets/comment-indicator-multiple.png). Markera 3-punktssymbolen om du vill visa alla kommentarer i det området.
+Nummer visas på varje emblem i ett projekt och ordnas i den ordning som de skapades. Om flera kommentarer placeras i samma område i ett projekt, visar märket 3 punkter ![kommentarsemblem flera](assets/comment-indicator-multiple.svg). Markera 3-punktssymbolen om du vill visa alla kommentarer i det området.
 
 <!-- Insert screeshot-->
 
 Så här döljer du alla kommentarmärken från ett projekt:
 
-1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen ![i kommentarområdet ](assets/comments-area-icon.png) i den högra listen i Analysis Workspace.
+1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
 1. Aktivera alternativet **[!UICONTROL Hide placed badges]** längst ned i kommentarsområdet.
 
@@ -97,7 +97,7 @@ Så här kommenterar du ett visst område i projektet (till exempel ett måttvä
 
 Så här lägger du till kommentarer i ett projekt i Analysis Workspace:
 
-1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen ![i kommentarområdet ](assets/comments-area-icon.png) i den högra listen i Analysis Workspace. <!-- add screen shot -->
+1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace. <!-- add screen shot -->
 
 1. Ange din kommentar i fältet **[!UICONTROL New comment]**.
 
@@ -131,7 +131,7 @@ Så här tar du med en annan person i kommentaren:
 
 ## Svara på en kommentar
 
-1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen ![i kommentarområdet ](assets/comments-area-icon.png) i den högra listen i Analysis Workspace.
+1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
 1. Välj **[!UICONTROL Reply]** bredvid kommentaren som du vill svara på.
 
@@ -149,17 +149,17 @@ Så här tar du med en annan person i kommentaren:
 
 ## Få meddelanden om kommentarer
 
-Projektägare och [specifika personer som du anger](#include-others-in-a-comment) får meddelanden baserat på deras Adobe Experience Cloud-meddelandeinställningar. Som standard får de ett meddelande i appen som visas från [Experience Cloud-ikonen ](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-meddelandeikonen](assets/experience-cloud-notification.png) i Customer Journey Analytics.
+Projektägare och [specifika personer som du anger](#include-others-in-a-comment) får meddelanden baserat på deras Adobe Experience Cloud-meddelandeinställningar. Som standard får de ett meddelande i appen som visas från [Experience Cloud-ikonen ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-meddelandeikonen](assets/experience-cloud-notification.svg) i Customer Journey Analytics.
 
-Dessutom kan användare konfigurera sina inställningar för Experience Cloud-meddelanden så att de får e-postmeddelanden och Slack-meddelanden genom att [prenumerera på e-postmeddelanden](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) och [prenumerera på Slack-meddelanden](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#slack).
+Dessutom kan användare konfigurera sina inställningar för Experience Cloud-meddelanden så att de får e-postmeddelanden och Slack-meddelanden genom att [prenumerera på e-postmeddelanden](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) och [prenumerera på Slack-meddelanden](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Placera ett emblem för en befintlig kommentar
 
 Om det finns en kommentar i kommentarsområdet på den högra listen men den inte har något emblem i projektet ännu, kan du lägga till märket.
 
-1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen ![i kommentarområdet ](assets/comments-area-icon.png) i den högra listen i Analysis Workspace.
+1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
-1. Markera mer-ikonen ![comment-more-icon](assets/comment-more-icon.png) bredvid kommentaren som du vill placera ett märke för och välj sedan **[!UICONTROL Place badge]**.
+1. Välj ikonen ![Mer ](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren som du vill placera ett märke för och välj sedan **[!UICONTROL Place badge]**.
 
 1. Markera det område i projektet där du vill placera emblemet för den befintliga kommentaren.
 
@@ -191,9 +191,9 @@ Du kan kopiera länken till en kommentar och dela länken med andra. Det är bar
 
 Så här kopierar du länken till en kommentar:
 
-1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen ![i kommentarområdet ](assets/comments-area-icon.png) i den högra listen i Analysis Workspace.
+1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
-1. Markera mer-ikonen ![comment-more-icon](assets/comment-more-icon.png) bredvid kommentaren vars länk du vill kopiera och välj sedan **[!UICONTROL Copy link]**.
+1. Markera ikonen ![Mer ](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren vars länk du vill kopiera och välj sedan **[!UICONTROL Copy link]**.
 
    Länken kopieras till systemets Urklipp. Du kan klistra in länken i ett e-postmeddelande eller i annan typ av meddelande.
 
@@ -203,15 +203,15 @@ Du kan kopiera brödtexten i en kommentar och dela den med andra.
 
 Så här kopierar du brödtexten i en kommentar:
 
-1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen ![i kommentarområdet ](assets/comments-area-icon.png) i den högra listen i Analysis Workspace.
+1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
-1. Markera ikonen ![comment-more-icon](assets/comment-more-icon.png) bredvid kommentaren som innehåller texten som du vill kopiera och välj sedan **[!UICONTROL Copy body text]**.
+1. Markera ikonen ![Mer ](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren som innehåller texten som du vill kopiera och välj sedan **[!UICONTROL Copy body text]**.
 
    Kommentarens brödtext kopieras till systemets Urklipp.
 
 ## Gilla en kommentar
 
-1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen ![i kommentarområdet ](assets/comments-area-icon.png) i den högra listen i Analysis Workspace.
+1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
 1. Välj **[!UICONTROL Like]** under kommentaren som du vill godkänna.
 
@@ -223,9 +223,9 @@ Borttagna kommentarer kan inte återställas.
 
 Så här tar du bort en kommentar:
 
-1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen ![i kommentarområdet ](assets/comments-area-icon.png) i den högra listen i Analysis Workspace.
+1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
-1. Markera mer-ikonen ![comment-more-icon](assets/comment-more-icon.png) bredvid den kommentar du vill ta bort och välj sedan **[!UICONTROL Delete]**.
+1. Markera ikonen ![Mer ](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren som du vill ta bort och välj sedan **[!UICONTROL Delete]**.
 
 1. Välj **[!UICONTROL Delete]** igen för att bekräfta borttagningen.
 
@@ -235,9 +235,9 @@ När du löser en kommentar markeras kommentaren som löst och dold i kommentaro
 
 Så här löser du en kommentar:
 
-1. Med projektet öppet i Analysis Workspace väljer du kommentarområdesikonen ![i kommentarområdet ](assets/comments-area-icon.png) i den högra listen i Analysis Workspace.
+1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
-1. Markera ikonen ![comment-more-icon](assets/comment-more-icon.png) bredvid den kommentar du vill lösa och välj sedan **[!UICONTROL Resolve]**.
+1. Välj ikonen ![Mer ](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren som du vill lösa och välj sedan **[!UICONTROL Resolve]**.
 
 1. Bekräfta genom att välja **[!UICONTROL Resolve]** igen.
 
