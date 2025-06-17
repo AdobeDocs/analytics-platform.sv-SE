@@ -4,9 +4,9 @@ description: Beskriver hur datastyrning fungerar i Customer Journey Analytics.
 exl-id: ab2b7ff2-c638-4ab4-bc86-d1701bebcb1a
 feature: Privacy
 role: Admin
-source-git-commit: 612fce23fe4cb9920c05f3253d69e543668a7cf1
+source-git-commit: 40706e3118cbaf7582d8625d307358b16f1836ac
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ I allmänhet ärvs alla datastyrningsrelaterade inställningar i Customer Journe
 
 ## Dataförvaltning
 
-Integrationen mellan Adobe Customer Journey Analytics och [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=sv-SE) gör det möjligt att märka känsliga Customer Journey Analytics-data och tillämpa sekretesspolicyer.
+Integrationen mellan Adobe Customer Journey Analytics och [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html) gör det möjligt att märka känsliga Customer Journey Analytics-data och tillämpa sekretesspolicyer.
 
 Sekretessetiketter och integritetspolicyer som har skapats för datauppsättningar som används av Experience Platform kan visas i arbetsflödet för datavyer i Customer Journey Analytics. Dessa etiketter stoppar eller varnar användare som skapar mätvärden och/eller dimensioner från känsliga fält.
 
@@ -26,6 +26,12 @@ När data exporteras från Customer Journey Analytics (via rapportering, export,
 Tack vare den här integreringen kan ni hantera regelefterlevnaden enklare. Datahanteringen i organisationen kan ange regler som begränsar användningen. Detta innebär att era Customer Journey Analytics-användare kan använda data med större tillförsikt, eftersom de vet att de följer de regler som definieras av datasegmenter.
 
 [Läs mer](/help/data-views/data-governance.md)
+
+## Sekretessförfrågningar
+
+Adobe hanterar förfrågningar om sekretess i enlighet med gällande lokal och internationell lagstiftning.
+
+Eftersom Customer Journey Analytics använder data som är tillgängliga i Adobe Experience Platform, erbjuder Adobe [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) för att skicka förfrågningar om dataåtkomst och borttagning. Förfrågningarna gäller både den ursprungliga och den inmatade datauppsättningen.
 
 ## GDPR
 
