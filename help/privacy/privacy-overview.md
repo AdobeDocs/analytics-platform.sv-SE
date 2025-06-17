@@ -17,7 +17,7 @@ I allmänhet ärvs alla datastyrningsrelaterade inställningar i Customer Journe
 
 ## Dataförvaltning
 
-Integrationen mellan Adobe Customer Journey Analytics och [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html) gör det möjligt att märka känsliga Customer Journey Analytics-data och tillämpa sekretesspolicyer.
+Integrationen mellan Adobe Customer Journey Analytics och [Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=sv-SE) gör det möjligt att märka känsliga Customer Journey Analytics-data och tillämpa sekretesspolicyer.
 
 Sekretessetiketter och integritetspolicyer som har skapats för datauppsättningar som används av Experience Platform kan visas i arbetsflödet för datavyer i Customer Journey Analytics. Dessa etiketter stoppar eller varnar användare som skapar mätvärden och/eller dimensioner från känsliga fält.
 
@@ -31,7 +31,7 @@ Tack vare den här integreringen kan ni hantera regelefterlevnaden enklare. Data
 
 Adobe hanterar förfrågningar om sekretess i enlighet med gällande lokal och internationell lagstiftning.
 
-Eftersom Customer Journey Analytics använder data som är tillgängliga i Adobe Experience Platform, erbjuder Adobe [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html) för att skicka förfrågningar om dataåtkomst och borttagning. Förfrågningarna gäller både den ursprungliga och den inmatade datauppsättningen.
+Eftersom Customer Journey Analytics använder data som är tillgängliga i Adobe Experience Platform, erbjuder Adobe [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv-SE) för att skicka förfrågningar om dataåtkomst och borttagning. Förfrågningarna gäller både den ursprungliga och den inmatade datauppsättningen.
 
 ## GDPR
 
