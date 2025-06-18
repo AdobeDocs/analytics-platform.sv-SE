@@ -6,7 +6,7 @@ feature: Use Cases
 role: User
 badgePremium: label="B2B edition"
 exl-id: d5e44546-ea82-42eb-98df-19d51c71e9be
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -14,8 +14,6 @@ ht-degree: 0%
 ---
 
 # Optimera kontomarknadsföring
-
-{{draft-b2b}}
 
 Effektiv kontobaserad marknadsföring kräver en djupgående förståelse för köpresan på kontonivå. Så att ni kan avgöra vilka marknadsföringsaktiviteter som är mest effektiva för att skapa ett nära avtal.
 

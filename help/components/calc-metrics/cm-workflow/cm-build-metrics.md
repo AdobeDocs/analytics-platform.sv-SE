@@ -3,7 +3,7 @@ description: Med verktyget Beräknade mätvärden kan du dra och släppa dimensi
 title: Bygg beräknade värden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: ef97b36a95e5f39f7436f5e21861d1ee5a0338dd
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 0%
@@ -12,13 +12,11 @@ ht-degree: 0%
 
 # Bygg beräknade värden {#build-metrics}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_productcompatibility"
 >title="Produktkompatibilitet"
 >abstract="Anger var i Customer Journey Analytics det här beräknade måttet kan användas, t.ex. i Analysis Workspace, Report Builder o.s.v. Vissa beräknade värden kan inte användas med experimenterande."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -218,6 +216,5 @@ Om du vill ta bort en behållare väljer du ![Stäng](/help/assets/icons/Close.s
 >[!MORELIKETHIS]
 >
 >[Använda funktioner](cm-using-functions.md)
->&#x200B;>[Segment](/help/components/segments/seg-overview.md)
+>>[Segment](/help/components/segments/seg-overview.md)
 >
-

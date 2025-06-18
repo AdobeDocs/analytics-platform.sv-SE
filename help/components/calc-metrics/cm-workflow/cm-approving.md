@@ -3,7 +3,7 @@ description: I hanteraren för beräknade mätvärden kan du skapa ett arbetsfl�
 title: Godkänn beräknade värden
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
+source-git-commit: ef97b36a95e5f39f7436f5e21861d1ee5a0338dd
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -16,7 +16,7 @@ I [hanteraren för beräknade värden](cm-manager.md) kan du godkänna och avgod
 
 Så här godkänner du beräknade värden:
 
-1. Välj en eller flera av de beräknade mätvärden som du vill godkänna i [hanteraren för beräknade mätvärden](cm-approving.md).
+1. Välj en eller flera av de beräknade mätvärden som du vill godkänna i [hanteraren för beräknade mätvärden](cm-manager.md).
 1. Välj ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** i åtgärdsfältet. Godkända beräknade värden anges med ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg)
 
 Så här avgodkänner du beräknade värden:

@@ -6,7 +6,7 @@ feature: Use Cases
 role: User
 badgePremium: label="B2B edition"
 exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
-source-git-commit: 2fad11178853e08783b8f48671b504f50b6e0770
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -14,8 +14,6 @@ ht-degree: 0%
 ---
 
 # Utöka nyckelkonton
-
-{{draft-b2b}}
 
 Att utöka och behålla nyckelkonton är en hög prioritet för B2B-företag. En förutsättning för att se till att avtalsutvecklingen går framåt är att kommunicera med viktiga intressenter i målkontona vid rätt tidpunkt.
 

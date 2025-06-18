@@ -4,9 +4,9 @@ title: Visa densitet
 feature: Workspace Basics
 exl-id: b02672e2-0728-472b-97fe-14637ab1c2df
 role: User
-source-git-commit: 373d0c9989fb692da23efe371c65344093801140
+source-git-commit: 15a3d7b6f2ec4f37fd861315871e06ddefa5348a
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Detta är den vy du är van vid i Workspace.
 
 >[!TAB Utökad]
 
-Detta är den vy du är van vid i Workspace.
+Det här är den version som har den mest utökade vyn.
 
 ![Täthet för utökad vy.](assets/view-density-expanded.png)
 

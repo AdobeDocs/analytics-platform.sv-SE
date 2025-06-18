@@ -5,9 +5,9 @@ exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: e4e0c3cf2e865454837df6626c3b1b09f119f07f
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -55,13 +55,13 @@ Så här uppdaterar du en komponents standardattribueringsmodell:
 
 1. Gå till datavyn som innehåller komponenten vars standardattribueringsmodell du vill uppdatera.
 
-1. Markera komponenten och expandera sedan avsnittet Attribution till höger på skärmen.
+1. Markera komponenten och expandera sedan avsnittet **[!UICONTROL Attribution]** till höger på skärmen.
 
    ![Fönstret Datavyer där attributalternativet Ange markeras ](../assets/attribution-settings.png)
 
-1. Välj [!UICONTROL **Ange attribuering**] och välj sedan attribueringsmodell i listrutan [!UICONTROL **Attributmodell**].
+1. Välj [!UICONTROL **Ange attribuering**] och välj sedan fönstret [attribueringsmodell](#attribution-models), [container](#container) och [lookback](#lookback-window).
 
-   Se [Attribution models](#attribution-models) om du vill veta mer om de olika attribueringsmodellerna.
+
 
 1. Välj [!UICONTROL **Spara och fortsätt**].
 
@@ -86,49 +86,14 @@ Så här uppdaterar du en komponents standardattribueringsmodell:
 
 {{attribution-models-details}}
 
+## Behållare
+
+{{attribution-container}}
 
 ## Fönstret Lookback
 
 {{attribution-lookback-window}}
 
+## Exempel
 
-
-## Attributionsexempel {#attribution-example}
-
-Titta på följande exempel:
-
-1. Den 15 september kommer en person till er webbplats via en betald sökannons, sedan går han/hon iväg.
-1. Den 18 september kommer personen till er webbplats igen via en länk för sociala medier som de fått från en vän. De lägger till flera artiklar i kundvagnen, men köper ingenting.
-1. Den 24 september skickar marknadsföringsteamet ett e-postmeddelande med en kupong för några av artiklarna i kundvagnen. De använder kupongen, men besöker flera andra sajter för att se om det finns några andra kuponger. De hittar en till genom en displayannons och gör sedan ett köp för 50 dollar.
-
-Beroende på ditt uppslagsfönster och din attribueringsmodell får kanalerna olika krediter. Nedan följer några exempel:
-
-* Med **första beröring** och ett **sessionsfönster** tittar attribueringen bara på det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD.
-
-* Attribution söker efter alla tre besök med **första beröring** och ett **fönster för personsökning**. Betalsökning var först, så den får 100 % rabatt på 50 USD.
-
-* Med **linjär** och ett **sessionsfönster** delas krediteringen mellan e-post och visning. Båda dessa kanaler får 25 krediter.
-Med **linjär** och ett **personsökningsfönster** delas krediten in i betalsökning, sociala medier, e-post och visning. Varje kanal får 12,50 dollar i rabatt för detta inköp.
-
-* Med **J-formad** och ett **personsökningsfönster** delas krediteringen mellan betalsökningar, sociala medier, e-post och visning.
-
-   * 60 % kredit ges för 30 dollar.
-   * 20 % kredit ges till betald sökning för 10 dollar.
-   * De återstående 20 % är uppdelade i sociala medier och e-post, vilket ger 5 USD till var och en.
-
-* Med **Time Decay** och ett **Personsökningsfönster** delas krediten in i betalsökning, sociala medier, e-post och visning. Använd standardhalveringstiden på 7 dagar:
-
-   * Mellanrum på noll dagar mellan visning och konvertering. `2^(-0/7) = 1`
-   * Mellanrum på noll dagar mellan e-postens kontaktpunkt och konvertering. `2^(-0/7) = 1`
-   * Ett mellanrum på sex dagar mellan social kontaktyta och konvertering. `2^(-6/7) = 0.552`
-   * Mellanrum på nio dagar mellan betald sökningspunkt och konvertering. `2^(-9/7) = 0.41`
-   * Normalisering av dessa värden ger följande resultat:
-
-      * Bildskärm: 33,8 %, får 16,88 USD
-      * E-post: 33,8 % får 16,88 USD
-      * Socialt: 18,6 %, får 9,32 USD
-      * Betalsökning: 13,8 %, får 6,92 USD
-
-Konverteringshändelser som vanligtvis har ett heltal delas om kredit tillhör fler än en kanal. Om till exempel två kanaler bidrar till en order med en linjär attribueringsmodell får båda kanalerna 0,5 av den ordningen. Dessa partiella mätvärden summeras för alla personer och avrundas sedan till närmaste heltal för rapportering.
-
-
+{{attribution-example}}

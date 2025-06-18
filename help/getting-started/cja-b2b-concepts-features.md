@@ -6,7 +6,7 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 0%
@@ -15,8 +15,6 @@ ht-degree: 0%
 
 
 # B2B edition koncept och funktioner
-
-{{draft-b2b}}
 
 I den här artikeln beskrivs begrepp som anslutningar, identifierare, behållare och datauppsättningar, som ofta används i Customer Journey Analytics. Och hur Customer Journey Analytics B2B edition lägger till ytterligare funktioner i dessa koncept.
 

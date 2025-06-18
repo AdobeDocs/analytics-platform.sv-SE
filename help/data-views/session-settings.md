@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: 15a3d7b6f2ec4f37fd861315871e06ddefa5348a
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -47,11 +47,11 @@ Så här definierar du kontexten för en session i en datavy:
 
    2. Välj ett mått i listan **[!UICONTROL Drop a metric here]** under **[!UICONTROL Start new session with a metric]**. Du kan också dra och släppa ett mått från den vänstra rutan på **[!UICONTROL Drop a metric field]**. Det valda måttet definierar början på en ny session. Du kan definiera mer än ett mått.
 
-      Du kan använda alla typer av mätvärden för att definiera en ny session. Tänk dig att du vill definiera en ny session varje gång en profil startar din mobilapp. I **[!UICONTROL Data view]** > **[!UICONTROL Components]** definierar du en komponent av typen metrisk, med namnet **[!UICONTROL Launches]**, baserat på ett **[!UICONTROL appInteraction]** **[!UICONTROL Name]** schemafält. Du anger sedan måttkomponenten **[!UICONTROL Launches]** så att endast värdet räknas när värdet matchar `launch`.
+      Du kan använda alla typer av mätvärden för att definiera en ny session. Tänk dig att du vill definiera en ny session varje gång en profil startar din mobilapp. I **[!UICONTROL Data view]** > **[!UICONTROL Components]** definierar du en komponent av typen metrisk, med namnet **[!UICONTROL Launch]**, baserat på ett **[!UICONTROL appInteraction]** **[!UICONTROL Name]** schemafält. Du anger sedan måttkomponenten **[!UICONTROL Launch]** så att endast värdet räknas när värdet matchar `launch`.
 
       ![Komponenten för mått för appinteraktion startar](assets/component-launches.png)
 
-      Sedan drar och släpper du eller väljer måttet **[!UICONTROL Launches]** som måttenhet för att definiera en ny session.
+      Sedan drar och släpper du eller väljer måttet **[!UICONTROL Launch]** som måttenhet för att definiera en ny session.
 
       ![Sessionsinställningar startas](assets/session-settings-launches-metric.png)
 

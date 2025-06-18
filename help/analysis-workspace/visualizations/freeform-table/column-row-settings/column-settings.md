@@ -4,9 +4,9 @@ title: Kolumninställningar
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 141c95b23695c09dd194c61c7cef0ce34e05ac33
+source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '827'
 ht-degree: 7%
 
 ---
@@ -113,11 +113,17 @@ Så här använder du en icke-standardattribueringsmodell för ett mätresultat 
 
 {{attribution-models-details}}
 
+### Behållare
+
+{{attribution-container}}
+
 ### Fönstret Lookback
 
 {{attribution-lookback-window}}
 
+### Exempel
 
+{{attribution-example}}
 
 >[!MORELIKETHIS]
 >
