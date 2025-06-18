@@ -16,7 +16,7 @@ ht-degree: 0%
 >id="components_calculatedmetrics_productcompatibility"
 >title="Produktkompatibilitet"
 >abstract="Anger var i Customer Journey Analytics det här beräknade måttet kan användas, t.ex. i Analysis Workspace, Report Builder o.s.v. Vissa beräknade värden kan inte användas med experimenterande."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
+>additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
 
 <!-- markdownlint-enable MD034 -->
 
