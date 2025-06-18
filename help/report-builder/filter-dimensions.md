@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 97c3b05d4d9661aabcb1b06db7fdf44671a29394
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '938'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,7 @@ Så här anger du filtervillkor:
 
 Du kan inkludera upp till 10 villkorsobjekt.
 
-### **[!UICONTROL &#x200B; Specific]**
+### **[!UICONTROL  Specific]**
 
 Med alternativet **[!UICONTROL Specific]** kan du skapa en fast lista med dimensionsobjekt för varje dimension. Använd filtertypen **[!UICONTROL Specific]** för att ange exakt vilka dimensionsobjekt som ska inkluderas i filtret. Du kan markera objekt från en lista eller från ett cellintervall.
 
