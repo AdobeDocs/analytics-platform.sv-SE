@@ -4,9 +4,9 @@ title: Lägga till och visa kommentarer i projekt
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 29db477c96ad5ca7c69a7f7055c1a7fd3c06eb04
+source-git-commit: 91ac84764a186d81f3270bb3ec9673d93b11bd38
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1820'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Du kan visa kommentarer från kommentarområdet i den högra listen eller från 
 
 ### Visa kommentarer i kommentarsområdet
 
-Alla kommentarer som görs i ett Analysis Workspace-projekt visas i kommentarsområdet i den högra listen.
+Alla kommentarer som görs i ett Analysis Workspace-projekt visas i kommentarsområdet i den högra listen. Det totala antalet kommentarer visas på kommentarsikonen.
 
 1. Som standard utökas kommentarsområdet för varje projekt i Analysis Workspace första gången du öppnar ett projekt.
 
@@ -131,13 +131,15 @@ Så här tar du med en annan person i kommentaren:
 
 ## Svara på en kommentar
 
-1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
+1. Öppna det projekt i Analysis Workspace där du vill lägga till en kommentar.
 
-1. Välj **[!UICONTROL Reply]** bredvid kommentaren som du vill svara på.
+1. Markera ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) i den högra listen i Analysis Workspace och välj sedan **[!UICONTROL Reply]** bredvid kommentaren som du vill svara på.
+
+   Om du vill ta med texten i kommentaren som du svarar på, med den ursprungliga texten omsluten av en citattagg, markerar du 3-punktsikonen bredvid den specifika kommentaren eller det svar som du vill svara på och väljer sedan **[!UICONTROL Quote reply]**. Ett svar på en offert är ett bra sätt att ange vilken kommentar eller vilket svar din kommentar hänvisar till.
 
    eller
 
-   Om du vill ta med texten i kommentaren som du svarar på, med den ursprungliga texten omsluten av en citattagg, markerar du 3-punktsikonen bredvid den specifika kommentaren eller det svar som du vill svara på och väljer sedan **[!UICONTROL Quote reply]**. Ett svar på en offert är ett bra sätt att ange vilken kommentar eller vilket svar din kommentar hänvisar till.
+   Markera kommentarsikonen på panelen eller visualiseringen där kommentaren gjordes och välj sedan **[!UICONTROL Reply]**.
 
 1. Ange din kommentar i fältet **[!UICONTROL New comment]**.
 
@@ -149,9 +151,9 @@ Så här tar du med en annan person i kommentaren:
 
 ## Få meddelanden om kommentarer
 
-Projektägare och [specifika personer som du anger](#include-others-in-a-comment) får meddelanden baserat på deras Adobe Experience Cloud-meddelandeinställningar. Som standard får de ett meddelande i appen som visas från [Experience Cloud-ikonen ](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-meddelandeikonen](assets/experience-cloud-notification.svg) i Customer Journey Analytics.
+Projektägare och [specifika personer som du anger](#include-others-in-a-comment) får meddelanden baserat på deras Adobe Experience Cloud-meddelandeinställningar. Som standard får de ett meddelande i appen som visas från [Experience Cloud-ikonen ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-meddelandeikonen](assets/experience-cloud-notification.svg) i Customer Journey Analytics.
 
-Dessutom kan användare konfigurera sina inställningar för Experience Cloud-meddelanden så att de får e-postmeddelanden och Slack-meddelanden genom att [prenumerera på e-postmeddelanden](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) och [prenumerera på Slack-meddelanden](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#slack).
+Dessutom kan användare konfigurera sina inställningar för Experience Cloud-meddelanden så att de får e-postmeddelanden och Slack-meddelanden genom att [prenumerera på e-postmeddelanden](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) och [prenumerera på Slack-meddelanden](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Placera ett emblem för en befintlig kommentar
 
