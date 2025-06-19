@@ -163,6 +163,6 @@ Se [Exempel](#example) för ett exempel på hur du använder en attribueringsmod
 >[!MORELIKETHIS]
 >
 >[Inställningar för attribueringskomponent](/help/data-views/component-settings/attribution.md)
->>[Deltagandemått ](participation-metric.md)
+>&#x200B;>[Deltagandemått ](participation-metric.md)
 >
 
