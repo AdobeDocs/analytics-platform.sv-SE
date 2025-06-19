@@ -3,9 +3,9 @@ description: Genom att segmentera enskilda mätvärden kan ni göra måttjämfö
 title: Segmenterade mätvärden
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Upprepa stegen ovan för den internationella versionen av det beräknade måttet
 
 ## Summor
 
-1. Skapa två nya segment baserat på totalsumman. Öppna varje segment som skapats tidigare, byt namn på segmentet, ange **[!UICONTROL Metric type]** för **[!UICONTROL People]** till **[!UICONTROL Grand Total]** och använd **[!UICONTROL Save As]** för att spara segmentet med det nya namnet. Exempel:
+1. Skapa två nya beräknade värden baserade på totalsumman. Öppna varje segment som skapats tidigare, byt namn på segmentet, ange **[!UICONTROL Metric type]** för **[!UICONTROL People]** till **[!UICONTROL Grand Total]** och använd **[!UICONTROL Save As]** för att spara segmentet med det nya namnet. Exempel:
 
    ![Totalt mått för Tyskland](assets/calculated-metric-germany-total.png)
 

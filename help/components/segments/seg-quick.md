@@ -4,7 +4,7 @@ title: Snabbsegment
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 0%
@@ -107,6 +107,6 @@ Snabbsegment är precis vad de namnges. Du kan skapa och redigera snabbsegment s
 Segment har följande fördelar jämfört med snabbsegment.
 
 * Segment kan göras tillgängliga i alla dina Workspace-projekt
-* Segment har stöd för större komplexitet med kapslade och hierarkiska behållare och sekvenser (med sekvenssegment).
+* Segment har stöd för större komplexitet med kapslade och hierarkiska [behållare](seg-builder.md#containers) och sekvenser (med [sekventiella segment](seg-sequential-build.md)).
 
 

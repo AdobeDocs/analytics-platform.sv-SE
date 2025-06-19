@@ -3,9 +3,9 @@ description: Lär dig hur du skapar beräknade värden.
 title: Skapa beräknade mått
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: c183a5013cbc5ff3765cc4926a308d0c4563a097
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -29,15 +29,19 @@ Du kan skapa ett beräknat mått på följande sätt:
 
 Om du vill definiera det nya beräknade måttet använder du verktyget [Beräknade mätvärden](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md).
 
-Lär dig mer om hur du skapar beräknade mätvärden.
+
+## Arbetsflöde
+
+Innan du skapar beräknade värden bör du tänka på följande arbetsflöde:
 
 | Arbetsflödesuppgift | Beskrivning |
 | --- | --- |
 | Planera beräknade värden | I synnerhet för mätvärden som kommer att bli officiellt&quot;godkända&quot; är det rimligt att beskriva vilka beräknade mätvärden som kommer att användas i stor omfattning och hur de kommer att definieras. |
 | [Bygg](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) beräknade värden | Bygg och redigera beräknade och avancerade beräknade mätvärden för användning i [!DNL Customer Journey Analytics]-komponenter. |
-| [Tagg](cm-tagging.md) Beräknade mått | Märk beräknade mätvärden för enkel organisation och delning. Se hur du planerar och tilldelar taggar för enkla och avancerade sökningar och organisation. |
-| [Godkänn](cm-approving.md) beräknade värden | Godkänn beräknade värden för att göra dem kanoniska. |
-| Använd beräknade värden | Du kan använda mätvärden direkt från en rapport från mätväljaren (om du vill komma åt den klickar du på [!UICONTROL Show Metrics]). |
-| Filtrera beräknade värden | Klicka på [!UICONTROL Advanced Selection] i mätväljaren och filtrera efter taggar, ägare och andra filter (Visa alla, Min, Delad med mig, Favoriter och Godkänd). |
-| Markera beräknade mått som [Favoriter](cm-finding.md) | Att markera mätvärden som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda. |
+| [Tagg](cm-tagging.md) beräknade mått | Märk beräknade mätvärden för enkel organisation och delning. Se hur du planerar och tilldelar taggar för enkla och avancerade sökningar och organisation. |
+| [Godkänn ](cm-approving.md) beräknade mått | Godkänn beräknade värden för att göra dem kanoniska. |
+| Använd beräknade värden | Använd beräknade värden i dina projekt. |
+| [Dela](cm-sharing.md) beräknade mått | Dela dina beräknade värden med andra individer, grupper eller organisationer. |
+| [Filter](cm-filter.md) beräknade värden | Filtrera beräknade mätvärden efter taggar, ägare och andra filter (Visa alla, Min, Delas med mig, Favoriter och Godkänd). |
+| Markera beräknade värden som [favoriter](cm-finding.md) | Att markera mätvärden som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda. |
 

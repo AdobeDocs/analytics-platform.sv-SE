@@ -3,7 +3,7 @@ description: Beroende på dina behörigheter kan du dela mätvärden med hela or
 title: Dela beräknade värden
 feature: Calculated Metrics
 exl-id: b2a3e4e3-f0aa-4505-b3f5-7d9f14dc1640
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 I [hanteraren för beräknade värden](cm-manager.md) kan du dela beräknade värden. Beroende på dina behörigheter kan du dela beräknade värden med hela organisationen, grupper eller enskilda användare:
 
-* **Administratörer**: Administratörer kan dela beräknade värden med hela organisationen, med grupper inom en organisation och med enskilda användare. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/se/enterprise/using/manage-products.html).
-* **Icke-administratörer**: Icke-administratörer kan bara dela det beräknade mått som de har skapat och endast med enskilda användare. |
+* **Administratörer**: Administratörer kan dela beräknade värden med hela organisationen, med grupper inom en organisation och med enskilda användare. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/enterprise/using/manage-products.html).
+* **Icke-administratörer**: Icke-administratörer kan bara dela det beräknade mått som de har skapat och endast med enskilda användare.
 
 Så här delar du ett eller flera beräknade mått:
 

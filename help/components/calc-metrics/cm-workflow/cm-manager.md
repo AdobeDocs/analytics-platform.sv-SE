@@ -3,9 +3,9 @@ description: Med hanteraren för beräknade mätvärden kan du dela, filtrera, t
 title: Beräknad måtthanterare
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ Du kan dela, filtrera, tagga, godkänna, byta namn på, kopiera, ta bort, export
 Den beräknade metadatahanteraren har följande gränssnittselement:
 
 
-![Gränssnitt för filter](assets/calculated-metrics-manager.png)
+![Gränssnitt för metadatahanteraren](assets/calculated-metrics-manager.png)
 
-### Filterlista
+### Lista över beräknade mätvärden
 
-Filterlistan ➊ visar alla beräknade värden som du äger eller som har delats med dig. Listan innehåller följande kolumner:
+Den beräknade mätvärdeslistan ➊ visar alla beräknade värden som du äger eller som har delats med dig. Listan innehåller följande kolumner:
 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 

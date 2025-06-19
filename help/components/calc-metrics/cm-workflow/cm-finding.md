@@ -3,9 +3,9 @@ description: Beskriver sortering och filtrering, de två viktigaste sätten att 
 title: Hitta mätvärden
 feature: Calculated Metrics
 exl-id: 34d2563a-7cd2-4f22-9ad0-6a3dab8d84ea
-source-git-commit: d2fb161151bb909152470041449ab3010e72e5e3
+source-git-commit: 46242b86d4a7c0e60a468885fcbaa73c575dfb74
 workflow-type: tm+mt
-source-wordcount: '46'
+source-wordcount: '50'
 ht-degree: 0%
 
 ---
@@ -14,4 +14,4 @@ ht-degree: 0%
 
 Du kan hitta mätvärden i Analysis Workspace på samma sätt som du hittar andra typer av komponenter.
 
-Mer information om hur du söker efter komponenter finns i [Sök](/help/components/overview.md#search) i [Komponentöversikt](/help/components/overview.md).
+Mer information om hur du snabbt hittar komponenter finns i [Hantera komponentlistan](/help/components/overview.md#manage-the-component-list) i [Komponentöversikt](/help/components/overview.md).
