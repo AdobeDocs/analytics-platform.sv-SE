@@ -14,7 +14,7 @@ ht-degree: 0%
 
 I [hanteraren för beräknade värden](cm-manager.md) kan du dela beräknade värden. Beroende på dina behörigheter kan du dela beräknade värden med hela organisationen, grupper eller enskilda användare:
 
-* **Administratörer**: Administratörer kan dela beräknade värden med hela organisationen, med grupper inom en organisation och med enskilda användare. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/enterprise/using/manage-products.html).
+* **Administratörer**: Administratörer kan dela beräknade värden med hela organisationen, med grupper inom en organisation och med enskilda användare. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/se/enterprise/using/manage-products.html).
 * **Icke-administratörer**: Icke-administratörer kan bara dela det beräknade mått som de har skapat och endast med enskilda användare.
 
 Så här delar du ett eller flera beräknade mått:

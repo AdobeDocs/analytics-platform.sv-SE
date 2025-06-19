@@ -16,7 +16,7 @@ Deltagandestatistik används för att kvantifiera hur enskilda värden för en d
 
 >[!NOTE]
 >
->Administratörer kan skapa mätvärden med icke-standardattribueringsmodeller, som Deltagande, som en del av en [datavy](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views). Mer information finns i [Inställningar för attribueringskomponent](../../../data-views/component-settings/attribution.md).
+>Administratörer kan skapa mätvärden med icke-standardattribueringsmodeller, som Deltagande, som en del av en [datavy](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/data-views). Mer information finns i [Inställningar för attribueringskomponent](../../../data-views/component-settings/attribution.md).
 
 Stegen nedan visar hur alla användare med [Skapa beräknad metrisk behörighet](/help/technotes//access-control.md#user-level-access) kan skapa ett deltagandemått.
 
