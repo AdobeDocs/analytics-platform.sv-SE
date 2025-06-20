@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
+source-git-commit: 68f2fe684f6eb9590ab047e893fb04b1cbe1a8cd
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1469'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Ett exempel på en kontobaserad anslutning i Customer Journey Analytics B2B edit
 Customer Journey Analytics B2B edition har gränssnittet [Anslutningskarta](/help/connections/create-connection.md#connection-map) som ger dig en översikt över relationerna mellan datauppsättningar i anslutningen.
 
 
-På samma sätt som Customer Journey Analytics är händelsebaserade tidsseriedata kärnan i Customer Journey Analytics B2B edition. Den största skillnaden för en kontobaserad anslutning är att du behöver ett konto-ID för alla poster i din händelsedatamängd i stället för ett person-ID.
+På samma sätt som Customer Journey Analytics är händelsebaserade tidsseriedata kärnan i Customer Journey Analytics B2B edition. Den största skillnaden för en kontobaserad anslutning är att du behöver ett konto-ID för alla poster i händelsedatamängden i stället för ett person-ID.
 
 När du konfigurerar [datauppsättningsinställningar](/help/connections/create-connection.md#dataset-settings) för din kontobaserade anslutning i Customer Journey Analytics B2B edition beror alternativen som är tillgängliga för vissa av inställningarna på [datamängdstypen](/help/connections/create-connection.md#dataset-types). Du måste till exempel:
 
