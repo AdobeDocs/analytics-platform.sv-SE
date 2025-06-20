@@ -3,9 +3,9 @@ description: Med verktyget Beräknade mätvärden kan du dra och släppa dimensi
 title: Bygg beräknade värden
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: ef97b36a95e5f39f7436f5e21861d1ee5a0338dd
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1466'
 ht-degree: 0%
 
 ---
@@ -16,34 +16,18 @@ ht-degree: 0%
 >id="components_calculatedmetrics_productcompatibility"
 >title="Produktkompatibilitet"
 >abstract="Anger var i Customer Journey Analytics det här beräknade måttet kan användas, t.ex. i Analysis Workspace, Report Builder o.s.v. Vissa beräknade värden kan inte användas med experimenterande."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_externalid"
 >title="Externt ID"
 >abstract="Om du ändrar det externa ID:t kan det påverka hur det beräknade mätvärdet visas i externa källor, t.ex. affärsinformationsverktyg"
 
-<!-- markdownlint-enable MD034 -->
-
 Customer Journey Analytics har en arbetsyta där du kan dra och släppa dimensioner, mätvärden, segment och funktioner för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla eller komplexa beräknade mätvärden.
-
-## Börja skapa ett beräknat mått
 
 Du kan använda verktyget för beräknade mätvärden för att skapa eller redigera beräknade mätvärden. När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan sedan användas i projekt i hela organisationen. Du kan också snabbt skapa ett beräknat mått som bara är tillgängligt för det projekt där det skapades, vilket beskrivs i [Skapa beräknade värden för ett enskilt projekt](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project) i [Metrisk](/help/components/apply-create-metrics.md).
 
-Gå till verktyget för beräknade värden för att börja skapa ett beräknat mått som är tillgängligt i komponentlistan.
-
-1. Använd verktyget för beräknade värden på något av följande sätt:
-
-   * Öppna ett projekt i Analysis Workspace och välj sedan **[!UICONTROL Components]** > **[!UICONTROL Create metric]**.
-   * Öppna ett projekt i Analysis Workspace och välj sedan ikonen **Plus** bredvid avsnittet [!UICONTROL **Metrisk**] i den vänstra listen.
-   * I [!DNL Customer Journey Analytics] går du till **[!UICONTROL Components]** > **[!UICONTROL Calculated metrics]** och väljer sedan **[!UICONTROL + Add]** högst upp på sidan Beräknade mått.
-
-1. Fortsätt med [Områden i det beräknade måttverktyget](#areas-of-the-calculated-metrics-builder).
+[Skapa ett beräknat mått](cm-workflow.md) beskriver de olika alternativ som är tillgängliga för att skapa ett nytt beräknat mått.
 
 ## Områden för verktyget för beräknade mätvärden
 
@@ -216,5 +200,5 @@ Om du vill ta bort en behållare väljer du ![Stäng](/help/assets/icons/Close.s
 >[!MORELIKETHIS]
 >
 >[Använda funktioner](cm-using-functions.md)
->&#x200B;>[Segment](/help/components/segments/seg-overview.md)
+>>[Segment](/help/components/segments/seg-overview.md)
 >

@@ -4,9 +4,9 @@ title: Mätvärden
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: 65b4339b4a1b27c41cfe442482a54661989d704b
+source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
@@ -49,13 +49,6 @@ Du kan se om ett mätresultat har godkänts med ikonen ![Godkänd](https://spect
 En fullständig lista över standardvärden i Customer Journey Analytics:
 {{standard-metrics}}
 
-## Jämför mätvärden med olika attribueringsmodeller
-
-Om du snabbt vill jämföra en attribueringsmodell med en annan för ett mätresultat väljer du **[!UICONTROL Compare attribution models]** på snabbmenyn för ett mätresultat.
-
-![Workspace-panelen markerar Jämför attribueringsmodeller](assets/compare-attribution.png)
-
-Med den här genvägen kan du jämföra en attribueringsmodell med en annan utan att dra i ett mätresultat och konfigurera det två gånger.
 
 ## Skapa beräknade mått
 
@@ -65,9 +58,7 @@ Det finns flera sätt att skapa beräknade mått. Den metod du väljer avgör om
 
 ### Skapa beräknade mätvärden för alla projekt
 
-Du kan använda verktyget för beräknade mätvärden för att skapa beräknade mätvärden. När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan sedan användas i projekt i hela organisationen.
-
-Mer information om hur du kommer åt verktyget för beräknade värden finns i [Skapa beräknade värden](/help/components/calc-metrics/cm-workflow/cm-workflow.md).
+Du kan använda verktyget [calculate metric builder](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) för att [skapa beräknade mått](/help/components/calc-metrics/cm-workflow/cm-workflow.md). När de skapas på det här sättet är beräknade värden tillgängliga i komponentlistan och kan sedan användas i projekt i hela organisationen.
 
 ### Skapa beräknade mätvärden för ett enskilt projekt
 
@@ -113,6 +104,13 @@ Så här skapar du ett beräknat mått för ett enskilt projekt:
 
    * [!UICONTROL **Procentuell ändring**]: Skapar en ny kolumn som visar procentändringen mellan de två markerade kolumnerna.
 
-[Beräknade mått: Mätvärden utan implementering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-implementationless-metrics.html?lang=sv-SE) (3:42)
+
+## Jämför mätvärden med olika attribueringsmodeller
+
+Om du snabbt vill jämföra en attribueringsmodell med en annan för ett mätresultat väljer du **[!UICONTROL Compare attribution models]** på snabbmenyn för ett mätresultat.
+
+![Workspace-panelen markerar Jämför attribueringsmodeller](assets/compare-attribution.png)
+
+Med den här genvägen kan du jämföra en attribueringsmodell med en annan utan att dra i ett mätresultat och konfigurera det två gånger.
 
 
