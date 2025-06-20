@@ -22,17 +22,17 @@ Följande manuella konfigurationsåtgärder är tillgängliga:
 
 Så här startar du datainsamlingen för en implementerad Content Analytics-konfiguration:
 
-1. Följ [publiceringsflödet](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"}. Biblioteket för taggegenskapen som innehåller din Content Analytics-konfiguration har publicerats.
+1. Följ [publiceringsflödet](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/publish/overview){target="_blank"}. Biblioteket för taggegenskapen som innehåller din Content Analytics-konfiguration har publicerats.
 
-1. [Installera](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments#installation) den inbäddade koden i elementet `<head>` på sidorna i din utvecklings-, staging- eller publiceringsmiljö, enligt Content Analytics.
+1. [Installera](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/publish/environments/environments#installation) den inbäddade koden i elementet `<head>` på sidorna i din utvecklings-, staging- eller publiceringsmiljö, enligt Content Analytics.
 
 
 ## Stoppa datainsamling
 
 Så här stoppar du datainsamlingen för en implementerad Content Analytics-konfiguration:
 
-1. Ta bort den [inbäddade koden](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) i `<head>`-elementet för sidorna i din utvecklings-, staging- eller produktionsmiljö, som omfattas av Content Analytics.
-1. [Ta bort](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) den associerade taggegenskapen för din Content Analytics-konfiguration.
+1. Ta bort den [inbäddade koden](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/publish/environments/environments) i `<head>`-elementet för sidorna i din utvecklings-, staging- eller produktionsmiljö, som omfattas av Content Analytics.
+1. [Ta bort](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/publish/overview) den associerade taggegenskapen för din Content Analytics-konfiguration.
 
 
 
@@ -40,32 +40,32 @@ Så här stoppar du datainsamlingen för en implementerad Content Analytics-konf
 
 Du kan göra några mindre ändringar i en implementerad konfiguration med hjälp av [guiden för guidad konfiguration](guided.md). Du kan till exempel ändra datavyn eller aktivera eller inaktivera upplevelser.
 
-Du använder [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview) i taggegenskapen som är kopplad till din Content Analytics-konfiguration för att göra ändringar i följande artefakter:
+Du använder [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview) i taggegenskapen som är kopplad till din Content Analytics-konfiguration för att göra ändringar i följande artefakter:
 
-* [Sandbox och datastream](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}.
+* [Sandbox och datastream](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-datastreams){target="_blank"}.
 
   >[!CAUTION]
   >
   >Kontrollera att den sandlåda och datastam som du konfigurerar i Adobe Content Analytics-tillägget redan har konfigurerats för Content Analytics med den [guidade konfigurationen](guided.md) i ett tidigare skede. Den här konfigurationen ser till att alla nödvändiga artefakter är tillgängliga.<br/><br/>Verifiera också att uppdateringar för sandbox eller datastreams inte stör en annan Content Analytics-konfiguration som är konfigurerad att använda samma sandlåda eller datastreams.
   >
 
-* [Upplevelsehämtning och definition](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
+* [Upplevelsehämtning och definition](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview?lang=en#configure-experience-capture-and-definition)
 
   Du kan aktivera eller inaktivera upplevelser och redigera kombinationer av reguljära uttryck och frågeparametrar för att avgöra hur innehåll återges på webbplatsen.
 
-* [Händelsesegmentering](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
+* [Händelsesegmentering](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting){target="_blank"}
 
   Du kan redigera reguljära uttryck för att ändra hur du segmenterar sidor och resurser.
 
 
-När du har gjort ändringar i Adobe Content Analytics-tillägget kontrollerar du att du använder [publiceringsflödet](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview){target="_blank"} för att starta datainsamlingen baserat på de ändringar du har gjort.
+När du har gjort ändringar i Adobe Content Analytics-tillägget kontrollerar du att du använder [publiceringsflödet](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/publish/overview){target="_blank"} för att starta datainsamlingen baserat på de ändringar du har gjort.
 
 
 
 >[!MORELIKETHIS]
 >
 >[Guidad konfiguration](guided.md)
->&#x200B;>[Översikt över publicering av datainsamlingstaggar ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
+>&#x200B;>[Översikt över publicering av datainsamlingstaggar ](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/publish/overview)
 >
 
 
@@ -97,7 +97,7 @@ Content Analytics hanterar identiteter på följande sätt:
 * Fältbaserad sammanfogning stöds inte eftersom schemat ägs av systemet. Du kan alltså inte lägga till ett annat fält i schemat som stöd för fältbaserad sammanslagning
 
 
-För att Content Analytics identitetsdata och Adobe Experience Platform Web SDK-datatidentitetsdata ska sammanfogas korrekt på fältnivå måste du göra ändringar i Web SDK [on innan ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"}-återanrop skickas.
+För att Content Analytics identitetsdata och Adobe Experience Platform Web SDK-datatidentitetsdata ska sammanfogas korrekt på fältnivå måste du göra ändringar i Web SDK [on innan ](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"}-återanrop skickas.
 
 1. Navigera till egenskapen **[!UICONTROL Tags]** som innehåller Adobe Experience Platform Web SDK-tillägget och Adobe Content Analytics-tillägget.
 1. Välj ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]**.
@@ -123,7 +123,7 @@ För att Content Analytics identitetsdata och Adobe Experience Platform Web SDK-
 
 1. Välj **[!UICONTROL Save]** om du vill spara koden.
 1. Välj **[!UICONTROL Save]** om du vill spara tillägget.
-1. [Publicera](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) uppdateringarna för taggegenskapen.
+1. [Publicera](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/publish/overview) uppdateringarna för taggegenskapen.
 
 
 
