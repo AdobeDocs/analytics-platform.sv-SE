@@ -65,7 +65,7 @@ När du har gjort ändringar i Adobe Content Analytics-tillägget kontrollerar d
 >[!MORELIKETHIS]
 >
 >[Guidad konfiguration](guided.md)
->>[Översikt över publicering av datainsamlingstaggar ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
+>&#x200B;>[Översikt över publicering av datainsamlingstaggar ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)
 >
 
 
