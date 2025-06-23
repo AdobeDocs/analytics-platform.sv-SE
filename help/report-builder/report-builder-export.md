@@ -5,9 +5,9 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
+source-git-commit: e653cbe7c1955d04830b9ed9ff6399973036ab64
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
@@ -119,12 +119,6 @@ Kontrollera att dina datablock, din miljö och dina behörigheter uppfyller föl
 * **Datablock:** Alla datablock måste innehålla minst en komponent till en kolumn, rad eller ett värde.
 
 * **Miljö:** Kontrollera att de [IP-adresser](/help/technotes/ip-addresses.md) och [domäner](/help/technotes/domains.md) som används av Customer Journey Analytics tillåts via organisationens brandvägg.
-
-* **Behörigheter:** I Adobe Admin Console måste användarna tilldelas en produktprofil som har behörigheten [!UICONTROL **Fullständig tabellexport**] för att kunna exportera fullständiga tabeller. Information om hur du tilldelar en produktprofil behörighet i Admin Console finns i [Customer Journey Analytics-behörighet i Admin Console](/help/technotes/access-control.md).
-
-  >[!NOTE]
-  >
-  >  Användare som har tilldelats rollen [Produktadministratör](/help/technotes/access-control.md#product-admin-role) har alltid tillgång till exportrapporter från Report Builder. **(Gäller detta Report Builder???)**
 
 
 
