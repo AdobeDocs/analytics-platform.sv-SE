@@ -6,14 +6,14 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 6dd8a70293161ff58361953a7e48a98834b7abe0
+source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
 
-# Schemalägg arbetsböcker
+# Schemalägg arbetsböcker genom delning via e-post
 
 När du har sparat arbetsboken och slutfört analysen kan du dela arbetsboken med andra i teamet med hjälp av schemaläggningsfunktionen. Med schemafunktionen kan du skapa ett schema som automatiskt uppdaterar data i arbetsboken. Och mejlar Excel-arbetsboksfilen som en bifogad fil till den angivna målgruppen vid ett visst datum och en viss tidpunkt. När du konfigurerar ett schema får mottagarna automatiskt regelbundna uppdateringar. Du kan också använda schemafunktionen för att skicka ut arbetsboken en gång utan att schemalägga automatiska uppdateringar.
 
@@ -129,54 +129,7 @@ I båda fallen visas en bekräftelsetabell längst ned i Report Builder-navet.
 
 Om du vill avbryta sändning av arbetsboken väljer du **[!UICONTROL Cancel]**.
 
+## Hantera schemalagda arbetsböcker
 
-## Visa och hantera schemalagda arbetsböcker
+Mer information om hur du hanterar arbetsböcker som redan är schemalagda finns i [Hantera schemalagda arbetsböcker](/help/report-builder/manage-schedules-reportbuilder.md).
 
-Du kan visa och hantera alla schemalagda arbetsböcker på fliken **[!UICONTROL Workbooks]**.
-
-1. Välj **[!UICONTROL Schedule]** i Report Builder-hubben
-
-1. Välj fliken **[!UICONTROL Workbooks]**. Du ser en lista över alla schemalagda arbetsböcker.
-
-   ![Schemalagd arbetsbok](assets/scheduled-workbooks.png){zoomable="yes"}
-
-   Du kan hålla muspekaren över ikonen om du vill visa statusen för en schemalagd arbetsbok.
-
-   Använd ![Sök](/help/assets/icons/Search.svg) om du vill söka efter specifika schemalagda arbetsböcker.
-Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att definiera vilka kolumner som ska visas.
-
-1. Markera en eller flera arbetsböcker.
-
-   ![Schemalägg arbetsböcker har valts](assets/scheduled-workbooks-selected.png){zoomable="yes"}
-
-   Följande alternativ är tillgängliga:
-
-   | Alternativ | Beskrivning |
-   |---|---|
-   | ![Redigera](/help/assets/icons/Edit.svg) | Redigera schemat för en vald arbetsbok. |
-   | ![Historik](/help/assets/icons/History.svg) | Visa historiken för valda arbetsböcker. |
-   | ![Paus](/help/assets/icons/Pause.svg) | Pausa schemat för markerade arbetsböcker. |
-   | ![Spela upp](/help/assets/icons/Play.svg) | Återuppta schemat för valda arbetsböcker. |
-   | ![Hämta](/help/assets/icons/Download.svg) | Hämta den markerade arbetsboken till en ny arbetsbok. |
-   | ![Ta bort](/help/assets/icons/Delete.svg) | Ta bort schemat för valda arbetsböcker. |
-
-
-## Historik och status för schemalagda arbetsböcker
-
-Du kan visa historik och status för schemalagda arbetsböcker på fliken **[!UICONTROL History]**.
-
-1. Välj **[!UICONTROL Schedule]** i Report Builder-navet.
-
-1. Välj fliken **[!UICONTROL History]**. Du ser en lista över alla schemalagda arbetsböcker.
-
-   ![Schemalagd historik](assets/scheduled-workbooks-history.png){zoomable="yes"}
-
-   Använd ![Sök](/help/assets/icons/Search.svg) om du vill söka efter specifika arbetsböcker i listan.
-Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att definiera vilka kolumner som ska visas.
-
-   På fliken **[!UICONTROL History]** kan du granska statusen för varje schemalagd aktivitet. En separat rad visar statusändringen för varje schemalagd aktivitet.
-
-   * En ![CheckCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) anger att arbetsboken har skickats.
-   * Ett ![AlertRed](/help/assets/icons/AlertRed.svg) indikerar att ett fel har inträffat.
-
-Du kan också välja ![Historik](/help/assets/icons/History.svg) för en eller flera markerade arbetsböcker på fliken **[!UICONTROL Workbooks]**. Den här åtgärden visar fliken **[!UICONTROL History]** med en lista filtrerad efter din markering. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort ett filter.
