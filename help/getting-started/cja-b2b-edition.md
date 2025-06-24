@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
-source-git-commit: a2aea32eb14462ee2041405394afa6bd0c484e8d
+source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 0%
 
 Adobe Analytics började som ett webb- och digitalt analysverktyg för marknadsförare, medan Customer Journey Analytics breddade räckvidden till att omfatta data för flera kanaler, offline och plattformsövergripande.  Båda verktygen hjälper B2C-företag (Business to Consumer) att analysera och optimera sina marknadsföringssatsningar och kundupplevelser. Och fokusera på **personbaserad rapportering och analys**: förstå kundresan, där kunden är en person som interagerar med varumärket över flera kanaler.
 
+![B2B-hjältebild](assets/b2b-image.png)
 Customer Journey Analytics B2B edition lägger till **kontobaserad rapportering och analys**. Vid B2B-försäljning (business-to-business) innebär köpresan flera parter, kontaktytor online och offline samt viktiga steg innan ett avtal sluts. B2B-företag måste spåra alla dessa interaktioner i en enhetlig kundresa för att effektivt kunna analysera och optimera sina marknadsföringsinsatser och kontoupplevelser.
 
 Typiska B2B-försäljningsegenskaper är:
@@ -43,7 +44,7 @@ Customer Journey Analytics B2B edition hjälper B2B-företag att anpassa sina ma
 >[!MORELIKETHIS]
 >
 >[B2B-koncept och funktioner](cja-b2b-concepts-features.md)
->&#x200B;>[Snabbstartsguide för B2B ](cja-b2b-quick-start-guide.md)
->&#x200B;>[Övergångshandbok för B2B ](cja-b2b-transition.md)
->&#x200B;>[Användningsexempel B2B ](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
+>>[Snabbstartsguide för B2B ](cja-b2b-quick-start-guide.md)
+>>[Övergångshandbok för B2B ](cja-b2b-transition.md)
+>>[Användningsexempel B2B ](/help/use-cases/b2b/b2b-edition/use-cases-overview.md)
 >

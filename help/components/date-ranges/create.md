@@ -4,7 +4,7 @@ description: Skapa ett datumintervall för rapportering.
 feature: Calendar
 exl-id: 3e4fa3cc-c14b-45e5-afbb-518ecfa0033e
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Vem som helst kan skapa ett anpassat datumintervall. Du kan skapa ett datuminter
 * **E** - I ett Workspace-projekt väljer du ![Lägg till](/help/assets/icons/Add.svg) i ![Kalender](/help/assets/icons/Calendar.svg) **Datumintervall** i den vänstra panelen Komponenter.
 * **F** - Välj **[!UICONTROL Annotate Selection]** i en visualisering som stöds, t.ex. en radvisualisering, på snabbmenyn på en datapunkt.
 
-Om du vill definiera anteckningen använder du [[!UICONTROL Date range builder]](#annotation-builder):
+Om du vill definiera anteckningen använder du [[!UICONTROL Date range builder]](#annotation-builder).
 
 <!-- Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
