@@ -5,13 +5,13 @@ role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: e653cbe7c1955d04830b9ed9ff6399973036ab64
+exl-id: 1d5d87d8-1920-406b-8cce-41b89b7ae70b
+source-git-commit: 5a0cb6fa221282b70df5efb58362855ff58f76b8
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 0%
 
 ---
-
 
 # Schemalägg arbetsböcker genom att exportera till molnmål
 
@@ -35,7 +35,7 @@ Använd följande process när du exporterar arbetsböcker från Report Builder 
 
 ![Exportprocessen som beskrivs i steg 1 till 4.](assets/report-builder-export-process.png)
 
-## Exportera en rapport från Report Builder {#export-from-report-builder}
+## Exportera en rapport från Report Builder
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Så här exporterar du rapporter från Report Builder:
 
 När data har exporterats från Analysis Workspace kan du redigera, exportera om, duplicera, tagga eller ta bort befintliga exporter enligt beskrivningen i [Hantera exporter](/help/components/exports/manage-exports.md).
 
-## Fördelar med att exportera till molnet {#advantages}
+## Fördelar med att exportera till molnet
 
 Genom att exportera Customer Journey Analytics-data till molnet kan du:
 
@@ -119,6 +119,3 @@ Kontrollera att dina datablock, din miljö och dina behörigheter uppfyller föl
 * **Datablock:** Alla datablock måste innehålla minst en komponent till en kolumn, rad eller ett värde.
 
 * **Miljö:** Kontrollera att de [IP-adresser](/help/technotes/ip-addresses.md) och [domäner](/help/technotes/domains.md) som används av Customer Journey Analytics tillåts via organisationens brandvägg.
-
-
-
