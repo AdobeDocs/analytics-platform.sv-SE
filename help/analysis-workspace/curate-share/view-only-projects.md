@@ -29,7 +29,7 @@ Interaktionen för de skrivskyddade mottagarna är begränsad.
 Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 
 * Dold vänster panel
-* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till i ett [nedrullningsbart segment med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
+* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till i ett [nedrullningsbart segment med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=sv-SE).
 * Frihandssegmentering
 * Frihandsnr för synliga rader
 * Inställningar för frihandsrad, kolumn eller visualisering
