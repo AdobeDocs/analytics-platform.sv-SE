@@ -5,9 +5,9 @@ title: Skapa delningsbara länkar
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 4942c83e34b129e3718084601d5a733bcebf4de9
+source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Om mottagaren av länken inte har tilldelats en [projektroll](/help/analysis-wor
 
 Du kan dela en skrivskyddad länk till Analysis Workspace-projekt med personer som inte har tillgång till Customer Journey Analytics.
 
-Mer information finns i&quot;Dela ett projekt med vem som helst (ingen inloggning krävs)&quot; i artikeln [Dela projekt](/help/analysis-workspace/curate-share/share-projects.md).
+Mer information finns i [Dela med vem som helst](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required).
 
 ## Hämta en panel eller visualiseringslänk {#panel-link}
 
@@ -35,14 +35,14 @@ Du kan också dela en länk till en viss del av ett projekt, till exempel en pan
 * Välj **[!UICONTROL Get panel link]** på snabbmenyn för en panelrubrik
 * Välj **[!UICONTROL Get visualization link]** på snabbmenyn för ett visualiseringshuvud
 
-[Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=sv-SE) om hur du skapar länkar och använder dem för att dirigera mottagare till specifika delar av projektet.
+[Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html) om hur du skapar länkar och använder dem för att dirigera mottagare till specifika delar av projektet.
 
-![Listrutan när du högerklickar på rubriken med länken Hämta visualisering markerad.](assets/get-viz-link.png)
+![Listrutan när du högerklickar på rubriken med länken Hämta visualisering markerad.](assets/get-visualization-link.png)
 
 ## Använda länkar i en innehållsförteckning {#TOC}
 
 Ett tips för att utnyttja de olika länkalternativen är att alltid inkludera en innehållsförteckning högst upp i ditt Workspace-projekt. I innehållsförteckningen kan du länka till andra relevanta projekt, särskilda paneler och specifika visualiseringar. Detta gör det enklare för projektmottagaren att navigera.
 
-[Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=sv-SE) om hur du skapar en innehållsförteckning med hjälp av länkar och Workspace RTF-redigerare.
+[Titta på videon](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html) om hur du skapar en innehållsförteckning med hjälp av länkar och Workspace RTF-redigerare.
 
 ![En projektinnehållsförteckning.](assets/toc.png)

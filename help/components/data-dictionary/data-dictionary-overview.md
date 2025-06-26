@@ -1,12 +1,12 @@
 ---
-description: Med Data Dictionary i Analysis Workspace kan användare katalogisera och hålla reda på de olika komponenterna i Analysis Workspace, inklusive deras avsedda användning, som är godkända, som är dubbletter osv.
+description: Med Data Dictionary i Analysis Workspace kan användare katalogisera och hålla reda på de olika komponenterna i Analysis Workspace, inklusive deras avsedda användning, som är godkänd, som är dubbletter osv.
 title: Översikt över dataordlistan
 feature: Components
 role: User, Admin
 exl-id: 8e4b8169-7c7f-4a58-a6c6-70efb0c86ce8
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="Dataordlista"
->abstract="Med Data Dictionary kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Analytics-miljö. <br/>Analysadministratörer ansvarar för att strukturera information om varje komponent i Data Dictionary för användarna."
+>abstract="Med Data Dictionary kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Customer Journey Analytics-miljö. <br/>Customer Journey Analytics-administratörer ansvarar för att strukturera information om varje komponent i Data Dictionary."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -30,7 +30,7 @@ Analysadministratörer ansvarar för att strukturera information om varje kompon
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataordlista för Analyis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataordlista för Analysis Workspace](https://video.tv.adobe.com/v/3418028/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
@@ -58,7 +58,7 @@ Mer information om hur du får åtkomst till datamordlistan och om vilken inform
 
 Med Data Dictionary kan systemadministratörer hålla reda på och strukturera komponenterna i sin Analytics-miljö.
 
-Här följer några exempel på hur Analytics-administratörer kan använda Data Dictionary:
+Analysadministratörer kan använda Data Dictionary för följande syften:
 
 * Identifiera duplicerade komponenter som behöver konsolideras.
 
@@ -89,7 +89,7 @@ Mer information om de olika alternativen som är tillgängliga i datamordlistan 
 
 ## Uppdatera och strukturera dataordlistan
 
-Customer Journey Analytics-administratörer ansvarar för att upprätthålla en felfri dataordlista för sin organisation, vilket beskrivs i [Övervaka dataordlistehälsa](/help/components/data-dictionary/monitor-data-dictionary-health.md).
+Customer Journey Analytics-administratörer ansvarar för att upprätthålla en felfri datamordlista för sin organisation, vilket beskrivs i [Övervaka datamordlistehälsa](/help/components/data-dictionary/monitor-data-dictionary-health.md).
 
 Som en del av den här processen kan Customer Journey Analytics-administratörer redigera information om varje komponent i dataordlistan enligt beskrivningen i [Redigera komponentposter i datamappningen](/help/components/data-dictionary/edit-entries-data-dictionary.md).
 
@@ -103,10 +103,10 @@ Du kan ändra fönstret för datamordlistan på något av följande sätt:
 
   Om du stänger och öppnar Analysis Workspace igen finns fönstret Datamordlista kvar på den plats där du senast flyttade det. <!--True?-->
 
-* Minimera
+* Minimera fönstret.
 
   När värdet är minimerat visas datamordlistan som en blå flik i det nedre högra hörnet av Analysis Workspace.
 
   När du väljer den blå fliken öppnas Data Dictionary för den komponent som du senast visade.
 
-* Stäng den
+* Stäng fönstret.

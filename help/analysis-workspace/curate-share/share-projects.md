@@ -5,9 +5,9 @@ title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 1474a29dc9063ea65a78d34b3a2eb9861a71ee4e
+source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '1992'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,9 @@ Du kan dela en specifik roll med användare eller grupper eller dela en länk.
 
 När du delar en specifik projektroll med användare och grupper i organisationen bör du tänka på följande:
 
-* Projektroller (**[!UICONTROL Edit original]**, **[!UICONTROL Edit copy]** och **[!UICONTROL Read only]**) är kopplade till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=sv-SE).
+* Projektroller (**[!UICONTROL Edit original]**, **[!UICONTROL Edit copy]** och **[!UICONTROL Read only]**) är kopplade till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
-* I Customer Journey Analytics definieras grupper av produktprofiler i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=sv-SE). Administratörer kan dela till vilken grupp som helst, inklusive&quot;Alla&quot;. Icke-administratörer kan dela till alla grupper som de är medlemmar i, med undantag för&quot;Alla&quot;.
+* I Customer Journey Analytics definieras grupper av produktprofiler i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Administratörer kan dela till vilken grupp som helst, inklusive&quot;Alla&quot;. Icke-administratörer kan dela till alla grupper som de är medlemmar i, med undantag för&quot;Alla&quot;.
 
 * En användare som placeras i flera roller får alltid den högsta upplevelsen. Detta kan inträffa om en användare läggs till både som en individ och som en del av en grupp. Om en användare till exempel får rollen **[!UICONTROL Edit original]** som individ och rollen **[!UICONTROL Read only]** som medlem i en grupp får han/hon en **[!UICONTROL Edit original]**-projekterfarenhet.
 
@@ -110,13 +110,14 @@ Om det finns ändringar som inte har sparats uppmanas du att spara projektet fö
 
    Välj **[!UICONTROL Curate and Share]** om du vill använda projektkurering automatiskt. (Om projektet redan har delats väljer du **[!UICONTROL Curate & Update]**.) Läs mer om [projekturval](curate.md).
 
+
 ## Dela en länk till ett projekt
 
 Tänk på följande när du delar en länk enligt beskrivningen i det här avsnittet:
 
 * Mottagare som använder länken måste logga in på Customer Journey Analytics innan de kan komma åt projektet.
 
-* Om en mottagare inte har tilldelats en roll och får en [länk](/help/analysis-workspace/curate-share/shareable-links.md) till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) får de en roll som standard. Administratörer får **[!UICONTROL Edit original]** och icke-administratörer får **[!UICONTROL Edit copy]**.
+* Om en mottagare inte har tilldelats en roll och får en [delbar länk](/help/analysis-workspace/curate-share/shareable-links.md) till projektet (**[!UICONTROL Share]>[!UICONTROL Get project link]**) får de en roll som standard. Administratörer får **[!UICONTROL Edit original]** och icke-administratörer får **[!UICONTROL Edit copy]**.
 
 Så här delar du projektlänken med användare i din organisation:
 
@@ -160,7 +161,7 @@ Du kan ge [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/view-onl
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela med vem som helst](https://video.tv.adobe.com/v/3452456/?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela med vem som helst](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
