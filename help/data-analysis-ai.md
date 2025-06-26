@@ -5,14 +5,14 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 029a7ebb10ac9daf4c4b121efa85042d6da22316
+source-git-commit: 7bf74e02db581bdf11b7efe31b62f018320c7f22
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '2286'
 ht-degree: 0%
 
 ---
 
-# Visualisera data med Data Insights Agent i Customer Journey Analytics
+# Visualisera data med Data Insights Agent
 
 >[!AVAILABILITY]
 >
@@ -39,7 +39,7 @@ Med Data Insights Agent kan du besvara datacentrerade frågor i Analysis Workspa
 | **Återkopplingsmekanismer** | <ul><li>Tummen upp</li><li>Tummen ned</li><li>Flagga</li></ul> |  |
 
 
-## Hantera åtkomst till Data Insights Agent i Customer Journey Analytics
+## Hantera åtkomst till Data Insights Agent
 
 Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey Analytics:
 
@@ -49,7 +49,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
 * **Behörigheter**: Nödvändiga behörigheter måste beviljas i [!UICONTROL Adobe Admin Console] innan användare kan komma åt Data Insights-agenten.
 
-  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
+  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
    1. I **[!UICONTROL Admin Console]** väljer du fliken **[!UICONTROL Products]** för att visa sidan **[!UICONTROL All products and services]**.
    1. Välj **[!UICONTROL Customer Journey Analytics]**.
    1. På fliken **[!UICONTROL Product Profiles]** väljer du titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL AI Assistant: Product Knowledge].
@@ -229,3 +229,24 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 -->
 
+
+## Bästa praxis för konfiguration
+
+Nedan följer god praxis för din Customer Journey Analytics-konfiguration (datavy, calculate metrics, segments, and more) för att säkerställa att Data Insights-agenten kan hitta rätt komponenter och returnera renare svar utan att du behöver be om mer information.
+
+* **Balansera vilka komponenter du behöver**. Lägg inte till alla fält i datauppsättningarna som mått eller dimensionskomponenter i datavyn. Särskilt de som du verkligen inte kommer att använda i din analys. Å andra sidan bör du inte begränsa dig till enbart de fält som du tror att du behöver för din analys. En alltför begränsad datavy begränsar flexibiliteten i din analys och datainvisningens agentfunktioner.
+* **Använd alltid egna visningsnamn**. Se till att alla fält som du definierar i datavyn, antingen som mått eller dimensionskomponent, har ett eget komponentnamn. Processen att byta namn på fält med ett eget namn är särskilt relevant för fält från Adobe Analytics källanslutningsdatauppsättningar. Dessa fält har ofta ovänliga oidentifierbara namn som `eVar41` eller `prop25`.
+* **Använd distinkta namn**. Distinkta namn är särskilt relevanta när du använder ett fält både som en metrisk komponent och en dimensionskomponent i datavyn. Eller när du använder ett fält i flera komponenter, där var och en har olika komponentinställningar.
+* **Använd en komponentnamnkonvention**. Du kan använda en komponentnamnkonvention för att gruppera komponenter. Till exempel **[!UICONTROL Orders | Product]** och **[!UICONTROL Orders | Customer]** för att skilja mellan olika ordervärden som kan finnas i dina data.
+* **Använd dataordlistan**. Lägg till beskrivning och andra relevanta data för komponenter i datamappningen. Data Insight-agenten använder för närvarande inte beskrivningar och taggar. men kan i framtiden använda beskrivningar och taggar för datamallen.
+* **Använd godkända beräknade värden**. Godkänn en process där endast godkända beräknade mätvärden används som komponenter i datavyn och undvik att använda experimentella beräknade mätvärden.
+* **Dela nödvändiga segment**. Se till att ni delar segment och gör segment synliga som behövs för förfrågningar från datainsikter-agenten.
+* **Standardisera med komponentnamn över datavyer**. Om du använder samma fält som en komponent i flera datavyer måste du använda ett enda användarvänligt namn och en enda identifierare för den komponenten. Med ett enda namn och en identifierare kan Data Insights-agenten växla datavyer utan att tappa kontext.
+
+>[!MORELIKETHIS]
+>
+>[Komponentinställningar](/help/data-views/component-settings/overview.md)
+>>[Dataordlista ](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Godkänn beräknat mått ](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Dela segment ](/help/components/segments/seg-share.md)
+>
