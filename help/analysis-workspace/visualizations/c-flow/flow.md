@@ -1,17 +1,17 @@
 ---
-description: Läs mer om funktionen Flöde som visar kundvägar via era webbplatser och appar.
+description: Lär dig hur du använder flödesvisualisering i en Analysis Workspace.
 title: Flödesöversikt
 feature: Visualizations
 exl-id: 2ef325d9-1d82-46c9-86e3-6b2332548823
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# Flöde {#flow}
+# Flödesöversikt {#flow}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln dokumenterar Flow-visualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Flow](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_Den här artikeln dokumenterar Flow-visualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Flow](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
