@@ -1,12 +1,12 @@
 ---
-description: Översikt över arbetsytan Resa
-title: Reseduk
+description: Lär dig hur du använder arbetsytan i Analysis Workspace.
+title: Översikt över arbetsytan på resan
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 770320a0b16d26e0755203a3524b000db30cac82
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1988'
+source-wordcount: '1996'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras visualiseringen av arbetsytan på resan i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Det finns ingen motsvarande visualisering i **Adobe Analytics**._
+_I den här artikeln dokumenteras visualiseringen av arbetsytan på resan i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Det finns ingen motsvarande visualisering i **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 

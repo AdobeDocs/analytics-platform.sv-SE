@@ -1,26 +1,26 @@
 ---
-description: Lär dig mer om exempel på hur du använder en kohortanalys.
+description: Läs mer om några exempel på hur man använder kohortanalyser.
 keywords: Analysis Workspace
-title: Användningsexempel för kohortanalyser
+title: Kohortanalyser använder XAS
 feature: Visualizations
 exl-id: f559d4b4-b682-4306-b111-22acb26fe0a0
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Cohort analysis] användningsfall
+# Användningsexempel för kohortanalyser
 
-I den här artikeln beskrivs några exempel på användningsfall för [!UICONTROL Cohort Analysis].
+I den här artikeln beskrivs några exempel på hur man använder en kohortanalys.
 
 ## Användningsexempel för appengagemang
 
 Anta att du vill analysera hur användare som installerar din app interagerar med den med tiden. Installerar de den och använder den aldrig? Använder de den en stund och faller sedan bort? Eller förblir de förlovade med tiden?
 
-Du kan skapa en [!UICONTROL Cohort Analysis] med sex månader:
+Du kan skapa en sexmånaders kohortanalys.
 
 **Kornighet**: Månadsvis, från januari 2015 till juni 2015.
 

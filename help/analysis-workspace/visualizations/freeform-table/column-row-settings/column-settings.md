@@ -4,14 +4,14 @@ title: Kolumninställningar
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '829'
 ht-degree: 7%
 
 ---
 
-# [!UICONTROL Column Settings]
+# Kolumninställningar
 
 I [!UICONTROL Column settings] kan du konfigurera kolumnformatering, varav vissa kan vara villkorliga.
 

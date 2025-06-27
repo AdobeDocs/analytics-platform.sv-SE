@@ -1,50 +1,56 @@
 ---
-description: Lär dig hur du byter namn på projekt från mappar
+description: Lär dig hur du tar bort projekt från Analysis Workspace.
 keywords: Analysis Workspace
-title: Ta bort projekt från mappar
+title: Ta bort projekt
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: 6cf6fa977a2c5dee28dcfe6f9446d294a9d9fd0f
+source-git-commit: 9506cc42e80f25f68a891f21f38d60fb4d364588
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 1%
+source-wordcount: '27'
+ht-degree: 7%
 
 ---
 
 # Ta bort projekt
 
-<!-- Is this article still needed -->
+
+Se [Åtgärder i Hantera projekt](../freeform-overview.md#actions) om hur du tar bort projekt från Analysis Workspace.
 
 
-## Flytta ett projekt {#move-project-in-folder}
+<!-- Is this article still needed; not in the TOC anymore
 
-Du kan flytta projekt från en mapp till en annan mapp som du har skapat.
 
-1. I en projektmapp väljer du ellipsen **..** bredvid projektnamnet.
+## Move a project {#move-project-in-folder}
 
-   ![Ellipsalternativen.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+You can move projects from one folder to another folder that you created.
 
-1. Välj **Flytta till** och välj sedan en mapp att flytta projektet till.
+1. From within a project folder, select the **...** ellipsis next to the project name.
 
-   ![Fönstret Välj plats.](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
+    ![The ellipsis options.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
 
-1. Klicka på **Flytta**.
+1. Select **Move to** and then select a folder to move the project to.
 
-   ![Klicka på Flytta.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
+    ![The Select Location window.](/help/analysis-workspace/build-workspace-project/assets/move-select-location.png)
 
-   En popup bekräftar att projektet har flyttats.
+1. Click **Move**.
 
-   ![Flyttningsbekräftelsetjänsten. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
+    ![Click Move.](/help/analysis-workspace/build-workspace-project/assets/move-click-move.png)
 
-## Ta bort ett projekt från en projektmapp {#delete-project-in-folder}
+    A toast confirms that the project was moved.
 
-När du tar bort ett projekt från en mapp tas det bort från systemet efter 180 dagar. Under de 180 dagarna efter borttagningen kan användarna fortfarande komma åt ett borttaget projekt via webbgränssnittet om de har en direkt URL till projektet.
+    ![The move confirmation toast. ](/help/analysis-workspace/build-workspace-project/assets/move-project-moved.png)
 
-1. I en projektmapp väljer du ellipsen **..** bredvid projektnamnet.
+## Delete a project from a project folder {#delete-project-in-folder}
 
-   ![Ellipsalternativen.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+When you delete a project from a folder, it gets purged from the system after 180 days. During the 180 days after deletion, users can still access a deleted project via the Web interface if they have a direct URL to the project.
 
-1. Välj **Ta bort**.
+1. From within a project folder, select the **...** ellipsis next to the project name.
 
-1. Ett bekräftelsefönster ber dig bekräfta borttagningen.
+    ![The ellipsis options.](/help/analysis-workspace/build-workspace-project/assets/move1.png)
+
+1. Select **Delete**.
+
+1. A confirmation window asks you to confirm the deletion.
+
+-->

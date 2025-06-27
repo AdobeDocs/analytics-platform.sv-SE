@@ -1,11 +1,12 @@
 ---
-description: Exempel när du konfigurerar en visualisering av en arbetsyta i en resa
-title: Exempel på arbetsyta på resan
+description: Lär dig hur du felsöker när du konfigurerar en visualisering av arbetsytan på en resa.
+title: Felsökning av arbetsytan på resan
 feature: Visualizations
 role: User
-source-git-commit: 820251833eae9fed1574a0010f726b0ba6e12cd1
+exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
@@ -114,7 +115,7 @@ Nodarna i den här resan innehåller följande statistik när fältet **[!UICONT
 
 +++
 
-+++ Procent av totalt
+++ + Procent av totalt
 
 Nodarna i den här resan innehåller följande statistik när fältet **[!UICONTROL Percentage value]** är inställt på **[!UICONTROL Percent of total]**:
 

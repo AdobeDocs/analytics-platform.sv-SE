@@ -1,49 +1,36 @@
 ---
-description: Med synkronisering av visualiseringar kan du styra vilken datatabell eller datakälla som motsvarar en visualisering.
+description: Lär dig hur du synkroniserar frihandstabeller eller datakällor med motsvarande visualisering.
 keywords: Analysis Workspace;Synkronisera visualisering med datakälla
 title: Hantera datakällor
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: 8f9c03607130bdeaf6cb7a32d8dd465712a47ea5
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
 
 # Hantera datakällor {#manage-data-sources}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection"
 >title="Lås markering"
 >abstract="Aktivera den här inställningen för att låsa visualiseringen till de valda positionerna eller de valda objekten i datakällan."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection_showtable"
 >title="Visa tabell"
 >abstract="Om du väljer **[!UICONTROL Show table]** genereras en ny datakälla för den aktuella visualiseringen, som är skild från den ursprungliga datakällan."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_showtable"
 >title="Visa tabell"
 >abstract="Välj **[!UICONTROL Show table]** om du vill generera en ny datakälla för den aktuella visualiseringen, som är skild från den ursprungliga datakällan."
 
-<!-- markdownlint-enable MD034 -->
 
-
-
-Med synkronisering av visualiseringar kan du styra vilken datatabell eller datakälla som motsvarar en visualisering.
+Med synkronisering av visualiseringar kan du styra vilken frihandstabell eller datakälla som motsvarar en visualisering.
 
 >[!TIP]
 >

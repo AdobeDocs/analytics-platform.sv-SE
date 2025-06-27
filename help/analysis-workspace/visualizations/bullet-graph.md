@@ -1,12 +1,12 @@
 ---
-description: Visar hur ett värde som du är intresserad av jämförs med eller mäter mot andra prestandaintervall (mål).
-title: Punktdiagram
+description: Lär dig hur du använder punktvisualisering i Analysis Workspace. Med punktvisualiseringen kan du jämföra med eller mäta andra prestandaintervall (mål).
+title: Punkt
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 4bf8c616965718426efe880865acb0e5054b6a31
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs punktvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Bullet](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs punktvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Bullet](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -58,12 +58,12 @@ Du kan definiera specifika inställningar för en [!UICONTROL Bullet]-visualiser
 
 | Inställning | Beskrivning |
 |---|---|
-| **[!UICONTROL Bullet options]** | Ange värden för **[!UICONTROL High goal]**, **[!UICONTROL Mid goal]** och **[!UICONTROL Low goal]** i [!UICONTROL Bullet]-visualiseringen. <br/>**[!UICONTROL High goal]**&#x200B;är det främsta målet du siktar på.**[!UICONTROL Low goal]**&#x200B;och **[!UICONTROL Mid goal]**&#x200B;skapar intervall under Hög mål. Obs! Ange mål som heltal när alternativet **[!UICONTROL Percentages]**&#x200B;är markerat. Exempel: `20` om ditt mål är tjugo procent. |
+| **[!UICONTROL Bullet options]** | Ange värden för **[!UICONTROL High goal]**, **[!UICONTROL Mid goal]** och **[!UICONTROL Low goal]** i [!UICONTROL Bullet]-visualiseringen. <br/>**[!UICONTROL High goal]**är det främsta målet du siktar på.**[!UICONTROL Low goal]**och **[!UICONTROL Mid goal]**skapar intervall under Hög mål. Obs! Ange mål som heltal när alternativet **[!UICONTROL Percentages]**är markerat. Exempel: `20` om ditt mål är tjugo procent. |
 
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

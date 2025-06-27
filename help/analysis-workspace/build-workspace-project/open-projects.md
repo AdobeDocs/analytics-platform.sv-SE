@@ -1,12 +1,12 @@
 ---
-description: Lär dig mer om alternativen för att öppna projekt.
+description: Lär dig hur du öppnar projekt i Analysis Workspace.
 title: Öppna projekt
 feature: Workspace Basics
 role: User
 exl-id: 5ef235e2-50d8-4202-bad7-06090102cf73
-source-git-commit: ab78583eb36d6158630724fbab9eb8148bcdbe23
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---

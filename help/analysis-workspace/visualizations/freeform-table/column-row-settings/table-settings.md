@@ -1,12 +1,12 @@
 ---
-description: Radinställningarna varierar beroende på vilken komponent du har dragit till tabellen.
+description: Lär dig hur du använder radinställningar och hur radinställningarna varierar beroende på vilken komponent du har dragit till en friformstabell i Analysis Workspace.
 title: Radinställningar
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -90,4 +90,4 @@ Följande alternativ på snabbmenyn är tillgängliga när du väljer en kolumnr
 
 ## Ändra radhöjd
 
-Du kan ange vydensiteten för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**. [Läs mer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density).
+Du kan ange [vydensiteten](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]** .

@@ -1,12 +1,12 @@
 ---
-description: Läs om frihandspaneler i Analysis Workspace.
+description: Lär dig hur du använder frihandspaneler med frihandsritbord som startläge för ditt Analysis Workspace-projekt.
 title: Frihandspanelen
 feature: Panels
 exl-id: 4e1d5d72-da59-419a-835e-a3c90f1362b4
 role: User
-source-git-commit: 55b312552d32070875714a77e1177bf0da5f9d87
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras friformspanelen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Frihandspanelen](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/freeform-panel) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs friformspanelen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Se [Frihandspanelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/freeform-panel) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -37,6 +37,6 @@ Så här använder du en **[!UICONTROL Freeform panel]**:
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[Använd komponenter i Workspace](/help/components/use-components-in-workspace.md)
->[Visualisering av frihandstabell ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)
+>>[Använd komponenter i Workspace](/help/components/use-components-in-workspace.md)
+>>[Visualisering av frihandstabell ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)
 >

@@ -1,13 +1,13 @@
 ---
-description: Lär dig skapa mappar och undermappar i Workspace
+description: Lär dig skapa mappar och undermappar i Analysis Workspace.
 keywords: Analysis Workspace
 title: Skapa mappar
 feature: Workspace Basics
 exl-id: c83c3526-a8d0-4094-b4c4-46cf70e1a365
 role: User
-source-git-commit: 98a92fff2a0fae7ad3e6d94e61f8babed3c11eb7
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '111'
 ht-degree: 1%
 
 ---

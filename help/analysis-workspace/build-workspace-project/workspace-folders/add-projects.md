@@ -1,13 +1,13 @@
 ---
-description: Lär dig hur du lägger till eller flyttar mappar i Workspace
+description: Lär dig hur du lägger till eller flyttar projekt till mappar i Analysis Workspace.
 keywords: Analysis Workspace
 title: Lägg till eller flytta projekt till mappar
 feature: Workspace Basics
 exl-id: 4008d087-e183-4b07-bc6f-e5f30e69afd8
 role: User
-source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---

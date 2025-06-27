@@ -1,14 +1,14 @@
 ---
 keywords: Analysis Workspace
 title: Översikt över Analysis Workspace
-description: Översikt över Analysis Workspace
+description: Läs om Analysis Workspace, det främsta analysverktyget för Adobe Analytics. Använd projekt, paneler, tabeller, visualiseringar och andra komponenter för att ge liv åt data och strukturera och dela med dig av analysen.
 feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1355'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,8 @@ Med Analysis Workspace kan ni snabbt skapa analyser för att samla in insikter o
 >[!BEGINSHADEBOX]
 
 Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Översikt över arbetsytan Analys](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+{{videoaa}}
 
 >[!ENDSHADEBOX]
 
@@ -121,16 +123,16 @@ I tabellerna nedan finns en översikt över de tillgängliga menyerna.
 | **[!UICONTROL Schedule file export]** | **[!UICONTROL *shift+opt+s *]** | **[!UICONTROL *shift+alt+s *]** | [Skicka projektet enligt ett schema som en CSV- eller PDF-fil till andra mottagare](/help/analysis-workspace/curate-share/send-schedule-files.md). |
 | **[!UICONTROL Curate project data]** | **[!UICONTROL *shift+cmd+g *]** | **[!UICONTROL *shift+Ctrl+g *]** | [Kuratera projektdata](/help/analysis-workspace/curate-share/curate.md). |
 
-| Hjälp | Genväg till Mac | Kortkommando i Windows | Beskrivning |
-|---|---|---|---|
-| **[!UICONTROL Videos]** | | | Öppna Customer Journey Analytics YouTube-kanalen på en ny flik i webbläsaren. |
-| **[!UICONTROL Help documentation]** | | | Öppna dokumentationen (du läser just nu ...) på en ny flik i webbläsaren. |
-| **[!UICONTROL Help forum]** | | | Öppna Adobe Analytics Experience League Community-forumet på en ny flik i webbläsaren. |
-| **[!UICONTROL Hotkeys]** | | | Visa en översikt över de snabbtangenter (kortkommandon) som du kan använda i Workspace. |
-| **[!UICONTROL Enable debugger]** |  | | Aktivera felsökaren. Projektet läses in igen. |
-| **[!UICONTROL Disable debugger]** | | | Inaktivera felsökaren. Projektet läses in igen. |
-| **[!UICONTROL Performance]** | | | Visa en dialogruta med mätvärden för **[!UICONTROL Analysis Workspace performance]**. Använd **[!UICONTROL Download as CSV]** för att hämta en CSV-fil med prestandamätningar. |
-| **[!UICONTROL About Workspace]** | | | Visa en **[!UICONTROL About Analysis Workspace]**-dialogruta med versionsinformation, funktionsåtkomstnivåer och aktiva funktionsflaggor. |
+| Hjälp | Beskrivning |
+|---|---|
+| **[!UICONTROL Videos]** | Öppna Customer Journey Analytics YouTube-kanalen på en ny flik i webbläsaren. |
+| **[!UICONTROL Help documentation]** | Öppna dokumentationen (du läser just nu ...) på en ny flik i webbläsaren. |
+| **[!UICONTROL Help forum]** | Öppna Adobe Analytics Experience League Community-forumet på en ny flik i webbläsaren. |
+| **[!UICONTROL Hotkeys]** | Visa en översikt över de snabbtangenter (kortkommandon) som du kan använda i Workspace. |
+| **[!UICONTROL Enable debugger]** | Aktivera felsökaren. Projektet läses in igen. |
+| **[!UICONTROL Disable debugger]** | Inaktivera felsökaren. Projektet läses in igen. |
+| **[!UICONTROL Performance]** | Visa en dialogruta med mätvärden för **[!UICONTROL Analysis Workspace performance]**. Använd **[!UICONTROL Download as CSV]** för att hämta en CSV-fil med prestandamätningar. |
+| **[!UICONTROL About Workspace]** | Visa en **[!UICONTROL About Analysis Workspace]**-dialogruta med versionsinformation, funktionsåtkomstnivåer och aktiva funktionsflaggor. |
 
 ## Datakällor
 
@@ -162,6 +164,6 @@ När du är klar med projektet och samlar in åtgärdbara insikter kan andra vil
 ## Ytterligare resurser {#resources}
 
 - Sidan [Learning landing](/help/getting-started/landing.md#learning) i Customer Journey Analytics. Den här sidan är ett bra sätt att lära känna Analysis Workspace. Speciellt om Workspace Basic. I den här mallen beskrivs vanliga termer och steg för hur du skapar din första analys i Workspace
-- Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/overview).
-- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/sv/docs/release-notes/experience-cloud/current).
+- Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview).
+- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
 

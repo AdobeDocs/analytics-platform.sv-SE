@@ -1,12 +1,12 @@
 ---
-description: Quick Insights är ett verktyg för nya Workspace-användare som vägleder dem när de bygger datatabeller och visualiseringar
+description: Lär dig hur du använder panelen Snabbinformation för att få hjälp med att skapa datatabeller och visualiseringar i Analysis Workspace.
 title: Panelen Snabbinsikter
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1074'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs panelen Snabbinsikter i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/quickinsight) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs panelen Snabbinsikter i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -127,7 +127,7 @@ Andra användbara tips visas i [!UICONTROL Quick Insights Builder]. Vissa av dem
 
    * **[!UICONTROL Analyze]** dimension **[!UICONTROL Broken-Down by]**: Du kan använda upp till tre nivåer av uppdelningar på dimensioner för att gå ned till de data du verkligen behöver. Se ➊, ➋ och ➌.
 
-   * Lägg till fler mätvärden **[!UICONTROL by]**: Du kan lägga till upp till två mätvärden till. Se och..
+   * Lägg till fler mätvärden **[!UICONTROL by]**: Du kan lägga till upp till två mätvärden till. Se ➍ och ➎.
 
    * **[!UICONTROL segment by]**: Du kan lägga till upp till två segment till. Du kan till exempel lägga till Bokningar som ett segment och kombinera det segmentet med segmenten Vanliga bokningar och Första gången som du jämför. Se ➏, ➐ och ➑.
 

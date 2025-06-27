@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 9%
+source-wordcount: '1253'
+ht-degree: 10%
 
 ---
 
@@ -173,12 +173,13 @@ ht-degree: 9%
       + [Öppna projekt](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Kommentera projekt](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [Spara projekt](../analysis-workspace/build-workspace-project/save-projects.md)
+      + [Innehållsförteckning](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Mappar i Workspace {#workspace-folders}
-         + [Om mappar](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
-         + [Skapa mappar och undermappar](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
+         + [Översikt](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
+         + [Skapa mappar](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
          + [Hantera mappar](../analysis-workspace/build-workspace-project/workspace-folders/manage-folders.md)
-         + [Lägg till eller flytta projekt till mappar](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
-      + [Snabbtangenter (kortkommandon)](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
+         + [Lägga till eller flytta projekt](../analysis-workspace/build-workspace-project/workspace-folders/add-projects.md)
+      + [Snabbtangenter](../analysis-workspace/build-workspace-project/fa-shortcut-keys.md)
       + [Färgpaletter](../analysis-workspace/build-workspace-project/color-palettes.md)
       + [Visa densitet](../analysis-workspace/build-workspace-project/view-density.md)
    + Mallar {#templates}
@@ -195,8 +196,8 @@ ht-degree: 9%
             + [Kolumninställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Radinställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamiska och statiska objekt](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [Filtrera och ordna tabeller](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Workspace summor](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
+         + [Filter och sortering](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+         + [Summor](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohortabell {#cohort-table}
          + [Översikt](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurera](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -228,11 +229,11 @@ ht-degree: 9%
       + [Avsnittshuvud](/help/analysis-workspace/visualizations/section-header.md)
       + [Sammanfattningsnummer och ändring](../analysis-workspace/visualizations/summary-number-change.md)
       + [Text](../analysis-workspace/visualizations/text.md)
-      + [Trädkarta](../analysis-workspace/visualizations/treemap.md)
+      + [Treemap](../analysis-workspace/visualizations/treemap.md)
       + [Venn](../analysis-workspace/visualizations/venn.md)
    + Panel {#panels}
       + [Översikt](../analysis-workspace/c-panels/panels.md)
-      + [Tom panel](../analysis-workspace/c-panels/blank-panel.md)
+      + [Tom](../analysis-workspace/c-panels/blank-panel.md)
       + [Tillskrivning](../analysis-workspace/c-panels/attribution.md)
       + [Experimentation](../analysis-workspace/c-panels/experimentation.md)
       + [Frihandsfigur](../analysis-workspace/c-panels/freeform-panel.md)
@@ -260,7 +261,6 @@ ht-degree: 9%
       + [Översikt](../analysis-workspace/c-forecast/forecasting.md)
       + [Visa prognoser](../analysis-workspace/c-forecast/view-forecasts.md)
       + [Statistisk teknik](../analysis-workspace/c-forecast/statistics-forecasting.md)
-   + [Innehållsförteckning](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
    + [Användarinställningar](../analysis-workspace/user-preferences.md)
    + Vanliga frågor och svar om Workspace med mera {#workspace-faq}
       + [Frågor och svar](../analysis-workspace/workspace-faq/faq.md)

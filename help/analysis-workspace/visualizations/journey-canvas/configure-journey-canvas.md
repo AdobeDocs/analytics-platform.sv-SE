@@ -1,12 +1,12 @@
 ---
-description: Konfigurera en visualisering av en arbetsyta på resan
-title: Reseduk
+description: Lär dig hur du konfigurerar en visualisering av arbetsytan på resan.
+title: Konfigurera en visning av arbetsytan på resan
 feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '6207'
+source-wordcount: '6213'
 ht-degree: 0%
 
 ---

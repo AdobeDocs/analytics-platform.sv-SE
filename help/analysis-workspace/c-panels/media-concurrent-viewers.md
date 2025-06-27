@@ -1,12 +1,12 @@
 ---
-title: Media Concurrent Viewers panel
-description: Så här använder och tolkar du panelen Medievisningsprogram för samtidig användning i Analysis Workspace.
+title: Media Concurrent Viewers Panel
+description: Lär dig hur du använder och tolkar panelen Media Concurrent Viewer i Analysis Workspace.
 feature: Panels
 exl-id: a442fb9c-165f-4136-95e2-ce92b9280c25
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Panelen Medievisningsprogram för samtidiga ](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Se [Panelen Medievisningsprogram för samtidiga ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -130,6 +130,6 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[Medieuppspelningstid för panelen ](media-playback-time-spent.md)
->[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
+>>[Medieuppspelningstid för panelen ](media-playback-time-spent.md)
+>>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
 >

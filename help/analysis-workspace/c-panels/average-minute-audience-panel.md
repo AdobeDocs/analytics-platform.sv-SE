@@ -1,12 +1,12 @@
 ---
 title: Panelen Mediegenomsnitt för miniatyrmålgrupp
-description: Hur man använder och tolkar den minimala målgruppspanelen för media i Analysis Workspace.
+description: Lär dig hur du använder och tolkar panelen Media Average Minute Audience i Analysis Workspace.
 feature: Panels
 role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras medieminarium för målgruppspanelen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Målgruppspanel i genomsnitt](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras medieminarium för målgruppspanelen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Se [Målgruppspanel i genomsnitt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -187,6 +187,6 @@ I den genomsnittliga minuspennan i mediemiljön används endast den genomsnittli
 >[!MORELIKETHIS]
 >
 > [Skapa en panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> [Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
-> [Medieuppspelningstid för panelen ](media-playback-time-spent.md)
+> > [Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
+> > [Medieuppspelningstid för panelen ](media-playback-time-spent.md)
 >

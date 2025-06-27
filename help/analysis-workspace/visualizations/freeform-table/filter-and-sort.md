@@ -1,10 +1,10 @@
 ---
-description: Dokumentation som beskriver hur du filtrerar och sorterar tabeller i Analysis Workspace.
-title: Filtrera och ordna tabeller
+description: Lär dig filtrera och sortera frihandstabeller i Analysis Workspace.
+title: Filtrera och sortera tabeller
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 0%

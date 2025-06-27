@@ -1,10 +1,10 @@
 ---
-description: Lär dig kommentera ett projekt i Analysis Workspace
-title: Lägga till och visa kommentarer i projekt
+description: Lär dig hur du kommenterar ett projekt i Analysis Workspace.
+title: Lägga till och hantera kommentarer i projekt
 feature: Workspace Basics
 role: User
 exl-id: 05f69a1c-31c2-40d8-ae8b-a084169897b1
-source-git-commit: 91ac84764a186d81f3270bb3ec9673d93b11bd38
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 0%
@@ -151,9 +151,9 @@ Så här tar du med en annan person i kommentaren:
 
 ## Få meddelanden om kommentarer
 
-Projektägare och [specifika personer som du anger](#include-others-in-a-comment) får meddelanden baserat på deras Adobe Experience Cloud-meddelandeinställningar. Som standard får de ett meddelande i appen som visas från [Experience Cloud-ikonen ](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-meddelandeikonen](assets/experience-cloud-notification.svg) i Customer Journey Analytics.
+Projektägare och [specifika personer som du anger](#include-others-in-a-comment) får meddelanden baserat på deras Adobe Experience Cloud-meddelandeinställningar. Som standard får de ett meddelande i appen som visas från [Experience Cloud-ikonen ](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-meddelandeikonen](assets/experience-cloud-notification.svg) i Customer Journey Analytics.
 
-Dessutom kan användare konfigurera sina inställningar för Experience Cloud-meddelanden så att de får e-postmeddelanden och Slack-meddelanden genom att [prenumerera på e-postmeddelanden](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) och [prenumerera på Slack-meddelanden](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#slack).
+Dessutom kan användare konfigurera sina inställningar för Experience Cloud-meddelanden så att de får e-postmeddelanden och Slack-meddelanden genom att [prenumerera på e-postmeddelanden](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) och [prenumerera på Slack-meddelanden](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
 
 ## Placera ett emblem för en befintlig kommentar
 

@@ -1,13 +1,13 @@
 ---
-description: Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och jämföra viktiga arbetsflöden mellan olika segment i Analysis Workspace.
-keywords: utfall och segment;segment i utfallsanalys;jämför segment i utfall
-title: Använd segment i utfallsanalys
+description: Lär dig hur du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och jämföra viktiga arbetsflöden mellan olika segment i en utfallsanalys i Analysis Workspace.
+keywords: utfall och segmentering;segment i utfallsanalys;jämför segment i utfall
+title: Använd segment i bortfallsanalys
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: b14bc43a0cdf4901c5df171a116943beb2124991
+source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,12 @@ Du kan skapa segment från en kontaktyta, lägga till segment som kontaktyta och
 >
 >Segment som används som kontrollpunkter i utfall måste använda en behållare som är på en lägre nivå än den övergripande kontexten för utfallsvisualiseringen. Med en person-context Fallout måste segment som används som kontrollpunkter vara sessions- eller händelsebaserade segment. Med en bortfall för sessionskontext måste segment som används som kontrollpunkt vara händelsebaserade segment. Om du använder en ogiltig kombination är utfallet 100 %. En varning visas i Utfallsvisualiseringen när du lägger till ett inkompatibelt segment som kontaktyta. Vissa ogiltiga kombinationer av segmentbehållare leder till ogiltiga utfallsdiagram, som:
 >
->* Använda ett personbaserat segment som kontaktyta inuti en personsammanhangsbaserad utfallsvisualisering
->* Använda ett personbaserat segment som kontaktyta i en sessionssammanhangsbaserad utfallsvisualisering
->* Använda ett sessionsbaserat segment som kontaktyta i en sessionssammanhangsbaserad utfallsvisualisering
+>* Använda ett personbaserat segment som kontaktyta inuti en personsammanhangsbaserad Fallout-visualisering.
+>* Använda ett personbaserat segment som kontaktyta i en sessionssammanhangsbaserad utfallsvisualisering.
+>* Använda ett sessionsbaserat segment som kontaktyta i en sessionssammanhangsbaserad utfallsvisualisering.
+<!-- Should we add B2B context here?
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* -->
 
 ## Skapa ett segment från en kontaktyta
 

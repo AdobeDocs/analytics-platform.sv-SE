@@ -1,22 +1,22 @@
 ---
-description: Läs om Mappar i Workspace
+description: Lär dig hur du ordnar dina projekt i mappar i Analysis Workspace.
 keywords: Analysis Workspace
 title: Översikt över mappar
 feature: Workspace Basics
 exl-id: e12e271e-ce15-4535-bb48-1976395cf755
 role: User
-source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
 # Översikt över mappar
 
-Mappar i Customer Journey Analytics är tillgängliga på Workspace startsida när du har valt att [visa mappar och projekt](../freeform-overview.md#show-selector).
-
 Med mappar i Workspace kan du ordna och kategorisera dina projekt. Med hjälp av mappfunktionerna kan du skapa mappar och undermappar för att hantera dina projekt.
+
+Mappar i Customer Journey Analytics är tillgängliga på Workspace startsida när du har valt att [visa mappar och projekt](../freeform-overview.md#show-selector).
 
 Det finns två typer av mappar i Workspace: företagsmappen och personliga mappar. I en delad företagsmapp kan administratörer skapa och dela innehåll med alla Workspace-användare.
 

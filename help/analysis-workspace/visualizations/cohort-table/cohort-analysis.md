@@ -1,12 +1,12 @@
 ---
-title: Översikt över kohortabellen
-description: Lär dig använda en kohorttabell för kohortanalys i Analysis Workspace
+title: Översikt över kohorttabell
+description: Lär dig hur du fördjupar dig i data runt er målgrupp och delar in data i relaterade grupper med kohortanalyser. Använd kohortanalys i Analysis Workspace.
 feature: Visualizations
 exl-id: 3e3a70cd-70ec-4d4d-81c3-7902716d0b01
 role: User
-source-git-commit: 0101986bb86c49776a044f754d912dc1bcb9422c
+source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln dokumenterar kohorttabellen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Kohorttabell](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_Den här artikeln dokumenterar kohorttabellen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Kohorttabell](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ Exempel på vad du kan göra med en [!UICONTROL Cohort table]:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortanalys i Analysis Workspace](https://video.tv.adobe.com/v/3430082/?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Kohortanalys i Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
@@ -74,31 +74,31 @@ I följande avsnitt beskrivs kohortanalysfunktioner som gör det möjligt att fi
 
 Mer information om hur du skapar en kohort och kör en [!UICONTROL Cohort Analysis]-rapport finns i [Konfigurera en kohorttabell](/help/analysis-workspace/visualizations/cohort-table/t-cohort.md).
 
-### [!UICONTROL Retention]-tabell
+### Kvarhållningstabell
 
 En [!UICONTROL Retention]-kohorttabell returnerar personer: varje datacell visar det råa antalet och procentandelen personer i kohorten som utförde åtgärden under den tidsperioden. Du kan ta med upp till 3 mätvärden och upp till 10 segment.
 
 ![En återgivningskohortrapport som visar enheter och procent av personerna i kohorten.](assets/retention-report.png)
 
-### [!UICONTROL Churn]-tabell
+### Churn table
 
 En [!UICONTROL Churn]-kohorttabell är omvänd till en kvarhållningstabell och visar de personer som inte uppfyller eller aldrig uppfyller returkriterierna för din kohort över tiden. Du kan ta med upp till 3 mätvärden och upp till 10 segment.
 
 ![En Churn-tabell som visar enheter och procentandel av personer som inte uppfyller returkriterierna för en kohort.](assets/churn-report.png)
 
-### [!UICONTROL Rolling Calculation]
+### Rullande beräkning
 
 Du kan beräkna kvarhållning eller bortfall baserat på föregående kolumn, inte den inkluderade kolumnen, som kallas rullande beräkning.
 
 ![En CSS-kvarhållningsrapport som visar beräkningar baserade på en tidigare datakolumn.](assets/retention-report-rolling.png)
 
-### [!UICONTROL Latency]-tabell
+### Latenstabell
 
 En latenstabell mäter den tid som har gått före och efter det att inkluderingshändelsen inträffade. Mätning av fördröjning är ett utmärkt verktyg för för- och efteranalys. Kolumnen **[!UICONTROL Included]** finns i mitten av tabellen och tidsperioder före och efter inkluderingshändelsen visas på båda sidor.
 
 ![En kohortrapport som visar förfluten tid före och efter en händelse.](assets/retention-report-latency.png)
 
-### [!UICONTROL Custom dimension]-kohort
+### Anpassad dimensionskohort
 
 Du kan skapa kohorter baserat på en vald dimension och inte på tidsbaserade kohorter (som är standard). Använd dimensioner som [!UICONTROL City geo], [!UICONTROL Marketing channel], [!UICONTROL campaign], [!UICONTROL product], [!UICONTROL page], [!UICONTROL region] eller någon annan dimension för att visa hur kvarhållandet ändras. Baserat på de olika värdena för de här dimensionerna.
 
