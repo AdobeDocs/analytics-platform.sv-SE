@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs friformspanelen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Se [Frihandspanelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/freeform-panel) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs friformspanelen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Frihandspanelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/freeform-panel) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -37,6 +37,6 @@ Så här använder du en **[!UICONTROL Freeform panel]**:
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->>[Använd komponenter i Workspace](/help/components/use-components-in-workspace.md)
->>[Visualisering av frihandstabell ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)
+>&#x200B;>[Använd komponenter i Workspace](/help/components/use-components-in-workspace.md)
+>&#x200B;>[Visualisering av frihandstabell ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)
 >

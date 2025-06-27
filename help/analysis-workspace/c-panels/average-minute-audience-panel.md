@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras medieminarium för målgruppspanelen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Se [Målgruppspanel i genomsnitt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras medieminarium för målgruppspanelen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Målgruppspanel i genomsnitt](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -187,6 +187,6 @@ I den genomsnittliga minuspennan i mediemiljön används endast den genomsnittli
 >[!MORELIKETHIS]
 >
 > [Skapa en panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> > [Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
-> > [Medieuppspelningstid för panelen ](media-playback-time-spent.md)
+> &#x200B;> [Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
+> &#x200B;> [Medieuppspelningstid för panelen ](media-playback-time-spent.md)
 >
