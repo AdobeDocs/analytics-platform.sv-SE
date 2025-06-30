@@ -38,8 +38,8 @@ Så här hämtar du ett projekt som en PDF-fil:
 1. Välj **[!UICONTROL Project]** > **[!UICONTROL Download PDF]**.
 Ett grönt fält med meddelandet ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Your download has been requested. Please wait.]** visas.
 
-1. När nedladdningen är klar visas ett grönt fält med meddelandet ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Projektets namn *PDF.]**visas.
-Välj**[!UICONTROL Download]**om du vill hämta PDF. Hur exakt PDF presenteras eller laddas ned beror på vilken webbläsarkonfiguration du har för att hantera PDF-dokument.
+1. När nedladdningen är klar visas ett grönt fält med meddelandet ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Projektets namn *PDF.]**&#x200B;visas.
+Välj&#x200B;**[!UICONTROL Download]**&#x200B;om du vill hämta PDF. Hur exakt PDF presenteras eller laddas ned beror på vilken webbläsarkonfiguration du har för att hantera PDF-dokument.
 
 
 Så här hämtar du ett projekt som en CSV-fil:
@@ -107,8 +107,8 @@ Följande funktioner i en frihandstabell används i den hämtade filen:
 
 När filen laddas ned visas följande meddelanden:
 
-* Ett blått **[!UICONTROL _tabellnamn _-_Dimension _.csv har begärts._x _% slutfört]**anger förloppet. Om du vill avbryta hämtningen väljer du **[!UICONTROL Cancel download]**. Välj ![CrossSize100](/help/assets/icons/CrossSize100.svg) om du vill stänga meddelandet, som inte avbryter hämtningen.
-* Ett grönt **[!UICONTROL _tabellnamn _-_Dimension _.csv har hämtats]**meddelande om slutförd filhämtning. Filen hämtas till den nedladdningsmapp som är konfigurerad för webbläsaren.
+* Ett blått **[!UICONTROL _tabellnamn _-_Dimension _.csv har begärts._x _% slutfört]**&#x200B;anger förloppet. Om du vill avbryta hämtningen väljer du **[!UICONTROL Cancel download]**. Välj ![CrossSize100](/help/assets/icons/CrossSize100.svg) om du vill stänga meddelandet, som inte avbryter hämtningen.
+* Ett grönt **[!UICONTROL _tabellnamn _-_Dimension _.csv har hämtats]**&#x200B;meddelande om slutförd filhämtning. Filen hämtas till den nedladdningsmapp som är konfigurerad för webbläsaren.
 
 Om du begär mer än en nedladdning åt gången får du ett meddelande om att varje ytterligare nedladdning är i kö tills den tidigare nedladdningen är klar.
 
