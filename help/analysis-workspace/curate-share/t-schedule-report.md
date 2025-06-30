@@ -99,7 +99,7 @@ Lösenordskraven uppfyller Adobe-standarderna och kräver minst 8 tecken med min
 ### Lösenordsskydda ett nytt schemalagt projekt
 
 1. När du har sparat projektet går du till **[!UICONTROL Share]** > **[!UICONTROL Send file now]** eller **[!UICONTROL Share]** > **[!UICONTROL Send file on schedule]**.
-1. Följ instruktionerna ovan, under [Skicka filen nu](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=sv-SE#now) eller [Skicka filen enligt schema](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=sv-SE#schedule).
+1. Följ instruktionerna ovan, under [Skicka filen nu](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) eller [Skicka filen enligt schema](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
 
 ### Lösenordsskydda ett befintligt schemalagt projekt
 
