@@ -1,13 +1,13 @@
 ---
-description: Projektdelning och projektroller i Workspace
+description: Lär dig dela projekt i Analysis Workspace.
 keywords: Analysis Workspace-delning
 title: Dela projekt
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1989'
 ht-degree: 0%
 
 ---
@@ -47,9 +47,9 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Projektdelning i 
 >[!ENDSHADEBOX]
 
 
-## Dela med Customer Journey Analytics användare och grupper i er organisation {#Add}
+## Dela med användare och grupper i organisationen {#Add}
 
-Du kan dela ett projekt med befintliga Customer Journey Analytics-användare eller -grupper i din organisation. När du delar ett projekt enligt beskrivningen i det här avsnittet måste de användare du delar med redan ha ett Customer Journey Analytics-konto.
+Du kan dela ett projekt med befintliga Analysis Workspace-användare eller -grupper i din organisation. När du delar ett projekt enligt beskrivningen i det här avsnittet måste de användare du delar med redan ha ett Customer Journey Analytics-konto.
 
 Du kan dela en specifik roll med användare eller grupper eller dela en länk.
 
@@ -61,9 +61,9 @@ Du kan dela en specifik roll med användare eller grupper eller dela en länk.
 
 När du delar en specifik projektroll med användare och grupper i organisationen bör du tänka på följande:
 
-* Projektroller (**[!UICONTROL Edit original]**, **[!UICONTROL Edit copy]** och **[!UICONTROL Read only]**) är kopplade till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=sv-SE).
+* Projektroller (**[!UICONTROL Edit original]**, **[!UICONTROL Edit copy]** och **[!UICONTROL Read only]**) är kopplade till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html).
 
-* I Customer Journey Analytics definieras grupper av produktprofiler i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=sv-SE). Administratörer kan dela till vilken grupp som helst, inklusive&quot;Alla&quot;. Icke-administratörer kan dela till alla grupper som de är medlemmar i, med undantag för&quot;Alla&quot;.
+* I Customer Journey Analytics definieras grupper av produktprofiler i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html). Administratörer kan dela till vilken grupp som helst, inklusive&quot;Alla&quot;. Icke-administratörer kan dela till alla grupper som de är medlemmar i, med undantag för&quot;Alla&quot;.
 
 * En användare som placeras i flera roller får alltid den högsta upplevelsen. Detta kan inträffa om en användare läggs till både som en individ och som en del av en grupp. Om en användare till exempel får rollen **[!UICONTROL Edit original]** som individ och rollen **[!UICONTROL Read only]** som medlem i en grupp får han/hon en **[!UICONTROL Edit original]**-projekterfarenhet.
 
@@ -161,7 +161,7 @@ Du kan ge [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/view-onl
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela med vem som helst](https://video.tv.adobe.com/v/3452456/?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela med vem som helst](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

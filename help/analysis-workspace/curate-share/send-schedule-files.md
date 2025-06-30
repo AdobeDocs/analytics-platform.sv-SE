@@ -1,26 +1,27 @@
 ---
-description: Läs mer om Workspace Share-alternativen.
-title: Dela översikt
+description: Läs mer om alternativen för att beställa och dela Analysis Workspace-projekt.
+title: Kuratera och dela projekt - översikt
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
 role: User
-source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
+source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '168'
 ht-degree: 7%
 
 ---
 
-# Dela översikt
+# Kuratera och dela översikt
 
-Du kan strukturera, dela och schemalägga projekt som PDF- eller CSV-filer till mottagare i din organisation eller till andra med hjälp av de alternativ som är tillgängliga på menyn **[!UICONTROL Share]** i Analysis Workspace eller när du väljer **[!UICONTROL Share]** längst upp till höger i gränssnittet.
+Du kan strukturera och dela projekt eller skicka projekt som PDF- eller CSV-filer till mottagare i organisationen eller till andra med hjälp av de alternativ som är tillgängliga på menyn **[!UICONTROL Share]** i Analysis Workspace eller när du väljer **[!UICONTROL Share]** längst upp till höger i gränssnittet.
 
 ![Delningsalternativ](assets/share-options.png)
 
 | Alternativ | Beskrivning |
 |---|---|
+| **[!UICONTROL Curate project data]** | Begränsa de komponenter (mått, mått, segment, datumintervall) som finns i ett projekt. [Läs mer](/help/analysis-workspace/curate-share/curate.md) |
 | **[!UICONTROL Share with Workspace users]** | Gör ett projekt tillgängligt för andra Analysis Workspace-användare i organisationen. Dela med specifika användare eller skapa en delbar länk för snabb åtkomst till ett projekt. Användarna måste logga in. [Läs mer](/help/analysis-workspace/curate-share/share-projects.md) |
 | **[!UICONTROL Share with anyone]** | Ge skrivskyddad åtkomst till Analysis Workspace-projekt till personer som inte har tillgång till Customer Journey Analytics. [Läs mer](/help/analysis-workspace/curate-share/share-projects.md) |
-| **[!UICONTROL Send file]** | Skicka ett projekt som CSV eller PDF direkt till angivna mottagare. [Läs mer](/help/analysis-workspace/export/t-schedule-report.md) |
-| **[!UICONTROL Schedule file export]** | Skicka ett projekt som CSV eller PDF enligt ett schema till angivna mottagare. [Läs mer](/help/analysis-workspace/export/t-schedule-report.md) |
-| **[!UICONTROL Curate project data]** | Begränsa de komponenter (mått, mått, segment, datumintervall) som finns i ett projekt. [Läs mer](/help/analysis-workspace/curate-share/curate.md) |
+| **[!UICONTROL Send file]** | Skicka ett projekt som CSV eller PDF direkt till angivna mottagare. [Läs mer](/help/analysis-workspace/curate-share/t-schedule-report.md) |
+| **[!UICONTROL Schedule file export]** | Skicka ett projekt som CSV eller PDF enligt ett schema till angivna mottagare. [Läs mer](/help/analysis-workspace/curate-share/t-schedule-report.md) |
+

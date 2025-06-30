@@ -1,13 +1,13 @@
 ---
-description: Skrivskyddade projekt i Workspace
+description: Förstå upplevelsen av skrivskyddade projekt i Analysis Workspace.
 keywords: Skrivskyddade projekt
 title: Skrivskyddade projekt
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: a462e736ddcdf1a5ea84a85eea2c2ce0b8a34fb0
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Interaktionen för de skrivskyddade mottagarna är begränsad.
 Inaktiverade interaktioner i ett projekt som endast är synligt inkluderar:
 
 * Dold vänster panel
-* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till i ett [nedrullningsbart segment med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=sv-SE).
+* Panelkalenderns datumintervall. Obs! Om du vill ge mottagarna kalenderkontroll lägger du till i ett [nedrullningsbart segment med datumintervall](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html).
 * Frihandssegmentering
 * Frihandsnr för synliga rader
 * Inställningar för frihandsrad, kolumn eller visualisering
@@ -43,10 +43,10 @@ Några av de mer välkända interaktionerna i ett projekt med endast visning är
 
 | Område | Aktiverade interaktioner |
 | --- | --- |
-| Frihandsregister | <ul><li>Sidindelning och sortering</li><li>Hovring</li><li>Cellmarkeringar som uppdaterar länkade visualiseringar</li><li>Från snabbmenyn > Hämta visualiseringslänk</li><li>Från snabbmenyn > Kopiera till Urklipp</li></ul> |
-| Visualiseringar | <ul><li>Klicka för att aktivera/inaktivera förklaring</li><li>Hovring</li><li>Från snabbmenyn > Hämta visualiseringslänk</li><li>Komprimera/expandera</li><li>Flöde - expandera flödesnoder</li><li>Karta - zoom</li></ul> |
-| Panel | <ul><li>Interaktiva nedrullningsbara segment</li><li>På snabbmenyn > Hämta panellänk</li><li>Komprimera/expandera</li></ul> |
-| Projekt | <ul><li>Inspektera alla informationsikoner</li><li>Project menu - New, Open, Set as landing page, Refresh, Download CSV/PDF, limited Project Info &amp; Settings</li><li>Dela-menyn - Hämta projektlänk, Skicka fil nu</li><li>Hjälpmenyn - Alla åtgärder förutom Tips och felsökningsalternativ</li></ul> |
+| **Frihandstabeller** | <li>Sidindelning och sortering</li><li>Hovring</li><li>Cellmarkeringar som uppdaterar länkade visualiseringar</li><li>Från snabbmenyn > Hämta visualiseringslänk</li><li>Från snabbmenyn > Kopiera till Urklipp</li> |
+| **Visualiseringar** | <li>Klicka för att aktivera/inaktivera förklaring</li><li>Hovring</li><li>Från snabbmenyn > Hämta visualiseringslänk</li><li>Komprimera/expandera</li><li>Flöde - expandera flödesnoder</li><li>Karta - zoom</li></ul> |
+| **Paneler** | <li>Interaktiva nedrullningsbara segment</li><li>På snabbmenyn > Hämta panellänk</li><li>Komprimera/expandera</li> |
+| **Projekt** | <li>Inspektera alla informationsikoner</li><li>Project menu - New, Open, Set as landing page, Refresh, Download CSV/PDF, limited Project Info &amp; Settings</li><li>Dela-menyn - Hämta projektlänk, Skicka fil nu</li><li>Hjälpmenyn - Alla åtgärder förutom Tips och felsökningsalternativ</li> |
 
 
 ## Dela med vem som helst

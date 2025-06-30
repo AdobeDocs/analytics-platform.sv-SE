@@ -5,7 +5,7 @@ title: Visualiseringar - översikt
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 9c05319ceacb7287af7f15cfe56b8048a718559d
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 1%
@@ -139,11 +139,11 @@ Använd snabbmenyn (som är tillgänglig genom alternativ markering, till exempe
 | Alternativ | Beskrivning |
 | --- | --- |
 | **[!UICONTROL Insert copied visualization]** | Klistra in (infoga) en kopierad visualisering på en annan plats i projektet, eller i ett helt annat projekt. |
-| **[!UICONTROL Copy data to clipboard]** | Kopiera data från visualiseringen till Urklipp. |
-| **[!UICONTROL Copy selection to clipboard]** | Kopiera markeringen från visualiseringen till Urklipp. |
-| **[!UICONTROL Download items as CSV (*dimensionsnamn *)]** | Hämta dimensionsobjekten (till högst 50 000) av visualiseringen till din lokala enhet. Högst 50 000 dimensionsartiklar för den valda dimensionen. |
+| **[!UICONTROL Copy data to clipboard]** | [Kopiera data](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) från visualiseringen till Urklipp. |
+| **[!UICONTROL Copy selection to clipboard]** | [Kopiera markeringen](/help/analysis-workspace/export/download-send.md#copy-to-clipboard) från visualiseringen till Urklipp. |
+| **[!UICONTROL Download items as CSV (*dimensionsnamn *)]** | [Hämta dimensionsobjekten](/help/analysis-workspace/export/download-send.md#download-items-as-csv) (högst 50 000) av visualiseringen till din lokala enhet. Högst 50 000 dimensionsartiklar för den valda dimensionen. |
 | **[!UICONTROL Copy visualization]** | Kopiera visualiseringen så att du kan infoga visualiseringen på en annan plats i projektet eller i ett helt annat projekt. |
-| **[!UICONTROL Download data CSV]** | Hämta visuella data till din lokala enhet. |
+| **[!UICONTROL Download data CSV]** | [Hämta visuella data](/help/analysis-workspace/export/download-send.md#download-as-csv) för visualiseringen till din lokala enhet. |
 | **[!UICONTROL Export full table]** | Exportera hela tabellen till en angiven molnplats. Se [Exporterar Customer Journey Analytics-rapporter till molnet](../export/export-cloud.md) |
 | **[!UICONTROL Duplicate visualization]** | Gör en exakt kopia av visualiseringen. |
 | **[!UICONTROL Edit description]** | Lägg till (eller redigera) en textbeskrivning för visualiseringen. Se [Text](text.md). |

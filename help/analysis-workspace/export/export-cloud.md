@@ -5,9 +5,9 @@ title: Exportera Customer Journey Analytics-rapporter till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: 0891aa2bed446e704b0222eff992c5f5bc200f82
+source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
 workflow-type: tm+mt
-source-wordcount: '2340'
+source-wordcount: '2360'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ Så här exporterar du fullständiga tabeller från Analysis Workspace:
    | Fältnamn | Funktion |
    |---------|----------|
    | Namn | Ange ett namn för exporten. Det här namnet visas i listan över exporter. |
-   | Taggar | Du kan lägga till en befintlig tagg i exporten eller skapa en ny tagg och använda den. <p>Om du vill använda en befintlig tagg på exporten markerar du eventuella taggar i listrutan. Alla taggar i ditt företag är tillgängliga för att tillämpa <!-- double-check this -->.</p> <p>Om du vill skapa en ny tagg skriver du namnet på den nya taggen och trycker sedan på Retur.</p><p>Tänk på följande när du lägger till märkord i en export: <ul><li>Taggar som du använder kan filtreras eller sökas efter i exporttabellen.</li> <li>Taggar som används i ett projekt används inte automatiskt vid export av en fullständig tabell, vilket beskrivs i Konfigurera kolumner på exportsidan i [Hantera exporter](/help/components/exports/manage-exports.md). (När [schemalägger ett helt projekt för export](/help/analysis-workspace/export/t-schedule-report.md) används automatiskt alla taggar som används i projektet på exporten.) <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
+   | Taggar | Du kan lägga till en befintlig tagg i exporten eller skapa en ny tagg och använda den. <p>Om du vill använda en befintlig tagg på exporten markerar du eventuella taggar i listrutan. Alla taggar i ditt företag är tillgängliga för att tillämpa <!-- double-check this -->.</p> <p>Om du vill skapa en ny tagg skriver du namnet på den nya taggen och trycker sedan på Retur.</p><p>Tänk på följande när du lägger till märkord i en export: <ul><li>Taggar som du använder kan filtreras eller sökas efter i exporttabellen.</li> <li>Taggar som används i ett projekt används inte automatiskt vid export av en fullständig tabell, vilket beskrivs i Konfigurera kolumner på exportsidan i [Hantera exporter](/help/components/exports/manage-exports.md). (När [schemalägger ett helt projekt för export](/help/analysis-workspace/curate-share/t-schedule-report.md) används automatiskt alla taggar som används i projektet på exporten.) <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
    | Beskrivning | Lägg till en beskrivning till exporten. Du kan välja att visa beskrivningar som en kolumn på [exportsidan](/help/components/exports/manage-exports.md) när du visar exporter. |
    | Datavy | Markera datavyn som innehåller de komponenter som du vill inkludera i exporten. Listrutan Datavy finns i dialogrutans övre vänstra hörn och kan identifieras med datavyikonen![datavyikon](assets/data-view-icon.png).  <p>**Obs!** Om du väljer en datavy som saknar komponenter som redan ingår i datatabellen, uppmanas du att rensa datatabellen och återskapa den med komponenter som ingår i den valda datavyn. </p> |
    | Fönstret Lookback | Välj den tidsram för rapportering som ska inkluderas i varje exportfil. Du kan välja mellan [!UICONTROL **I dag**], [!UICONTROL **I går**], [!UICONTROL **Senaste 7 dagarna**], [!UICONTROL **Senaste 30 dagarna**], [!UICONTROL **Den här veckan**] och [!UICONTROL **Den här månaden**]. <p>Det här alternativet visas inte när [!UICONTROL **exportfrekvensen**] är inställd på [!UICONTROL **Skicka nu (en gång)**]. |
@@ -129,7 +129,9 @@ Genom att exportera Customer Journey Analytics-data till molnet kan du:
 
 * Exportera tabeller som innehåller flera dimensioner.
 
-## Exportkrav {#export-requirements}
+## Krav och funktioner som inte stöds {#export-requirements}
+
+I det här avsnittet beskrivs de minimikrav och funktioner som inte stöds som du bör ta hänsyn till när du exporterar data.
 
 ### Minimikrav
 

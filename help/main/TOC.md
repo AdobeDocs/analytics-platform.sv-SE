@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1255'
 ht-degree: 10%
 
 ---
@@ -169,6 +169,7 @@ ht-degree: 10%
    + [Avancerad analys](../analysis-workspace/perform-adv-analysis.md)
    + Projekt {#build-workspace-project}
       + [Översikt](../analysis-workspace/build-workspace-project/freeform-overview.md)
+      + [Starta projekt snabbt](/help/analysis-workspace/build-workspace-project/starter-projects.md)
       + [Skapa projekt](/help/analysis-workspace/build-workspace-project/create-projects.md)
       + [Öppna projekt](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Kommentera projekt](/help/analysis-workspace/build-workspace-project/comment-projects.md)
@@ -242,16 +243,16 @@ ht-degree: 10%
       + [Medieuppspelningstid](../analysis-workspace/c-panels/media-playback-time-spent.md)
       + [Nästa eller föregående objekt](../analysis-workspace/c-panels/next-previous.md)
       + [Snabba insikter](../analysis-workspace/c-panels/quickinsight.md)
-   + Kuratera, dela och schemalägg projekt {#curate-share}
+   + Kuratera och dela {#curate-share}
       + [Översikt](../analysis-workspace/curate-share/send-schedule-files.md)
       + [Kuratprojekt](../analysis-workspace/curate-share/curate.md)
       + [Dela projekt](../analysis-workspace/curate-share/share-projects.md)
       + [Skapa delningsbara länkar](../analysis-workspace/curate-share/shareable-links.md)
       + [Skrivskyddade projekt](../analysis-workspace/curate-share/view-only-projects.md)
+      + [Skicka och schemalägg projekt](../analysis-workspace/curate-share//t-schedule-report.md)
    + Exportera {#export}
       + [Översikt](../analysis-workspace/export/export-project-overview.md)
       + [Ladda ned](../analysis-workspace/export/download-send.md)
-      + [Skicka till andra](../analysis-workspace/export/t-schedule-report.md)
       + [Exportera till molnet](../analysis-workspace/export/export-cloud.md)
    + Avvikelseidentifiering {#anomaly-detection}
       + [Översikt](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)

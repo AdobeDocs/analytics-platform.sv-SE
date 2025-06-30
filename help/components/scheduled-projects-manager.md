@@ -4,7 +4,7 @@ title: Mätvärden
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: 9cdfa94ad04d3d1ce43e591fa9219146152862dc
+source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Du kan använda ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att 
 
 Sök efter ett schemalagt projekt med ![Sök](/help/assets/icons/Search.svg). Du kan också se om några filter har tillämpats från filterpanelen. Om du vill ta bort ett filter väljer du ![CrossSize75](/help/assets/icons/CrossSize75.svg) för ett filter. Om du vill ta bort alla filter väljer du **[!UICONTROL Clear all]**.
 
-Om du vill redigera ett schemalagt projekt markerar du titeln på det schemalagda projektet. Använd dialogrutan **[!UICONTROL Edit scheduled project]** för att uppdatera schemainformationen. Mer information finns i [Skicka filer till andra](../analysis-workspace/export/t-schedule-report.md).
+Om du vill redigera ett schemalagt projekt markerar du titeln på det schemalagda projektet. Använd dialogrutan **[!UICONTROL Edit scheduled project]** för att uppdatera schemainformationen. Mer information finns i [Skicka filer till andra](../analysis-workspace/curate-share/t-schedule-report.md).
 
 ![Redigera schemalagt projekt](assets/edit-scheduled-project.png)
 
