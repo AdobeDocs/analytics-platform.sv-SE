@@ -161,7 +161,7 @@ Du kan ge [skrivskyddad åtkomst](/help/analysis-workspace/curate-share/view-onl
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela med vem som helst](https://video.tv.adobe.com/v/3420093/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dela med vem som helst](https://video.tv.adobe.com/v/3452456/?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
