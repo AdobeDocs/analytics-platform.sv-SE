@@ -6,14 +6,14 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+source-git-commit: 6cbf18496585fc973414b79b5957f918a16c0459
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '654'
 ht-degree: 0%
 
 ---
 
-# Skicka och schemalägg
+# Skicka och schemalägg projekt
 
 Du kan skicka Customer Journey Analytics-projekt som filer till utvalda användare via e-post. Du kan skicka filer för hand eller konfigurera projekt som ska skickas enligt ett schema. Projekt kan skickas i CSV- eller PDF-format.
 
@@ -99,7 +99,7 @@ Lösenordskraven uppfyller Adobe-standarderna och kräver minst 8 tecken med min
 ### Lösenordsskydda ett nytt schemalagt projekt
 
 1. När du har sparat projektet går du till **[!UICONTROL Share]** > **[!UICONTROL Send file now]** eller **[!UICONTROL Share]** > **[!UICONTROL Send file on schedule]**.
-1. Följ instruktionerna ovan, under [Skicka filen nu](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=sv-SE#now) eller [Skicka filen enligt schema](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html?lang=sv-SE#schedule).
+1. Följ instruktionerna ovan, under [Skicka filen nu](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#now) eller [Skicka filen enligt schema](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/t-schedule-report.html#schedule).
 
 ### Lösenordsskydda ett befintligt schemalagt projekt
 
