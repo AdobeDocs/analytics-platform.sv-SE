@@ -5,7 +5,7 @@ exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 70daf2251576bc3b473e63b3bb7c48f2d16dbffe
+source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 2%
@@ -28,9 +28,9 @@ Du kan hantera följande komponenter:
 * [Datumintervall](date-ranges/create.md): Anpassa och förfina datumintervall som Analysis Workspace erbjuder.
 * [Anteckningar](/help/components/annotations/overview.md): Kommunicera kontextuella datanunkter och insikter till din organisation.
 * [Intelligenta aviseringar](/help/components/c-intelligent-alerts/intelligent-alerts.md): Gör att du kan meddelas baserat på ändrade procentsatser eller specifika datapunkter.
-* [Schemalagda projekt](/help/analysis-workspace/curate-share/t-schedule-report.md#scheduled-projects-manager): Hantera dina schemalagda projekt.
+* [Schemalagda projekt](/help/analysis-workspace/export/t-schedule-report.md#scheduled-projects-manager): Hantera dina schemalagda projekt.
 * [Inställningar](/help/analysis-workspace/user-preferences.md): Hantera inställningarna för Analysis Workspace.
-* [Publiker](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper från Customer Journey Analytics till [Real-Time Customer Data Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/home) i Experience Platform för målinriktning och personalisering.
+* [Publiker](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper från Customer Journey Analytics till [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) i Experience Platform för målinriktning och personalisering.
 * [Exportera](/help/components/exports/manage-export-locations.md): Hantera ditt exportkonto och platser.
 
 
