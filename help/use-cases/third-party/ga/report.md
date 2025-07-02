@@ -5,9 +5,9 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Med hjälp av beräknade mätvärden kan du använda attribueringen på dina web
 
 ![Beräknat mått](../../assets/calc-metric.png)
 
-Med Attribution IQ kan ni också segmentera era data. Du kan bara se attribuering mot vissa användaruppsättningar, till exempel de som använder mer än en enhet.
+Med attribuering kan ni också segmentera era data. Du kan bara se attribuering mot vissa användaruppsättningar, till exempel de som använder mer än en enhet.
 
 ![Segment](../../assets/filter.png)
 

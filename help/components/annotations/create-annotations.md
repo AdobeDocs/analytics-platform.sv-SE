@@ -1,12 +1,12 @@
 ---
 title: Skapa anteckningar
-description: Så här skapar du anteckningar i Workspace.
+description: Så här skapar du anteckningar i Analysis Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+source-git-commit: f3c9a000ae5baa19cb5a6cf0e0343de3a9685b56
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Om du vill definiera anteckningen använder du [[!UICONTROL Annotation builder]]
 >[!CONTEXTUALHELP]
 >id="components_annotations_details"
 >title="Anteckningsinformation"
->abstract="Anteckningar gör att ni effektivt kan kommunicera kontextuella datanunkter och insikter till organisationen. De gör att du kan koppla kalenderhändelser till specifika mått/mätvärden."
+>abstract="Anteckningar gör att ni effektivt kan kommunicera kontextuella datanunkter och insikter till organisationen. Anteckningar gör att du kan koppla kalenderhändelser till specifika dimensioner och mätvärden."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -62,11 +62,11 @@ Dialogrutan **[!UICONTROL Annotations builder]** används för att skapa nya ell
 
 >[!TAB Anteckningsverktyget]
 
-![Fönstret Anteckningsinformation med fält och alternativ som beskrivs i nästa avsnitt.](assets/annotation-builder.png)
+![Fönstret Anteckningsinformation med fält och alternativ som beskrivs i nästa avsnitt.](assets/annotation-builder.png){zoomable="yes"}
 
->[!TAB Skapa/redigera anteckning]
+>[!TAB  Redigera anteckning ]
 
-![Fönstret Anteckningsinformation med fält och alternativ som beskrivs i nästa avsnitt.](assets/create-edit-annotation.png)
+![Fönstret Anteckningsinformation med fält och alternativ som beskrivs i nästa avsnitt.](assets/create-edit-annotation.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -79,9 +79,9 @@ Dialogrutan **[!UICONTROL Annotations builder]** används för att skapa nya ell
    | **[!UICONTROL Title]** ![Krävs](/help/assets/icons/Required.svg) | Namnge anteckningen, till exempel `Needs further investigation`. |
    | **[!UICONTROL Description]** | Ange en beskrivning för anteckningen, till exempel `We never expected such a fluctuation in numbers.`. |
    | **[!UICONTROL Tags]** | Organisera anteckningen genom att skapa eller använda en eller flera taggar. Börja skriva för att hitta befintliga taggar som du kan markera. Eller tryck på **[!UICONTROL Enter]** för att lägga till en ny tagg. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tagg. |
-   | **[!UICONTROL Applied date]** ![Krävs](/help/assets/icons/Required.svg) | Välj det datum eller datumintervall som måste finnas för att anteckningen ska kunna visas. När du skapar en anteckning med kortkommandot blir anteckningen som standard ett datumintervall för endast dagen. När du skapar en anteckning med hjälp av en markering i en visualisering blir anteckningen som standard det datumintervall som baseras på datumintervallet från den panel som visualiseringen tillhör. |
+   | **[!UICONTROL Applied date]** ![Krävs](/help/assets/icons/Required.svg) | Välj det datum eller datumintervall som måste finnas för att anteckningen ska kunna visas. När du skapar en anteckning med kortkommandot blir anteckningen som standard ett datumintervall för endast dagen. När du skapar en anteckning med hjälp av en markering i en visualisering blir anteckningen som standard datumintervallet baserat på datumintervallet för den panel som visualiseringen tillhör. |
    | **[!UICONTROL Color]** | Använd en färg på anteckningen. Anteckningen visas i projektet med den valda färgen. Färg kan användas för att kategorisera anteckningar, t.ex. allmänna helgdagar, externa händelser, spårningsproblem. |
-   | **[!UICONTROL Scope]** | Dra och släpp mätvärden från komponentpanelen som utlöser anteckningen. Till exempel Personer, sessioner och händelser. Dra och släpp sedan de dimensioner eller segment på komponentpanelen som fungerar som segment för att bestämma om anteckningen ska visas eller inte. Om du inte anger ett omfång används anteckningen på alla dina data. <br/>Du har två alternativ:<ul><li>**[!UICONTROL Any of these metrics are present]**: Dra och släpp upp till 10 mätvärden som utlöser den anteckning som ska visas.<br/>Inkomstmåttet har till exempel slutat samla in data för ett visst datumintervall. Dra intäktsmåttet till den här rutan.</li><li>**[!UICONTROL With all of these segments]**: Dra och släpp upp till 10 dimensioner eller segment i segmentet oavsett om anteckningen visas.</li></ul><p><p>**Obs!** Alla anteckningar som används på en komponent som sedan används som en del av ett beräknat mått eller en segmentdefinition ärver INTE automatiskt anteckningen. Det önskade beräknade måttet måste också läggas till i omfångsavsnittet för att anteckningen ska kunna visas. En ny anteckning bör dock skapas för alla segment som du vill kommentera med samma information. Du kan till exempel använda en anteckning för [!UICONTROL Orders] på en viss dag. Du använder sedan [!UICONTROL Orders] i ett beräknat mått för samma datumintervall. Det nya beräknade måttet visar inte automatiskt anteckningen för order. Lägg även till det beräknade måttet i omfångsavsnittet för den anteckning som ska visas. |
+   | **[!UICONTROL Scope]** | Dra och släpp mätvärden från komponentpanelen som utlöser anteckningen. Exempel: Personer, sessioner och händelser. Dra och släpp sedan de dimensioner eller segment på komponentpanelen som fungerar som segment för att bestämma om anteckningen ska visas eller inte. Om du inte anger ett omfång används anteckningen på alla dina data. <br/>Du har två alternativ:<ul><li>**[!UICONTROL Any of these metrics are present]**: Dra och släpp upp till 10 mätvärden som utlöser den anteckning som ska visas.<br/>Inkomstmåttet har till exempel slutat samla in data för ett visst datumintervall. Dra intäktsmåttet till den här rutan.</li><li>**[!UICONTROL With all of these segments]**: Dra och släpp upp till 10 dimensioner eller segment i segmentet oavsett om anteckningen visas.</li></ul><p><p>**Obs!** Alla anteckningar som används på en komponent som sedan används som en del av ett beräknat mått eller en segmentdefinition ärver INTE automatiskt anteckningen. Det önskade beräknade måttet måste också läggas till i omfångsavsnittet för att anteckningen ska kunna visas. En ny anteckning bör dock skapas för alla segment som du vill kommentera med samma information. Du kan till exempel använda en anteckning för [!UICONTROL Orders] på en viss dag. Du använder sedan [!UICONTROL Orders] i ett beräknat mått för samma datumintervall. Det nya beräknade måttet visar inte automatiskt anteckningen för order. Lägg även till det beräknade måttet i omfångsavsnittet för den anteckning som ska visas. |
    | **[!UICONTROL Apply to all data views]** | Anteckningen gäller som standard för den ursprungliga datavyn. Genom att markera den här rutan kan du göra så att anteckningen gäller för alla datavyer i företaget. |
 
    {style="table-layout:auto"}

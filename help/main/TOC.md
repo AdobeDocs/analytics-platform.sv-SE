@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: a3442e4cbb949228213a606b87ff65c8c562895b
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1248'
 ht-degree: 10%
 
 ---
@@ -248,10 +248,10 @@ ht-degree: 10%
       + [Dela projekt](../analysis-workspace/curate-share/share-projects.md)
       + [Skapa delningsbara länkar](../analysis-workspace/curate-share/shareable-links.md)
       + [Skrivskyddade projekt](../analysis-workspace/curate-share/view-only-projects.md)
-      + [Skicka och schemalägg](../analysis-workspace/export/t-schedule-report.md)
    + Exportera {#export}
       + [Översikt](../analysis-workspace/export/export-project-overview.md)
       + [Ladda ned](../analysis-workspace/export/download-send.md)
+      + [Skicka och schemalägg](../analysis-workspace/export/t-schedule-report.md)
       + [Exportera till molnet](../analysis-workspace/export/export-cloud.md)
    + Avvikelseidentifiering {#anomaly-detection}
       + [Översikt](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
@@ -264,7 +264,8 @@ ht-degree: 10%
    + [Användarinställningar](../analysis-workspace/user-preferences.md)
    + Vanliga frågor och svar om Workspace med mera {#workspace-faq}
       + [Frågor och svar](../analysis-workspace/workspace-faq/faq.md)
-      + [Felmeddelanden](../analysis-workspace/workspace-faq/error-messages.md)
+      + [Optimera prestanda](../analysis-workspace/workspace-faq/optimizing-performance.md)
+      + [Fel och felsökning](../analysis-workspace/workspace-faq/error-messages.md)
       + [Begränsningar](../analysis-workspace/workspace-faq/aw-limitations.md)
       + [Administrationskrav](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Tillgänglighet](../analysis-workspace/workspace-faq/aw-accessibility.md)
@@ -306,21 +307,20 @@ ht-degree: 10%
 
 + Komponenter {#cja-components}
    + [Översikt](../components/overview.md)
-   + [Använda komponenter i Analysis Workspace](../components/use-components-in-workspace.md)
+   + [Använda komponenter](../components/use-components-in-workspace.md)
    + [Lägga till komponentbeskrivningar](../components/add-component-descriptions.md)
    + Anteckningar {#annotations}
-      + [Översikt över anteckningar](../components/annotations/overview.md)
+      + [Översikt](../components/annotations/overview.md)
       + [Skapa anteckningar](../components/annotations/create-annotations.md)
       + [Hantera anteckningar](../components/annotations/manage-annotations.md)
       + [Visa anteckningar](../components/annotations/view-annotations.md)
-      + [Mobilanteckningar](../components/annotations/mobile-annotations.md)
-   + [Schemalagda projekt](../components/scheduled-projects-manager.md)
+      + [Mobil styrkortsanteckning](../components/annotations/mobile-annotations.md)
    + Målgrupper {#audiences}
       + [Översikt över målgrupper](../components/audiences/audiences-overview.md)
       + [Skapa och publicera målgrupper](../components/audiences/publish.md)
       + [Hantera målgrupper](../components/audiences/manage.md)
    + Mått {#dimensions}
-      + [Översikt över dimensioner](../components/dimensions/overview.md)
+      + [Översikt](../components/dimensions/overview.md)
       + [Förhandsvisa dimensioner](../components/dimensions/view-dimensions.md)
       + [Dela upp dimensioner](../components/dimensions/t-breakdown-fa.md)
       + [Tidsdelningsdimensioner](../components/dimensions/time-parting-dimensions.md)
@@ -343,7 +343,7 @@ ht-degree: 10%
       + [Använd segment](/help/components/segments/seg-use.md)
    + Beräknade mått {#cja-calcmetrics}
       + [Översikt](../components/calc-metrics/calc-metr-overview.md)
-      + Arbetsflöde för beräknade mätvärden {#cm-workflow}
+      + Arbetsflöde {#cm-workflow}
          + [Skapa beräknade mått](../components/calc-metrics/cm-workflow/cm-workflow.md)
          + [Bygg beräknade värden](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Hitta mätvärden](../components/calc-metrics/cm-workflow/cm-finding.md)
@@ -387,6 +387,7 @@ ht-degree: 10%
       + [Visa komponentinformation i Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
       + [Redigera komponentposter i Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [Övervaka dataordlistans hälsa](../components/data-dictionary/monitor-data-dictionary-health.md)
+   + [Schemalagda projekt](../components/scheduled-projects-manager.md)
 
 + Report Builder {#cja-reportbuilder}
    + [Översikt](../report-builder/rb-overview.md)

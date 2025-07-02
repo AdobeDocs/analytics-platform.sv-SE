@@ -1,12 +1,12 @@
 ---
-description: Med varningar får du detaljkontroll över meddelanden och integrering med avvikelseidentifiering.
-title: Översikt över aviseringar
+description: Lär dig hur du använder varningar för att få detaljkontroll över meddelanden och integrering med avvikelseidentifiering.
+title: Varningar - översikt
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
-source-git-commit: 56ac1c5a6d13a972aed90cab79cbc5f794cedc9e
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Med varningar kan du:
 * Skapa&quot;staplade&quot; aviseringar som fångar in flera mätvärden i en enda avisering
 * Bygg aviseringar baserade på avvikelser (tröskelvärdena 90 %, 95 %, 99 %, 99,75 % och 99,9 %, % förändring, över/under) (endast tillgängligt för Customer Journey Analytics-kunder med något av paketen Select, Prime eller Ultimate)
 
-I följande videofilm visas en grundläggande översikt över aviseringar: [Varningar](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=sv-SE) (5:34)
+I följande videofilm visas en grundläggande översikt över aviseringar: [Varningar](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html) (5:34)
 
 ## Förstå hur varningar skiljer sig
 

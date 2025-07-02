@@ -1,12 +1,12 @@
 ---
-description: Administratörer kan lägga till beskrivningar för komponenter med datavyn.
-title: Lägga till komponentbeskrivningar
+description: Administratörer kan lägga till beskrivningar för komponenter i datavyn eller med hjälp av dataordlistan
+title: Lägg till komponentbeskrivningar
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -32,5 +32,5 @@ Allmän information om dataordlistan finns i [Översikt över dataordlistan](/he
 >[!MORELIKETHIS]
 >
 >[Komponentinställningar för datavy](/help/data-views/component-settings/overview.md)
->&#x200B;>[Data dictionary-komponentposter ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>>[Data dictionary-komponentposter ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

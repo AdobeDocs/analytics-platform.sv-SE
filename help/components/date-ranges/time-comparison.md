@@ -1,19 +1,19 @@
 ---
-description: Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel år för år, kvartal för kvartal, månad för månad.
+description: Lär dig använda datumjämförelse i Analysis Workspace, där du kan skapa en vanlig datumjämförelse för alla kolumner som innehåller ett datumintervall.
 title: Datumjämförelse
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 role: User
-source-git-commit: 483c0d3bcc6ff700395a51a4d550844fb6af30d2
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
 # Datumjämförelse
 
-Med Datumjämförelse i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel år-över-år, kvartal-över-kvartal, månad-över-månad osv.
+Med datumjämförelsen i Analysis Workspace kan du ta vilken kolumn som helst som innehåller ett datumintervall och skapa en gemensam datumjämförelse, till exempel år-över-år, kvartal-över-kvartal, månad-över-månad osv.
 
 ## Jämför tidsperioder
 

@@ -1,21 +1,21 @@
 ---
-description: Dela upp dimensioner och dimensionsobjekt i Analysis Workspace.
+description: Lär dig hur du bryter ned dimensioner och dimensionsobjekt i Analysis Workspace.
 keywords: Analysis Workspace
-title: Dela upp dimensioner
+title: Bryt ned dimensioner
 feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 60035b8fc65627bf5ead2a50959ce9cc5fe48604
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
 
-# Dela upp dimensioner i Workspace
+# Dela upp dimensioner
 
-Ni kan dela upp era data på ett obegränsat sätt för just era behov, bygga frågor med relevanta mått, dimensioner, segment, tidslinjer och andra analysvärden.
+Ni kan dela upp era data i Analysis Workspace på ett obegränsat sätt för just era behov; skapa frågor med hjälp av relevanta mått, dimensioner, segment, tidslinjer och andra analysvärden.
 
 1. I en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) väljer du **[!UICONTROL Breakdown]** ![SparronRight](/help/assets/icons/ChevronRight.svg) på snabbmenyn för en eller flera markerade rader.
 

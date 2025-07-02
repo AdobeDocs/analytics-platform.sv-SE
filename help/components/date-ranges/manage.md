@@ -1,12 +1,12 @@
 ---
 title: Hantera datumintervall
-description: Dela, byta namn på eller ta bort datumintervall i Analysis Workspace.
+description: Lär dig hantera datumintervall i Analysis Workspace.
 feature: Calendar
 exl-id: 694758c4-d740-4fd7-9fb0-3ff7f6b25a3d
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Hanteraren för datumintervall har följande gränssnittselement:
 
 ### Datumintervalllista
 
-I listan ➊ visas alla datumintervall. Listan innehåller följande kolumner:
+I datumintervalllistan ➊ visas alla datumintervall. Listan innehåller följande kolumner:
 
 | Kolumn | Beskrivning |
 | --- | --- | 
@@ -44,7 +44,7 @@ Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att ange vil
 
 ### Åtgärdsfält
 
-Du kan använda åtgärdsfältets ➋ för att utföra åtgärder på datumintervall. Åtgärdsfältet innehåller följande åtgärder:
+Du kan utföra åtgärder för datumintervall med åtgärdsfältet ➋. Åtgärdsfältet innehåller följande åtgärder:
 
 | Ikon | Åtgärd | Beskrivning |
 |:---:|---|---|
@@ -60,11 +60,11 @@ Du kan använda åtgärdsfältets ➋ för att utföra åtgärder på datuminter
 
 ### Aktivt filterfält
 
-➌ visar de aktiva filtren (om sådana finns). Du kan snabbt ta bort ett filter med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett filter anges använder du **[!UICONTROL Remove all]** för att ta bort alla filter.
+Filterfältet ➌ visar de aktiva filtren (om sådana finns). Du kan snabbt ta bort ett filter med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett filter anges använder du **[!UICONTROL Remove all]** för att ta bort alla filter.
 
 ### Panelen Filter
 
-Du kan filtrera datumintervall med den vänstra panelen i **[!UICONTROL Filter]**. Filterpanelen visar typen av filter och antalet datumintervall som filtret gäller. Välj ![Filter](/help/assets/icons/Filter.svg) för att växla visningen av filterpanelen.
+Du kan filtrera datumintervall med den **[!UICONTROL Filter]** vänstra panelen ➍. Filterpanelen visar typen av filter och antalet datumintervall som filtret gäller. Välj ![Filter](/help/assets/icons/Filter.svg) för att växla visningen av filterpanelen.
 
 Så här filtrerar du filterlistan:
 

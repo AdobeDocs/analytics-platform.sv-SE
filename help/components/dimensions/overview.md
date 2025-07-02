@@ -1,9 +1,9 @@
 ---
-title: Översikt över dimensioner
-description: Lär dig vilka dimensioner som är och hur de används i Customer Journey Analytics
+title: Dimensionsöversikt
+description: Lär dig vilka dimensioner som är och hur de används i Customer Journey Analytics.
 feature: Dimensions
 exl-id: 3592808b-17fd-401d-ab12-ff0308b21f45
-source-git-commit: 6cabedc5ed58dac450577fc3505be5f95b7a959d
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 1%

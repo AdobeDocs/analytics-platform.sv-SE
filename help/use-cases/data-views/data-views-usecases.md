@@ -1,13 +1,13 @@
 ---
-title: Användningsexempel för datavyer i Customer Journey Analytics
-description: Flera användningsområden som visar flexibiliteten och kraften i datavyer i Customer Journey Analytics
+title: Datavyer - Användningsexempel
+description: Läs mer om olika användningsområden som ger flexibilitet och kraft åt datavyer i Customer Journey Analytics
 exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1235'
 ht-degree: 0%
 
 ---
@@ -34,12 +34,12 @@ När du skapar en datavy kan du till exempel skapa ett [!UICONTROL Orders]-mått
 
 
 
-1. Dra **[!UICONTROL Page Title]** på fliken **[!UICONTROL Components]** till avsnittet **[!UICONTROL Metrics]** under [!UICONTROL Included components].
+1. Dra **[!UICONTROL Components]** på fliken **[!UICONTROL Page Title]** till avsnittet **[!UICONTROL Metrics]** under [!UICONTROL Included components].
 1. Markera måttet som du just drog in och ändra namnet till `Orders` i **[!UICONTROL Component Settings]** på
 1. Öppna avsnittet **[!UICONTROL Include/Exclude Values]** och ange följande:
    1. Aktivera **[!UICONTROL Set include exclude values]**.
    1. Välj **[!UICONTROL If all criteria are met]** från **[!UICONTROL Match]**.
-   1. Ange `confirmation`. Den här texten för **[!UICONTROL page_title]** anger att den här sidan är relaterad till att placera en order. När du har granskat alla sidrubriker där villkoren uppfylls, räknas `1` för varje instans. Resultatet är ett nytt mätvärde (inte ett beräknat mätvärde) Ett mätvärde som har inkluderade/exkluderade värden kan användas överallt där andra mätvärden kan användas. Det fungerar med Attribution IQ, segment och alla andra kan du använda standardvärden.
+   1. Ange `confirmation`. Texten för **[!UICONTROL page_title]** anger att den här sidan är relaterad till att placera en order. När du har granskat alla sidrubriker där villkoren uppfylls, räknas `1` för varje instans. Resultatet är ett nytt mätvärde (inte ett beräknat mätvärde) Ett mätvärde som har inkluderade/exkluderade värden kan användas överallt där andra mätvärden kan användas. Dessa mätvärden fungerar med attribuering, segment och var du än är kan du använda standardmätvärden.
 
    ![Dimension till mått](../assets/string-to-metric.gif){width=100%}
 1. Du kan ytterligare ange en attribueringsmodell för det här måttet, till exempel [!UICONTROL Last Touch], med [!UICONTROL Lookback window] av [!UICONTROL Session].
@@ -60,9 +60,9 @@ Tidigare behandlades heltal automatiskt som mätvärden i Customer Journey Analy
 
 ## Använd numeriska mått som mått i flödesdiagram {#numeric}
 
-Du kan använda en numerisk dimension för att hämta mätvärden till din [!UICONTROL &#x200B; Flow]-visualisering.
+Du kan använda en numerisk dimension för att hämta mätvärden till din [!UICONTROL  Flow]-visualisering.
 
-1. Dra schemafältet [!UICONTROL Marketing Channels] till området [!UICONTROL Metrics] under [!UICONTROL Included components] på fliken [Komponenter](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview) i datavyer.
+1. Dra schemafältet [ till området ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview) under [!UICONTROL Marketing Channels] på fliken [!UICONTROL Metrics]Komponenter[!UICONTROL Included components] i datavyer.
 2. I Workspace-rapporter visar det här flödet [!UICONTROL Marketing Channels] som flödar in i [!UICONTROL Orders]:
 
 ![Marknadskanalen flödar från e-post till Avsluta/beställ.](../assets/flow.png)
@@ -73,20 +73,20 @@ Den här funktionen gäller specifikt för matrisbaserade fält. Med funktionern
 
 Använd till exempel funktionerna för att inkludera/exkludera i datavyer om du bara vill fokusera på produkter som genererade mer än 50 dollar för försäljning. Om du har en beställning som innehåller ett produktköp på 50 USD och ett produktköp på 25 USD tar funktionen för att inkludera/exkludera bort produktinköpet på 25 USD, inte hela beställningen.
 
-1. Dra schemafältet **[!UICONTROL Revenue]** till området **[!UICONTROL Metrics]** under [!UICONTROL Included components] på fliken [Komponenter](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview) i datavyer.
+1. Dra schemafältet [ till området ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview) under **[!UICONTROL Revenue]** på fliken **[!UICONTROL Metrics]** Komponenter[!UICONTROL Included components] i datavyer.
 1. Markera måtten och konfigurera följande på höger sida:
-a. Välj **[!UICONTROL Currency]** under **[!UICONTROL Format]**.
-b. Välj **[!UICONTROL USD]** under **[!UICONTROL Currency]**.
-c. Markera kryssrutan intill **[!UICONTROL Set include/exclude values]** under **[!UICONTROL Include/Exclude Values]**.
-d. Välj **[!UICONTROL If all criteria are met]** under **[!UICONTROL Match]**.
-e. Välj **[!UICONTROL is greater than or equal]** under **[!UICONTROL Criteria]**.
+a. Välj **[!UICONTROL Format]** under **[!UICONTROL Currency]**.
+b. Välj **[!UICONTROL Currency]** under **[!UICONTROL USD]**.
+c. Markera kryssrutan intill **[!UICONTROL Include/Exclude Values]** under **[!UICONTROL Set include/exclude values]**.
+d. Välj **[!UICONTROL Match]** under **[!UICONTROL If all criteria are met]**.
+e. Välj **[!UICONTROL Criteria]** under **[!UICONTROL is greater than or equal]**.
 f. Ange `50` som värde.
 
 Med de här nya inställningarna kan du bara visa värdefulla intäkter och filtrera bort vad som helst under 50 dollar.
 
 ## Använd inställningen [!UICONTROL No value options] {#no-value}
 
-Företaget kan ha ägnat tid åt att utbilda dina användare så att de förväntar sig&quot;Ospecificerad&quot; för dimensioner i rapporter. Standardvärdet för dimensioner i datavyer är &quot;Inget värde&quot;. Du kan dock per dimension ange hur inget värde ska rapporteras. Se Alternativ för Inga värden för en dimensionskomponent.
+Företaget kan ha ägnat tid åt att utbilda dina användare så att de förväntar sig&quot;Ospecificerad&quot; för dimensioner i rapporter. Standardvärdet för dimensioner i datavyer är *Inget värde*. Du kan dock per dimension ange hur inget värde ska rapporteras. Se alternativen för **[!UICONTROL No value]** för en dimensionskomponent.
 
 ![Inga värdealternativ](../assets/no-value-options.gif){width=100%}
 
@@ -112,11 +112,11 @@ Du kan avgöra om en session är den första sessionen någonsin för en använd
 
 En dimension och två mätvärden underlättar den här rapporteringen:
 
-* [Sessionstyp](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-reference) - Den här dimensionen har två värden: [!UICONTROL New] och [!UICONTROL Returning]. Radobjektet [!UICONTROL New] innehåller allt beteende (d.v.s. mått mot den här dimensionen) från en session som har fastställts vara en persons definierade första session. Allt annat ingår i radobjektet [!UICONTROL Returning] (förutsatt att allt tillhör en session). Om mätvärden inte ingår i någon session hamnar de i&quot;Inte tillämpligt&quot;-haken för den här dimensionen.
+* [Sessionstyp](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Den här dimensionen har två värden: [!UICONTROL New] och [!UICONTROL Returning]. Radobjektet [!UICONTROL New] innehåller allt beteende (d.v.s. mått mot den här dimensionen) från en session som har fastställts vara en persons definierade första session. Allt annat ingår i radobjektet [!UICONTROL Returning] (förutsatt att allt tillhör en session). Om mätvärden inte ingår i någon session hamnar de i&quot;Inte tillämpligt&quot;-haken för den här dimensionen.
 
-* [Första sessionen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-reference). Mätvärdet för förstagångssessioner definieras som en persons definierade första session i rapportfönstret.
+* [Första sessionen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference). Mätvärdet för förstagångssessioner definieras som en persons definierade första session i rapportfönstret.
 
-* [Retursessioner](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/component-reference) Måttet på retursessioner är antalet sessioner som inte var en persons första session.—>
+* [Retursessioner](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) Måttet på retursessioner är antalet sessioner som inte var en persons första session.—>
 
 Så här kommer du åt komponenterna:
 
@@ -127,8 +127,7 @@ Så här kommer du åt komponenterna:
 Nya sessioner rapporteras nästan alltid korrekt. De enda undantagen är:
 
 * När en första session ägde rum före 13-månaders uppslagsfönster. <br/>Den här sessionen ignoreras.
-
-* När en session sträcker sig över både uppslagsfönstret och rapportfönstret. <br/>Du kan till exempel köra en rapport från 1 juni till 15 juni 2022. Fönstret för uppslag skulle sträcka sig från 1 maj 2021 till 31 maj 2022. Om en session börjar den 30 maj 2022 och slutar den 1 juni 2022, inkluderas sessionen i uppslagsfönstret. Och alla sessioner i rapportfönstret räknas som retursessioner.
+* När en session sträcker sig över både uppslagsfönstret och rapportfönstret.<br/>Du kan till exempel köra en rapport från 1 juni 2022 till 15 juni 2022. Fönstret för uppslag skulle sträcka sig från 1 maj 2021 till 31 maj 2022. Om en session börjar den 30 maj 2022 och slutar den 1 juni 2022, inkluderas sessionen i uppslagsfönstret. Och alla sessioner i rapportfönstret räknas som retursessioner.
 
 ## Använda funktionerna Datum och Tid {#date}
 

@@ -1,12 +1,12 @@
 ---
 title: Hantera anteckningar
-description: Hantera anteckningar i Workspace.
+description: Hantera anteckningar i Analysis Workspace.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: 6a279ac39e6b94200ff93ac1a3796d202e6349c7
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Anteckningshanteraren har följande gränssnittselement:
 
 ### Anteckningslista
 
-I anteckningslistan ➊ alla anteckningar som du äger, anteckningar som har omfattats av alla dina projekt och de anteckningar som har delats med dig. Listan innehåller följande kolumner:
+Anteckningslistan ➊ visar alla anteckningar som du äger, anteckningarna som har omfattats av alla dina projekt och de anteckningar som har delats med dig. Listan innehåller följande kolumner:
 
 | Kolumn | Beskrivning |
 | --- | --- | 
@@ -50,7 +50,7 @@ Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att ange vil
 
 ### Åtgärdsfält
 
-Du kan använda åtgärdsfältets ➋ för att göra anteckningar. Åtgärdsfältet innehåller följande åtgärder:
+Du kan utföra åtgärder på anteckningar med åtgärdsfältet ➋. Åtgärdsfältet innehåller följande åtgärder:
 
 | Ikon | Åtgärd | Beskrivning |
 |:--:|---|---|
@@ -65,11 +65,11 @@ Du kan använda åtgärdsfältets ➋ för att göra anteckningar. Åtgärdsfäl
 
 ### Aktivt filterfält
 
-➌ visar de aktiva filtren (om sådana finns). Du kan snabbt ta bort ett filter med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett filter har angetts kan du ta bort alla filter med **[!UICONTROL Remove all]**.
+Filterfältet ➌ visar de aktiva filtren (om sådana finns). Du kan snabbt ta bort ett filter med ![CrossSize75](/help/assets/icons/CrossSize75.svg). Om fler än ett filter har angetts kan du ta bort alla filter med **[!UICONTROL Remove all]**.
 
 ### Panelen Filter
 
-Du kan filtrera anteckningar med hjälp av den vänstra panelen i **[!UICONTROL Filter]**. Filterpanelen visar typen av filter och antalet anteckningar som följer filtret. Välj ![Filter](/help/assets/icons/Filter.svg) för att växla visningen av filterpanelen.
+Du kan filtrera anteckningar med den vänstra panelen **[!UICONTROL Filter]** ➍. Filterpanelen visar typen av filter och antalet anteckningar som följer filtret. Välj ![Filter](/help/assets/icons/Filter.svg) för att växla visningen av filterpanelen.
 
 Så här filtrerar du filterlistan:
 

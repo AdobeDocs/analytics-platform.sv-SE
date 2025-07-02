@@ -4,9 +4,9 @@ title: Jämförelse av aviseringsfunktioner i Customer Journey Analytics och Ado
 feature: Workspace Basics
 role: User, Admin
 exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
-source-git-commit: 53069702055e0adf7abf9061c592fb15772ded73
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Processen att använda varningar i Customer Journey Analytics är nästan identisk med att använda varningar i Adobe Analytics. Det finns dock viktiga skillnader. I följande avsnitt beskrivs de viktigaste skillnaderna.
 
-## Varningar per timme är inte tillgängliga i Customer Journey Analytics
+## Varningar per timme är inte tillgängliga
 
-Varningar per timme är inte tillgängliga i Customer Journey Analytics som i Adobe Analytics. I Customer Journey Analytics kan varningar konfigureras för varje dag, vecka eller månad.
+Timaviseringar är **inte** tillgängliga i Customer Journey Analytics medan timaviseringar är tillgängliga i Adobe Analytics. I Customer Journey Analytics kan varningar konfigureras för varje dag, vecka eller månad.
 
-Detta beror på de olika sätt som data kan importeras till Adobe Experience Platform, innan de rapporteras i Customer Journey Analytics. Det går inte att på ett tillförlitligt sätt uppnå fullständighet och tillgänglighet för data inom en timme, vilket gör att det inte går att göra timaviseringar på grund av den stora risken för ofullständiga data. Mer information finns i [Tidsåtgången för dataöverföring varierar](#data-ingestion-times-vary-in-customer-journey-analytics).
+Du kan importera data till Adobe Experience Platform på olika sätt. Detta innebär att det inte går att på ett tillförlitligt sätt uppnå fullständighet och tillgänglighet inom en timmes begränsningar.  Flexibiliteten i datainhämtning innebär att varningar per timme är opraktiskt på grund av den stora potentialen för ofullständiga data. Mer information finns i [Tidsåtgången för dataöverföring varierar](#data-ingestion-times-vary-in-customer-journey-analytics).
 
-## Inmatningstiderna varierar i Customer Journey Analytics
+## Tidsåtgången för datainmatning varierar
 
 Den tid som krävs innan data är fullständiga och tillgängliga att rapporteras i Customer Journey Analytics varierar beroende på organisation.
 
@@ -45,7 +45,7 @@ Mer information om hur du justerar fördröjningen och vilka faktorer du bör ta
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
-## Det går inte att skapa en avisering från Analysis Workspace
+## Skapa en avisering från Analysis Workspace är inte tillgänglig
 
 I Analysis Workspace i Adobe Analytics kan du skapa varningar från Analysis Workspace på något av de sätt som beskrivs nedan. I Customer Journey Analytics är alternativen för att skapa aviseringar från Analysis Workspace ännu inte tillgängliga. I stället öppnar du varningsverktyget enligt beskrivningen i [Skapa aviseringar](/help/components/c-intelligent-alerts/alert-builder.md).
 
@@ -57,4 +57,4 @@ I Adobe Analytics finns följande alternativ:
 
 * Öppna ett projekt i Analysis Workspace och välj sedan **[!UICONTROL Components]** > **[!UICONTROL Create alert]**.
 
-* Öppna ett projekt i Analysis Workspace och använd sedan följande kortkommando: **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**(Windows) eller&#x200B;**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** (macOS).
+* Öppna ett projekt i Analysis Workspace och använd sedan följande kortkommando: **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**(Windows) eller**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** (macOS).

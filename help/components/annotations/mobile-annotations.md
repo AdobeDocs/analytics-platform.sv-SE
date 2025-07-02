@@ -1,19 +1,19 @@
 ---
-title: Mobil styrkortsanteckning
+title: Mobilanteckningar
 description: Lär dig hur du visar kommentarer i Mobile Scorecards.
 solution: Customer Journey Analytics
 feature: Components
 exl-id: c0f276b4-3514-4f93-8b6c-6896eb4da6e4
 role: User
-source-git-commit: 0e1654eae336f89e1574afadcd97e26798dc01a1
+source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
 
 
-# Dela anteckningar i mobila styrkort
+# Mobil styrkortsanteckning
 
 Du kan visa anteckningar som har skapats i Workspace i Mobile Scorecards. Anteckningar i mobilstyrkort gör att ni kan dela kontextuella datanunkter och insikter om er organisation och era kampanjer.
 
@@ -50,4 +50,4 @@ Du kan förhandsgranska anteckningen med ![PlayCircle](/help/assets/icons/PlayCi
 
 ![Förhandsgranskning av mobilstyrkort för anteckning](assets/annotations-scorecard-preview.png)
 
-Om det finns fler anteckningar visas flera punkter ( ●) längst ned i anteckningen. Svep åt vänster eller höger för att växla mellan anteckningar.
+Om det finns fler anteckningar visas flera punkter (●) längst ned i anteckningen. Svep åt vänster eller höger för att växla mellan anteckningar.

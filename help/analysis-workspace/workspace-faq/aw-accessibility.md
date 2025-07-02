@@ -1,19 +1,19 @@
 ---
-description: Funktioner för tillgänglighetsstöd i Analysis Workspace
+description: Läs om tillgänglighetsfunktionerna i Analysis Workspace.
 title: Tillgänglighet i Analysis Workspace
 feature: FAQ
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
-source-git-commit: dca8b99dad97e939e8021a681cb21ab14ca1ff87
+source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
 
 # Tillgänglighet i Analysis Workspace
 
-Läs mer om stöd för hjälpmedel i [!UICONTROL Analysis Workspace], det främsta analysverktyget för Customer Journey Analytics.
+Läs om tillgänglighetsstöd i [!UICONTROL Analysis Workspace], det främsta analysverktyget för Customer Journey Analytics.
 
 Med hjälpmedel avses att göra produkter användbara för personer med funktionshinder som syn-, hörsel-, kognitiv-, motor- eller andra funktionshinder. Exempel på hjälpmedelsfunktioner för programvaror är:
 
@@ -30,7 +30,7 @@ Med hjälpmedel avses att göra produkter användbara för personer med funktion
 Navigering i [!UICONTROL Analysis Workspace] fungerar uppifrån och ned och från vänster till höger. Följande navigeringselement underlättar tillgängligheten:
 
 * Med tangenten **[!UICONTROL Tab]** kan du skapa genvägar mellan större avsnitt i Workspace. I den vänstra panelen kan du i **[!UICONTROL Tab]** även gå från ett dragbart alternativ till nästa.
-* ◀︎ och ▶︎ flyttas mellan enskilda element efter att tangenten **[!UICONTROL Tab]** har markerat ett element.
+* }︎ ◀ och {1 }︎ flyttas mellan enskilda element efter att tangenten ▶ har markerat ett element.**[!UICONTROL Tab]**
 * **[!UICONTROL F6]**-tangenten navigerar till den första panelen i projektet och förflyttar sig mellan visualiseringarna på den panelen. Sedan flyttas den till nästa panel i projektet och upprepas.
 * Fokusindikatorer används så att synkade tangentbordsanvändare har en tydlig indikation på vilket gränssnittselement som är i fokus. Indikatorn är en blå kantlinje för den panel som är i fokus. Och grå bakgrund för den senast valda funktionen och markeringen i funktionen. I exemplet har [!UICONTROL Components] och siddimensionen nyligen valts.
 

@@ -1,12 +1,12 @@
 ---
-description: Det finns två sätt att använda mätvärden i Analysis Workspace.
+description: Lär dig vilka mätvärden som är och hur du använder mätvärden i Adobe Analytics.
 title: Mätvärden
 feature: Metrics
 exl-id: 4edfb5d7-da20-4bd8-8041-387b291daf96
 role: User
-source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
+source-git-commit: f3c9a000ae5baa19cb5a6cf0e0343de3a9685b56
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Med mätvärden kan du kvantifiera datapunkter i Analysis Workspace. De används
 
 ## Använd mätvärden i Analysis Workspace
 
-Mätvärdena är flexibla i användningen inom Analysis Workspace. Dra ett mätvärde till en tom Freeform-tabell om du vill se mätningen trender över projektets datumperiod. Du kan också dra ett mått när det finns en dimension för att se mätvärdet jämfört med varje dimensionsobjekt. Om du drar ett mätresultat över ett befintligt måtthuvud ersätts det och om du drar ett mätvärde bredvid ett huvud kan du se båda mätvärdena sida vid sida.
+Mätvärdena är flexibla i användningen inom Analysis Workspace. Dra ett mätvärde till en tom Freeform-tabell om du vill se mätningen trender över projektets datumperiod. Du kan också dra ett mätvärde när det finns en dimension för att se hur mätvärdet jämförs med varje dimensionspost. Om du drar ett mätresultat över ett befintligt måtthuvud ersätts det befintliga mätvärdet, och om du drar ett mätvärde bredvid ett huvud kan du se båda mätvärdena sida vid sida.
 
 Mer information om hur du lägger till mått och andra typer av komponenter i Analysis Workspace finns i [Använda komponenter i Analysis Workspace](/help/components/use-components-in-workspace.md).
 
@@ -27,17 +27,11 @@ Mer information om hur du lägger till mått och andra typer av komponenter i An
 Adobe erbjuder flera typer av mätvärden som kan användas i Analysis Workspace:
 
 
-* **Standardmått**: Exempel på standardvärden är Folk, Sessioner och Händelser.
+* **Standardmått**: Exempel på standardvärden är Folk, Sessioner, Händelser, [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}-konton.
 
-  I motsats till Adobe Analytics kan du i Customer Journey Analytics definiera standardvärden på ett flexibelt sätt inom räckvidden för en anslutning och en datavy.
+  I motsats till Adobe Analytics kan du i Customer Journey Analytics definiera standardvärden på ett flexibelt sätt inom räckvidden för en anslutning och en datavy.  I [Standardmått](#standard-metrics) finns en fullständig lista med standardmått.
 
-   * **Personer**: Personmåttet i Customer Journey Analytics är antalet som skiljer sig från person-ID:n. Beroende på vad du väljer som person-ID när du konfigurerar datauppsättningar i din anslutning kan personmåttet betyda olika saker.
-   * **Sessioner**: Sessionsmätningen i Customer Journey Analytics är den som du definierar som en del av konfigurationen av sessionsinställningarna i datavyn. Se [Sessionsinställningar](/help/data-views/session-settings.md).
-   * **Händelser**: Händelsemåttet i Customer Journey Analytics består av händelser som ingår i alla händelsedatamängder som du har konfigurerat som en del av anslutningen.
-
-  I [Standardmått](#standard-metrics) finns en fullständig lista med standardmått.
-
-* **Beräknade mått** ![Beräkna](/help/assets/icons/Calculator.svg): Användardefinierade mått som baseras på standardvärden, statiska tal eller algoritmiska funktioner.
+* **Beräknade mått** ![Beräkna](/help/assets/icons/Calculator.svg): [Användardefinierade mått](/help/components/calc-metrics/calc-metr-overview.md) som baseras på standardvärden, statiska tal eller algoritmiska funktioner.
 
 * **Beräknade mätmallar** ![AdobeLogoSmall](/help/assets/icons/AdobeLogoSmall.svg) : Adobe-definierade mätvärden som beter sig på liknande sätt som beräknade mätvärden. Du kan använda dem som de är i Workspace-projekt eller spara en kopia för att anpassa logiken. Se [Beräknade standardvärden](calc-metrics/cm-workflow/../default-calcmetrics.md).
 
@@ -52,7 +46,7 @@ En fullständig lista över standardvärden i Customer Journey Analytics:
 
 ## Skapa beräknade mått
 
-Med beräknade mätvärden kan ni enkelt konfigurera hur mätvärden relaterar till varandra med hjälp av enkla operatorer eller statistiska funktioner. Mer information finns i [Översikt över beräknade mätvärden](/help/components/calc-metrics/calc-metr-overview.md).
+Med beräknade mätvärden kan du konfigurera hur mätvärden relaterar till varandra med hjälp av enkla operatorer eller statistiska funktioner. Mer information finns i [Översikt över beräknade mätvärden](/help/components/calc-metrics/calc-metr-overview.md).
 
 Det finns flera sätt att skapa beräknade mått. Den metod du väljer avgör om det beräknade måttet är tillgängligt från komponentlistan i alla projekt, eller bara i det projekt där det skapades.
 
@@ -82,15 +76,15 @@ Så här skapar du ett beräknat mått för ett enskilt projekt:
 
    När en kolumn är markerad är följande alternativ tillgängliga:
 
-   * [!UICONTROL **Medel**]: Skapar en ny kolumn som visar medelvärdet i uppsättningen med dimensionselement för kolumnen. Detta använder funktionen [Medel](/help/components/calc-metrics/cm-functions.md#mean).
+   * [!UICONTROL **Medel**]: Skapar en ny kolumn som visar medelvärdet i uppsättningen med dimensionselement för kolumnen. Det här kolumnvärdet använder funktionen [Medel](/help/components/calc-metrics/cm-functions.md#mean).
 
-   * [!UICONTROL **Median**]: Skapar en ny kolumn som visar medianvärdet i uppsättningen med dimensionselement för kolumnen. Detta använder funktionen [Median](/help/components/calc-metrics/cm-functions.md#median).
+   * [!UICONTROL **Median**]: Skapar en ny kolumn som visar medianvärdet i uppsättningen med dimensionselement för kolumnen. Det här kolumnvärdet använder funktionen [Median](/help/components/calc-metrics/cm-functions.md#median).
 
-   * [!UICONTROL **Kolumn max**]: Skapar en ny kolumn som visar det största värdet i uppsättningen med dimensionselement för kolumnen. Detta använder funktionen [Kolumnmaximum](/help/components/calc-metrics/cm-functions.md#column-maximum).
+   * [!UICONTROL **Kolumn max**]: Skapar en ny kolumn som visar det största värdet i uppsättningen med dimensionselement för kolumnen. Det här kolumnvärdet använder funktionen [Kolumnmaximum](/help/components/calc-metrics/cm-functions.md#column-maximum).
 
-   * [!UICONTROL **Kolumn min**]: Skapar en ny kolumn som visar det minsta värdet i uppsättningen med dimensionselement för kolumnen. Detta använder funktionen [Kolumnminimum](/help/components/calc-metrics/cm-functions.md#column-minimum).
+   * [!UICONTROL **Kolumn min**]: Skapar en ny kolumn som visar det minsta värdet i uppsättningen med dimensionselement för kolumnen. Det här kolumnvärdet använder funktionen [Kolumnminimum](/help/components/calc-metrics/cm-functions.md#column-minimum).
 
-   * [!UICONTROL **Kolumnsumma**]:Skapar en ny kolumn som lägger till alla numeriska värden för ett mått i en kolumn (över elementen i en dimension). Detta använder funktionen [Kolumnsumma](/help/components/calc-metrics/cm-functions.md#column-sum).
+   * [!UICONTROL **Kolumnsumma**]: Skapar en ny kolumn som lägger till alla numeriska värden för ett mått i en kolumn (över elementen i en dimension). Det här kolumnvärdet använder funktionen [Kolumnsumma](/help/components/calc-metrics/cm-functions.md#column-sum).
 
    När två kolumner är markerade är följande alternativ tillgängliga:
 
