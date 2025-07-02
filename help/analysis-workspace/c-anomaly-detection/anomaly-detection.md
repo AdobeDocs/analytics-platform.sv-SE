@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Ni kan visa och analysera dataavvikelser i sitt sammanhang inom Analysis Workspace.
 
-[Videosjälvstudiekurs om avvikelseidentifiering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html) (4:53)
+[Videosjälvstudiekurs om avvikelseidentifiering](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/anomaly-detection-in-analysis-workspace.html?lang=sv-SE) (4:53)
 
 Analysidentifiering är en statistisk metod för att fastställa hur ett givet mätresultat har ändrats i förhållande till tidigare data.
 

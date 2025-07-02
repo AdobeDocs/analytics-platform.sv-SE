@@ -27,7 +27,7 @@ Mer information om hur du lägger till mått och andra typer av komponenter i An
 Adobe erbjuder flera typer av mätvärden som kan användas i Analysis Workspace:
 
 
-* **Standardmått**: Exempel på standardvärden är Folk, Sessioner, Händelser, [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}-konton.
+* **Standardmått**: Exempel på standardvärden är Folk, Sessioner, Händelser, [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}-konton.
 
   I motsats till Adobe Analytics kan du i Customer Journey Analytics definiera standardvärden på ett flexibelt sätt inom räckvidden för en anslutning och en datavy.  I [Standardmått](#standard-metrics) finns en fullständig lista med standardmått.
 
