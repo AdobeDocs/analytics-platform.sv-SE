@@ -1,12 +1,12 @@
 ---
-description: Lär dig använda mallar i Analysis Workspace.
+description: Lär dig mer om standardmallarna i Analysis Workspace och hur du använder dessa standardmallar.
 title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '19784'
+source-wordcount: '19791'
 ht-degree: 0%
 
 ---
@@ -538,7 +538,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Lär dig vilka innehålls- och innehållsattribut som fungerar bäst."
->abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. [Lär dig mer](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics)<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att det innehåller högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
+>abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. [Lär dig mer](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics)<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att det innehåller högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
 
 <!-- markdownlint-enable MD034 -->
 

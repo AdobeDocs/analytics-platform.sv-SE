@@ -4,9 +4,9 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras visualiseringen av nyckelmätvärden i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Sammanfattning av nyckeltal](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras visualiseringen av nyckelmätvärden i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Sammanfattning av nyckeltal](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -141,18 +141,16 @@ Som en del av visualiseringsinställningarna finns det specifika viktiga sammanf
 
 ## Redigera visualisering
 
-När du har skapat visualiseringen kan du fortfarande redigera den ursprungliga konfigurationen.
+När du har skapat visualiseringen kan du redigera den ursprungliga konfigurationen.
 
-1. Klicka på pennikonen i det övre högra hörnet av visualiseringen (bredvid inställningsikonen).
+1. Välj ![Redigera](/help/assets/icons/Edit.svg) i det övre högra hörnet av visualiseringen.
 
-   ![Redigeringsikon för visualisering](assets/edit-icon.png)
-
-   Du återgår nu till den ursprungliga konfigurationsvyn.
+   Du dirigeras nu tillbaka till den ursprungliga [konfigurationsvyn](#configure).
 
 1. Ändra måttet, det primära datumintervallet, jämförelsedatumintervallet eller segmentet.
 
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)

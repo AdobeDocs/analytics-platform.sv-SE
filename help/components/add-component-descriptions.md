@@ -1,12 +1,12 @@
 ---
-description: Administratörer kan lägga till beskrivningar för komponenter i datavyn eller med hjälp av dataordlistan
-title: Lägg till komponentbeskrivningar
+description: Lär dig hur administratörer kan lägga till beskrivningar i komponenter med hjälp av en datavy eller dataordlistan.
+title: Lägga till komponentbeskrivningar
 feature: Components
 role: Admin
 exl-id: 99d531cd-50e9-4e6c-adad-a66b606fd877
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '168'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ Beskrivningar hjälper användarna att förstå hur de olika komponenterna anvä
 
 Customer Journey Analytics-administratörer kan lägga till beskrivningar för komponenter (mått, mått, segment och datumintervall) i en datavy eller med hjälp av datamappningslistan.
 
-## Lägga till beskrivningar i en datavy
+## Datavy
 
 Du kan lägga till en beskrivning till en komponent som du har lagt till i datavyn. Se [Komponentinställningar](/help/data-views/component-settings/overview.md).
 
-## Lägga till beskrivningar med hjälp av dataordlistan
+## Dataordlista
 
 Med Data Dictionary i Analysis Workspace kan både användare och administratörer hålla reda på och bättre förstå komponenterna i sin Customer Journey Analytics-miljö. I Data Dictionary kan administratörer lägga till komponentbeskrivningar direkt i Analysis Workspace.
 
@@ -32,5 +32,5 @@ Allmän information om dataordlistan finns i [Översikt över dataordlistan](/he
 >[!MORELIKETHIS]
 >
 >[Komponentinställningar för datavy](/help/data-views/component-settings/overview.md)
->&#x200B;>[Data dictionary-komponentposter ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>>[Data dictionary-komponentposter ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >

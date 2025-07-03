@@ -1,12 +1,12 @@
 ---
 title: Skapa anteckningar
-description: Så här skapar du anteckningar i Analysis Workspace.
+description: Lär dig skapa anteckningar i Analysis Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: f3c9a000ae5baa19cb5a6cf0e0343de3a9685b56
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---

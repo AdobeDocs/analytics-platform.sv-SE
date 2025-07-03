@@ -1,13 +1,13 @@
 ---
 title: Anteckningar - översikt
-description: Så här använder du anteckningar i Analysis Workspace.
+description: Lär dig använda anteckningar i Analysis Workspace.
 solution: Customer Journey Analytics
 feature: Components
 exl-id: a87f6968-27a5-4595-be4f-0a38e03b9398
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---

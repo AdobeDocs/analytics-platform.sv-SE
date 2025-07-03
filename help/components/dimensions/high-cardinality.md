@@ -1,11 +1,11 @@
 ---
-title: Höga kardinaldimensioner
-description: Beskriver hur Customer Journey Analytics hanterar dimensioner med många unika värden
+title: Hög kardinalnivå
+description: Förklara hur Customer Journey Analytics hanterar dimensioner med många unika värden.
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%

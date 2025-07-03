@@ -4,9 +4,9 @@ title: Så här visar du prognoser i Analysis Workspace
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
-source-git-commit: fea1b12a594a820ab2e55f850ca95c5a373184f0
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ I tabellen visas prognoser enligt följande:
 ![Visa prognos i tabell](assets/show-forecast-table.png)
 
 * Prognosvärdet och procentandelen för varje cell visas i **mörkgrått**.
-* En prognossymbol anger ett prognosvärde <img src="./assets/forecast.svg" alt="Prognossymbol" width="20" /> visas i cellens övre högra hörn.
+* Om du vill ange ett prognosvärde visas prognossymbolen ![ForecastAnalytics](/help/assets/icons/ForecastAnalytics.svg) i cellens övre högra hörn.
 
 
 ## Visa prognoser i ett linjediagram
