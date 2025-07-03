@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 feature: Workspace Basics
 title: Felsökning av projekt
 role: User
-source-git-commit: 4d902bab01c1c795cb7d852066128f6b9db0823a
+source-git-commit: ae8c1fb127accae53ab9363a8cceedd5221a245b
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Med felsökningsfunktionen för projekt kan du och Adobe Support felsöka proble
 
 >[!NOTE]
 >
->Om du vill använda felsökaren måste du ha **Redigera** eller **Kopiera** [åtkomst till projektet](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-25744).
+>Om du vill använda felsökaren måste du ha **Redigera** eller **Kopiera** [åtkomst till projektet](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
 >
 
 
@@ -55,7 +55,7 @@ Så här använder du felsökaren för en viss visualisering:
 
    * **[!UICONTROL Request timestamp]**
    * **[!UICONTROL Response timestamp]**
-   * **[!UICONTROL &#x200B; Request time]**
+   * **[!UICONTROL Request time]**
    * **[!UICONTROL Queue time]**
    * **[!UICONTROL Server processing time]**
    * **[!UICONTROL Lookup time]**
@@ -75,7 +75,7 @@ Så här använder du felsökaren för en viss visualisering:
    * JSON (svar)
    * Lätt begäran
 
-1. Använd ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy to clipboard]**&#x200B;d under **[!UICONTROL cURL Request]** för att kopiera begäran till Urklipp.
+1. Använd ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy to clipboard]** under **[!UICONTROL cURL Request]** för att kopiera begäran till Urklipp.
 1. Håll markören över något av textområdena **[!UICONTROL Request]** eller **[!UICONTROL Response]** som ska visas och välj ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy to clipboard]** för att kopiera innehållet i textområdet (XML eller JSON) till Urklipp.
 
 1. Utbyt den information du har kopierat och vilken Adobe Support har begärt för att felsöka visualiseringarna i ditt Analysis Workspace-projekt.
