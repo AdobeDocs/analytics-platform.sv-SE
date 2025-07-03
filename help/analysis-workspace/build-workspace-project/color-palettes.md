@@ -1,17 +1,17 @@
 ---
 description: Så här ändrar du färgpaletten för visualisering eller anger en egen anpassad färgpalett.
-title: Visualiseringsfärgpalett
+title: Visualiseringsfärgpaletter
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 1%
 
 ---
 
-# Visualiseringsfärgpalett {#visualization-color-palette}
+# Visualiseringsfärgpaletter {#visualization-color-palettes}
 
 <!-- markdownlint-disable MD034 -->
 
