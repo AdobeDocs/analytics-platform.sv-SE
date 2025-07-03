@@ -17,7 +17,7 @@ Med felsökningsfunktionen för projekt kan du och Adobe Support felsöka proble
 
 >[!NOTE]
 >
->Om du vill använda felsökaren måste du ha **Redigera** eller **Kopiera** [åtkomst till projektet](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
+>Om du vill använda felsökaren måste du ha **Redigera** eller **Kopiera** [åtkomst till projektet](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-25744).
 >
 
 
