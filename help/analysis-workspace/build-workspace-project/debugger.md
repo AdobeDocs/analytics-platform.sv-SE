@@ -55,7 +55,7 @@ Så här använder du felsökaren för en viss visualisering:
 
    * **[!UICONTROL Request timestamp]**
    * **[!UICONTROL Response timestamp]**
-   * **[!UICONTROL  Request time]**
+   * **[!UICONTROL &#x200B; Request time]**
    * **[!UICONTROL Queue time]**
    * **[!UICONTROL Server processing time]**
    * **[!UICONTROL Lookup time]**
@@ -75,7 +75,7 @@ Så här använder du felsökaren för en viss visualisering:
    * JSON (svar)
    * Lätt begäran
 
-1. Använd ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy to clipboard]**d under **[!UICONTROL cURL Request]** för att kopiera begäran till Urklipp.
+1. Använd ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy to clipboard]**&#x200B;d under **[!UICONTROL cURL Request]** för att kopiera begäran till Urklipp.
 1. Håll markören över något av textområdena **[!UICONTROL Request]** eller **[!UICONTROL Response]** som ska visas och välj ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy to clipboard]** för att kopiera innehållet i textområdet (XML eller JSON) till Urklipp.
 
 1. Utbyt den information du har kopierat och vilken Adobe Support har begärt för att felsöka visualiseringarna i ditt Analysis Workspace-projekt.

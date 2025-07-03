@@ -32,5 +32,5 @@ Allmän information om dataordlistan finns i [Översikt över dataordlistan](/he
 >[!MORELIKETHIS]
 >
 >[Komponentinställningar för datavy](/help/data-views/component-settings/overview.md)
->>[Data dictionary-komponentposter ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
+>&#x200B;>[Data dictionary-komponentposter ](/help/components/data-dictionary/edit-entries-data-dictionary.md)
 >
