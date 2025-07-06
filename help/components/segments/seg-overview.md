@@ -165,7 +165,7 @@ Händelsebehållare innehåller värdebaserade, enkelsidiga uppdelningar för:
 
 ### B2B-behållare
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 När du har tillgång till [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) finns det fler behållare som kan användas i segment. Mer information om hur du använder dessa ytterligare behållare finns i [B2B-koncept och -funktioner](/help/getting-started/cja-b2b-concepts-features.md).
 

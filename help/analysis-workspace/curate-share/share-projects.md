@@ -61,9 +61,9 @@ Du kan dela en specifik roll med användare eller grupper eller dela en länk.
 
 När du delar en specifik projektroll med användare och grupper i organisationen bör du tänka på följande:
 
-* Projektroller (**[!UICONTROL Edit original]**, **[!UICONTROL Edit copy]** och **[!UICONTROL Read only]**) är kopplade till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started).
+* Projektroller (**[!UICONTROL Edit original]**, **[!UICONTROL Edit copy]** och **[!UICONTROL Read only]**) är kopplade till användaren och ett specifikt projekt-ID. Projektroller är oberoende av användarbehörigheter som hanteras i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/sv/docs/core-services/interface/administration/admin-getting-started).
 
-* I Customer Journey Analytics definieras grupper av produktprofiler i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-getting-started). Administratörer kan dela till alla grupper, inklusive *Alla*. Icke-administratörer kan dela till alla grupper som de är medlemmar i, utom *Alla*.
+* I Customer Journey Analytics definieras grupper av produktprofiler i [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/sv/docs/core-services/interface/administration/admin-getting-started). Administratörer kan dela till alla grupper, inklusive *Alla*. Icke-administratörer kan dela till alla grupper som de är medlemmar i, utom *Alla*.
 
 * En användare som placeras i flera roller får alltid den högsta upplevelsen. Detta scenario kan inträffa om en användare läggs till både som individ och som en del av en grupp. Om en användare till exempel får rollen **[!UICONTROL Edit original]** som individ och rollen **[!UICONTROL Read only]** som medlem i en grupp får användaren en **[!UICONTROL Edit original]**-projekterfarenhet.
 

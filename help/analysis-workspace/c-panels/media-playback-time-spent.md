@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln visas hur länge mediespelningen har pågått i panelen_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Mer information om [&#128279;](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)-versionen av den här artikeln finns i _&#x200B;**Medieuppspelningstiden på den här panelen**._
+_I den här artikeln visas hur länge mediespelningen har pågått i panelen_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Mer information om [&#128279;](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)-versionen av den här artikeln finns i _&#x200B;**Medieuppspelningstiden på den här panelen**._
 
 >[!ENDSHADEBOX]
 

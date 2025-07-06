@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs panelen Snabbinsikter i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs panelen Snabbinsikter i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/quickinsight) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
