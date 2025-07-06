@@ -60,7 +60,7 @@ Den uppspelningstid som spenderas kan hjälpa dig att förstå:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Medieuppspelningstid som använts](https://video.tv.adobe.com/v/338699){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Medieuppspelningstid som använts](https://video.tv.adobe.com/v/3446704?captions=swe){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
