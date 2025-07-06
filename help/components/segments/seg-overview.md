@@ -207,7 +207,7 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 >[!MORELIKETHIS]
 >
 >[Skapa segment](seg-create.md)
->>[Segmentbyggare](seg-builder.md)
->>[Snabbsegment ](seg-quick.md)
->>[Sekventiella segment ](seg-sequential-build.md)
->>[Hantera segment ](seg-manage.md)
+>&#x200B;>[Segmentbyggare](seg-builder.md)
+>&#x200B;>[Snabbsegment ](seg-quick.md)
+>&#x200B;>[Sekventiella segment ](seg-sequential-build.md)
+>&#x200B;>[Hantera segment ](seg-manage.md)

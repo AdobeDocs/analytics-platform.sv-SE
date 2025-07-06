@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln visas hur länge mediespelningen har pågått i panelen_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Mer information om [ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)-versionen av den här artikeln finns i _**Medieuppspelningstiden på den här panelen**._
+_I den här artikeln visas hur länge mediespelningen har pågått i panelen_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Mer information om [&#128279;](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)-versionen av den här artikeln finns i _&#x200B;**Medieuppspelningstiden på den här panelen**._
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ _I den här artikeln visas hur länge mediespelningen har pågått i panelen_ ![
 >[!NOTE]
 >
 >Den genomsnittliga minuten-panelen för media är endast tillgänglig för kunder som har köpt tillägget Streaming Media Collection för Customer Journey Analytics.
->>Kontakta din Adobe-säljare eller Adobe-kontogrupp om du vill ha mer information.
+>&#x200B;>Kontakta din Adobe-säljare eller Adobe-kontogrupp om du vill ha mer information.
 >
 
 Panelen **[!UICONTROL Media playback time spent]** gör det möjligt att analysera uppspelningen över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra.
@@ -129,6 +129,6 @@ Det enda mätvärdet som kan användas i den här panelen är Använd uppspelnin
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
->>[Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
+>&#x200B;>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
+>&#x200B;>[Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
 >
