@@ -1,11 +1,11 @@
 ---
-description: Genom att segmentera enskilda mätvärden kan ni göra måttjämförelser i samma rapport.
-title: Segmenterade mätvärden
+description: Lär dig segmentera på enskilda mätvärden, vilket gör att du kan göra måttjämförelser inom samma visualisering.
+title: Segmenterade mått
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---

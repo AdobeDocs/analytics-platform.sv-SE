@@ -1,17 +1,17 @@
 ---
 description: Lär dig hur du visar prognoser i en tabell eller i ett linjediagram.
-title: Så här visar du prognoser i Analysis Workspace
+title: Visa prognoser
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
 
-# Visa prognoser i Analysis Workspace
+# Visa prognoser
 
 Du kan visa prognoser i en frihandstabell eller i ett linjediagram.
 

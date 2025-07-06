@@ -1,9 +1,9 @@
 ---
-description: Läs mer om mätningstyp och attribuering
+description: Lär dig mer om mätningstyp och attribuering.
 title: Mättyp och attribut
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: 304b8d85767d89ee60a6fb37a128194f60ca89d4
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
@@ -163,6 +163,6 @@ Se [Exempel](#example) för ett exempel på hur du använder en attribueringsmod
 >[!MORELIKETHIS]
 >
 >[Inställningar för attribueringskomponent](/help/data-views/component-settings/attribution.md)
->&#x200B;>[Deltagandemått ](participation-metric.md)
+>>[Deltagandemått ](participation-metric.md)
 >
 

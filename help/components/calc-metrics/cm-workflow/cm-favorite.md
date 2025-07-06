@@ -1,11 +1,11 @@
 ---
-description: Att markera beräknade värden som favoriter är ett annat sätt att ordna dem så att de blir lätta att använda.
+description: Organisera beräknade mätvärden genom att markera beräknade mätvärden som favoriter.
 title: Markera beräknade värden som favoriter
 feature: Calculated Metrics
 exl-id: f0c9387f-16a4-40c5-9bed-73b871efd22e
-source-git-commit: 65eafd65358d9370b452338ce1036e59b3c69d1a
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---

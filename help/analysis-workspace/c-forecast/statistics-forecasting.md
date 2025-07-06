@@ -1,17 +1,17 @@
 ---
-description: Prognoser i Analysis Workspace använder en serie avancerade statistiska tekniker för att fastställa prognosvärden.
-title: Statistiska tekniker som används i prognoser
+description: Läs om hur prognosticeringar i Analysis Workspace använder en serie avancerade statistiska tekniker för att fastställa prognosvärden.
+title: Statistiska tekniker
 feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
-source-git-commit: accd7300c2dd6224e4d154cb6e3889f564e07a1a
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
 
-# Statistiska tekniker som används i prognostjänsten
+# Statistisk teknik
 
 Prognostjänsten har för närvarande stöd för Prophet och har visat sig fungera effektivt och tillförlitligt för de flesta data. Prophet är ett vanligt populärt paket med öppen källkod som utvecklats av Meta. Data delas upp i komponenter för trender, säsongseffekter och händelser. Prophetmodellen är effektiv och kan skalas upp till många prognosprogram. Dessutom fungerar modellen rejält mot avvikelser och data som saknas.
 

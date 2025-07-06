@@ -4,9 +4,9 @@ description: Lär dig använda och tolka attribueringspanelen i Analysis Workspa
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '655'
 ht-degree: 8%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln dokumenterar panelen Attribution i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Attribution panel](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/attribution) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_Den här artikeln dokumenterar panelen Attribution i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Se [Attribution panel](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/attribution) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -66,7 +66,7 @@ Du kan konfigurera panelen Attribution med följande indatainställningar:
 
    ![Panelfönstret Attribution visar flera valda dimensioner och mått.](assets/attribution-panel.png)
 
-1. Välj en eller flera [attribueringsmodeller](#attribution-models) från **[!UICONTROL Included models]** och ett [uppslagsfönster](#lookback-window) från **[!UICONTROL Lookback window]** som du vill använda för jämförelse.
+1. Välj en eller flera [attribueringsmodeller](#attribution-models) från **[!UICONTROL Included models]**, [container](#container) från **[!UICONTROL Container]** och ett [uppslagsfönster](#lookback-window) från **[!UICONTROL Lookback window]** som du vill använda för jämförelse.
 
 1. Välj **[!UICONTROL Build]** om du vill skapa visualiseringar i panelen.
 
@@ -88,7 +88,7 @@ Följande visualisering är en del av panelutdata.
 * **Trended Performance**: Visar trenden för konverteringar av attribut för den översta dimensionsobjektet. Om du markerar andra rader i den angränsande friformstabellen uppdateras visualiseringen så att den återspeglar din markering.
 * **Flöde**: Gör att du kan se vilka kanaler som interagerar mest och i vilken ordning de interagerar under en persons resa.
 
-## Attributionsmodeller
+## Attributionsmodell
 
 {{attribution-models-details}}
 

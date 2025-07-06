@@ -1,12 +1,12 @@
 ---
 title: Grundfunktioner
-description: Med beräkningsverktyget kan du använda statistiska och matematiska funktioner för att skapa avancerade beräknade värden.
+description: Lär dig mer om grundläggande funktioner för beräknade värden.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: 47c5fc27d994667933103f864a253e086050bbf8
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1801'
 ht-degree: 1%
 
 ---

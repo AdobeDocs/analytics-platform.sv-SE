@@ -1,12 +1,12 @@
 ---
 description: Läs mer om fel och felsökning för Analysis Workspace.
-title: Fel vid felsökning i Analysis Workspace
-feature: FAQ
+title: Fel och felsökning
+feature: Workspace Basics
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
-source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '497'
 ht-degree: 11%
 
 ---
@@ -36,4 +36,4 @@ När du använder Analysis Workspace kan du använda informationen nedan för at
 | Problem | Felsöka |
 |---|---|
 | När jag drar ett mätresultat över står det *Ogiltiga data*. | Ogiltiga data innebär att Adobe inte kan returnera data med den kombination av mått och mätvärden som används i rapporten. Två mätvärden som staplas ovanpå varandra kan till exempel inte returneras som data, eftersom det inte finns något sätt att visa två mätvärden på det sättet. Istället placerar du mätvärdena sida vid sida. |
-| När jag drar ett mätresultat över ser jag inga verkliga data - bara nollor. | Om du har skapat en rapport om arbetsytan men det inte finns några data kan du kontrollera några saker:<ul><li>Om du tillämpade ett segment i rapporten kanske segmentvillkoren inte matchar några data. Prova med att ta bort segmentet eller justera segmentdefinitionen.</li><li>Kontrollera datumintervallet i det övre högra hörnet och se till att det har ett förväntat värde.</li><li>Navigera till webbplatsen och använd [Felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=sv-SE) för att verifiera att data samlas in.</li></ul> |
+| När jag drar ett mätresultat över ser jag inga verkliga data - bara nollor. | Om du har skapat en rapport om arbetsytan men det inte finns några data kan du kontrollera några saker:<ul><li>Om du tillämpade ett segment i rapporten kanske segmentvillkoren inte matchar några data. Prova med att ta bort segmentet eller justera segmentdefinitionen.</li><li>Kontrollera datumintervallet i det övre högra hörnet och se till att det har ett förväntat värde.</li><li>Navigera till webbplatsen och använd [Felsökning](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html) för att verifiera att data samlas in.</li></ul> |

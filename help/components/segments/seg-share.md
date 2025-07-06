@@ -1,12 +1,12 @@
 ---
-description: Beroende på dina behörigheter kan du dela segment med hela organisationen, grupper eller enskilda användare.
+description: Lär dig hur du kan dela segment med hela organisationen, grupper eller enskilda användare.
 title: Dela segment
 feature: Filters, Segments
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I [segmenthanteraren](seg-manage.md) kan du dela segment. Beroende på dina behörigheter kan du dela segment med hela organisationen, grupper eller enskilda användare:
 
-* **Administratörer**: Administratörer kan dela segment med hela organisationen, med grupper inom en organisation och med enskilda användare. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/se/enterprise/using/manage-products.html).
+* **Administratörer**: Administratörer kan dela segment med hela organisationen, med grupper inom en organisation och med enskilda användare. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/enterprise/using/manage-products.html).
 * **Icke-administratörer**: Icke-administratörer kan bara dela de segment som de har skapat och endast med enskilda användare. |
 
 Dela ett eller flera segment:

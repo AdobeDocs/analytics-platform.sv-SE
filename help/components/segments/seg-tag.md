@@ -1,12 +1,12 @@
 ---
-description: Du kan lägga till märkord i segment för att ordna dem.
+description: Lär dig hur du märker segment så att du kan ordna dem.
 title: Tagga segment
 feature: Filters, Segments
 exl-id: d3b8d9f7-11a4-4eac-8c22-5c86601ec7f3
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---

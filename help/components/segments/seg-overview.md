@@ -1,10 +1,10 @@
 ---
-title: Översikt över segment
+title: Segmenteringsöversikt
 description: Förstå vilka segment som används för och hur du skapar ett enkelt segment.
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters, Segments
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%
@@ -165,7 +165,7 @@ Händelsebehållare innehåller värdebaserade, enkelsidiga uppdelningar för:
 
 ### B2B-behållare
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 När du har tillgång till [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) finns det fler behållare som kan användas i segment. Mer information om hur du använder dessa ytterligare behållare finns i [B2B-koncept och -funktioner](/help/getting-started/cja-b2b-concepts-features.md).
 
@@ -207,7 +207,7 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 >[!MORELIKETHIS]
 >
 >[Skapa segment](seg-create.md)
->&#x200B;>[Segmentbyggare](seg-builder.md)
->&#x200B;>[Snabbsegment ](seg-quick.md)
->&#x200B;>[Sekventiella segment ](seg-sequential-build.md)
->&#x200B;>[Hantera segment ](seg-manage.md)
+>>[Segmentbyggare](seg-builder.md)
+>>[Snabbsegment ](seg-quick.md)
+>>[Sekventiella segment ](seg-sequential-build.md)
+>>[Hantera segment ](seg-manage.md)

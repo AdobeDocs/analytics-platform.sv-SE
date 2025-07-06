@@ -1,9 +1,9 @@
 ---
-description: Sekventiella segment är segment som använder operatorn THEN för att definiera segmentvillkorssekvensen.
-title: Sekventiella segment
+description: Lär dig mer om sekventiella segment som använder operatorn THEN för att definiera en sekvens av segmentvillkor.
+title: SequentialSsegments
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 1%
@@ -91,7 +91,7 @@ Så här använder du tidsbegränsningar för operatorn **[!UICONTROL Then]**:
 1. Välj ![Klocka](/help/assets/icons/Clock.svg).
 1. Välj **[!UICONTROL Within]** eller **[!UICONTROL After]** på snabbmenyn.
 1. Ange en tidsperiod (**[!UICONTROL Minute]**, **[!UICONTROL Hour]**, fram till **[!UICONTROL Years]**).
-1. Välj ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;för att öppna ett popup-fönster där du kan skriva in eller ange ett nummer med **[!UICONTROL -]**&#x200B;eller **[!UICONTROL +]**.
+1. Välj ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**för att öppna ett popup-fönster där du kan skriva in eller ange ett nummer med **[!UICONTROL -]**eller **[!UICONTROL +]**.
 
 Använd ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tidsbegränsning.
 
@@ -296,7 +296,7 @@ Identifiera personer som besökt en sida och som då uttryckligen inte besökt e
 
 #### [!UICONTROL Exclude] [!UICONTROL Or]
 
-Identifiera personer som besökt en sida och som då uttryckligen inte besökt någon sida i en uppsättning sidor, men som besökt ännu en sida. Till exempel besökte de som besökte hemsidan inte sidan Män och Kvinnor, utan besökte barnsidan.
+Identifiera personer som besökt en sida och som då uttryckligen inte besökt någon sida i en uppsättning sidor, men som besökt ännu en sida. Till exempel besökte personer som besökte hemsidan och inte sidan Män och Kvinnor, utan också barnsidan.
 
 ![Logikgrupp exkluderad och](assets/logicgroup-exclude-or.png)
 

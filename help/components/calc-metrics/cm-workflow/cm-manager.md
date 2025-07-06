@@ -1,9 +1,9 @@
 ---
-description: Med hanteraren för beräknade mätvärden kan du dela, filtrera, tagga, godkänna, kopiera, ta bort och markera som favoriter.
-title: Beräknad måtthanterare
+description: Lär dig hur du delar, filtrerar, taggar, godkänner, kopierar, tar bort beräknade värden och markerar beräknade värden som favoriter.
+title: Hantera beräknade värden
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%

@@ -1,11 +1,11 @@
 ---
-description: Filtrera efter taggar, datavy, ägare och andra filter (Visa alla, Min, Delas med mig, Favoriter och Godkänd).
-title: Filtrera beräknade värden
+description: Lär dig hur du filtrerar beräknade värden efter taggar, datavy, ägare och andra filter.
+title: Filtrera listan med beräknade värden
 feature: Calculated Metrics
 exl-id: 902da464-14de-45b9-bd92-d2db064cb095
-source-git-commit: 1907d94a0f53ee65a3839d879da6c06092f75e0f
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '141'
 ht-degree: 0%
 
 ---

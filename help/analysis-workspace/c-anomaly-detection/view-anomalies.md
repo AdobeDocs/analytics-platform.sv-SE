@@ -1,12 +1,12 @@
 ---
-description: Förstå hur ni kan visa och analysera dataavvikelser i sitt sammanhang, inom Analysis Workspace.
-title: Översikt över avvikelseidentifiering
+description: Förstå hur ni kan visa och analysera dataavvikelser inom Analysis Workspace.
+title: Visa Anomalier
 feature: Anomaly Detection
 exl-id: a76fd967-e4ae-4616-83ce-19de67300f0c
 role: User
-source-git-commit: 808b09d79d3c686747f7b19b6646001e3345b9aa
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---

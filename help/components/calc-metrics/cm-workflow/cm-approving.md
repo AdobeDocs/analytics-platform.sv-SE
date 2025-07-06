@@ -1,11 +1,11 @@
 ---
-description: I hanteraren för beräknade mätvärden kan du skapa ett arbetsflöde som innefattar godkännande av mätvärden för olika programnivåer och för specifika avdelningar eller grupper.
+description: Lär dig hur du godkänner beräknade värden.
 title: Godkänn beräknade värden
 feature: Calculated Metrics
 exl-id: da55bb2b-9d42-4fba-add4-655f7f7c7ef6
-source-git-commit: ef97b36a95e5f39f7436f5e21861d1ee5a0338dd
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---

@@ -1,12 +1,12 @@
 ---
 title: Avancerade funktioner
-description: Du får åtkomst till dessa funktioner genom att markera Visa avancerat i listrutan Funktioner.
+description: Lär dig mer om avancerade beräkningsmätfunktioner.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: ca1aae1291119214f3b051f9b6df8ddcd58faa6c
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '4964'
+source-wordcount: '4958'
 ht-degree: 1%
 
 ---

@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1269'
 ht-degree: 10%
 
 ---
@@ -234,7 +234,7 @@ ht-degree: 10%
       + [Venn](../analysis-workspace/visualizations/venn.md)
    + Panel {#panels}
       + [Översikt](../analysis-workspace/c-panels/panels.md)
-      + [Tom](../analysis-workspace/c-panels/blank-panel.md)
+      + [Tom panel](../analysis-workspace/c-panels/blank-panel.md)
       + [Tillskrivning](../analysis-workspace/c-panels/attribution.md)
       + [Experimentation](../analysis-workspace/c-panels/experimentation.md)
       + [Frihandsfigur](../analysis-workspace/c-panels/freeform-panel.md)
@@ -254,6 +254,12 @@ ht-degree: 10%
       + [Ladda ned](../analysis-workspace/export/download-send.md)
       + [Skicka och schemalägg](../analysis-workspace/export/t-schedule-report.md)
       + [Exportera till molnet](../analysis-workspace/export/export-cloud.md)
+   + Tillskrivning {#attribution}
+      + [Attributionsöversikt](../analysis-workspace/attribution/overview.md)
+      + [Modell-, behållare- och uppslagsfönster](../analysis-workspace/attribution/models.md)
+      + [Algoritmisk attribuering](../analysis-workspace/attribution/algorithmic.md)
+      + [God praxis](../analysis-workspace/attribution/best-practices.md)
+      + [Frågor och svar](../analysis-workspace/attribution/faq.md)
    + Avvikelseidentifiering {#anomaly-detection}
       + [Översikt](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
       + [Visa avvikelser](../analysis-workspace/c-anomaly-detection/view-anomalies.md)
@@ -268,7 +274,7 @@ ht-degree: 10%
       + [Optimera prestanda](../analysis-workspace/workspace-faq/optimizing-performance.md)
       + [Fel och felsökning](../analysis-workspace/workspace-faq/error-messages.md)
       + [Begränsningar](../analysis-workspace/workspace-faq/aw-limitations.md)
-      + [Administrationskrav](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
+      + [Krav](../analysis-workspace/workspace-faq/frequently-asked-questions-analysis-workspace.md)
       + [Tillgänglighet](../analysis-workspace/workspace-faq/aw-accessibility.md)
 
 + Content Analytics {#content-analytics}
@@ -346,10 +352,12 @@ ht-degree: 10%
       + [Översikt](../components/calc-metrics/calc-metr-overview.md)
       + Arbetsflöde {#cm-workflow}
          + [Skapa beräknade mått](../components/calc-metrics/cm-workflow/cm-workflow.md)
-         + [Bygg beräknade värden](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
          + [Hitta mätvärden](../components/calc-metrics/cm-workflow/cm-finding.md)
+         + [Bygg beräknade värden](../components/calc-metrics/cm-workflow/cm-build-metrics.md)
+         + [Ett enkelt exempel](../components/calc-metrics/cm-workflow/cm-pvv.md)
+         + [Ett mer komplext exempel](../components/calc-metrics/cm-workflow/cm-orders-participation.md)
          + [Mättyp och attribuering](../components/calc-metrics/cm-workflow/m-metric-type-alloc.md)
-         + [Bygg ett deltagandemått](../components/calc-metrics/cm-workflow/participation-metric.md)
+         + [Deltagandestatistik](../components/calc-metrics/cm-workflow/participation-metric.md)
          + [Segmenterade mätvärden](../components/calc-metrics/cm-workflow/metrics-with-segments.md)
          + [Stapla och ersätta segment](../components/calc-metrics/cm-workflow/cm-stack-seg.md)
          + [Filtrera beräknade värden](../components/calc-metrics/cm-workflow/cm-filter.md)

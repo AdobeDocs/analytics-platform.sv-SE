@@ -1,12 +1,12 @@
 ---
 description: Läs om de olika möjligheterna att hämta data från ditt Analysis Workspace-projekt.
-title: Ladda ned Analysis Workspace-projekt och data
+title: Hämta projekt och data
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1149'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ Så här hämtar du ett projekt som en PDF-fil:
 1. Välj **[!UICONTROL Project]** > **[!UICONTROL Download PDF]**.
 Ett grönt fält med meddelandet ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Your download has been requested. Please wait.]** visas.
 
-1. När nedladdningen är klar visas ett grönt fält med meddelandet ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Projektets namn *PDF.]**&#x200B;visas.
-Välj&#x200B;**[!UICONTROL Download]**&#x200B;om du vill hämta PDF. Hur exakt PDF presenteras eller laddas ned beror på vilken webbläsarkonfiguration du har för att hantera PDF-dokument.
+1. När nedladdningen är klar visas ett grönt fält med meddelandet ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL *Projektets namn *PDF.]**visas.
+Välj**[!UICONTROL Download]**om du vill hämta PDF. Hur exakt PDF presenteras eller laddas ned beror på vilken webbläsarkonfiguration du har för att hantera PDF-dokument.
 
 
 Så här hämtar du ett projekt som en CSV-fil:
@@ -107,8 +107,8 @@ Följande funktioner i en frihandstabell används i den hämtade filen:
 
 När filen laddas ned visas följande meddelanden:
 
-* Ett blått **[!UICONTROL _tabellnamn _-_Dimension _.csv har begärts._x _% slutfört]**&#x200B;anger förloppet. Om du vill avbryta hämtningen väljer du **[!UICONTROL Cancel download]**. Välj ![CrossSize100](/help/assets/icons/CrossSize100.svg) om du vill stänga meddelandet, som inte avbryter hämtningen.
-* Ett grönt **[!UICONTROL _tabellnamn _-_Dimension _.csv har hämtats]**&#x200B;meddelande om slutförd filhämtning. Filen hämtas till den nedladdningsmapp som är konfigurerad för webbläsaren.
+* Ett blått **[!UICONTROL _tabellnamn _-_Dimension _.csv har begärts._x _% slutfört]**anger förloppet. Om du vill avbryta hämtningen väljer du **[!UICONTROL Cancel download]**. Välj ![CrossSize100](/help/assets/icons/CrossSize100.svg) om du vill stänga meddelandet, som inte avbryter hämtningen.
+* Ett grönt **[!UICONTROL _tabellnamn _-_Dimension _.csv har hämtats]**meddelande om slutförd filhämtning. Filen hämtas till den nedladdningsmapp som är konfigurerad för webbläsaren.
 
 Om du begär mer än en nedladdning åt gången får du ett meddelande om att varje ytterligare nedladdning är i kö tills den tidigare nedladdningen är klar.
 

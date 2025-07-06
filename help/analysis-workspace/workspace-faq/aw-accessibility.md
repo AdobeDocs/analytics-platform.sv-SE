@@ -1,12 +1,12 @@
 ---
 description: Läs om tillgänglighetsfunktionerna i Analysis Workspace.
 title: Tillgänglighet i Analysis Workspace
-feature: FAQ
+feature: Workspace Basics
 exl-id: 1616c625-8914-4ede-815d-e8d62e796ea5
 role: User
-source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Med hjälpmedel avses att göra produkter användbara för personer med funktion
 Navigering i [!UICONTROL Analysis Workspace] fungerar uppifrån och ned och från vänster till höger. Följande navigeringselement underlättar tillgängligheten:
 
 * Med tangenten **[!UICONTROL Tab]** kan du skapa genvägar mellan större avsnitt i Workspace. I den vänstra panelen kan du i **[!UICONTROL Tab]** även gå från ett dragbart alternativ till nästa.
-* &rbrace;︎ ◀ och {1 }︎ flyttas mellan enskilda element efter att tangenten ▶ har markerat ett element.**[!UICONTROL Tab]**
+* }︎ ◀ och {1 }︎ flyttas mellan enskilda element efter att tangenten ▶ har markerat ett element.**[!UICONTROL Tab]**
 * **[!UICONTROL F6]**-tangenten navigerar till den första panelen i projektet och förflyttar sig mellan visualiseringarna på den panelen. Sedan flyttas den till nästa panel i projektet och upprepas.
 * Fokusindikatorer används så att synkade tangentbordsanvändare har en tydlig indikation på vilket gränssnittselement som är i fokus. Indikatorn är en blå kantlinje för den panel som är i fokus. Och grå bakgrund för den senast valda funktionen och markeringen i funktionen. I exemplet har [!UICONTROL Components] och siddimensionen nyligen valts.
 
@@ -54,7 +54,7 @@ Navigering i [!UICONTROL Analysis Workspace] fungerar uppifrån och ned och frå
 
 ### Kortkommandon (snabbtangenter)
 
-[!UICONTROL Analysis Workspace] erbjuder en mängd [kortkommandon](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) för ett smidigare arbetsflöde.
+[!UICONTROL Analysis Workspace] erbjuder en mängd [kortkommandon (snabbtangenter)](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md) för ett smidigare arbetsflöde.
 
 ## Stöd för skärmläsare och skärmförstorare
 

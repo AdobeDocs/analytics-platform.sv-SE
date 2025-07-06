@@ -1,12 +1,12 @@
 ---
+description: Lär dig hur du använder segmenthanteraren för att hantera segment, till exempel dela, filtrera, tagga, godkänna, kopiera, ta bort segment och markera segment som favoriter.
 title: Hantera segment
-description: Lär dig hantera segment i Customer Journey Analytics
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters, Segments
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Du kan vidta åtgärder för segment med åtgärdsfältet ➋. Åtgärdsfältet 
 | ![Sök](/help/assets/icons/Search.svg) [!UICONTROL *Sök efter titel*] | Om inget segment är markerat i listan söker du efter segment med det här sökfältet. |
 | ![Etikett](/help/assets/icons/Label.svg) **[!UICONTROL Tag]** | Tagga de markerade segmenten. I dialogrutan **[!UICONTROL Tag Segment]** markerar eller avmarkerar du taggarna för de markerade segmenten. Välj **[!UICONTROL Save]** om du vill spara taggarna för de valda segmenten. Mer information finns i [Tagga segment](/help/components/segments/seg-tag.md). |
 | ![Dela](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share]** | Dela de markerade segmenten. I dialogrutan **[!UICONTROL Share Segment]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda segmenten. Mer information finns i [Dela segment](seg-share.md). |
-| ![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Ta bort markerade segment. Du uppmanas att bekräfta åtgärden. |
+| ![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** | Ta bort markerade segment. Du uppmanas att bekräfta åtgärden. <br/>När du tar bort ett segment ska du tänka på följande: <ul><li>Schemalagda rapporter och projekt som använder det här segmentet fortsätter att fungera som vanligt.</li><li> Schemalagda rapporter uppdateras inte när du redigerar ett segment med samma namn.</li> </ul> |
 | ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Rename]** | Byt namn på ett enskilt markerat segment. När du har markerat det här alternativet kan du byta namn på segmentet. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Approve]** | Godkänn de markerade segmenten. Mer information finns i [Godkänn segment](seg-approve.md). |
 | ![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** | Kopiera det markerade segmentet. Nya segment skapas med samma namn och suffix `(Copy)`. |

@@ -1,9 +1,9 @@
 ---
 description: Lär dig hur du skapar beräknade värden.
-title: Skapa beräknade mått
+title: Skapa beräknade värden
 feature: Calculated Metrics
 exl-id: 55ed36c1-99ca-400a-bc2b-661994cbf720
-source-git-commit: b3c7ceedec7b3f6a916e97bab38fd55f1d6c7f51
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Innan du skapar beräknade värden bör du tänka på följande arbetsflöde:
 
 | Arbetsflödesuppgift | Beskrivning |
 | --- | --- |
-| Planera beräknade värden | I synnerhet för mätvärden som kommer att bli officiellt&quot;godkända&quot; är det rimligt att beskriva vilka beräknade mätvärden som kommer att användas i stor omfattning och hur de kommer att definieras. |
+| Planera beräknade värden | I synnerhet för mätvärden som kommer att godkännas officiellt är det rimligt att planera för vilka beräknade mätvärden som ska användas och hur de ska definieras. |
 | [Bygg](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) beräknade värden | Bygg och redigera beräknade och avancerade beräknade mätvärden för användning i [!DNL Customer Journey Analytics]-komponenter. |
 | [Tagg](cm-tagging.md) beräknade mått | Märk beräknade mätvärden för enkel organisation och delning. Se hur du planerar och tilldelar taggar för enkla och avancerade sökningar och organisation. |
 | [Godkänn ](cm-approving.md) beräknade mått | Godkänn beräknade värden för att göra dem kanoniska. |

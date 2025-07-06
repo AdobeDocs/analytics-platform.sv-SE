@@ -1,11 +1,11 @@
 ---
 title: Komponenter - översikt
-description: Lär dig vilka komponenter Customer Journey Analytics har och hur du kan använda dem vid rapportering.
+description: Lär dig vilka komponenter Adobe Analytics har och hur du kan använda komponenter i Analysis Workspace.
 exl-id: f9b0b3c2-7c88-4bef-af33-0d309cafe799
 solution: Customer Journey Analytics
 feature: Components
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '893'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Du kan hantera följande komponenter:
 * [Intelligenta aviseringar](/help/components/c-intelligent-alerts/intelligent-alerts.md): Gör att du kan meddelas baserat på ändrade procentsatser eller specifika datapunkter.
 * [Schemalagda projekt](/help/analysis-workspace/export/t-schedule-report.md#scheduled-projects-manager): Hantera dina schemalagda projekt.
 * [Inställningar](/help/analysis-workspace/user-preferences.md): Hantera inställningarna för Analysis Workspace.
-* [Publiker](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper från Customer Journey Analytics till [Real-Time Customer Data Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/home) i Experience Platform för målinriktning och personalisering.
+* [Publiker](/help/components/audiences/audiences-overview.md): Skapa och publicera målgrupper från Customer Journey Analytics till [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) i Experience Platform för målinriktning och personalisering.
 * [Exportera](/help/components/exports/manage-export-locations.md): Hantera ditt exportkonto och platser.
 
 

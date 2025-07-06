@@ -1,12 +1,12 @@
 ---
-description: Använd snabbsegment i Analysis Workspace för Customer Journey Analytics
+description: Lär dig använda snabbsegment i Analysis Workspace.
 title: Snabbsegment
 feature: Workspace Basics, Filters, Segments
 role: User
 exl-id: 549e5db5-fcdf-43c5-bc43-590144aee309
-source-git-commit: 21935a0e9e976cd680fb036bb47f4248aaa66890
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---

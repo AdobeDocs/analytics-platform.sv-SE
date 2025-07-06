@@ -1,10 +1,10 @@
 ---
-description: Lär dig hur du använder panelen Snabbinformation för att få hjälp med att skapa datatabeller och visualiseringar i Analysis Workspace.
+description: Lär dig hur du använder panelen Snabbinformation för att få hjälp med att skapa frihandstabeller och visualiseringar i Analysis Workspace.
 title: Panelen Snabbinsikter
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs panelen Snabbinsikter i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/quickinsight) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs panelen Snabbinsikter i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Se [Panelen Snabbinsikter](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/quickinsight) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ När du börjar använda [!UICONTROL Analysis Workspace] kanske du undrar:
 * var ett segment ska skapas,
 * med mera.
 
-För att hjälpa till med dessa frågor använder [!UICONTROL Quick insights] en algoritm som ger dig de populäraste dimensionerna, måtten, segmenten och datumintervallen som ditt företag använder. Den här algoritmen baseras på ditt företags användning av datakomponenter i [!UICONTROL Analysis Workspace]. Dimensioner, mätvärden och segment som taggats med [!UICONTROL POPULAR] visas i den nedrullningsbara menyn, vilket visas här:
+[!UICONTROL Quick insights] använder en algoritm som ger dig de populäraste dimensionerna, måtten, segmenten och datumintervallen som ditt företag använder för att hjälpa dig med de här frågorna. Den här algoritmen baseras på ditt företags användning av datakomponenter i [!UICONTROL Analysis Workspace]. Dimensioner, mätvärden och segment som taggats med [!UICONTROL POPULAR] visas i den nedrullningsbara menyn, vilket visas här:
 
 ![Panelen Snabbinsikter.](assets/popular-tag.png)
 
@@ -94,7 +94,7 @@ Du kan ange byggblocken på tre sätt:
 
 * Dra och släpp komponenter från den vänstra panelen.
 * Börja skriva i ett av byggblocksfälten. När indata påträffas fylls byggblocksfältet automatiskt i med möjliga värden.
-* Ange en rullgardinsmeny för byggblock (till exempel `Country` i **[!UICONTROL Analyze]**) och sök i listan med möjliga värden (med ![Sparrhöger](/help/assets/icons/ChevronRight.svg)) efter det värde du vill använda (till exempel **[!UICONTROL Country code]**).
+* Ange en rullgardinsmeny för byggblock (till exempel Land i **[!UICONTROL Analyze]**) och **[!UICONTROL search]** listan med möjliga värden (med ![Sparrhöger](/help/assets/icons/ChevronRight.svg)) för det värde du vill använda (till exempel **[!UICONTROL Country code]**).
 
 Välj **[!UICONTROL Clear]** om du vill rensa alla inmatningsfält.
 

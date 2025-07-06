@@ -1,11 +1,11 @@
 ---
-description: Med verktyget Beräknade mätvärden kan du dra och släppa dimensioner, mått, segment och funktioner på en arbetsyta för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer. Med det här integrerade utvecklingsverktyget kan du skapa och spara enkla beräknade mätvärden eller komplexa avancerade beräknade mätvärden.
-title: Bygg beräknade värden
+description: Lär dig mer om det beräknade mätverktyget som ger en arbetsyta där du kan dra och släppa dimensioner, mått, segment och funktioner för att skapa anpassade mätvärden baserade på behållarhierarkilogik, regler och operatorer.
+title: Bygg mått
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: ec2fc88372814b01a04d4cc824181222ee55a83d
+source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1451'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >id="components_calculatedmetrics_productcompatibility"
 >title="Produktkompatibilitet"
 >abstract="Anger var i Customer Journey Analytics det här beräknade måttet kan användas, t.ex. i Analysis Workspace, Report Builder o.s.v. Vissa beräknade värden kan inte användas med experimenterande."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_externalid"
@@ -200,5 +200,5 @@ Om du vill ta bort en behållare väljer du ![Stäng](/help/assets/icons/Close.s
 >[!MORELIKETHIS]
 >
 >[Använda funktioner](cm-using-functions.md)
->&#x200B;>[Segment](/help/components/segments/seg-overview.md)
+>>[Segment](/help/components/segments/seg-overview.md)
 >
