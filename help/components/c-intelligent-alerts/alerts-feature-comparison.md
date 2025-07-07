@@ -47,6 +47,6 @@ Mer information om hur du justerar fördröjningen och vilka faktorer du bör ta
 
 ## Skapa en avisering
 
-I Analysis Workspace i Adobe Analytics kan du [skapa aviseringar från Analysis Workspace på flera sätt](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder). I Customer Journey Analytics kan du bara [skapa en avisering](alert-builder.md) i Analysis Workspace från en markering i en frihandstabell.
+I Analysis Workspace i Adobe Analytics kan du [skapa aviseringar från Analysis Workspace på flera sätt](https://experienceleague.adobe.com/sv/docs/analytics/components/alerts/alert-builder). I Customer Journey Analytics kan du bara [skapa en avisering](alert-builder.md) i Analysis Workspace från en markering i en frihandstabell.
 
 Både Adobe Analytics och Customer Journey Analytics har stöd för att skapa aviseringar med [Varningshanteraren](alert-manager.md)
