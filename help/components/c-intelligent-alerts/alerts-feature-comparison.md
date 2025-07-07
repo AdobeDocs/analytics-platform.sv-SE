@@ -4,9 +4,9 @@ title: Jämförelse av aviseringsfunktioner i Customer Journey Analytics och Ado
 feature: Workspace Basics
 role: User, Admin
 exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 9e07dfc84bc06aef987d99c225cefb4e0406f552
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -45,16 +45,8 @@ Mer information om hur du justerar fördröjningen och vilka faktorer du bör ta
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
-## Skapa en avisering från Analysis Workspace är inte tillgänglig
+## Skapa en avisering
 
-I Analysis Workspace i Adobe Analytics kan du skapa varningar från Analysis Workspace på något av de sätt som beskrivs nedan. I Customer Journey Analytics är alternativen för att skapa aviseringar från Analysis Workspace ännu inte tillgängliga. I stället öppnar du varningsverktyget enligt beskrivningen i [Skapa aviseringar](/help/components/c-intelligent-alerts/alert-builder.md).
+I Analysis Workspace i Adobe Analytics kan du [skapa aviseringar från Analysis Workspace på flera sätt](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder). I Customer Journey Analytics kan du bara [skapa en avisering](alert-builder.md) i Analysis Workspace från en markering i en frihandstabell.
 
-I Adobe Analytics finns följande alternativ:
-
-* Markera ett eller flera linjeobjekt i en frihandstabell, högerklicka och välj **[!UICONTROL Create alert from selection]**.
-
-  Varningsbyggaren fylls i automatiskt för att skapa en avisering med rätt mått och segment.
-
-* Öppna ett projekt i Analysis Workspace och välj sedan **[!UICONTROL Components]** > **[!UICONTROL Create alert]**.
-
-* Öppna ett projekt i Analysis Workspace och använd sedan följande kortkommando: **[!UICONTROL *ctrl *]**+**[!UICONTROL * shift *]** + **[!UICONTROL *a *]**(Windows) eller&#x200B;**[!UICONTROL * cmd *]** + **[!UICONTROL *shift *]**+**[!UICONTROL * a *]** (macOS).
+Både Adobe Analytics och Customer Journey Analytics har stöd för att skapa aviseringar med [Varningshanteraren](alert-manager.md)
