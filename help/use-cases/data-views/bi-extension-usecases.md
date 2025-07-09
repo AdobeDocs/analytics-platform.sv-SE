@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: 7853231ffc2ad42a66ab67a61c9f043ec1eac739
+source-git-commit: d222de47c57c510b2a967d26e24de4ddfa9c3185
 workflow-type: tm+mt
-source-wordcount: '11959'
+source-wordcount: '11960'
 ht-degree: 0%
 
 ---
 
 # Användningsexempel för BI-tillägg
 
-I den här artikeln beskrivs hur du slutför ett antal användningsfall med Customer Journey Analytics BI-tillägget. I varje exempel förklaras Customer Journey Analytics-funktionaliteten, följt av information om alla BI-verktyg som stöds:
+I den här artikeln beskrivs hur du slutför ett antal användningsfall (15) med Customer Journey Analytics BI-tillägget. I varje exempel förklaras Customer Journey Analytics-funktionaliteten, följt av information om alla BI-verktyg som stöds:
 
 * **Power BI Desktop**. Den version som används är 2.137.1102.0 (64 bitar) (oktober 2024).
 * **Skrivbord för surfplatta**. Den version som används är 2024.1.5 (20241.24.0705.0334), 64 bitar.
@@ -94,41 +94,35 @@ När du går igenom användningsexemplen ersätter du de här exempelobjekten me
 1. Starta Power BI Desktop.
    1. Välj **[!UICONTROL Get data from other sources]** i huvudgränssnittet.
    1. I dialogrutan **[!UICONTROL Get Data]**:
-
       ![PowerBI PostgreSQL-databas](assets/powerbi-postgresql.png)
       1. Sök efter och välj **[!UICONTROL PostgreSQL database]**.
       1. Välj **[!UICONTROL Connect]**.
    1. I dialogrutan **[!UICONTROL PostgreSQL database]**:
-
       ![Inställningar för PowerBI Desktop Server och Database](assets/powerbi-serverdatabase.png)
       1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värdena **[!UICONTROL Host]** och **[!UICONTROL Port]** från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**, avgränsade med `:` som värde för **[!UICONTROL Server]**. Till exempel: `examplecompany.platform-query.adobe.io:80`.
       1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värdet **[!UICONTROL Database]** från panelen **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** i Experience Platform. Lägg till `?FLATTEN` i värdet som du klistrar in. Exempel: `prod:cja?FLATTEN`.
       1. Välj **[!UICONTROL DirectQuery]** som **[!UICONTROL Data connectivity mode]**.
       1. Välj **[!UICONTROL OK]**.
    1. I dialogrutan **[!UICONTROL PostgreSQL database]** - **[!UICONTROL Database]**:
-
       ![PowerBI Desktop-användare och lösenord](assets/powerbi-userpassword.png)
-      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera värdena **[!UICONTROL Username]** och **[!UICONTROL Password]** från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** i fälten **[!UICONTROL User name]** och **[!UICONTROL Password]**. Om du använder en [icke-förfallande autentiseringsuppgift](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) ska du använda lösenordet för dina icke-förfallande autentiseringsuppgifter.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera värdena **[!UICONTROL Username]** och **[!UICONTROL Password]** från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** i fälten **[!UICONTROL User name]** och **[!UICONTROL Password]**. Om du använder en [icke-förfallande autentiseringsuppgift](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) ska du använda lösenordet för dina icke-förfallande autentiseringsuppgifter.
       1. Kontrollera att listrutan för **[!UICONTROL Select which level to apply these settings to]** är inställd på **[!UICONTROL Server]** som du har definierat tidigare.
       1. Välj **[!UICONTROL Connect]**.
    1. I dialogrutan **[!UICONTROL Navigator]** hämtas datavyer. Den här hämtningen kan ta en stund. När du har hämtat det här ser du följande i Power BI Desktop.
-
       ![Power BI Desktop Load Data](assets/powerbi-navigator-load.png)
       1. Välj **[!UICONTROL public.cc_data_view]** i listan i den vänstra panelen.
       1. Du har två alternativ:
          1. Välj **[!UICONTROL Load]** om du vill fortsätta och slutföra konfigurationen.
          1. Välj **[!UICONTROL Transform Data]**. En dialogruta visas där du kan välja att använda omformningar som en del av konfigurationen.
-
             ![Power BI Desktop Transform Data](assets/powerbi-transform-data.png)
             * Välj **[!UICONTROL Close & Apply]**.
    1. Efter en stund visas **[!UICONTROL public.cc_data_view]** i rutan **[!UICONTROL Data]**. Välj ![SparronRight](/help/assets/icons/ChevronRight.svg) om du vill visa mått och mått.
-
       ![Data för Power BI-tjänstservern har lästs in](assets/powerbi-navigator-loaded.png)
 
 
 ### Till FLATTEN eller inte
 
-Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
+Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 | FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
 |---|---|:---:|---|
@@ -139,8 +133,8 @@ Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer info
 ### Mer information
 
 * [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
-* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials)
-* [Anslut Power BI till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/power-bi).
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Anslut Power BI till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi).
 
 
 
@@ -158,17 +152,15 @@ Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer info
 
 1. Starta Tableu.
    1. Välj **[!UICONTROL PostgreSQL]** från den vänstra listen under **[!UICONTROL To a Server]**. Om den inte är tillgänglig väljer du **[!UICONTROL More...]** och väljer **[!UICONTROL PostgreSQL]** i **[!UICONTROL Installed Connectors]**.
-
       ![Tableu-anslutningar](assets/tableau-connectors.png)
    1. I dialogrutan **[!UICONTROL PostgreSQL]** går du till fliken **[!UICONTROL General]**:
-
       ![Dialogrutan Logga in i tabell](assets/tableau-signin.png)
       1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Host]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Server]**.
       1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Port]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Port]**.
       1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Database]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Database]**. Lägg till `%3FFLATTEN` i värdet som du klistrar in. Till exempel: `prod:cja%3FFLATTEN`.
       1. Välj **[!UICONTROL Username and Password]** i listrutan **[!UICONTROL Authentication]**.
       1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Username]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Username]**.
-      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Password]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Password]**. Om du använder en [icke-förfallande autentiseringsuppgift](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) ska du använda lösenordet för dina icke-förfallande autentiseringsuppgifter.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Password]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Password]**. Om du använder en [icke-förfallande autentiseringsuppgift](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) ska du använda lösenordet för dina icke-förfallande autentiseringsuppgifter.
       1. Kontrollera att **[!UICONTROL Require SSL]** är markerad.
       1. Välj **[!UICONTROL Sign In]**.
 
@@ -177,16 +169,14 @@ Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer info
       * Namnet på anslutningen, under **[!UICONTROL Connections]**.
       * Namnet på databasen, under **[!UICONTROL Database]**.
       * En lista med tabeller, under **[!UICONTROL Table]**.
-
         ![Tablet PC ansluten](assets/tableau-connected.png)
       1. Dra **[!UICONTROL cc_data_view]**-posten och släpp posten i huvudvyn som läser **[!UICONTROL Drag tables]** här.
    1. I huvudfönstret visas information om datavyn **[!UICONTROL cc_data_view]**.
-
       ![Tablet PC ansluten](assets/tableau-validation.png)
 
 ### Till FLATTEN eller inte
 
-Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
+Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 | FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
 |---|---|:---:|---|
@@ -197,8 +187,8 @@ Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer inform
 ### Mer information
 
 * [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
-* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials)
-* [Anslut skrivbordet till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/tableau).
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Anslut skrivbordet till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
 
 
 >[!TAB Sökare]
@@ -263,7 +253,7 @@ Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer inform
 
 ### Till FLATTEN eller inte
 
-Looker stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
+Looker stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 | FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
 |---|---|:---:|---|
@@ -274,7 +264,7 @@ Looker stöder följande scenarier för parametern `FLATTEN`. Mer information fi
 ### Mer information
 
 * [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
-* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials)
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
 
 
 >[!TAB Jupyter-anteckningsbok]
@@ -370,7 +360,7 @@ Looker stöder följande scenarier för parametern `FLATTEN`. Mer information fi
 
 ### Till FLATTEN eller inte
 
-Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
+Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 | FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
 |---|---|:---:|---|
@@ -381,7 +371,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 ### Mer information
 
 * [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
-* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials)
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
 
 >[!TAB RStudio]
 
@@ -396,7 +386,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 
 1. Starta RStudio.
 1. Skapa en ny R Markdown-fil eller hämta [det här exemplet på R-markeringsfil](assets/BI-Extension.Rmd.zip).
-1. I ditt första segment anger du följande programsatser mellan ` ` ``{r} ` och ` `` ` `. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värden från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till de värden som krävs för de olika parametrarna, till exempel `host`, `dbname` och `user`. Exempel:
+1. I ditt första segment anger du följande programsatser mellan ` ```{r} ` och ` ``` `. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värden från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till de värden som krävs för de olika parametrarna, till exempel `host`, `dbname` och `user`. Exempel:
 
    ```R
    library(rstudioapi)
@@ -417,7 +407,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 
    ![RStudio, konfigurationssteg 1](assets/rstudio-config-step1.png)
 
-1. Skapa ett nytt segment och ange följande programsatser mellan ` ` `` {r} ` och ` `` ` `.
+1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
 
    ```R
    con <- dbConnect(
@@ -434,7 +424,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 1. Kör segmentet. Du bör inte se några utdata om anslutningen lyckas.
 
 
-1. Skapa ett nytt segment och ange följande programsatser mellan ` ` `` {r} ` och ` `` ` `.
+1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
 
    ```R
    views <- dbListTables(con)
@@ -444,7 +434,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 1. Kör segmentet. Du bör se `character(0)` som den enda utdatafilen.
 
 
-1. Skapa ett nytt segment och ange följande programsatser mellan ` ` `` {r} ` och ` `` ` `.
+1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
 
    ```R
    glimpse(dv)
@@ -456,7 +446,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 
 ### Till FLATTEN eller inte
 
-RStudio stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
+RStudio stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 | FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
 |---|---|:---:|---|
@@ -467,7 +457,7 @@ RStudio stöder följande scenarier för parametern `FLATTEN`. Mer information f
 ### Mer information
 
 * [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
-* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials)
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
 
 >[!ENDTABS]
 
@@ -532,13 +522,13 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned för att växla från vyn **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
    1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filters Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och anger en punkt på `01/01/2023` - `01/02/2023`.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange\]]** väljer du **[!UICONTROL Range of dates]** och anger en punkt på `01/01/2023` - `01/02/2023`.
 
       ![Datorfilter för Tablet PC](assets/uc2-tableau-filter.png)
 
    1. Dra och släpp **[!UICONTROL Daterangeday]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Columns]**.
       * Välj **[!UICONTROL Day]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL DAY(Daterangeday)]**.
-   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
+   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
    1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
@@ -574,7 +564,6 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-
       ![Looker-filter](assets/uc2-looker-filter.png)
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. Från avsnittet **[!UICONTROL Cc Data View]** i den vänstra listen,
@@ -615,7 +604,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
 
    ```R
    ## Daily Events
@@ -670,13 +659,13 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
    1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filters Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och anger en punkt på `01/01/2023` - `02/01/2023`.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange\]]** väljer du **[!UICONTROL Range of dates]** och anger en punkt på `01/01/2023` - `02/01/2023`.
 
       ![Datorfilter för Tablet PC](assets/uc3-tableau-filter.png)
 
    1. Dra och släpp **[!UICONTROL Daterangehour]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Columns]**.
       * Välj **[!UICONTROL More]** > **[!UICONTROL Hours]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL HOUR(Daterangeday)]**.
-   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
+   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
    1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
@@ -713,7 +702,6 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-
       ![Looker-filter](assets/uc2-looker-filter.png)
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/01/02]**.
 1. Från avsnittet **[!UICONTROL Cc Data View]** i den vänstra listen,
@@ -754,7 +742,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
 
    ```R
    ## Hourly Events
@@ -839,13 +827,13 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
    1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filters Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och anger en punkt på `01/01/2023` - `01/01/2024`.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange\]]** väljer du **[!UICONTROL Range of dates]** och anger en punkt på `01/01/2023` - `01/01/2024`.
 
       ![Datorfilter för Tablet PC](assets/uc4-tableau-filter.png)
 
    1. Dra och släpp **[!UICONTROL Daterangeday]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Columns]**.
       * Välj **[!UICONTROL MONTH]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL MONTH(Daterangeday)]**.
-   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
+   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
    1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
@@ -881,7 +869,6 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-
       ![Looker-filter](assets/uc2-looker-filter.png)
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. Från vänster **[!UICONTROL Cc Data View]**-räl,
@@ -922,7 +909,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
 
    ```R
    ## Hourly Events
@@ -1034,13 +1021,13 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
    1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filters Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och anger en punkt på `01/01/2023` - `31/12/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange\]]** väljer du **[!UICONTROL Range of dates]** och anger en punkt på `01/01/2023` - `31/12/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
 
       ![Datorfilter för Tablet PC](assets/uc5-tableau-filter.png)
 
    1. Dra och släpp **[!UICONTROL Product Name]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Rows]**.
-   1. Dra och släpp **[!UICONTROL Purchases]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Purchases)]**.
-   1. Dra och släpp **[!UICONTROL Purchase Revenue]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet intill **[!UICONTROL Columns]**&#x200B;och vänster från **[!UICONTROL SUM(Purchases)]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Dra och släpp **[!UICONTROL Purchases]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Purchases)]**.
+   1. Dra och släpp **[!UICONTROL Purchase Revenue]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet intill **[!UICONTROL Columns]**och vänster från **[!UICONTROL SUM(Purchases)]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Om du vill beställa båda diagrammen i fallande inköpsintäktsordning för du muspekaren över rubriken **[!UICONTROL Purchase Revenue]** och väljer sorteringsikonen.
    1. Om du vill begränsa antalet poster i diagrammen väljer du **[!UICONTROL SUM(Purchase Revenue)]** i **[!UICONTROL Rows]** och väljer **[!UICONTROL Filter]** i listrutan.
    1. I dialogrutan **[!UICONTROL Filter \[Purchase Revenue\]]** väljer du **[!UICONTROL Range of values]** och anger lämpliga värden. Till exempel: `1,000,000` - `2,000,000`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
@@ -1083,7 +1070,6 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-
       ![Looker-filter](assets/uc2-looker-filter.png)
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. Välj **[!UICONTROL ‣ Cc Data View]** i avsnittet **[!UICONTROL Product Name]** i den vänstra listen.
@@ -1095,7 +1081,6 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
       1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Purchase Revenue`.
       1. Välj fliken **[!UICONTROL Field details]**.
       1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
-
          ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png)
       1. Välj **[!UICONTROL Save]**.
    1. Välj **[!UICONTROL Custom Measure]** en gång till på den nedrullningsbara menyn **[!UICONTROL + Add]**. I dialogrutan **[!UICONTROL Create custom]**:
@@ -1116,7 +1101,6 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
    1. Bläddra ned för att se **[!UICONTROL Purchases]** och ändra **[!UICONTROL Type]** till **[!UICONTROL Line]**.
    1. Välj fliken **[!UICONTROL Y]**.
    1. Dra **[!UICONTROL Purchases]** från behållaren **[!UICONTROL Left 1]** till den plats där den läser **[!UICONTROL *Dra serien hit för att skapa en ny vänsteraxel *]**. Den här åtgärden skapar en **[!UICONTROL Left 2]**-behållare.
-
       ![Söker i visualiseringskonfiguration](assets/uc5-looker-visualization.png)
    1. Välj ![CrossSize75](/help/assets/icons/CrossSize75.svg) bredvid **[!UICONTROL Edit]** för att dölja popup-dialogrutan
 
@@ -1152,7 +1136,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
 
    ```R
    library(tidyr)
@@ -1217,7 +1201,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
    1. Välj **[!UICONTROL ∑ purchases]**
 
 1. Om du vill ändra det lodräta stapeldiagrammet till en tabell kontrollerar du att tabellen är markerad och väljer **[!UICONTROL Matrix]** i rutan **[!UICONTROL Visualizations]**.
-   * Dra **[!UICONTROL product_name]** från **[!UICONTROL Columns]** och släpp fältet under **[!UICONTROL product_categor]**&#x200B;y i **[!UICONTROL Rows]** i rutan **[!UICONTROL Visualization]**.
+   * Dra **[!UICONTROL product_name]** från **[!UICONTROL Columns]** och släpp fältet under **[!UICONTROL product_categor]**y i **[!UICONTROL Rows]** i rutan **[!UICONTROL Visualization]**.
 
 1. Om du vill begränsa antalet produkter som visas i tabellen väljer du **[!UICONTROL product_name is (All)]** i rutan **[!UICONTROL Filters]**.
 
@@ -1269,7 +1253,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
    1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filters Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Relative dates]**, väljer **[!UICONTROL Years]** och anger **[!UICONTROL Previous year]**. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange\]]** väljer du **[!UICONTROL Relative dates]**, väljer **[!UICONTROL Years]** och anger **[!UICONTROL Previous year]**. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
 
       Ditt skrivbord ska se ut så här nedan.
 
@@ -1293,7 +1277,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
    1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filters Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Relative dates]**, väljer **[!UICONTROL Years]** och anger **[!UICONTROL Previous year]**. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange\]]** väljer du **[!UICONTROL Relative dates]**, väljer **[!UICONTROL Years]** och anger **[!UICONTROL Previous year]**. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Purchase Revenue]** från rutan **[!UICONTROL Data]** till **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Dra **[!UICONTROL Purchase]** från **[!UICONTROL Data]**-rutan till **[!UICONTROL Columns]**, intill **[!UICONTROL Purchase Revenue]**. Värdet ändras till **[!UICONTROL SUM(Purchases)]**.
    1. Dra **[!UICONTROL Product Category]** från rutan **[!UICONTROL Data]** till **[!UICONTROL Rows]**.
@@ -1310,7 +1294,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 1. Välj **[!UICONTROL New worksheet]** om du vill skapa ett nytt blad och ändra namnet till **[!UICONTROL Treemap]**.
    1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filters Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Relative dates]**, väljer **[!UICONTROL Years]** och anger **[!UICONTROL Previous year]**. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange\]]** väljer du **[!UICONTROL Relative dates]**, väljer **[!UICONTROL Years]** och anger **[!UICONTROL Previous year]**. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Purchase Revenue]** från rutan **[!UICONTROL Data]** till **[!UICONTROL Rows]**. Värdena ändras till **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Dra **[!UICONTROL Purchase]** från rutan **[!UICONTROL Data]** till **[!UICONTROL Rows]**, bredvid **[!UICONTROL Purchase Revenue]**. Värdet ändras till **[!UICONTROL SUM(Purchases)]**.
    1. Dra **[!UICONTROL Product Category]** från rutan **[!UICONTROL Data]** till **[!UICONTROL Columns]**.
@@ -1342,7 +1326,6 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-
       ![Looker-filter](assets/uc2-looker-filter.png)
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
@@ -1356,7 +1339,6 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
       1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Sum of Purchase Revenue`.
       1. Välj fliken **[!UICONTROL Field details]**.
       1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
-
          ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png)
       1. Välj **[!UICONTROL Save]**.
    1. Välj **[!UICONTROL Custom Measure]** en gång till på den nedrullningsbara menyn **[!UICONTROL + Add]**. I dialogrutan **[!UICONTROL Create custom]**:
@@ -1414,7 +1396,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
 
    ```R
    ## Multiple dimensions ranked
@@ -1501,7 +1483,7 @@ Du kan också använda funktionen för antal som skiljer sig från Power BI.
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
    1. Dra posten **[!UICONTROL Daterange]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten på hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filter Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och sedan `01/01/2023` - `31/1/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange\]]** väljer du **[!UICONTROL Range of dates]** och sedan `01/01/2023` - `31/1/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Cm Product Name Count Distinct]** till **[!UICONTROL Rows]**. Värdet ändras till **[!UICONTROL SUM(Cm Product Name Count Distinct)]**. Det här fältet är det beräknade mått som du har definierat i Customer Journey Analytics.
    1. Dra **[!UICONTROL Daterangeday]** och släpp intill **[!UICONTROL Columns]**. Välj **[!UICONTROL Daterangeday]** och välj **[!UICONTROL Day]** i listrutan.
    1. Om du vill ändra radinvisualiseringen till en tabell väljer du **[!UICONTROL Text Table]** från **[!UICONTROL Show Me]**.
@@ -1551,13 +1533,11 @@ Du kan också använda funktionen för att räkna distinkt från skrivbordet i T
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-
       ![Looker-filter](assets/uc2-looker-filter.png)
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
    1. Välj **[!UICONTROL Daterange Date]** och sedan **[!UICONTROL Date]**.
    1. Välj **[!UICONTROL Aggregate ‣ Count Distinct]** på snabbmenyn **⋮ mer** på **[!UICONTROL Product Name]**.
-
       ![Sök produktnamn, snabbmeny](assets/uc7-looker-count-distinct.png)
 1. Välj **[!UICONTROL Run]**.
 1. Välj **[!UICONTROL ‣ Visualization]** och välj 6︎⃣ i verktygsfältet för att visa visualisering av ett enstaka värde.
@@ -1585,7 +1565,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
 
    ```R
    ## Count Distinct
@@ -1732,7 +1712,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment. Se till att du använder rätt namn för datumintervall. Exempel: `Last Year 2023`.
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment. Se till att du använder rätt namn för datumintervall. Exempel: `Last Year 2023`.
 
    ```R
    ## Monthly Events for Last Year
@@ -1816,7 +1796,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
    1. Kontrollera att **[!UICONTROL Filter \[Filter Name\]]** är markerat i dialogrutan **[!UICONTROL Select from list]** och välj **[!UICONTROL Fishing Products]** i listan. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Daterange]**-posten från listan **[!UICONTROL Tables]** i hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filter Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och sedan `01/01/2023` - `01/02/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterang\]]** väljer du **[!UICONTROL Range of dates]** och sedan `01/01/2023` - `01/02/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Product Name]** från listan **[!UICONTROL Tables]** till **[!UICONTROL Rows]**.
    1. Dra **[!UICONTROL Occurrences]**-posten från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Occurrences)]**.
    1. Välj **[!UICONTROL Text Table]** från **[!UICONTROL Show Me]**.
@@ -1833,7 +1813,6 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-
       ![Looker-filter](assets/uc2-looker-filter.png)
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]** om du vill lägga till ytterligare ett filter.
@@ -1901,7 +1880,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment. Se till att du använder rätt filternamn. Exempel: `Fishing Products`.
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment. Se till att du använder rätt filternamn. Exempel: `Fishing Products`.
 
    ```R
    ## Dimension filtered by name
@@ -1987,7 +1966,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
    1. Kontrollera att **[!UICONTROL Filter \[Filter Name\]]** är markerat i dialogrutan **[!UICONTROL Select from list]** och välj **[!UICONTROL Hunting Products]** i listan. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Daterange]**-posten från listan **[!UICONTROL Tables]** i hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filter Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och sedan `01/01/2023` - `1/2/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange\]]** väljer du **[!UICONTROL Range of dates]** och sedan `01/01/2023` - `1/2/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Product Name]** från listan **[!UICONTROL Tables]** till **[!UICONTROL Rows]**.
    1. Dra **[!UICONTROL Occurrences]**-posten från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Occurrences)]**.
    1. Välj **[!UICONTROL Text Table]** från **[!UICONTROL Show Me]**.
@@ -2005,7 +1984,6 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-
       ![Looker-filter](assets/uc2-looker-filter.png)
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. Välj **[!UICONTROL + Filter]** under **[!UICONTROL Filters]** om du vill lägga till ytterligare ett filter.
@@ -2067,7 +2045,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment. Se till att du använder en lämplig kategori. Till exempel `Hunting`.
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment. Se till att du använder en lämplig kategori. Till exempel `Hunting`.
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value
@@ -2227,7 +2205,7 @@ limit 1000001
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
    1. Dra **[!UICONTROL Daterange]**-posten från listan **[!UICONTROL Tables]** i hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filter Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Range of dates]** och sedan `01/01/2023` - `1/2/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange\]]** väljer du **[!UICONTROL Range of dates]** och sedan `01/01/2023` - `1/2/2023`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Product Name]** från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Rows]**.
    1. Dra **[!UICONTROL Purchases]**-posten från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Purchases)]**.
    1. Dra **[!UICONTROL Purchase Revenue]**-posten från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Columns]**, intill **[!UICONTROL SUM(Purchases)]**. Värdet ändras till **[!UICONTROL SUM(Purchase Revenue)]**.
@@ -2259,7 +2237,6 @@ GROUP BY 1
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-
       ![Looker-filter](assets/uc2-looker-filter.png)
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
 1. Välj **[!UICONTROL ‣ Cc Data View]** i avsnittet **[!UICONTROL Product Name]** i den vänstra listen.
@@ -2271,7 +2248,6 @@ GROUP BY 1
       1. Ange ett anpassat fältnamn för **[!UICONTROL Name]**. Till exempel: `Sum of Purchase Revenue`.
       1. Välj fliken **[!UICONTROL Field details]**.
       1. Välj **[!UICONTROL Decimals]** i listrutan **[!UICONTROL Format]** och kontrollera att `0` anges i **[!UICONTROL Decimals]**.
-
          ![Sök efter anpassat måttfält](assets/uc5-looker-customfield.png)
       1. Välj **[!UICONTROL Save]**.
 1. Se till att du väljer **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) i kolumnen **[!UICONTROL Purchase Revenue]**.
@@ -2324,7 +2300,7 @@ Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
 
    ```R
    ## Dimension 1 Sorted
@@ -2498,7 +2474,7 @@ limit 1000001
 1. Välj fliken **[!UICONTROL Sheet 1]** längst ned om du vill växla från **[!UICONTROL Data source]**. I vyn **[!UICONTROL Sheet 1]**:
    1. Dra **[!UICONTROL Daterange]**-posten från listan **[!UICONTROL Tables]** i hyllan **[!UICONTROL Filters]**.
    1. I dialogrutan **[!UICONTROL Filter Field \[Daterange\]]** väljer du **[!UICONTROL Range of Dates]** och sedan **[!UICONTROL Next >]**.
-   1. I dialogrutan **[!UICONTROL Filter \[Daterange]]** väljer du **[!UICONTROL Relative dates]**, väljer **[!UICONTROL Years]** och väljer **[!UICONTROL Previous years]**. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
+   1. I dialogrutan **[!UICONTROL Filter \[Daterange\]]** väljer du **[!UICONTROL Relative dates]**, väljer **[!UICONTROL Years]** och sedan **[!UICONTROL Previous years]**. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
    1. Dra **[!UICONTROL Product Name]** från listan **[!UICONTROL Tables]** till **[!UICONTROL Rows]**.
    1. Dra **[!UICONTROL Occurrences]**-posten från listan **[!UICONTROL Tables]** och släpp posten i fältet intill **[!UICONTROL Columns]**. Värdet ändras till **[!UICONTROL SUM(Occurrences)]**.
    1. Välj **[!UICONTROL Text Table]** från **[!UICONTROL Show Me]**.
@@ -2555,7 +2531,6 @@ GROUP BY 1
 1. I dialogrutan **[!UICONTROL Add Filter]**:
    1. Välj **[!UICONTROL ‣ Cc Data View]**
    1. Välj **[!UICONTROL ‣ Daterange Date]** och sedan **[!UICONTROL Daterange Date]** i listan med fält.
-
       ![Looker-filter](assets/uc2-looker-filter.png)
 1. Ange filtret **[!UICONTROL Cc Data View Daterange Date]** som **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
 1. Från avsnittet **[!UICONTROL ‣ Cc Data View]** i den vänstra listen:
@@ -2610,7 +2585,7 @@ Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
 
    ```R
    ## Dimension 1 Limited
@@ -2680,7 +2655,7 @@ Mätvärden från Customer Journey Analytics identifieras av [!UICONTROL Compone
 Filter som du definierar i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL filterName]** . När du använder ett **[!UICONTROL filterName]**-fält i Power BI Desktop kan du ange vilket filter som ska användas.
 
 **Beräknade mått**
-Beräknade mätvärden som du definierar i Customer Journey Analytics identifieras av den [!UICONTROL External ID] som du har definierat för det beräknade mätvärdet. Det beräknade måttet **[!UICONTROL Product Name (Count Distinct)]** har till exempel [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** och visas som **[!UICONTROL cm_product_name_count_distinc]**&#x200B;t i Power BI Desktop.
+Beräknade mätvärden som du definierar i Customer Journey Analytics identifieras av den [!UICONTROL External ID] som du har definierat för det beräknade mätvärdet. Det beräknade måttet **[!UICONTROL Product Name (Count Distinct)]** har till exempel [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** och visas som **[!UICONTROL cm_product_name_count_distinc]**t i Power BI Desktop.
 
 **Datumintervall**
 Datumintervall som du definierar i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL daterangeName]** . När du använder ett **[!UICONTROL daterangeName]**-fält kan du ange vilket datumintervall som ska användas.
@@ -2765,7 +2740,6 @@ Tableu Desktop har anpassade omformningsfunktioner som använder [Beräknade fä
 
 1. Välj **[!UICONTROL Analysis]** > **[!UICONTROL Create Calculated Field]** på huvudmenyn.
    1. Definiera **[!UICONTROL Lowercase Product Name]** med funktionen `LOWER([Product Name])`.
-
       ![Beräknat fält i tabell](assets/uc14-tableau-calculated-field.png)
    1. Välj **[!UICONTROL OK]**.
 1. Markera bladet **[!UICONTROL Data]**.
@@ -2815,7 +2789,6 @@ Looker tillhandahåller anpassade omformningsfunktioner med hjälp av anpassade 
 1. Från avsnittet **[!UICONTROL ‣ Custom Fields]** i den vänstra listen:
    1. Välj **[!UICONTROL Custom Dimension]** i listrutan **[!UICONTROL + Add]**.
    1. Ange `lower(${cc_data_view.product_name})` i textområdet **[!UICONTROL Expression]**. Du får hjälp med rätt syntax när du börjar skriva `Product Name`.
-
       ![Exempel på sökomformning](assets/uc14-looker-transformation.png)
    1. Ange `product name` som **[!UICONTROL Name]**.
    1. Välj **[!UICONTROL Save]**.
@@ -2871,7 +2844,7 @@ Customer Journey Analytics-komponenterna (mått, mått, filter, beräknade värd
 
 **Anpassade omformningar**
 
-1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
 
    ```R
    df <- dv %>%
@@ -3130,7 +3103,7 @@ Var och en av de BI-verktyg som stöds har några kavattningar i arbetet med Cus
 * Power BI Desktop Advanced datumintervallfiltrering är exklusiv.  För slutdatumet måste du välja ett som är efter dagen som du vill rapportera på. Exempel: **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL and before]** `1/2/2023`.
 * Power BI Skrivbord är som standard **[!UICONTROL Import]** när du skapar en anslutning. Kontrollera att du använder **[!UICONTROL Direct Query]**.
 * Power BI Desktop visar dataomvandlingar via Power Query.  Power Query fungerar i första hand med Import-typanslutningar så många omformningar som du använder som datum- eller strängfunktioner ger ett felmeddelande om att du måste växla till en Import-typanslutning.  Om du behöver omforma data vid frågetillfället bör du använda härledda dimensioner och mätvärden så att Power BI inte behöver göra själva omformningarna.
-* Power BI Desktop förstår inte hur typkolumner för datum och tid ska hanteras. Därför stöds inte **[!UICONTROL daterange*X *]**-dimensioner som **[!UICONTROL daterangehour]**&#x200B;och **[!UICONTROL daterangeminute]**.
+* Power BI Desktop förstår inte hur typkolumner för datum och tid ska hanteras. Därför stöds inte **[!UICONTROL daterange*X *]**-dimensioner som **[!UICONTROL daterangehour]**och **[!UICONTROL daterangeminute]**.
 * Power BI Desktop försöker som standard skapa flera anslutningar med hjälp av fler sessioner i frågetjänsten.  Gå till Power BI-inställningarna för ditt projekt och inaktivera parallella frågor.
 * Power BI Desktop sköter all sortering och begränsning på klientsidan. Power BI Desktop har också olika semantik för toppfiltrering av *X* som innehåller bundna värden. Du kan alltså inte skapa samma sortering och begränsning som i Analysis Workspace.
 * I tidigare versioner av Power BI Desktop, oktober 2024-versionen, bryts PostgreSQL-datakällor. Se till att du använder den version som omnämns i den här artikeln.
