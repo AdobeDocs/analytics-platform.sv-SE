@@ -6,9 +6,9 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: 68f2fe684f6eb9590ab047e893fb04b1cbe1a8cd
+source-git-commit: a9c22cfd7077fd9e1ac4b9ea4ec0e016e9d2425b
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1468'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Customer Journey Analytics B2B skiljer mellan följande datatyper och datamängd
 | Datatyp | Tidsserie | Behållarposter | Fältposter |
 |---|---|---|---|
 | **Datauppsättningar** | **Händelsedatamängder**<br/> Till exempel:<ul><li>Digital analys</li><li>CRM-händelser</li><li>Personliga händelser</li><li>Data för kundtjänst</li></ul> | **Profildatauppsättningar**<br/> Exempel:<ul><li>CRM-poster</li><li>AJO B2B</li><li>CDP-poster</li><ul> | **Klasser**<br/> Exempel:<ul><li>Kampanjposter</li><li>Marknadsföringslistposter</li><li>Metadata för innehåll</li><li>Produktposter</li></ul> |
-| Krav | **Tidsstämpel**<br> Alla poster behöver:<ul><li>Konto-ID</li><li>ID för globalt konto</li><li>Person-ID</li></ul> | **Konto-ID**<br> Poster behöver ett behållar-ID, som:<ul><li>Konto</li><li>Person</li><li>Möjligheter</li><li>Buying Group</li></ul> | **Matchande nyckel**<br> Poster behöver ett ID i en behållare eller i en händelsedatamängd, som:<ul><li>Kampanj-ID</li><li>Innehålls-ID</li><li>Produkt-ID</li></ul> |
+| Krav | **Tidsstämpel**<br> Alla poster behöver:<ul><li>Konto-ID</li><li>ID för globalt konto (valfritt)</li></ul> | **Konto-ID**<br> Poster behöver ett behållar-ID, som:<ul><li>Konto</li><li>Person</li><li>Möjligheter</li><li>Buying Group</li></ul> | **Matchande nyckel**<br> Poster behöver ett ID i en behållare eller i en händelsedatamängd, som:<ul><li>Kampanj-ID</li><li>Innehålls-ID</li><li>Produkt-ID</li></ul> |
 
 {style="table-layout:fixed"}
 
