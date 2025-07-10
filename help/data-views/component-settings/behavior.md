@@ -5,9 +5,9 @@ exl-id: 170f445f-1eac-4b70-8956-1afb0cb2d611
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 0cd9cd508d474df3dff176bca4596d0379ac86b4
+source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="dataview_component_dimension_behavior"
 >title="Beteende"
->abstract="Bestäm hur radartiklar i den här dimensionen aggregeras. Ange om strängvärdena i fältet ska vara lägre."
+>abstract="Gäller för mått och måttkomponenter. Bestäm hur radartiklar för det här måttet ska aggregeras. Ange om strängvärden för den här dimensionen ska vara lägre."
 
 <!-- markdownlint-enable MD034 -->
 
