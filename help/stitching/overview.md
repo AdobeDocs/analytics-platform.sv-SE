@@ -72,8 +72,8 @@ Försäkra dig om att du inte förväxlar stygn med:
 >[!MORELIKETHIS]
 >
 >[Fältbaserad häftning](fbs.md)
->>[Diagrambaserad sammanfogning ](gbs.md)
->>[Använd sammanfogning](use-stitching.md)
->>[Validera sammanfogning ](validate.md)
->>[Vanliga frågor om stygn](faq.md)
+>&#x200B;>[Diagrambaserad sammanfogning ](gbs.md)
+>&#x200B;>[Använd sammanfogning](use-stitching.md)
+>&#x200B;>[Validera sammanfogning ](validate.md)
+>&#x200B;>[Vanliga frågor om stygn](faq.md)
 
