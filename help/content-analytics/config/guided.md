@@ -336,7 +336,7 @@ Du kan dock redigera sidor och resurser som ska inkluderas eller exkluderas.
 
 När du har angett all nödvändig information visas en sammanfattning med information om de artefakter som skapas eller ändras.
 
-* En sammanfattning av **[!UICONTROL You're almost ready to implement _konfigurationsnamnet _för Content Analytics]**visas när du implementerar en ny konfiguration.
+* En sammanfattning av **[!UICONTROL You're almost ready to implement _konfigurationsnamnet _för Content Analytics]**&#x200B;visas när du implementerar en ny konfiguration.
 
 * För befintliga implementerade konfigurationer visas ett **[!UICONTROL You have implemented _konfigurationsnamn _för en sammanfattning av innehållsanalys]**.
 
