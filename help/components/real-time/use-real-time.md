@@ -26,7 +26,7 @@ Om du vill använda realtidsrapportering aktiverar du alternativet **[!UICONTROL
 * [Frihandspanelen](/help/analysis-workspace/c-panels/freeform-panel.md)
 * ...
 
-Du ser ett meddelande med tidsstämpeln för den senaste uppdateringen av data. Till exempel: [!UICONTROL  *Senast uppdaterad kl. 07:55*].
+Du ser ett meddelande med tidsstämpeln för den senaste uppdateringen av data. Till exempel: [!UICONTROL &#x200B; *Senast uppdaterad kl. 07:55*].
 
 Välj den realtidsperiod som du vill rapportera om i listrutan. Tillgängliga alternativ är:
 
