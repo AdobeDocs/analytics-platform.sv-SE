@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1275'
 ht-degree: 10%
 
 ---
@@ -396,8 +396,10 @@ ht-degree: 10%
       + [Visa komponentinformation i Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
       + [Redigera komponentposter i Data Dictionary](../components/data-dictionary/edit-entries-data-dictionary.md)
       + [Övervaka dataordlistans hälsa](../components/data-dictionary/monitor-data-dictionary-health.md)
+   + Realtidsrapportering {#real-time-reporting}
+      + [Översikt](/help/components/real-time/real-time.md)
+      + [Använd realtidsrapportering](/help/components/real-time/use-real-time.md)
    + [Schemalagda projekt](../components/scheduled-projects-manager.md)
-
 + Report Builder {#cja-reportbuilder}
    + [Översikt](../report-builder/rb-overview.md)
    + [Report Builder](../report-builder/report-builder-setup.md)
