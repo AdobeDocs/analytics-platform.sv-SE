@@ -6,13 +6,13 @@ hide: true
 hidefromtoc: true
 role: User
 badgePremium: label="Beta"
-source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
+exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
+source-git-commit: edc5e96b8c55f785fd8b2ed04ace1944ecf3947d
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
-
 
 # Översikt över rapportering i realtid
 
@@ -30,17 +30,17 @@ I det här avsnittet finns en översikt över typiska värdefulla och mindre vä
 Som en del av lanseringen vill du veta:
 
    * Hur är försäljningen jämfört med din senaste försäljning?
-   * Hur ser lanseringen ut jämfört med den senaste lanseringen?
+   * Hur är produktlanseringen jämfört med den senaste produktlanseringen?
    * Fungerar era erbjudanden för denna viktiga dag eller händelse?
 
-* Relevanta, men mindre värdefulla användningsfall för realrapportering är valideringsfall.
+* Relevanta, men mindre värdefulla användningsfall för realtidsrapportering är valideringsfall.
 Du vill validera, till exempel:
 
    * Fungerar faktiskt kampanjresan som ni nyligen lanserade?
-   * Gick den nya produktsidan ut live och samlar du in kunddata från sidan?
+   * Samlar ni in kunddata från sidan när den nya produktsidan publicerades?
    * Går det bra för ditt live-mediematerial?
 
-Överväg inte realtidsrapportering för användningsfall för övervakning av åtgärder. Om du till exempel vill svara på frågan om din webbplats faktiskt fungerar?
+Överväg inte realtidsrapportering för användningsfall för övervakning av åtgärder. Till exempel: Fungerar en webbplats?
 
 
 ## Definition
@@ -52,7 +52,7 @@ Realtidsaspekten av realtidsrapportering för Customer Journey Analytics definie
 Du bör vara medveten om följande begränsning för realtidsrapportering:
 
 * Realtidsrapportering rapporterar endast om data som är tillgängliga under en rullande period på 24 timmar. Data som korsar denna rullande 24-timmarsperiod är inte tillgängliga.
-* Attribution, segmentation, calculate metrics, and more only works on the data available within the rolling period of 24 hours.
-* Realtidsrapportering fungerar bäst med data på händelse- och sessionsnivå och du bör vara försiktig med att använda realtidsrapportering för data på personnivå. <!--Need to explain this a bit better --> Överväg inställningen för händelse- och sessionsnivådata när du väljer mått, (beräknade) mått. Och när du använder funktioner som nedbrytning, nästa eller föregående, med mera i realtidsuppdateringspanelen.
+* Attribution, segmentation, calculate metrics, and more only work on the data available within the rolling period of 24 hours.
+* Realtidsrapportering fungerar bäst med data på händelse- och sessionsnivå och du bör vara försiktig med realtidsrapportering för data på personnivå. <!--Need to explain this a bit better --> Eftersom endast händelser från den rullande 24-timmarsperioden är tillgängliga för realtidsrapporter, begränsas en persons händelsehistorik även till det här fönstret. Tänk på inställningen för händelse- och sessionsnivådata när du väljer mått, (beräknade) mått. Och när du använder funktioner som nedbrytning, nästa eller föregående, med mera i realtidsuppdateringspanelen.
 * Du kan inte kombinera sammanfogning med realtidsrapportering. <!-- Do we need to explain this in more detail, why? --> Som nämnts ovan handlar realtidsrapportering om händelser och sessionsdata och inte så mycket om personbaserade data.
 * Det finns inga tillgängliga värden för pulsslagsinsamlade media, med undantag för mediestart och mediefärg. Så du kan fortfarande använda realtidsrapportering för att aktivera medieanvändning.
