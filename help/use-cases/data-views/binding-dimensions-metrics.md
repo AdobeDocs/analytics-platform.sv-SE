@@ -4,7 +4,7 @@ description: Attributdimensioner till objektarrayer för komplex beständighetsa
 exl-id: 5e7c71e9-3f22-4aa1-a428-0bea45efb394
 feature: Use Cases
 role: User
-source-git-commit: 1590b7fbdedfacf4665d191220156c887f9c562a
+source-git-commit: db47e3414046a2222c2cb95588c4e3cc6988e6be
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 1%
@@ -14,13 +14,13 @@ ht-degree: 1%
 
 # Använd bindningsdimensioner och mätvärden
 
-Customer Journey Analytics erbjuder flera sätt att behålla dimensionsvärden efter den träff som de är inställda på. En av de beständighetsmetoder som Adobe erbjuder kallas bindning. I tidigare versioner av Adobe Analytics kallades detta koncept försäljning.
+Customer Journey Analytics erbjuder flera sätt att bevara dimensionsvärden utöver den träff de är inställda på. En av de beständiga metoder som Adobe erbjuder kallas bindning. I tidigare versioner av Adobe Analytics kallades detta koncept försäljning.
 
 Även om du kan använda bindningsdimensioner med händelsedata på den översta nivån, är det här konceptet bäst att använda när du arbetar med [Arrayer med objekt](/help/use-cases/object-arrays.md). Du kan tilldela en dimension till en del av en objektarray utan att tillämpa dimensionen på alla attribut i en viss händelse. Du kan t.ex. tilldela en sökterm till en produkt i kundvagnens objektmatris utan att binda söktermen till hela händelsen.
 
 ## Exempel 1: Använd bindningsdimensioner för att tilldela ytterligare produktattribut till ett inköp
 
-Du kan binda dimensionsobjekt inom en objektarray till en annan dimension. När den bundna dimensionsposten visas återkallar Customer Journey Analytics den bundna dimensionen och tar med den i händelsen åt dig. Tänk på följande kundresa:
+Du kan binda dimensionsobjekt inom en objektarray till en annan dimension. När den bundna dimensionsobjektet visas, återkallar Customer Journey Analytics den bundna dimensionen och inkluderar den i händelsen för dig. Tänk på följande kundresa:
 
 1. En besökare ser en produktsida på en tvättmaskin.
 
@@ -440,4 +440,4 @@ Om du binder `product_finding_method` till Cart Adds-måttet kopplas varje produ
 
 >[!MORELIKETHIS]
 >
->[Binda Dimensioner i datavyer](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=sv-SE), genomgång.
+>[Bindningsdimensioner i datavyer](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html), genomgång.
