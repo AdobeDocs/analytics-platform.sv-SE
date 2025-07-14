@@ -4,9 +4,9 @@ description: Lär dig hur du publicerar målgrupper från Customer Journey Analy
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: f3bd60d6a371a16e606d9af60e3359d8128a3c9f
 workflow-type: tm+mt
-source-wordcount: '2277'
+source-wordcount: '2298'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 
 
-I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics till [kundprofilen i realtid](https://experienceleague.adobe.com/sv/docs/experience-platform/profile/home) i Adobe Experience Platform för kundanpassning och personalisering.
+I det här avsnittet beskrivs hur du skapar och publicerar målgrupper som identifieras i Customer Journey Analytics till [kundprofilen i realtid](https://experienceleague.adobe.com/en/docs/experience-platform/profile/home) i Adobe Experience Platform för kundanpassning och personalisering.
 
 Läs den här [översikten](/help/components/audiences/audiences-overview.md) om du vill bekanta dig med konceptet Customer Journey Analytics målgrupper.
 
@@ -72,7 +72,7 @@ Läs den här [översikten](/help/components/audiences/audiences-overview.md) om
    | Skapandemetod | Information |
    | --- | --- |
    | Från gränssnittet **[!UICONTROL Audiences]** | Välj **[!UICONTROL Components]** > **[!UICONTROL Audiences]** på Customer Journey Analytics huvudmeny. Gränssnittet Publiker visas. Välj **[!UICONTROL Create audience]** så öppnas [!UICONTROL Audience builder]. |
-   | Från en visualisering i Analysis Workspace | Många visualiseringar i Analysis Workspace gör att du kan skapa en målgrupp med hjälp av snabbmenyn. Du kan till exempel välja **[!UICONTROL Create audience]** på snabbmenyn för ett objekt i en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) eller en nod i [Researbetsytan](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>När du använder den här metoden fylls segmentet i Audience Builder i automatiskt med den dimension eller det dimensionsobjekt som du valde.</p><p>Med följande visualiseringar kan du skapa en målgrupp med hjälp av högerklicksmenyn:</p><ul><li>[Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Researbetsyta](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Obs!** Målgrupper kan inte innehålla beräknade värden. Om du försöker skapa en målgrupp som innehåller ett beräknat mått inkluderas inte det beräknade måttet i målgruppsdefinitionen.</p> |
+   | Från en visualisering i Analysis Workspace | Många visualiseringar i Analysis Workspace gör att du kan skapa en målgrupp med hjälp av snabbmenyn. Du kan till exempel välja **[!UICONTROL Create audience]** på snabbmenyn för ett objekt i en [friformstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) eller en nod i [Researbetsytan](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>När du använder den här metoden fylls segmentet i Audience Builder i automatiskt med den dimension eller det dimensionsobjekt som du valde.</p><p>Med följande visualiseringar kan du skapa en målgrupp med hjälp av högerklicksmenyn:</p><ul><li>[Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Researbetsyta](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>[Karta ](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**Obs!** Den här visualiseringen är i den begränsade testfasen av releasen och är kanske inte tillgänglig än i din miljö.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Obs!** Målgrupper kan inte innehålla beräknade värden. Om du försöker skapa en målgrupp som innehåller ett beräknat mått inkluderas inte det beräknade måttet i målgruppsdefinitionen.</p> |
    | Från gränssnittet för att skapa/redigera segment | Markera rutan **[!UICONTROL Create an audience from this segment]**. Om du använder den här metoden fylls segmentet i automatiskt. Mer information finns i [Skapa segment](/help/components/segments/seg-create.md). |
 
    {style="table-layout:auto"}
@@ -86,7 +86,7 @@ Läs den här [översikten](/help/components/audiences/audiences-overview.md) om
 1. Kontrollera målgruppskonfigurationen och välj **[!UICONTROL Publish]**.
 Du får ett bekräftelsemeddelande om att publiken publiceras. Publiceringen tar bara en minut eller två att visa för den här publiken i Experience Platform.
 
-1. Välj **[!UICONTROL View audience in AEP]** i samma meddelande så dirigeras du till [segmentgränssnittet](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/overview) i Adobe Experience Platform. Mer information finns nedan.
+1. Välj **[!UICONTROL View audience in AEP]** i samma meddelande så dirigeras du till [segmentgränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/overview) i Adobe Experience Platform. Mer information finns nedan.
 
 ## Audience Builder
 
@@ -116,13 +116,13 @@ Panelen Förhandsgranska data innehåller följande information.
 | **[!UICONTROL Estimated to return]** | Detta nummer ger ett uppskattat antal återkommande kunder under den tidsperiod som du valde. Det här talet beräknas med hjälp av den historiska bortfallstakten för den här målgruppen. |
 | **[!UICONTROL Preview metrics]** | Du kan välja ett specifikt mått för att se hur data för det måttet baseras på den målgrupp du anger.  Varje förhandsvisningsmått visar en summa för måttet baserat på målgruppen. Och en procentandel av målgruppsbaserade mätvärden från den totala summan av mätvärdena, enligt datavyn. Exempelvis är 381 personer (det mätvärde du valde) resultatet av din målgruppsdefinition, som är 5 % av det totala antalet personer som är tillgängliga i datavyn. Du kan välja alla mätvärden som är tillgängliga i datavyn. |
 | **[!UICONTROL Namespaces included]** | De specifika namnutrymmen som är associerade med personerna i din publik. Exempel är ECID, CRM-ID, e-postadresser osv. |
-| **[!UICONTROL Sandbox]** | Den [Experience Platform-sandlåda](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home) som den här publiken finns i. När du publicerar den här målgruppen på Platform kan du bara arbeta med målgruppen inom gränserna för den här sandlådan. |
+| **[!UICONTROL Sandbox]** | Den [Experience Platform-sandlåda](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) som den här publiken finns i. När du publicerar den här målgruppen på Platform kan du bara arbeta med målgruppen inom gränserna för den här sandlådan. |
 
 {style="table-layout:auto"}
 
 ## Vad händer när en publik har skapats och publicerats? {#after-audience-created}
 
-När du har skapat och publicerat en målgrupp i Customer Journey Analytics är målgruppen tillgänglig i Experience Platform och kan visas på [målportalen](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/audience-portal). Med målgruppen i Experience Platform kan den användas i andra Experience Platform-program, till exempel Adobe Journey Optimizer.
+När du har skapat och publicerat en målgrupp i Customer Journey Analytics är målgruppen tillgänglig i Experience Platform och kan visas på [målportalen](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal). Med målgruppen i Experience Platform kan den användas i andra Experience Platform-program, till exempel Adobe Journey Optimizer.
 
 Ett Adobe Experience Platform-direktuppspelningssegment skapas bara om din organisation är inställd för direktuppspelningssegmentering.
 
@@ -171,7 +171,7 @@ Så här visar du Customer Journey Analytics-målgrupper i Platform:
 
    * Använd sökfältet ![Sök](/help/assets/icons/Search.svg).
 
-Mer information om hur du använder publiker i plattformar finns i avsnittet [Publiker](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder) i [gränssnittshandboken för segmentbyggaren](https://experienceleague.adobe.com/sv/docs/experience-platform/segmentation/ui/segment-builder) i Experience Platform-dokumentationen.
+Mer information om hur du använder publiker i plattformar finns i avsnittet [Publiker](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) i [gränssnittshandboken för segmentbyggaren](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) i Experience Platform-dokumentationen.
 
 ### Förstå skillnader i antal målgrupper
 
@@ -238,7 +238,7 @@ Customer Journey Analytics strömmar data till Real-Time Customer Data Platform 
 
 +++**Vilka identiteter skickar Customer Journey Analytics?**
 
-Vilka identitets-/namnområdespar som angavs i [anslutningsinställningen](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/create-connection). Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som person-ID.
+Vilka identitets-/namnområdespar som angavs i [anslutningsinställningen](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection). Detta är i synnerhet det steg då en användare väljer det fält som han eller hon vill använda som person-ID.
 
 +++
 
