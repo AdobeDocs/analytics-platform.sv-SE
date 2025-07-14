@@ -440,4 +440,4 @@ Om du binder `product_finding_method` till Cart Adds-måttet kopplas varje produ
 
 >[!MORELIKETHIS]
 >
->[Bindningsdimensioner i datavyer](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html), genomgång.
+>[Bindningsdimensioner i datavyer](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=sv-SE), genomgång.
