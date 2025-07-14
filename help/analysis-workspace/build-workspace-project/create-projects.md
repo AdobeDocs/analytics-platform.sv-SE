@@ -4,9 +4,9 @@ title: Skapa projekt
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '450'
 ht-degree: 2%
 
 ---
@@ -81,7 +81,7 @@ Inställningarna inkluderar:
 | Visa anteckningar | Ange om anteckningar ska visas för det här projektet eller inte. |
 | [Projektfärgpalett](/help/analysis-workspace/build-workspace-project/color-palettes.md) | Du kan ändra den kategoriska färgpalett som används i Workspace genom att välja bland färdiga paletter som har optimerats för färgblindhet, eller genom att ange en anpassad palett. Den här funktionen påverkar många saker i Workspace, bland annat de flesta visualiseringar. |
 | [Visa densitet](/help/analysis-workspace/build-workspace-project/view-density.md) | Gör att du kan se mer data på skärmen genom att minska den lodräta utfyllnaden för den vänstra panelen, frihandstabeller och kohorttabeller. |
-| Tillåt kommentarer | **Obs!** Den här funktionen är i den begränsade testfasen av versionen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Customer Journey Analytics funktionsreleaser](/help/release-notes/releases.md). <p>När det här alternativet är aktiverat finns det ett kommentarsområde till höger om projektet i Analysis Workspace. Mer information finns i [Lägga till och hantera kommentarer i projekt](/help/analysis-workspace/build-workspace-project/comment-projects.md).</p> |
+| Tillåt kommentarer | När det här alternativet är aktiverat finns det ett kommentarsområde till höger om projektet i Analysis Workspace. Mer information finns i [Lägga till och hantera kommentarer i projekt](/help/analysis-workspace/build-workspace-project/comment-projects.md). |
 
 
 
