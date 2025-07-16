@@ -51,7 +51,7 @@ Så här öppnar du förhandsgranskningen med följande information:
   | **[!UICONTROL Impressions (all time)]**: Antal visningar för upplevelsen. | **[!UICONTROL Impressions (all times)]**: Antal visningar för resursen. |
   | **[!UICONTROL Assets]**: Antal resurser som den här upplevelsen innehåller. <br/>Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. | **[!UICONTROL Experiences]**: Antal upplevelser där den här resursen visas. <br/>Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. |
   | **[!UICONTROL First impression]**: Datum för första intryck av upplevelsen. | **[!UICONTROL First impression]**: Datum för första exponering av resursen. |
-  | **[!UICONTROL  Most recent impression]**: Datum för det senaste intrycket av upplevelsen. | **[!UICONTROL Most recent impression]**: Datum för det senaste intrycket av resursen. |
+  | **[!UICONTROL &#x200B; Most recent impression]**: Datum för det senaste intrycket av upplevelsen. | **[!UICONTROL Most recent impression]**: Datum för det senaste intrycket av resursen. |
   | **[!UICONTROL Experience attributes]**: Upplevelsens [attribut](/help/content-analytics/report/components.md#experience-attributes). | **[!UICONTROL Asset attributes]**: Resursens [attribut](/help/content-analytics/report/components.md#asset-attributes). |
 
 
@@ -65,7 +65,7 @@ Så här använder du mallen:
 
 1. Välj **[!UICONTROL Workspace]** på huvudmenyn.
 1. Kontrollera att du har valt en datavy som är konfigurerad för Content Analytics.
-1. Sök efter eller använd segment (**[!UICONTROL Web]** för **[!UICONTROL Channel]** och **[!UICONTROL Engagement]** för **[!UICONTROL Use Case]**s) för att hitta och välja mallen **[!UICONTROL Content analytics]**.
+1. Sök efter eller använd segment (**[!UICONTROL Web]** för **[!UICONTROL Channel]** och **[!UICONTROL Engagement]** för **[!UICONTROL Use Case]**&#x200B;s) för att hitta och välja mallen **[!UICONTROL Content analytics]**.
 1. Välj **[!UICONTROL Use template]**.
 1. I dialogrutan **[!UICONTROL Set up your template]** väljer du ett mått i dialogrutan **[!UICONTROL Select a conversion metric]**. Exempel: **[!UICONTROL Asset CTR]**.
 1. Välj **[!UICONTROL Continue]**.
@@ -155,5 +155,5 @@ Du kan dela upp en resurs efter dimensioner för att få en bättre förståelse
 >[!MORELIKETHIS]
 >
 >[Content Analytics-komponenter](components.md)
->>[Använd mallar](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>&#x200B;>[Använd mallar](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
