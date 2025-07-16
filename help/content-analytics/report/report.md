@@ -1,18 +1,18 @@
 ---
 title: Content Analytics-rapportering
-description: Rapportera om innehållsanalys
+description: Rapportera om Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: c86da649c23ca06c3404b6e5db0b9970e8817a72
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
 
 ---
 
-# Översikt över Content Analytics-rapportering
+# Content Analytics rapportöversikt
 
 Du rapporterar, gör analyser och får insikter om Content Analytics inom [Analysis Workspace](/help/analysis-workspace/home.md). En specifik Workspace [mall](#template) finns tillgänglig, så du kan omedelbart komma åt ett förifyllt Workspace-projekt med relevanta innehållsinsikter.
 
@@ -27,11 +27,11 @@ Så här börjar du rapportera om Content Analytics från grunden:
 
 Baserat på de Content Analytics-specifika dimensioner du använder i ditt projekt visas miniatyrbilder för resurser och dimensioner.
 
-![Miniatyrbilder för innehållsanalys](../assets/aca-thumbnails.png)
+![Content Analytics-miniatyrbilder](../assets/aca-thumbnails.png)
 
 Som standard visas miniatyrbilder för relevanta Content Analytics-dimensioner. Så här konfigurerar du visningen av miniatyrbilder för en Content Analytics-dimension:
 
-* Hovra över en rubrikrad för en Content Analytics-dimension. Till exempel **[!UICONTROL Asset Name]** eller **[!UICONTROL Experience IDs]**.
+* Hovra över en rubrikrad för en Content Analytics-dimension. Till exempel **[!UICONTROL Asset Id]** eller **[!UICONTROL Experience IDs]**.
 * Välj ![Inställning](/help/assets/icons/Setting.svg).
 * I popup-fönstret **[!UICONTROL Row setting]**, under **[!UICONTROL Settings]**, markerar eller avmarkerar **[!UICONTROL Show Thumbnails]**.
 
@@ -51,7 +51,7 @@ Så här öppnar du förhandsgranskningen med följande information:
   | **[!UICONTROL Impressions (all time)]**: Antal visningar för upplevelsen. | **[!UICONTROL Impressions (all times)]**: Antal visningar för resursen. |
   | **[!UICONTROL Assets]**: Antal resurser som den här upplevelsen innehåller. <br/>Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. | **[!UICONTROL Experiences]**: Antal upplevelser där den här resursen visas. <br/>Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. |
   | **[!UICONTROL First impression]**: Datum för första intryck av upplevelsen. | **[!UICONTROL First impression]**: Datum för första exponering av resursen. |
-  | **[!UICONTROL &#x200B; Most recent impression]**: Datum för det senaste intrycket av upplevelsen. | **[!UICONTROL Most recent impression]**: Datum för det senaste intrycket av resursen. |
+  | **[!UICONTROL  Most recent impression]**: Datum för det senaste intrycket av upplevelsen. | **[!UICONTROL Most recent impression]**: Datum för det senaste intrycket av resursen. |
   | **[!UICONTROL Experience attributes]**: Upplevelsens [attribut](/help/content-analytics/report/components.md#experience-attributes). | **[!UICONTROL Asset attributes]**: Resursens [attribut](/help/content-analytics/report/components.md#asset-attributes). |
 
 
@@ -65,7 +65,7 @@ Så här använder du mallen:
 
 1. Välj **[!UICONTROL Workspace]** på huvudmenyn.
 1. Kontrollera att du har valt en datavy som är konfigurerad för Content Analytics.
-1. Sök efter eller använd segment (**[!UICONTROL Web]** för **[!UICONTROL Channel]** och **[!UICONTROL Engagement]** för **[!UICONTROL Use Case]**&#x200B;s) för att hitta och välja mallen **[!UICONTROL Content analytics]**.
+1. Sök efter eller använd segment (**[!UICONTROL Web]** för **[!UICONTROL Channel]** och **[!UICONTROL Engagement]** för **[!UICONTROL Use Case]**s) för att hitta och välja mallen **[!UICONTROL Content analytics]**.
 1. Välj **[!UICONTROL Use template]**.
 1. I dialogrutan **[!UICONTROL Set up your template]** väljer du ett mått i dialogrutan **[!UICONTROL Select a conversion metric]**. Exempel: **[!UICONTROL Asset CTR]**.
 1. Välj **[!UICONTROL Continue]**.
@@ -154,6 +154,6 @@ Du kan dela upp en resurs efter dimensioner för att få en bättre förståelse
 
 >[!MORELIKETHIS]
 >
->[Innehållsanalyskomponenter](components.md)
->[Använd mallar](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>[Content Analytics-komponenter](components.md)
+>>[Använd mallar](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
