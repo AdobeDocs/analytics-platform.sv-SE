@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 4163228b2ffb08a04e386e6ca31151c7143aed5c
+source-git-commit: c5d550d92a7bf201d3b9f62243540d9c4e063fc8
 workflow-type: tm+mt
-source-wordcount: '2156'
+source-wordcount: '2166'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs kartvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs kartvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -212,7 +212,9 @@ Kartvisualiseringen i Customer Journey Analytics skiljer sig från kartvisualise
       * Visa negativa tal.
 
         Om du till exempel ritar upp ett årligt mätvärde kan kartan visa -33 % över New York.
+
       * Med mätvärden som är av typen *percent*, genereras medelvärden för procentsatserna tillsammans.
+
       * Ett grönt och rött färgschema anger positivt och negativt.
 
    * **Ytterligare visualiseringsinställningar**: Välj inställningsikonen ![Inställning](/help/assets/icons/Setting.svg) i visualiseringshuvudet om du vill visa ytterligare inställningar för mappningsvisualiseringen. Mer information finns i [Konfigurera visualiseringsinställningar](#configure-visualization-settings).
@@ -238,7 +240,7 @@ Så här konfigurerar du inställningar för mappningsvisualisering:
    | **[!UICONTROL Styles]** | | |
    | | **[!UICONTROL Color theme]** | Visar färgschemat för värmekartan och bubblorna. Du kan välja mellan Coral, Reds, Green eller Blues. Standardvärdet är Coral. |
    | | **[!UICONTROL Map style]** | Du kan välja mellan Basic, Streets, Bright, Light, Dark och Satellite. |
-   | | **[!UICONTROL Cluster radius]** | Grupperar datapunkter som ligger inom det angivna antalet pixlar. Standardvärdet är 50. |
+   | | **[!UICONTROL Cluster radius]** | Grupperar datapunkter som ligger inom det angivna antalet pixlar. Standardvärdet är 50.<p>Det här alternativet är bara tillgängligt när **[!UICONTROL Bubbles]** har valts som **[!UICONTROL Map type]**.</p> |
    | | **[!UICONTROL Custom max value]** | Gör att du kan ändra tröskelvärdet för det högsta värdet för kartan. Om du justerar det här värdet justeras skalan för bubblor- eller heatmap-värdena (färg och storlek) i förhållande till det anpassade maxvärdet som du anger. |
    | | **[!UICONTROL Show annotations]** | Visar anteckningarna som gjorts för den här visualiseringen. |
    | | **[!UICONTROL Hide title]** | Döljer titeln på visualiseringen. |
@@ -263,19 +265,19 @@ Om du har anpassade datamängder med djup precision kan du konfigurera kartvisua
 
    1. I fältet **[!UICONTROL Decimal places]** ändrar du antalet decimaler så att det motsvarar den önskade precisionsnivån:
 
-      * **0:** Exakt för den stora regionen eller landsnivån i kartvisualiseringen. Visar 0 decimaler i Worspace-rapporter.
+      * **0:** Exakt för den stora regionen eller landsnivån i kartvisualiseringen. Visar 0 decimaler i Workspace-rapporter.
 
-      * **1:** Exakt för regionen eller storstadsnivån i kartvisualiseringen.  Visar en decimal i Worspace-rapporter.
+      * **1:** Exakt för regionen eller storstadsnivån i kartvisualiseringen.  Visar en decimal i Workspace-rapporter.
 
-      * **2:** Exakt för stad eller postnummer i kartvisualiseringen. Visar 2 decimaler i Worspace-rapporter.
+      * **2:** Exakt för stad eller postnummer i kartvisualiseringen. Visar 2 decimaler i Workspace-rapporter.
 
         Det här är standardvalet.
 
-      * **3:** Exakt för den mycket lilla stan eller grannskapsnivån i kartvisualiseringen. Visar 3 decimaler i Worspace-rapporter.
+      * **3:** Exakt för den mycket lilla stan eller grannskapsnivån i kartvisualiseringen. Visar 3 decimaler i Workspace-rapporter.
 
-      * **4:** Exakt för ett specifikt paket med mark- eller byggnadsnivåer i kartvisualiseringen. Visar 4 decimaler i Worspace-rapporter.
+      * **4:** Exakt för ett specifikt paket med mark- eller byggnadsnivåer i kartvisualiseringen. Visar 4 decimaler i Workspace-rapporter.
 
-      * **5:** Exakt för en enda mätare i kartvisualiseringen. Visar 5 decimaler i Worspace-rapporter.
+      * **5:** Exakt för en enda mätare i kartvisualiseringen. Visar 5 decimaler i Workspace-rapporter.
 
 1. Välj **[!UICONTROL Save and continue]** > **[!UICONTROL Save and finish]**.
 
