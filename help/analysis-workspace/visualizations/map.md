@@ -6,9 +6,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: c5d550d92a7bf201d3b9f62243540d9c4e063fc8
+source-git-commit: f0ef310f120e278685893308315902e32c54e35e
 workflow-type: tm+mt
-source-wordcount: '2166'
+source-wordcount: '2254'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs kartvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs kartvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -287,11 +287,13 @@ Du kan skapa ett segment baserat på ett visst område som du väljer i kartvisu
 
 Så här skapar du ett segment från kartvisualiseringen:
 
-1. (Valfritt) Zooma in på det specifika område på kartan som innehåller de data som du vill använda för segmentet.
+1. Zooma eller panorera till det område på kartan som innehåller de data du vill använda för ditt segment.
 
-1. Klicka på markeringsverktyget ![mappa markeringsikonen](assets/map-selection-icon.png) och dra sedan musen för att markera önskat område.
+1. Gör något av följande:
 
-1. Välj **[!UICONTROL Create segment from selection]** i listrutan som visas.
+   * **Om du vill skapa ett segment av allt som för närvarande visas på kartan:** Högerklicka någonstans på kartan och välj sedan **[!UICONTROL Create segment from current view]**.
+
+   * **Om du vill skapa ett segment för ett mer specifikt område på kartan:** Klicka på markeringsverktyget ![mappa markeringsikonen](assets/map-selection-icon.png), dra musen för att markera önskat område och markera sedan **[!UICONTROL Create segment from selection]**.
 
 1. Använd segmentverktyget för att definiera det nya segmentet. Mer information finns i [Segmentbyggare](/help/components/segments/seg-builder.md).
 
@@ -301,11 +303,13 @@ Du kan skapa en målgrupp baserat på ett specifikt område som du väljer i kar
 
 Så här skapar du en målgrupp utifrån kartvisualiseringen:
 
-1. (Valfritt) Zooma in på det specifika område på kartan som innehåller de data du vill använda för målgruppen.
+1. Zooma eller panorera till det område på kartan som innehåller de data du vill använda för din målgrupp.
 
-1. Klicka på markeringsverktyget ![mappa markeringsikonen](assets/map-selection-icon.png) och dra sedan musen för att markera önskat område.
+1. Gör något av följande:
 
-1. Välj **[!UICONTROL Create audience from selection]** i listrutan som visas.
+   * **Om du vill skapa en målgrupp från allt som visas på kartan:** Högerklicka någonstans på kartan och välj sedan **[!UICONTROL Create audience from current view]**.
+
+   * **Om du vill skapa en målgrupp för ett mer specifikt område på kartan:** Klicka på markeringsverktyget ![mappa markeringsikonen](assets/map-selection-icon.png), dra musen för att markera önskat område och välj sedan **[!UICONTROL Create audience from selection]**.
 
 1. Använd Audience Builder för att definiera den nya målgruppen. Mer information finns i [Målgruppsverktyget](/help/components/audiences/publish.md#audience-builder) i [Skapa och publicera målgrupper](/help/components/audiences/publish.md)
 
@@ -315,11 +319,13 @@ Du kan skapa en anpassad linjediagramvisualisering för data inom ett visst omr�
 
 Så här skapar du ett trendlinjediagram utifrån mappningsvisualiseringen:
 
-1. (Valfritt) Zooma in på det specifika område på kartan som innehåller data som du vill använda för det trendlinjediagrammet.
+1. Zooma eller panorera till det område på kartan som innehåller data som du vill använda för det trendlinjediagrammet.
 
-1. Klicka på markeringsverktyget ![mappa markeringsikonen](assets/map-selection-icon.png) och dra sedan musen för att markera önskat område.
+1. Gör något av följande:
 
-1. Välj **[!UICONTROL Trend]** i listrutan som visas.
+   * **Om du vill skapa ett trendlinjediagram av allt som för närvarande visas på kartan:** Högerklicka någonstans på kartan och välj sedan **[!UICONTROL Trend from current view]**.
+
+   * **Om du vill skapa ett trendlinjediagram för ett mer specifikt område på kartan:** Klicka på markeringsverktyget ![mappa markeringsikonen](assets/map-selection-icon.png), dra musen för att markera önskat område och välj sedan **[!UICONTROL Trend]**.
 
    En linjevisualisering med en trendlinje skapas. Mer information om den här visualiseringen finns i [Rad](/help/analysis-workspace/visualizations/line.md).
 
