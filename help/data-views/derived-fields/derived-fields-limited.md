@@ -21,7 +21,7 @@ ht-degree: 1%
 >[!IMPORTANT]
 >
 >Detta är preliminär dokumentation om nya härledda fältfunktioner som ännu inte är allmänt tillgängliga. Använd den här informationen för att lära dig mer om de nya härledda fältsfunktionerna. Dokumentationen kan fortfarande ändras och inga rättsliga skyldigheter kan härledas från den aktuella versionen av den här artikeln.
->><br/>I [Härledda fält](derived-fields.md) finns mer information om de härledda fältsfunktionerna i allmänhet och de tillgängliga funktionerna och funktionsmallarna.
+>&#x200B;><br/>I [Härledda fält](derived-fields.md) finns mer information om de härledda fältsfunktionerna i allmänhet och de tillgängliga funktionerna och funktionsmallarna.
 >
 
 ## Funktionsreferens
