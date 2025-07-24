@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 2d4e8c51111427564c761a16deb27223e98cd2ec
+source-git-commit: c9560f8b11ff055040611e208f09ee3e2d7bb5da
 workflow-type: tm+mt
-source-wordcount: '8570'
+source-wordcount: '8502'
 ht-degree: 2%
 
 ---
@@ -19,31 +19,10 @@ ht-degree: 2%
 >title="Härledda fält"
 >abstract="Med ett härlett fält kan du definiera dataändringar direkt med hjälp av ett anpassningsbart regelverktyg. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i Workspace eller ytterligare definiera det som en komponent i datavyn."
 
-<!-- BEGIN
-     Temporarily have these entries at the top; once functions are documented
-     move them to appropriate function section
--->
-
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_datemath"
->title="Datummatematik"
->abstract="Den här funktionen gör det möjligt att returnera skillnaden mellan två datum- eller datum-/tidsfält."
-
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_typecast"
->title="Typecast"
->abstract="Med den här funktionen kan du ändra fälttypen direkt för att göra fältet tillgängligt för ytterligare omformningar i Customer Journey Analytics."
-
->[!CONTEXTUALHELP]
->id="dataview_derivedfields_depth"
->title="Djup"
->abstract="Den här funktionen gör att du kan returnera djupet i vilket fält som helst, på samma sätt som standardkomponenten för händelsdjup."
-
-<!-- END -->
 
 Härledda fält är en viktig aspekt av rapportfunktionen i realtid i Adobe Customer Journey Analytics. Med ett härlett fält kan du definiera (ofta komplexa) dataändringar direkt, via en anpassningsbar regelbyggare. Du kan sedan använda det härledda fältet som en komponent (mått eller dimension) i [Workspace](../../analysis-workspace/home.md) eller ytterligare definiera det härledda fältet som en komponent i [datavyn](../data-views.md).
 
-Härledda fält kan spara mycket tid och arbete jämfört med att omforma eller ändra data på andra platser än Customer Journey Analytics. Till exempel [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=sv-SE), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html?lang=sv-SE) eller inom dina egna ETL-/ELT-processer (Extract Transform).
+Härledda fält kan spara mycket tid och arbete jämfört med att omforma eller ändra data på andra platser än Customer Journey Analytics. Till exempel [Data Prep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html), [Data Distiller](https://experienceleague.adobe.com/docs/experience-platform/query/data-distiller/overview.html) eller inom dina egna ETL-/ELT-processer (Extract Transform).
 
 Härledda fält definieras i [datavyer](../data-views.md), baseras på en uppsättning funktioner som definierats som regler och tillämpas på tillgängliga standard- och/eller schemafält.
 
@@ -65,8 +44,8 @@ När du skapar eller redigerar ett härlett fält använder du det härledda fä
 |---------|----------|--------|
 | 1 | **Väljare** | Du använder väljarområdet för att markera och dra och släppa funktionen, funktionsmallen, schemafältet eller standardfältet till regelbyggaren. <br/>Använd listrutan för att välja mellan: <br/>![Funktion](assets/Smock_Function_18_N.svg) [!UICONTROL Functions] - visar tillgängliga [funktioner](#function-reference), </br>![Funktionsmallikon](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Function templates] - visar tillgängliga [funktionsmallar](#function-templates), <br/>![Schemafältikon](assets/Smock_Folder_18_N.svg) [!UICONTROL Schema fields] - listar tillgängliga fält från datauppsättningskategorier (händelse, profil, sökning) och tidigare definierade fält och <br/>![Standardfältsikon ](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standard fields] - tillgängliga standardfält (t.ex. ID för plattformsdatauppsättning). Endast strängfält och numeriska standardfält visas i väljaren. Om funktionen stöder andra datatyper kan standardfält med dessa andra datatyper väljas för värden eller fält i regelgränssnittet.<br/>Du kan söka efter funktioner, funktionsmallar, schema och standardfält med sökrutan ![Sökikonen](assets/Smock_Search_18_N.svg) . <br/>Du kan filtrera den markerade objektlistan genom att välja ![Filterikon](assets/Smock_Filter_18_N.svg) och ange filter i dialogrutan [!UICONTROL Filter fields by] . Du kan enkelt ta bort filter med hjälp av ikonen ![Stäng](assets/CrossSize75.svg) för varje filter. |
 | 2 | **Regelverktyget** | Du skapar det härledda fältet sekventiellt med en eller flera regler. En regel är en specifik implementering av en funktion och är därför alltid kopplad till endast en funktion. Du skapar en regel genom att dra och släppa en funktion i regelbyggaren. Funktionstypen bestämmer regelns gränssnitt.<br/>Mer information finns i [Regelgränssnittet](#rule-interface). <br/>Du kan infoga en funktion i början, slutet eller mellan regler som redan är tillgängliga i regelbyggaren. Den sista regeln i regelbyggaren avgör det härledda fältets slutliga utdata. |
-| 3 | **[!UICONTROL **&#x200B; Fältinställningar &#x200B;**]** | Du kan namnge och beskriva det härledda fältet och kontrollera dess fälttyp. |
-| 4 | **[!UICONTROL **&#x200B; Slutliga utdata &#x200B;**]** | I det här området visas en direkt uppdaterad förhandsvisning av utdatavärden, baserat på data under de senaste 30 dagarna och de ändringar du gör i det härledda fältet i regelbyggaren. |
+| 3 | **[!UICONTROL ** Fältinställningar **]** | Du kan namnge och beskriva det härledda fältet och kontrollera dess fälttyp. |
+| 4 | **[!UICONTROL ** Slutliga utdata **]** | I det här området visas en direkt uppdaterad förhandsvisning av utdatavärden, baserat på data under de senaste 30 dagarna och de ändringar du gör i det härledda fältet i regelbyggaren. |
 
 {style="table-layout:auto"}
 
@@ -75,7 +54,7 @@ När du skapar eller redigerar ett härlett fält använder du det härledda fä
 När du använder det härledda fältgränssnittet för första gången visas guiden [!UICONTROL Start with a field template].
 
 1. Välj den mall som bäst beskriver den typ av fält som du försöker skapa.
-2. Klicka på knappen **[!UICONTROL **&#x200B; Välj &#x200B;**]** för att fortsätta.
+2. Klicka på knappen **[!UICONTROL ** Välj **]** för att fortsätta.
 
 Dialogrutan för det härledda fältet innehåller regler (och funktioner) som är nödvändiga eller användbara för den typ av fält som du har valt. Mer information om tillgängliga mallar finns i [Funktionsmallar](#function-templates).
 
@@ -89,7 +68,7 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 |---------|----------|--------|
 | A | **Regelnamn** | Regelnamnet är som standard **Regel X** (X refererar till ett sekvensnummer). Om du vill redigera namnet på en regel markerar du dess namn och skriver in det nya namnet, till exempel `Query Parameter`. |
 | B | **Funktionsnamn** | Det valda funktionsnamnet för regeln, till exempel [!UICONTROL URL PARSE]. När funktionen är den sista i funktionssekvensen och fastställer de slutliga utdatavärdena följs funktionsnamnet av [!UICONTROL - FINAL OUTPUT], till exempel [!UICONTROL URL PARSE - FINAL OUTPUT]. <br/>Om du vill visa ett popup-fönster med mer information om funktionen väljer du ![hjälpikon](assets/Smock_HelpOutline_18_N.svg). |
-| C | **Regelbeskrivning** | Du kan också lägga till en beskrivning till en regel.<br/>Välj ![Mer ikon](assets/More.svg) och välj sedan **[!UICONTROL ** Lägg till beskrivning **]** om du vill lägga till en beskrivning eller **[!UICONTROL **&#x200B; Redigera beskrivning &#x200B;**]** om du vill redigera en befintlig beskrivning.<br/>Använd redigeraren för att ange en beskrivning. Du kan använda verktygsfältet för att formatera texten (med formatväljare, fet, kursiv, understrykning, höger, vänster, centrerad, färg, nummerlista, punktlista) och lägga till länkar till extern information. <br/>Klicka utanför redigeraren om du vill redigera beskrivningen. |
+| C | **Regelbeskrivning** | Du kan också lägga till en beskrivning till en regel.<br/>Välj ![Mer ikon](assets/More.svg) och välj sedan **[!UICONTROL ** Lägg till beskrivning **]** om du vill lägga till en beskrivning eller **[!UICONTROL ** Redigera beskrivning **]** om du vill redigera en befintlig beskrivning.<br/>Använd redigeraren för att ange en beskrivning. Du kan använda verktygsfältet för att formatera texten (med formatväljare, fet, kursiv, understrykning, höger, vänster, centrerad, färg, nummerlista, punktlista) och lägga till länkar till extern information. <br/>Klicka utanför redigeraren om du vill redigera beskrivningen. |
 | D | **Funktionsområde** | Definierar funktionens logik. Gränssnittet beror på funktionstypen. Listrutan för [!UICONTROL Field] eller [!UICONTROL Value] visar alla kategorier av fält (regler, standardfält, fält) som är tillgängliga, baserat på den typ av indata som funktionen förväntar sig. Du kan också dra och släppa ett fält från väljaren för schema- och standardfält till ett fält eller ett värde. När det dragna fältet kommer från en uppslagsuppsättning infogas en uppslagsfunktion automatiskt före den funktion som du definierar. <br/>Se [Funktionsreferens](#function-reference) om du vill ha detaljerad information om alla funktioner som stöds. |
 
 {style="table-layout:auto"}
@@ -98,36 +77,36 @@ När du definierar en regel i regelbyggaren använder du regelgränssnittet.
 
 1. Välj en befintlig datavy eller skapa en datavy. Mer information finns i [Datavyer](../data-views.md).
 
-2. Välj fliken **[!UICONTROL **&#x200B; Komponenter &#x200B;**]** i datavyn.
+2. Välj fliken **[!UICONTROL ** Komponenter **]** i datavyn.
 
-3. Välj **[!UICONTROL **&#x200B; Skapa härlett fält &#x200B;**]** från den vänstra listen.
+3. Välj **[!UICONTROL ** Skapa härlett fält **]** från den vänstra listen.
 
 4. Använd gränssnittet [!UICONTROL Create derived field] för att definiera ditt härledda fält. Se [Härlett fältgränssnitt](#derived-field-interface).
 
-   Välj **[!UICONTROL **&#x200B; Spara &#x200B;**]** om du vill spara det nya härledda fältet.
+   Välj **[!UICONTROL ** Spara **]** om du vill spara det nya härledda fältet.
 
-5. Det nya härledda fältet läggs till i behållaren [!UICONTROL Derived fields >], som en del av **[!UICONTROL **&#x200B; schemafälten &#x200B;**]** i den vänstra listen i datavyn.
+5. Det nya härledda fältet läggs till i behållaren [!UICONTROL Derived fields >], som en del av **[!UICONTROL ** schemafälten **]** i den vänstra listen i datavyn.
 
 
 ## Redigera ett härlett fält {#edit}
 
 1. Välj en befintlig datavy. Mer information finns i [Datavyer](../data-views.md).
 
-2. Välj fliken **[!UICONTROL **&#x200B; Komponenter &#x200B;**]** i datavyn.
+2. Välj fliken **[!UICONTROL ** Komponenter **]** i datavyn.
 
-3. Välj fliken **[!UICONTROL **&#x200B; Schemafält &#x200B;**]** i rutan [!UICONTROL Connection] till vänster.
+3. Välj fliken **[!UICONTROL ** Schemafält **]** i rutan [!UICONTROL Connection] till vänster.
 
-4. Välj **[!UICONTROL **&#x200B; Härledda fält >**]** behållare.
+4. Välj **[!UICONTROL ** Härledda fält >**]** behållare.
 
 5. Håll markören över det härledda fält som du vill redigera och välj ![Redigera-ikon](assets/Smock_Edit_18_N.svg).
 
 6. Använd gränssnittet [!UICONTROL Edit derived field] om du vill redigera det härledda fältet. Se [Härlett fältgränssnitt](#derived-field-interface).
 
-   - Välj **[!UICONTROL **&#x200B; Spara &#x200B;**]** om du vill spara det uppdaterade härledda fältet.
+   - Välj **[!UICONTROL ** Spara **]** om du vill spara det uppdaterade härledda fältet.
 
-   - Välj **[!UICONTROL **&#x200B; Avbryt &#x200B;**]** om du vill avbryta alla ändringar du har gjort i det härledda fältet.
+   - Välj **[!UICONTROL ** Avbryt **]** om du vill avbryta alla ändringar du har gjort i det härledda fältet.
 
-   - Välj **[!UICONTROL **&#x200B; Spara som &#x200B;**]** om du vill spara det härledda fältet som ett nytt härlett fält. Det nya härledda fältet har samma namn som det ursprungliga redigerade härledda fältet med `(copy)` tillagt.
+   - Välj **[!UICONTROL ** Spara som **]** om du vill spara det härledda fältet som ett nytt härlett fält. Det nya härledda fältet har samma namn som det ursprungliga redigerade härledda fältet med `(copy)` tillagt.
 
 Om du har använt ett härlett fält som en komponent för mått eller mätvärden i datavyn kan du även:
 
@@ -137,11 +116,11 @@ Om du har använt ett härlett fält som en komponent för mått eller mätvärd
 
 1. Använd gränssnittet [!UICONTROL Edit derived field] om du vill redigera det härledda fältet. Se [Härlett fältgränssnitt](#derived-field-interface).
 
-   - Välj **[!UICONTROL **&#x200B; Spara &#x200B;**]** om du vill spara det uppdaterade härledda fältet.
+   - Välj **[!UICONTROL ** Spara **]** om du vill spara det uppdaterade härledda fältet.
 
-   - Välj **[!UICONTROL **&#x200B; Avbryt &#x200B;**]** om du vill avbryta alla ändringar du har gjort i det härledda fältet.
+   - Välj **[!UICONTROL ** Avbryt **]** om du vill avbryta alla ändringar du har gjort i det härledda fältet.
 
-   - Välj **[!UICONTROL **&#x200B; Spara som &#x200B;**]** om du vill spara det härledda fältet som ett nytt härlett fält. Det nya härledda fältet har samma namn som det ursprungliga redigerade härledda fältet med `(copy)` tillagt.
+   - Välj **[!UICONTROL ** Spara som **]** om du vill spara det härledda fältet som ett nytt härlett fält. Det nya härledda fältet har samma namn som det ursprungliga redigerade härledda fältet med `(copy)` tillagt.
 
 
 
@@ -149,19 +128,19 @@ Om du har använt ett härlett fält som en komponent för mått eller mätvärd
 
 1. Välj en befintlig datavy. Mer information finns i [Datavyer](../data-views.md).
 
-2. Välj fliken **[!UICONTROL **&#x200B; Komponenter &#x200B;**]** i datavyn.
+2. Välj fliken **[!UICONTROL ** Komponenter **]** i datavyn.
 
-3. Välj fliken **[!UICONTROL **&#x200B; Schemafält &#x200B;**]** i rutan [!UICONTROL Connection].
+3. Välj fliken **[!UICONTROL ** Schemafält **]** i rutan [!UICONTROL Connection].
 
-4. Välj **[!UICONTROL **&#x200B; Härledda fält >**]** behållare.
+4. Välj **[!UICONTROL ** Härledda fält >**]** behållare.
 
 5. Håll markören över det härledda fält som du vill ta bort och välj ![Redigera-ikon](assets/Smock_Edit_18_N.svg).
 
-6. Välj **[!UICONTROL Delete]** i gränssnittet [!UICONTROL Edit derived field].
+6. Välj [!UICONTROL Edit derived field] i gränssnittet **[!UICONTROL Delete]**.
 
    En [!UICONTROL Delete component]-dialogruta ber dig bekräfta borttagningen. Ta hänsyn till eventuella externa referenser som finns till det härledda fältet utanför datavyn.
 
-   - Välj **[!UICONTROL **&#x200B; Fortsätt &#x200B;**]** om du vill ta bort det härledda fältet.
+   - Välj **[!UICONTROL ** Fortsätt **]** om du vill ta bort det härledda fältet.
 
 Om du har använt ett härlett fält som en komponent för mått eller mätvärden i datavyn kan du även:
 
@@ -169,11 +148,11 @@ Om du har använt ett härlett fält som en komponent för mått eller mätvärd
 
 1. I panelen Komponenter väljer du ikonen ![Redigera](assets/Smock_Edit_18_N.svg) bredvid det härledda fältet, under namnet på schemafältet.
 
-1. Välj **[!UICONTROL Delete]** i gränssnittet [!UICONTROL Edit derived field].
+1. Välj [!UICONTROL Edit derived field] i gränssnittet **[!UICONTROL Delete]**.
 
    En [!UICONTROL Delete component]-dialogruta ber dig bekräfta borttagningen. Ta hänsyn till eventuella externa referenser som finns till det härledda fältet utanför datavyn.
 
-   - Välj **[!UICONTROL **&#x200B; Fortsätt &#x200B;**]** om du vill ta bort det härledda fältet.
+   - Välj **[!UICONTROL ** Fortsätt **]** om du vill ta bort det härledda fältet.
 
 >[!NOTE]
 >
@@ -444,14 +423,10 @@ För varje funktion som stöds finns information nedan:
 
 ### Skiftläge {#casewhen}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_casewhen"
 >title="Skiftläge"
 >abstract="Med den här funktionen kan du använda villkor som baseras på definierade villkor från ett eller flera fält. Dessa kriterier används sedan för att definiera värdena i det nya härledda fältet baserat på villkorens sekvens."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Använder villkorliga värden som baseras på definierade villkor från ett eller flera fält. Dessa kriterier används sedan för att definiera värdena i ett nytt härlett fält, baserat på villkorens sekvens.
@@ -684,14 +659,10 @@ Följande begränsningar gäller och används när värden för *markera* och *a
 
 ### Klassificera {#classify}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_classify"
 >title="Klassificera"
 >abstract="Med den här funktionen kan du definiera en uppsättning värden som ersätts av motsvarande värden med en textinmatning."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Definierar en uppsättning värden som ersätts av motsvarande värden i ett nytt härlett fält.
@@ -913,17 +884,14 @@ Du definierar ett `Origin - Destination` härlett fält. Du använder funktionen
 
 +++
 
+<!-- DEDUPLICATE -->
 
 ### Deduplicera {#dedup}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_deduplicate"
 >title="Deduplicera"
 >abstract="Med den här funktionen kan du konfigurera ett fält så att värden endast räknas som icke-repetitiva på antingen sessions- eller personnivå. Dessutom kan ett ID för borttagning av dubbletter användas för att säkerställa att endast ett värde används baserat på ett visst ID (t.ex. ett köp-ID) (antingen den första instansen eller den sista instansen)."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Förhindrar att ett värde räknas flera gånger.
@@ -1007,6 +975,7 @@ Du definierar ett nytt härlett `Tracking Code (deduplicated)`-fält. Du använd
 +++
 
 
+
 <!-- FIND AND REPLACE -->
 
 ### Sök och ersätt {#find-and-replace}
@@ -1017,8 +986,6 @@ Du definierar ett nytt härlett `Tracking Code (deduplicated)`-fält. Du använd
 >id="dataview_derivedfields_findandreplace"
 >title="Sök och ersätt"
 >abstract="Med den här funktionen kan du söka efter alla värden i ett markerat fält och ersätta dessa värden med ett annat värde i ett nytt härlett fält."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Söker efter alla värden i ett markerat fält och ersätter dessa värden med ett annat värde i ett nytt härlett fält.
@@ -1091,14 +1058,10 @@ Du definierar ett `Email Marketing (updated)` härlett fält. Du använder funkt
 
 ### Sök {#lookup}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lookup"
 >title="Sök"
 >abstract="Den här funktionen ger möjlighet att använda fält från en uppslagsdatauppsättning med hjälp av en matchande nyckel mellan datauppsättningar."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Sök efter värden med hjälp av ett fält från en uppslagsdatauppsättning och returnerar ett värde i ett nytt härlett fält eller för vidare regelbearbetning.
@@ -1152,14 +1115,10 @@ Du kan snabbt infoga en [!UICONTROL Lookup]-funktion i regelbyggaren som redan i
 
 ### Gemener {#lowercase}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_lowercase"
 >title="Gemener"
 >abstract="Den här funktionen konverterar hela strängtexten till gemener."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Konverterar värden från ett fält till gemener och lagrar dem i ett nytt härlett fält.
@@ -1213,14 +1172,10 @@ Du definierar ett `Product Names` härlett fält. Du använder funktionen [!UICO
 
 ### Matematik {#math}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_math"
 >title="Matematik"
 >abstract="Med den här funktionen kan du utföra matematiska operationer i ett fält. Funktionen kan användas för att utföra grundläggande aritmetiska operationer, som addition, subtraktion, multiplikation och division."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Använd enkla matematiska operatorer (lägg till, subtrahera, multiplicera, dela och höj till en potens) i numeriska fält.
@@ -1277,7 +1232,7 @@ Så här skapar du en formel:
 
 1. Lägg till operanden (till exempel `*` för att multiplicera) följt av ett annat fält eller ett statiskt värde. Du kan använda parenteser för att definiera mer komplexa formler.
 
-1. Om du vill infoga ett statiskt värde (till exempel `1.05`) skriver du värdet och väljer **[!UICONTROL Add *x *som ett statiskt värde]**&#x200B;eller **[!UICONTROL Add -*x* som ett negativt statiskt värde]** på snabbmenyn.
+1. Om du vill infoga ett statiskt värde (till exempel `1.05`) skriver du värdet och väljer **[!UICONTROL Add *x *som ett statiskt värde]**eller **[!UICONTROL Add -*x* som ett negativt statiskt värde]** på snabbmenyn.
    ![Math More Info 2](assets/math-more-info-2.png)
 
 1. En grön bock ![bockmarkering](./assets/checkmark.svg)</span> anger om matematiska formler är giltiga, annars visas en varning ![och meddelandet ](./assets/alert.svg). [!UICONTROL Invalid formula expression]
@@ -1290,11 +1245,9 @@ Det finns några viktiga saker att tänka på när du arbetar med statiska tal i
 - Om du använder flera statiska värden i en formel bör dessa statiska värden grupperas med parentes för att formeln ska vara giltig. Exempel:
 
    - Den här formeln returnerar ett fel.
-
      ![Math More Info 4](assets/math-more-info-4.png)
 
    - Den här formeln är giltig.
-
      ![Math More Info 5](assets/math-more-info-5.png)
 
 Använd Math-funktionen för träffnivåbaserade beräkningar. Använd funktionen [Sammanfattning](#summarize) för händelse-, sessions- eller personomfångsbaserade beräkningar.
@@ -1306,14 +1259,10 @@ Använd Math-funktionen för träffnivåbaserade beräkningar. Använd funktione
 
 ### Sammanfoga fält {#merge}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_mergefields"
 >title="Sammanfoga fält"
 >abstract="Med den här funktionen kan du ta värden från två olika fält och inkludera deras respektive värden i en enda dimension. Regeln kontrollerar först om det första värdet har angetts. Annars används det andra värdet och så vidare."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Sammanfogar värden från två olika fält till ett nytt härlett fält.
@@ -1382,14 +1331,10 @@ Du måste välja samma typ av fält i en regel för att slå samman fält. Om du
 
 ### Nästa eller Föregående {#next-previous}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_nextprevious"
 >title="Nästa eller Föregående"
 >abstract="Med den här funktionen kan du titta på nästa eller föregående värde som samlats in för ett givet fält."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Tar ett fält som indata och löser nästa eller föregående värde för det fältet inom sessionens eller användningens omfattning. Detta gäller endast fälten i tabellerna Besök och Händelse.
@@ -1464,14 +1409,10 @@ Du kan bara markera fält som tillhör tabellen Besök eller Händelse.
 
 ### Regex Replace {#regex-replace}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_regexreplace"
 >title="Regex Replace"
 >abstract="Med den här funktionen kan du extrahera delar av en sträng med reguljära uttryck."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Ersätter ett värde från ett fält med ett reguljärt uttryck i ett nytt härlett fält.
@@ -1571,14 +1512,10 @@ Du kan använda de här sekvenserna i [!UICONTROL Output format] hur många gån
 
 ### Dela {#split}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_split"
 >title="Dela"
 >abstract="Med den här funktionen kan du dela upp ett fält i flera fält baserat på en avgränsare."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Delar ett värde från ett fält i ett nytt härlett fält.
@@ -1673,14 +1610,10 @@ Du skapar ett `Second Response` härlett fält som ska ta det senaste värdet fr
 
 ### Sammanfatta {#summarize}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_summarize"
 >title="Sammanfatta"
 >abstract="Den här funktionen gör det möjligt att samla värden på en händelse-, sessions- eller personnivå. Beroende på fälttypen för det valda fältet är olika alternativ tillgängliga."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Tillämpar aggregeringsfunktioner på mått och mått på händelse-, sessions- och användarnivå.
@@ -1751,14 +1684,10 @@ Använd funktionen Summera för händelse-, sessions- eller personomfattningsbas
 
 ### Rensa {#trim}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_trim"
 >title="Rensa"
 >abstract="Med den här funktionen kan du trimma antingen blanksteg eller specialtecken från början eller slutet av en sträng. Det går också att ange antalet tecken som ska användas för det returnerade värdet, antingen från strängens början eller slut."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Beskär tomt utrymme, specialtecken eller antal tecken från början eller slutet av fältvärden till ett nytt härlett fält.
@@ -1868,19 +1797,14 @@ Du skapar ett `Store Identifier` härlett fält. Du använder funktionen [!UICON
 {style="table-layout:auto"}
 +++
 
-
 <!-- URL PARSE -->
 
 ### URL-parsning {#urlparse}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_urlparse"
 >title="URL-parsning"
 >abstract="Den här funktionen gör det möjligt att analysera olika delar av en URL, inklusive värden, sökvägar eller frågeparametrar."
-
-<!-- markdownlint-enable MD034 -->
 
 
 Tolkar olika delar av en URL, inklusive protokoll, värd, sökväg eller frågeparametrar.
@@ -1967,7 +1891,7 @@ Följande begränsningar gäller för funktionen Härledda fält i allmänhet:
 
 - Du kan använda högst tio olika schemafält (exklusive standardfält) när du definierar regler för ett härlett fält.
    - Från det här maxantalet på tio olika schemafält tillåts bara maximalt tre sökschemafält eller profilschemafält.
-- Du kan ha maximalt antal härledda fält per Customer Journey Analytics-anslutning beroende på vilket paket du licensierar. Mer information finns i [Produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/customer-journey-analytics.html){target="_blank"}.
+- Du kan ha maximalt antal härledda fält per Customer Journey Analytics-anslutning beroende på vilket paket du licensierar. Mer information finns i [Produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html){target="_blank"}.
 
 
 ### Sammanfattning av funktionsbegränsningar

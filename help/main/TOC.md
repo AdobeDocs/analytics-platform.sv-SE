@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 24834f6a1424a885c6f7b3dcf0ad84375e21b462
+source-git-commit: 1b81b0fb81119132b6568726761e9897c2b4e47c
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1278'
 ht-degree: 10%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 10%
       + [Frågor och svar](../getting-started/cja-faq.md)
       + [Jämför med BI-lösningar](../getting-started/cja-vs-bi.md)
       + [AI-assistenten](../ai-assistant.md)
-      + [Agent för datainsikter](../data-analysis-ai.md)
+      + [Data Insights Agent](../data-analysis-ai.md)
    + Customer Journey Analytics B2B edition {#cja-b2b}
       + [Översikt](/help/getting-started/cja-b2b-edition.md)
       + [B2B-koncept och -funktioner](/help/getting-started/cja-b2b-concepts-features.md)
@@ -148,6 +148,7 @@ ht-degree: 10%
    + [Standard, komponentreferens](../data-views/component-reference.md)
    + [BI-tillägg](../data-views/bi-extension.md)
    + [Härledda fält](../data-views/derived-fields/derived-fields.md)
+   + [Härledda fält (begränsat)](../data-views/derived-fields/derived-fields-limited.md)
    + [Sammanfattningsdata](../data-views/summary-data.md)
    + [Etiketter och profiler](../data-views/data-governance.md)
    + Delade mått{#shared-metrics-dimensions}
