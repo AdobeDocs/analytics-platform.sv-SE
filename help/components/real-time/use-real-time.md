@@ -31,7 +31,7 @@ Om du vill använda realtidsrapportering aktiverar du alternativet **[!UICONTROL
 * [Nästa eller föregående objekt](/help/analysis-workspace/c-panels/next-previous.md)
 * [Snabba insikter](/help/analysis-workspace/c-panels/quickinsight.md)
 
-Du ser ett meddelande med tidsstämpeln för den senaste uppdateringen av data. Till exempel: [!UICONTROL &#x200B; *Senast uppdaterad 07:55 pm*].
+Du ser ett meddelande med tidsstämpeln för den senaste uppdateringen av data. Till exempel: [!UICONTROL  *Senast uppdaterad 07:55 pm*].
 
 Välj den realtidsperiod som du vill rapportera om i listrutan. Tillgängliga alternativ är:
 
