@@ -77,7 +77,7 @@ Ni kan:
 
 ## Datavy
 
-Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**i listrutan längst upp till höger på panelen.
+Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**&#x200B;i listrutan längst upp till höger på panelen.
 
 När du skapar ett tomt Workspace-projekt är standarddatavyn för den första panelen datavyn som du senast arbetade med i Customer Journey Analytics.
 
