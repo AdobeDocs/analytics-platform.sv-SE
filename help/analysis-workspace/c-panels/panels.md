@@ -4,20 +4,14 @@ title: Paneler - översikt
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: c26fbe37270171c80d77c96966dd21f2dd7c7ce9
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2004'
 ht-degree: 1%
 
 ---
 
 # Paneler - översikt {#panels-overview}
-
->[!CONTEXTUALHELP]
->id="workspace_panel_realtime_refresh"
->title="Uppdatering i realtid"
->abstract="Gör det möjligt att uppdatera data och visualiseringar i den här panelen i realtid."
-
 
 En [!UICONTROL panel] är en samling tabeller och visualiseringar. Du kommer åt panelerna från den övre vänstra ikonen i Workspace eller en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md). Paneler är användbara när du vill ordna dina projekt efter tidsperioder, datavyer eller användningsfall för analyser.
 
@@ -83,7 +77,7 @@ Ni kan:
 
 ## Datavy
 
-Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**&#x200B;i listrutan längst upp till höger på panelen.
+Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**i listrutan längst upp till höger på panelen.
 
 När du skapar ett tomt Workspace-projekt är standarddatavyn för den första panelen datavyn som du senast arbetade med i Customer Journey Analytics.
 
