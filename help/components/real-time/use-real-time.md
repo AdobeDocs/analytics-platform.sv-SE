@@ -7,9 +7,9 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: c26fbe37270171c80d77c96966dd21f2dd7c7ce9
+source-git-commit: 8f19ed6b4214c434dd4ca2dbb5e311c62da109c0
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,8 @@ Om du vill använda realtidsrapportering aktiverar du alternativet **[!UICONTROL
 * [Frihandsfigur](/help/analysis-workspace/c-panels/freeform-panel.md)
 * [Tillskrivning](/help/analysis-workspace/c-panels/attribution.md)
 * [Nästa eller föregående objekt](/help/analysis-workspace/c-panels/next-previous.md)
-* [Snabba insikter](/help/analysis-workspace/c-panels/quickinsight.md)
 
-Du ser ett meddelande med tidsstämpeln för den senaste uppdateringen av data. Till exempel: [!UICONTROL &#x200B; *Senast uppdaterad 07:55 pm*].
+Du ser ett meddelande med tidsstämpeln för den senaste uppdateringen av data. Till exempel: [!UICONTROL  *Senast uppdaterad 07:55 pm*].
 
 Välj den realtidsperiod som du vill rapportera om i listrutan. Tillgängliga alternativ är:
 
