@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 5faf9668475818773c645b69915ddd5182500aea
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -54,10 +54,7 @@ Här följer en högnivåprocess för övergång från exklusiv användning av A
 
 1. Mappa varje Adobe Analytics-dimension från Analytics-källkopplingen till dimensionen i Web SDK-schemat.
 
-   1. &#x200B;
-      <!-- how do you get here -->
-
-   1. Välj fliken **[!UICONTROL Custom]** i avsnittet **[!UICONTROL Map standard fields]**.
+   1. Välj fliken **[!UICONTROL Map standard fields]** i avsnittet **[!UICONTROL Custom]**.
 
    1. Välj **[!UICONTROL Add new mapping]**.
 
