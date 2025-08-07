@@ -4,7 +4,7 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 1b52969f178a31ef90f1969f3a1637258a480c57
+source-git-commit: df069a7a67c65db9eb70900869495202f63abd05
 workflow-type: tm+mt
 source-wordcount: '20234'
 ht-degree: 0%
@@ -383,7 +383,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Lär dig vilka innehålls- och innehållsattribut som fungerar bäst."
->abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
+>abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
 
 
 Följande mallar är tillgängliga:
@@ -1058,7 +1058,7 @@ Följande mallar är tillgängliga:
 
 ### B2B-mallar {#b2b-templates}
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 
 {{release-limited-testing-section}}
@@ -1071,7 +1071,7 @@ Följande mallar är tillgängliga:
 >abstract="**Detta kan hjälpa dig** att bättre förstå om interaktionen på kontonivå trendar upp eller ned, jämför aktiviteter mellan konton och bestämma var fokus ska ligga på kundlojalitet eller kundvärvning.<br/>**Baserat på vad du lär dig kan du** göra något av det du vill, som att fokusera på konton som är mindre engagerade men som kräver mer uppmärksamhet på grund av kontots betydelse."
 
 >[!CONTEXTUALHELP]
->id="cja-template--b2b-opportunity-enagement"
+>id="cja-template--b2b-opportunity-engagement"
 >title="Spåra engagemanget på affärsmöjlighetsnivå och hitta avtal som ökar eller minskar spänningen."
 >abstract="**Detta kan hjälpa dig** att förutsäga avtalsutvecklingen mer korrekt och fokusera på aktivering där engagemang ökar eller stannar.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, som att göra ytterligare affärer som nästan är slutna och att undersöka varför andra avtal tappar fart."
 
