@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: f0ef310f120e278685893308315902e32c54e35e
+source-git-commit: bee6c3420511dc944c74e9818d77f6424fcb9cc8
 workflow-type: tm+mt
-source-wordcount: '2254'
-ht-degree: 1%
+source-wordcount: '2621'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs kartvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs kartvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -59,7 +59,7 @@ Med visualiseringen ![Global](/help/assets/icons/Globe.svg) **[!UICONTROL Map]**
 
 I inställningarna för datavyer i Customer Journey Analytics kan administratörer lägga till [kontextetiketter](/help/data-views/component-settings/overview.md) i en dimension eller ett mått, och Customer Journey Analytics-tjänster som [!UICONTROL map] kan använda dessa etiketter för sina syften.
 
-#### Nödvändiga kontextetiketter för kartvisualisering
+#### Nödvändiga kontextetiketter för latitud och longitud i kartvisualiseringen
 
 Kontextetiketter krävs för att kartvisualiseringen ska fungera. Utan följande sammanhangsetiketter fungerar inte kartvisualiseringen eftersom det inte finns några latitud- och longituddata att arbeta med.
 
@@ -72,13 +72,27 @@ Så här lägger du till följande sammanhangsetiketter:
 
 1. På sidan Datavyer markerar du datavyn som innehåller data som du vill analysera i mappningsvisualiseringen.
 
-1. Välj fliken **[!UICONTROL Components]** och välj sedan den dimension som innehåller longituddata.
+1. Välj fliken **[!UICONTROL Components]**.
 
-1. I avsnittet **[!UICONTROL Component settings]** till höger, i fältet **[!UICONTROL Context labels]**, börjar du skriva `Longitude` och väljer det sedan i listrutan.
+1. (Villkorligt) Om du använder Web SDK och har konfigurerat latitud och longitud så att de fylls i i dataströmmen, eller om du använder Analytics Source Connector för att fylla i händelsedata, bör latitud- och longitudfält redan vara tillgängliga i ditt schema och fyllas i med rätt kontextetiketter.
 
-   ![Kontextetiketter för latitud och longitud](assets/map-context-labels-lat-long.png)
+   Leta reda på dessa **[!UICONTROL Latitude]**- och **[!UICONTROL Longitude]** schemafält (i **[!UICONTROL Event datasets]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]** > **[!UICONTROL _schema]**) och dra dem till datavyn som dimensioner om de inte redan finns.
 
-1. Upprepa den här processen om du vill lägga till kontextetiketten **[!UICONTROL Latitude]** i dimensionen som innehåller latituddata.
+   När dessa schemafält finns som dimensioner i datavyn tillämpas deras kontextetiketter automatiskt och mappningsvisualiseringen använder dem utan någon ytterligare konfiguration.
+
+   ![Lägg till latitud- och longitudschemafält i datavyn](assets/dataview-lat-long-default.png)
+
+1. (Villkorligt) Om du har anpassade dimensioner som du vill använda för latitud- och longituddata kan du konfigurera kontextetiketterna för de anpassade fälten:
+
+   1. I avsnittet **[!UICONTROL Dimensions]** väljer du den dimension som innehåller longituddata.
+
+   1. I avsnittet **[!UICONTROL Component settings]** till höger, i fältet **[!UICONTROL Context labels]**, börjar du skriva `Longitude` och väljer det sedan i listrutan.
+
+      ![Kontextetiketter för latitud och longitud](assets/map-context-labels-lat-long.png)
+
+   1. Upprepa den här processen om du vill lägga till kontextetiketten **[!UICONTROL Latitude]** i dimensionen som innehåller latituddata.
+
+   1. (Valfritt) Som standard är de här dimensionerna exakta för korgen eller postnumret i kartvisualiseringen, och de visar 2 decimaler i Workspace-rapporter. Du kan justera dem så att de är exakta i en enda mätare i kartvisualiseringen och så att 5 decimaler visas i Workspace-rapporter. Mer information om hur du justerar precisionsnivån finns i [Konfigurera exakta platser för dimensioner](#configure-precise-locations-for-dimensions).
 
 1. Välj **[!UICONTROL Save and continue]** > **[!UICONTROL Save and finish]**.
 
@@ -90,7 +104,7 @@ Här följer mallarna och den obligatoriska sammanhangsetiketten. Utan dessa eti
 
 | Mallnamn | Etikett för obligatoriskt sammanhang |
 |---------|----------|
-| Geo-länder | [!UICONTROL Geo: Geo Country] |
+| Geografiska länder | [!UICONTROL Geo: Geo Country] |
 | Geografiska områden | [!UICONTROL Geo: Geo Region] |
 | Geostäder | [!UICONTROL Geo: Geo City] |
 | Geo US-delstater | [!UICONTROL Geo: Geo State] |
@@ -102,13 +116,25 @@ Så här lägger du till följande sammanhangsetiketter:
 
 1. På sidan Datavy väljer du den datavy som innehåller data som du vill analysera med färdiga mallar som använder kartvisualiseringen. I den här datavyn väljer du fem dimensioner, en med landsuppgifter, en med regiondata, en med stadsuppgifter, en med statliga data och en med DMA-data. Därefter etiketterar du de dimensionerna med motsvarande sammanhangsetikett.
 
-1. Välj fliken **[!UICONTROL Components]** och välj sedan den dimension som innehåller landsuppgifter.
+1. Välj fliken **[!UICONTROL Components]**.
 
-1. I avsnittet **[!UICONTROL Component settings]** till höger, i fältet **[!UICONTROL Context labels]**, börjar du skriva `Geo Country` och väljer det sedan i listrutan.
+1. (Villkorligt) Om du använder Web SDK och har konfigurerat geofält som ska fyllas i i dataströmmen, eller om du använder Analytics Source Connector för att fylla i händelsedata, bör geofält redan vara tillgängliga i ditt schema och fyllas i med rätt kontextetiketter.
 
-   ![Mallkontextetiketter](assets/map-context-labels-templates.png)
+   Leta upp rätt schemafält, till exempel **[!UICONTROL City]**, **[!UICONTROL Postal code]**, **[!UICONTROL State or province]** (i **[!UICONTROL Event datasets]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**) och dra dem till datavyn som dimensioner om de inte redan finns.
 
-1. Upprepa den här processen om du vill lägga till kontextetiketten **[!UICONTROL Geo: Geo Region]**, **[!UICONTROL Geo: Geo City]**, **[!UICONTROL Geo: Geo State]** och **[!UICONTROL Geo: Dma]** i varje dimension som innehåller motsvarande data.
+   När dessa schemafält finns som dimensioner i datavyn tillämpas deras kontextetiketter automatiskt och geomallarna använder dem utan någon ytterligare konfiguration.
+
+   ![Lägg till geografiska schemafält i datavyn](assets/dataview-geo-default.png)
+
+1. (Villkorligt) Om du har anpassade dimensioner som du vill använda för geodata kan du konfigurera kontextetiketterna för de anpassade fälten:
+
+   1. Välj den dimension som innehåller landsdata.
+
+   1. I avsnittet **[!UICONTROL Component settings]** till höger, i fältet **[!UICONTROL Context labels]**, börjar du skriva `Geo Country` och väljer det sedan i listrutan.
+
+      ![Mallkontextetiketter](assets/map-context-labels-templates.png)
+
+   1. Upprepa den här processen om du vill lägga till kontextetiketten **[!UICONTROL Geo: Geo Region]**, **[!UICONTROL Geo: Geo City]**, **[!UICONTROL Geo: Geo State]** och **[!UICONTROL Geo: Dma]** i varje dimension som innehåller motsvarande data.
 
 1. Välj **[!UICONTROL Save and continue]** > **[!UICONTROL Save and finish]**.
 
@@ -255,7 +281,7 @@ Om du har anpassade datamängder med djup precision kan du konfigurera kartvisua
 
 1. Välj fliken **[!UICONTROL Components]** i datavyn.
 
-1. Välj den dimension som du vill konfigurera.
+1. Välj de dimensioner som du använder för latitud och longitud som du vill konfigurera. Mer information om vilka dimensioner du använder finns i [Obligatoriska kontextetiketter för latitud och longitud i kartvisualiseringen](#required-context-labels-for-latitude-and-longitude-in-the-map-visualization).
 
 1. Konfigurera precisionsnivån för dimensionen:
 
