@@ -3,10 +3,8 @@ description: Använd kartvisualisering för att rita data på en geografisk kart
 title: Karta
 feature: Visualizations
 role: User, Admin
-hide: true
-hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: bee6c3420511dc944c74e9818d77f6424fcb9cc8
+source-git-commit: 0aac2739e03044c03a2561535846f1355054f45f
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 0%
@@ -47,7 +45,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs kartvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs kartvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
