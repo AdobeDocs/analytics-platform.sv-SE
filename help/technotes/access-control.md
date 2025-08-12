@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 8da8d22d35e0b4a77da010d0ba5fb230946ccce5
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1408'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,7 @@ Utöver att läggas till som produktadministratör i **Customer Journey Analytic
 
   | Kategori | Behörighet | Beskrivning |
   |---|---|---|
+  | [!UICONTROL Sandboxes] | [!UICONTROL At least one] | Tillgång till relevanta sandlådor för CJA-anslutningar. |
   | [!UICONTROL Data Modeling] | [!UICONTROL View Schemas] | Skrivskyddad åtkomst till scheman och relaterade resurser. |
   | [!UICONTROL Data Modeling] | [!UICONTROL Manage Schemas] | Åtkomst för att läsa, skapa, redigera och ta bort scheman och relaterade resurser. |
   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Skrivskyddad åtkomst för datauppsättningar och scheman. |
@@ -64,7 +65,7 @@ Utöver att läggas till som produktadministratör i **Customer Journey Analytic
   | [!UICONTROL Data Ingestion] | [!UICONTROL Manage Sources] | Tillgång till att läsa, skapa, redigera och inaktivera källor. |
   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Skrivskyddad åtkomst för identitetsnamnutrymmen. |
 
-  Mer information om Experience Platform-behörigheter finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/permissions).
+  Mer information om Experience Platform-behörigheter finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 
 * Om Adobe Journey Optimizer har integrerats med CJA där AJO Connections finns, måste även behörigheterna Journeys läggas till för att få åtkomst till Connections:
@@ -76,7 +77,7 @@ Utöver att läggas till som produktadministratör i **Customer Journey Analytic
   | [!UICONTROL Journeys] | [!UICONTROL View Journeys] | Skrivskyddad åtkomst till resor. |
   | [!UICONTROL Journeys] | [!UICONTROL Manage Journeys] | Läs, skapa, redigera och ta bort resor. |
 
-* Exportera datauppsättningar till [mål](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/export-datasets)
+* Exportera datauppsättningar till [mål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)
 
   För att kunna utföra den här åtgärden måste användarna ingå i en **Experience Platform-produktprofil** som ger följande behörigheter:
 
@@ -85,13 +86,13 @@ Utöver att läggas till som produktadministratör i **Customer Journey Analytic
   | [!UICONTROL Destinations] | [!UICONTROL Manage Destinations] | Åtkomst för att läsa, skapa och ta bort målanslutningar och målkonton. |
   | [!UICONTROL Destinations] | [!UICONTROL Activate Destinations] | Tillåt användare att aktivera segment till befintliga mål. Aktiverar mappningssteget i aktiveringsarbetsflödet. Den här behörigheten kräver även att behörigheten Visa mål beviljas den användare som vill aktivera data till mål. |
 
-  Mer information om Experience Platform-behörigheter finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/permissions).
+  Mer information om Experience Platform-behörigheter finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 * Använd [BI-tillägget](../data-views/bi-extension.md)
 
   För användare att använda BI-tillägget, en produktadministratör
 
-   * måste se till att Experience Platform-behörigheterna för användaren innehåller en roll som har frågetjänstresursen med alternativen Hantera frågor och Hantera frågetjänstintegrering. Mer information om Experience Platform-behörigheter finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/permissions).
+   * måste se till att Experience Platform-behörigheterna för användaren innehåller en roll som har frågetjänstresursen med alternativen Hantera frågor och Hantera frågetjänstintegrering. Mer information om Experience Platform-behörigheter finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
      | Kategori | Behörighet | Beskrivning |
      |---|---|---| 
@@ -130,7 +131,7 @@ Fliken **[!UICONTROL Permissions]** ingår i varje produktprofil i [Admin Consol
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audience View] | Låt användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audience Creation] | Låt användare skapa [målgrupper](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audit Logs Access] | Tvinga behörighetskontrollen för användargränssnittet för [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) och granskningsloggarna. |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Share Project Links With Anyone] | Låt användare [dela projekt med vem som helst.](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Share Project Links With Anyone] | Låt användare [dela projekt med vem som helst.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Forecasting] | Ge användarna tillgång till funktionen [Prognoser](../analysis-workspace/c-forecast/forecasting.md) i Analysis Workspace |
 | [!UICONTROL Reporting Tools] | [!UICONTROL AI Assistant: Product Knowledge] | Ge användarna tillgång till [AI-assistenten](../ai-assistant.md) för produktinformation. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Intelligent Captions] | Låt användarna komma åt [Intelligenta bildtexter](/help/analysis-workspace/visualizations/intelligent-captions.md). |
