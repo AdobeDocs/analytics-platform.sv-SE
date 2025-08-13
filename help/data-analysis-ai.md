@@ -5,7 +5,7 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 3c3fd6b814485871f2fd9249b0ffa9a0b24a360c
+source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 0%
@@ -20,22 +20,22 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Agenten för datainsikter är tillgänglig för berättigade kunder under en begränsad tid. Åtkomsten till Data Insights Agent upphör 30 november 2025. Om du vill fortsätta använda en Data Insights Agent utan avbrott kan du kontakta din Adobe-kontorepresentant för att få mer information om hur du licensierar Data Insights Agent.
+>Data Insights Agent är tillgängligt för berättigade kunder under en begränsad tid. Åtkomsten till Data Insights Agent upphör 30 november 2025. Om du vill fortsätta använda Data Insights Agent utan avbrott kontaktar du Adobe kontorepresentant för att få veta mer om Data Insights Agent licenser.
 
-Agenten för datainsikter, som nås från AI Assistant i Customer Journey Analytics, är en generativ AI-konversationsagent som snabbt och effektivt besvarar frågor om dina data. Det bygger upp relevanta visualiseringar i Analysis Workspace med komponenter från datavyn och med era faktiska data.
+Data Insights Agent, som är tillgängligt från [AI-assistenten](/help/ai-assistant.md) i Customer Journey Analytics, är en generativ AI-konversationsagent som snabbt och effektivt besvarar frågor om dina data. Det bygger upp relevanta visualiseringar i Analysis Workspace med komponenter från datavyn och med era faktiska data.
 
-Med Data Insights Agent kan du besvara datacentrerade frågor i Analysis Workspace och spara massor av tid som du annars skulle behöva lägga på att manuellt skapa visualiseringar i Analysis Workspace och bekanta dig med komponenterna i datavyn.
+Genom att använda Data Insights Agent för att besvara datacentrerade frågor i Analysis Workspace kan du spara oräkneliga timmar som du annars skulle behöva lägga på att manuellt skapa visualiseringar i Analysis Workspace och bekanta dig med komponenterna i datavyn.
 
-![Agent för datainsikter i AI-assistenten](assets/cja-ai-asst-da.gif)
+![Data Insights Agent i AI-assistenten](assets/cja-ai-asst-da.gif)
 
 ## Funktioner som är inom och utanför omfånget
 
 | Funktion | I omfånget | Odefinierad |
 | --- | --- | --- |
 | **Visualiseringstyper** | <ul><li>Linje</li><li>Flera rader</li><li>Frihandsregister</li><li>Liggande</li><li>Munk</li><li>Sammanfattningsnummer</li></ul> | <ul><li>Flöde</li><li>Utfall</li><li>Kohortabell</li><li>Område, staplat område</li><li>Stapel, staplad</li><li>Punkt</li><li>Kombination</li><li>Histogram</li><li>Vågrätt streck, vågrätt streck</li><li>Sammanfattning av nyckelmått</li><li>Spridning</li><li>Sammanfattningsändring</li><li>Text</li><li>Treemap</li><li>Venn</li><li>Guidad analys: aktiv tillväxt, konverteringstrender, engagemang, förstahandseffekt, frekvens, tratt, nettotillväxt, Release impact, Retention, Timeline, Trends</li></ul> |
-| **Workspace-åtgärder och agentfunktioner** | <ul><li>Skapa och uppdatera visualiseringar<p>Skapar en friformstabell och tillhörande visualisering (t.ex. en linje, streck, munstycke).<p>Exempel: *Vad är vinsten för SKU:er från februari till maj?*</p></li><li>Ställ uppföljningsfrågor<p>Svara på en fråga i sammanhanget från tidigare uppmaningar. Exempel:</p> <ul><li>Fråga 1: *Trendhändelser från mars.*</li><li>Fråga 2: *Visa data från mars till april i stället*</li></ul> </li><li>Odefinierad snabb upptäckt<p>Om du skickar en fråga som ligger utanför omfånget, till exempel *Exportera det här projektet*, svarar Data Insights-agenten genom att informera dig om att frågan ligger utanför omfånget.</p></li></ul> | <ul><li>Dela</li><li>Exportera</li><li>Ladda ned</li><li>Hantera användarinställningar</li><li>Hantera datavy</li><li>Analytics Dashboards-app</li><li>Tillskrivning</li><li>Sammanfattning eller svar direkt<p>Agenten för datainsikter kan inte svara direkt i chattfältet med ett kortfattat svar på en användarfråga. Exempel på uppmaningar som inte omfattas är *Ge mig en sammanfattning av insikterna från min senaste fråga* och *Sammanfatta markeringarna från radvisualiseringen.*</p></li></ul> |
-| **Tydligare frågor** | Om du ställer en fråga som inte har tillräckligt kontext för att en Data Insights-agent ska kunna svara, eller är för generisk, svarar Data Insights-agenten med en klargörande fråga eller föreslagna alternativ. <p>Följande klargörande frågor är exempel på komponentrelaterade frågor:</p><ul><li>Mått: *Vilket intäktsmått menade du?*</li><li>Dimension: *Vilka av nedanstående &quot;regioner&quot; vill du fokusera på?*</li><li>Segment: *Vilket kontosegment vill du tillämpa?*</li><li>Datumintervall: *Med&quot;förra månaden&quot;, menade du den senaste hela månaden eller de senaste 30 dagarna?*</li></ul><p>Följande klargörande fråga är ett exempel på en fråga som rör dimensionsobjekt:</p> <ul><li>Vilket &quot;butiksnamn&quot; menade du? (Exempel: Store #5274, Store #2949 osv.)</li></ul> | Tydliga frågor är begränsade till komponenter och dimensionsobjekt. Data Insights Agent kan inte förtydliga saker som datavyer, visualiseringar, datakornighet, jämförelse och omfång. När klarläggandefrågor inte kan användas, används agenten som standard det som du troligen efterfrågar. Om det returnerar en oväntad visualisering eller datagranularitet kan du ställa en uppföljningsfråga eller justera visualisering och data. |
-| **Datasäkerhet och -korrekthet** | Datasäkerheten och korrektheten kan bekräftas genom att man visar den genererade frihandstabellen och datavisualiseringen. <p>Om du till exempel ber Data Insights Agent att *Trendbeställa förra månaden* kan du bekräfta att rätt mått (&quot;order&quot;) och datumintervall (&quot;sista månaden&quot;) har valts i den nyligen genererade panelen, datavisualisering och frihandstabellen. | Data Insights Agent svarar inte genom att informera dig om vilka komponenter eller visualiseringar som lagts till.</p> |
+| **Workspace-åtgärder och agentfunktioner** | <ul><li>Skapa och uppdatera visualiseringar<p>Skapar en friformstabell och tillhörande visualisering (t.ex. en linje, streck, munstycke).<p>Exempel: *Vad är vinsten för SKU:er från februari till maj?*</p></li><li>Ställ uppföljningsfrågor<p>Svara på en fråga i sammanhanget från tidigare uppmaningar. Exempel:</p> <ul><li>Fråga 1: *Trendhändelser från mars.*</li><li>Fråga 2: *Visa data från mars till april i stället*</li></ul> </li><li>Odefinierad snabb upptäckt<p>Om du skickar en fråga som ligger utanför omfånget, till exempel *Exportera det här projektet*, svarar Data Insights Agent genom att informera dig om att frågan ligger utanför omfånget.</p></li></ul> | <ul><li>Dela</li><li>Exportera</li><li>Ladda ned</li><li>Hantera användarinställningar</li><li>Hantera datavy</li><li>Analytics Dashboards-app</li><li>Tillskrivning</li><li>Sammanfattning eller svar direkt<p>Data Insights Agent kan inte svara direkt i chattfältet med ett kortfattat svar från en användarfråga. Exempel på uppmaningar som inte omfattas är *Ge mig en sammanfattning av insikterna från min senaste fråga* och *Sammanfatta markeringarna från radvisualiseringen.*</p></li></ul> |
+| **Tydligare frågor** | Om du ställer en fråga som inte har tillräckligt sammanhang för att Data Insights Agent ska kunna svara på, eller är för generisk, svarar Data Insights Agent med en klargörande fråga eller föreslagna alternativ. <p>Följande klargörande frågor är exempel på komponentrelaterade frågor:</p><ul><li>Mått: *Vilket intäktsmått menade du?*</li><li>Dimension: *Vilka av nedanstående &quot;regioner&quot; vill du fokusera på?*</li><li>Segment: *Vilket kontosegment vill du tillämpa?*</li><li>Datumintervall: *Med&quot;förra månaden&quot;, menade du den senaste hela månaden eller de senaste 30 dagarna?*</li></ul><p>Följande klargörande fråga är ett exempel på en fråga som rör dimensionsobjekt:</p> <ul><li>Vilket &quot;butiksnamn&quot; menade du? (Exempel: Store #5274, Store #2949 osv.)</li></ul> | Tydliga frågor är begränsade till komponenter och dimensionsobjekt. Data Insights Agent kan inte förtydliga saker som datavyer, visualiseringar, datakornighet, jämförelse och omfattning. När klarläggandefrågor inte kan användas, används agenten som standard det som du troligen efterfrågar. Om det returnerar en oväntad visualisering eller datagranularitet kan du ställa en uppföljningsfråga eller justera visualisering och data. |
+| **Datasäkerhet och -korrekthet** | Datasäkerheten och korrektheten kan bekräftas genom att man visar den genererade frihandstabellen och datavisualiseringen. <p>Om du till exempel ber Data Insights Agent att *trendbeställa förra månaden* kan du bekräfta att rätt mått (&quot;order&quot;) och datumintervall (&quot;sista månaden&quot;) har valts på den nyligen genererade panelen, datavisualisering och frihandstabellen. | Data Insights Agent svarar inte genom att informera dig om vilka komponenter eller visualiseringar som lagts till.</p> |
 | **Återkopplingsmekanismer** | <ul><li>Tummen upp</li><li>Tummen ned</li><li>Flagga</li></ul> |  |
 
 
@@ -43,13 +43,13 @@ Med Data Insights Agent kan du besvara datacentrerade frågor i Analysis Workspa
 
 Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey Analytics:
 
-* **lösningsåtkomst**: Data Insights Agent är tillgänglig för alla Customer Journey Analytics-kunder som en del av ett program med begränsad åtkomst till och med den 30 november 2025. Det finns inte i Adobe Analytics.
+* **Lösningsåtkomst**: Data Insights Agent är tillgängligt för alla Customer Journey Analytics-kunder som en del av ett program med begränsad åtkomst till och med den 30 november 2025. Det finns inte i Adobe Analytics.
 
-* **Contractual access**: Om du inte kan använda Data Insights Agent i AI Assistant kontaktar du organisationens administratör eller Adobe-kontoteam. Innan din organisation kan använda Data Insights Agent måste du godkänna vissa juridiska villkor som rör generativ AI.
+* **Kontraktsåtkomst**: Om du inte kan använda Data Insights Agent i AI-assistenten kontaktar du organisationens administratör eller Adobe-kontoteam. Innan din organisation kan använda Data Insights Agent måste du godkänna vissa juridiska villkor för generativ AI.
 
-* **Behörigheter**: Nödvändiga behörigheter måste beviljas i [!UICONTROL Adobe Admin Console] innan användare kan komma åt Data Insights-agenten.
+* **Behörigheter**: Nödvändiga behörigheter måste beviljas i [!UICONTROL Adobe Admin Console] innan användare kan komma åt Data Insights Agent.
 
-  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
+  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
    1. I **[!UICONTROL Admin Console]** väljer du fliken **[!UICONTROL Products]** för att visa sidan **[!UICONTROL All products and services]**.
    1. Välj **[!UICONTROL Customer Journey Analytics]**.
    1. På fliken **[!UICONTROL Product Profiles]** väljer du titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL AI Assistant: Product Knowledge].
@@ -75,8 +75,8 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
       >[!IMPORTANT]
       >
       >Tänk på följande när du aktiverar datavyer:
-      >* Du kan aktivera maximalt 50 datavyer per IMS-organisation. Om du aktiverar mer än 50 datavyer över alla produktprofiler för en viss organisation, kommer Data Insights Agent att använda de 50 mest använda datavyer.
-      >* Agenten för datainsikter kan referera till de inkluderade datavyerna någon gång under samma dag som du aktiverar dem i Admin Console.
+      >* Du kan aktivera maximalt 50 datavyer per IMS-organisation. Om du aktiverar mer än 50 datavyer för alla produktprofiler för en viss organisation kommer Data Insights Agent att använda de 50 mest använda datavyer.
+      >* Data Insights Agent kan referera till de inkluderade datavyerna någon gång under samma dag som du aktiverar dem i Admin Console.
 
    1. Sök efter eller bläddra till de datavyer som du vill aktivera och välj sedan plusikonen ![AddCircle](/help/assets/icons/AddCircle.svg) bredvid namnet på varje datavy.
 
@@ -88,7 +88,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
   Mer information om åtkomstkontroll finns i [Åtkomstkontroll](/help/technotes/access-control.md#access-control).
 
-## Åtkomst till Data Insights-agenten i AI-assistenten
+## Få tillgång till Data Insights Agent i AI-assistenten
 
 1. Gå till [experience.adobe.com](https://experience.adobe.com/) och logga in med din Adobe ID.
 
@@ -96,7 +96,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
 3. Välj **[!UICONTROL Blank project]** i banderollen högst upp på projektsidan om du vill öppna ett nytt tomt projekt.
 
-4. Kontrollera att den valda datavyn för panelen är en datavy som har aktiverats för användning med Data Insights Agent, vilket beskrivs i [Hantera åtkomst till Data Insights Agent i Customer Journey Analytics](#manage-access-to-data-insights-agent-in-customer-journey-analytics).
+4. Kontrollera att den markerade datavyn för panelen är en datavy som har aktiverats för användning med Data Insights Agent, vilket beskrivs i [Hantera åtkomst till Data Insights Agent i Customer Journey Analytics](#manage-access-to-data-insights-agent-in-customer-journey-analytics).
 
 5. Välj ikonen för AI Assistant-chatt längst upp till höger på sidan.
 
@@ -110,7 +110,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
    ![AI Assistant-ikon](/help/assets/ai-asst-icon.png)
 
-6. I dialogrutan **[!UICONTROL Ask about Customer Journey Analytics]** längst ned på sidan ställer du en datavisualiseringsfråga med Data Insights Agent.
+6. Ställ en datavisualiseringsfråga med Data Insights Agent i dialogrutan **[!UICONTROL Ask about Customer Journey Analytics]** längst ned på sidan.
 
    Mer information finns i följande exempel.
 
@@ -122,7 +122,7 @@ Anta till exempel att du är intresserad av de order ditt företag fick i juli.
 
 ![AI-fråga](/help/assets/ai-asst-prompt1.png)
 
-**Svar:** Data Insights-agenten samlar in insikter genom att undersöka data i datavyn, inklusive mått och komponenter. Det översätter uppmaningen till rätt dimensioner och mätvärden inom dataområdet.
+**Svar:** Data Insights Agent samlar in insikter genom att undersöka data i datavyn, inklusive mått och komponenter. Det översätter uppmaningen till rätt dimensioner och mätvärden inom dataområdet.
 
 Som du ser genereras automatiskt ett linjediagram och en frihandstabell för juli.
 
@@ -134,7 +134,7 @@ Sedan vill du se hur era intäkter står sig jämfört med region.
 
 **Fråga:** I fönstret anger du *&quot;Visa intäkt per region&quot;*
 
-**Svar:** Data Insights Agent förstår på ett intelligent sätt att efter &quot;region&quot; menar du &quot;kundregion&quot;. Det skapar ett stapeldiagram som bäst visar intäkter per region:
+**Svar:** Data Insights Agent förstår på ett intelligent sätt att med&quot;region&quot; menar du&quot;kundregion&quot;. Det skapar ett stapeldiagram som bäst visar intäkter per region:
 
 ![Stapeldiagram](/help/assets/ai-asst-result2.png)
 
@@ -154,13 +154,13 @@ Slutligen ska vi titta på intäkterna per produktkategori.
 
 **Fråga:** I fönstret anger du *&quot;Andel intäkter per produktkategori.&quot;*
 
-**Svar:** Återigen väljer Data Insights-agenten den lämpligaste visualiseringen, i det här fallet **[!UICONTROL Donut]**-visualiseringen, för att svara på frågan.
+**Svar:** Även här väljer Data Insights Agent den lämpligaste visualiseringen, i det här fallet **[!UICONTROL Donut]**-visualiseringen, för att besvara frågan.
 
 ![Ringdiagram](/help/assets/ai-asst-result3.png)
 
 ## Exempel på visualiseringsmeddelanden för data
 
-Nedan följer några exempel på vanliga uppmaningar och de visualiseringar som används av Data Insights Agent för att svara på dessa uppmaningar.
+Nedan följer några exempel på vanliga uppmaningar och de visualiseringar som Data Insights Agent använder för att svara på dessa uppmaningar.
 
 | Exempelfråga | Förväntad visualisering |
 | --- | --- |
@@ -179,7 +179,7 @@ Nedan följer några exempel på vanliga uppmaningar och de visualiseringar som 
 
 ## Uppmana till bästa praxis
 
-Data Insights Agent behandlar det sammanhang som anges av varje användaruppmaning och försöker på ett intelligent sätt svara med den lämpligaste visualiseringen och komponenterna i en frihandstabell.
+Data Insights Agent bearbetar sammanhanget i de olika användarprompterna och försöker på ett intelligent sätt svara på den lämpligaste visualiseringen och komponenterna i ett frihandsbord.
 
 Svaren kan variera beroende på de specifika ord och fraser som används i uppmaningen, och smärre språkändringar kan leda till olika resultat.
 
@@ -187,13 +187,13 @@ För att få bästa möjliga resultat bör du följa följande riktlinjer:
 
 * **Var specifik:** Ta med exakta termer för att begränsa svaret. Följande är ett exempel på en specifik fråga:&quot;Sista månadens försäljning i Kalifornien&quot;
 
-* **Använd tydliga mått, dimensioner och segment:** Genom att lägga till specifika mått (som &quot;Intäkter&quot;), dimensioner (som &quot;webbplatsnamn&quot;), segment (som &quot;iPhone-användare&quot;) och datumintervall (som &quot;de senaste tre månaderna&quot;) kan Data Insights-agenten fokusera på rätt data.
+* **Använd tydliga mått, dimensioner och segment:** Genom att lägga till specifika mått (som&quot;Intäkter&quot;), dimensioner (som&quot;webbplatsnamn&quot;), segment (som&quot;iPhone-användare&quot;) och datumintervall (som&quot;de senaste tre månaderna&quot;) kan Data Insights Agent fokusera på rätt data.
 
-* **Ställ direkta frågor:** Med övergångsfrågor blir det enklare för Data Insights-agenten att ge tydliga, relevanta insikter. Här följer ett exempel på hur du ställer en direkt fråga i en fråga:&quot;Vad är den genomsnittliga intäkten per produktkategori i år?&quot;
+* **Ställ direkta frågor:** Med fasningsfrågor blir det enklare för Data Insights Agent att ge tydliga och relevanta insikter. Här följer ett exempel på hur du ställer en direkt fråga i en fråga:&quot;Vad är den genomsnittliga intäkten per produktkategori i år?&quot;
 
-Granska följande tabell med exempeltermer och fraser som du kan använda i uppmaningar med Data Insights Agent, tillsammans med de typer av svar du kan förvänta dig.
+Läs följande tabell med exempeltermer och fraser som du kan använda i uppmaningar med Data Insights Agent, tillsammans med de typer av svar du kan förvänta dig.
 
-De här exemplen är utformade för att hjälpa dig att få kunskap om hur specifika ord eller strukturer kan påverka Data Insight-agentens utdata och säkerställa mer exakta och värdefulla insikter. Agenten för datainsikter använder generativ AI, så visualiseringar eller valda data kan variera något mellan liknande uppmaningar.
+De här exemplen är utformade för att hjälpa dig att få kunskap om hur specifika ord eller strukturer kan påverka Data Insight-agentens utdata och säkerställa mer exakta och värdefulla insikter. Data Insights Agent använder generativ AI, så visualiseringar eller valda data kan variera något mellan liknande uppmaningar.
 
 | Önskat resultat | Exempel på termer och fraser |
 | --- | --- |
@@ -234,19 +234,19 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 Nedan följer god praxis för din Customer Journey Analytics-konfiguration (datavy, calculate metrics, segments, and more) för att se till att Data Insights Agent kan hitta rätt komponenter och returnera renare svar utan att behöva fråga dig om ytterligare information.
 
-* **Balansera vilka komponenter du behöver**. Lägg inte till alla fält i datauppsättningarna som mått eller dimensionskomponenter i datavyn. Särskilt de som du verkligen inte kommer att använda i din analys. Å andra sidan bör du inte begränsa dig till enbart de fält som du tror att du behöver för din analys. En alltför begränsad datavy begränsar flexibiliteten i din analys och funktionaliteten hos Data Insights Agent.
+* **Balansera vilka komponenter du behöver**. Lägg inte till alla fält i datauppsättningarna som mått eller dimensionskomponenter i datavyn. Särskilt de som du verkligen inte kommer att använda i din analys. Å andra sidan bör du inte begränsa dig till enbart de fält som du tror att du behöver för din analys. En alltför begränsad datavy begränsar flexibiliteten i analysen och Data Insights Agent-funktionaliteten.
 * **Använd alltid egna visningsnamn**. Se till att alla fält som du definierar i datavyn, antingen som mått eller dimensionskomponent, har ett eget komponentnamn. Processen att byta namn på fält med ett eget namn är särskilt relevant för fält från Adobe Analytics källanslutningsdatauppsättningar. Dessa fält har ofta ovänliga namn som inte går att identifiera, som `eVar41` eller `prop25`.
 * **Använd distinkta namn**. Distinkta namn är särskilt relevanta när du använder samma fält som både en metrisk komponent och en dimensionskomponent i datavyn. Eller när du använder ett fält i flera komponenter av samma typ (till exempel i två olika mätvärden), där var och en har olika komponentinställningar.
 * **Använd en komponentnamnkonvention**. Du kan använda en komponentnamnkonvention för att gruppera komponenter. **[!UICONTROL Orders | Product]** och **[!UICONTROL Orders | Customer]** kan till exempel skilja mellan olika ordervärden som kan finnas i dina data.
 * **Använd dataordlistan**. Lägg till beskrivning och andra relevanta data för komponenter i datamappningen. Data Insight Agent använder för närvarande inte beskrivning och taggar från Data Dictionary, men det kan hända i framtiden.
 * **Använd godkända beräknade värden**. Godkänn en process där endast godkända beräknade mätvärden används som komponenter i datavyn och undvik att använda experimentella beräknade mätvärden.
-* **Dela nödvändiga segment**. Se till att du delar segment och gör segment synliga som krävs för förfrågningar från Data Insights Agent.
-* **Standardisera med komponentnamn över datavyer**. Om du använder samma fält som en komponent i flera datavyer måste du använda ett enda användarvänligt namn och en enda identifierare för den komponenten. Med ett enda namn och en identifierare kan Data Insights-agenten växla datavyer utan att tappa kontext.
+* **Dela nödvändiga segment**. Se till att du delar segment och gör segment synliga som krävs för Data Insights Agent-uppmaningar.
+* **Standardisera med komponentnamn över datavyer**. Om du använder samma fält som en komponent i flera datavyer måste du använda ett enda användarvänligt namn och en enda identifierare för den komponenten. Med ett enda namn och en identifierare kan Data Insights Agent växla datavyer utan att tappa sitt sammanhang.
 
 >[!MORELIKETHIS]
 >
 >[Komponentinställningar](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dataordlista ](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Godkänn beräknat mått ](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Dela segment ](/help/components/segments/seg-share.md)
+>>[Dataordlista ](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Godkänn beräknat mått ](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Dela segment ](/help/components/segments/seg-share.md)
 >
