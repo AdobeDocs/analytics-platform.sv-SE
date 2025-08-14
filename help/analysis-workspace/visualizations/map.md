@@ -4,9 +4,9 @@ title: Karta
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 0aac2739e03044c03a2561535846f1355054f45f
+source-git-commit: 71d5326f5d80f196504178855dacdf01f60fb81c
 workflow-type: tm+mt
-source-wordcount: '2621'
+source-wordcount: '2612'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs kartvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs kartvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -112,13 +112,13 @@ Så här lägger du till följande sammanhangsetiketter:
 
 1. I Customer Journey Analytics väljer du **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
 
-1. På sidan Datavy väljer du den datavy som innehåller data som du vill analysera med färdiga mallar som använder kartvisualiseringen. I den här datavyn väljer du fem dimensioner, en med landsuppgifter, en med regiondata, en med stadsuppgifter, en med statliga data och en med DMA-data. Därefter etiketterar du de dimensionerna med motsvarande sammanhangsetikett.
+1. På sidan Datavy väljer du den datavy som innehåller data som du vill analysera med färdiga mallar som använder kartvisualiseringen. I den här datavyn väljer du fem dimensioner: en med landsuppgifter, en med regiondata, en med stadsuppgifter, en med statliga data och en med DMA-data. Etikettera sedan dessa dimensioner med motsvarande sammanhangsetikett.
 
 1. Välj fliken **[!UICONTROL Components]**.
 
 1. (Villkorligt) Om du använder Web SDK och har konfigurerat geofält som ska fyllas i i dataströmmen, eller om du använder Analytics Source Connector för att fylla i händelsedata, bör geofält redan vara tillgängliga i ditt schema och fyllas i med rätt kontextetiketter.
 
-   Leta upp rätt schemafält, till exempel **[!UICONTROL City]**, **[!UICONTROL Postal code]**, **[!UICONTROL State or province]** (i **[!UICONTROL Event datasets]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**) och dra dem till datavyn som dimensioner om de inte redan finns.
+   Leta upp rätt schemafält, till exempel **[!UICONTROL City]**, **[!UICONTROL Postal code]**, **[!UICONTROL State or province]** (i **[!UICONTROL Event datasets]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**) och dra dem sedan till datavyn som dimensioner om de inte redan finns.
 
    När dessa schemafält finns som dimensioner i datavyn tillämpas deras kontextetiketter automatiskt och geomallarna använder dem utan någon ytterligare konfiguration.
 
@@ -153,7 +153,7 @@ Kartvisualiseringen i Customer Journey Analytics skiljer sig från kartvisualise
 | Skapa en trend från en markering | Skapa en anpassad linjediagramvisualisering baserat på ett specifikt område som du väljer i kartvisualiseringen. <p>Mer information finns i [Skapa ett trendlinjediagram från mappningsvisualiseringen](#create-a-trended-line-chart-from-the-map-visualization). <!-- is this correct? --> | Det går inte att skapa en trend från mappningsvisualiseringen. |
 | Lägga till en uppdelning från en markering | Dela upp en specifik dimensionsuppgift, mått, segment eller datumintervall inom ett visst område som du väljer i kartvisualiseringen. <p>Mer information finns i [Lägga till en uppdelning från kartvisualiseringen](#add-a-breakdown-from-the-map-visualization). | Det går inte att lägga till en nedbrytning från kartvisualiseringen. |
 
-## Börja skapa en kartvisualisering {#begin-building-map}
+## Skapa en kartvisualisering {#begin-building-map}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -185,7 +185,7 @@ Kartvisualiseringen i Customer Journey Analytics skiljer sig från kartvisualise
 
    * **[!UICONTROL Add segment]**: (Valfritt) Välj ett segment i den nedrullningsbara listan. Eller dra i ett segment från segmentlistan.
 
-   Du kan uppdatera den här informationen när visualiseringen har byggts genom att välja redigeringsikonen ![Redigera](/help/assets/icons/Edit.svg) i visualiseringshuvudet.
+   Du kan uppdatera den här informationen när visualiseringen har skapats genom att välja redigeringsikonen ![Redigera](/help/assets/icons/Edit.svg) i visualiseringshuvudet.
 
 1. Välj **[!UICONTROL Build]**.
 
@@ -197,7 +197,7 @@ Kartvisualiseringen i Customer Journey Analytics skiljer sig från kartvisualise
 
 ## Visa en kartvy
 
-1. Om du inte redan gjort det kan du skapa en kartvisualisering enligt beskrivningen i [Börja skapa en kartvyalisering](#begin-building-a-map-visualization).
+1. Om du inte redan gjort det kan du skapa en kartvisualisering enligt anvisningarna i [Skapa en kartvisualisering](#begin-building-a-map-visualization).
 
 1. Gör något av följande i kartvyn i Analysis Workspace:
 
@@ -250,7 +250,7 @@ Kartvisualiseringen i Customer Journey Analytics skiljer sig från kartvisualise
 
 Så här konfigurerar du inställningar för mappningsvisualisering:
 
-1. Öppna en befintlig kartvisualisering i Analysis Workspace eller [börja skapa en ny](#begin-building-a-map-visualization).
+1. Öppna en befintlig kartvisualisering i Analysis Workspace eller [skapa en ny](#begin-building-a-map-visualization).
 
 1. Håll pekaren över kartvisualiseringen och välj sedan inställningsikonen ![Setting](/help/assets/icons/Setting.svg) i visualiseringshuvudet.
 
