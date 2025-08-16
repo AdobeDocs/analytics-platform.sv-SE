@@ -7,9 +7,9 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: 8f19ed6b4214c434dd4ca2dbb5e311c62da109c0
+source-git-commit: b833914e7066fa660f856737d6b8a6392aae2feb
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Om du vill använda realtidsrapportering aktiverar du alternativet **[!UICONTROL
 * [Tillskrivning](/help/analysis-workspace/c-panels/attribution.md)
 * [Nästa eller föregående objekt](/help/analysis-workspace/c-panels/next-previous.md)
 
-Du ser ett meddelande med tidsstämpeln för den senaste uppdateringen av data. Till exempel: [!UICONTROL &#x200B; *Senast uppdaterad 07:55 pm*].
+Du ser ett meddelande med tidsstämpeln för den senaste uppdateringen av data. Till exempel: [!UICONTROL  *Senast uppdaterad 07:55 pm*].
 
 Välj den realtidsperiod som du vill rapportera om i listrutan. Tillgängliga alternativ är:
 
@@ -46,4 +46,4 @@ Som exempel kan du se en ögonblicksbild av **[!UICONTROL Real-time reporting pa
 
 ![Realtidsuppdatering](assets/real-time-refresh.gif)
 
-Efter 30 minuter, eller så snart webbläsarfliken blir inaktiv, inaktiveras **[!UICONTROL Real-time refesh]**-växlingen automatiskt och uppdateringar i realtid stoppas.
+Efter 30 minuter, eller så snart webbläsarfliken blir inaktiv, inaktiveras **[!UICONTROL Real-time refresh]**-växlingen automatiskt och uppdateringar i realtid stoppas.
