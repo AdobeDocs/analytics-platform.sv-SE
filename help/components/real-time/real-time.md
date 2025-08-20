@@ -7,10 +7,10 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: b833914e7066fa660f856737d6b8a6392aae2feb
+source-git-commit: d0067d8271b7628f0d174d1fa647ba1b4558ffb4
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 1%
+source-wordcount: '732'
+ht-degree: 0%
 
 ---
 
@@ -43,29 +43,30 @@ Du vill validera, till exempel:
 Överväg inte realtidsrapportering för användningsfall för övervakning av åtgärder. Till exempel frågan om en webbplats fungerar som den ska. Eftersom [alternativet för uppdatering i realtid](use-real-time.md) automatiskt inaktiveras efter 30 minuter och rapporten i realtid slutar uppdateras, bör du inte använda en realtidsrapport som en tillförlitlig källa för de här användningsfallen.
 
 
-## Definition
+## Latenser
 
-Realtidsaspekten av realtidsrapportering för Customer Journey Analytics definieras som data och visualiseringar som uppdateras inom ungefär 6,5 minuter från det att underliggande data hämtas via den associerade anslutningen.
+Hur du samlar in data avgör tidsfördröjningen i realtid vid rapportering för Customer Journey Analytics. Bilden och tabellen nedan visar ungefärliga latenser för olika scenarier för datainsamling när realtids- och standardrapportering används.
 
-Olika komponenter i konfigurationen av datainsamlingen avgör tidsfördröjningen för realtidsrapportering.
+Illustrationen betonar också att realtidsrapportering använder en konsoliderad datamängd som är helt skild från den [konsoliderade (kombinerade) datamängden ](/help/connections/combined-dataset.md) som används för standardrapportering. Du använder [Uppdatera i realtid-växeln](use-real-time.md) för att växla mellan:
+
+* Realtidsrapportering för en konsoliderad datauppsättning som innehåller upp till 24 timmars rullande data.
+* Standardrapportering på den konsoliderade datauppsättningen som innehåller upp till 13 månaders rullande data (eller längre om du har licensierat tillägget för utökad datakapacitet).
 
 ![Realtidsrapportering](assets/real-time-reporting-latencies.svg){zoomable="yes"}
 
-| | Beskrivning | Latens |
-|:---:|---|--:|
-| 1 | Data som samlas in via Edge Network SDK/API:er till Edge Network. | &lt; 500 millisekunder |
-| 2 | Data replikerade från Edge Network till datainsamling och valideringstjänst i Experience Platform Hub. | &lt; 5 minuter |
-| 3 | Data som samlas in via direktuppspelningsanslutningar till datainsamling och valideringstjänst i Experience Platform Hub. | &lt; 15 minuter |
-| 4 | Data som samlas in via Adobe Analytics och vidarebefordras av Analytics-källkopplingen till källanslutningsprocessorn i Experience Platform Hub. | &lt; 15 minuter |
-| 5 | Data samlas in via andra källanslutningar till källanslutningsprocessorn i Experience Platform Hub. | &lt; 24 timmar |
-| 6 | Data som bearbetas av realtidsprocessorn för en konsoliderad datauppsättning för realtidsrapportering. | &lt; 90 sekunder |
+| | Datainsamling | Latens för rapportering i realtid | Standardfördröjning för rapportering |
+|:---:|---|--:|--:|
+| 1 | Edge Network SDK/API:er i Edge Network | &amp;ca; &lt; 00h:06m:30s | &amp;ca; &lt; 01h:35m:00s |
+| 2 | Strömmande anslutningar | &amp;ca; &lt; 00h:16m:30s | &amp;ca; &lt; 01h:45m:00s |
+| 3 | Adobe Analytics källanslutning | &amp;ca; &lt; 00h:16m:30s | &amp;ca; &lt; 01h:45m:00s |
+| 4 | Andra källkopplingar till källanslutningarna (inklusive batchdata) | &amp;ca; &lt; 24h:01m:30s | &amp;ca; &lt; 25h:30m:00s |
 
 ## Begränsningar
 
 Tänk på följande begränsning för realtidsrapportering:
 
-* Realtidsrapportering rapporterar endast om data som är tillgängliga under en rullande period på 24 timmar. Data som korsar denna rullande 24-timmarsperiod döljs för realtidsrapportering. När [realtidsuppdateringen](use-real-time.md) för en rapport har inaktiverats eller inaktiverats automatiskt, är alla relevanta data för en rapport tillgängliga en gång till.
-* Attribution, segmentation, calculate metrics, and more only work on the data available within the rolling period of 24 hours.
+* Realtidsrapportering rapporterar endast om data som är tillgängliga under en rullande period på 24 timmar. Data som är mer än   24-timmarsversionen är inte tillgänglig för realtidsrapportering. När [realtidsuppdateringen](use-real-time.md) för en rapport har inaktiverats eller inaktiverats automatiskt är alla relevanta data tillgängliga en gång till från den [konsoliderade datamängden](/help/connections/combined-dataset.md) som vanligtvis används för rapportering i Customer Journey Analytics.
+* Attribution, segmentation, calculate metrics, and more only work on the data available within the rolling period of 24 hours. Ett *Upprepa besökare*-segment innehåller till exempel ett fåtal personer i en realtidsrapport, eftersom rapporten endast innehåller personer som har besökt flera gånger de senaste 24 timmarna. En liknande begränsning gäller när du skapar en realtidsrapport för personer som tidigare klickat på en kampanj som inte längre är aktiv.
 * Realtidsrapportering fungerar bäst med data på händelse- och sessionsnivå och du bör vara försiktig med realtidsrapportering för data på personnivå. <!--Need to explain this a bit better --> Eftersom endast händelser från den rullande 24-timmarsperioden är tillgängliga för realtidsrapporter, begränsas en persons händelsehistorik även till det här fönstret. Tänk på inställningen för händelse- och sessionsnivådata när du väljer en dimension och (beräknade) mått. Och när du använder funktioner som nedbrytning, nästa eller föregående, med mera i realtidsuppdateringspanelen.
 * Du kan inte kombinera sammanfogning med realtidsrapportering. <!-- Do we need to explain this in more detail, why? --> Realtidsrapportering handlar om händelse- och sessionsnivådata och är mindre relevant för personbaserade data.
 * Inga pulsslagsinsamlade mediemätvärden är tillgängliga, förutom mediestart och mediefärgvärden. Så du kan fortfarande använda realtidsrapportering för att aktivera medieanvändningsfall.
