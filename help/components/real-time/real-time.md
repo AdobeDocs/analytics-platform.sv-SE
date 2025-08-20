@@ -7,7 +7,7 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: d0067d8271b7628f0d174d1fa647ba1b4558ffb4
+source-git-commit: 804668db5e104d1a1de7d5d9ce0c92a9bb1980dc
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
@@ -56,10 +56,10 @@ Illustrationen betonar också att realtidsrapportering använder en konsoliderad
 
 | | Datainsamling | Latens för rapportering i realtid | Standardfördröjning för rapportering |
 |:---:|---|--:|--:|
-| 1 | Edge Network SDK/API:er i Edge Network | &ca; &lt; 00h:06m:30s | &ca; &lt; 01h:35m:00s |
-| 2 | Strömmande anslutningar | &ca; &lt; 00h:16m:30s | &ca; &lt; 01h:45m:00s |
-| 3 | Adobe Analytics källanslutning | &ca; &lt; 00h:16m:30s | &ca; &lt; 01h:45m:00s |
-| 4 | Andra källkopplingar till källanslutningarna (inklusive batchdata) | &ca; &lt; 24h:01m:30s | &ca; &lt; 25h:30m:00s |
+| 1 | Edge Network SDK/API:er i Edge Network | &amp;ca; &lt; 00h:06m:30s | &amp;ca; &lt; 01h:35m:00s |
+| 2 | Strömmande anslutningar | &amp;ca; &lt; 00h:16m:30s | &amp;ca; &lt; 01h:45m:00s |
+| 3 | Adobe Analytics källanslutning | &amp;ca; &lt; 00h:16m:30s | &amp;ca; &lt; 01h:45m:00s |
+| 4 | Andra källkopplingar till källanslutningarna (inklusive batchdata) | &amp;ca; &lt; 24h:01m:30s | &amp;ca; &lt; 25h:30m:00s |
 
 ## Begränsningar
 
