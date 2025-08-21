@@ -7,7 +7,7 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: b34cf8d95080cb333cd497450f5881f0418b8ae9
+source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 2%
@@ -42,17 +42,18 @@ Du vill validera, till exempel:
 
 Överväg inte realtidsrapportering för användningsfall för övervakning av åtgärder. Till exempel frågan om en webbplats fungerar som den ska. Eftersom [alternativet för uppdatering i realtid](use-real-time.md) automatiskt inaktiveras efter 30 minuter och rapporten i realtid slutar uppdateras, bör du inte använda en realtidsrapport som en tillförlitlig källa för de här användningsfallen.
 
+## Så här fungerar det
 
-## Latenser
-
-Hur du samlar in data avgör fördröjningen för realtidsrapporter i Customer Journey Analytics. Bilden och tabellen nedan visar ungefärliga fördröjningar för olika datainsamlingsscenarier när du använder realtidsrapportering och (för jämförelse) standardrapportering.
-
-Illustrationen betonar också att realtidsrapportering använder en konsoliderad datamängd som är helt skild från den [konsoliderade (kombinerade) datamängden ](/help/connections/combined-dataset.md) som används för standardrapportering. Du använder [Uppdatera i realtid-växeln](use-real-time.md) för att växla mellan:
+Realtidsrapportering använder en konsoliderad datamängd som är helt skild från den [konsoliderade (kombinerade) datamängden ](/help/connections/combined-dataset.md) som används för standardrapportering. Du använder [Uppdatera i realtid-växeln](use-real-time.md) för att växla mellan:
 
 * Realtidsrapportering för en konsoliderad datauppsättning som innehåller upp till 24 timmars rullande data.
 * Standardrapportering på den konsoliderade datauppsättningen som innehåller upp till 13 månaders rullande data (eller längre om du har licensierat tillägget för utökad datakapacitet).
 
 ![Realtidsrapportering](assets/real-time-reporting-latencies.svg){zoomable="yes"}
+
+### Latenser
+
+Hur du samlar in data avgör fördröjningen för realtidsrapporter i Customer Journey Analytics. Bilden ovan och tabellen nedan visar ungefärliga latenser för olika datainsamlingsscenarier när man använder realtidsrapportering och (för jämförelse) standardrapportering.
 
 | | Datainsamling | Svarstid för realtidsrapportering <br/> (ca. mindre än) | Standardfördröjning för rapportering <br/> (ca. mindre än) |
 |:---:|---|--:|--:|
