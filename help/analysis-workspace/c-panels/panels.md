@@ -4,9 +4,9 @@ title: Paneler - översikt
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: c26fbe37270171c80d77c96966dd21f2dd7c7ce9
+source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2065'
 ht-degree: 1%
 
 ---
@@ -75,9 +75,21 @@ Ni kan:
 * Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **utanför** den sista panelen på arbetsytan för att lägga till ytterligare en [tom panel](blank-panel.md).
 
 
+## Hantera en panel
+
+Du kan hantera en panel på följande sätt:
+
+![Hantera panel](assets/manage-panel.png)
+
+* Om du vill komprimera en panel väljer du ![SparrrNed](/help/assets/icons/ChevronDown.svg).
+* Om du vill visa en komprimerad panel väljer du ![SparrVänster](/help/assets/icons/ChevronLeft.svg).
+* Om du vill ta bort en panel väljer du ![CrossSize400](/help/assets/icons/CrossSize200.svg). Ångra genom att välja **[!UICONTROL Edit]** > **[!UICONTROL Undo]** (**[!UICONTROL *cmd+z *]**) |**[!UICONTROL * Ctrl+z *]**).
+* Om du vill flytta en panel drar och släpper du panelen när en ![Flytta](/help/assets/icons/Move.svg) är synlig (vanligtvis när du för muspekaren över rubriken).
+
+
 ## Datavy
 
-Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**&#x200B;i listrutan längst upp till höger på panelen.
+Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**i listrutan längst upp till höger på panelen.
 
 När du skapar ett tomt Workspace-projekt är standarddatavyn för den första panelen datavyn som du senast arbetade med i Customer Journey Analytics.
 

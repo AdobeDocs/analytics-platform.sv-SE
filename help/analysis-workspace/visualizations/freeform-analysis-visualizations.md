@@ -5,9 +5,9 @@ title: Visualiseringar - översikt
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 9c05319ceacb7287af7f15cfe56b8048a718559d
+source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1649'
 ht-degree: 1%
 
 ---
@@ -67,6 +67,22 @@ Följande visualiseringstyper finns i Analysis Workspace:
    * Använd Workspace **[!UICONTROL Insert]**-menyn för att infoga en visualisering.
 
    * Välj **[!UICONTROL Visualize]** på snabbmenyn i en friformstabell. Välj sedan visualisering på undermenyn. Baserat på det aktuella urvalet i tabellen avgör Workspace vilken visualisering som ska erbjudas och tolkar data för att skapa den begärda visualiseringen.
+
+När du lägger till en enkel visualisering, till exempel en [rad](line.md) av [Bar](bar.md)-visualisering, används den närmaste friformstabellen som datakälla. Du kan alltid ändra [datakällan](#data-source) för dina visualiseringar.
+
+
+## Hantera visualiseringar
+
+Du kan hantera en visualisering när du hovrar över visualiseringen eller väljer visualiseringen.
+
+![Hantera visualisering](assets/manage-visualization.png)
+
+* Om du vill komprimera en visualisering väljer du ![SparronDown](/help/assets/icons/ChevronDown.svg).
+* Om du vill visa en komprimerad visualisering väljer du ![Sparrform](/help/assets/icons/ChevronLeft.svg).
+* Om du vill ta bort en visualisering väljer du ![CrossSize400](/help/assets/icons/CrossSize400.svg). Ångra genom att välja **[!UICONTROL Edit]** > **[!UICONTROL Undo]** (**[!UICONTROL *cmd+z *]**) |**[!UICONTROL * Ctrl+z *]**).
+* Om du vill återställa en visualisering till standardhöjden väljer du ![ImageResize](/help/assets/icons/Resize.svg).
+* Om du vill flytta en visualisering inom en panel drar och släpper du visualiseringen när en ![Flytta](/help/assets/icons/Move.svg) är synlig (vanligtvis när du för muspekaren över huvudet).
+
 
 
 ## Förklaring
