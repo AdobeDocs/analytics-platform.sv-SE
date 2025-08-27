@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 830e8312b4be2ffac907baca282ce71029e6ecc5
+source-git-commit: baf9248842a4f660dea77f7f5a3d39188cb21348
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1277'
 ht-degree: 10%
 
 ---
@@ -427,6 +427,7 @@ ht-degree: 10%
    + [Fältbaserad stygn](/help/stitching/fbs.md)
    + [Diagrambaserad stygn](/help/stitching/gbs.md)
    + [Använd stygn](/help/stitching/use-stitching.md)
+   + [Använd stygn](/help/stitching/use-stitching-ui.md)
    + [Skapa och hantera sammanslagna datauppsättningar](/help/stitching/stitching-ui.md)
    + [Validera sammanfogning](/help/stitching/validate.md)
    + [Vanliga frågor](/help/stitching/faq.md)
