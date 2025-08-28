@@ -14,4 +14,4 @@ ht-degree: 0%
 
 Adobe Advertising är integrerat med Adobe Customer Journey Analytics för dubbelriktad datadelning och rapportering.
 
-Mer information finns i [Översikt över integrationen mellan Adobe Advertising och Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/advertising/integrations/customer-journey-analytics/overview).
+Mer information finns i [Översikt över integrationen mellan Adobe Advertising och Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/advertising/integrations/customer-journey-analytics/overview).
