@@ -5,9 +5,9 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9e263d638d483194424a492b0494672ef0f62e71
+source-git-commit: aa635d52007a3032d8c3f90a779d1b70213dee9e
 workflow-type: tm+mt
-source-wordcount: '3702'
+source-wordcount: '3701'
 ht-degree: 1%
 
 ---
@@ -90,7 +90,7 @@ Fördelarna med sammanhangsetiketter är:
 * **Konsekvens**: Alla i organisationen som arbetar med ett eller flera projekt som är baserade på en datavy som använder kontextetiketter får samma beteende.
 * **Synlighet för funktioner och mallar**: Vissa visualiseringar och funktioner visas bara när rätt kontextetikett har tilldelats. Exempel:
 
-   * En [karta](/help/analysis-workspace/visualizations/map.md)-visualisering visas bara korrekt när Customer Journey Analytics vet vilka fält som representerar latitud och longitud.
+   * En [karta](/help/analysis-workspace/visualizations/map.md)-visualisering visas bara korrekt när Customer Journey Analytics vet vilka komponenter som representerar latitud och longitud.
    * Specifika [mallar](/help/analysis-workspace/templates/use-templates.md) visas bara när rätt kontextetiketter används och de associerade komponenterna blir tillgängliga.
 
 Kontextetiketter kan behövas i följande situationer:
@@ -105,7 +105,7 @@ Kontextetiketter kan behövas i följande situationer:
 
   **Obs!** Kartvyn är i den begränsade testfasen av versionen och är kanske inte tillgänglig än i din miljö.
 
-* När du använder [mallar från Adobe](/help/analysis-workspace/templates/use-templates.md). Vissa mallar från Adobe kanske inte fungerar eftersom vissa komponenter inte finns i datavyn.
+* Om du vill visa [mallar från Adobe](/help/analysis-workspace/templates/use-templates.md). Vissa mallar från Adobe kanske inte fungerar eftersom vissa komponenter inte finns i datavyn.
 
   För varje komponent som saknas finns en matchande sammanhangsetikett tillgänglig i datavyn. Du måste antingen lägga till den matchande kontextetiketten i en komponent som redan finns i datavyn. Eller så måste du lägga till en ny komponent i datavyn och lägga till kontextetiketten till komponenten (om den inte redan har angetts automatiskt).
 
