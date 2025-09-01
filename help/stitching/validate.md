@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: a37542e4df80048c0750964bb979d77625813ebe
+source-git-commit: d9a65774fa5ab8c6b7fdd018f5d345dc7eb9e9de
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Dessutom måste du lägga till två sammanslagningsmått som baseras på föreko
 
 1. Använd fältet som innehåller Person-ID:t från den sammanslagna datauppsättningen för att konfigurera ett mätvärde som definierar om ett Person-ID har angetts. Lägg till det här person-ID:t även om du använder diagrambaserade häftningar som person-ID:t för att skapa en baslinje. Om person-ID:t inte finns i datauppsättningen är baslinjen 0 %.
 
-   I exemplet nedan fungerar `personalEmail.address` som identitet och används för att skapa måttet **[!UICONTROL &#x200B; _Email set]**.
+   I exemplet nedan fungerar `personalEmail.address` som identitet och används för att skapa måttet **[!UICONTROL _Email set]**.
    ![Mätvärde för e-postuppsättning](assets/emailset-metric.png)
 
 1. Använd fältet `stitchedID.namespae.code` för att skapa en **[!UICONTROL Email stitched namespace]**-dimension. Se till att du anger [Inkludera komponentinställningar för utelämna värden](/help/data-views/component-settings/include-exclude-values.md), så du bör bara ta hänsyn till värden i namnområdet som du försöker höja dataraderna till.
