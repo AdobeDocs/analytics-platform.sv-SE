@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
+source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1553'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,17 @@ ht-degree: 0%
 
 I diagrambaserade sammanfogningar anger du en händelsedatamängd samt det beständiga ID:t (cookie) och namnområdet för det tillfälliga ID:t (person-ID) för den datauppsättningen. Diagrambaserad sammanfogning skapar en ny kolumn för det sammanfogade ID:t i den nya sammanfogade datauppsättningen. Sedan används det beständiga ID:t för att fråga efter identitetsdiagrammet från Experience Platform Identity Service med det namnområde som anges för att uppdatera det sammanfogade ID:t.
 
+>[!NOTE]
+>
+>Du måste kontrollera att datauppsättningen är [aktiverad för identitetstjänsten ](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
+>
+
+
 ![Diagrambaserad utjämning](/help/stitching/assets/gbs.png)
 
 ## IdentityMap
 
-Diagrambaserad sammanfogning stöder användning av fältgruppen [`identityMap` ](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
+Diagrambaserad sammanfogning stöder användning av fältgruppen [`identityMap` ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
 
 - Använd den primära identiteten i `identityMap` namnutrymmen för att definiera persistentID:
    - Om flera primära identiteter hittas i olika namnutrymmen sorteras identiteterna i namnutrymmena lexigrafiskt och den första identiteten markeras.
@@ -113,7 +119,7 @@ Tänk på följande två identitetsdiagram för det beständiga ID:t `246` och `
 ![Identitetsdiagram 246](assets/identity-graph-246.svg)
 ![Identitetsdiagram 3579 ](assets/identity-graph-3579.svg)
 
-Du kan visa ett identitetsdiagram över tiden för en viss profil med [Identity Graph Viewer](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-viewer). Se även [Identitetstjänstens länkningslogik](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-linking-logic) för att få en bättre förståelse för logiken som används vid länkning av identiteter.
+Du kan visa ett identitetsdiagram över tiden för en viss profil med [Identity Graph Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Se även [Identitetstjänstens länkningslogik](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) för att få en bättre förståelse för logiken som används vid länkning av identiteter.
 
 ### Steg 1: Liveutjämning
 
@@ -202,8 +208,8 @@ Följande tabell representerar samma data som ovan, men visar vilken effekt en s
 Följande krav gäller specifikt för diagrambaserad sammanfogning:
 
 - Händelsedatauppsättningen i Adobe Experience Platform, som du vill använda sammanfogning på, måste ha en kolumn som identifierar en besökare på varje rad, **beständigt ID**. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Experience Platform identitetstjänst.
-- Det beständiga ID:t måste också vara [definierat som en identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/fields/identity) i schemat.
-- Identitetsdiagrammet från Experience Platform Identity Service måste ha ett namnutrymme (till exempel `Email` eller `Phone`) som du vill använda vid sammanfogning för att matcha **transient ID**. Mer information finns i [Experience Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home).
+- Det beständiga ID:t måste också vara [definierat som en identitet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) i schemat.
+- Identitetsdiagrammet från Experience Platform Identity Service måste ha ett namnutrymme (till exempel `Email` eller `Phone`) som du vill använda vid sammanfogning för att matcha **transient ID**. Mer information finns i [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home).
 
 >[!NOTE]
 >
@@ -217,7 +223,7 @@ Följande begränsningar gäller specifikt för diagrambaserad sammanfogning:
 - Tidsstämplar beaktas inte när du frågar efter ett tillfälligt ID med det angivna namnutrymmet. Det är alltså möjligt att ett beständigt ID sammanfogas med ett tillfälligt ID från en post som har en tidigare tidsstämpel.
 - I scenarier med delade enheter, där namnutrymmet i diagrammet innehåller flera identiteter, används den första lexikografiska identiteten. Om namnutrymmesbegränsningar och -prioriteringar konfigureras som en del av releasen av regler för diagramlänkning, används den senast autentiserade användarens identitet. Mer information finns i [Delade enheter](/help/use-cases/stitching/shared-devices.md).
 - I identitetsdiagrammet finns det en hård gräns på tre månader för att efterfylla identiteter. Du använder bakåtfyllnadsidentiteter om du inte använder ett Experience Platform-program, som Customer Data Platform i realtid, för att fylla i identitetsdiagrammet.
-- [Identitetstjänstens skyddsprofiler](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/guardrails) gäller. Se till exempel följande [statiska begränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/guardrails#static-limits):
+- [Identitetstjänstens skyddsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) gäller. Se till exempel följande [statiska begränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Maximalt antal identiteter i ett diagram: 50.
    - Maximalt antal länkar till en identitet för ett enskilt batchintag: 50.
    - Maximalt antal identiteter i en XDM-post för diagraminmatning: 20.

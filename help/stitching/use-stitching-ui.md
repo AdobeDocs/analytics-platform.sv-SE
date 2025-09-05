@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 4bca14492374939cd1ea6508c774720db61a6283
+source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,19 @@ Om du vill aktivera sammanfogning går du till händelsedatamängdsavsnittet i d
    * Aktivera **[!UICONTROL Use primary identity namespace]** att använda det primära identitetsnamnområdet.
    * Välj ett namnutrymme i listrutan **[!UICONTROL Namespace]**.
 
-   Om du väljer **[!UICONTROL Identity Graph]** som person-ID måste du välja ett namnutrymme. Innan dess visas en **[!UICONTROL Change to identity graph]**-dialogruta för att kontrollera att du har slutfört konfigurationen av identitetsdiagrammet innan du använder identitetsdiagrammet för sammanfogning. Välj **[!UICONTROL Continue]** om du vill fortsätta.
+
+   Om du väljer **[!UICONTROL Identity Graph]** som person-ID måste du välja ett namnutrymme.
+
+   >[!NOTE]
+   >
+   >Du måste ha rätt att använda identitetsdiagrammet.
+   >
+
+   Innan dess visas en **[!UICONTROL Change to identity graph]**-dialogruta för att kontrollera att du har [slutfört konfigurationen av identitetsdiagrammet för datauppsättningen](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) innan du använder identitetsdiagrammet för sammanfogning. Välj **[!UICONTROL Continue]** om du vill fortsätta.
 
    * Välj ett namnutrymme i listrutan **[!UICONTROL Namespace]**.
 
 
-1. Välj ett uppslagsfönster i listrutan **[!UICONTROL Lookback window]**. Alternativen är **[!UICONTROL 1 day]**, **[!UICONTROL 7 days]**, **[!UICONTROL 14 days]** eller **[!UICONTROL 30 days]**.
+1. Välj ett uppslagsfönster i listrutan **[!UICONTROL Lookback window]**. Vilka alternativ som är tillgängliga beror på vilket Customer Journey Analytics-paket du har rätt till.
+
+När du har sparat en anslutning som innehåller datauppsättningar som har aktiverats för identitetssammanfogning, börjar sammanfogningsprocessen för varje datauppsättning när inmatningen av data för den datauppsättningen börjar.
