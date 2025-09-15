@@ -28,7 +28,7 @@ Intelligenta bildtexter inriktas på följande:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligenta bildtexter](https://video.tv.adobe.com/v/3443142/?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligenta bildtexter](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -127,7 +127,7 @@ Om du inte vill visa intelligenta bildtexter kan du inaktivera funktionen.
 
 ## Intelligenta bildtexter i Mobile Scorecards
 
-Intelligenta bildtexter finns också i Customer Journey Analytics [mobilstyrkort](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions).
+Intelligenta bildtexter finns också i Customer Journey Analytics [mobilstyrkort](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions).
 
 ## Funktionsåtkomst
 
@@ -137,7 +137,7 @@ Följande parametrar styr åtkomsten till intelligenta bildtexter:
 
 * **Kontraktsåtkomst**: Om du inte kan använda intelligenta bildtexter kontaktar du organisationens administratör eller kontorepresentant för Adobe (Admin). Innan du kan använda intelligenta bildtexter i din organisation måste du godkänna vissa allmänna AI-relaterade juridiska villkor.
 
-* **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Intelligent Captions]** åtkomsten. En [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console]:
+* **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Intelligent Captions]** åtkomsten. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console]:
    1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**.
    1. Välj namnet på den produktprofil som du vill ge tillgång till intelligenta bildtexter för.
    1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.
