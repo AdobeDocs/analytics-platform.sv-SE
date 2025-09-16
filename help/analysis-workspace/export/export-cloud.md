@@ -5,9 +5,9 @@ title: Exportera hela tabeller till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: c16fc1a239c9ce1b701b3d03539bc9696f1c6489
+source-git-commit: e3037b3981ce128f67165d6caca0b4dc5df04773
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2381'
 ht-degree: 1%
 
 ---
@@ -59,6 +59,43 @@ Använd följande process när du exporterar fullständiga tabeller till molnet:
 >id="export-manifest"
 >title="Manifest-fil"
 >abstract="När det här alternativet är aktiverat inkluderas en manifestfil i alla slutförda exportleveranser. Manifestfilen gör att du kan bekräfta att alla filer har levererats."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-details"
+>title="Information"
+>abstract="Ange ett namn för exporten. Du kan också lägga till en beskrivning och eventuella taggar. Den här informationen hjälper till att identifiera exporten i exporttabellen och i e-postmeddelanden."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-data-structure"
+>title="Datastruktur"
+>abstract="Det här är friformstabellen som du exporterar. Du kan ändra datastrukturen genom att dra komponenter från den vänstra panelen till tabellen. Du kan använda ett filter genom att dra en komponent till filterområdet. Tabellen uppdateras dynamiskt när du lägger till komponenter på arbetsytan."
+
+<!-- markdownlint-enable MD034 -->ß
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-schedule"
+>title="Schema"
+>abstract="Välj hur ofta exporten ska ske. Välj Skicka nu (en gång) om du vill starta exporten direkt. Schemalagda exporter initieras vid det datum och den tidpunkt som du anger. "
+
+<!-- markdownlint-enable MD034 -->
+
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-destination"
+>title="Mål"
+>abstract="Välj det molnkonto och den plats dit du vill att data ska skickas. Du kan välja ett befintligt konto och en plats eller välja Lägg till nytt för att skapa dem. Ange användare och grupper för att meddela om exporten misslyckades eller upphör att gälla."
 
 <!-- markdownlint-enable MD034 -->
 
