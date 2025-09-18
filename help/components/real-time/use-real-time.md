@@ -2,14 +2,11 @@
 description: Lär dig använda realtidsrapportering i Analysis Workspace.
 title: Använd realtidsrapportering
 feature: Real-time Reporting
-hide: true
-hidefromtoc: true
 role: User
-badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
+source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -30,7 +27,7 @@ Om du vill använda realtidsrapportering aktiverar du alternativet **[!UICONTROL
 * [Tillskrivning](/help/analysis-workspace/c-panels/attribution.md)
 * [Nästa eller föregående objekt](/help/analysis-workspace/c-panels/next-previous.md)
 
-Du ser ett meddelande med tidsstämpeln för den senaste uppdateringen av data. Till exempel: [!UICONTROL &#x200B; *Senast uppdaterad 07:55 pm*].
+Du ser ett meddelande med tidsstämpeln för den senaste uppdateringen av data. Till exempel: [!UICONTROL  *Senast uppdaterad 07:55 pm*].
 
 Välj den realtidsperiod som du vill rapportera om i listrutan. Tillgängliga alternativ är:
 
