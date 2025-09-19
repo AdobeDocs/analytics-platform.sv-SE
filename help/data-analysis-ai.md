@@ -251,7 +251,7 @@ Nedan följer god praxis för din Customer Journey Analytics-konfiguration (data
 >[!MORELIKETHIS]
 >
 >[Komponentinställningar](/help/data-views/component-settings/overview.md)
->>[Dataordlista ](/help/components/data-dictionary/data-dictionary-overview.md)
->>[Godkänn beräknat mått ](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->>[Dela segment ](/help/components/segments/seg-share.md)
+>&#x200B;>[Dataordlista ](/help/components/data-dictionary/data-dictionary-overview.md)
+>&#x200B;>[Godkänn beräknat mått ](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>&#x200B;>[Dela segment ](/help/components/segments/seg-share.md)
 >
