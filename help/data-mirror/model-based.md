@@ -180,7 +180,7 @@ Definiera ett schema som modellerar dessa data. Så här konfigurerar du ditt sc
 
      ![Personbeskrivning](assets/platform-schema-personid.png)
 
-   * Fältet **[!UICONTROL timestamp]** är konfigurerat och fältet **[!UICONTROL personid]** är **[!UICONTROL Primary ke]**y. Fältet **[!UICONTROL timestamp]** är också konfigurerat som **[!UICONTROL Timestamp descriptor]** . Du behöver bara definiera ett fält som **[!UICONTROL Timestamp descriptor]** för tidsseriens modellbaserade data.
+   * Fältet **[!UICONTROL timestamp]** är konfigurerat och fältet **[!UICONTROL personid]** är **[!UICONTROL Primary ke]**&#x200B;y. Fältet **[!UICONTROL timestamp]** är också konfigurerat som **[!UICONTROL Timestamp descriptor]** . Du behöver bara definiera ett fält som **[!UICONTROL Timestamp descriptor]** för tidsseriens modellbaserade data.
 
      ![Tidsstämpelbeskrivning](assets/platform-schema-timestamp.png)
 
