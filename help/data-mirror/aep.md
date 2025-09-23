@@ -7,8 +7,7 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
-exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
+source-git-commit: ebd6695cd5242c5443ccfbc5a38f337454f6de33
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%
@@ -16,8 +15,6 @@ ht-degree: 0%
 ---
 
 # Konfigurera Experience Platform
-
-{{release-limited-testing}}
 
 Experience Platform Data Mirror för Customer Journey Analytics kräver att flera Experience Platform-komponenter är korrekt konfigurerade:
 
@@ -55,9 +52,9 @@ Om du vill ställa in källkopplingen till de datalagerlösningar som stöds, an
 
 Autentisering mot den inbyggda datalagerlösningen som stöds finns i relevant Experience Platform-dokumentation:
 
-* [Azure-databaser](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure-databaser](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Markera data
@@ -92,5 +89,5 @@ När du är klar med konfigurationen av källkopplingen skapas ett dataflöde. F
 
 >[!MORELIKETHIS]
 >
->[Data Mirror snabbstartsguide: Spegla och använda modellbaserade data](model-based.md)
+>[Data Mirror snabbstartsguide: Spegla och använda modellbaserade data](data-mirror.md)
 >

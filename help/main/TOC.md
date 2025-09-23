@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 1718379e1ea6baffef8f4da045662e95a47e1480
+source-git-commit: 06c5a73e5c0c900782bb284ffef9f88c387ba9cc
 workflow-type: tm+mt
-source-wordcount: '1280'
-ht-degree: 10%
+source-wordcount: '1299'
+ht-degree: 11%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 10%
    + [Användarhandbok för Adobe Analytics](../getting-started/aa-to-cja-user.md)
 
 + Intag av data {#cja-data-ingestion}
-   + [Översikt över dataöverföring](../data-ingestion/data-ingestion.md)
+   + [Översikt](../data-ingestion/data-ingestion.md)
    + Infoga och använda snabbstartguider{#ingest-use-guides}
       + [Adobe Analytics](../data-ingestion/analytics.md)
       + Experience Platform Edge Network {#edge-network}
@@ -120,6 +120,15 @@ ht-degree: 10%
       + [Batchdata](../data-ingestion/batch.md)
       + [Strömmande data](../data-ingestion/streaming.md)
       + [Source-anslutningar](../data-ingestion/sources.md)
+      + [Ad hoc-data](/help/data-ingestion/adhoc.md)
+
++ Dataspegling {#cja-data-mirror}
+   + [Översikt](/help/data-mirror/data-mirror.md)
+   + Konfigurera {#configure}
+      + [Inbyggda datalagerlösningar](/help/data-mirror/datawarehouse.md)
+      + [Experience Platform](/help/data-mirror/aep.md)
+      + [Customer Journey Analytics](/help/data-mirror/cja.md)
+   + [Data Mirror snabbstartsguide](/help/data-mirror/model-based.md)
 
 + Anslutningar {#cja-connections}
    + [Anslutningar - översikt](../connections/overview.md)
@@ -258,7 +267,7 @@ ht-degree: 10%
       + [Attributionsöversikt](../analysis-workspace/attribution/overview.md)
       + [Modell-, behållare- och uppslagsfönster](../analysis-workspace/attribution/models.md)
       + [Algoritmisk attribuering](../analysis-workspace/attribution/algorithmic.md)
-      + [God praxis](../analysis-workspace/attribution/best-practices.md)
+      + [Bästa praxis](../analysis-workspace/attribution/best-practices.md)
       + [Frågor och svar](../analysis-workspace/attribution/faq.md)
    + Avvikelseidentifiering {#anomaly-detection}
       + [Översikt](../analysis-workspace/c-anomaly-detection/anomaly-detection.md)
