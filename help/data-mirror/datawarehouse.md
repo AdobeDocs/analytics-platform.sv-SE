@@ -53,8 +53,8 @@ Mer information finns i [[!DNL Azure Databricks] handboken om hur du aktiverar f
 
 Läs följande dokumentation om hur du aktiverar registrering av ändringsdata för din [!DNL Azure Databricks]-källanslutning:
 
-* [Skapa en [!DNL Azure Databricks] basanslutning](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
-* [Skapa en källanslutning för en databas](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Skapa en [!DNL Azure Databricks] basanslutning](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
+* [Skapa en källanslutning för en databas](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Google BigQuery]
 
@@ -64,8 +64,8 @@ Mer information finns i handboken om [språksatser för datadefinitioner i  [!DN
 
 Läs följande dokumentation om hur du aktiverar registrering av ändringsdata för din [!DNL Google BigQuery]-källanslutning:
 
-* [Skapa en [!DNL Google BigQuery] basanslutning](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
-* [Skapa en källanslutning för en databas](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Skapa en [!DNL Google BigQuery] basanslutning](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
+* [Skapa en källanslutning för en databas](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Snowflake]
 
@@ -81,8 +81,8 @@ Mer information finns i [[!DNL Snowflake] handboken om hur du använder ändring
 
 Läs följande dokumentation om hur du aktiverar registrering av ändringsdata för din [!DNL Snowflake]-källanslutning:
 
-* [Skapa en [!DNL Snowflake] basanslutning](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
-* [Skapa en källanslutning för en databas](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Skapa en [!DNL Snowflake] basanslutning](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
+* [Skapa en källanslutning för en databas](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 
 >[!MORELIKETHIS]

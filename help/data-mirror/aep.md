@@ -52,9 +52,9 @@ Om du vill ställa in källkopplingen till de datalagerlösningar som stöds, an
 
 Autentisering mot den inbyggda datalagerlösningen som stöds finns i relevant Experience Platform-dokumentation:
 
-* [Azure-databaser](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure-databaser](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Markera data
