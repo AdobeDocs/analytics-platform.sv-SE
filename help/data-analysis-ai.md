@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 8eb57617cc089dee0df73171feb1118f35d4c960
+source-git-commit: cd92bde10b9cb473c4df791e91296a2a43b2ad84
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2390'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
 * **Behörigheter**: Nödvändiga behörigheter måste beviljas i [!UICONTROL Adobe Admin Console] innan användare kan komma åt Data Insights Agent.
 
-  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
+  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
    1. I **[!UICONTROL Admin Console]** väljer du fliken **[!UICONTROL Products]** för att visa sidan **[!UICONTROL All products and services]**.
    1. Välj **[!UICONTROL Customer Journey Analytics]**.
    1. På fliken **[!UICONTROL Product Profiles]** väljer du titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL AI Assistant: Product Knowledge].
@@ -163,6 +163,14 @@ Slutligen ska vi titta på intäkterna per produktkategori.
 
 ![Ringdiagram](/help/assets/ai-asst-result3.png)
 
+## Få tillgång till Data Insights Agent i alla Experience Cloud-program
+
+Med Adobe Experience Platform Agent Orchestrator får du tillgång till funktionerna i Data Insights Agent i flera Adobe Experience Cloud-program, som Adobe Journey Optimizer och Real-Time CDP.
+
+Agent Orchestrator tolkar er begäran, avgör vilka specialistagenter som behövs och ordnar dem för att leverera rätt svar. Den håller reda på sammanhanget över interaktioner i flera omgångar, så att du kan bygga vidare på tidigare frågor på ett naturligt sätt.
+
+Mer information finns i [Adobe Experience Platform Agent Orchestrator](http://www.adobe.com/go/agent-orchestrator-home).
+
 ## Exempel på visualiseringsmeddelanden för data
 
 Nedan följer några exempel på vanliga uppmaningar och de visualiseringar som Data Insights Agent använder för att svara på dessa uppmaningar.
@@ -251,7 +259,7 @@ Nedan följer god praxis för din Customer Journey Analytics-konfiguration (data
 >[!MORELIKETHIS]
 >
 >[Komponentinställningar](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dataordlista ](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Godkänn beräknat mått ](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Dela segment ](/help/components/segments/seg-share.md)
+>>[Dataordlista ](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Godkänn beräknat mått ](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Dela segment ](/help/components/segments/seg-share.md)
 >
