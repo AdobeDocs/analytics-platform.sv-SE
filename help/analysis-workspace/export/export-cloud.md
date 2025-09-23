@@ -5,9 +5,9 @@ title: Exportera hela tabeller till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: e3037b3981ce128f67165d6caca0b4dc5df04773
+source-git-commit: 0b6afd5639234f6305c99267d3b1624279c97368
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2414'
 ht-degree: 1%
 
 ---
@@ -56,15 +56,6 @@ Använd följande process när du exporterar fullständiga tabeller till molnet:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="export-manifest"
->title="Manifest-fil"
->abstract="När det här alternativet är aktiverat inkluderas en manifestfil i alla slutförda exportleveranser. Manifestfilen gör att du kan bekräfta att alla filer har levererats."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
 >id="cja-export-details"
 >title="Information"
 >abstract="Ange ett namn för exporten. Du kan också lägga till en beskrivning och eventuella taggar. Den här informationen hjälper till att identifiera exporten i exporttabellen och i e-postmeddelanden."
@@ -78,7 +69,16 @@ Använd följande process när du exporterar fullständiga tabeller till molnet:
 >title="Datastruktur"
 >abstract="Det här är friformstabellen som du exporterar. Du kan ändra datastrukturen genom att dra komponenter från den vänstra panelen till tabellen. Du kan använda ett filter genom att dra en komponent till filterområdet. Tabellen uppdateras dynamiskt när du lägger till komponenter på arbetsytan."
 
-<!-- markdownlint-enable MD034 -->ß
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="export-manifest"
+>title="Manifest-fil"
+>abstract="När du väljer det här alternativet inkluderas en manifestfil i alla slutförda exportleveranser. Manifestfilen gör att du kan bekräfta att alla filer har levererats."
+
+<!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -96,6 +96,15 @@ Använd följande process när du exporterar fullständiga tabeller till molnet:
 >id="cja-export-destination"
 >title="Mål"
 >abstract="Välj det molnkonto och den plats dit du vill att data ska skickas. Du kan välja ett befintligt konto och en plats eller välja Lägg till nytt för att skapa dem. Ange användare och grupper för att meddela om exporten misslyckades eller upphör att gälla."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-format"
+>title="Filformat"
+>abstract="När du väljer filformatet Parquet ersätts vissa specialtecken i komponentnamnen med ett understreck (_). På länken nedan finns en fullständig lista över tecken som har ersatts."
 
 <!-- markdownlint-enable MD034 -->
 
