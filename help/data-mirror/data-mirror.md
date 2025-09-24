@@ -7,9 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
+source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -44,7 +45,7 @@ Se även Experience Platform dokumentation om Data Mirror.
 
 >[!NOTE]
 >
->Funktionen Experience Platform Data Mirror för Customer Journey Analytics är tillgänglig i en **offentlig beta** fram till 25 mars 2026. Under betaperioden är uppdateringarna av datainhämtning (CDC) begränsade till 0,5 % av organisationens månadsvisa datarader. De månatliga dataraderna baseras på årsanpassningen för datarader dividerat med 12. Adobe förbehåller sig rätten att säga upp betaåtkomsten till Experience Platform Data Mirror för Customer Journey Analytics om din organisation skulle överskrida denna gräns.
+>Funktionen Experience Platform Data Mirror för Customer Journey Analytics är tillgänglig i en **offentlig beta** fram till 25 mars 2026. Under betaperioden begränsas uppdateringarna av datainhämtning (CDC) till ett berättigande på 10 miljoner ändringsrader per dag för Customer Journey Analytics. Adobe förbehåller sig rätten att säga upp betaåtkomst till Experience Platform Data Mirror-funktioner om din organisation skulle överskrida denna gräns. Mer information om funktionen, inklusive faktureringskonsekvenser, finns i det här avsnittet av Experience League-dokumentationen.
 >
 
 Funktionen Experience Platform Data Mirror för Customer Journey Analytics är tillgänglig för utvalda inbyggda datalagerlösningar ([!DNL Azure Databricks], [!DNL Google BigQuery] och [!DNL Snowflake]). För Customer Journey Analytics-versionen av Data Mirror-funktionen krävs att du har konfigurerat och konfigurerat flera komponenter:
@@ -56,5 +57,5 @@ Funktionen Experience Platform Data Mirror för Customer Journey Analytics är t
 
 >[!MORELIKETHIS]
 >
->[Data Mirror snabbstartsguide: Spegla och använda modellbaserade data](data-mirror.md)
+>[Data Mirror snabbstartsguide: Spegla och använda modellbaserade data](model-based.md)
 >

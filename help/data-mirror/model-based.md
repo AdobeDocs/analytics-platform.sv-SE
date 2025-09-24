@@ -7,15 +7,17 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
+source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2007'
 ht-degree: 2%
 
 ---
 
-
 # Spegla och använda modellbaserade data
+
+{{release-limited-testing}}
 
 Den här snabbstartsguiden förklarar hur du använder funktionen [Experience Platform Data Mirror för Customer Journey Analytics](data-mirror.md) för att spegla modellbaserade data från en inbyggd datalagerlösning i Adobe Experience Platform. Och använd sedan dessa data i Customer Journey Analytics.
 
@@ -180,7 +182,7 @@ Definiera ett schema som modellerar dessa data. Så här konfigurerar du ditt sc
 
      ![Personbeskrivning](assets/platform-schema-personid.png)
 
-   * Fältet **[!UICONTROL timestamp]** är konfigurerat och fältet **[!UICONTROL personid]** är **[!UICONTROL Primary ke]**&#x200B;y. Fältet **[!UICONTROL timestamp]** är också konfigurerat som **[!UICONTROL Timestamp descriptor]** . Du behöver bara definiera ett fält som **[!UICONTROL Timestamp descriptor]** för tidsseriens modellbaserade data.
+   * Fältet **[!UICONTROL timestamp]** är konfigurerat och fältet **[!UICONTROL personid]** är **[!UICONTROL Primary key]**. Fältet **[!UICONTROL timestamp]** har även konfigurerats som **[!UICONTROL Timestamp descriptor]**. Du behöver bara definiera ett fält som **[!UICONTROL Timestamp descriptor]** för tidsseriens modellbaserade data.
 
      ![Tidsstämpelbeskrivning](assets/platform-schema-timestamp.png)
 
@@ -218,7 +220,7 @@ I steget **[!UICONTROL Authentication]** väljer du:
 
    1. Välj **[!UICONTROL Next]**.
 
-  Mer information om hur du ansluter och autentiserar när du använder [Azure-databaserna](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/databricks) eller [Snowflake](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/snowflake) finns i dokumentationen för Experience Platform.
+  Mer information om hur du ansluter och autentiserar när du använder [Azure-databaserna](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) eller [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake) finns i dokumentationen för Experience Platform.
 
 
 ### Markera data
