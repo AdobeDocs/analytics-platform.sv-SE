@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
+source-git-commit: e5975a7bb60f4a2386997024c4615f95be648363
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '2004'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 {{release-limited-testing}}
 
-Den här snabbstartsguiden förklarar hur du använder funktionen [Experience Platform Data Mirror för Customer Journey Analytics](data-mirror.md) för att spegla modellbaserade data från en inbyggd datalagerlösning i Adobe Experience Platform. Och använd sedan dessa data i Customer Journey Analytics.
+Den här snabbstartsguiden förklarar hur du använder [Experience Platform Data Mirror för Customer Journey Analytics](data-mirror.md) för att spegla modellbaserade data från en inbyggd datalagerlösning i Adobe Experience Platform. Och använd sedan dessa data i Customer Journey Analytics.
 
 För att uppnå detta måste du:
 
@@ -122,7 +122,7 @@ Data i tabellen i den inbyggda datalagerlösningen är klara för Experience Pla
 
 ## Konfigurera ett schema
 
-Om du vill spegla data i Experience Platform måste du först definiera dataschemat. Alla data som du vill spegla i Experience Platform och som använder funktionen Experience Platform Data Mirror för Customer Journey Analytics måste överensstämma med ett modellbaserat schema.
+Om du vill spegla data i Experience Platform måste du först definiera dataschemat. Alla data som du vill spegla i Experience Platform och som använder Experience Platform Data Mirror för Customer Journey Analytics måste överensstämma med ett modellbaserat schema.
 
 Definiera ett schema som modellerar dessa data. Så här konfigurerar du ditt schema:
 
@@ -141,7 +141,7 @@ Definiera ett schema som modellerar dessa data. Så här konfigurerar du ditt sc
    1. Ange **[!UICONTROL Description]**. Till exempel: `Sample event feed schema for a model-based schema`.
    1. Välj **[!UICONTROL Time series]** som **[!UICONTROL Schema behavior]**. Du väljer **[!UICONTROL Time series]** för tidsseriebaserade data och **[!UICONTROL Record]** för postbaserade data. Beteendet definierar schemats struktur och de egenskaper som ingår.
 
-      Funktionen Experience Platform Data Mirror for Customer Journey Analytics används främst för tidsseriedata (till exempel händelsedata).
+      Experience Platform Data Mirror för Customer Journey Analytics används mest för tidsseriedata (till exempel händelsedata).
 
       ![Schemakonfiguration](assets/model-based-create-schema.png)
 
@@ -220,7 +220,7 @@ I steget **[!UICONTROL Authentication]** väljer du:
 
    1. Välj **[!UICONTROL Next]**.
 
-  Mer information om hur du ansluter och autentiserar när du använder [Azure-databaserna](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/databricks) eller [Snowflake](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/snowflake) finns i dokumentationen för Experience Platform.
+  Mer information om hur du ansluter och autentiserar när du använder [Azure-databaserna](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) eller [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake) finns i dokumentationen för Experience Platform.
 
 
 ### Markera data
@@ -351,6 +351,8 @@ Så här skapar du en datavy:
       1. Välj **[!UICONTROL Event datasets]**.
       1. Välj **[!UICONTROL Adhoc & Model-based fields]**.
       1. Dra och släpp fält från modellbaserade scheman till **[!UICONTROL METRICS]** eller **[!UICONTROL DIMENSIONS]**.
+
+         ![Lägg till modellbaserat fält som komponenter](assets/cja-add-dataset-folder-dv.png)
 
    1. Definiera härledda fält för fält som inte har rätt typ, som inte har rätt format eller som du vill ändra av andra orsaker. Till exempel för **[!UICONTROL Revenue Amount]**.
 

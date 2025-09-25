@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
+source-git-commit: 8946f1bc57cc856adeac4ee0a96799040f7e698c
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Här nedan hittar du information som du bör tänka på när du konfigurerar de 
 Du måste skapa ett modellbaserat schema som modellerar den interna datalagertabellen som du vill spegla. När du skapar det modellbaserade schemat måste du se till att följande krav uppfylls:
 
 * När du uppmanas att ange typ av modellbaserat schema måste du välja det manuella alternativet.
-* Välj lämpligt schema för datatypen. Observera att Data Mirror-funktionen främst används för tidsseriedata (till exempel händelsedata).
+* Välj lämpligt schema för datatypen. Observera att Experience Platform Data Mirror används mest för tidsseriedata (till exempel händelsedata).
 
 * Definiera fälten i ditt schema och deras attribut
 * Konfigurera obligatoriska attribut för fält i ett modellbaserat schema:
@@ -55,9 +55,9 @@ Om du vill ställa in källkopplingen till de datalagerlösningar som stöds, an
 
 Autentisering mot den inbyggda datalagerlösningen som stöds finns i relevant Experience Platform-dokumentation:
 
-* [Azure-databaser](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure-databaser](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Markera data
