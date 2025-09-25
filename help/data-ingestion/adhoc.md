@@ -98,7 +98,7 @@ I gränssnittet **[!UICONTROL Schemas]** > **[!UICONTROL Sample Data From CSV - 
 
   >[!NOTE]
   >
-  >Arbetsflödet definierar att alla fält i schemat är av typen String. Du kan inte ändra den här typen senare. Om du behöver större flexibilitet i definitionen av ett ad hoc-schema bör du överväga att [använda API:t för att skapa ett ad hoc-schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc) och sedan använda arbetsflödet [Skapa datauppsättning från schema](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema).
+  >Arbetsflödet definierar att alla fält i schemat är av typen String. Du kan inte ändra den här typen senare. Om du behöver större flexibilitet i definitionen av ett ad hoc-schema bör du överväga att [använda API:t för att skapa ett ad hoc-schema](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/tutorials/ad-hoc) och sedan använda arbetsflödet [Skapa datauppsättning från schema](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#schema).
   > 
 
 
@@ -155,7 +155,7 @@ Mer information om tillgängliga inställningar för ad hoc-datauppsättningar f
 
 >[!IMPORTANT]
 >
->Utöver den allmänna rekommendationen att inte använda ad hoc-datauppsättningar och scheman för tidsseriedata kan du inte använda arbetsflödet **[!UICONTROL Create dataset from CSV]** för tidsseriedata. I det här arbetsflödet definieras alla fält som av typen String, som du inte kan ändra efteråt. När du lägger till en tidsseriebaserad datauppsättning (händelse eller sammanfattning) till en anslutning, kräver den här typen av datauppsättning definitionen för minst ett fält av typen DateTime.<br/>Om du behöver använda ad hoc-tidsseriedata bör du överväga att [använda API:t för att skapa ett ad hoc-schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) och sedan använda arbetsflödet [Skapa datauppsättning från schema](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) .
+>Utöver den allmänna rekommendationen att inte använda ad hoc-datauppsättningar och scheman för tidsseriedata kan du inte använda arbetsflödet **[!UICONTROL Create dataset from CSV]** för tidsseriedata. I det här arbetsflödet definieras alla fält som av typen String, som du inte kan ändra efteråt. När du lägger till en tidsseriebaserad datauppsättning (händelse eller sammanfattning) till en anslutning, kräver den här typen av datauppsättning definitionen för minst ett fält av typen DateTime.<br/>Om du behöver använda ad hoc-tidsseriedata bör du överväga att [använda API:t för att skapa ett ad hoc-schema](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) och sedan använda arbetsflödet [Skapa datauppsättning från schema](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#schema) .
 
 
 När du har skapat en [anslutning](/help/connections/overview.md) kan du utföra olika hanteringsåtgärder, till exempel [markera och kombinera datauppsättningar](/help/connections/combined-dataset.md), [kontrollera status för en anslutnings datauppsättningar och status för dataöverföring](/help/connections/manage-connections.md), med mera.

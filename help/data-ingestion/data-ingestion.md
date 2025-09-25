@@ -102,7 +102,7 @@ Mer information finns i [Importera och använda strömmande data](./streaming.md
 
 ## Importera och använda data med hjälp av källkopplingar
 
-Du har data tillgängliga från en källa som stöds av en källkoppling. Source-anslutningar är konfigurerbara så att du kan importera data från Adobe, program från första part och program från tredje part till Adobe Experience Platform. Se [Översikt över Source-anslutningar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) för en översikt över tillgängliga källanslutningar. Med källkopplingen kan du enkelt importera data från källan till Adobe Experience Platform och sedan använda, kombinera och analysera dem med data från andra kanaler och datakällor i Customer Journey Analytics.
+Du har data tillgängliga från en källa som stöds av en källkoppling. Source-anslutningar är konfigurerbara så att du kan importera data från Adobe, program från första part och program från tredje part till Adobe Experience Platform. Se [Översikt över Source-anslutningar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=sv-SE) för en översikt över tillgängliga källanslutningar. Med källkopplingen kan du enkelt importera data från källan till Adobe Experience Platform och sedan använda, kombinera och analysera dem med data från andra kanaler och datakällor i Customer Journey Analytics.
 
 Mer information finns i [Importera och använda data med hjälp av källanslutningar](./sources.md).
 
