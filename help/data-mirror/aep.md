@@ -93,5 +93,5 @@ När du är klar med konfigurationen av källkopplingen skapas ett dataflöde. F
 >[!MORELIKETHIS]
 >
 >[Data Mirror snabbstartsguide: Spegla och använda modellbaserade data](model-based.md)
->>[Data Mirror (Experience Platform-dokumentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
->>[Modellbaserade scheman (Experience Platform-dokumentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
+>&#x200B;>[Data Mirror (Experience Platform-dokumentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>&#x200B;>[Modellbaserade scheman (Experience Platform-dokumentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)

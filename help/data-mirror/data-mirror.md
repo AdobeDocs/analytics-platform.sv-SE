@@ -53,5 +53,5 @@ Experience Platform Data Mirror för Customer Journey Analytics är tillgänglig
 >[!MORELIKETHIS]
 >
 >[Data Mirror snabbstartsguide: Spegla och använda modellbaserade data](model-based.md)
->>[Data Mirror (Experience Platform-dokumentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>&#x200B;>[Data Mirror (Experience Platform-dokumentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
 >
