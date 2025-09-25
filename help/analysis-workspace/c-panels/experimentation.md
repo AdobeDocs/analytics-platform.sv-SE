@@ -4,44 +4,36 @@ title: Panelen Experimentation
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 7e32ae7aa757a8ca47732416f0f883033611ea94
+source-git-commit: b013518d8f1782219dd2cf9e5b5a89b877e3b92d
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2125'
 ht-degree: 0%
 
 ---
 
 # Panelen Experimentation {#experimentation-panel}
 
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_button"
 >title="Experimentation"
 >abstract="Skapa en panel för att jämföra olika användarupplevelser, marknadsförings- och meddelandevarianter. Och för att avgöra vilken variation som är bäst när det gäller att få fram ett visst resultat."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="Experimentation"
 >abstract="Jämför olika användarupplevelser, marknadsförings- och meddelandevarianter för att avgöra vilket som är bäst för att få fram ett visst resultat. Ange experimentet, kontrollvarianten som ska jämföras med, framgångsmåttet och normaliseringsmåttet. Du kan också ange övre och nedre gränser för att få förtroende."
 
-<!-- markdownlint-enable MD034 -->
-
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs panelen Experimentation i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Mer information om hur du analyserar Adobe Target-aktiviteter och -upplevelser finns i [Analytics for Target-panelen](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_I den här artikeln beskrivs panelen Experimentation i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Mer information om hur du analyserar Adobe Target-aktiviteter och -upplevelser finns i [Analytics for Target-panelen](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) i_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
 
 På panelen **[!UICONTROL Experimentation]** kan analytiker jämföra olika användarupplevelser, marknadsförings- och meddelandevarianter för att avgöra vilket som är bäst för att få ett visst resultat. Ni kan utvärdera lyften och förtroendet för alla A/B-experiment från vilken experimentplattform som helst: online, offline, från Adobe lösningar som Target eller Journey Optimizer, och till och med från BYO (ta fram egna) data.
 
-Läs mer om [integreringen mellan Adobe Customer Journey Analytics och Adobe Target](https://experienceleague.adobe.com/sv/docs/target/using/integrate/cja/target-reporting-in-cja).
+Läs mer om [integreringen mellan Adobe Customer Journey Analytics och Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja).
 
 ## Åtkomstkontroll {#access}
 
@@ -57,10 +49,10 @@ Om du vill använda panelen för experimenterande måste du uppfylla följande k
 
 ### Skapa en anslutning för att experimentera med datauppsättningar
 
-Det rekommenderade dataschemat är att experimenteringsdata finns i en [objektarray](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/fields/array) som innehåller experimentella data och variantdata i två olika dimensioner. Båda dimensionerna måste finnas i en **enkel**-objektmatris. Om du har dina experimentella data i en enda dimension (med experimentella data och variantdata i en avgränsad sträng) kan du använda inställningen [delsträng](/help/data-views/component-settings/substring.md) i datavyer för att dela dimensionen i två delar så att den kan användas i panelen.
+Det rekommenderade dataschemat är att experimenteringsdata finns i en [objektarray](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/array) som innehåller experimentella data och variantdata i två olika dimensioner. Båda dimensionerna måste finnas i en **enkel**-objektmatris. Om du har dina experimentella data i en enda dimension (med experimentella data och variantdata i en avgränsad sträng) kan du använda inställningen [delsträng](/help/data-views/component-settings/substring.md) i datavyer för att dela dimensionen i två delar så att den kan användas i panelen.
 
 
-När dina experimentdata har [importerats](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/home) till Adobe Experience Platform [skapar du en anslutning i Customer Journey Analytics](/help/connections/create-connection.md) till en eller flera experimentdatauppsättningar.
+När dina experimentdata har [importerats](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) till Adobe Experience Platform [skapar du en anslutning i Customer Journey Analytics](/help/connections/create-connection.md) till en eller flera experimentdatauppsättningar.
 
 ### Lägga till kontextetiketter i datavyer
 
@@ -102,10 +94,10 @@ Så här använder du panelen Experimentation:
    | Inställning | Definition |
    | --- | --- |
    | **[!UICONTROL Date Range]** | Datumintervallet för panelen Experimentation anges automatiskt baserat på den första händelsen som togs emot i Customer Journey Analytics för det valda experimentet. Du kan begränsa eller utöka datumintervallet till en mer specifik tidsram om det behövs. |
-   | **[!UICONTROL Experiment]** | En uppsättning variationer för en upplevelse som exponerats för slutanvändarna för att avgöra vilken som är bäst att behålla för all framtid. Ett experiment består av två eller flera varianter, varav en betraktas som kontrollvariant. Den här inställningen är förifylld med de dimensioner som har etiketterats med etiketten **[!UICONTROL Experiment]** i datavyer och de senaste tre månadernas experimentdata. |
+   | **[!UICONTROL Experiment]** | En uppsättning variationer för en upplevelse som exponerats för slutanvändarna för att avgöra vilken som är bäst att behålla för all framtid. Ett experiment består av två eller flera varianter, varav en betraktas som kontrollvariant. Den här inställningen är förifylld med de dimensioner som har etiketterats med etiketten **[!UICONTROL Experiment]** i datavyer och de senaste sex månadernas experimentdata. |
    | **[!UICONTROL Control variant]** | En av två eller flera förändringar i en slutanvändares upplevelse som jämförs i syfte att identifiera det bättre alternativet. En variant måste väljas som kontroll och endast en variant kan anses vara kontrollvariant. Den här inställningen är förifylld med de dimensioner som har etiketten **[!UICONTROL Variant]** i datavyer. Den här inställningen hämtar upp de variantdata som är associerade med det här experimentet. |
    | **[!UICONTROL Success metrics]** ➊ | Mätvärden eller mätvärden som en användare jämför varianter med. Varianten med det mest önskade resultatet för konverteringsmåttet (oavsett om det är högst eller lägst) deklareras som *varianten* för ett experiment med bästa resultat. Du kan lägga till upp till 5 mätvärden. |
-   | **[!UICONTROL Normalizing metric]** ➋ | Grundläggande (**[!UICONTROL Global Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL People]**, **[!UICONTROL Sessions]** eller **[!UICONTROL Events]**) som testet körs på. Ett test kan till exempel jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som sidvy. |
+   | **[!UICONTROL Normalizing metric]** ➋ | Grundläggande (**[!UICONTROL Global Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Buying Group]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL People]**, **[!UICONTROL Sessions]** eller **[!UICONTROL Events]**) som testet körs på. Ett test kan till exempel jämföra konverteringsgraden för flera variationer där **[!UICONTROL Conversion rate]** beräknas som sidvy. |
    | **[!UICONTROL Include confidence upper/lower bounds]** | Aktivera det här alternativet om du vill visa övre och nedre gränser för konfidensnivåer. |
 
 
@@ -132,7 +124,7 @@ För varje framgångsmått som du har valt visas en [frihandstabell](../visualiz
 
 2. **Mest högpresterande variant**: När ett experiment har deklarerats som entydigt markeras varianten med den högsta konverteringsgraden som den mest presterande varianten. Observera att den här varianten antingen måste vara kontroll- eller baslinjevarianten, eller en av varianterna som korsar det giltiga konfidensintervallet på 95 % *någon gång* (med korrigeringar av Benjamini-Hochberg tillämpade).
 
-3. **Konverteringsgrad**: Den konverteringsgrad som visas är ett förhållande mellan ➊ för lyckade resultat och det normaliserande ➋. Observera att det här värdet kan vara större än 1 om mätvärdet inte är binärt (1 eller 0 för varje enhet i experimentet)
+3. **Konverteringsgrad**: Den konverteringsgrad som visas är en kvot mellan det genomförda måttet ➊ och det normaliserande måttvärdet ➋. Observera att det här värdet kan vara större än 1 om mätvärdet inte är binärt (1 eller 0 för varje enhet i experimentet)
 
 4. **Lyft**: Sammanfattningen av expertrapporten visar Lyft över baslinjen, vilket är ett mått på den procentuella förbättringen av konverteringsgraden för en given variant över baslinjen. Definierat exakt är det skillnaden i prestanda mellan en given variant och baslinjen, dividerat med baslinjens prestanda, uttryckt i procent.
 
@@ -178,7 +170,7 @@ Alla beräknade värden är inte kompatibla med panelen Experimentation.
 
 Beräknade mått som innehåller någon av följande mått eller konstanter är inte kompatibla med panelen Experimentation:
 
-* Basmått från en [sammanfattningsdatauppsättning](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/summary-data)
+* Basmått från en [sammanfattningsdatauppsättning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/summary-data)
 * Basvärden som delas av varandra eller multipliceras tillsammans (till exempel `Revenue`/`Orders`)
 * Konstanter som har lagts till eller subtraherats från ett basmått (till exempel `Revenue+50`)
 * Något av följande basmått:
