@@ -4,13 +4,11 @@ description: Förstå hur man synkroniserar data mellan inbyggda datalagerlösni
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: true
-hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: 578e19d8a8205bdfa034900c45d7d4a2d8f6a797
+source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
@@ -35,7 +33,7 @@ Data Mirror har följande viktiga funktioner för databassynkronisering:
 
 Använd Data Mirror för att importera ändringar direkt från era källsystem, tillämpa schemaintegriteten och göra data tillgängliga för analyser, resesamordning och arbetsflöden för regelefterlevnad. Data Mirror eliminerar komplexa ETL-processer i tidigare led och snabbar upp implementeringen genom att möjliggöra direkt spegling av befintliga databasmodeller. Denna eliminering kan förbättra datastyrningen genom exakt kontroll över borttagningar och datahygien.
 
-Se även [Experience Platform-dokumentationen om Data Mirror](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
+Se även [Experience Platform-dokumentationen om Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
 
 ## Data Mirror för Customer Journey Analytics
 
@@ -53,5 +51,5 @@ Experience Platform Data Mirror för Customer Journey Analytics är tillgänglig
 >[!MORELIKETHIS]
 >
 >[Data Mirror snabbstartsguide: Spegla och använda modellbaserade data](model-based.md)
->&#x200B;>[Data Mirror (Experience Platform-dokumentation)](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/data-mirror/overview)
->
+>>[Data Mirror (Experience Platform-dokumentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[Modellbaserade scheman (Experience Platform-dokumentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)

@@ -4,11 +4,9 @@ description: Förklara hur man speglar och använder modellbaserade data i Custo
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: true
-hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: e5975a7bb60f4a2386997024c4615f95be648363
+source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 2%
@@ -220,7 +218,7 @@ I steget **[!UICONTROL Authentication]** väljer du:
 
    1. Välj **[!UICONTROL Next]**.
 
-  Mer information om hur du ansluter och autentiserar när du använder [Azure-databaserna](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/databricks) eller [Snowflake](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/snowflake) finns i dokumentationen för Experience Platform.
+  Mer information om hur du ansluter och autentiserar när du använder [Azure-databaserna](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) eller [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake) finns i dokumentationen för Experience Platform.
 
 
 ### Markera data

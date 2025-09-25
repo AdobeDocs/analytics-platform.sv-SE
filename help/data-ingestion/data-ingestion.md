@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: 8071e8d5e1ab7e9cfc5037d710361a4d10285704
+source-git-commit: ec56bc657961b2e4e8318ab14cd676288398462f
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -20,23 +20,30 @@ Det finns flera sätt att importera data till Customer Journey Analytics. Vissa 
 >
 >I alla scenarier är de data som du vill _använda_ i Customer Journey Analytics faktiskt _inkapslade_ i Adobe Experience Platform.
 
-Se Customer Journey Analytics-arkitekturen på hög nivå som visades tidigare i [Översikt](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=sv-SE):
 
-![Customer Journey Analytics-arkitektur som beskrivs i det här avsnittet](./assets/cja-architecture.png)
+Customer Journey Analytics-arkitektur på hög nivå visas här:
 
-Datauppsättningen i arkitekturen ovan kan komma från olika källor:
+![Customer Journey Analytics-arkitektur](/help/getting-started/assets/cja-overview.svg)
 
-- batchdata,
+Arkitekturen illustrerar hur kundreseanalys gör att ni kan:
 
-- strömmande data,
+* Kombinera flera datauppsättningar ![Data](/help/assets/icons/Data.svg) i en [anslutning](/help/connections/overview.md).
+* Definiera och konfigurera dimensionerna ![Dimensioner](/help/assets/icons/Dimensions.svg) och mått ![Händelse](/help/assets/icons/Event.svg) i en [datavy](/help/data-views/data-views.md), baserat på de fält som är tillgängliga från datamängderna som du definierade i anslutningen.
+* Skapa rapporter ![VisaTabell](/help/assets/icons/ViewTable.svg) och visualiseringar (som rad ![Rad](/help/assets/icons/GraphTrend.svg) och område ![Område](/help/assets/icons/GraphAreaStacked.svg)) i [projekt](/help/analysis-workspace/home.md) baserat på dimensionerna och måtten från datavyer.
 
-- data från en pågående Adobe Analytics-driftsättning,
+Datauppsättningarna i arkitekturen kan komma från olika källor:
 
-- data från spårning av din webbplats/mobilapp med Adobe Experience Platform Web/Mobile SDK,
+* batchdata,
 
-- data från spårning av skrivbordsprogram, konsolspel, digitalbox eller IoT-enheter med Adobe Experience Platform Edge Network Server API, eller
+* strömmande data,
 
-- data som kommer från en tredjepartsleverantör av data för vilken Adobe tillhandahåller en källanslutning.
+* data från en pågående Adobe Analytics-driftsättning,
+
+* data från spårning av din webbplats/mobilapp med Adobe Experience Platform Web/Mobile SDK,
+
+* data från spårning av skrivbordsprogram, konsolspel, digitalbox eller IoT-enheter med Adobe Experience Platform Edge Network Server API, eller
+
+* data som kommer från en tredjepartsleverantör av data för vilken Adobe tillhandahåller en källanslutning.
 
 Och du kan ha många av dessa datauppsättningar.
 
@@ -48,11 +55,11 @@ Du kan importera dina händelsedata till Customer Journey Analytics inom 90 minu
 
 Observera att den här funktionen skiljer sig åt beroende på vilket SKU-paket ditt företag har köpt:
 
-- Prioritet Grundläggande om intag: 24-timmars gamla data inom 90 minuters SLT-bearbetning (tillgängligt för **CJA Foundation** och **CJA Select**)
+* Prioritet Grundläggande om intag: 24 timmars gamla data inom 90 minuters SLT-bearbetning (tillgängligt för **CJA Foundation** och **CJA Select**)
 
-- Prioritet Inmatningsintervall: 72-timmars gamla data inom 90 minuters SLT-bearbetning (tillgängligt för **CJA Prime**)
+* Prioritet Inmatningsintervall: 72-timmars gamla data inom 90 minuter lång SLT-bearbetning (tillgängligt för **CJA Prime**)
 
-- Prioriterat intag avancerat: 1-veckors gamla data inom 90-minuters SLT-bearbetning (tillgängligt för **CJA Ultimate**)
+* Prioriterat intag avancerat: 1-veckors gamla data inom 90-minuters SLT-bearbetning (tillgängligt för **CJA Ultimate**)
 
 ## Importera och använda data från traditionella Adobe Analytics
 
@@ -95,9 +102,15 @@ Mer information finns i [Importera och använda strömmande data](./streaming.md
 
 ## Importera och använda data med hjälp av källkopplingar
 
-Du har data tillgängliga från en källa som stöds av en källkoppling. Source-anslutningar är konfigurerbara så att du kan importera data från Adobe, program från första part och program från tredje part till Adobe Experience Platform. Se [Översikt över Source-anslutningar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=sv-SE) för en översikt över tillgängliga källanslutningar. Med källkopplingen kan du enkelt importera data från källan till Adobe Experience Platform och sedan använda, kombinera och analysera dem med data från andra kanaler och datakällor i Customer Journey Analytics.
+Du har data tillgängliga från en källa som stöds av en källkoppling. Source-anslutningar är konfigurerbara så att du kan importera data från Adobe, program från första part och program från tredje part till Adobe Experience Platform. Se [Översikt över Source-anslutningar](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) för en översikt över tillgängliga källanslutningar. Med källkopplingen kan du enkelt importera data från källan till Adobe Experience Platform och sedan använda, kombinera och analysera dem med data från andra kanaler och datakällor i Customer Journey Analytics.
 
 Mer information finns i [Importera och använda data med hjälp av källanslutningar](./sources.md).
+
+## Importera och använda ad hoc-data
+
+Det finns ad hoc-data tillgängliga som bara kräver en enda datauppsättning i Experience Platform och som inte kräver att ett XDM-schema (Experience Data Model) konfigureras. Detta scenario kallas ett ad hoc-schema. Ad hoc-scheman används i olika arbetsflöden för dataöverföring för Experience Platform, inklusive inhämtning av CSV-filer och skapande av vissa typer av källanslutningar.
+
+Se [Importera och använda ad hoc-data](./adhoc.md)
 
 >[!MORELIKETHIS]
 >
