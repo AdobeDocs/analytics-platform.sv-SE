@@ -70,7 +70,7 @@ Följande objekt visas:
    * CREATE: En Skapa-åtgärd utfördes.
    * DELETE: En raderingsåtgärd utfördes.
    * REDIGERA: En redigeringsåtgärd utfördes.
-   * EMBARGO: När du begränsar en begäran i [Rapporteringsaktivitetshanteraren](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) registreras åtgärden i granskningsloggen under EMBARGO.
+   * EMBARGO: När du begränsar en begäran i [Rapporteringsaktivitetshanteraren](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) registreras åtgärden i granskningsloggen under EMBARGO.
    * EXPORT: En exportåtgärd utfördes.
    * ORG_CHANGE: En åtgärd för organisationsändring utfördes.
    * UPPDATERA: En uppdateringsåtgärd utfördes.
@@ -80,7 +80,7 @@ Följande objekt visas:
    * UNSHARE: En åtgärd av typen unshare utfördes.
 * **[!UICONTROL Date Created]**: Datum och tid då åtgärden utfördes.
 * **[!UICONTROL Description]**: En sammanfattning av åtgärden.
-* **[!UICONTROL User Name]**: Användaren som utförde åtgärden. Ibland kanske användarnamnet saknas. Du bör använda funktionen [Produktanvändning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) eftersom den alltid innehåller inloggningsnamnet.
+* **[!UICONTROL User Name]**: Användaren som utförde åtgärden. Ibland kanske användarnamnet saknas. Du bör använda funktionen [Produktanvändning](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/tools/product-usage/usage-overview) eftersom den alltid innehåller inloggningsnamnet.
 * **[!UICONTROL Email]**: E-postadressen till användaren som utförde åtgärden.
 * **[!UICONTROL Component Name]**: Komponenten som användaren utförde en åtgärd på.
 * **[!UICONTROL Component Type]**: Komponenttypen. Möjliga värden är:
