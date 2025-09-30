@@ -4,9 +4,9 @@ title: Konfigurera en utfallsvisualisering
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: d91e6aaebd14bc02f53b28820dd6013350e36d36
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Du kan göra målningar på dimensioner, mätvärden och segment. Anta till exem
    >
    >Flera segment förenas med AND, men flera objekt som dimensionsposter och mätvärden förenas med OR.
 
-   ![Sidan:CamerRoll eller Sida: Kamerans kontaktytor är markerade.](assets/fallout-or.png)
+   ![Sidan:CamerRoll eller sidan: Kamerans kontaktytor är markerade.](assets/fallout-or.png)
 
 1. Du kan också **begränsa enskilda kontaktytor till nästa händelse** (till skillnad från *så småningom*) i banan. Under varje kontaktyta finns det en väljare med alternativen **[!UICONTROL Eventual path]** och **[!UICONTROL Next event]**, vilket visas här:
 
@@ -80,14 +80,14 @@ Som en del av visualiseringen finns det specifika alternativ för snabbmenyer.
 | **[!UICONTROL Trend touchpoint]** | Se trenddata för en kontaktyta i ett linjediagram med vissa fördefinierade avvikelseidentifieringsdata. |
 | **[!UICONTROL Trend touchpoint (%)]** | Trends the total fallout percentage. |
 | **[!UICONTROL Trend all touchpoints (%)]** | Trends all the touchpoint percentage in the fallout (except **[!UICONTROL All People]**, if it is included), on the same chart. |
-| **[!UICONTROL Break down fallthrough at this touchpoint]** | Se vad personer gjorde mellan två kontaktytor (den här kontaktytan och nästa kontaktyta) om de fortsatte till nästa kontaktyta. Då skapas en frihandstabell med dina mått. Du kan ersätta dimensioner och andra element i tabellen. |
-| **[!UICONTROL Break down fallout at this touchpoint]** | Se vad de som inte klarade sig igenom tratten gjorde direkt efter det valda steget. |
+| **[!UICONTROL Break down fallthrough at this touchpoint]** | Se vad personer gjorde mellan två kontaktytor (den här kontaktytan och nästa kontaktyta) om de fortsatte till nästa kontaktyta. Då skapas en frihandstabell med dina mått. Du kan ersätta dimensioner och andra element i tabellen. En tabell som till exempel har etiketten **[!UICONTROL Fallthrough: All People > Page equals any of home]** och innehåller **[!UICONTROL Page]** som dimension och **[!UICONTROL People]** segmenterad av snabbsegmentet [endast för projekt](/help/components/segments/seg-quick.md) **[!UICONTROL Fallthrough: All People > Page equals any of home]** som måttenhet. Inspektera segmentet för att förstå hur grundsegmentet bestäms. |
+| **[!UICONTROL Break down fallout at this touchpoint]** | Se vad de som inte klarade sig igenom tratten gjorde direkt efter det valda steget. Då skapas en frihandstabell med dina mått. Du kan ersätta dimensioner och andra element i tabellen. En tabell som till exempel har etiketten **[!UICONTROL Fallout: People > Page equals any of home]** och innehåller **[!UICONTROL Page]** som dimension och **[!UICONTROL People]** segmenterad av snabbsegmentet [endast för projekt](/help/components/segments/seg-quick.md) **[!UICONTROL Fallthrough: All Visitors > Page equals any of home]** som måttenhet. Kontrollera segmentet för att förstå hur utfallssegmentet bestäms. |
 | **[!UICONTROL Create segment from touchpoint]** | Skapa ett nytt segment från den markerade kontaktytan. |
 
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

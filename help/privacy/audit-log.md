@@ -4,9 +4,9 @@ description: Lär dig hur du visar och hanterar Customer Journey Analytics grans
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
+source-git-commit: 2ef96ad194f8c7acec35bd7635c650af4370531a
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '907'
 ht-degree: 1%
 
 ---
@@ -35,6 +35,8 @@ ht-degree: 1%
 För att öka insynen i och synligheten för aktiviteter som utförs i systemet kan du med Adobe Customer Journey Analytics granska användaraktiviteter för olika tjänster och funktioner i form av &quot;granskningsloggar&quot;. Loggarna utgör en verifieringskedja som kan hjälpa till med felsökningsproblem och hjälpa ditt företag att effektivt följa företagets policyer för datahantering och krav som t.ex. HIPAA (Health Insurance Portability and Accounability Act).
 
 I grundläggande bemärkelse anger en granskningslogg **vem** utförde **vad**-åtgärden och **när**. Varje åtgärd som registreras i en logg innehåller metadata som anger åtgärdstyp, datum och tid, e-post-ID för användaren som utförde åtgärden samt ytterligare attribut som är relevanta för åtgärdstypen.
+
+Granskningsloggarna sparas i 90 dagar. Efter det tas granskningsloggarna automatiskt bort.
 
 Det här avsnittet handlar om granskningsloggar i Customer Journey Analytics, inklusive hur du visar och hanterar dem i användargränssnittet.
 
@@ -68,7 +70,7 @@ Följande objekt visas:
    * CREATE: En Skapa-åtgärd utfördes.
    * DELETE: En raderingsåtgärd utfördes.
    * REDIGERA: En redigeringsåtgärd utfördes.
-   * EMBARGO: När du begränsar en begäran i [Rapporteringsaktivitetshanteraren](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) registreras åtgärden i granskningsloggen under EMBARGO.
+   * EMBARGO: När du begränsar en begäran i [Rapporteringsaktivitetshanteraren](https://experienceleague.adobe.com/en/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests) registreras åtgärden i granskningsloggen under EMBARGO.
    * EXPORT: En exportåtgärd utfördes.
    * ORG_CHANGE: En åtgärd för organisationsändring utfördes.
    * UPPDATERA: En uppdateringsåtgärd utfördes.
@@ -78,7 +80,7 @@ Följande objekt visas:
    * UNSHARE: En åtgärd av typen unshare utfördes.
 * **[!UICONTROL Date Created]**: Datum och tid då åtgärden utfördes.
 * **[!UICONTROL Description]**: En sammanfattning av åtgärden.
-* **[!UICONTROL User Name]**: Användaren som utförde åtgärden. Ibland kanske användarnamnet saknas. Du bör använda funktionen [Produktanvändning](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/tools/product-usage/usage-overview) eftersom den alltid innehåller inloggningsnamnet.
+* **[!UICONTROL User Name]**: Användaren som utförde åtgärden. Ibland kanske användarnamnet saknas. Du bör använda funktionen [Produktanvändning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/tools/product-usage/usage-overview) eftersom den alltid innehåller inloggningsnamnet.
 * **[!UICONTROL Email]**: E-postadressen till användaren som utförde åtgärden.
 * **[!UICONTROL Component Name]**: Komponenten som användaren utförde en åtgärd på.
 * **[!UICONTROL Component Type]**: Komponenttypen. Möjliga värden är:
