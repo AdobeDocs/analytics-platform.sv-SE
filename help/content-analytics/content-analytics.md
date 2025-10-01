@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: dd4adc5acd05aecf0a67072df6688a344e1ce5c9
+source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Content Analytics ger ett ökat värde:
 1. Innehåll **användning**: Med Content Analytics får du insikter om vilka resurser som tar emot visningar och var resurserna tar emot visningar. Dessa insikter hjälper dig att se om materialet används för lite eller inte alls i dina webbegenskaper.
 1. Innehåll **engagemang**: Content Analytics kan tillhandahålla engagemangsinsikter som den genomsnittliga klickfrekvensen för resurser med vissa attribut. Dessa insikter hjälper er att avgöra om specifika typer av upplevelser fortfarande är effektiva.
 1. Innehåll **resor**: Om du kombinerar alla andra data som är tillgängliga i Experience Platform kan du dessutom få ytterligare insikter om dina innehållsresor. Till exempel om specifikt innehåll leder till konverteringar utöver engagemang. Och med den kunskapen kan du fastställa avkastningen på olika typer av innehåll.
-1. Innehåll **personalisering**: Med Innehållsanalys kan ni agera utifrån era insikter och använda dessa insikter för att avgöra hur ni ska spendera pengar på innehåll. Ska jag till exempel skicka specifika typer av innehåll till specifika målgrupper? Vilket innehåll ger mig möjligheter till högpersonalisering?
+1. Innehåll **personalisering**: I slutändan gör Content Analytics det möjligt för er att agera utifrån era insikter och använda dessa insikter för att avgöra hur ni ska spendera pengar på innehåll. Ska jag till exempel skicka specifika typer av innehåll till specifika målgrupper? Vilket innehåll ger mig möjligheter till högpersonalisering?
 
 ## Terminologi
 
@@ -47,8 +47,8 @@ Content Analytics använder webbbildvisningsdata i händelsedatamängder i Exper
 
 1. När en användare besöker en webbplats, [konfigurerad för Content Analytics](config/configuration.md), registrerar Experience Platform Web SDK visningar och interaktioner med innehåll.
 1. Identitet- och funktionstjänsten bearbetar dessa interaktioner. Den processen består av en hämtningstjänst som granskar de offentliga versionerna av de konfigurerade URL:erna som definierar interaktionen. För alla dessa hämtade URL:er identifierar identitetstjänsten unikt upplevelserna och resurserna. Och funktionstjänsten använder AI/ML-tjänster för att identifiera upplevelser och metadata och attribut för resurser.
-1. Resultaten av dessa tjänster ([komponenter, attribut och identiteter](/help/content-analytics/report/components.md)) används för att uppdatera relevanta data för innehållsanalys i Experience Platform.
-1. Data för innehållsanalys, tillsammans med beteendedata och andra sökdata, kan användas i en Customer Journey Analytics-konfiguration ([Anslutning](/help/connections/overview.md), [Datavy](/help/data-views/data-views.md) och [Workspace](/help/analysis-workspace/home.md)). Denna inställning ger grunden till de unika insikterna på makronivå om ditt innehåll. <br/>Du kan snabbt komma igång med Content Analytics-rapporter och -analyser med hjälp av mallen [Content Analytics](/help/content-analytics/report/report.md#template).
+1. Resultaten av dessa tjänster ([komponenter, attribut och identiteter](/help/content-analytics/report/components.md)) används för att uppdatera relevanta specifika Content Analytics-datamängder i Experience Platform.
+1. Content Analytics-data, tillsammans med beteendedata och andra sökdata, kan användas i en Customer Journey Analytics-konfiguration ([Anslutning](/help/connections/overview.md), [Datavy](/help/data-views/data-views.md) och [Workspace](/help/analysis-workspace/home.md)). Denna inställning ger grunden till de unika insikterna på makronivå om ditt innehåll. <br/>Du kan snabbt komma igång med Content Analytics-rapporter och -analyser med hjälp av mallen [Content Analytics](/help/content-analytics/report/report.md#template).
 
 
 >[!NOTE]
@@ -67,7 +67,7 @@ Content Analytics använder webbbildvisningsdata i händelsedatamängder i Exper
 >[!MORELIKETHIS]
 >
 >[Content Analytics-rapportering](report/report.md)
->[Konfigurera Content Analytics](config/configuration.md)
->[Beräknar studsar och studsfrekvens i Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
+>>[Konfigurera Content Analytics](config/configuration.md)
+>>[Beräknar studsar och studsfrekvens i Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 

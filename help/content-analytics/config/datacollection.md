@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 7909388273af4c19d2dfda671c2af8eac470fff9
+source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Content Analytics kräver att Experience Platform Edge Network Web SDK samlar in
 Content Analytics bibliotek samlar in data när:
 
 * Content Analytics ingår i taggbiblioteket som är inläst på sidan.
-* Sidans URL har konfigurerats i [Content Analytics-tillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, som ingår i det inkluderade taggbiblioteket.
+* Sidans URL har konfigurerats i [Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview){target="_blank"}, som ingår i det inkluderade taggbiblioteket.
 
 
 ## Content Analytics event
@@ -56,7 +56,7 @@ Content Analytics-event samlas in som en sekvens av:
 1. [En inspelad vy eller klicka på](#recorded-view-or-click).
 1. [En utlösare för att skicka en Content Analytics-händelse](#trigger-to-send-a-content-analytics-event).
 
-Content Analytics samlar in data på det här sättet för att återspegla den sekvensen, i stället för att samla in en vy eller klicka separat från att samla in händelsen direkt efter den vyn eller klickningen. Detta sätt att samla in innehållsanalysdata minskar också mängden data som samlas in.
+Content Analytics samlar in data på det här sättet för att återspegla den sekvensen, i stället för att samla in en vy eller klicka separat från att samla in händelsen direkt efter den vyn eller klickningen. Detta sätt att samla in Content Analytics-data minskar också mängden data som samlas in.
 
 ### Inspelad vy eller klick
 

@@ -4,7 +4,7 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: cae339ebc5d2609a7a93e63e874c4e7d611f2cad
+source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '20382'
 ht-degree: 0%
@@ -383,7 +383,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Lär dig vilka innehålls- och innehållsattribut som fungerar bäst."
->abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
+>abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
 
 
 Följande mallar är tillgängliga:
@@ -404,7 +404,7 @@ Följande mallar är tillgängliga:
 | **Startsidor** | Visa de översta sidorna som andra kommer åt när de besöker webbplatsen första gången. <p>**Detta kan hjälpa dig** att bättre förstå vilka sidor som genererar mest trafik till din webbplats eller förstå mer om de första visningar besökarna har på din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera den första upplevelsen som andra personer kommer in på webbplatsen, eller se till att de sidor som de första användarna ser när de kommer in på din webbplats är välkomna och tillhandahåller nödvändiga länkar till andra delar av din webbplats.</p><p>Den här mallen använder måttet Sessioner. Den använder även Bar-visualisering och frihandstabellens visualisering.</p> |
 | **Avsluta sidor** | Visa de översta sidorna som andra kommer åt direkt innan de lämnar din webbplats.<p>**Det här kan hjälpa dig** att bättre förstå vilka sidor som leder personer bort från webbplatsen. </p><p>**Baserat på vad du lär dig kan du** göra något av följande, till exempel uppdatera vanliga avslutssidor för att optimera upplevelsen som andra får innan de lämnar webbplatsen, eller inkludera innehåll eller länkar för att uppmuntra andra att stanna kvar på webbplatsen.</p><p>Den här mallen använder måttet Sessioner. Den använder även Bar-visualisering och frihandstabellens visualisering.</p> |
 | **Översikt över produktanvändning** | Se hur Customer Journey Analytics används i er organisation. <p>**Det här kan hjälpa dig** att bättre förstå hur många som använder Customer Journey Analytics, hur ofta de använder det och hur många användartrender de använder över tid. Du kan också se antalet projekt som skapas och information om dessa projekt (till exempel vilka komponenter, visualiseringar och paneler som används mest) samt många andra användningsstatistik.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, t.ex. ta bort oanvända projekt eller komponenter, eller tillhandahålla användarutbildning för populära funktioner.</p> |
-| **Innehållsanalys** | Lär dig vilka innehålls- och innehållsattribut som fungerar bäst.<p>**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. Mer information finns i [Content Analytics](/help/content-analytics/content-analytics.md){target="_blank"}.</p><p>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt.</p> |
+| **Content Analytics** | Lär dig vilka innehålls- och innehållsattribut som fungerar bäst.<p>**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. Mer information finns i [Content Analytics](/help/content-analytics/content-analytics.md){target="_blank"}.</p><p>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt.</p> |
 
 ### Webb: Konvertering {#web-conversion}
 
@@ -1068,7 +1068,7 @@ Följande mallar är tillgängliga:
 
 ### B2B-mallar {#b2b-templates}
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 
 <!-- CJA B2B Edition only -->

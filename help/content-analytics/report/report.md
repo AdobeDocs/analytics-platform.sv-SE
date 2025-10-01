@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 51b3d533ef7b42ff03823f2dffcb2ccfbb9c4bbe
+source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Så här börjar du rapportera om Content Analytics från grunden:
 1. [Skapa ett nytt](/help/analysis-workspace/build-workspace-project/create-projects.md) eller [öppna ett befintligt](/help/analysis-workspace/build-workspace-project/open-projects.md)-projekt i Workspace.
 1. Se till att du [väljer en datavy](/help/analysis-workspace/c-panels/panels.md#data-view) för Content Analytics-rapportering. Content Analytics-rapportering är bara tillgängligt för datavyer som är [konfigurerade](/help/content-analytics/config/configuration.md) för Content Analytics.
 1. Dra en ![tabellvisualisering](/help/assets/icons/Table.svg) [Frihandsritabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) på arbetsytan.
-1. Använd [specifika Content Analytics-komponenter](components.md) och andra generiska [komponenter](/help/components/overview.md) (som segment, datumintervall, anteckningar) för att skapa insikter i innehållsanalysen.
+1. Använd [specifika Content Analytics-komponenter](components.md) och andra generiska [komponenter](/help/components/overview.md) (som segment, datumintervall, anteckningar) för att skapa dina Content Analytics-insikter.
 
 ## Miniatyrbilder
 
@@ -51,13 +51,13 @@ Så här öppnar du förhandsgranskningen med följande information:
   | **[!UICONTROL Impressions (all time)]**: Antal visningar för upplevelsen. | **[!UICONTROL Impressions (all times)]**: Antal visningar för resursen. |
   | **[!UICONTROL Assets]**: Antal resurser som den här upplevelsen innehåller. <br/>Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. | **[!UICONTROL Experiences]**: Antal upplevelser där den här resursen visas. <br/>Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** för att inspektera resurserna. |
   | **[!UICONTROL First impression]**: Datum för första intryck av upplevelsen. | **[!UICONTROL First impression]**: Datum för första exponering av resursen. |
-  | **[!UICONTROL &#x200B; Most recent impression]**: Datum för det senaste intrycket av upplevelsen. | **[!UICONTROL Most recent impression]**: Datum för det senaste intrycket av resursen. |
+  | **[!UICONTROL  Most recent impression]**: Datum för det senaste intrycket av upplevelsen. | **[!UICONTROL Most recent impression]**: Datum för det senaste intrycket av resursen. |
   | **[!UICONTROL Experience attributes]**: Upplevelsens [attribut](/help/content-analytics/report/components.md#experience-attributes). | **[!UICONTROL Asset attributes]**: Resursens [attribut](/help/content-analytics/report/components.md#asset-attributes). |
 
 
 ## Mall
 
-Det finns en [mall](/help/analysis-workspace/templates/use-templates.md) för innehållsanalys som hjälper dig att ta reda på vilka innehålls- och innehållsattribut som fungerar bäst. Mallen är en del av [webbkanalen och engagemangets användningsfall](/help/analysis-workspace/templates/use-templates.md#web-engagement) och innehåller detaljerad information om hur innehållet fungerar. Du kan titta på prestanda för enskilda resurser eller specifika attribut.
+Det finns en Content Analytics [mall](/help/analysis-workspace/templates/use-templates.md) som du kan använda för att lära dig vilka innehålls- och innehållsattribut som fungerar bäst. Mallen är en del av [webbkanalen och engagemangets användningsfall](/help/analysis-workspace/templates/use-templates.md#web-engagement) och innehåller detaljerad information om hur innehållet fungerar. Du kan titta på prestanda för enskilda resurser eller specifika attribut.
 
 Baserat på vad du lär dig kan du göra en mängd saker. Som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att det innehåller högpresterande attribut eller rotera innehåll som har börjat bli inaktuellt.
 
@@ -65,7 +65,7 @@ Så här använder du mallen:
 
 1. Välj **[!UICONTROL Workspace]** på huvudmenyn.
 1. Kontrollera att du har valt en datavy som är konfigurerad för Content Analytics.
-1. Sök efter eller använd segment (**[!UICONTROL Web]** för **[!UICONTROL Channel]** och **[!UICONTROL Engagement]** för **[!UICONTROL Use Case]**&#x200B;s) för att hitta och välja mallen **[!UICONTROL Content analytics]**.
+1. Sök efter eller använd segment (**[!UICONTROL Web]** för **[!UICONTROL Channel]** och **[!UICONTROL Engagement]** för **[!UICONTROL Use Case]**s) för att hitta och välja mallen **[!UICONTROL Content Analytics]**.
 1. Välj **[!UICONTROL Use template]**.
 1. I dialogrutan **[!UICONTROL Set up your template]** väljer du ett mått i dialogrutan **[!UICONTROL Select a conversion metric]**. Exempel: **[!UICONTROL Asset CTR]**.
 1. Välj **[!UICONTROL Continue]**.
@@ -155,5 +155,5 @@ Du kan dela upp en resurs efter dimensioner för att få en bättre förståelse
 >[!MORELIKETHIS]
 >
 >[Content Analytics-komponenter](components.md)
->&#x200B;>[Använd mallar](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[Använd mallar](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
