@@ -5,14 +5,32 @@ title: Konfigurera platser för molnexport
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 882e280da3f65e297abccd475d381832fd236843
+source-git-commit: 5adcab1df932f5c8af1f140fb6707f2d56726ae3
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '2026'
 ht-degree: 0%
 
 ---
 
-# Konfigurera platser för molnexport
+# Konfigurera platser för molnexport {#configure-cloud-export-locations}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-prefix"
+>title="Prefix"
+>abstract="Rotmappen i behållaren där du vill placera data. Ange ett namn på en statisk mapp och lägg sedan till ett snedstreck efter namnet för att skapa mappen. Exempel: `folder_name/`"
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-name"
+>title="Filnamn och sökväg"
+>abstract="Ange ett dynamiskt anpassat filnamn som ska användas för automatiserad export som skickas till den här platsen. Du kan också ange en dynamisk anpassad filsökväg före filnamnet. &lt;br\>Använd variabler i filnamnet och sökvägen för att göra dem dynamiska. &lt;br\>Om du till exempel anger `${yyyy}/${mm}/${dd}/my-report-${instance_id}-${idx}` får en export som automatiskt skickas till det här målet den 15 januari 2026 följande filsökväg och namn: `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` &lt;br\>Klicka på länken nedan om du vill se en lista över tillgängliga variabler."
+
+<!-- markdownlint-enable MD034 -->
 
 Innan du kan exportera Customer Journey Analytics-rapporter till ett molnmål (antingen från Analysis Workspace, enligt beskrivningen i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md) eller från Report Builder, enligt beskrivningen i [Exportera rapporter från Report Builder](/help/report-builder/report-builder-export.md)) enligt beskrivningen i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md), måste du lägga till och konfigurera platsen dit du vill att data ska skickas.
 
