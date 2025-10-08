@@ -6,18 +6,22 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
+source-git-commit: 973e999b611d578da12018e60becf48efd7a76f8
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
 
 # Skicka och schemalägg projekt
 
-Du kan skicka Customer Journey Analytics-projekt som filer till utvalda användare via e-post. Du kan skicka filer för hand eller konfigurera projekt som ska skickas enligt ett schema. Projekt kan skickas i CSV- eller PDF-format.
+Du kan skicka Customer Journey Analytics-projekt som filer till utvalda användare via e-post. Du kan skicka filer för hand eller konfigurera projekt som ska skickas enligt ett schema.
 
-Alla märkord som används i projektet används automatiskt vid exporten.
+Tänk på följande när du skickar filer:
+
+* Filer kan skickas i CSV- eller PDF-format.
+
+* Alla märkord som används i projektet används automatiskt vid exporten.
 
 Det finns även andra metoder för att exportera Customer Journey Analytics-data, vilket beskrivs i [Översikt över export](/help/analysis-workspace/export/export-project-overview.md).
 
@@ -40,7 +44,7 @@ Så här skickar du en fil till mottagarna via e-post:
 
 ## Schemalägg filexport {#schedule}
 
-Skicka en fil enligt ett schema till mottagarna via e-post
+Så här skickar du en fil enligt ett schema till mottagarna via e-post:
 
 1. Välj **[!UICONTROL Share]>[!UICONTROL Schedule file export]**.
 1. Ange filtyp:
@@ -99,7 +103,7 @@ Lösenordskraven uppfyller Adobe-standarderna och kräver minst 8 tecken med min
 ### Lösenordsskydda ett nytt schemalagt projekt
 
 1. När du har sparat projektet går du till **[!UICONTROL Share]** > **[!UICONTROL Send file now]** eller **[!UICONTROL Share]** > **[!UICONTROL Send file on schedule]**.
-1. Följ instruktionerna ovan, under [Skicka filen nu](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=sv-SE#now) eller [Skicka filen enligt schema](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=sv-SE#schedule).
+1. Följ instruktionerna ovan, under [Skicka filen nu](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now) eller [Skicka filen enligt schema](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule).
 
 ### Lösenordsskydda ett befintligt schemalagt projekt
 

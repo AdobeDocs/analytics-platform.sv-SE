@@ -4,9 +4,9 @@ title: Venn
 feature: Visualizations
 exl-id: a0162164-a0cf-45b9-99b6-2a115e9a4e57
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 973e999b611d578da12018e60becf48efd7a76f8
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,18 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras Vennvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Vennn](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/venn) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras Vennvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Vennn](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/venn) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
 
 Med visualiseringen ![Type](/help/assets/icons/TwoDots.svg) **[!UICONTROL Venn]** kan du dra i upp till tre segment och ett mått (från komponentpanelen) för att skapa ett Venndiagram.
+
+>[!NOTE]
+>
+>Analysis Workspace använder områdesproportionella Venndiagram. Venndiagram med tre eller flera cirklar som är representerade i två dimensioner kan inte alltid ritas med perfekta proportioner.
+> 
+>Workspace försöker skapa närmaste ungefärliga Vennvärde, men resultatet kanske inte alltid är visuellt korrekt.
 
 ![Vennvisualisering som innehåller tre segment.](assets/venn.png)
 
@@ -56,7 +62,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Vennvisualisering
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
