@@ -6,9 +6,9 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 1cf0d957d62d60979982320f45b4fdadcc7458b8
+source-git-commit: 38be574621e4fc384f9fdeac94fc071f0cdd132b
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ I den här artikeln beskrivs hur du använder funktionen för Customer Journey A
 För att upptäcka LLM och AI-genererad trafik ska man skilja mellan
 
 * **LLM-crawler**: Samla in data för utbildning och hämtning av utökad generering (RAG).
-* **AI-agenter**: fungerar som gränssnitt som utför åtgärder åt människor. AI-agenter föredrar att interagera via API:er, som åsidosätter spårningsmetoder för webbanalyser. Du kan ändå analysera en stor del av den AI-genererade trafiken via webbplatser.
+* **AI-agenter**: Funktion som gränssnitt som utför åtgärder åt människor. AI-agenter föredrar att interagera via API:er, som åsidosätter spårningsmetoder för webbanalyser. Du kan ändå analysera en stor del av den AI-genererade trafiken via webbplatser.
 
 Tre vanliga metoder för identifiering och övervakning av LLM- och AI-genererad trafik är:
 
@@ -36,10 +36,10 @@ Följande tabell visar hur detekteringsmetoderna kan användas i olika interakti
 | Scenario | Identifiering av användaragent | Referensklassificering | Identifiering av frågeparametrar |
 |---|---|---|---|
 | **Utbildning av modell** | Agenten (`GPTBot`, `ClaudeBot` och mer) kan identifieras när loggning på serversidan implementeras. | Ingen klassificering är möjlig. AI-crawler genererar inte referenser under utbildning. | Det är omöjligt att upptäcka. AI-crawler lägger inte till parametrar under utbildning. |
-| **Agentbläddring** | Agenten (`ChatGPT-User`, `claude-web`) kan identifieras när loggning på serversidan hämtar rubriker. | Klassificering är möjlig om agenten navigerar från ett AI-gränssnitt med bevarad referens. | Det går ibland att identifiera om AI-tjänsten lägger till spårningsparametrar. |
-| **Hämtningsutökad generering (RAG) för att besvara fråga** | Agenten (`OAI-SearchBot`, `PerplexityBot`) kan identifieras med loggning på serversidan. | Normalt är ingen klassificering möjlig eftersom RAG-åtgärder ofta åsidosätter referensmekanismer. | Detektion är sällan möjlig om inte AI-leverantören specifikt har implementerat den. |
+| **Bläddrar bland agenter** | Agenten (`ChatGPT-User`, `claude-web`) kan identifieras när loggning på serversidan hämtar rubriker. | Klassificering är möjlig om agenten navigerar från ett AI-gränssnitt med bevarad referens. | Det går ibland att identifiera om AI-tjänsten lägger till spårningsparametrar. |
+| **Hämta utökad generering (RAG) för att svara på frågan** | Agenten (`OAI-SearchBot`, `PerplexityBot`) kan identifieras med loggning på serversidan. | Normalt är ingen klassificering möjlig eftersom RAG-åtgärder ofta åsidosätter referensmekanismer. | Detektion är sällan möjlig om inte AI-leverantören specifikt har implementerat den. |
 | **Användaren klickar igenom** | Agenten kan inte identifieras. AI-agenten visas som en vanlig användaragent. | Klassificering är möjlig när användare klickar på länkar från AI-gränssnitt ([chatgpt.com](https://chatgpt.com), [claude.ai](https://claude.ai) med flera). | Identifiering är möjlig när AI-tjänster lägger till UTM-parametrar till utgående länkar. |
-| **Villkor för trafiksynlighet** | Kräv loggningsintegrering på serversidan med Customer Journey Analytics eller taggning på serversidan för agentidentifiering. | Klassificeringen beror på AI-plattformens referensprinciper och korrekt HTTP-huvudöverföring. | Identifiering kräver parameterbevarande genom omdirigeringar och korrekt URL-parametersamling. |
+| **Visningsvillkor för trafik** | Kräv loggningsintegrering på serversidan med Customer Journey Analytics eller taggning på serversidan för agentidentifiering. | Klassificeringen beror på AI-plattformens referensprinciper och korrekt HTTP-huvudöverföring. | Identifiering kräver parameterbevarande genom omdirigeringar och korrekt URL-parametersamling. |
 
 ### Utmaningar
 
@@ -293,6 +293,6 @@ Använd de härledda fälten och segmenten för att rapportera och analysera om 
 
 >[!MORELIKETHIS]
 >
->Denna artikel baseras på bloggartikeln från Brian Au: [Spåra och analysera LLM och AI-Genererad trafik i Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)
+>Denna artikel baseras på bloggartikeln [Spåra och analysera LLM och AI-genererad trafik i Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
 >
 >
