@@ -4,11 +4,9 @@ description: Förstå hur ni kan använda härledda fält som grund för att rap
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: 38be574621e4fc384f9fdeac94fc071f0cdd132b
+source-git-commit: 8862bfdf873c4c3c5e795f3b299040b3dc253647
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -17,6 +15,11 @@ ht-degree: 0%
 # Rapport om trafik som genererats av LLM och AI
 
 I den här artikeln beskrivs hur du använder funktionen för Customer Journey Analytics-härledda fält som grund för att rapportera om trafik som genererats av LLM (Large Language Model) och AI.
+
+>[!NOTE]
+>
+>Hur effektiva [identifieringsmetoderna](#detection-methods), [identifieringssignaturer](#detection-signatures) och [implementeringsstrategier](#implementation) är beror på din datainsamlingsmetod, Experience Platform datamängdstäckning och Customer Journey Analytics-implementering. Resultaten kan variera beroende på din tekniska miljö, datastyrningspolicy och implementeringsstrategi. När du använder Experience Edge måste du välja mellan att spela in strängen för råanvändaragenten eller att samla in enhetsinformation.
+>
 
 ## Detektionsmetoder
 
@@ -30,6 +33,7 @@ Tre vanliga metoder för identifiering och övervakning av LLM- och AI-genererad
 * **Identifiering av användaragent**: När en begäran görs till servern extraheras HTTP-huvudet för användaragent och analyseras mot kända AI-crawler och agentmönster. Den här metoden på serversidan kräver åtkomst till HTTP-huvuden och är mest effektiv när den implementeras på datainsamlingsskiktet.
 * **Referensklassificering**: HTTP-referensrubriken innehåller URL:en för den föregående webbsidan som länkade till den aktuella begäran. Det här sidhuvudet visar när användare klickar igenom till din webbplats från webbgränssnitt som ChatGPT eller Perplexity.
 * **Identifiering av frågeparametrar**: AI-tjänster kan lägga till URL-parametrar (särskilt UTM-parametrar) till länkar. Dessa parametrar finns kvar i URL:en och kan identifieras med standardanalysimplementeringar, vilket gör URL-parametrarna värdefulla indikatorer även i spårningsscenarier på klientsidan.
+
 
 Följande tabell visar hur detekteringsmetoderna kan användas i olika interaktionsscenarier för LLM och AI.
 
@@ -248,12 +252,12 @@ Från och med augusti 2025 kan följande specifika signaler identifieras för va
 
 ## Implementering
 
-Du kan rapportera om LLM- och AI-genererad trafik i en typisk Customer Journey Analytics-konfiguration (anslutning, datavy, arbetsyteprojekt) genom att konfigurera och konfigurera [härledda fält](#derived-fields), [segment](#segments) och [arbetsyteprojekt](#workspace-project).
+Du kan rapportera om LLM- och AI-genererad trafik i en typisk Customer Journey Analytics-konfiguration ([anslutning](/help/connections/overview.md), [datavyer](/help/data-views/data-views.md) och [arbetsyteprojekt](/help/analysis-workspace/home.md)) genom att konfigurera och konfigurera [härledda fält](#derived-fields), [segment](#segments) och [arbetsyteprojekt](#workspace-project) .
 
 
 ### Härledda fält
 
-Om du vill konfigurera identifieringsmetoder och identifieringssignaler använder du härledda fält som grund. Du kan till exempel definiera härledda fält för identifiering av användaragent, identifiering av frågeparametrar och klassificering av referenter.
+Om du vill konfigurera identifieringsmetoder och identifieringssignaler använder du härledda fält som grund. Definiera till exempel härledda fält för [identifiering av användaragent](#user-agent-identification), [identifiering av frågeparametrar](#query-parameter-detection) och [klassificering av referent](#referrer-classification).
 
 #### Identifiering av användaragent för LLM/AI
 
@@ -264,16 +268,412 @@ Använd de härledda fältsfunktionerna [Fall när](/help/data-views/derived-fie
 
 #### Identifiering av frågeparametrar för LLM/AI
 
-Använd de härledda fältsfunktionerna [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse) och [Classify](/help/data-views/derived-fields/derived-fields.md#classify) för att definiera ett härlett fält som identifierar UTM-parameteravkänning.
+Använd de härledda fältsfunktionerna [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse) och [Classify](/help/data-views/derived-fields/derived-fields.md#classify) för att definiera ett härlett fält som identifierar frågeparametrar.
 
 ![Identifiering av LLM/AI UTM-parameter](assets/aitraffic-utmparams.png){zoomable="yes"}
 
 
 #### Klassificering av LLM/AI-referens
 
-Använd funktionerna för URL-parsning och klassificera härledda fält för att definiera ett härlett fält som klassificerar referenser.
+Använd de härledda fältsfunktionerna [URL Parse](/help/data-views/derived-fields/derived-fields.md#url-parse) och [Classify](/help/data-views/derived-fields/derived-fields.md#classify) för att definiera ett härlett fält som klassificerar referenser.
 
-![LLM/AI-referensklassificering](assets/aitraffic-utmparams.png){zoomable="yes"}
+(assets/aitraffic-referrers.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+){zoomable="yes"}
 
 
 ### Segment
