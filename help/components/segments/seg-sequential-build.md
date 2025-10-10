@@ -91,7 +91,7 @@ Så här använder du tidsbegränsningar för operatorn **[!UICONTROL Then]**:
 1. Välj ![Klocka](/help/assets/icons/Clock.svg).
 1. Välj **[!UICONTROL Within]** eller **[!UICONTROL After]** på snabbmenyn.
 1. Ange en tidsperiod (**[!UICONTROL Minute]**, **[!UICONTROL Hour]**, fram till **[!UICONTROL Years]**).
-1. Välj ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**för att öppna ett popup-fönster där du kan skriva in eller ange ett nummer med **[!UICONTROL -]**eller **[!UICONTROL +]**.
+1. Välj ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;för att öppna ett popup-fönster där du kan skriva in eller ange ett nummer med **[!UICONTROL -]**&#x200B;eller **[!UICONTROL +]**.
 
 Använd ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tidsbegränsning.
 
@@ -135,7 +135,7 @@ Alla som besöker hemsidan den 1 juni 2024 och som återvänder till damerna | S
 
 ### Begränsningarna [!UICONTROL Event], [!UICONTROL Session] och [!UICONTROL Dimension]
 
-Med begränsningarna ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** och ![ Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** kan du inte bara ange en tidsbegränsning utan även en händelse-, sessions- eller dimensionsbegränsning. Välj **[!UICONTROL Event(s)]**, **[!UICONTROL Session(s)]** eller **[!UICONTROL Other dimensions]** ![ChevronRight](/help/assets/icons/ChevronRight.svg) **[!UICONTROL *Dimension name *]**. Du kan använda fältet [!UICONTROL *Sök*] för att söka efter en dimension.
+Med begränsningarna ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL After]** och ![&#x200B; Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Within]** kan du inte bara ange en tidsbegränsning utan även en händelse-, sessions- eller dimensionsbegränsning. Välj **[!UICONTROL Event(s)]**, **[!UICONTROL Session(s)]** eller **[!UICONTROL Other dimensions]** ![ChevronRight](/help/assets/icons/ChevronRight.svg) **[!UICONTROL *Dimension name *]**. Du kan använda fältet [!UICONTROL *Sök*] för att söka efter en dimension.
 
 #### Exempel
 
@@ -172,7 +172,7 @@ Följande exempelsekvenser matchar eller matchar inte:
 
 ### [!UICONTROL Only Before Sequence] och [!UICONTROL Only After Sequence]
 
-Alternativen ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** och ![ SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** segmenterar data till en delmängd före eller efter den angivna sekvensen.
+Alternativen ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** och ![&#x200B; SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** segmenterar data till en delmängd före eller efter den angivna sekvensen.
 
 * ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **Endast före sekvens**: Inkluderar alla data före en sekvens och de första data i själva sekvensen. Om en sekvens visas flera gånger som en del av data, inkluderar [!UICONTROL Only Before Sequence] den första träffen av den sista förekomsten av sekvensen och alla tidigare träffar.
 * ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **Endast efter sekvens**: Inkluderar alla träffar efter en sekvens och de sista data som finns i själva sekvensen. Om en sekvens visas flera gånger som en del av data, inkluderar [!UICONTROL Only After Sequence] den senaste träffen av den första förekomsten av sekvensen och alla efterföljande träffar.
