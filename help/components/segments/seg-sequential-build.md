@@ -1,11 +1,11 @@
 ---
 description: Lär dig mer om sekventiella segment som använder operatorn THEN för att definiera en sekvens av segmentvillkor.
-title: SequentialSsegments
+title: Sekventiella segment
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
+source-git-commit: c745e37203ac829fa0fb7d8532e6499351cb94ba
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2343'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ Så här använder du tidsbegränsningar för operatorn **[!UICONTROL Then]**:
 1. Välj ![Klocka](/help/assets/icons/Clock.svg).
 1. Välj **[!UICONTROL Within]** eller **[!UICONTROL After]** på snabbmenyn.
 1. Ange en tidsperiod (**[!UICONTROL Minute]**, **[!UICONTROL Hour]**, fram till **[!UICONTROL Years]**).
-1. Välj ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**&#x200B;för att öppna ett popup-fönster där du kan skriva in eller ange ett nummer med **[!UICONTROL -]**&#x200B;eller **[!UICONTROL +]**.
+1. Välj ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *number *]**för att öppna ett popup-fönster där du kan skriva in eller ange ett nummer med **[!UICONTROL -]**eller **[!UICONTROL +]**.
 
 Använd ![CrossSize75](/help/assets/icons/CrossSize75.svg) om du vill ta bort en tidsbegränsning.
 
@@ -122,7 +122,7 @@ Identifiera personer som besökt en sida och sedan en annan inom fem minuter. Ti
 
 ![Sekvens inom](assets/sequence-within.png)
 
-Om en sidvy för hemsidan inträffar den 1 juni 2024, kl. 12:01, visas sidan Women | Shoes kommer att matchas så länge som sidvyn visas före 15 juni 2024 12:16.
+Om en sidvy för hemsidan inträffar den 1 juni 2024, kl. 12:01, så visas sidan Women | Shoes kommer att matchas så länge som sidvyn visas före 15 juni 2024 12 :16 .
 
 ##### Operatorn [!UICONTROL After] men [!UICONTROL Within]
 
@@ -130,7 +130,7 @@ Identifiera personer som besökte en sida och sedan besökte en annan sida efter
 
 ![Sekvens efter men inom](assets/sequence-afterbutwithin.png)
 
-Alla som besöker hemsidan den 1 juni 2024 och som återvänder till damerna | Shoes page after 15 juni 2019 00:01, but before juli1, 2019 eligible for the segment.
+Alla som besöker hemsidan den 1 juni 2024 och som återvänder till damerna | Shoes page after 15 juni 2019 00:01, but before 1 Juli 2019 eligible for the segment.
 
 
 ### Begränsningarna [!UICONTROL Event], [!UICONTROL Session] och [!UICONTROL Dimension]
