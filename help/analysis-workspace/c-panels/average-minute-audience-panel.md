@@ -136,7 +136,7 @@ Använd de indatainställningar som beskrivs i det här avsnittet för att konfi
 
 ### Panelutdata
 
-Utdata från panelen varierar beroende på om du väljer [!UICONTROL **Specifikt innehåll**] eller [!UICONTROL **Anpassad tidsperiod**] i listrutan [!UICONTROL **Beräkna mått för**] när [panelindata ](#panel-inputs) konfigureras.
+Utdata från panelen varierar beroende på om du väljer [!UICONTROL **Specifikt innehåll**] eller [!UICONTROL **Anpassad tidsperiod**] i listrutan [!UICONTROL **Beräkna mått för**] när [panelindata &#x200B;](#panel-inputs) konfigureras.
 
 #### Specifikt innehåll
 
@@ -188,5 +188,5 @@ I den genomsnittliga minuspennan i mediemiljön används endast den genomsnittli
 >
 > [Skapa en panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 > &#x200B;> [Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
-> &#x200B;> [Medieuppspelningstid för panelen ](media-playback-time-spent.md)
+> &#x200B;> [Medieuppspelningstid för panelen &#x200B;](media-playback-time-spent.md)
 >

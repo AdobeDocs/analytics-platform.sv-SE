@@ -21,7 +21,7 @@ Beroende på vilken operator du väljer:
 * Du kan ange en del av ett värde och välja från en nedrullningsbar meny (om den är tillgänglig).
 * Välj omedelbart ett värde i listrutan (om tillgängligt).
 
-När du skriver ett värde för en operator som validerar tillgängliga värden, som **[!UICONTROL equals]**, och värdet inte matchar de värden som är tillgängliga för komponenten, visas en ![ AlertRed](/help/assets/icons/AlertRed.svg) -ikon. Du kan antingen välja ett värde i listrutan eller trycka på **[!UICONTROL _Retur_]** för att ange värdet.
+När du skriver ett värde för en operator som validerar tillgängliga värden, som **[!UICONTROL equals]**, och värdet inte matchar de värden som är tillgängliga för komponenten, visas en ![&#x200B; AlertRed](/help/assets/icons/AlertRed.svg) -ikon. Du kan antingen välja ett värde i listrutan eller trycka på **[!UICONTROL _Retur_]** för att ange värdet.
 
 ![Segment är lika med](assets/segment-operator-equals.png)
 

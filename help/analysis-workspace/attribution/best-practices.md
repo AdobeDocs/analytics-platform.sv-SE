@@ -33,7 +33,7 @@ Sedan kan ni göra analyser både internt och externt för att öka er förståe
 
 ### Övre trattanalys
 
-Analyskanaler med övergripande trattteknik används för att skapa varumärkes- eller produktmedvetenhet. Målet för de flesta TV-annonser är till exempel varumärkesmedvetenhet. Du kan använda attribueringsmodellen [Time Decay ](/help/analysis-workspace/attribution/models.md), eftersom folk kommer att glömma bort din TV-annons över tiden.
+Analyskanaler med övergripande trattteknik används för att skapa varumärkes- eller produktmedvetenhet. Målet för de flesta TV-annonser är till exempel varumärkesmedvetenhet. Du kan använda attribueringsmodellen [Time Decay &#x200B;](/help/analysis-workspace/attribution/models.md), eftersom folk kommer att glömma bort din TV-annons över tiden.
 
 ### Nedre trattanalys
 

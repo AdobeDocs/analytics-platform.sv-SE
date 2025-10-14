@@ -37,7 +37,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligenta bild
 
 Om du vill starta automatiskt genererade intelligenta bildtexter för en visualisering väljer du ![Intelligenta bildtexter](/help/assets/icons/AI.svg) längst upp till höger i visualiseringen. Det här valet genererar insikter om naturliga språk.
 
-![Startanalysfönstret som visar trenden för intelligenta bildtexter för produktvyer. ](assets/intelligent-captions.gif)
+![Startanalysfönstret som visar trenden för intelligenta bildtexter för produktvyer. &#x200B;](assets/intelligent-captions.gif)
 
 
 Kom ihåg att:
@@ -92,7 +92,7 @@ Du kan redigera visningen av bildtexter, till exempel dölja eller visa en viss 
 
 1. Välj ![Redigera synlighet för intelligenta bildtexter](/help/assets/icons/EditInLight.svg) i dialogrutan Intelligenta bildtexter.
 
-1. Växla mellan ![Växla synlighet](/help/assets/icons/Visibility.svg) om du vill visa en viss insikt (till exempel **[!UICONTROL Min]**) eller ![Växla synlighet ](/help/assets/icons/VisibilityOff.svg) om du vill dölja en viss insikt (till exempel **[!UICONTROL Spike]**).
+1. Växla mellan ![Växla synlighet](/help/assets/icons/Visibility.svg) om du vill visa en viss insikt (till exempel **[!UICONTROL Min]**) eller ![Växla synlighet &#x200B;](/help/assets/icons/VisibilityOff.svg) om du vill dölja en viss insikt (till exempel **[!UICONTROL Spike]**).
 
    ![Redigera intelligenta bildtexter](assets/edit-intelligent-captions.png)
 

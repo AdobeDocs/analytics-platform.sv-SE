@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Attribution låter dig anpassa hur dimensionsposter får kredit för lyckade händelser.
 
-![Fönstret Datavyer där attributalternativet Ange markeras ](../assets/attribution-settings.png)
+![Fönstret Datavyer där attributalternativet Ange markeras &#x200B;](../assets/attribution-settings.png)
 
 Exempel:
 
@@ -57,7 +57,7 @@ Så här uppdaterar du en komponents standardattribueringsmodell:
 
 1. Markera komponenten och expandera sedan avsnittet **[!UICONTROL Attribution]** till höger på skärmen.
 
-   ![Fönstret Datavyer där attributalternativet Ange markeras ](../assets/attribution-settings.png)
+   ![Fönstret Datavyer där attributalternativet Ange markeras &#x200B;](../assets/attribution-settings.png)
 
 1. Välj [!UICONTROL **Ange attribuering**] och välj sedan fönstret [attribueringsmodell](#attribution-models), [container](#container) och [lookback](#lookback-window).
 

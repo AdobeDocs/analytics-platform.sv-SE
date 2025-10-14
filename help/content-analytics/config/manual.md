@@ -65,7 +65,7 @@ När du har gjort ändringar i Adobe Content Analytics-tillägget kontrollerar d
 >[!MORELIKETHIS]
 >
 >[Guidad konfiguration](guided.md)
->&#x200B;>[Översikt över publicering av datainsamlingstaggar ](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/publish/overview)
+>&#x200B;>[Översikt över publicering av datainsamlingstaggar &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/publish/overview)
 >
 
 
@@ -97,7 +97,7 @@ Content Analytics hanterar identiteter på följande sätt:
 * Fältbaserad sammanfogning stöds inte eftersom schemat ägs av systemet. Du kan alltså inte lägga till ett annat fält i schemat som stöd för fältbaserad sammanslagning
 
 
-För att Content Analytics identitetsdata och Adobe Experience Platform Web SDK-datatidentitetsdata ska sammanfogas korrekt på fältnivå måste du göra ändringar i Web SDK [on innan ](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"}-återanrop skickas.
+För att Content Analytics identitetsdata och Adobe Experience Platform Web SDK-datatidentitetsdata ska sammanfogas korrekt på fältnivå måste du göra ändringar i Web SDK [on innan &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"}-återanrop skickas.
 
 1. Navigera till egenskapen **[!UICONTROL Tags]** som innehåller Adobe Experience Platform Web SDK-tillägget och Adobe Content Analytics-tillägget.
 1. Välj ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensions]**.

@@ -70,11 +70,11 @@ Först måste du [verifiera](https://experienceleague.adobe.com/sv/docs/experien
 
 ### API för flödestjänst
 
-Du kan också exportera och schemalägga export av datauppsättningar med API:er. Stegen som ingår beskrivs i [Exportera datauppsättningar med API:t för Flow Service ](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/api/export-datasets).
+Du kan också exportera och schemalägga export av datauppsättningar med API:er. Stegen som ingår beskrivs i [Exportera datauppsättningar med API:t för Flow Service &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/api/export-datasets).
 
 #### Kom igång
 
-Om du vill exportera datauppsättningar måste du ha de [nödvändiga behörigheterna](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/api/export-datasets#permissions). Verifiera också att målet dit du vill skicka datauppsättningen har stöd för export av datauppsättningar. Du måste sedan [samla in värdena för obligatoriska och valfria rubriker](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) som du använder i API-anropen. Du måste också [identifiera anslutningsspec- och flödesspec-ID:n för målet ](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) som du tänker exportera datamängder till.
+Om du vill exportera datauppsättningar måste du ha de [nödvändiga behörigheterna](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/api/export-datasets#permissions). Verifiera också att målet dit du vill skicka datauppsättningen har stöd för export av datauppsättningar. Du måste sedan [samla in värdena för obligatoriska och valfria rubriker](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) som du använder i API-anropen. Du måste också [identifiera anslutningsspec- och flödesspec-ID:n för målet &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) som du tänker exportera datamängder till.
 
 #### Hämta giltiga datauppsättningar
 
@@ -92,7 +92,7 @@ Du måste nu [skapa en basanslutning](https://experienceleague.adobe.com/sv/docs
 
 #### Ange exportparametrar
 
-Därefter måste du [skapa ytterligare en målanslutning som lagrar exportparametrarna ](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/api/export-datasets#create-target-connection) för datauppsättningen med [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API:t. Dessa exportparametrar inkluderar plats, filformat, komprimering med mera.
+Därefter måste du [skapa ytterligare en målanslutning som lagrar exportparametrarna &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/api/export-datasets#create-target-connection) för datauppsättningen med [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API:t. Dessa exportparametrar inkluderar plats, filformat, komprimering med mera.
 
 #### Ställ in dataflöde
 

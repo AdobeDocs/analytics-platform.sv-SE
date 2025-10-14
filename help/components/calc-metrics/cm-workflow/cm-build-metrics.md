@@ -31,7 +31,7 @@ Du kan använda verktyget för beräknade mätvärden för att skapa eller redig
 
 ## Områden för verktyget för beräknade mätvärden
 
-Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa nya eller redigera befintliga beräknade värden. Dialogrutan heter **[!UICONTROL New calculated metric]** eller **[!UICONTROL Edit calculated metric]** för mått som du skapar eller hanterar från [[!UICONTROL Calculated metrics]-hanteraren ](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa nya eller redigera befintliga beräknade värden. Dialogrutan heter **[!UICONTROL New calculated metric]** eller **[!UICONTROL Edit calculated metric]** för mått som du skapar eller hanterar från [[!UICONTROL Calculated metrics]-hanteraren &#x200B;](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 >[!BEGINTABS]
 

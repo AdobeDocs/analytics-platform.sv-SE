@@ -44,7 +44,7 @@ I [Gränssnitt](../overview.md#interface) finns en översikt över gränssnittet
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **[!UICONTROL View]**: Växla mellan den här analysen och [Första användningen ](first-use-impact.md).
+* **[!UICONTROL View]**: Växla mellan den här analysen och [Första användningen &#x200B;](first-use-impact.md).
 * **[!UICONTROL Key indicators]**: De händelser som du vill mäta per användare. Varje markerad tangentindikator representeras som en färgad linje. En rad som representerar händelsen läggs till i tabellen. Du kan inkludera upp till tre händelser.
 * **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är [!UICONTROL Events per user], [!UICONTROL Percentage of users], [!UICONTROL Events], [!UICONTROL Sessions] och [!UICONTROL Users].
 * **[!UICONTROL Factors]**: Det datum som du vill jämföra före och efter.

@@ -65,7 +65,7 @@ Så här startar du arbetsflödet:
       1. Lägg till ett valfritt **[!UICONTROL Description]**. Till exempel: `Sample data from a CSV file`.
       1. Lägg till en eller flera valfria **[!UICONTROL Tags]**, eller markera en eller flera befintliga **[!UICONTROL Tags]**.
 
-         ![Konfigurera ad hoc-datauppsättning ](assets/adhoc-dataset-configure.png)
+         ![Konfigurera ad hoc-datauppsättning &#x200B;](assets/adhoc-dataset-configure.png)
 
       1. Välj **[!UICONTROL Next]**.
    1. I steget **[!UICONTROL Add data]**:

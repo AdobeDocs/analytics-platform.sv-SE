@@ -62,7 +62,7 @@ Tidigare behandlades heltal automatiskt som mätvärden i Customer Journey Analy
 
 Du kan använda en numerisk dimension för att hämta mätvärden till din [!UICONTROL &#x200B; Flow]-visualisering.
 
-1. Dra schemafältet [ till området ](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview) under [!UICONTROL Marketing Channels] på fliken [!UICONTROL Metrics]Komponenter[!UICONTROL Included components] i datavyer.
+1. Dra schemafältet [&#x200B; till området &#x200B;](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview) under [!UICONTROL Marketing Channels] på fliken [!UICONTROL Metrics]Komponenter[!UICONTROL Included components] i datavyer.
 2. I Workspace-rapporter visar det här flödet [!UICONTROL Marketing Channels] som flödar in i [!UICONTROL Orders]:
 
 ![Marknadskanalen flödar från e-post till Avsluta/beställ.](../assets/flow.png)
@@ -73,7 +73,7 @@ Den här funktionen gäller specifikt för matrisbaserade fält. Med funktionern
 
 Använd till exempel funktionerna för att inkludera/exkludera i datavyer om du bara vill fokusera på produkter som genererade mer än 50 dollar för försäljning. Om du har en beställning som innehåller ett produktköp på 50 USD och ett produktköp på 25 USD tar funktionen för att inkludera/exkludera bort produktinköpet på 25 USD, inte hela beställningen.
 
-1. Dra schemafältet [ till området ](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview) under **[!UICONTROL Revenue]** på fliken **[!UICONTROL Metrics]** Komponenter[!UICONTROL Included components] i datavyer.
+1. Dra schemafältet [&#x200B; till området &#x200B;](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/create-dataview) under **[!UICONTROL Revenue]** på fliken **[!UICONTROL Metrics]** Komponenter[!UICONTROL Included components] i datavyer.
 1. Markera måtten och konfigurera följande på höger sida:
 a. Välj **[!UICONTROL Format]** under **[!UICONTROL Currency]**.
 b. Välj **[!UICONTROL Currency]** under **[!UICONTROL USD]**.

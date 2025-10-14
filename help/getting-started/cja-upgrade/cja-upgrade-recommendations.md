@@ -111,7 +111,7 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
    1. [Implementera inläsartaggen på din plats](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md).
 
-   1. [Lägg till logik för XDM-datainsamling i taggen ](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md){target="_blank"}.
+   1. [Lägg till logik för XDM-datainsamling i taggen &#x200B;](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md){target="_blank"}.
 
    +++
 

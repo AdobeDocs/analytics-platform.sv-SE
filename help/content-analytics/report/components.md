@@ -96,7 +96,7 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 | Övergripande ton för resurs | ![AI genererade](/help/assets/icons/AI.svg) Övergripande ton för resursen. | Dimension<br/>Härlett fält |
 | Förgrundsfärger för resurs | ![AI genererade](/help/assets/icons/AI.svg) förgrundsfärger för resursen. | Dimension<br/>Härlett fält |
 | Bakgrundsfärger för resurs | ![AI genererade](/help/assets/icons/AI.svg) bakgrundsfärger för resursen. | Dimension<br/>Härlett fält |
-| Resurstaggar | ![AI genererade ](/help/assets/icons/AI.svg) taggar för resursen. | Dimension<br/>Härlett fält |
+| Resurstaggar | ![AI genererade &#x200B;](/help/assets/icons/AI.svg) taggar för resursen. | Dimension<br/>Härlett fält |
 | Resursscener | ![AI genererade](/help/assets/icons/AI.svg) scener för resursen. | Dimension<br/>Härlett fält |
 | Resursobjekt | ![AI genererade](/help/assets/icons/AI.svg) objekt för resursen. | Dimension<br/>Härlett fält |
 | Resursfotostilar | ![AI genererade](/help/assets/icons/AI.svg) fotostilar för resursen. | Dimension<br/>Härlett fält |

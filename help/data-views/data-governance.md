@@ -25,7 +25,7 @@ Följande etiketter är av särskilt intresse för Customer Journey Analytics:
 >
 >Dataanvändningsetiketter sprids inte automatiskt till sammanslagna datauppsättningar. De kan dock läggas till manuellt.
 
-Etikettering i sig innebär inte att dessa dataanvändningsetiketter används. Det är det policyer används för. Du kan skapa principer med [Experience Platform-gränssnittet](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/policies/user-guide) eller via [principtjänstens API ](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/api/overview) i Experience Platform.
+Etikettering i sig innebär inte att dessa dataanvändningsetiketter används. Det är det policyer används för. Du kan skapa principer med [Experience Platform-gränssnittet](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/policies/user-guide) eller via [principtjänstens API &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/api/overview) i Experience Platform.
 
 Det finns två Adobe-definierade policyer i Experience Platform som kan användas i Customer Journey Analytics och påverka rapportering och dataexport:
 

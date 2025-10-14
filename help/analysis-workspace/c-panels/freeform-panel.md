@@ -38,5 +38,5 @@ Så här använder du en **[!UICONTROL Freeform panel]**:
 >
 >[Skapa en panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
 >&#x200B;>[Använd komponenter i Workspace](/help/components/use-components-in-workspace.md)
->&#x200B;>[Visualisering av frihandstabell ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)
+>&#x200B;>[Visualisering av frihandstabell &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)
 >

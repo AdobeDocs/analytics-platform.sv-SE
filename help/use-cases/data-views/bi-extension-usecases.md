@@ -516,7 +516,7 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 
    En linjediagramvisualisering ersätter tabellen och använder samma data som tabellen. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI-filtret Datumintervall med VERSALER 2 ](assets/uc2-pbi-daterange.png)
+   ![Power BI-filtret Datumintervall med VERSALER 2 &#x200B;](assets/uc2-pbi-daterange.png)
 
 1. Visualisering av linjediagram:
 
@@ -564,7 +564,7 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Instrumentpanel för bordsdator ](assets/uc2-tableau-dashboard.png)
+      ![Instrumentpanel för bordsdator &#x200B;](assets/uc2-tableau-dashboard.png)
 
 
 >[!TAB Sökare]
@@ -702,7 +702,7 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
 
       **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
-      ![Instrumentpanel för bordsdator ](assets/uc3-tableau-dashboard.png)
+      ![Instrumentpanel för bordsdator &#x200B;](assets/uc3-tableau-dashboard.png)
 
 
 >[!TAB Sökare]
@@ -823,7 +823,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 
    En linjediagramvisualisering ersätter tabellen och använder samma data som tabellen. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI-filtret Datumintervall med VERSALER 2 ](assets/uc4-pbi-filter-daterange.png)
+   ![Power BI-filtret Datumintervall med VERSALER 2 &#x200B;](assets/uc4-pbi-filter-daterange.png)
 
 1. Visualisering av linjediagram:
 
@@ -871,7 +871,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Instrumentpanel för bordsdator ](assets/uc4-tableau-dashboard.png)
+      ![Instrumentpanel för bordsdator &#x200B;](assets/uc4-tableau-dashboard.png)
 
 
 >[!TAB Sökare]
@@ -996,7 +996,7 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 
    1. Välj **[!UICONTROL Sum of purchase_revenue]** om du vill sortera produktnamnen i fallande inköpsintäktsordning. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop Use Case 5 Table status ](assets/uc5-pbi-table.png)
+   ![Power BI Desktop Use Case 5 Table status &#x200B;](assets/uc5-pbi-table.png)
 
 1. I rutan **[!UICONTROL Filters]**:
 
@@ -1072,7 +1072,7 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 
    **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
-   ![Instrumentpanel för bordsdator ](assets/uc5-tableau-dashboard.png)
+   ![Instrumentpanel för bordsdator &#x200B;](assets/uc5-tableau-dashboard.png)
 
 
 
@@ -1230,7 +1230,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
 1. Om du vill dela upp varje kategori i tabellen väljer du **[!UICONTROL +]** på produktkategorinivå. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI-matristabell med flera dimensioner för stationära datorer ](assets/uc6-powerbi-data.png)
+   ![Power BI-matristabell med flera dimensioner för stationära datorer &#x200B;](assets/uc6-powerbi-data.png)
 
 1. Välj **[!UICONTROL Home]** på den översta menyn och välj **[!UICONTROL New visual]**. En ny visuell vy läggs till i rapporten.
 
@@ -1286,7 +1286,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Flera dimensioner rankade för Tableu Desktop ](assets/uc6-tableau-category.png)
+      ![Flera dimensioner rankade för Tableu Desktop &#x200B;](assets/uc6-tableau-category.png)
 
 1. Byt namn på aktuellt **[!UICONTROL Sheet 1]**-blad till `Category`.
 1. Välj **[!UICONTROL New Worksheet]** om du vill skapa ett nytt blad och ändra namnet till `Data`.
@@ -1332,7 +1332,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
    **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
-   ![Instrumentpanel för bordsdator ](assets/uc6-tableau-final.png)
+   ![Instrumentpanel för bordsdator &#x200B;](assets/uc6-tableau-final.png)
 
 
 >[!TAB Sökare]
@@ -1444,7 +1444,7 @@ I det här fallet vill du ha det tydliga antalet produktnamn som rapporterades i
 
 Om du vill rapportera ett distinkt antal produktnamn anger du ett beräknat mått i Customer Journey Analytics, med **[!UICONTROL Title]** `Product Name (Count Distinct)` och **[!UICONTROL External Id]** `product_name_count_distinct`.
 
-![Beräknade Customer Journey Analytics-produktnamn (Distincr Count) ](assets/cja-calc-metric-distinct-count-product-names.png)
+![Beräknade Customer Journey Analytics-produktnamn (Distincr Count) &#x200B;](assets/cja-calc-metric-distinct-count-product-names.png)
 
 Du kan sedan använda det måttet i en **[!UICONTROL Count Distinct Dimension Values]**-panel för följande användningsfall:
 
@@ -1533,7 +1533,7 @@ Du kan också använda funktionen för antal som skiljer sig från Power BI.
 
    **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
-   ![Instrumentpanel för bordsdator ](assets/uc7-tableau-final.png)
+   ![Instrumentpanel för bordsdator &#x200B;](assets/uc7-tableau-final.png)
 
 
 Du kan också använda funktionen för att räkna distinkt från skrivbordet i Tableu.
@@ -2935,7 +2935,7 @@ För de flesta visualiseringar från Customer Journey Analytics erbjuder Power B
 | ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Punkt](/help/analysis-workspace/visualizations/bullet-graph.md) |  |
 | ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
 | ![Kombination](/help/assets/icons/ComboChart.svg) | [Kombination](/help/analysis-workspace/visualizations/combo-charts.md) | [Stapeldiagram, stapeldiagram, linjediagram och grupperade stapeldiagram](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#combo-charts) |
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | [Diagram ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#doughnut-charts) |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | [Diagram &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#doughnut-charts) |
 | ![ConversionTratt](/help/assets/icons/ConversionFunnel.svg) | [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Tratt](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#funnel-charts). |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md) | Dispositionsträd? |
 | ![VisaTabell](/help/assets/icons/ViewTable.svg)</p> | [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tabell](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#tables) och [Matris](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#matrix) |

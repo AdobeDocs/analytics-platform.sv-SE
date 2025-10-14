@@ -55,7 +55,7 @@ Du kan till exempel spåra en persons bortfallspunkter under en inköpsprocess. 
 
 ## Välj mellan Utfall, Flöde och Visualiseringar av arbetsytan på resan
 
-Utfallsvisualiseringen har likheter med [Flödesvisualiseringen](/help/analysis-workspace/visualizations/c-flow/flow.md) och [arbetsytevisualiseringen ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
+Utfallsvisualiseringen har likheter med [Flödesvisualiseringen](/help/analysis-workspace/visualizations/c-flow/flow.md) och [arbetsytevisualiseringen &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
 
 ### Förstå skillnaderna
 

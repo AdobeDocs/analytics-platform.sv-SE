@@ -146,7 +146,7 @@ Filterpanelen består av följande avsnitt.
 
 ## Sök
 
-Du använder sökområdet ➎ för att söka efter projekt och mappar med hjälp av fältet ![ Sök ](/help/assets/icons/Search.svg). Börja skriva och [projektlistan](#project-list) filtrerar automatiskt dina sökindata.
+Du använder sökområdet ➎ för att söka efter projekt och mappar med hjälp av fältet ![&#x200B; Sök &#x200B;](/help/assets/icons/Search.svg). Börja skriva och [projektlistan](#project-list) filtrerar automatiskt dina sökindata.
 
 I sökområdet visas även de filter som har använts på panelen Filter.
 

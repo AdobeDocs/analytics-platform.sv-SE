@@ -25,7 +25,7 @@ Genom att hantera tidigare skapade målgrupper kan ni:
 * Få insikt i hur lång tid det tog att producera en målgrupp **från Customer Journey Analytics.** Det tog att få insikt i hur lång tid det tog att producera en målgrupp. Och hur lång tid det tog att få publiken att visas i kundplattformen i realtid för aktiveringsändamål.
 * Se om målgrupperna i Customer Journey Analytics **används aktivt av kundplattformen i realtid**. Eller (helst) alla Experience Platform-program som använder de målgrupper som skapats av Customer Journey Analytics.
 
-Om du har [åtkomst till målgruppsvyn](/help/technotes/access-control.md#user-level-access) kan du visa målgrupper. Om du har [åtkomst för att skapa ](/help/technotes/access-control.md#user-level-access) målgrupper kan du redigera och ta bort målgrupper.
+Om du har [åtkomst till målgruppsvyn](/help/technotes/access-control.md#user-level-access) kan du visa målgrupper. Om du har [åtkomst för att skapa &#x200B;](/help/technotes/access-control.md#user-level-access) målgrupper kan du redigera och ta bort målgrupper.
 
 ## Visa målgrupper i publiklistan
 

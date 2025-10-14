@@ -52,7 +52,7 @@ I Customer Journey Analytics går du till **[!UICONTROL Tools]** > **[!UICONTROL
 
 Granskningsloggen för i dag och i går visas som standard.
 
-![Granskningsloggmarkering idag och i går. ](assets/audit_ui.png)
+![Granskningsloggmarkering idag och i går. &#x200B;](assets/audit_ui.png)
 
 Du kan välja vilka kolumner som ska visas genom att gå till kolumnväljaren längst upp till höger.
 
@@ -60,7 +60,7 @@ Du kan välja vilka kolumner som ska visas genom att gå till kolumnväljaren l�
 
 Dubbelklicka på knappen info (i) bredvid en beskrivning.
 
-![Granskningslogg som markerar informationsknappen. ](assets/info-button-audit.png)
+![Granskningslogg som markerar informationsknappen. &#x200B;](assets/info-button-audit.png)
 
 Följande objekt visas:
 

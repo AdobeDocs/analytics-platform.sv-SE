@@ -34,12 +34,12 @@ Nu när du har skapat ett tomt Workspace-projekt måste du känna till användar
 * Lägg till [paneler](/help/analysis-workspace/c-panels/panels.md) i ditt projekt. Till exempel **[!DNL Example Panel]** ➊.
 
 * Lägg till [visualiseringar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) på panelerna. Exempel:
-   * **[!DNL Line Graph]** [Radvisualisering ](/help/analysis-workspace/visualizations/line.md) ➋
+   * **[!DNL Line Graph]** [Radvisualisering &#x200B;](/help/analysis-workspace/visualizations/line.md) ➋
    * **[!DNL Countries]** [Visualisering av frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ➌
 * Lägg till [komponenter](/help/components/overview.md) i dina visualiseringar. Exempel:
    * **[!DNL Store Country]** [dimension](/help/components/dimensions/overview.md) ➍
    * **[!DNL People]** [metrisk](/help/components/apply-create-metrics.md) ➎
-   * **[!DNL Avg Order Value]** [beräknat mått ](/help/components/calc-metrics/calc-metr-overview.md) ➏
+   * **[!DNL Avg Order Value]** [beräknat mått &#x200B;](/help/components/calc-metrics/calc-metr-overview.md) ➏
    * **[!DNL Mobile App Sessions]** [segment](/help/components/segments/seg-overview.md) ➐
    * **[!DNL Last Month]** [datumintervall](/help/components/date-ranges/overview.md) ➑
    * **[!DNL Example]** [anteckning](/help/components/annotations/overview.md) ➒

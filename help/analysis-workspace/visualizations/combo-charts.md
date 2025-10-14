@@ -68,7 +68,7 @@ Kom ihåg att:
 
    Utdata ser ut ungefär som:
 
-   ![Ett kombinationsdiagram som visar den aktuella perioden i ett stapeldiagram och en jämförelseperiod i linjediagrammet ](assets/combo-output.png)
+   ![Ett kombinationsdiagram som visar den aktuella perioden i ett stapeldiagram och en jämförelseperiod i linjediagrammet &#x200B;](assets/combo-output.png)
 
    Den aktuella perioden visas i stapeldiagrammet. Raddiagrammet representerar jämförelseperioden. Punkter i linjediagrammet kallas *streck*.
 
@@ -100,5 +100,5 @@ Här följer ett exempel på ett kombinationsdiagram med funktioner för både C
 >
 >[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >&#x200B;>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>&#x200B;>[Snabbmenyn Visualisering &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

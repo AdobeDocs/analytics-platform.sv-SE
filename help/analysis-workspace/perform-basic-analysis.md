@@ -30,6 +30,6 @@ Här är ett exempel på grundläggande visualiseringar i Workspace. Du kan till
 
 * Avbilda målgruppsstorleken efter datakällor, t.ex. annonsvisningsdata, Customer Journey Analytics-data, e-postdata, POS-data, callcenterdata och undersökningsdata.
 
-![Exempelvisualiseringar av grundläggande analysdiagram. ](assets/cja-basic-analysis.png)
+![Exempelvisualiseringar av grundläggande analysdiagram. &#x200B;](assets/cja-basic-analysis.png)
 
 ![Fler exempel på visualiseringar av grundläggande analysdiagram](assets/cja-basic-analysis2.png)

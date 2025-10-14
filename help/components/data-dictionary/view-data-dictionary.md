@@ -23,7 +23,7 @@ Så här visar du information om en komponent i Data Dictionary:
 
    Fönstret Data Dictionary visas.
 
-   ![Fönstret Dataordlista med snabbsegment för dimensioner, mått, segment och datumintervall ](assets/data-dictionary.png)
+   ![Fönstret Dataordlista med snabbsegment för dimensioner, mått, segment och datumintervall &#x200B;](assets/data-dictionary.png)
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 

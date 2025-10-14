@@ -34,7 +34,7 @@ ht-degree: 0%
 
 Med Inkludera exkluderade värden kan du skapa regler som är beroende av värdet för en dimensionspost. Värden som inte uppfyller villkoren som du anger behandlas i Analysis Workspace som om de aldrig fanns, även om data fortfarande finns i den underliggande datauppsättningen.
 
-![Fönstret Datavyer där Inkludera exkluderade värden markeras ](../assets/include-exclude.png)
+![Fönstret Datavyer där Inkludera exkluderade värden markeras &#x200B;](../assets/include-exclude.png)
 
 | Inställning | Beskrivning/användningsfall |
 | --- | --- |

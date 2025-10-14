@@ -49,7 +49,7 @@ Alla kommentarer som görs i ett Analysis Workspace-projekt visas i kommentarsom
 
 ### Visa kommentarsemblem i ett projekt
 
-Kommentarer som görs [ i ett visst område i projektet ](#comment-on-a-specific-area-of-the-project) har ett **kommentarsemblem** ![som visas över det område i projektet som kommentaren hör till.](assets/comment-indicator.svg) Välj ett märke för att visa kommentaren. När du har valt märket kan du markera själva kommentaren för att markera kommentaren i kommentarområdet till höger.
+Kommentarer som görs [&#x200B; i ett visst område i projektet &#x200B;](#comment-on-a-specific-area-of-the-project) har ett **kommentarsemblem** ![som visas över det område i projektet som kommentaren hör till.](assets/comment-indicator.svg) Välj ett märke för att visa kommentaren. När du har valt märket kan du markera själva kommentaren för att markera kommentaren i kommentarområdet till höger.
 
 Nummer visas på varje emblem i ett projekt och ordnas i den ordning som de skapades. Om flera kommentarer placeras i samma område i ett projekt, visar märket 3 punkter ![kommentarsemblem flera](assets/comment-indicator-multiple.svg). Markera 3-punktssymbolen om du vill visa alla kommentarer i det området.
 
@@ -149,7 +149,7 @@ Så här tar du med en annan person i kommentaren:
 
 ## Få meddelanden om kommentarer
 
-Projektägare och [specifika personer som du anger](#include-others-in-a-comment) får meddelanden baserat på deras Adobe Experience Cloud-meddelandeinställningar. Som standard får de ett meddelande i appen som visas från [Experience Cloud-ikonen ](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-meddelandeikonen](assets/experience-cloud-notification.svg) i Customer Journey Analytics.
+Projektägare och [specifika personer som du anger](#include-others-in-a-comment) får meddelanden baserat på deras Adobe Experience Cloud-meddelandeinställningar. Som standard får de ett meddelande i appen som visas från [Experience Cloud-ikonen &#x200B;](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#view-notifications) ![Experience Cloud-meddelandeikonen](assets/experience-cloud-notification.svg) i Customer Journey Analytics.
 
 Dessutom kan användare konfigurera sina inställningar för Experience Cloud-meddelanden så att de får e-postmeddelanden och Slack-meddelanden genom att [prenumerera på e-postmeddelanden](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) och [prenumerera på Slack-meddelanden](https://experienceleague.adobe.com/sv/docs/core-services/interface/features/account-preferences#slack).
 
@@ -159,7 +159,7 @@ Om det finns en kommentar i kommentarsområdet på den högra listen men den int
 
 1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
-1. Välj ikonen ![Mer ](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren som du vill placera ett märke för och välj sedan **[!UICONTROL Place badge]**.
+1. Välj ikonen ![Mer &#x200B;](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren som du vill placera ett märke för och välj sedan **[!UICONTROL Place badge]**.
 
 1. Markera det område i projektet där du vill placera emblemet för den befintliga kommentaren.
 
@@ -193,7 +193,7 @@ Så här kopierar du länken till en kommentar:
 
 1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
-1. Markera ikonen ![Mer ](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren vars länk du vill kopiera och välj sedan **[!UICONTROL Copy link]**.
+1. Markera ikonen ![Mer &#x200B;](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren vars länk du vill kopiera och välj sedan **[!UICONTROL Copy link]**.
 
    Länken kopieras till systemets Urklipp. Du kan klistra in länken i ett e-postmeddelande eller i annan typ av meddelande.
 
@@ -205,7 +205,7 @@ Så här kopierar du brödtexten i en kommentar:
 
 1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
-1. Markera ikonen ![Mer ](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren som innehåller texten som du vill kopiera och välj sedan **[!UICONTROL Copy body text]**.
+1. Markera ikonen ![Mer &#x200B;](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren som innehåller texten som du vill kopiera och välj sedan **[!UICONTROL Copy body text]**.
 
    Kommentarens brödtext kopieras till systemets Urklipp.
 
@@ -225,7 +225,7 @@ Så här tar du bort en kommentar:
 
 1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
-1. Markera ikonen ![Mer ](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren som du vill ta bort och välj sedan **[!UICONTROL Delete]**.
+1. Markera ikonen ![Mer &#x200B;](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren som du vill ta bort och välj sedan **[!UICONTROL Delete]**.
 
 1. Välj **[!UICONTROL Delete]** igen för att bekräfta borttagningen.
 
@@ -237,7 +237,7 @@ Så här löser du en kommentar:
 
 1. Med projektet öppet i Analysis Workspace väljer du ikonen för kommentarområdet ![Ikonen för kommentarområdet](/help/assets/icons/Comment.svg) till höger i Analysis Workspace.
 
-1. Välj ikonen ![Mer ](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren som du vill lösa och välj sedan **[!UICONTROL Resolve]**.
+1. Välj ikonen ![Mer &#x200B;](/help/assets/icons/MoreSmallList.svg) bredvid kommentaren som du vill lösa och välj sedan **[!UICONTROL Resolve]**.
 
 1. Bekräfta genom att välja **[!UICONTROL Resolve]** igen.
 

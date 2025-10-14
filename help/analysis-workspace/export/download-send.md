@@ -67,7 +67,7 @@ Med alternativet **[!UICONTROL Copy to clipboard]** på snabbmenyn kan du snabbt
 >Du kan använda snabbtangenten **_cmd + c_** (macOS) eller **_ctrl + c_** (Windows) för att kopiera ditt val till Urklipp. Använd sedan **_cmd + v_** (macOS) eller **_ctrl + v_** (Windows) för att klistra in data.
 
 
-![Alternativet Kopiera markering till Urklipp. ](assets/copy-clipboard.png){zoomable="yes"}
+![Alternativet Kopiera markering till Urklipp. &#x200B;](assets/copy-clipboard.png){zoomable="yes"}
 
 ## Hämta data i en visualisering som en CSV-fil {#download-data}
 

@@ -138,7 +138,7 @@ I navigeringsfältet visas ikoner som representerar vad som finns på varje bild
 
 Om du vill flytta mellan plattan och bildrutorna trycker du på navigeringsfältet.
 ![Skapa en dataartikel](assets/data-story5.png)
-![Skapa en dataartikel ](assets/data-story-nav.png){width="45%"}
+![Skapa en dataartikel &#x200B;](assets/data-story-nav.png){width="45%"}
 
 Du kan också navigera fram och tillbaka genom att använda pilarna på tangentbordet eller genom att markera en komponent och hålla den till vänster eller höger på skärmen för att rulla.
 

@@ -44,7 +44,7 @@ Ett analysstyrkort visar viktiga datavisualiseringar för chefsanvändare i en s
 
 Som kurator för det här styrkortet kan du använda styrkortsverktyget för att konfigurera vilka rutor som ska visas på styrkortet för den verkställande konsumenten. Du kan också konfigurera hur detaljerade vyer, eller delningarna, kan justeras när användaren trycker på plattorna. Styrkortbyggargränssnittet visas nedan:
 
-![Styrkortverktyget visar det nya fönstret för mobilstyrkort. ](assets/scorecard_builder.png)
+![Styrkortverktyget visar det nya fönstret för mobilstyrkort. &#x200B;](assets/scorecard_builder.png)
 
 Om du vill skapa styrkortet måste du göra följande:
 
@@ -79,7 +79,7 @@ Så här implementerar du styrkortsmallen:
 
 1. Om du vill lägga till en ny platta i styrkortet drar du en måttenhet från den vänstra panelen och släpper den i zonen **[!UICONTROL Drag and Drop Metrics Here]**. Du kan också infoga ett mätvärde mellan två rutor med ett liknande arbetsflöde.
 
-   ![Nytt mobilstyrkortsfönster med en pil som pekar på ett mätvärde (New KPI) som tagits bort från styrkortet. ](assets/build_list.png)
+   ![Nytt mobilstyrkortsfönster med en pil som pekar på ett mätvärde (New KPI) som tagits bort från styrkortet. &#x200B;](assets/build_list.png)
 
 
 1. Från varje ruta kan du visa en detaljerad vy som visar ytterligare information om måttet, till exempel de översta objekten för en lista med relaterade dimensioner.
@@ -311,7 +311,7 @@ I navigeringsfältet visas ikoner som representerar vad som finns på varje bild
 
 Om du vill flytta mellan plattan och bildrutorna trycker du på navigeringsfältet.
 ![Skapa en dataartikel](assets/data-story5.png)
-![Skapa en dataartikel ](assets/data-story-nav.png){width="45%"}
+![Skapa en dataartikel &#x200B;](assets/data-story-nav.png){width="45%"}
 
 Du kan också navigera fram och tillbaka genom att använda pilarna på tangentbordet eller genom att markera en komponent och hålla den till vänster eller höger på skärmen för att rulla.
 

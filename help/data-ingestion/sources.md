@@ -71,7 +71,7 @@ Så här konfigurerar du ditt schema:
 
    1. Ange en **[!UICONTROL Schema display name]** för ditt schema och (valfritt) en **[!UICONTROL Description]**.
 
-      ![Skapa schemafönster med fälten för att namnge schemat ](./assets/create-pr-schema-wizard-step-2.png)
+      ![Skapa schemafönster med fälten för att namnge schemat &#x200B;](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Välj **[!UICONTROL Finish]**.
 

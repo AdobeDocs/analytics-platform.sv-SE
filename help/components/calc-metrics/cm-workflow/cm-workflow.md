@@ -39,7 +39,7 @@ Innan du skapar beräknade värden bör du tänka på följande arbetsflöde:
 | Planera beräknade värden | I synnerhet för mätvärden som kommer att godkännas officiellt är det rimligt att planera för vilka beräknade mätvärden som ska användas och hur de ska definieras. |
 | [Bygg](/help/components/calc-metrics/cm-workflow/cm-build-metrics.md) beräknade värden | Bygg och redigera beräknade och avancerade beräknade mätvärden för användning i [!DNL Customer Journey Analytics]-komponenter. |
 | [Tagg](cm-tagging.md) beräknade mått | Märk beräknade mätvärden för enkel organisation och delning. Se hur du planerar och tilldelar taggar för enkla och avancerade sökningar och organisation. |
-| [Godkänn ](cm-approving.md) beräknade mått | Godkänn beräknade värden för att göra dem kanoniska. |
+| [Godkänn &#x200B;](cm-approving.md) beräknade mått | Godkänn beräknade värden för att göra dem kanoniska. |
 | Använd beräknade värden | Använd beräknade värden i dina projekt. |
 | [Dela](cm-sharing.md) beräknade mått | Dela dina beräknade värden med andra individer, grupper eller organisationer. |
 | [Filter](cm-filter.md) beräknade värden | Filtrera beräknade mätvärden efter taggar, ägare och andra filter (Visa alla, Min, Delas med mig, Favoriter och Godkänd). |

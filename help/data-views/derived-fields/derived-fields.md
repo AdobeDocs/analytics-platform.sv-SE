@@ -50,7 +50,7 @@ När du skapar eller redigerar ett härlett fält använder du det härledda fä
 
 |  | Namn | Beskrivning |
 |---------|----------|--------|
-| 1 | **Väljare** | Du använder väljarområdet för att markera och dra och släppa funktionen, funktionsmallen, schemafältet eller standardfältet till regelbyggaren. <br/>Använd listrutan för att välja mellan: <br/>![Funktion](assets/Smock_Function_18_N.svg) [!UICONTROL Functions] - visar tillgängliga [funktioner](#function-reference), </br>![Funktionsmallikon](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Function templates] - visar tillgängliga [funktionsmallar](#function-templates), <br/>![Schemafältikon](assets/Smock_Folder_18_N.svg) [!UICONTROL Schema fields] - listar tillgängliga fält från datauppsättningskategorier (händelse, profil, sökning) och tidigare definierade fält och <br/>![Standardfältsikon ](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standard fields] - tillgängliga standardfält (t.ex. ID för plattformsdatauppsättning). Endast strängfält och numeriska standardfält visas i väljaren. Om funktionen stöder andra datatyper kan standardfält med dessa andra datatyper väljas för värden eller fält i regelgränssnittet.<br/>Du kan söka efter funktioner, funktionsmallar, schema och standardfält med sökrutan ![Sökikonen](assets/Smock_Search_18_N.svg) . <br/>Du kan filtrera den markerade objektlistan genom att välja ![Filterikon](assets/Smock_Filter_18_N.svg) och ange filter i dialogrutan [!UICONTROL Filter fields by] . Du kan enkelt ta bort filter med hjälp av ikonen ![Stäng](assets/CrossSize75.svg) för varje filter. |
+| 1 | **Väljare** | Du använder väljarområdet för att markera och dra och släppa funktionen, funktionsmallen, schemafältet eller standardfältet till regelbyggaren. <br/>Använd listrutan för att välja mellan: <br/>![Funktion](assets/Smock_Function_18_N.svg) [!UICONTROL Functions] - visar tillgängliga [funktioner](#function-reference), </br>![Funktionsmallikon](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Function templates] - visar tillgängliga [funktionsmallar](#function-templates), <br/>![Schemafältikon](assets/Smock_Folder_18_N.svg) [!UICONTROL Schema fields] - listar tillgängliga fält från datauppsättningskategorier (händelse, profil, sökning) och tidigare definierade fält och <br/>![Standardfältsikon &#x200B;](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Standard fields] - tillgängliga standardfält (t.ex. ID för plattformsdatauppsättning). Endast strängfält och numeriska standardfält visas i väljaren. Om funktionen stöder andra datatyper kan standardfält med dessa andra datatyper väljas för värden eller fält i regelgränssnittet.<br/>Du kan söka efter funktioner, funktionsmallar, schema och standardfält med sökrutan ![Sökikonen](assets/Smock_Search_18_N.svg) . <br/>Du kan filtrera den markerade objektlistan genom att välja ![Filterikon](assets/Smock_Filter_18_N.svg) och ange filter i dialogrutan [!UICONTROL Filter fields by] . Du kan enkelt ta bort filter med hjälp av ikonen ![Stäng](assets/CrossSize75.svg) för varje filter. |
 | 2 | **Regelverktyget** | Du skapar det härledda fältet sekventiellt med en eller flera regler. En regel är en specifik implementering av en funktion och är därför alltid kopplad till endast en funktion. Du skapar en regel genom att dra och släppa en funktion i regelbyggaren. Funktionstypen bestämmer regelns gränssnitt.<br/>Mer information finns i [Regelgränssnittet](#rule-interface). <br/>Du kan infoga en funktion i början, slutet eller mellan regler som redan är tillgängliga i regelbyggaren. Den sista regeln i regelbyggaren avgör det härledda fältets slutliga utdata. |
 | 3 | **[!UICONTROL **&#x200B; Fältinställningar &#x200B;**]** | Du kan namnge och beskriva det härledda fältet och kontrollera dess fälttyp. |
 | 4 | **[!UICONTROL **&#x200B; Slutliga utdata &#x200B;**]** | I det här området visas en direkt uppdaterad förhandsvisning av utdatavärden, baserat på data under de senaste 30 dagarna och de ändringar du gör i det härledda fältet i regelbyggaren. |
@@ -977,7 +977,7 @@ Du kan också använda det praktiska dynamiska datumintervallvärdet Now för at
 
 Du vill förstå söktiden i minuter innan en kund i en session gör en beställning.
 
-Du definierar ett nytt härlett `Time Between Search And Order In Minutes`-fält som är resultatet av två [[!UICONTROL CASE WHEN] funktioner ](#case-when) som definierar [!UICONTROL Search Time] - och [!UICONTROL Order Time]-värden.
+Du definierar ett nytt härlett `Time Between Search And Order In Minutes`-fält som är resultatet av två [[!UICONTROL CASE WHEN] funktioner &#x200B;](#case-when) som definierar [!UICONTROL Search Time] - och [!UICONTROL Order Time]-värden.
 Sedan använder du dessa två värden för att beräkna skillnaden med en [!UICONTROL DATE MATH]-funktion med [!UICONTROL Scope] inställd på [!UICONTROL Session], värden inställda på [!UICONTROL Search Time] och [!UICONTROL Order Time] och [!UICONTROL Output granularity] inställda på [!UICONTROL Minute]. För båda värdena väljer du [!UICONTROL Return the first] för att säkerställa att den första [!UICONTROL Search Time] och [!UICONTROL Order Time] returneras.
 
 ![Skärmbild av datummatematisk regel 3](assets/datemath-3.png)
@@ -1088,7 +1088,7 @@ Du definierar ett nytt härlett `Tracking Code (deduplicated)`-fält. Du använd
 >title="Djup"
 >abstract="Den här funktionen gör att du kan returnera djupet i vilket fält som helst, på samma sätt som standardkomponenten för händelsdjup."
 
-Returnerar djupet i ett fält, ungefär som är möjligt med [standarddjupdimensionen ](/help/components/dimensions/overview.md#standard-dimensions) som är färdig att användas.
+Returnerar djupet i ett fält, ungefär som är möjligt med [standarddjupdimensionen &#x200B;](/help/components/dimensions/overview.md#standard-dimensions) som är färdig att användas.
 
 +++ Information
 
@@ -1380,7 +1380,7 @@ Så här skapar du en formel:
 1. Om du vill infoga ett statiskt värde (till exempel `1.05`) skriver du värdet och väljer **[!UICONTROL Add *x *som ett statiskt värde]**&#x200B;eller **[!UICONTROL Add -*x* som ett negativt statiskt värde]** på snabbmenyn.
    ![Math More Info 2](assets/math-more-info-2.png)
 
-1. En grön bock ![bockmarkering](./assets/checkmark.svg)</span> anger om matematiska formler är giltiga, annars visas en varning ![och meddelandet ](./assets/alert.svg). [!UICONTROL Invalid formula expression]
+1. En grön bock ![bockmarkering](./assets/checkmark.svg)</span> anger om matematiska formler är giltiga, annars visas en varning ![och meddelandet &#x200B;](./assets/alert.svg). [!UICONTROL Invalid formula expression]
    ![Math More Info 3](assets/math-more-info-3.png)
 
 Det finns några viktiga saker att tänka på när du arbetar med statiska tal i funktionen [!UICONTROL MATH]:
@@ -1693,7 +1693,7 @@ Ni samlar in röstappssvar i en avgränsad lista i en enda dimension. Du vill at
 
 Du skapar ett `Responses` härlett fält. Du använder funktionen [!UICONTROL SPLIT] för att definiera en regel som använder metoden [!UICONTROL Convert to array] för att konvertera värdena från fältet [!UICONTROL Voice App Response] med `,` som [!UICONTROL Delimiter].
 
-![Skärmbild av den delade regeln ](assets/split-1.png)
+![Skärmbild av den delade regeln &#x200B;](assets/split-1.png)
 
 ### Data efter {#split-uc1-dataafter}
 
@@ -1864,7 +1864,7 @@ Du samlar in produktdata, men data innehåller dolda blankstegstecken som fragme
 
 Du skapar ett `Product Identifier` härlett fält. Du använder funktionen [!UICONTROL TRIM] för att definiera en regel för **[!UICONTROL Trim whitespace]** från fältet **[!UICONTROL Product ID]**.
 
-![Skärmbild av den delade regeln ](assets/trim-1.png)
+![Skärmbild av den delade regeln &#x200B;](assets/trim-1.png)
 
 ### Data efter {#trim-uc1-dataafter}
 
@@ -2037,7 +2037,7 @@ Du vill bara använda den refererande domänen från den refererande URL:en som 
 
 Du definierar ett `Referring Domain` härlett fält. Du använder funktionen [!UICONTROL URL PARSE] för att definiera en regel som hämtar värden från fältet [!UICONTROL Referring URL] och lagrar den i det nya härledda fältet.
 
-![Skärmbild av URL-tolkningsregeln ](assets/url-parse-1.png)
+![Skärmbild av URL-tolkningsregeln &#x200B;](assets/url-parse-1.png)
 
 ### Data efter {#urlparse-uc1-dataafter}
 
@@ -2069,7 +2069,7 @@ Du vill använda värdet för parametern `cid` i en frågesträng i [!DNL Page U
 
 Du definierar ett `Query String CID` härlett fält. Du använder funktionen [!UICONTROL URL PARSE] för att definiera en regel som hämtar värdet för frågesträngsparametern i fältet [!UICONTROL Page URL] och anger `cid` som frågeparameter. Utdatavärdet lagras i det nya härledda fältet.
 
-![Skärmbild av URL-tolkningsregeln ](assets/url-parse-2.png)
+![Skärmbild av URL-tolkningsregeln &#x200B;](assets/url-parse-2.png)
 
 ### Data efter {#urlparse-uc2-dataafter}
 

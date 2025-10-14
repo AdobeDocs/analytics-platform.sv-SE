@@ -154,7 +154,7 @@ Tänk på följande när du visar tabellen:
 
    * Använd sökfältet för att söka efter en viss anslutning. Börja skriva anslutningsnamnet eller ID:t och listan över anslutningar som uppdateras medan du skriver.
 
-   * Välj ikonen [!UICONTROL **Filter**] ![Filter ](assets/filter-icon.png) för att expandera listan med filteralternativ. Du kan filtrera efter [!UICONTROL **Status**], [!UICONTROL **Komplexitet**], [!UICONTROL **Program**], [!UICONTROL **Användare**] eller [!UICONTROL **Projekt**].
+   * Välj ikonen [!UICONTROL **Filter**] ![Filter &#x200B;](assets/filter-icon.png) för att expandera listan med filteralternativ. Du kan filtrera efter [!UICONTROL **Status**], [!UICONTROL **Komplexitet**], [!UICONTROL **Program**], [!UICONTROL **Användare**] eller [!UICONTROL **Projekt**].
 
    * Du kan välja [!UICONTROL **Dölj diagram**] om du bara vill visa tabellen.
 

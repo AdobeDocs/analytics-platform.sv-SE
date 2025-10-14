@@ -29,7 +29,7 @@ Stegen på hög nivå
 
 1. Du kan bara göra vissa mindre ändringar i en implementerad konfiguration med guiden [guidad konfiguration](guided.md). Ändra till exempel [datavyn](/help/data-views/data-views.md).
 1. Du kan göra andra ändringar i en implementerad konfiguration med [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview) i den associerade taggegenskapen.
-1. Endast när du [manuellt återpublicerar ](manual.md) taggegenskapen distribueras konfigurationsändringarna effektivt och datainsamling, baserat på dina ändringar, startas.
+1. Endast när du [manuellt återpublicerar &#x200B;](manual.md) taggegenskapen distribueras konfigurationsändringarna effektivt och datainsamling, baserat på dina ändringar, startas.
 
 
 ## Förutsättningar

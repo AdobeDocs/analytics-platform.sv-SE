@@ -38,7 +38,7 @@ Visualiseringen ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTR
 * Den tredje kolumnen bestämmer punktens radie.
 * Alla efterföljande kolumner i en friformstabell ignoreras av visualisering av punktdiagram.
 
-![Exempel på punktdiagram som visar flera dimensionsobjekt ](assets/scatter.png)
+![Exempel på punktdiagram som visar flera dimensionsobjekt &#x200B;](assets/scatter.png)
 
 
 >[!BEGINSHADEBOX]
@@ -52,5 +52,5 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av 
 >
 >[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >&#x200B;>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>&#x200B;>[Snabbmenyn Visualisering &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
