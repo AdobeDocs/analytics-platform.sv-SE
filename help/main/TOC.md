@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 04d3de450a9efc12637a3c4272bf3c43b0fbbe0a
+source-git-commit: a16043f1bb15deba1332ed39438214597647b9b4
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1306'
 ht-degree: 11%
 
 ---
@@ -202,12 +202,13 @@ ht-degree: 11%
       + Frihandsregister {#freeform-table}
          + [Översikt](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [Skapa hyperlänkar](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+         + [Visa trenddata](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
+         + [Filter och sortering](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+         + [Summor](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
          + Kolumn- och radinställningar {#column-row-settings}
             + [Kolumninställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Radinställningar](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Dynamiska och statiska objekt](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [Filter och sortering](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Summor](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Kohortabell {#cohort-table}
          + [Översikt](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurera](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
