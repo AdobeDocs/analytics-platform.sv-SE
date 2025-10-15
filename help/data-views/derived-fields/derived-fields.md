@@ -1580,10 +1580,10 @@ Du vill hämta ett alternativ för en URL och använda det som en unik sididenti
 
 | Sidans URL |
 |---|
-| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/se/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/se/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/se/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/se/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 

@@ -86,7 +86,7 @@ Så här skickar du en fil enligt ett schema till mottagarna via e-post:
 
 >[!NOTE]
 >
->Alternativet att lösenordsskydda ett schemalagt projekt visas bara för Customer Journey Analytics-kunder som har köpt tilläggsprodukten [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html) .
+>Alternativet att lösenordsskydda ett schemalagt projekt visas bara för Customer Journey Analytics-kunder som har köpt tilläggsprodukten [Healthcare Shield](https://business.adobe.com/se/solutions/industries/healthcare.html) .
 
 Adobe använder lösenordet för att kryptera schemalagda projekt, oavsett om de skickas i .pdf- eller .csv-format.
 
