@@ -56,7 +56,7 @@ I Experience Platform-gränssnittet:
 
 ### Skapa en profilaktiverad datauppsättning
 
-Du måste skapa en datauppsättning baserad på det kärnbaserade **[!UICONTROL XDM Individual Profile]**-schemat. Du kan inte välja den kärnbaserade enskilda XDM-profilen som schema när du skapar en datauppsättning i Experience Platform-gränssnittet. Använd i stället [katalogtjänstens API för att skapa en datauppsättning ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/create#create-a-dataset) baserat på `_xdm.context.profile__union`-schemat.
+Du måste skapa en datauppsättning baserad på det kärnbaserade **[!UICONTROL XDM Individual Profile]**-schemat. Du kan inte välja den kärnbaserade enskilda XDM-profilen som schema när du skapar en datauppsättning i Experience Platform-gränssnittet. Använd i stället [katalogtjänstens API för att skapa en datauppsättning &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/create#create-a-dataset) baserat på `_xdm.context.profile__union`-schemat.
 
 +++ Skapa datauppsättningsbegäran
 
@@ -170,7 +170,7 @@ Plats
 
 +++
 
-Använd [Segmenteringstjänstens API för att kontrollera exportjobbets status ](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#get).
+Använd [Segmenteringstjänstens API för att kontrollera exportjobbets status &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/export-jobs#get).
 
 +++ Hämta en specifik begäran om exportjobb
 
@@ -336,7 +336,7 @@ I Experience Platform-gränssnittet:
    1. (valfritt) Ange **[!UICONTROL Description]**.
    1. Välj **[!UICONTROL Finish]**.
 1. Konfigurera schemat så att det innehåller en anpassad fältgrupp (till exempel **[!UICONTROL Audience Membership]**) som innehåller två fält med namnen **[!UICONTROL audienceMembershipId]** och **[!UICONTROL audienceMembershipName]**.
-1. Kontrollera att fältet **[!UICONTROL personID]** är ett **[!UICONTROL Identity]**, **[!UICONTROL Primary Identity]** och har **[!UICONTROL Email]** som I**[!UICONTROL dentity namespace]**.
+1. Kontrollera att fältet **[!UICONTROL personID]** är ett **[!UICONTROL Identity]**, **[!UICONTROL Primary Identity]** och har **[!UICONTROL Email]** som I&#x200B;**[!UICONTROL dentity namespace]**.
 
    ![Segment för export](assets/segment-for-export.png)
 
