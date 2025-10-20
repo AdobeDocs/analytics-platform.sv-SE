@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: cd92bde10b9cb473c4df791e91296a2a43b2ad84
+source-git-commit: bb44ba8d36a2c21c789f0df6a84ea0432ca20029
 workflow-type: tm+mt
-source-wordcount: '2390'
+source-wordcount: '2388'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
 * **Behörigheter**: Nödvändiga behörigheter måste beviljas i [!UICONTROL Adobe Admin Console] innan användare kan komma åt Data Insights Agent.
 
-  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
+  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
    1. I **[!UICONTROL Admin Console]** väljer du fliken **[!UICONTROL Products]** för att visa sidan **[!UICONTROL All products and services]**.
    1. Välj **[!UICONTROL Customer Journey Analytics]**.
    1. På fliken **[!UICONTROL Product Profiles]** väljer du titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL AI Assistant: Product Knowledge].
@@ -62,7 +62,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
       ![Fliken Behörigheter i Admin Console](assets/ai-assistant-permissions-tab.png)
 
-   1. Markera redigeringsikonen **[!UICONTROL Reporting Tools]** Redigera![&#x200B; på raden &#x200B;](/help/assets/icons/Edit.svg) i den angivna tabellen.
+   1. Markera redigeringsikonen **[!UICONTROL Reporting Tools]** Redigera![ på raden ](/help/assets/icons/Edit.svg) i den angivna tabellen.
    1. Bläddra till eller sök efter **[!UICONTROL AI Assistant: Product Knowledge]** och välj sedan plusikonen ![AddCircle](/help/assets/icons/AddCircle.svg) bredvid den här behörigheten.
 
       Behörigheten **[!UICONTROL AI Assistant: Product Knowledge]** läggs till i kolumnen **[!UICONTROL Included permission items]**.
@@ -259,7 +259,7 @@ Nedan följer god praxis för din Customer Journey Analytics-konfiguration (data
 >[!MORELIKETHIS]
 >
 >[Komponentinställningar](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dataordlista &#x200B;](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Godkänn beräknat mått &#x200B;](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Dela segment &#x200B;](/help/components/segments/seg-share.md)
+>>[Dataordlista ](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Godkänn beräknat mått ](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Dela segment ](/help/components/segments/seg-share.md)
 >
