@@ -6,9 +6,9 @@ feature: Curate and Share
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 9e23382800326440ed2a583e80029c9f27bb2494
+source-git-commit: f6e64e850b8c416817b76697d869c10adb9b544b
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1123'
 ht-degree: 0%
 
 ---
@@ -17,21 +17,27 @@ ht-degree: 0%
 
 Användare med [nödvändig behörighet](#permission-requirements-to-generate-slides) kan automatiskt generera .pptx-presentationer från Analysis Workspace-projekt. När du skapar dessa bildpresentationer skapar Customer Journey Analytics automatiskt en berättelse utifrån era data genom att identifiera viktiga insikter och konvertera dem till bilder som är klara för intressenter.
 
-Denna funktionalitet minskar den tid och det arbete som krävs för att ta fram resultat från era Workspace-projekt, och gör att ni snabbt kan skapa chefsberättelser och förmedla affärsresultat till intressenter.
-
-Med den här automatiskt genererade databerättelsen kan analytiker fokusera på datautforskandet, medan Customer Journey Analytics strukturerar och formaterar analytikernas resultat för intressenternas konsumtion.
+Det här automatiskt genererade datamaterialet minskar tiden, arbetet och expertisen som krävs för att ta fram resultaten från ett Workspace-projekt. Analytikerna kan fokusera mer på att utforska data, samtidigt som Customer Journey Analytics kan bygga upp och formatera chefernas berättarröst och förmedla affärsresultatet till intressenter.
 
 ## Förstå dataartiklar i bildpresentationer
 
-Analysis Workspace använder generativ AI för att skapa databerättelser i bildpresentationer. Dessa datamaterial kompletterar en analys av ett visst Workspace-projekt genom att ge ytterligare kontext, lyfta fram viktiga högdagrar och ge idéer för nästa steg. identifiera dolda trender, avvikelser, bidragande faktorer, viktiga faktorer
+Analysis Workspace använder generativ AI för att skapa en berättelse som baseras på dina Workspace-data, i ett bildpresentationsformat.
+
+I följande avsnitt beskrivs det ytterligare värde som datarubrikerna tillhandahåller, de nödvändiga elementen i ett projekt som hjälper till att forma berättarrösten och de nyckelelement som ingår i varje presentationsutdata.
 
 ### Ytterligare värde från datarubriker
+
+Databerättelser ger värde och insikter till ett Workspace-projekt genom att göra data tillgängliga för användare som inte har någon erfarenhet av dataanalys.
 
 Data från olika källor kompletterar en analys av ett visst Workspace-projekt genom att
 
 * Tillhandahåller ytterligare kontext
 
 * Markera viktiga insikter
+
+* Tillhandahåller vägledning om huruvida data är bra eller felaktiga i ett givet sammanhang
+
+* Bedömning av huruvida vissa variabler är undervärderade eller övervärderade.
 
 * Påtala dolda trender, avvikelser och andra bidragande faktorer
 
@@ -155,7 +161,7 @@ Databerättelser består av en sammanfattande bild, detaljbilder och avsnittsavg
 
 Administratörer av produktprofiler vars organisationer har licens att generera bilder kan vid behov inaktivera åtkomsten.
 
-I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** åtkomsten till den här funktionen. En [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console] om de vill inaktivera åtkomst:
+I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** åtkomsten till den här funktionen. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console] om de vill inaktivera åtkomst:
 1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
 1. Välj titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL Data storytelling].
 1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.
