@@ -4,9 +4,9 @@ title: Översikt över realtidsrapportering
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '780'
 ht-degree: 2%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 2%
 # Översikt över rapportering i realtid
 
 Realtidsrapportering i Customer Journey Analytics visar och uppdaterar data och visualiseringar inom en eller flera paneler i Analysis Workspace i realtid.
-
-{{release-limited-testing}}
 
 {{ultimate-package}}
 
@@ -41,7 +39,7 @@ Du vill validera, till exempel:
 
 ## Så här fungerar det
 
-Realtidsrapportering använder en konsoliderad datamängd som är helt skild från den [konsoliderade (kombinerade) datamängden &#x200B;](/help/connections/combined-dataset.md) som används för standardrapportering. Du använder [Uppdatera i realtid-växeln](use-real-time.md) för att växla mellan:
+Realtidsrapportering använder en konsoliderad datamängd som är helt skild från den [konsoliderade (kombinerade) datamängden ](/help/connections/combined-dataset.md) som används för standardrapportering. Du använder [Uppdatera i realtid-växeln](use-real-time.md) för att växla mellan:
 
 * Realtidsrapportering för en konsoliderad datauppsättning som innehåller upp till 24 timmars rullande data.
 * Standardrapportering på den konsoliderade datauppsättningen som innehåller upp till 13 månaders rullande data (eller längre om du har licensierat tillägget för utökad datakapacitet).
@@ -59,6 +57,7 @@ Hur du samlar in data avgör fördröjningen för realtidsrapporter i Customer J
 | 3 | Adobe Analytics källanslutning | 17 minuter | 105 minuter |
 | 4 | Andra källkopplingar till källanslutningarna (inklusive batchdata) | 25 timmar | 25 timmar |
 
+Om ett avbrott i tjänsterna inträffar i mer än en halvtimme fylls inte data i i realtid med data när problemen är lösta. I stället hämtar realtidsrapporter in realtidsdata från det ögonblick tjänsterna börjar fungera igen. Inga data förloras under den här perioden och är fortfarande tillgängliga med standardrapporteringsfunktionerna utanför realtidsrapporteringen.
 
 ## Begränsningar
 

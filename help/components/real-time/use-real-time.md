@@ -4,7 +4,7 @@ title: Använd realtidsrapportering
 feature: Real-time Reporting
 role: User
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -18,8 +18,6 @@ ht-degree: 0%
 >title="Uppdatering i realtid"
 >abstract="Gör det möjligt att uppdatera data och visualiseringar i den här panelen i realtid."
 
-{{release-limited-testing}}
-
 Om du vill använda realtidsrapportering aktiverar du alternativet **[!UICONTROL Real-time refresh]** på någon av följande paneler i ditt Workspace-projekt:
 
 * [Tom panel](/help/analysis-workspace/c-panels/blank-panel.md)
@@ -27,7 +25,7 @@ Om du vill använda realtidsrapportering aktiverar du alternativet **[!UICONTROL
 * [Tillskrivning](/help/analysis-workspace/c-panels/attribution.md)
 * [Nästa eller föregående objekt](/help/analysis-workspace/c-panels/next-previous.md)
 
-Du ser ett meddelande med tidsstämpeln för den senaste uppdateringen av data. Till exempel: [!UICONTROL &#x200B; *Senast uppdaterad 07:55 pm*].
+Du ser ett meddelande med tidsstämpeln för den senaste uppdateringen av data. Till exempel: [!UICONTROL  *Senast uppdaterad 07:55 pm*].
 
 Välj den realtidsperiod som du vill rapportera om i listrutan. Tillgängliga alternativ är:
 
