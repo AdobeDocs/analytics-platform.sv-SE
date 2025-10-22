@@ -37,7 +37,7 @@ Tabellen nedan innehåller några viktiga funktioner som du kanske vill markera.
 
 | Funktion | Fördelar | Exempel |
 |---------|----------|---------|
-| **[Anordnande för alla typer av data](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)** | Customer Journey Analytics kombineras med Experience Platform förmåga att lagra alla typer av datarotor och datatyper. | En detaljhandelsorganisation skulle kunna ge hela kundresan synlighet genom att integrera följande typer av data i en enda vy: <ul><li>Webbklickströmstransaktioner</li><li>Mobilappstransaktioner</li><li>Butikstransaktioner</li><li>CRM- och lojalitetsdata</li></ul> |
+| **[Anordnande för alla typer av data](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/home)** | Customer Journey Analytics kombineras med Experience Platform förmåga att lagra alla typer av datarotor och datatyper. | En detaljhandelsorganisation skulle kunna ge hela kundresan synlighet genom att integrera följande typer av data i en enda vy: <ul><li>Webbklickströmstransaktioner</li><li>Mobilappstransaktioner</li><li>Butikstransaktioner</li><li>CRM- och lojalitetsdata</li></ul> |
 | **[Flerkanalsanalys](/help/use-cases/cross-channel/cross-channel.md)** | Ger en samlad bild av kundbeteendet i olika kanaler genom att sammanföra data från olika webb-, mobil- och offlineegenskaper. | En detaljhandelsorganisation som samlar in data från flera kanaler kan utföra följande typ av analys:<p>En kund klickar på en betald sökannons, bläddrar bland jeans online, får ett push-meddelande och köper sedan i butiken två dagar senare. Det enhetliga perspektivet möjliggör korrekt flerkanalsattribuering och visar hur digitala kontaktytor bidrar till försäljningen i butiken. Det har också stöd för mer exakt segmentering, till exempel för kunder som surfar online, köpt i butiken med skräddarsydda erbjudanden. Dessutom ger det en tydlig intäktsrapportering i alla kanaler i en enda instrumentpanel, vilket ersätter fragmenterade, isolerade insikter med en helhetsbild av kundbeteendet. |
 | **[Rapporttidsbearbetning](/help/getting-started/aa-to-cja.md#get-comfortable-with-report-time-processing)** | Använd inställningar som är retroaktiva och skapa flera versioner av variabel beständighet utan att behöva ändra hur underliggande data samlas in. | Eftersom Customer Journey Analytics gör det möjligt att skapa och justera mätvärden, dimensioner och attribueringsmodeller direkt utan att inhämta eller bearbeta data, kan en detaljhandelsorganisation se hur en nyligen genomförd social kampanj påverkade både online- och butiksförsäljningen utan att behöva be konstruktionsavdelningen att bygga om datauppsättningar. De kan direkt ändra attribueringsmodellen från sista beröringen till första beröringen eller anpassa regelbaserad attribuering. |
 | **[Content Analytics](/help/content-analytics/content-analytics.md)** | Hjälper marknadsförarna att förstå hur innehåll påverkar de nyckeltal som ett företag har definierat. Förutom beteendedata samlar Content Analytics in data om hur innehåll konsumeras och hur innehåll påverkar. | Genom att integrera webb-, app-, e-post- och till och med butiksdata kan en detaljhandelsorganisation se exakt hur varje del av det digitala innehåll de skapar bidrar till kundresan och konverteringen. <p>Detaljhandelsorganisationen kan se att en&quot;Sommardenimguide&quot; på en populär plattform för sociala medier skapar ett starkt engagemang bland lojalitetsmedlemmar och att dessa medlemmar är 40 % mer benägna att köpa denim i butik inom en vecka.</p> |
@@ -110,11 +110,11 @@ Utför en grundlig utvärdering och granskning av er Adobe Analytics-implementer
 
 Läs följande resurser om du vill få hjälp med att samla in den här informationen:
 
-* [Analyslager](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/analytics-inventory)
+* [Analyslager](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-tools/analytics-inventory)
 
   Ger information om antalet projekt, segment, beräknade värden, rapportsviter och användare i organisationen.
 
-* [Förbered migrering av komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration)
+* [Förbered migrering av komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration)
 
   Innehåller information om hur du kan förbereda för att migrera komponenter, projekt och användare.
 
@@ -138,11 +138,11 @@ Identifiera Champions i hela er organisation. Dessa kampioner bör vara:
 
   Följande resurser kan hjälpa dig att komma igång:
 
-   * [Customer Journey Analytics självstudiekurser](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview)
+   * [Customer Journey Analytics självstudiekurser](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/overview)
 
-   * [Vad är Customer Journey Analytics?](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+   * [Vad är Customer Journey Analytics?](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
-   * [Introduktion till Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
+   * [Introduktion till Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 
    * [Funktioner i Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md)
 

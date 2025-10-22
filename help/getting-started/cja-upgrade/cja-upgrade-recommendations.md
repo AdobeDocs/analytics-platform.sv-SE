@@ -99,7 +99,7 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
    +++Manuell implementering (JS-fil)
 
-   1. [Lägg till alloy.js på din plats](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version%22){target="_blank"}.
+   1. [Lägg till alloy.js på din plats](https://experienceleague.adobe.com/sv/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-2-installing-the-prebuilt-standalone-version%22){target="_blank"}.
 
    1. Fyll i ett XDM-objekt och skicka det till datastream.
 
@@ -135,9 +135,9 @@ Varje steg innehåller en detaljerad beskrivning av processen på hög nivå. F�
 
 1. [Verifiera att data flödar in i datavyn i Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-validate.md){target="_blank"}.
 
-1. I din Adobe Analytics-miljö [använder du Analytics Inventory](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/analytics-inventory){target="_blank"} för att se en omfattande översikt över din Adobe Analytics-miljö, inklusive antalet projekt och komponenter, rapportsviter, användare och mycket mer.
+1. I din Adobe Analytics-miljö [använder du Analytics Inventory](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-tools/analytics-inventory){target="_blank"} för att se en omfattande översikt över din Adobe Analytics-miljö, inklusive antalet projekt och komponenter, rapportsviter, användare och mycket mer.
 
-1. [Migrera projekt och komponenter](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration){target="_blank"}.
+1. [Migrera projekt och komponenter](https://experienceleague.adobe.com/sv/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration){target="_blank"}.
 
    <!-- You might not want to do this, based on the schema? Ask Zach. Will it work if you have all new schema fields? What would you want to just build from scratch. Maybe everything? -->
 
