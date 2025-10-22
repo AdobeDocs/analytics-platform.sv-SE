@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: c32c57a1a62edc5b1c78ffe2b6782d575c98cfdd
+source-git-commit: 9c584bb7c66e9e6b2ef2fc49802fb6839db1d70a
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1310'
 ht-degree: 11%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 11%
       + [Skicka data till plattformen](/help/getting-started/cja-upgrade/cja-upgrade-send-to-platform.md)
       + [Behåll historiska data](/help/getting-started/cja-upgrade/cja-upgrade-historical-data.md)
       + [Rekommenderad uppgraderingsprocess](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md)
+      + [Förbered din organisation](/help/getting-started/cja-upgrade/cja-upgrade-org-readiness.md)
       + Arkitekt och skapa ett schema {#schema}
          + [Arkitektur av ditt schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md)
          + [Skapa ditt schema](/help/getting-started/cja-upgrade/cja-upgrade-schema-create.md)
