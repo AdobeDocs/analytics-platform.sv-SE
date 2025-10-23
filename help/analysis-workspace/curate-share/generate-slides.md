@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Generera presentationer från Workspace-rapporter
 feature: Curate and Share
 role: User
-source-git-commit: 3807ad0beac3656c1f3bd886611fbe4470a6e7c5
+source-git-commit: 99adae279a21c827579ebc3b58b336a9f0e3e8a4
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 0%
@@ -12,6 +12,10 @@ ht-degree: 0%
 ---
 
 # Data storytelling: Generera bildpresentationer från Workspace-rapporter {#generate-powerpoint}
+
+{{release-limited-testing}}
+
+<!-- also remove lmited testing note from: /help/technotes/access-control.md -->
 
 Användare med [nödvändig behörighet](#permission-requirements-to-generate-slides) kan automatiskt generera .pptx-presentationer baserat på Analysis Workspace-projekt. När du skapar dessa bildpresentationer skapar Customer Journey Analytics automatiskt en berättelse utifrån era data genom att identifiera viktiga insikter och konvertera dem till bilder som är klara för intressenter.
 
@@ -178,7 +182,7 @@ Möjligheten att generera bilder är aktiverad som standard för alla användare
 
 Administratörer av produktprofiler vars organisationer har licens att generera bilder kan vid behov inaktivera åtkomsten.
 
-I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** åtkomsten till den här funktionen. En [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console] om de vill inaktivera åtkomst:
+I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** åtkomsten till den här funktionen. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console] om de vill inaktivera åtkomst:
 1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
 1. Välj titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL Data storytelling].
 1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.
