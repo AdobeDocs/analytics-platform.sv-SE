@@ -2,9 +2,9 @@
 title: Översikt över produktanvändning
 description: Få insikter och rapporter om hur er organisation använder Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: a4615907f61b4d63393a9481fdd7b45b7b9b6262
+source-git-commit: 5b5d4cb17ee73415dbd77bbf0964fc3d4e513cf0
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,7 @@ När du aktiverar produktanvändning är följande dimensioner tillgängliga. Om
    * [!UICONTROL Send file on schedule]
    * [!UICONTROL Share project with anyone]
    * [!UICONTROL Share project with Workspace users]
+   * [!UICONTROL Switch data view]
 * **[!UICONTROL Attribution Model Used]**: Den typ av attribueringsmodell som komponenten använder. Dimension innehåller följande:
    * [!UICONTROL Last touch]
    * [!UICONTROL First touch]
@@ -69,7 +70,8 @@ När du aktiverar produktanvändning är följande dimensioner tillgängliga. Om
    * [!UICONTROL Time decay]
    * [!UICONTROL Custom]
    * [!UICONTROL Algorithmic]
-* **[!UICONTROL Component Name]**: Namnet på komponenten som lades till, togs bort eller ändrades.
+* **[!UICONTROL Component ID]**: ID:t för komponenten som lades till, togs bort eller ändrades.
+* **[!UICONTROL Component Name]**: Det egna namnet på komponenten som lades till, togs bort eller ändrades.
 * **[!UICONTROL Component Type]**: Den typ av komponent som lades till, togs bort eller ändrades. Dimension innehåller följande:
    * [!UICONTROL Dimension]
    * [!UICONTROL Metric]
@@ -78,8 +80,10 @@ När du aktiverar produktanvändning är följande dimensioner tillgängliga. Om
    * [!UICONTROL Date range]
    * [!UICONTROL Annotation]
    * [!UICONTROL Alert]
+* **[!UICONTROL Data View ID]**: Datavyns ID.
+* **[!UICONTROL Data View Name]**: Datavy egna namn.
 * **[!UICONTROL Login User]**: Användaren som utförde åtgärden.
-* **[!UICONTROL Panel Used]**: Panelen där komponenten lades till, togs bort eller ändrades. Dimension innehåller följande:
+* **[!UICONTROL Panel Used]**: Panelen som lades till, togs bort eller ändrades. Dimension innehåller följande:
    * [!UICONTROL Attribution]
    * [!UICONTROL Blank panel]
    * [!UICONTROL Experimentation]
@@ -93,6 +97,7 @@ När du aktiverar produktanvändning är följande dimensioner tillgängliga. Om
    * [!UICONTROL User stream]
    * [!UICONTROL Retention]
    * [!UICONTROL Feature matrix]
+* **[!UICONTROL Project ID]**: ID för projektet.
 * **[!UICONTROL Project Name]**: Projektets egna namn.
 * **[!UICONTROL Project Type]**: Projekttypen. Dimension innehåller följande:
    * `workspace-projects`
