@@ -18,10 +18,10 @@ För att stödja personbaserade sökningar på B2B-data (inklusive konton, affä
 
 Den här omvandlingen är bara tillgänglig för datauppsättningar med data för B2B-sökningsscheman, baserat på följande klasser:
 
-* [XDM Business Account Person Relation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [XDM-affärsmöjlighet, personrelation](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [XDM Business Marketing List-medlemmar](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [XDM Business Campaign-medlemmar](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [XDM Business Account Person Relation](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [XDM-affärsmöjlighet, personrelation](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [XDM Business Marketing List-medlemmar](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [XDM Business Campaign-medlemmar](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
