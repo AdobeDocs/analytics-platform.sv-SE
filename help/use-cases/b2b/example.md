@@ -5,24 +5,24 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: 1bfebb53fbe056ed6320380178c8b1ce8f7079f1
+source-git-commit: d1097ca5f981623283a7d02200d5023548046429
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1357'
 ht-degree: 0%
 
 ---
 
 # Ett exempel på ett personbaserat B2B-projekt
 
-I den här artikeln visas ett exempel på hur du vill rapportera persondata i Customer Journey Analytics korrekt i samband med en vanlig personbaserad B2B-konfiguration. En sådan konfiguration underlättas av [Real-Time CDP B2B edition](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  I användningsexemplet förklaras hur du konfigurerar, konfigurerar och rapporterar profilbaserade B2B-data i Customer Journey Analytics.
+I den här artikeln visas ett exempel på hur du vill rapportera persondata i Customer Journey Analytics korrekt i samband med en vanlig personbaserad B2B-konfiguration. En sådan konfiguration underlättas av [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  I användningsexemplet förklaras hur du konfigurerar, konfigurerar och rapporterar profilbaserade B2B-data i Customer Journey Analytics.
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Ett separat avsnitt för kontobaserade användningsfall för rapportering publiceras med utgåvan av [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md).
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Ett separat avsnitt för kontobaserade användningsfall för rapportering publiceras med utgåvan av [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md).
 
 ## Anslutning
 
 Definiera anslutningen så att den inkluderar alla relevanta B2B-datauppsättningar från Experience Platform. Datauppsättningar som du kan överväga att lägga till i anslutningen:
 
-| Datauppsättning | Schema | Schematyp | Basklass | Beskrivning |
+| Datauppsättning (valfritt) | Schema | Schematyp | Basklass | Beskrivning |
 |---|---|---|---|---|
 | B2B-aktivitetsdatauppsättning | B2B-aktivitetsschema | Händelse | XDM ExperienceEvent | En ExperienceEvent är ett faktaregister över vad som inträffat, inklusive tidpunkten och identiteten för den berörda personen. ExperienceEvents kan antingen vara explicita (direkt observerbara mänskliga åtgärder) eller implicita (upphöjda utan en direkt mänsklig åtgärd) och registreras utan aggregering eller tolkning. Experience-händelser är viktiga för tidsdomänanalys eftersom de gör det möjligt att observera och analysera ändringar som inträffar under ett visst tidsfönster och att jämföra flera tidsfönster för att spåra trender. |
 | Persondatauppsättning för B2B | Personschema för B2B | Profil | Individuell XDM-profil | En enskild XDM-profil utgör en unik representation av både identifierade och delvis identifierade individers attribut och intressen. Mindre identifierade profiler får endast innehålla anonyma beteendesignaler, t.ex. cookies, medan högidentifierade profiler kan innehålla detaljerad personlig information som namn, födelsedatum, plats och e-postadress. När en profil växer blir den ett robust arkiv med personuppgifter, identifieringsinformation, kontaktuppgifter och kommunikationsinställningar för en individ. |
@@ -43,7 +43,7 @@ Definiera anslutningen så att den inkluderar alla relevanta B2B-datauppsättnin
 -->
 
 
-Relationen mellan B2B-sökscheman, profilschemat och händelseschemat definieras i B2B-konfigurationen i Experience Platform. Se Scheman i [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/schemas/b2b) och [Definiera en många-till-ett-relation mellan två scheman i Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/tutorials/relationship-b2b).
+Relationen mellan B2B-sökscheman, profilschemat och händelseschemat definieras i B2B-konfigurationen i Experience Platform. Se Scheman i [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) och [Definiera en många-till-ett-relation mellan två scheman i Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 Om du vill se till att en anslutning som stöder personbaserade sökningar av dina B2B-data är korrekt konfigurerad använder du följande bild för en översikt och följer dessa steg:
@@ -56,20 +56,26 @@ Om du vill se till att en anslutning som stöder personbaserade sökningar av di
 
    ![Nyckel - Matchande nyckel](assets/key-matchingkey.png)
 
-   Tabellen nedan innehåller en exempelöversikt över värdena [!UICONTROL Person ID], [!UICONTROL Key] och [!UICONTROL Matching key] för var och en av datauppsättningarna.
+   Tabellen nedan innehåller en exempelöversikt över exempelvärdena [!UICONTROL Person ID], [!UICONTROL Key] och [!UICONTROL Matching key] för var och en av datauppsättningarna.
 
-   | Datauppsättning | Person-ID | Nyckel | Matchande nyckel <br/> (i händelsedatamängd) |
+   >[!IMPORTANT]
+   >
+   >Värdena för **person-ID**, **nyckel** och **matchande nyckel** i tabellen nedan är **exempelvärden** och kan vara olika i din specifika miljö.
+   >
+
+
+   | Datauppsättning (valfritt) | Person-ID | Nyckel <br/> | Matchande nyckel <br/> (i händelsedatamängd)<br/> |
    |---|---|---|---| 
    | B2B-aktivitetsdatauppsättning | SourceKey <br/>**personKey.sourceKey** | | |
    | Persondatauppsättning för B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | B2B-kontodatauppsättning | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br>(B2B-persondatauppsättning)<br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
-   | Datamängd för B2B-säljprojekt | | Source Key <br/>**OpportunityKey.sourceKey**&#x200B;❷ | SourceKey<br/>(B2B-säljprojektsrelationsdatauppsättning)<br/>**OpportunityKey.sourceKey**&#x200B;❷ |
-   | Kampanjdata för B2B | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>(B2B Campaign Member-datauppsättning)<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
-   | Datamängd för B2B-marknadsföringslista | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>(B2B Marketing List Member Dataset)<br/>**marketingListKey.sourceKey**&#x200B;❹ |
-   | Relationsdatauppsättning för B2B-kontoperson | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#x200B;❺ |
-   | Datamängd för relationsdata för B2B-säljprojekt | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#x200B;❻ |
-   | Datamängd för B2B-kampanjmedlem | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#x200B;❼ |
-   | Medlemsdatauppsättning för B2B-marknadsföringslista | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#x200B;❽ |
+   | B2B-kontodatauppsättning | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(B2B-persondatauppsättning)<br/>**b2b.accountKey.sourceKey**❶ |
+   | Datamängd för B2B-säljprojekt | | Source Key <br/>**OpportunityKey.sourceKey**❷ | SourceKey<br/>(B2B-säljprojektsrelationsdatauppsättning)<br/>**OpportunityKey.sourceKey**❷ |
+   | Kampanjdata för B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(B2B Campaign Member-datauppsättning)<br/>**campaignKey.sourceKey**❸<br/> |
+   | Datamängd för B2B-marknadsföringslista | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(B2B Marketing List Member Dataset)<br/>**marketingListKey.sourceKey**❹ |
+   | Relationsdatauppsättning för B2B-kontoperson | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❺ |
+   | Datamängd för relationsdata för B2B-säljprojekt | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❻ |
+   | Datamängd för B2B-kampanjmedlem | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❼ |
+   | Medlemsdatauppsättning för B2B-marknadsföringslista | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❽ |
 
 {style="table-layout:auto"}
 
@@ -82,7 +88,12 @@ För att få tillgång till relevanta B2B-dimensioner och mätvärden när du sk
 
 Du kan till exempel lägga till följande komponenter i datavyn för att säkerställa att du kan rapportera personbaserade nivåer på dina B2B-data. Komponentnamnen ändras ibland så att de blir tydligare jämfört med de ursprungliga schemanamnen.
 
-+++Metrisk
++++Mätvärden 
+
+>[!IMPORTANT]
+>
+>Måtten och deras värden (**Komponentnamn**, **Datauppsättning**, **Datauppsättningstyp** och **[!UICONTROL Schema path])** i tabellen nedan är **exempel**. Definiera relevanta B2B-mått (komponentnamn, datauppsättning, datatyp och schemasökväg) för din specifika situation.
+>
 
 | Komponentnamn | Datauppsättning | Datatyp | Schemasökväg |
 |---|---|---|---|
@@ -96,7 +107,12 @@ Du kan till exempel lägga till följande komponenter i datavyn för att säkers
 
 +++
 
-+++Dimensioner
++++Mått
+
+>[!IMPORTANT]
+>
+>Dimensionerna och deras värden (**Komponentnamn**, **Datauppsättning**, **Datauppsättningstyp** och **[!UICONTROL Schema path])** i tabellen nedan är **exempel**. Definiera relevanta B2B-dimensioner (komponentnamn, datauppsättning, datatyp och schemasökväg) för din specifika situation.
+>
 
 | Komponentnamn | Datauppsättning | Datatyp | Schemasökväg |
 |---|---|---|---|
