@@ -68,14 +68,14 @@ Om du vill se till att en anslutning som stöder personbaserade sökningar av di
    |---|---|---|---| 
    | B2B-aktivitetsdatauppsättning | SourceKey <br/>**personKey.sourceKey** | | |
    | Persondatauppsättning för B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | B2B-kontodatauppsättning | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(B2B-persondatauppsättning)<br/>**b2b.accountKey.sourceKey**❶ |
-   | Datamängd för B2B-säljprojekt | | Source Key <br/>**OpportunityKey.sourceKey**❷ | SourceKey<br/>(B2B-säljprojektsrelationsdatauppsättning)<br/>**OpportunityKey.sourceKey**❷ |
-   | Kampanjdata för B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(B2B Campaign Member-datauppsättning)<br/>**campaignKey.sourceKey**❸<br/> |
-   | Datamängd för B2B-marknadsföringslista | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(B2B Marketing List Member Dataset)<br/>**marketingListKey.sourceKey**❹ |
-   | Relationsdatauppsättning för B2B-kontoperson | | SourceKey <br/>**personKey.sourceKey**❺ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❺ |
-   | Datamängd för relationsdata för B2B-säljprojekt | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❻ |
-   | Datamängd för B2B-kampanjmedlem | | SourceKey <br/>**personKey.sourceKey**❼ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❼ |
-   | Medlemsdatauppsättning för B2B-marknadsföringslista | | SourceKey <br/>**personKey.sourceKey**❽ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**❽ |
+   | B2B-kontodatauppsättning | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br>(B2B-persondatauppsättning)<br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
+   | Datamängd för B2B-säljprojekt | | Source Key <br/>**OpportunityKey.sourceKey**&#x200B;❷ | SourceKey<br/>(B2B-säljprojektsrelationsdatauppsättning)<br/>**OpportunityKey.sourceKey**&#x200B;❷ |
+   | Kampanjdata för B2B | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>(B2B Campaign Member-datauppsättning)<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
+   | Datamängd för B2B-marknadsföringslista | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>(B2B Marketing List Member Dataset)<br/>**marketingListKey.sourceKey**&#x200B;❹ |
+   | Relationsdatauppsättning för B2B-kontoperson | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#x200B;❺ |
+   | Datamängd för relationsdata för B2B-säljprojekt | | SourceKey <br/>**personKey.sourceKe** y❻ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#x200B;❻ |
+   | Datamängd för B2B-kampanjmedlem | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#x200B;❼ |
+   | Medlemsdatauppsättning för B2B-marknadsföringslista | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Source Key<br/>(Event datasets)<br/>**personKey.sourceKey**&#x200B;❽ |
 
 {style="table-layout:auto"}
 
