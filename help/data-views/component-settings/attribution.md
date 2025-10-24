@@ -5,9 +5,9 @@ exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
+source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,6 @@ ht-degree: 0%
 
 
 Attribution låter dig anpassa hur dimensionsposter får kredit för lyckade händelser.
-
-![Fönstret Datavyer där attributalternativet Ange markeras &#x200B;](../assets/attribution-settings.png)
 
 Exempel:
 
@@ -57,7 +55,7 @@ Så här uppdaterar du en komponents standardattribueringsmodell:
 
 1. Markera komponenten och expandera sedan avsnittet **[!UICONTROL Attribution]** till höger på skärmen.
 
-   ![Fönstret Datavyer där attributalternativet Ange markeras &#x200B;](../assets/attribution-settings.png)
+   ![Fönstret Datavyer där attributalternativet Ange markeras ](../assets/attribution-settings.png)
 
 1. Välj [!UICONTROL **Ange attribuering**] och välj sedan fönstret [attribueringsmodell](#attribution-models), [container](#container) och [lookback](#lookback-window).
 

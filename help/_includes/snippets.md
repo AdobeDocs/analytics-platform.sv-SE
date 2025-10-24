@@ -1,7 +1,7 @@
 ---
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
 workflow-type: tm+mt
-source-wordcount: '4824'
+source-wordcount: '4862'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ I den här videon demonstreras funktionaliteten med Adobe Analytics. Funktionen 
 
 | Taggar | Beskrivning |
 |---|---|
-| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter &#x200B;](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
+| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter ](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
 
 
 ## Filteravsnitt för datavy {#dataviewfiltersection}
@@ -128,7 +128,7 @@ En attribueringsmodell avgör vilka dimensionsobjekt som får kredit för ett m�
 
 En attribueringsbehållare definierar det önskade omfånget för attribueringen. Möjliga alternativ är:
 
-* **Session**: Går tillbaka till början av sessionen där en konvertering inträffade. Sessionssökningsfönster respekterar den ändrade [Sessionstimeout](/help/data-views/create-dataview.md#session-settings) i en datavy.
+* **Session**: Går tillbaka till början av sessionen där en konvertering inträffade. Sessionssökningsfönster respekterar den ändrade [Sessionstimeout](/help/data-views/create-dataview.md#session-settings) i en datavy. När **[!UICONTROL Session]** har valts ställs fönstret [Attribution Lookback ](#atribution-lookback-window) automatiskt in på **[!UICONTROL Reporting window]** och kan inte ändras.
 * **Person**: Kontrollerar konverteringar från omfånget för personbehållaren.
 * **Global Account** [!BADGE B2B edition]{type=Informative}: Söker efter konverteringar från omfånget för den globala kontobehållaren.
 * **Konton** [!BADGE B2B edition]{type=Informative}: Söker efter konverteringar från omfånget för personbehållaren.
@@ -139,6 +139,7 @@ En attribueringsbehållare definierar det önskade omfånget för attribueringen
 
 Ett attribueringssökningsfönster är den tid som en konvertering ska leta tillbaka för att inkludera beröringspunkter. Om ett dimensionsobjekt anges utanför uppslagsfönstret inkluderas inte värdet i någon attribueringsberäkning.
 
+* **[!UICONTROL Reporting window]**: Återställer till början av rapportfönstret från när konverteringen inträffade.
 * **14 dagar**: Kan synkroniseras upp till 14 dagar från när konverteringen gjordes.
 * **30 dagar**: Kan synkroniseras upp till 30 dagar från när konverteringen gjordes.
 * **60 dagar**: Kan synkroniseras upp till 60 dagar från när konverteringen gjordes.
@@ -154,20 +155,20 @@ Titta på följande exempel:
 1. Den 18 september kommer personen till er webbplats igen via en länk för sociala medier som de fått från en vän. De lägger till flera artiklar i kundvagnen, men köper ingenting.
 1. Den 24 september skickar marknadsföringsteamet ett e-postmeddelande med en kupong för några av artiklarna i kundvagnen. De använder kupongen, men besöker flera andra sajter för att se om det finns några andra kuponger. De hittar en till genom en displayannons och gör sedan ett köp för 50 dollar.
 
-Beroende på din attribueringsmodell får behållare och kanaler olika krediter. Se tabellen nedan för exempel:
+Beroende på vilket rapporteringsfönster du har (till exempel 10 september till 24 september) får attribueringsmodellen, behållaren och kanalerna olika krediter. Se tabellen nedan för exempel:
 
 | Modell | Behållare | Fönstret Lookback | Förklaring |
 |---|---|---|---|
-| Första beröringen | Session | 30 dagar | Attribution tittar bara på det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD. |
+| Första beröringen | Session | Rapportfönster | Attribution tittar bara på det tredje besöket. Mellan e-post och visning var e-post först, så e-post får 100 % rabatt på 50 USD. |
 | Första beröringen | Person | 30 dagar | Attribution tittar på alla tre besök. Betalsökning var först, så den får 100 % rabatt på 50 USD. |
-| Linjär | Session | 30 dagar | Krediten delas mellan e-post och disposition. Båda dessa kanaler får 25 krediter. |
+| Linjär | Session | Rapportfönster | Krediten delas mellan e-post och disposition. Båda dessa kanaler får 25 krediter. |
 | Linjär | Person | 30 dagar | Krediten delas mellan betalsökningar, sociala medier, e-post och displayannonser. Varje kanal får 12,50 dollar i rabatt för detta inköp. |
 | J-formad | Person | 30 dagar | Krediten delas mellan betalsökningar, sociala medier, e-post och displayannonser.<ul><li>60 % kredit ges för 30 dollar.</li><li>20 % kredit ges till betald sökning för 10 dollar.</li><li>De återstående 20 % är uppdelade i sociala medier och e-post, vilket ger 5 USD till var och en.</li></ul> |
 | Tidsminskning | Person | 30 dagar | <ul><li>Mellanrum på noll dagar mellan visning och konvertering. `2^(-0/7) = 1`</li><li>Mellanrum på noll dagar mellan e-postens kontaktpunkt och konvertering. `2^(-0/7) = 1`</li><li>Ett mellanrum på sex dagar mellan social kontaktyta och konvertering. `2^(-6/7) = 0.552`</li><li>Mellanrum på nio dagar mellan betald sökningspunkt och konvertering. `2^(-9/7) = 0.41`</li>Normalisering av dessa värden ger följande resultat:<ul><li>Bildskärm: 33,8 %, får 16,88 USD</li><li>E-post: 33,8 % får 16,88 USD</li><li>Socialt: 18,6 %, får 9,32 USD</li><li>Betalsökning: 13,8 %, får 6,92 USD</li></ul></li></ul> |
 
 Konverteringshändelser som vanligtvis har ett heltal delas om kredit tillhör fler än en kanal. Om till exempel två kanaler bidrar till en order med en linjär attribueringsmodell får båda kanalerna 0,5 av den ordningen. Dessa partiella mätvärden summeras för alla personer och avrundas sedan till närmaste heltal för rapportering.
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Använd specifika B2B-behållare, som konton, eller säljprojekt, och mer lämpliga bakåtsökningsfönster (upp till 13 månader) för att tillämpa ovanstående attribueringsmodeller i vanliga B2B-scenarier.
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Använd specifika B2B-behållare, som konton, eller säljprojekt, och mer lämpliga bakåtsökningsfönster (upp till 13 månader) för att tillämpa ovanstående attribueringsmodeller i vanliga B2B-scenarier.
 
 ## Jämförelser av resevisualisering {#journey-visualization-comparisons}
 
@@ -275,11 +276,11 @@ Använd följande information för att välja den visualisering som bäst passar
 
 | Komponentnamn | Anteckningar |
 | --- | --- |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Accounts] | Baserat på det konto-ID som anges i en [!UICONTROL Connection]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Buying Group] | Köpgrupperna, baserat på det inköpsgrupp-ID som anges i [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Accounts] | Baserat på det konto-ID som anges i en [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Buying Group] | Köpgrupperna, baserat på det inköpsgrupp-ID som anges i [!UICONTROL Connection]. |
 | [!UICONTROL Events] | Antalet rader från alla händelsedatamängder i en [!UICONTROL Connection]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Global Accounts] | Baserat på det globala konto-ID som anges i [!UICONTROL Connection]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Opportunities] | Affärsmöjligheterna, baserat på det säljprojekt-ID som anges i [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Global Accounts] | Baserat på det globala konto-ID som anges i [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Opportunities] | Affärsmöjligheterna, baserat på det säljprojekt-ID som anges i [!UICONTROL Connection]. |
 | [!UICONTROL People] | Baserat på det person-ID som anges i en [!UICONTROL Connection]. |
 | [!UICONTROL Session Ends] | Antalet händelser som var den sista händelsen i en session. På liknande sätt som [!UICONTROL Session Starts] kan den även användas i en segmentdefinition för att segmentera saker ned till den sista händelsen i varje session.<p>Den här komponenten måste inkluderas i datavyn för att följande [beräknade mått](/help/components/calc-metrics/default-calcmetrics.md) ska vara tillgängliga i Workspace: <ul><li>Sessionens sluthastighet</li></p> |
 | [!UICONTROL Session Starts] | Antalet händelser som var den första händelsen i en session. När den används i en segmentdefinition (t.ex. [!UICONTROL Session Starts] finns) segmenteras den bara till den första händelsen i varje session.<p>Den här komponenten måste inkluderas i datavyn för att följande [beräknade mått](/help/components/calc-metrics/default-calcmetrics.md) ska vara tillgängliga i Workspace: <ul><li>Starthastighet för session</li></p> |
