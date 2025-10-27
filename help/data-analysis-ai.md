@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: bb44ba8d36a2c21c789f0df6a84ea0432ca20029
+source-git-commit: e4b7f1da451a7ec9171fbb623e0e79e916827fd8
 workflow-type: tm+mt
-source-wordcount: '2388'
+source-wordcount: '2411'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
 * **Behörigheter**: Nödvändiga behörigheter måste beviljas i [!UICONTROL Adobe Admin Console] innan användare kan komma åt Data Insights Agent.
 
-  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
+  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
    1. I **[!UICONTROL Admin Console]** väljer du fliken **[!UICONTROL Products]** för att visa sidan **[!UICONTROL All products and services]**.
    1. Välj **[!UICONTROL Customer Journey Analytics]**.
    1. På fliken **[!UICONTROL Product Profiles]** väljer du titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL AI Assistant: Product Knowledge].
@@ -62,36 +62,41 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
       ![Fliken Behörigheter i Admin Console](assets/ai-assistant-permissions-tab.png)
 
-   1. Markera redigeringsikonen **[!UICONTROL Reporting Tools]** Redigera![&#x200B; på raden &#x200B;](/help/assets/icons/Edit.svg) i den angivna tabellen.
+   1. Markera redigeringsikonen **[!UICONTROL Reporting Tools]** Redigera![ på raden ](/help/assets/icons/Edit.svg) i den angivna tabellen.
    1. Bläddra till eller sök efter **[!UICONTROL AI Assistant: Product Knowledge]** och välj sedan plusikonen ![AddCircle](/help/assets/icons/AddCircle.svg) bredvid den här behörigheten.
+   1. Bläddra till eller sök efter **[!UICONTROL Data Insights Agent]** och välj sedan plusikonen ![AddCircle](/help/assets/icons/AddCircle.svg) bredvid den här behörigheten.
 
-      Behörigheten **[!UICONTROL AI Assistant: Product Knowledge]** läggs till i kolumnen **[!UICONTROL Included permission items]**.
+      Behörigheten **[!UICONTROL AI Assistant: Product Knowledge]** och behörigheten **[!UICONTROL Data Insights Agent]** läggs till i kolumnen **[!UICONTROL Included permission items]**.
 
       ![Lägg till behörighet](assets/ai-assistant-permissions.png).
-
-   1. Välj fliken **[!UICONTROL Data View Tools]** och välj sedan plusikonen ![AddCircle](/help/assets/icons/AddCircle.svg) bredvid behörigheten **[!UICONTROL Data Insights Agent]** .
-
-      Behörigheten **[!UICONTROL Data Insights Agent]** läggs till i kolumnen **[!UICONTROL Included permission items]**.
-
-      ![Lägg till behörighet](assets/ai-assistant-permissions-dataviewtools.png).
-
-   1. Välj fliken **[!UICONTROL Data Views]** för att välja de datavyer som du vill aktivera för Data Insights Agent.
-
-      >[!IMPORTANT]
-      >
-      >Tänk på följande när du aktiverar datavyer:
-      >* Du kan aktivera maximalt 50 datavyer per IMS-organisation. Om du aktiverar mer än 50 datavyer för alla produktprofiler för en viss organisation kommer Data Insights Agent att använda de 50 mest använda datavyer.
-      >* Data Insights Agent kan referera till de inkluderade datavyerna någon gång under samma dag som du aktiverar dem i Admin Console.
-
-   1. Sök efter eller bläddra till de datavyer som du vill aktivera och välj sedan plusikonen ![AddCircle](/help/assets/icons/AddCircle.svg) bredvid namnet på varje datavy.
-
-      Varje datavy som du lägger till visas i kolumnen **[!UICONTROL Included permission items]**.
-
-      ![Lägg till behörighet](assets/ai-assistant-permissions-dataviews.png).
 
    1. Välj **[!UICONTROL Save]** om du vill spara behörigheterna.
 
   Mer information om åtkomstkontroll finns i [Åtkomstkontroll](/help/technotes/access-control.md#access-control).
+
+* **Datavyåtkomst**: Datavyer måste aktiveras för Data Insights Agent.
+
+  >[!IMPORTANT]
+  >
+  >Tänk på följande när du aktiverar datavyer:
+  >* Du kan aktivera maximalt 50 datavyer per IMS-organisation. Om du aktiverar mer än 50 datavyer för alla produktprofiler för en viss organisation kommer Data Insights Agent att använda de 50 mest använda datavyer.
+  >* Data Insights Agent kan referera till de inkluderade datavyerna någon gång under samma dag som du aktiverar dem.
+
+  Så här aktiverar du datavyer för Data Insights Agent:
+
+   1. I Customer Journey Analytics väljer du **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
+
+   1. Markera en eller flera datavyer som du vill aktivera för Data Insights Agent och välj sedan **[!UICONTROL Enable for Data Insights Agent]**.
+
+      ![Aktivera datavyer för Data Insights Agent](assets/data-view-enable-dia.png)
+
+  Så här visar du antalet datavyer som har aktiverats för Data Insights Agent i din IMS-organisation:
+
+   1. I Customer Journey Analytics väljer du **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
+
+   1. Välj informationsikonen högst upp i kolumnen **[!UICONTROL Data Insights Agent]**.
+
+      ![Data Insights Agent informationsikon](assets/data-insights-agent-tooltip.png)
 
 ## Få tillgång till Data Insights Agent i AI-assistenten
 
@@ -259,7 +264,7 @@ Nedan följer god praxis för din Customer Journey Analytics-konfiguration (data
 >[!MORELIKETHIS]
 >
 >[Komponentinställningar](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dataordlista &#x200B;](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Godkänn beräknat mått &#x200B;](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Dela segment &#x200B;](/help/components/segments/seg-share.md)
+>>[Dataordlista ](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Godkänn beräknat mått ](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Dela segment ](/help/components/segments/seg-share.md)
 >
