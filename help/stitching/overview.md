@@ -92,8 +92,8 @@ Stitching stöder följande automatiskt genererade Journey Optimizer-datauppsät
 >[!MORELIKETHIS]
 >
 >[Fältbaserad häftning](fbs.md)
->>[Diagrambaserad häftning ](gbs.md)
->>[Använd sammanfogning](use-stitching.md)
->>[Validera sammanfogning ](validate.md)
->>[Vanliga frågor om stygn](faq.md)
+>&#x200B;>[Diagrambaserad häftning &#x200B;](gbs.md)
+>&#x200B;>[Använd sammanfogning](use-stitching.md)
+>&#x200B;>[Validera sammanfogning &#x200B;](validate.md)
+>&#x200B;>[Vanliga frågor om stygn](faq.md)
 
