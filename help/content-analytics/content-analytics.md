@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: 58254cab90d907ad9675c30dfc1b835910214b3a
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Content Analytics använder följande nyckeltermer:
 
 ## Så här fungerar det
 
-Content Analytics använder webbbildvisningsdata i händelsedatamängder i Experience Platform för att [samla in innehållshändelsedata](config/datacollection.md). Innehållsdatainsamlingen kombineras med (befintlig) datainsamlingsimplementering av beteendedata.
+Content Analytics använder webbbildvisningsdata i händelsedatamängder i Experience Platform för att [samla in innehållshändelsedata](config/datacollection.md). Dessa innehållshändelser kräver att data samlas in med Experience Platform Edge Network (Web SDK, Server API). Beteendedata kan samlas in med Web SDK eller Analytics Source Connector.
 
 ![Content Analytics - så fungerar det](assets/aca-overview.gif)
 
@@ -55,7 +55,7 @@ Content Analytics använder webbbildvisningsdata i händelsedatamängder i Exper
 >
 >Content Analytics utnyttjar AI/ML-tjänster som kan ge felaktiga eller vilseledande resultat. Använd därför ditt omdöme för att granska och validera AI/ML-genererade utdata.
 >
->Du kan använda fliken **[!UICONTROL Feedback]**, som är tillgänglig från ![&#x200B; InfoOutline](/help/assets/icons/InfoOutline.svg) i huvudgränssnittet, för att ge feedback om AI/ML-genererade utdata.
+>Du kan använda fliken **[!UICONTROL Feedback]**, som är tillgänglig från ![ InfoOutline](/help/assets/icons/InfoOutline.svg) i huvudgränssnittet, för att ge feedback om AI/ML-genererade utdata.
 >
 
 >[!NOTE]
@@ -67,7 +67,7 @@ Content Analytics använder webbbildvisningsdata i händelsedatamängder i Exper
 >[!MORELIKETHIS]
 >
 >[Content Analytics-rapportering](report/report.md)
->&#x200B;>[Konfigurera Content Analytics](config/configuration.md)
->&#x200B;>[Beräknar studsar och studsfrekvens i Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
+>>[Konfigurera Content Analytics](config/configuration.md)
+>>[Beräknar studsar och studsfrekvens i Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
