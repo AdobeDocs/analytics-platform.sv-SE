@@ -6,16 +6,16 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 0afe57047e2038f1acd9f88a1e7992da9a2819b1
+source-git-commit: 23b890ec6a3266d1ca0621b09264f1d6a2f82645
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
 
 # Använd stygn
 
-Du kan aktivera sammanfogning för en eller flera händelsedatamängder som du har konfigurerat som en del av anslutningen. Antalet händelsedatamängder som du kan aktivera för sammanfogning bestäms av det Customer Journey Analytics-paket som du har licensierat.
+Du kan aktivera sammanfogning för en eller flera händelsedatamängder som du har konfigurerat som en del av anslutningen. Det Customer Journey Analytics-paket du har licensierat avgör hur många händelsedatamängder du kan aktivera för sammanfogning.
 
 {{release-limited-testing}}
 
@@ -25,7 +25,7 @@ Du kan aktivera sammanfogning som en del av [datauppsättningsinställningarna](
 
 Så här aktiverar du sammanfogning av en händelsedatamängd i anslutningsgränssnittet:
 
-* Schemat som datauppsättningen baseras på måste ha definierats:
+* Schemat som datauppsättningen baseras på ska ha:
 
    * flera fält som är konfigurerade som en identitet och som gör att du kan välja olika värden för ett beständigt ID och ett person-ID.
    * minst ett fält som är markerat som primär identitet med ett associerat namnutrymme om du vill använda identitetskartan och det primära ID-namnutrymmet för ett beständigt ID eller person-ID.
@@ -37,7 +37,7 @@ Så här aktiverar du sammanfogning av en händelsedatamängd i anslutningsgrän
 
 Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
 
-* Kontrollera att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
+* Se till att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verifiera identitetstäckning för både beständigt ID och person-ID:
    * Beständigt ID: Fråga efter 7 dagars data där ditt beständiga ID-fält inte är null och dividera med en fråga på 7 dagars data för alla händelser i datauppsättningen. Procentandelen bör vara över 95 %.
 
@@ -64,7 +64,7 @@ Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händ
       * `{END_DATE}` är slutdatumet i standardformat. Till exempel: `2024-01-08 00:00:00`.
 
 
-   * Person-ID - Fråga 7 dagar efter data där ditt person-ID-fält inte är null och dividera med en fråga på 7 dagar med data för alla händelser i din datauppsättning. Denna procentandel bör vara över 5%.
+   * Person-ID - Fråga 7 dagar efter data där ditt person-ID-fält inte är null och dividera med en fråga på 7 dagar med data för alla händelser i din datauppsättning. Procentandelen bör vara över 5%.
 
      Exempel på en fråga som du kan använda för verifiering:
 
@@ -127,7 +127,7 @@ Om du vill aktivera sammanfogning går du till händelsedatamängdsavsnittet i d
 
    >[!NOTE]
    >
-   >Du måste ha rätt att använda identitetsdiagrammet.
+   >Se till att du har rätt att använda identitetsdiagrammet.
    >
 
    Innan dess visas en **[!UICONTROL Change to identity graph]**-dialogruta för att kontrollera att du har [slutfört konfigurationen av identitetsdiagrammet för datauppsättningen](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) innan du använder identitetsdiagrammet för sammanfogning. Välj **[!UICONTROL Continue]** om du vill fortsätta.
@@ -141,7 +141,7 @@ När du har sparat en anslutning som innehåller datauppsättningar som har akti
 
 ## Begränsningar
 
-Utöver de [fältbaserade begränsningar för sidindelning](/help/stitching/fbs.md#limitations) och [diagrambaserade häftningsbegränsningar](/help/stitching/gbs.md#limitations) gäller följande begränsningar när du aktiverar sammanfogning i gränssnittet Anslutningar:
+Utöver de [fältbaserade syningsbegränsningarna](/help/stitching/fbs.md#limitations) och [diagrambaserade syrebegränsningar](/help/stitching/gbs.md#limitations) gäller följande begränsningar när du aktiverar sydda i gränssnittet Anslutningar:
 
-* Du kan bara sammanfoga en händelsedatamängd en gång som en del av en enda anslutning. Du kan inte definiera samma händelsedatamängd mer än en och använda en separat sammanfogningskonfiguration för varje instans. Om du vill använda olika sammanfogningskonfigurationer på samma datauppsättning använder du en separat anslutning för varje konfiguration.
+* Du kan bara sammanfoga en händelsedatamängd en gång som en del av en enda anslutning. Du kan inte definiera samma händelsedatamängd mer än en gång och använda en separat sammanfogningskonfiguration för varje instans. Om du vill använda olika sammanfogningskonfigurationer på samma datauppsättning använder du en separat anslutning för varje konfiguration.
 
