@@ -4,12 +4,11 @@ description: Hur du använder stygn
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hide: true
-hidefromtoc: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
+badgePremium: label="Beta" type="Informative"
+source-git-commit: 0afe57047e2038f1acd9f88a1e7992da9a2819b1
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -18,7 +17,86 @@ ht-degree: 0%
 
 Du kan aktivera sammanfogning för en eller flera händelsedatamängder som du har konfigurerat som en del av anslutningen. Antalet händelsedatamängder som du kan aktivera för sammanfogning bestäms av det Customer Journey Analytics-paket som du har licensierat.
 
+{{release-limited-testing}}
+
 Du kan aktivera sammanfogning som en del av [datauppsättningsinställningarna](/help/connections/create-connection.md#dataset-settings) för en händelsedatauppsättning när du [skapar en anslutning](/help/connections/create-connection.md) eller när du [redigerar en anslutning](/help/connections/manage-connections.md#edit-a-connection).
+
+## Förutsättningar
+
+Så här aktiverar du sammanfogning av en händelsedatamängd i anslutningsgränssnittet:
+
+* Schemat som datauppsättningen baseras på måste ha definierats:
+
+   * flera fält som är konfigurerade som en identitet och som gör att du kan välja olika värden för ett beständigt ID och ett person-ID.
+   * minst ett fält som är markerat som primär identitet med ett associerat namnutrymme om du vill använda identitetskartan och det primära ID-namnutrymmet för ett beständigt ID eller person-ID.
+
+* Händelsedatauppsättningen måste vara [aktiverad för identitetstjänsten](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) om du vill använda identitetsdiagrammet och grafbaserad sammanfogning.
+
+
+## Preflight-kontroller
+
+Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
+
+* Kontrollera att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
+* Verifiera identitetstäckning för både beständigt ID och person-ID:
+   * Beständigt ID: Fråga efter 7 dagars data där ditt beständiga ID-fält inte är null och dividera med en fråga på 7 dagars data för alla händelser i datauppsättningen. Procentandelen bör vara över 95 %.
+
+     Exempel på en fråga som du kan använda för verifiering:
+
+     ```sql
+     SELECT
+       COUNT(*) AS total_events,
+       COUNT({PERSISTENT_ID_FIELD}) AS events_with_persistentid,
+       ROUND(COUNT({PERSISTENT_ID_FIELD}) / COUNT(*), 2) AS percent_with_persistentid_not_null
+     FROM 
+       {DATASET_TABLE_NAME}
+     WHERE
+       TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+       AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
+     ```
+
+     Var:
+
+      * `{PERSISTENT_ID_FIELD}` är fältet för det beständiga ID:t. Till exempel: `identityMap.ecid[0]`.
+      * `{DATASET_TABLE_NAME}` är tabellnamnet för händelsedatamängden.
+      * `{FORMAT_STRING}` är formatsträngen för tidsstämpelfältet. Till exempel: `MM/DD/YY HH12:MI AM`.
+      * `{START_DATE} ` är startdatum. Till exempel: `2024-01-01 00:00:00`.
+      * `{END_DATE}` är slutdatumet i standardformat. Till exempel: `2024-01-08 00:00:00`.
+
+
+   * Person-ID - Fråga 7 dagar efter data där ditt person-ID-fält inte är null och dividera med en fråga på 7 dagar med data för alla händelser i din datauppsättning. Denna procentandel bör vara över 5%.
+
+     Exempel på en fråga som du kan använda för verifiering:
+
+     ```sql
+     SELECT
+       COUNT(*) AS total_events,
+       COUNT({PERSON_ID_FIELD}) AS events_with_personid,
+       ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
+     FROM 
+       {DATASET_TABLE_NAME}
+     WHERE
+       TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+       AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
+     ```
+
+     Var:
+
+      * `{PERSON_ID_FIELD}` är fältet för person-ID:t. Till exempel: `identityMap.crmId[0]`.
+      * `{DATASET_TABLE_NAME}` är tabellnamnet för händelsedatamängden.
+      * `{FORMAT_STRING}` är formatsträngen för tidsstämpelfältet. Till exempel: `MM/DD/YY HH12:MI AM`.
+      * `{START_DATE}` är startdatum. Till exempel: `2024-01-01 00:00:00`.
+      * `{END_DATE}` är slutdatumet i standardformat. Till exempel: `2024-01-08 00:00:00`.
+
+
+
+## Aktivera identitetssammanfogning
+
+>[!NOTE]
+>
+>Om **[!UICONTROL Enable identity stitching]** inte är tillgängligt i gränssnittet Anslutningar använder du [förfrågningsproceduren för att aktivera sammanfogning](/help/stitching/use-stitching.md) för en datauppsättning.
+
+
 
 Om du vill aktivera sammanfogning går du till händelsedatamängdsavsnittet i dialogrutan **[!UICONTROL Add datasets]** eller **[!UICONTROL Edit dataset]**:
 
@@ -45,7 +123,7 @@ Om du vill aktivera sammanfogning går du till händelsedatamängdsavsnittet i d
    * Välj ett namnutrymme i listrutan **[!UICONTROL Namespace]**.
 
 
-   Om du väljer **[!UICONTROL Identity Graph]** som person-ID måste du välja ett namnutrymme.
+   Om du väljer **[!UICONTROL Identity Graph]** som person-ID (om du vill använda [diagrambaserad sammanfogning](/help/stitching/gbs.md)) måste du välja ett namnutrymme.
 
    >[!NOTE]
    >
@@ -60,3 +138,10 @@ Om du vill aktivera sammanfogning går du till händelsedatamängdsavsnittet i d
 1. Välj ett uppslagsfönster i listrutan **[!UICONTROL Lookback window]**. Vilka alternativ som är tillgängliga beror på vilket Customer Journey Analytics-paket du har rätt till.
 
 När du har sparat en anslutning som innehåller datauppsättningar som har aktiverats för identitetssammanfogning, börjar sammanfogningsprocessen för varje datauppsättning när inmatningen av data för den datauppsättningen börjar.
+
+## Begränsningar
+
+Utöver de [fältbaserade begränsningar för sidindelning](/help/stitching/fbs.md#limitations) och [diagrambaserade häftningsbegränsningar](/help/stitching/gbs.md#limitations) gäller följande begränsningar när du aktiverar sammanfogning i gränssnittet Anslutningar:
+
+* Du kan bara sammanfoga en händelsedatamängd en gång som en del av en enda anslutning. Du kan inte definiera samma händelsedatamängd mer än en och använda en separat sammanfogningskonfiguration för varje instans. Om du vill använda olika sammanfogningskonfigurationer på samma datauppsättning använder du en separat anslutning för varje konfiguration.
+

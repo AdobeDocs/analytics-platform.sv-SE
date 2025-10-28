@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a7d14968-33a2-46a8-8e32-fb6716650d0a
-source-git-commit: f45a457d251767634e28984d7c75158dac6e51e8
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ När två personer använder samma enhet och båda gör ett autentiserat köp ka
 |--:|---|---|---|---|
 | 1 | 2023-05-12 12:01 | Startsida | `1234` | |
 | 2 | 2023-05-12 12:02 | Produktsida | `1234` | |
-| 3 | 2023-05-12 | Orderlyckade | `1234` | `ryan@a.com` |
-| 4 | 2023-05-12 | Produktsida | `1234` | |
+| 3 | 2023-05-12 12:03 | Orderlyckade | `1234` | `ryan@a.com` |
+| 4 | 2023-05-12 12:07 | Produktsida | `1234` | |
 | 5 | 2023-05-12 12:08 | Orderlyckade | `1234` | `cassidy@a.com` |
 
 Som du kan se i den här tabellen börjar en länk mellan ett enhets-ID och ett person-ID när autentisering sker på händelse 3 och 5. För att förstå effekten av marknadsföringssatsningar på personnivå måste dessa oautentiserade händelser tillskrivas rätt person.
@@ -49,7 +49,7 @@ Stitching kan attribuera delade enhetsdata med antingen senaste-auth-attribuerin
 
 ### Senaste auktoriseringsattribuering
 
-Senaste autentiseringsattributen för all okänd aktivitet från en delad enhet till den användare som senast autentiserades. Experience Platform Identity Service bygger diagrammet baserat på den senaste autentiseringsattribueringen och används som sådan i diagrambaserade stygn. Mer information finns i [Länkningsregler för identitetsdiagram](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details).
+Senaste autentiseringsattributen för all okänd aktivitet från en delad enhet till den användare som senast autentiserades. Experience Platform identitetstjänst bygger grafen baserat på den senaste autentiseringsattribueringen och används därför i diagrambaserade stygn. Mer information finns i [Länkningsregler för identitetsdiagram](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details).
 
 När senaste-auth-attribuering används för sammanfogning tolkas Stitched ID:n som i tabellen nedan.
 
@@ -57,8 +57,8 @@ När senaste-auth-attribuering används för sammanfogning tolkas Stitched ID:n 
 |---|---|---|---|---|
 | 2023-05-12 12:01 | Startsida | `1234` | | `cassidy@a.com` |
 | 2023-05-12 12:02 | Produktsida | `1234` | | `cassidy@a.com` |
-| 2023-05-12 | Orderlyckade | `1234` | `ryan@a.com` | `cassidy@a.com` |
-| 2023-05-12 | Produktsida | `1234` | | `cassidy@a.com` |
+| 2023-05-12 12:03 | Orderlyckade | `1234` | `ryan@a.com` | `cassidy@a.com` |
+| 2023-05-12 12:07 | Produktsida | `1234` | | `cassidy@a.com` |
 | 2023-05-12 12:08 | Orderlyckade | `1234` | `cassidy@a.com` | `cassidy@a.com` |
 | 2023-05-13 11:08 | Startsida | `1234` | | `cassidy@a.com` |
 
@@ -73,8 +73,8 @@ När enhetsdelad attribuering används vid sammanfogning tolkas häftade ID:n so
 |---|---|---|---|---|
 | 2023-05-12 12:01 | Startsida | `1234` | | `ryan@a.com` |
 | 2023-05-12 12:02 | Produktsida | `1234` | | `ryan@a.com` |
-| 2023-05-12 | Orderlyckade | `1234` | `ryan@a.com` | `ryan@a.com` |
-| 2023-05-12 | Produktsida | `1234` | | `ryan@a.com` |
+| 2023-05-12 12:03 | Orderlyckade | `1234` | `ryan@a.com` | `ryan@a.com` |
+| 2023-05-12 12:07 | Produktsida | `1234` | | `ryan@a.com` |
 | 2023-05-12 12:08 | Orderlyckade | `1234` | `cassidy@a.com` | `cassidy@a.com` |
 | 2023-05-13 11:08 | Startsida | `1234` | | `cassidy@a.com` |
 

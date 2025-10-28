@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: d9a65774fa5ab8c6b7fdd018f5d345dc7eb9e9de
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 0%
@@ -44,7 +44,7 @@ För mätplanen för sammanslagningsvalidering måste du se till att du har alla
 
 Dessutom måste du lägga till två sammanslagningsmått som baseras på förekomsten av värden i en dimension.
 
-1. Använd fältet som innehåller Person-ID:t från den sammanslagna datauppsättningen för att konfigurera ett mätvärde som definierar om ett Person-ID har angetts. Lägg till det här person-ID:t även om du använder diagrambaserade häftningar som person-ID:t för att skapa en baslinje. Om person-ID:t inte finns i datauppsättningen är baslinjen 0 %.
+1. Använd fältet som innehåller person-ID:t från den sammanslagna datauppsättningen för att konfigurera ett mätvärde som definierar om ett person-ID har angetts. Lägg till det här person-ID:t även om du använder diagrambaserad sammanfogning som person-ID:t för att skapa en baslinje. Om person-ID:t inte finns i datauppsättningen är baslinjen 0 %.
 
    I exemplet nedan fungerar `personalEmail.address` som identitet och används för att skapa måttet **[!UICONTROL _Email set]**.
    ![Mätvärde för e-postuppsättning](assets/emailset-metric.png)
@@ -69,7 +69,7 @@ För tabellen **[!UICONTROL Stitched ID dimension**] ser du de råvärden som ko
 
 ## Enhetscentrerad eller personcentrerad rapportering
 
-När du skapar en anslutning måste du definiera vilket fält eller vilken identitet som ska användas för person-ID:t. Om du t.ex. väljer ett enhets-ID som personnummer på en webbdatauppsättning skapar du enhetscentrerade rapporter och förlorar möjligheten att koppla dessa data till andra offlinekanaler. Om du väljer ett fält eller en identitet för flera kanaler, till exempel e-post, förlorar du i alla oautentiserade händelser. För att förstå detta måste ni ta reda på hur mycket av trafiken som är oautentiserad och hur mycket av trafiken som är autentiserad.
+När du skapar en anslutning måste du definiera vilket fält eller vilken identitet som ska användas för person-ID:t. Om du till exempel väljer ett enhets-ID som person-ID på en webbdatauppsättning skapar du enhetscentrerade rapporter och förlorar möjligheten att koppla dessa data till andra offlinekanaler. Om du väljer ett fält eller en identitet för flera kanaler, till exempel e-post, förlorar du i alla oautentiserade händelser. För att förstå detta måste ni ta reda på hur mycket av trafiken som är oautentiserad och hur mycket av trafiken som är autentiserad.
 
 1. Skapa ett beräknat mått **[!UICONTROL Unauthenticated events over total]**. Definiera regeln i regelbyggaren enligt nedan:
    ![Oautentiserade händelser totalt](assets/calcmetric-unauthenticatedeventsovertotal.png)
@@ -88,7 +88,7 @@ När du skapar en anslutning måste du definiera vilket fält eller vilken ident
 Du vill mäta identifieringsprestanda före och efter sammanfogning. Om du vill göra det skapar du ytterligare tre beräknade mått:
 
 1. Ett **[!UICONTROL Stitched authentication rate]** beräknat mått som beräknar antalet händelser där namnutrymmet som sammanfogats har angetts till önskad identitet över det totala antalet händelser. När du konfigurerade datavyn skapade du ett **[!UICONTROL Email stitched namespace]**-mått som innehöll ett filter som endast skulle räknas när en händelse har ett namnutrymme som är inställt på e-post. Det beräknade måttet använder det här **[!UICONTROL Email stitched namespace]**-måttet för att ge en indikation på vilken procentandel av data som har den önskade identiteten.
-   ![Beräknad autentiseringsfrekvens för statiska element &#x200B;](assets/calcmetric-stitchedauthenticationrate.png)
+   ![Beräknad autentiseringsfrekvens för statiska element ](assets/calcmetric-stitchedauthenticationrate.png)
 
 1. Ett **[!UICONTROL Percent increase]** beräknat mått som beräknar den råa procentuella ändringen mellan den aktuella identifieringsfrekvensen och den sammanslagna.
    ![Procentökning beräknat mätvärde](assets/calcmetric-percentincrease.png)
@@ -102,7 +102,7 @@ Du vill mäta identifieringsprestanda före och efter sammanfogning. Om du vill 
 Om du kombinerar alla data i en Analysis Workspace Freeform-tabell kan du börja se effekten och värdet som sammanfogningen ger, inklusive:
 
 * Aktuell autentiseringsfrekvens: Baslinjen för antalet händelser som redan har rätt person-ID över det totala antalet händelser.
-* Stitched authentication rate: The new number of events that have the correct Person ID over the total number of events.
+* Stitched authentication rate: The new number of events that have the correct person ID over the total number of events.
 * Procentuell ökning: Den procentuella ökningen av råformat från den sammanslagna autentiseringsfrekvensen minus den aktuella autentiseringsfrekvensen för baslinjen.
 * Lyft: Den procentuella förändringen jämfört med den aktuella autentiseringsfrekvensen för baslinjen.
 
