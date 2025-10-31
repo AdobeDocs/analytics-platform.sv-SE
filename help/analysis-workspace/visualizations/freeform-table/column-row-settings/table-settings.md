@@ -4,7 +4,7 @@ title: Radinställningar
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: a32f2c308b8fc1b463dc00d77008063035968241
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -90,4 +90,4 @@ Följande alternativ på snabbmenyn är tillgängliga när du väljer en kolumnr
 
 ## Ändra radhöjd
 
-Du kan ange [vydensiteten](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]** .
+Du kan ange [vydensiteten](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**.

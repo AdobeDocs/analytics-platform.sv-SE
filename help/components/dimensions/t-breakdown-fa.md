@@ -6,7 +6,7 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: a32f2c308b8fc1b463dc00d77008063035968241
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
@@ -34,8 +34,6 @@ Du kan dela upp mätvärden efter dimensionsobjekt eller målgruppssegment under
 Som standard är uppdelningar fasta på statiska radobjekt. Tänk dig att du har delat upp de tre viktigaste sidobjekten (startsida, sökresultat, utcheckning) efter marknadsföringskanal. Sedan lämnar du projektet och återvänder två veckor senare. När du öppnar projektet igen har de tre översta sidorna ändrats, och nu är startsidan, sökresultaten och utcheckningen de 4-6 översta sidorna istället. Som standard visas dina Marketing Channel-indelningar fortfarande under Hemsida, Sökresultat och Utcheckning, även om de nu finns på raderna 4-6.
 
 **Uppdelning efter position** delar däremot alltid upp de tre översta objekten, oavsett vilka de är. När du öppnar ditt projekt på nytt är Marketing Channel-uppdelningarna kopplade till de tre översta sidorna i tabellen. Och inte till startsidan, sökresultat och utcheckning, som nu finns på raderna 4-6. Se [Radinställningar](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md) om hur du konfigurerar den här inställningen.
-
-
 
 ## Tillämpa attribueringsmodeller på uppdelningar
 

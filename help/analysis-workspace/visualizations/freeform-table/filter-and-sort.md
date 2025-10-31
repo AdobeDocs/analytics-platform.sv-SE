@@ -4,14 +4,14 @@ title: Filtrera och ordna
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a16043f1bb15deba1332ed39438214597647b9b4
+source-git-commit: 1d760139bd988097486e5c151364f291ad8e243d
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1104'
 ht-degree: 0%
 
 ---
 
-# Filter och sortering
+# Filtrera och ordna tabeller
 
 Frihandstabeller i Analysis Workspace är grunden för interaktiv dataanalys. De kan därför innehålla tusentals rader med information. Filtrering och sortering av data kan vara en viktig del av att effektivt kunna hitta den viktigaste informationen.
 
@@ -33,7 +33,7 @@ Du kan använda flera metoder för att filtrera rader från en frihandstabell.
 * Använda filter på en tabell
 * Använd målgruppssegment
 
-Läs om hur varje metod påverkar [registersummor för frihand](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
+Läs om hur varje metod påverkar [frihandstabellsummor](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
 ### Exkludera specifika rader från en tabell
 
@@ -43,11 +43,11 @@ Du kan snabbt utesluta vissa rader från tabellen utan att behöva använda ![Fi
 >
 >När du utelämnar rader enligt beskrivningen i det här avsnittet läggs en [!UICONTROL Always exclude items]-regel till automatiskt i filterdialogrutan [!UICONTROL Advanced]. Du kan visa den använda regeln genom att välja filterikonen ![Filter](/help/assets/icons/Filter.svg) och sedan [**[!UICONTROL Show advanced]**](#apply-a-simple-or-advanced-filter-to-a-table) .
 
-Så här exkluderar du specifika rader från en friformstabell:
+Så här exkluderar du vissa rader från en frihandstabell:
 
 1. Håll pekaren över raden som du vill utesluta och välj sedan ![Stäng](/help/assets/icons/Close.svg).
 
-   Håll ned ***Skift*** om du vill markera ett radintervall eller håll ned ***cmd***-tangenten (på Mac) eller ***ctrl***-tangenten (på Windows) om du vill markera flera rader.
+   Håll ned tangenten ***Skift*** om du vill markera flera rader, eller håll ned tangenten ***Kommando*** (i Mac) eller tangenten ***Ctrl*** (i Windows) om du vill markera flera rader.
 
 <!--### Right-click > Delete selected rows
 
@@ -59,7 +59,7 @@ Note: this option does not seem to work. AN-338422
    This action will remove the rows from the table and apply a table filter.-->
 
 
-### Använda ett enkelt eller avancerat filter på en tabell
+### Använda enkel eller avancerad filtrering i en tabell
 
 Så här filtrerar du data i frihandstabeller:
 
@@ -75,7 +75,7 @@ Så här filtrerar du data i frihandstabeller:
 
    | Alternativ | Funktion |
    |---------|----------|
-   | [!UICONTROL **Inkludera &quot;Inget värde&quot;**] | Välj det här alternativet om du vill visa en **[!UICONTROL No value]**-rad i tabellen för data som inte har något värde för den valda dimensionen. Avmarkera alternativet om du vill dölja raden **[!UICONTROL No value]**. |
+   | [!UICONTROL **Inkludera &quot;Inget värde&quot;**] | Välj det här alternativet om du vill visa en **[!UICONTROL No value]**-rad i tabellen för data som inte har något värde för den valda dimensionen. Avmarkera det här alternativet om du vill dölja **[!UICONTROL No value]** rader.<!-- Add at multi dim GA: When tables include multiple dimension columns, you can deselect this option to show data only when it applies to each dimension column in the table.--> |
    | [!UICONTROL **Sök efter ord eller fras**] | Ange ett ord eller en fras som du vill filtrera efter. Endast rader som innehåller det angivna ordet eller den exakta frasen visas. |
 
 

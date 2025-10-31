@@ -5,9 +5,9 @@ exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
+source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -33,19 +33,17 @@ Exempel:
 
 I vissa rapporter kanske du vill ha den beställning som är kopplad till betald sökning. I andra rapporter kanske du vill att ordern ska tillskrivas Social. Attribution låter dig styra den här aspekten av rapportering.
 
-## Ange en komponents standardattribueringsmodell
+## Ange en komponents attribueringsmodell
 
-Du kan ange en standardattribueringsmodell för ett givet mätresultat genom att uppdatera måttets inställning i datavyn. Om du gör det åsidosätts måttets attribueringsmodell när som helst när den används i Analysis Workspace.
+Du kan ändra standardattribueringsmodellen för en viss komponent genom att uppdatera komponentens inställning i datavyn. Om du gör det åsidosätts komponentens attribueringsmodell när som helst när den används i Analysis Workspace.
 
 >[!NOTE]
 >
->Tänk på följande när du aktiverar attribuering för ett mätvärde:
+>Tänk på följande när du aktiverar en icke-standardattribueringsmodell för ett mätvärde:
 >
->* **När komponenten används i en rapport med *en enda dimension*:** Komponentens attribuering ignorerar allokeringsmodellen när en icke-standardattribueringsmodell används.
+>* **När du använder måttet i en rapport med *en enda dimension*:** Måttets attribuering åsidosätter den allokeringsmodell som angetts för dimensionen. Ett mätresultat med till exempel attributet &quot;first touch&quot; åsidosätter en &quot;latest&quot;-dimensionsallokering.
 >
->* **När komponenten används i en rapport med *flera dimensioner*:** Komponentens attribuering behåller allokeringsmodellen när en icke-standardattribueringsmodell används.
->
->   Flera dimensioner är bara tillgängliga när [exporterar data till molnet](/help/analysis-workspace/export/export-cloud.md).
+>* **När du använder måttet i en rapport med *flera dimensioner*:** Måttets attribuering tillämpas ovanpå allokeringsmodellen för varje dimension. Ett mätvärde med attributet &quot;first touch&quot; används till exempel ovanpå en &quot;latest&quot;-dimensionsallokering.
 >
 > Mer information om allokering finns i [Inställningar för Persistence-komponent](/help/data-views/component-settings/persistence.md).
 
@@ -55,7 +53,7 @@ Så här uppdaterar du en komponents standardattribueringsmodell:
 
 1. Markera komponenten och expandera sedan avsnittet **[!UICONTROL Attribution]** till höger på skärmen.
 
-   ![Fönstret Datavyer där attributalternativet Ange markeras &#x200B;](../assets/attribution-settings.png)
+   ![Fönstret Datavyer där attributalternativet Ange markeras ](../assets/attribution-settings.png)
 
 1. Välj [!UICONTROL **Ange attribuering**] och välj sedan fönstret [attribueringsmodell](#attribution-models), [container](#container) och [lookback](#lookback-window).
 

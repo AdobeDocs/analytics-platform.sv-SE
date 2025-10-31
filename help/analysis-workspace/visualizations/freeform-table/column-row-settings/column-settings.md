@@ -4,9 +4,9 @@ title: Kolumninställningar
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: e8bb2df72cd223713bf63f0e85ea9c9e444cb3e5
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '848'
 ht-degree: 7%
 
 ---
@@ -88,13 +88,11 @@ Du kan åsidosätta standardattribueringsmodellen som är konfigurerad i [datavy
 
 >[!NOTE]
 >
->Tänk på följande när du uppdaterar en komponents attribuering till en icke-standardattribueringsmodell:
+>Tänk på följande när du aktiverar en icke-standardattribueringsmodell för ett mätvärde:
 >
->* **När komponenten används i en rapport med *en enda dimension*:** Komponentens attribuering ignorerar allokeringsmodellen när en icke-standardattribueringsmodell används.
+>* **När du använder måttet i en rapport med *en enda dimension*:** Måttets attribuering åsidosätter den allokeringsmodell som angetts för dimensionen. Ett mätresultat med till exempel attributet &quot;first touch&quot; åsidosätter en &quot;latest&quot;-dimensionsallokering.
 >
->* **När komponenten används i en rapport med *flera dimensioner*:** Komponentens attribuering behåller allokeringsmodellen när en icke-standardattribueringsmodell används.
->
->   Flera dimensioner är bara tillgängliga när [exporterar data till molnet](/help/analysis-workspace/export/export-cloud.md).
+>* **När du använder måttet i en rapport med *flera dimensioner*:** Måttets attribuering tillämpas ovanpå allokeringsmodellen för varje dimension. Ett mätvärde med attributet &quot;first touch&quot; används till exempel ovanpå en &quot;latest&quot;-dimensionsallokering.
 >
 > Mer information om allokering finns i [Inställningar för Persistence-komponent](/help/data-views/component-settings/persistence.md).
 
