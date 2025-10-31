@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras frihandstabellens visualisering i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Frihandstabell](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras frihandstabellens visualisering i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Frihandstabell](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ Så här skapar och konfigurerar du en [!UICONTROL Freeform table]:
 
 ## Automatiserade tabeller
 
-Det snabbaste sättet att skapa en tabell är att släppa komponenter direkt i ett tomt projekt, en panel eller en frihandstabell. En frihandstabell har skapats i det format som rekommenderas. [Titta på självstudiekursen](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace).
+Det snabbaste sättet att skapa en tabell är att släppa komponenter direkt i ett tomt projekt, en panel eller en frihandstabell. En frihandstabell har skapats i det format som rekommenderas. [Titta på självstudiekursen](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/auto-build-freeform-tables-in-analysis-workspace).
 
 ![En ny panel med besökskomponenten släppt på arbetsytan.](assets/automated-table.png)
 
