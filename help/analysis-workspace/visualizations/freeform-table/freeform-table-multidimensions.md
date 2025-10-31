@@ -5,52 +5,24 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: bff352181392c19b6c4fe70893a016179fb77f06
+source-git-commit: ec07eb5dced013eac3d1088f2f49dcea23894395
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '1014'
 ht-degree: 0%
 
 ---
 
-# Inkludera flera dimensioner i en frihandstabell
+# Inkludera flera dimensionskolumner i en frihandstabell
 
 {{release-limited-testing}}
 
 Du kan inkludera upp till 5 dimensionskolumner i en frihandstabell, så att du kan visa flera dimensionsobjekt sida vid sida. Varje rad med dimensionsobjekt fungerar som en enda sammanfogad artikel.
 
-Du kan sortera dimensionskolumner (tillsammans med metriska kolumner) för en mer fullständig och anpassad analys.
+Du kan använda filter, sortering, uppdelningar med mera på frihandstabeller med flera dimensionskolumner för att skapa en mer komplett och anpassad analys.
 
-## Flera dimensionskolumner och uppdelningar
+## Lägga till flera dimensionskolumner
 
-I Analysis Workspace finns följande sätt att lägga till flera dimensioner i en frihandstabell:
-
-* Inkludera flera dimensionskolumner (enligt beskrivningen i den här artikeln)
-
-* [Lägg till uppdelningar](/help/components/dimensions/t-breakdown-fa.md)
-
-Båda dessa metoder gör att du kan analysera mått mot andra dimensioner. Det finns dock viktiga skillnader, och båda metoderna kan användas i samma tabell för en ännu djupare analys.
-
-Med flera dimensionskolumner kan du:
-
-* Korrelera rader med data över flera dimensioner och mätvärden.
-
-* Visa endast data när de gäller för varje dimensionskolumn i tabellen. För att uppnå detta använder du kolumnfiltret för att avmarkera inställningen **[!UICONTROL Include "No value"]** för varje dimensionskolumn.
-
-  Mer information finns i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
-
-* Sortera data efter flera dimensionskolumner och måttkolumner.
-
-  Mer information finns i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
-
-Med uppdelningar kan du:
-
-* Visa endast dimensionsposter för en
-
-* Visa de översta dimensionsobjekten för en enstaka
-
-## Lägg till dimensionskolumner
-
-Du kan lägga till dimensionskolumner en åt gången eller gruppvis.
+Du kan lägga till flera dimensionskolumner en åt gången eller gruppvis.
 
 1. Skapa en frihandstabell i Analysis Workspace.
 
@@ -70,13 +42,15 @@ Du kan lägga till dimensionskolumner en åt gången eller gruppvis.
 
 ## Filtrera tabeller
 
+Du kan använda filter på en eller flera dimensionskolumner i en frihandstabell.
+
 Mer information om att filtrera tabeller finns i [Filtrera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Sortera tabeller {#sort-tables}
 
-<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article. Also add row to Guardrails article. -->
+<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article. Also add row to Guardrails -->
 
-Du kan sortera data i en frihandstabell efter kolumner i Analysis Workspace som är antingen mått eller mått.
+Du kan sortera data i en frihandstabell efter kolumner i Analysis Workspace, oavsett om de är dimensioner eller mått.
 
 Som standard sorteras dimensionerna i stigande ordning och måtten sorteras i fallande ordning.
 
@@ -134,7 +108,7 @@ Sorteringsikonen är fortfarande synlig när sortering används på en kolumn. E
 
 När du sorterar data för flera kolumner sorteras data efter den prioritet som du tilldelar varje kolumn. Prioritetsnumrering visas bredvid sorteringsikonen ![sorteringsprioritet](assets/sort-priority-icon.png).
 
-Kolumnen med den primära prioriteten bestämmer huvudordningen, kolumnen med den sekundära prioriteten bestämmer ordningen när raderna har samma värde i den primära kolumnen, kolumnen med den högre prioriteten bestämmer ordningen när raderna har samma värde i de primära och sekundära kolumnerna och så vidare.
+Kolumnen med den primära prioriteten bestämmer huvudordningen. Kolumnen med den sekundära prioriteten bestämmer ordningen när raderna har samma värde i den primära kolumnen. Kolumnen med den högre prioriteten bestämmer ordningen när raderna har samma värde i de primära och sekundära kolumnerna och så vidare.
 
 Ta till exempel en tabell med följande kolumner:
 
@@ -156,9 +130,37 @@ Genom att tilldela varje kolumn en sorteringsprioritet kan du styra exakt hur da
 
 ![exempel på flera sorteringar](assets/dimensions-multiple-sort.png)
 
-## Lägga till uppdelningar i en tabell med flera dimensionskolumner
+## Flera dimensionskolumner och uppdelningar
 
-När du lägger till en uppdelning i en tabell som har flera dimensionskolumner, sträcker sig uppdelningen över alla dimensionsobjekt på raden där den läggs till.
+I Analysis Workspace finns följande sätt att lägga till flera dimensioner i en frihandstabell:
+
+* Inkludera flera dimensionskolumner (enligt beskrivningen i den här artikeln)
+
+* [Lägg till uppdelningar](/help/components/dimensions/t-breakdown-fa.md)
+
+Båda dessa metoder gör att du kan analysera mått mot andra dimensioner. Det finns dock viktiga skillnader, och båda metoderna kan användas i samma tabell för en ännu djupare analys.
+
+### Skillnader mellan dimensionskolumner och uppdelningar
+
+Med flera dimensionskolumner kan du:
+
+* Sammanfoga dimensionsobjekt i distinkta rader med data över flera dimensioner.
+
+* Inkludera endast dimensionsposter i sammanfogade rader när dimensionsposter gäller för varje dimensionskolumn i tabellen. För att uppnå detta använder du kolumnfiltret för att avmarkera inställningen **[!UICONTROL Include "No value"]** för varje dimensionskolumn.
+
+  Mer information finns i [Sortera tabeller efter flera kolumner (avancerad sortering)](#sort-tables-by-multiple-columns-advanced-sorting).
+
+* Sortera data efter flera dimensioner och måttkolumner för att se mer anpassade data.
+
+  Mer information finns i [Sortera tabeller efter flera kolumner (avancerad sortering)](#sort-tables-by-multiple-columns-advanced-sorting)
+
+Med uppdelningar kan du:
+
+* Dela upp ett dimensionsobjekt i friformstabellen med en andra dimension. Du kan visa upp till 200 dimensionsobjekt för den sekundära dimensionen.
+
+### Lägga till uppdelningar i en tabell med flera dimensionskolumner
+
+När du lägger till en uppdelning i en tabell som har flera dimensionskolumner, sträcker sig uppdelningen över alla dimensionsobjekt på raden där du lägger till den.
 
 Du kan lägga till en uppdelning enligt beskrivningen i [Bryt ned dimensioner](/help/components/dimensions/t-breakdown-fa.md).
 
