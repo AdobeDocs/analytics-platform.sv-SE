@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
+source-git-commit: 9314f7d88834a67efb61d0cc0cceef1ccd2fb9cb
 workflow-type: tm+mt
-source-wordcount: '1260'
+source-wordcount: '1262'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 1%
 
 Du kan inkludera upp till 5 dimensionskolumner i en frihandstabell, så att du kan visa flera dimensionsobjekt sida vid sida. Varje rad med dimensionsobjekt fungerar som en enda sammanfogad dimensionspost.
 
-Du kan använda filter, sortering, uppdelningar med mera i frihandstabeller med flera dimensionskolumner för att skapa en djupare och anpassad analys.
+Du kan använda filter, sortering, uppdelningar med mera i frihandstabeller med flera dimensionskolumner för att skapa en djupare och mer anpassad analys.
 
 ## Sammanfogade dimensionsobjekt
 
-När du lägger till flera dimensionskolumner i en friformstabell fungerar varje rad med dimensionsobjekt som en enda sammanfogad dimensionspost. Med den här funktionen kan du se mätdata för specifika kombinationer av dimensioner.
+När du [lägger till flera dimensionskolumner i en friformstabell](#add-multiple-dimension-columns) fungerar varje rad med dimensionsobjekt som ett enda sammanfogat dimensionsobjekt. Med den här funktionen kan du se mätdata för specifika kombinationer av dimensioner.
 
-Ta till exempel en frihandstabell där dimensionerna är _City_, _Device Type_ och _Day of Month_ och måttet är _Events_. De tre dimensionsobjekten i den första raden i tabellen blir en enda sammanfogad dimensionspost som visar att det var 2 056 händelser som ägde rum i Mumbai från mobiltelefoner den 30:e i månaden.
+Ta till exempel en frihandstabell där dimensionskolumnerna är _City_, _Device Type_ och _Day of Month_ och måttet är _Events_. De tre dimensionsobjekten i den första raden i tabellen blir en enda sammanfogad dimensionspost som visar att det var 2 056 händelser som ägde rum i Mumbai från mobiltelefoner den 30:e i månaden.
 
 | Dimension: Ort | Dimension: Enhetstyp | Dimension: Dag i månaden | Mått: Händelser |
 |---------|----------|---------|---------|
@@ -57,13 +57,13 @@ Du kan lägga till flera dimensionskolumner en åt gången eller gruppvis.
 
      ![Dra flera dimensioner](assets/dimensions-add-multiple.png)
 
-1. Visa varje rad i tabellen som en enskild dimensionspost. Mer information finns i [Visa sammanfogade dimensionsobjekt](#view-concatenated-dimension-items).
+1. Visa varje rad i tabellen som en enskild dimensionspost. Mer information finns i [Sammanfogade dimensionsobjekt](#view-concatenated-dimension-items).
 
 ## Filtrera tabeller
 
 Du kan använda filter på en eller flera dimensionskolumner i en frihandstabell.
 
-Mer information om att filtrera tabeller finns i [Filtrera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) i [Filtrera och sortera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+Mer information om att filtrera tabeller finns i [Filtrera tabeller](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) i [Filtrera och sortera tabeller på frihand](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Sortera tabeller {#sort-tables}
 
