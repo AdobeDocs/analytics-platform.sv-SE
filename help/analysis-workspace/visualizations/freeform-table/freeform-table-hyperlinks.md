@@ -4,14 +4,14 @@ description: Lär dig hur du skapar hyperlänkar för dimensionsobjekt i en frih
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
 
-# Skapa hyperlänkar
+# Skapa hyperlänkar i frihandstabeller
 
 Du kan skapa hyperlänkar för dimensionsobjekt för att göra dem klickbara i en frihandstabell i Analysis Workspace.
 
@@ -26,7 +26,7 @@ Den här funktionen är särskilt användbar när du skapar hyperlänkar för f�
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa hyperlänkar i en frihandstabell](https://video.tv.adobe.com/v/3445786/?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa hyperlänkar i en frihandstabell](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

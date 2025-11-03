@@ -5,10 +5,10 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: ec07eb5dced013eac3d1088f2f49dcea23894395
+source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
 workflow-type: tm+mt
-source-wordcount: '1014'
-ht-degree: 0%
+source-wordcount: '1260'
+ht-degree: 1%
 
 ---
 
@@ -16,9 +16,26 @@ ht-degree: 0%
 
 {{release-limited-testing}}
 
-Du kan inkludera upp till 5 dimensionskolumner i en frihandstabell, så att du kan visa flera dimensionsobjekt sida vid sida. Varje rad med dimensionsobjekt fungerar som en enda sammanfogad artikel.
+Du kan inkludera upp till 5 dimensionskolumner i en frihandstabell, så att du kan visa flera dimensionsobjekt sida vid sida. Varje rad med dimensionsobjekt fungerar som en enda sammanfogad dimensionspost.
 
-Du kan använda filter, sortering, uppdelningar med mera på frihandstabeller med flera dimensionskolumner för att skapa en mer komplett och anpassad analys.
+Du kan använda filter, sortering, uppdelningar med mera i frihandstabeller med flera dimensionskolumner för att skapa en djupare och anpassad analys.
+
+## Sammanfogade dimensionsobjekt
+
+När du lägger till flera dimensionskolumner i en friformstabell fungerar varje rad med dimensionsobjekt som en enda sammanfogad dimensionspost. Med den här funktionen kan du se mätdata för specifika kombinationer av dimensioner.
+
+Ta till exempel en frihandstabell där dimensionerna är _City_, _Device Type_ och _Day of Month_ och måttet är _Events_. De tre dimensionsobjekten i den första raden i tabellen blir en enda sammanfogad dimensionspost som visar att det var 2 056 händelser som ägde rum i Mumbai från mobiltelefoner den 30:e i månaden.
+
+| Dimension: Ort | Dimension: Enhetstyp | Dimension: Dag i månaden | Mått: Händelser |
+|---------|----------|---------|---------|
+| Mumbai | Mobiltelefon | 30 | 2 056 |
+| New York | Tablet | 31 | 1 761 |
+| Bangalore | Skrivbord | 1 | 1 666 |
+| Delhi | Mobiltelefon | 14 | 1 396 |
+
+Så här visas tabellen i Analysis Workspace:
+
+![Exempel på flera dimensioner](assets/multi-dim-example.png)
 
 ## Lägga till flera dimensionskolumner
 
@@ -39,6 +56,8 @@ Du kan lägga till flera dimensionskolumner en åt gången eller gruppvis.
      Om du vill markera flera dimensioner håller du ned tangenten ***Kommando*** (i Mac) eller tangenten ***Ctrl*** (i Windows).
 
      ![Dra flera dimensioner](assets/dimensions-add-multiple.png)
+
+1. Visa varje rad i tabellen som en enskild dimensionspost. Mer information finns i [Visa sammanfogade dimensionsobjekt](#view-concatenated-dimension-items).
 
 ## Filtrera tabeller
 
@@ -160,9 +179,21 @@ Med uppdelningar kan du:
 
 ### Lägga till uppdelningar i en tabell med flera dimensionskolumner
 
-När du lägger till en uppdelning i en tabell som har flera dimensionskolumner, sträcker sig uppdelningen över alla dimensionsobjekt på raden där du lägger till den.
+När du lägger till en uppdelning i en tabell som har flera dimensionskolumner, gäller uppdelningen den sammanfogade dimensionsposten (för alla dimensionskolumner) på raden där du lägger till den.
 
-Du kan lägga till en uppdelning enligt beskrivningen i [Bryt ned dimensioner](/help/components/dimensions/t-breakdown-fa.md).
+Dessutom kan du lägga till flera dimensionskolumner i en uppdelning. Varje rad med dimensionsposter i uppdelningen fungerar också som en enda sammanfogad dimensionspost.
+
+<!-- update screenshot to show the breakdown, and include this introductory sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows... " -->
+
+![exempel på flera sorteringar](assets/dimensions-multiple-sort.png)
+
+Mer information om hur du lägger till en brytning finns i [Bryt ned dimensioner](/help/components/dimensions/t-breakdown-fa.md).
+
+## Skapa ett segment baserat på en dimensionspost som sträcker sig över flera dimensionskolumner
+
+När du skapar ett segment baserat på en dimensionspost som sträcker sig över flera dimensionskolumner, inkluderas varje dimensionspost i segmentdefinitionen, och operatorerna And förenar dem.
+
+Mer information om hur du skapar ett segment finns i [Skapa segment](/help/components/segments/seg-create.md).
 
 ## Dimensioner som inte stöds {#unsupported}
 

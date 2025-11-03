@@ -4,14 +4,14 @@ title: Filtrera och ordna
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 1d760139bd988097486e5c151364f291ad8e243d
+source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1105'
 ht-degree: 0%
 
 ---
 
-# Filtrera och ordna tabeller
+# Filtrera och sortera tabeller på frihand
 
 Frihandstabeller i Analysis Workspace är grunden för interaktiv dataanalys. De kan därför innehålla tusentals rader med information. Filtrering och sortering av data kan vara en viktig del av att effektivt kunna hitta den viktigaste informationen.
 
