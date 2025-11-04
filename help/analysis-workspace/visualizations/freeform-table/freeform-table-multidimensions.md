@@ -5,7 +5,7 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 9314f7d88834a67efb61d0cc0cceef1ccd2fb9cb
+source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
 workflow-type: tm+mt
 source-wordcount: '1262'
 ht-degree: 1%
@@ -89,7 +89,7 @@ Så här sorterar du data i tabeller efter en kolumn:
 
 ### Sortera tabeller efter flera kolumner (avancerad sortering)
 
-{{release-limited-testing-section}}
+<!-- add this back in when move this section back to the filter and sort article: {{release-limited-testing-section}} -->
 
 #### Använda sortering på flera kolumner
 
@@ -175,7 +175,7 @@ Med flera dimensionskolumner kan du:
 
 Med uppdelningar kan du:
 
-* Dela upp ett dimensionsobjekt i friformstabellen med en andra dimension. Du kan visa upp till 200 dimensionsobjekt för den sekundära dimensionen.
+* Dela upp ett dimensionsobjekt i friformstabellen med en andra dimension. Du kan visa upp till 400 dimensionsobjekt för den sekundära dimensionen.
 
 ### Lägga till uppdelningar i en tabell med flera dimensionskolumner
 

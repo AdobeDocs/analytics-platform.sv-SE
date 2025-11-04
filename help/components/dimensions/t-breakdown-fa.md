@@ -6,7 +6,7 @@ feature: Dimensions
 exl-id: 6b433db3-02c1-4deb-916e-b01c0b79889e
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a32f2c308b8fc1b463dc00d77008063035968241
+source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Du kan dela upp mätvärden efter dimensionsobjekt eller målgruppssegment under
 
 >[!NOTE]
 >
->Antalet uppdelningar i tabellen är begränsat till 200. Den här gränsen ökar vid export av uppdelningar.
+>Antalet uppdelningar i tabellen är begränsat till 400. Den här gränsen ökar vid export av uppdelningar.
 
 ## Uppdelning efter position
 
