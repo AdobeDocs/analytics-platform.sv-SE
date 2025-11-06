@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
+source-git-commit: 518f2aeac309a34016146b7a4da7823b6fd84cac
 workflow-type: tm+mt
-source-wordcount: '2413'
+source-wordcount: '2416'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->Data Insights Agent är tillgängligt för berättigade kunder under en begränsad tid. Du kan få tillgång till Data Insights Agent till och med den 28 februari 2026. Om du vill fortsätta använda Data Insights Agent utan avbrott kontaktar du Adobe kontorepresentant för att få veta mer om Adobe Experience Platform Agent Orchestrator licenser.
+>Data Insights Agent är tillgängligt för berättigade kunder under en begränsad tid. Du kan få tillgång till Data Insights Agent till och med den 28 februari 2026. Om du vill fortsätta använda Data Insights Agent efter detta datum utan avbrott kontaktar du Adobe kontorepresentant för att få veta mer om Adobe Experience Platform Agent Orchestrator licenser.
 
 Data Insights Agent, som är tillgängligt från [AI-assistenten](/help/ai-assistant.md) i Customer Journey Analytics, är en generativ AI-konversationsagent som snabbt och effektivt besvarar frågor om dina data. Det bygger upp relevanta visualiseringar i Analysis Workspace med komponenter från datavyn och med era faktiska data.
 
@@ -54,7 +54,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
 * **Behörigheter**: Nödvändiga behörigheter måste beviljas i [!UICONTROL Adobe Admin Console] innan användare kan komma åt Data Insights Agent.
 
-  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
+  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
    1. I **[!UICONTROL Admin Console]** väljer du fliken **[!UICONTROL Products]** för att visa sidan **[!UICONTROL All products and services]**.
    1. Välj **[!UICONTROL Customer Journey Analytics]**.
    1. På fliken **[!UICONTROL Product Profiles]** väljer du titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL AI Assistant: Product Knowledge].
@@ -62,7 +62,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
       ![Fliken Behörigheter i Admin Console](assets/ai-assistant-permissions-tab.png)
 
-   1. Markera redigeringsikonen **[!UICONTROL Reporting Tools]** Redigera![&#x200B; på raden &#x200B;](/help/assets/icons/Edit.svg) i den angivna tabellen.
+   1. Markera redigeringsikonen **[!UICONTROL Reporting Tools]** Redigera![ på raden ](/help/assets/icons/Edit.svg) i den angivna tabellen.
    1. Bläddra till eller sök efter **[!UICONTROL AI Assistant: Product Knowledge]** och välj sedan plusikonen ![AddCircle](/help/assets/icons/AddCircle.svg) bredvid den här behörigheten.
    1. Bläddra till eller sök efter **[!UICONTROL Data Insights Agent]** och välj sedan plusikonen ![AddCircle](/help/assets/icons/AddCircle.svg) bredvid den här behörigheten.
 
@@ -264,7 +264,7 @@ Nedan följer god praxis för din Customer Journey Analytics-konfiguration (data
 >[!MORELIKETHIS]
 >
 >[Komponentinställningar](/help/data-views/component-settings/overview.md)
->[Dataordlista &#x200B;](/help/components/data-dictionary/data-dictionary-overview.md)
->[Godkänn beräknat mått &#x200B;](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->[Dela segment &#x200B;](/help/components/segments/seg-share.md)
+>[Dataordlista ](/help/components/data-dictionary/data-dictionary-overview.md)
+>[Godkänn beräknat mått ](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>[Dela segment ](/help/components/segments/seg-share.md)
 >
