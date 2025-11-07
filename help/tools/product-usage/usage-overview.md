@@ -2,9 +2,9 @@
 title: Översikt över produktanvändning
 description: Få insikter och rapporter om hur er organisation använder Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 5b5d4cb17ee73415dbd77bbf0964fc3d4e513cf0
+source-git-commit: 22f3059ffef5df76028f36ffa00da8f98956dee1
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,9 @@ Alla datainsamlingar och inställningar konfigureras automatiskt när de är akt
 
 >[!IMPORTANT]
 >
->Den här funktionen är viktig för dina avtalsenliga radbegränsningar i Adobe Experience Platform. Se till att din organisation kan hantera data som genereras av den här funktionen innan du aktiverar den.
+>Om du aktiverar produktanvändning lagras användningsdata i Adobe Experience Platform datasjön. Se till att din organisations lagringsallokering för datavjön kan hantera de ytterligare datauppsättningar som genereras när den här funktionen aktiveras.
+>
+>Den här funktionen räknas inte av mot dina licensierade Customer Journey Analytics-rapporteringsradbegränsningar eller händelserättigheter.
 
 ## Aktivera produktanvändning
 
