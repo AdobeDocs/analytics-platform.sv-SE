@@ -4,9 +4,9 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: d6477006dfa8134521516b6e0665ff487236c10a
 workflow-type: tm+mt
-source-wordcount: '20382'
+source-wordcount: '20719'
 ht-degree: 0%
 
 ---
@@ -383,7 +383,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Lär dig vilka innehålls- och innehållsattribut som fungerar bäst."
->abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
+>abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
 
 
 Följande mallar är tillgängliga:
@@ -1063,12 +1063,27 @@ Följande mallar är tillgängliga:
 | **Journey Optimizer - översiktsrapport** | Se en detaljerad sammanfattning av trafik- och engagemangsmätningar för alla kampanjer och resor i er miljö.<p>**Detta kan hjälpa dig** att bättre förstå hur effektiva era kampanjer och resor är på hög nivå. </p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, som att justera kampanjer och resor baserat på målpublikens engagemangsnivåer.</p> |
 | **Journey Optimizer-prenumerationer** | Visa profilernas prenumerationer och avbeställningar som är kopplade till särskilda listor.<p>**Detta kan hjälpa dig** att bättre förstå hur effektiva olika prenumerationskampanjer och -initiativ är när det gäller att öka engagemanget och konverteringarna.</p><p>**Baserat på vad du lär dig kan du** göra något annat, som att justera dina prenumerationskampanjer baserat på målpublikens engagemangsnivåer.</p> |
 
+### Brand Concierge {#brand-concierge-templates}
 
+>[!CONTEXTUALHELP]
+>id="template--brand-concierge-b2c"
+>title="Analysera användarengagemanget med hjälp av konversationsmönster, användarfeedback och hur effektiva era rekommendationer är."
+>abstract="**Detta kan hjälpa dig** att identifiera interaktionsmönster, utvärdera konversationskvaliteten, spåra trender för kundnöjdhet och mäta effekten av länkrekommendationer.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att förfina AI-agentens svar, utveckla riktat innehåll för vanliga problem, förbättra rekommendationsalgoritmer eller skapa specialiserade vägar för olika användarsegment."
+
+>[!CONTEXTUALHELP]
+>id="template--brand-concierge--concierge"
+>title="Spåra hela livscykeln för B2B-mötesförfrågningar. Övervaka konverteringsgrader, konsultprestanda och identifiera era mest effektiva leads-genereringskanaler."
+>abstract="**Detta kan hjälpa dig** att spåra möteskonverteringsgrader, identifiera högpresterande gruppmedlemmar, förstå säsongstrender i bokningsbeteende och identifiera vilka sidor som genererar de mest värdefulla mötesförfrågningarna.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att optimera processen för mötesförfrågan, distribuera resurser till högkonverterande sidor, utveckla målinriktad utbildning för konsulter med lägre bokningsfrekvens eller implementera nya strategier för att minska antalet missade möten."
+
+| Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
+| --- | --- | 
+| [!UICONTROL **Brand Concierge - översikt**] | Analysera användarengagemanget med hjälp av konversationsmönster, användarfeedback och hur effektiva era rekommendationer är. <p>**Detta kan hjälpa dig** att identifiera interaktionsmönster, utvärdera konversationskvaliteten, spåra trender för kundnöjdhet och mäta effekten av länkrekommendationer.</p><p>**Baserat på vad du lär dig kan du** göra något av följande, som att förfina AI-agentens svar, utveckla riktat innehåll för vanliga problem, förbättra rekommendationsalgoritmer eller skapa specialiserade vägar för olika användarsegment.</p> |
+| **Brand Concierge B2B-möten** | Spåra hela livscykeln för B2B-mötesförfrågningar. Övervaka konverteringsgraden, utvärdera konsultens bokningsprestanda och identifiera era mest effektiva leads-genereringskanaler. <p>**Detta kan hjälpa dig** att spåra möteskonverteringsgrader, identifiera högpresterande gruppmedlemmar, förstå säsongsrelaterade trender i bokningsbeteende och identifiera vilka webbadresser som genererar de mest värdefulla mötesförfrågningarna. </p><p>**Baserat på vad du lär dig kan du** göra något av följande, t.ex. optimera processen för mötesförfrågan, distribuera resurser till URL:er med hög konverteringsgrad, utveckla målinriktad utbildning för konsulter med lägre bokningsfrekvens eller implementera nya strategier för att minska antalet missade möten.</p> |
 
 
 ### B2B-mallar {#b2b-templates}
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 
 <!-- CJA B2B Edition only -->
