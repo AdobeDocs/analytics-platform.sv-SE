@@ -4,21 +4,23 @@ description: Läs om begreppet målgruppspublicering i Customer Journey Analytic
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
+source-git-commit: ff301a4c76c547bf52e0dfaef5258fd183411c73
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
 # Översikt över publikpublicering
 
-Nu kan du skapa och publicera målgrupper som identifierats i Customer Journey Analytics till [kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv) i Adobe Experience Platform för kundanpassning och personalisering.
+Du kan skapa och publicera målgrupper som identifierats i Customer Journey Analytics till [Kundprofil i realtid](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=sv) i Adobe Experience Platform för kundanpassning och personalisering.
+
+<!-- add this when Audience Analysis releases: (For information about ingesting audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).) -->
 
 Att publicera målgrupper är ett tydligt sätt att aktivera och vidta åtgärder för insikter som hittas i Customer Journey Analytics. Dessa åtgärder kan omfatta:
 
 * Använda publiken för en resa i Adobe Journey Optimizer.
-Mer information om hur du använder målgrupper som publicerats till Experience Platform finns i [Kom igång med målgrupper](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences) i Journey Optimizer-dokumentationen.
+Mer information om hur du använder målgrupper som publicerats till Experience Platform finns i [Kom igång med målgrupper](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences) i Journey Optimizer-dokumentationen.
 * Exportera målgruppen till en tredje part via ett Experience Platform-mål.
 * Förbättra kundprofilen i realtid med användbara attribut som bygger på händelsebaserade data i Customer Journey Analytics.
 * Allt detta med minimal fördröjning efter publikens publicering.
@@ -43,7 +45,7 @@ De målgrupper du skapar i Customer Journey Analytics behöver inte baseras på 
 
 ## Datastyrning och samtycke
 
-När du publicerar en målgrupp i Customer Journey Analytics registreras de etiketter och profiler för datastyrning som är kopplade till de fält som används i målgruppen.  När målgruppen aktiveras i någon av Adobe Experience App finns alla tillhörande etiketter och policyer för datastyrning tillgängliga för den målgruppen och lämplig tillsyn kan tillämpas. [Läs mer om samtycke](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=sv-SE#consent-policy).
+När du publicerar en målgrupp i Customer Journey Analytics registreras de etiketter och profiler för datastyrning som är kopplade till de fält som används i målgruppen.  När målgruppen aktiveras i någon av Adobe Experience App finns alla tillhörande etiketter och policyer för datastyrning tillgängliga för den målgruppen och lämplig tillsyn kan tillämpas. [Läs mer om samtycke](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy).
 
 ## Nästa steg
 

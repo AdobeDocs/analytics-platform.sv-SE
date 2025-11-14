@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
+source-git-commit: 0c3dfd54dc0cee912cab18644fa984b2be5a26a7
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1321'
 ht-degree: 11%
 
 ---
@@ -138,7 +138,6 @@ ht-degree: 11%
    + [Kombinerade händelsedatamängder](../connections/combined-dataset.md)
    + [Standardsökningar](../connections/standard-lookups.md)
    + [B2B-sökningar](../connections/transform-datasets-b2b-lookups.md)
-
 + Datavyer {#cja-dataviews}
    + [Översikt över datavyer](../data-views/data-views.md)
    + [Skapa eller redigera en datavy](../data-views/create-dataview.md)
@@ -163,7 +162,9 @@ ht-degree: 11%
    + Delade mått{#shared-metrics-dimensions}
       + [Översikt](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [Redigerare](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-
+   + Målgruppsanalys {#audience-analysis}
+      + [Översikt](/help/connections/audience-analysis/audience-analysis-overview.md)
+      + [Analysera målgrupper från RTCDP](/help/connections/audience-analysis/analyze-audiences.md)
 + verktyg {#tools}
    + Tillgångsöverföring {#asset-transfer}
       + [Överför resurser](../tools/asset-transfer/transfer-assets.md)
@@ -335,10 +336,10 @@ ht-degree: 11%
       + [Hantera anteckningar](../components/annotations/manage-annotations.md)
       + [Visa anteckningar](../components/annotations/view-annotations.md)
       + [Mobil styrkortsanteckning](../components/annotations/mobile-annotations.md)
-   + Målgrupper {#audiences}
-      + [Översikt över målgrupper](../components/audiences/audiences-overview.md)
+   + Målgruppspublicering {#audiences}
+      + [Översikt över publikpublicering](../components/audiences/audiences-overview.md)
       + [Skapa och publicera målgrupper](../components/audiences/publish.md)
-      + [Hantera målgrupper](../components/audiences/manage.md)
+      + [Hantera publicerade målgrupper](../components/audiences/manage.md)
    + Mått {#dimensions}
       + [Översikt](../components/dimensions/overview.md)
       + [Förhandsvisa dimensioner](../components/dimensions/view-dimensions.md)
