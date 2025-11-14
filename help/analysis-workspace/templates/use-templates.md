@@ -383,7 +383,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Lär dig vilka innehålls- och innehållsattribut som fungerar bäst."
->abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
+>abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
 
 
 Följande mallar är tillgängliga:
@@ -1078,7 +1078,7 @@ Följande mallar är tillgängliga:
 
 ### B2B-mallar {#b2b-templates}
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 
 <!-- CJA B2B Edition only -->
