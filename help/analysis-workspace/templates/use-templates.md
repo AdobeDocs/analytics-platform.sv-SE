@@ -4,9 +4,9 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: d6477006dfa8134521516b6e0665ff487236c10a
+source-git-commit: 8b9f45bc68fd90c2b15a91d547256c18d0d7142b
 workflow-type: tm+mt
-source-wordcount: '20719'
+source-wordcount: '20645'
 ht-degree: 0%
 
 ---
@@ -383,7 +383,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Lär dig vilka innehålls- och innehållsattribut som fungerar bäst."
->abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
+>abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
 
 
 Följande mallar är tillgängliga:
@@ -591,11 +591,6 @@ Följande mallar är tillgängliga:
 
 
 <!--Both AA and CJA-->
-
->[!CONTEXTUALHELP]
->id="template--audienceOverview"
->title="Se det land som besökarna kommer ifrån."
->abstract="**Det här kan hjälpa dig** att bättre förstå vad de populäraste länderna besökarna kommer från när de besöker din webbplats.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att använda data för att fokusera på marknadsföringsaktiviteter i dessa länder, eller se till att webbplatsupplevelsen är optimal i länder som har olika primära språk.<br/>Den här mallen använder dimensionen Länder."
 
 >[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"
@@ -1083,7 +1078,7 @@ Följande mallar är tillgängliga:
 
 ### B2B-mallar {#b2b-templates}
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 
 <!-- CJA B2B Edition only -->
