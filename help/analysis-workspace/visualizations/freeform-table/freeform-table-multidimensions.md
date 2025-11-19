@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
+source-git-commit: 77acfaf2d186e7fe7d6b9d973af5dedb3956f5d5
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1263'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Du kan lägga till flera dimensionskolumner en åt gången eller gruppvis.
 
      ![Dra flera dimensioner](assets/dimensions-add-multiple.png)
 
-1. Visa varje rad i tabellen som en enskild dimensionspost. Mer information finns i [Sammanfogade dimensionsobjekt](#view-concatenated-dimension-items).
+1. Visa varje rad i tabellen som en enskild dimensionspost. Mer information finns i [Sammanfogade dimensionsobjekt](#concatenated-dimension-items).
 
 ## Filtrera tabeller
 
@@ -181,11 +181,11 @@ Med uppdelningar kan du:
 
 När du lägger till en uppdelning i en tabell som har flera dimensionskolumner, gäller uppdelningen den sammanfogade dimensionsposten (för alla dimensionskolumner) på raden där du lägger till den.
 
+![exempel på flersortering](assets/dimensions-multiple-sort-breakdown.png)
+
 Dessutom kan du lägga till flera dimensionskolumner i en uppdelning. Varje rad med dimensionsposter i uppdelningen fungerar också som en enda sammanfogad dimensionspost.
 
-<!-- update screenshot to show the breakdown, and include this introductory sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows... " -->
-
-![exempel på flera sorteringar](assets/dimensions-multiple-sort.png)
+<!-- Add a screenshot of a breakdown with multiple cllumns, then add this sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows..." -->
 
 Mer information om hur du lägger till en brytning finns i [Bryt ned dimensioner](/help/components/dimensions/t-breakdown-fa.md).
 
