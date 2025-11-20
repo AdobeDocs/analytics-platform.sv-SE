@@ -28,7 +28,7 @@ Intelligenta bildtexter inriktas på följande:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligenta bildtexter](https://video.tv.adobe.com/v/3420131/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligenta bildtexter](https://video.tv.adobe.com/v/3443142/?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
