@@ -4,7 +4,7 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 0e282bc341588032fadee45cc128663cf557b21f
+source-git-commit: 6cb72495bd190a31f0cb1533f0b33a0929d8a35b
 workflow-type: tm+mt
 source-wordcount: '20733'
 ht-degree: 0%
@@ -383,7 +383,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Lär dig vilka innehålls- och innehållsattribut som fungerar bäst."
->abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
+>abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
 
 
 Följande mallar är tillgängliga:
@@ -481,6 +481,13 @@ Följande mallar är tillgängliga:
 | **Beställningar** | <!--duplicated in Most popular section-->Visa det totala antalet inköpshändelser som har gjorts på din webbplats. <p>**Det här kan hjälpa dig** att bättre förstå vilka dimensionsobjekt som har bidragit till en ordning genom att kombinera Orders-måttet med valfri dimension. Du kan till exempel se de främsta kampanjerna (med hjälp av spårningskoddimensionen) som har bidragit till inköp.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel justera kampanjer som inte uppfyller de inköpsmål som du skulle kunna förvänta dig. </p><p>I den här mallen används måttet för beställningar. |
 
 ### Webb: Målgrupp {#web-audience}
+
+<!--CJA only-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="Se vilka målgrupper som finns representerade bland de personer som besöker er webbplats."
+>abstract="**Det här kan hjälpa dig** att bättre förstå allmän information om målgrupperna, var målgrupperna kommer (RTCDP, Customer Journey Analytics och så vidare), vilka målgrupper som överlappar med mera.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel använda data för att fokusera på marknadsföringssatsningar för dessa specifika målgrupper, eller skapa anpassade upplevelser för kunder som spänner över flera målgrupper.<br/>Den här mallen använder dimensionerna Målgruppsnamn, Målgruppsursprung, Avslutade målgruppsnamn och Avslutade målgruppsursprung."
 
 <!--AA only-->
 
@@ -593,11 +600,6 @@ Följande mallar är tillgängliga:
 <!--Both AA and CJA-->
 
 >[!CONTEXTUALHELP]
->id="template--audienceOverview"
->title="Se vilka målgrupper som finns representerade bland de personer som besöker er webbplats."
->abstract="**Det här kan hjälpa dig** att bättre förstå allmän information om målgrupperna, var målgrupperna kommer (RTCDP, Customer Journey Analytics och så vidare), vilka målgrupper som överlappar med mera.<br/>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel använda data för att fokusera på marknadsföringssatsningar för dessa specifika målgrupper, eller skapa anpassade upplevelser för kunder som spänner över flera målgrupper.<br/>Den här mallen använder dimensionerna Målgruppsnamn, Målgruppsursprung, Avslutade målgruppsnamn och Avslutade målgruppsursprung."
-
->[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"
 >title="Se det land som besökarna kommer ifrån."
 >abstract="**Det här kan hjälpa dig** att bättre förstå vad de populäraste länderna besökarna kommer från när de besöker din webbplats.<br/>**Baserat på vad du lär dig kan du** göra flera saker, som att använda data för att fokusera på marknadsföringsaktiviteter i dessa länder, eller se till att webbplatsupplevelsen är optimal i länder som har olika primära språk.<br/>Den här mallen använder dimensionen Länder."
@@ -649,6 +651,8 @@ Följande mallar är tillgängliga:
 
 
 Följande mallar är tillgängliga:
+
+<!--need to add audience overview: - **[!UICONTROL Audience overview]** - View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p> - -->
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
 | --- | --- | 
@@ -1083,7 +1087,7 @@ Följande mallar är tillgängliga:
 
 ### B2B-mallar {#b2b-templates}
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 
 <!-- CJA B2B Edition only -->
