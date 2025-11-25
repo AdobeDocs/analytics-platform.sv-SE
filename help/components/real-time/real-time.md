@@ -4,9 +4,9 @@ title: Översikt över realtidsrapportering
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
+source-git-commit: 59d48b84ddd34ef161ec0b11f023ccccf9b2e892
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '810'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 2%
 Realtidsrapportering i Customer Journey Analytics visar och uppdaterar data och visualiseringar inom en eller flera paneler i Analysis Workspace i realtid.
 
 {{ultimate-package}}
+
+>[!TIP]
+>
+>Om du är berättigad till Ultimate-paketet men inte ser [alternativet för uppdatering i realtid](use-real-time.md) skapar du en kundtjänstbiljett som begär att få aktivera realtidsrapportering för din organisation.
+
 
 ## Användningsexempel
 
@@ -39,7 +44,7 @@ Du vill validera, till exempel:
 
 ## Så här fungerar det
 
-Realtidsrapportering använder en konsoliderad datamängd som är helt skild från den [konsoliderade (kombinerade) datamängden &#x200B;](/help/connections/combined-dataset.md) som används för standardrapportering. Du använder [Uppdatera i realtid-växeln](use-real-time.md) för att växla mellan:
+Realtidsrapportering använder en konsoliderad datamängd som är helt skild från den [konsoliderade (kombinerade) datamängden ](/help/connections/combined-dataset.md) som används för standardrapportering. Du använder [Uppdatera i realtid-växeln](use-real-time.md) för att växla mellan:
 
 * Realtidsrapportering för en konsoliderad datauppsättning som innehåller upp till 24 timmars rullande data.
 * Standardrapportering på den konsoliderade datauppsättningen som innehåller upp till 13 månaders rullande data (eller längre om du har licensierat tillägget för utökad datakapacitet).
