@@ -6,16 +6,16 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 3654d452f2bc4fec5f53854307536b3b8679eac3
+source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '521'
 ht-degree: 2%
 
 ---
 
 # Översikt över målgruppsanalys
 
-<!-- add hidden text in this article when this feature releases: /help/components/audiences/audiences-overview.md -->
+<!-- add hidden text in this article when this feature releases: /help/components/audiences/audiences-overview.md and this article: /help/analysis-workspace/templates/use-templates.md-->
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 Med hjälp av målgruppsanalys kan ni importera målgruppsmedlemskapsdata från Experience Platform-profildatauppsättningar till en Customer Journey Analytics-anslutning. Publiken blir tillgänglig som nya dimensioner för användning i Analysis Workspace.
 
-I följande diagram och tillhörande tabell visas hur en målgruppsanalyskonfiguration i Customer Journey Analytics gör målgruppsdata från Experience Platform tillgängliga i Analysis Workspace:
+I följande diagram och tillhörande tabell visas hur en målgruppsanalyskonfiguration i Customer Journey Analytics gör Experience Platform målgruppsdata tillgängliga i Analysis Workspace:
 
 ![Översikt över målgruppsanalys](assets/audience-analysis-overview.png)
 

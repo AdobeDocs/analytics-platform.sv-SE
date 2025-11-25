@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 3654d452f2bc4fec5f53854307536b3b8679eac3
+source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 Du kan börja analysera Experience Platform-målgrupper i Customer Journey Analytics när du har [skapat en konfiguration för målgruppsanalys](/help/connections/audience-analysis/audience-analysis-configure.md), när målgruppsdata är tillgängliga som nya dimensioner i Analysis Workspace.
 
 En mall för en publiköversikt finns i Customer Journey Analytics.
+
+<!-- Can you also use the new audience dimensions in any project, regardless of whether it's a template? I assume so -->
+
+<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? -->
 
 Mer information om hur du får åtkomst till mallen för målgruppsöversikt finns i [Åtkomst till och kör en mall](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) i [Använd mallar](/help/analysis-workspace/templates/use-templates.md).
 
@@ -41,7 +45,7 @@ Visar data för alla målgrupper med användningshändelser som är associerade 
 
 Välj upp till tre målgrupper i tabellen på den här panelen för att se hur de överlappar varandra i motsvarande Venndiagram.
 
-## Avslutade målgruppsanvändning
+## Avslutade målgruppspanelen
 
 Visar data för alla befintliga målgrupper med användningshändelser som är associerade med den valda datavyn. Data visas alltid i går, så om du ändrar panelens datumintervall blir data felaktiga. &quot;Utdragna målgrupper&quot; är målgrupper där personer med användningshändelser lämnade eller slutade igår.
 
