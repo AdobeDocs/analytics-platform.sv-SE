@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 9c4ae8174086559ee552c5ffc95a8a7b0009f126
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 0%
+source-wordcount: '1097'
+ht-degree: 1%
 
 ---
 
@@ -20,11 +20,11 @@ Den här snabbstartsguiden förklarar hur du kan använda de data som samlas in 
 >
 >Du har Adobe Analytics licensierat och driftsatt på en eller flera av dina webbplatser med någon av de dokumenterade implementeringsmetoderna:
 >
->- [Implementera analys med Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=sv-SE)
+>- [Implementera analys med Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
 >
->- [Implementera analys med Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=sv-SE)
+>- [Implementera analys med Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html)
 >
->- [Implementera analys med JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=sv-SE)
+>- [Implementera analys med JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)
 
 För att uppnå detta måste du:
 
@@ -56,7 +56,7 @@ Så här skapar du en Adobe Analytics-källanslutning:
 
    ![Fönstret Adobe Experience Platform med Källor markerat tillsammans med Adobe-program och Lägg till data markerat.](./assets/sources-overview.png)
 
-4. Välj **[!UICONTROL Report suite]**. Välj den som du vill använda i listan över rapportsviter.
+4. Välj **[!UICONTROL Report suite]**. Välj den som du vill använda i listan över rapportsviter.<br/> Du kan också använda ![Sök](/help/assets/icons/Search.svg) **[!UICONTROL _Sök_]** för att söka efter en rapportserie.
 
    ![Adobe Experience Platform-fönstret med rapportsvitslistan](./assets/report-suites.png)
 
@@ -83,7 +83,7 @@ När anslutningen har skapats skapas dataflödet automatiskt för att fylla i en
 
 När det första intaget är slutfört är dina Adobe Analytics-rapportsviter klara att användas av Customer Journey Analytics.
 
-En mer omfattande självstudiekurs finns i [Skapa en källanslutning till Adobe Analytics i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=sv-SE).
+En mer omfattande självstudiekurs finns i [Skapa en källanslutning till Adobe Analytics i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
 
 
 ## Konfigurera en anslutning
