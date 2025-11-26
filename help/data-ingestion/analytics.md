@@ -20,11 +20,11 @@ Den här snabbstartsguiden förklarar hur du kan använda de data som samlas in 
 >
 >Du har Adobe Analytics licensierat och driftsatt på en eller flera av dina webbplatser med någon av de dokumenterade implementeringsmetoderna:
 >
->- [Implementera analys med Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
+>- [Implementera analys med Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=sv-SE)
 >
->- [Implementera analys med Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html)
+>- [Implementera analys med Adobe Analytics-tillägg](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=sv-SE)
 >
->- [Implementera analys med JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)
+>- [Implementera analys med JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=sv-SE)
 
 För att uppnå detta måste du:
 
@@ -83,7 +83,7 @@ När anslutningen har skapats skapas dataflödet automatiskt för att fylla i en
 
 När det första intaget är slutfört är dina Adobe Analytics-rapportsviter klara att användas av Customer Journey Analytics.
 
-En mer omfattande självstudiekurs finns i [Skapa en källanslutning till Adobe Analytics i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
+En mer omfattande självstudiekurs finns i [Skapa en källanslutning till Adobe Analytics i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=sv-SE).
 
 
 ## Konfigurera en anslutning
