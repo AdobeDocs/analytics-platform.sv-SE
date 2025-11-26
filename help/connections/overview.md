@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Anslutningar - översikt
 
-Med anslutningar kan Customer Journey Analytics produktadministratörer definiera vilka [!DNL  Experience Platform]-datakällor, till exempel händelser, sökning, profil och sammanfattningsdatauppsättningar, som är inkapslade. Anslutningar utgör grunden för Customer Journey Analytics och avgör tillgängligheten för data (fält) som du kan definiera i en [datavy](/help/data-views/data-views.md) som mått eller mätvärden.
+Med anslutningar kan Customer Journey Analytics produktadministratörer definiera vilka [!DNL &#x200B; Experience Platform]-datakällor, till exempel händelser, sökning, profil och sammanfattningsdatauppsättningar, som är inkapslade. Anslutningar utgör grunden för Customer Journey Analytics och avgör tillgängligheten för data (fält) som du kan definiera i en [datavy](/help/data-views/data-views.md) som mått eller mätvärden.
 
 >[!IMPORTANT]
 >
