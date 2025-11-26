@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: 25d0647c6a764d8f4306a5c049a7a68e0426cef9
+source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 {{release-limited-testing}}
 
-Data Mirror är en Experience Platform-funktion som gör det möjligt att ändra på radnivå från externa databaser till datasjön med hjälp av modellbaserade scheman. Det bevarar datarelationer, gör det unikt och stöder versionshantering utan att behöva använda ETL-processer (uppströms extract, transform och load).
+Data Mirror är en Experience Platform-funktion som gör det möjligt att ändra på radnivå från externa databaser till datasjön med hjälp av relationsscheman. Det bevarar datarelationer, gör det unikt och stöder versionshantering utan att behöva använda ETL-processer (uppströms extract, transform och load).
 
 Använd Experience Platform Data Mirror för att synkronisera infogningar, uppdateringar och borttagningar (ändringsbara data) från interna externa datalagerlösningar ([!DNL Snowflake], [!DNL Azure Databricks] eller [!DNL Google BigQuery]) direkt med data i Experience Platform. Data Mirror hjälper er att bevara databasmodellens struktur och dataintegritet när ni överför data till Experience Platform.
 
@@ -33,7 +33,7 @@ Data Mirror har följande viktiga funktioner för databassynkronisering:
 
 Använd Data Mirror för att importera ändringar direkt från era källsystem, tillämpa schemaintegriteten och göra data tillgängliga för analyser, resesamordning och arbetsflöden för regelefterlevnad. Data Mirror eliminerar komplexa ETL-processer i tidigare led och snabbar upp implementeringen genom att möjliggöra direkt spegling av befintliga databasmodeller. Denna eliminering kan förbättra datastyrningen genom exakt kontroll över borttagningar och datahygien.
 
-Se även [Experience Platform-dokumentationen om Data Mirror](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
+Se även [Experience Platform-dokumentationen om Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
 
 ## Data Mirror för Customer Journey Analytics
 
@@ -50,6 +50,6 @@ Experience Platform Data Mirror för Customer Journey Analytics är tillgänglig
 
 >[!MORELIKETHIS]
 >
->[Data Mirror snabbstartsguide: Spegla och använda modellbaserade data](model-based.md)
->&#x200B;>[Data Mirror (Experience Platform-dokumentation)](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[Modellbaserade scheman (Experience Platform-dokumentation)](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/model-based)
+>[Data Mirror snabbstartsguide: Spegla och använda relationsdata](relational.md)
+>[Data Mirror (Experience Platform-dokumentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[Relationsscheman (Experience Platform-dokumentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational)

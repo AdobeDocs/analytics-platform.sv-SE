@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
-source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
+source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -54,8 +54,8 @@ Mer information finns i [[!DNL Azure Databricks] handboken om hur du aktiverar f
 
 Läs följande dokumentation om hur du aktiverar registrering av ändringsdata för din [!DNL Azure Databricks]-källanslutning:
 
-* [Skapa en [!DNL Azure Databricks] basanslutning](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
-* [Skapa en källanslutning för en databas](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Skapa en [!DNL Azure Databricks] basanslutning](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
+* [Skapa en källanslutning för en databas](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Google BigQuery]
 
@@ -65,8 +65,8 @@ Mer information finns i handboken om [språksatser för datadefinitioner i  [!DN
 
 Läs följande dokumentation om hur du aktiverar registrering av ändringsdata för din [!DNL Google BigQuery]-källanslutning:
 
-* [Skapa en [!DNL Google BigQuery] basanslutning](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
-* [Skapa en källanslutning för en databas](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Skapa en [!DNL Google BigQuery] basanslutning](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
+* [Skapa en källanslutning för en databas](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Snowflake]
 
@@ -82,11 +82,11 @@ Mer information finns i [[!DNL Snowflake] handboken om hur du använder ändring
 
 Läs följande dokumentation om hur du aktiverar registrering av ändringsdata för din [!DNL Snowflake]-källanslutning:
 
-* [Skapa en [!DNL Snowflake] basanslutning](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
-* [Skapa en källanslutning för en databas](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Skapa en [!DNL Snowflake] basanslutning](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
+* [Skapa en källanslutning för en databas](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 
 >[!MORELIKETHIS]
 >
->[Data Mirror snabbstartsguide: Spegla och använda modellbaserade data](model-based.md)
+>[Data Mirror snabbstartsguide: Spegla och använda relationsdata](relational.md)
 >

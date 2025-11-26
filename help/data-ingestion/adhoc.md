@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Basics
 role: Admin
 exl-id: 17b5842f-dc81-481f-8b21-dc90a133adcf
-source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
+source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 1%
@@ -65,7 +65,7 @@ Så här startar du arbetsflödet:
       1. Lägg till ett valfritt **[!UICONTROL Description]**. Till exempel: `Sample data from a CSV file`.
       1. Lägg till en eller flera valfria **[!UICONTROL Tags]**, eller markera en eller flera befintliga **[!UICONTROL Tags]**.
 
-         ![Konfigurera ad hoc-datauppsättning &#x200B;](assets/adhoc-dataset-configure.png)
+         ![Konfigurera ad hoc-datauppsättning ](assets/adhoc-dataset-configure.png)
 
       1. Välj **[!UICONTROL Next]**.
    1. I steget **[!UICONTROL Add data]**:
@@ -98,7 +98,7 @@ I gränssnittet **[!UICONTROL Schemas]** > **[!UICONTROL Sample Data From CSV - 
 
   >[!NOTE]
   >
-  >Arbetsflödet definierar att alla fält i schemat är av typen String. Du kan inte ändra den här typen senare. Om du behöver större flexibilitet i definitionen av ett ad hoc-schema bör du överväga att [använda API:t för att skapa ett ad hoc-schema](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/tutorials/ad-hoc) och sedan använda arbetsflödet [Skapa datauppsättning från schema](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#schema).
+  >Arbetsflödet definierar att alla fält i schemat är av typen String. Du kan inte ändra den här typen senare. Om du behöver större flexibilitet i definitionen av ett ad hoc-schema bör du överväga att [använda API:t för att skapa ett ad hoc-schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc) och sedan använda arbetsflödet [Skapa datauppsättning från schema](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema).
   > 
 
 
@@ -155,7 +155,7 @@ Mer information om tillgängliga inställningar för ad hoc-datauppsättningar f
 
 >[!IMPORTANT]
 >
->Utöver den allmänna rekommendationen att inte använda ad hoc-datauppsättningar och scheman för tidsseriedata kan du inte använda arbetsflödet **[!UICONTROL Create dataset from CSV]** för tidsseriedata. I det här arbetsflödet definieras alla fält som av typen String, som du inte kan ändra efteråt. När du lägger till en tidsseriebaserad datauppsättning (händelse eller sammanfattning) till en anslutning, kräver den här typen av datauppsättning definitionen för minst ett fält av typen DateTime.<br/>Om du behöver använda ad hoc-tidsseriedata bör du överväga att [använda API:t för att skapa ett ad hoc-schema](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) och sedan använda arbetsflödet [Skapa datauppsättning från schema](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/user-guide#schema) .
+>Utöver den allmänna rekommendationen att inte använda ad hoc-datauppsättningar och scheman för tidsseriedata kan du inte använda arbetsflödet **[!UICONTROL Create dataset from CSV]** för tidsseriedata. I det här arbetsflödet definieras alla fält som av typen String, som du inte kan ändra efteråt. När du lägger till en tidsseriebaserad datauppsättning (händelse eller sammanfattning) till en anslutning, kräver den här typen av datauppsättning definitionen för minst ett fält av typen DateTime.<br/>Om du behöver använda ad hoc-tidsseriedata bör du överväga att [använda API:t för att skapa ett ad hoc-schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) och sedan använda arbetsflödet [Skapa datauppsättning från schema](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema) .
 
 
 När du har skapat en [anslutning](/help/connections/overview.md) kan du utföra olika hanteringsåtgärder, till exempel [markera och kombinera datauppsättningar](/help/connections/combined-dataset.md), [kontrollera status för en anslutnings datauppsättningar och status för dataöverföring](/help/connections/manage-connections.md), med mera.
@@ -185,7 +185,7 @@ Så här skapar du en datavy:
    1. Lägg till alla schemafält och/eller standardkomponenter som du vill inkludera i komponentrutorna **[!UICONTROL METRICS]** eller **[!UICONTROL DIMENSIONS]**. Se till att du lägger till relevanta fält från datauppsättningen som innehåller ad hoc-data. Så här kommer du åt fälten:
 
       1. Välj **[!UICONTROL Event datasets]**.
-      1. Välj **[!UICONTROL Adhoc & Model-based fields]**.
+      1. Välj **[!UICONTROL Adhoc & Relational fields]**.
 
          ![Datavy - adhoc-komponenter](assets/cja-dataview-components-adhoc.png)
 

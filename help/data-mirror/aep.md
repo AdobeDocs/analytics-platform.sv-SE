@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
+source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -27,13 +27,13 @@ Här nedan hittar du information som du bör tänka på när du konfigurerar de 
 
 ## Schema
 
-Du måste skapa ett [modellbaserat schema](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/model-based){target="_blank"} som modellerar den interna datalagertabellen som du vill spegla. När du skapar det modellbaserade schemat måste du se till att följande krav uppfylls:
+Du måste skapa ett [relationsschema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational){target="_blank"} som är den interna datalagertabellen som du vill spegla. När du skapar relationsschemat måste du se till att följande krav uppfylls:
 
-* När du uppmanas att ange typ av modellbaserat schema måste du välja det manuella alternativet.
+* När du uppmanas att ange typ av relationsschema måste du välja det manuella alternativet.
 * Välj lämpligt schema för datatypen. Observera att Experience Platform Data Mirror används mest för tidsseriedata (till exempel händelsedata).
 
 * Definiera fälten i ditt schema och deras attribut
-* Konfigurera obligatoriska attribut för fält i ett modellbaserat schema:
+* Konfigurera obligatoriska attribut för fält i ett relationsschema:
 
    * primärnyckel
    * versionsidentifierare
@@ -42,7 +42,7 @@ Du måste skapa ett [modellbaserat schema](https://experienceleague.adobe.com/sv
 ## Datauppsättning
 
 Du kan konfigurera en datauppsättning för schemat i förväg eller skapa en datauppsättning när du konfigurerar källkopplingen.
-När du skapar en datauppsättning i förväg eller väljer en datauppsättning måste du se till att data använder ett modellbaserat [schema](#schema) som du skapade tidigare.
+När du skapar en datauppsättning i förväg eller väljer en datauppsättning måste du se till att data använder ett [schema](#schema) som du skapade tidigare.
 
 
 ## Source Connector
@@ -53,9 +53,9 @@ Om du vill ställa in källkopplingen till de datalagerlösningar som stöds, an
 
 Autentisering mot den inbyggda datalagerlösningen som stöds finns i relevant Experience Platform-dokumentation:
 
-* [Azure-databaser](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Azure-databaser](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Markera data
@@ -67,12 +67,12 @@ När du har anslutit till den inbyggda datalagerlösningen väljer du tabellen i
 
 Se till att du aktiverar registrering av ändringsdata. En informationspanel med en beskrivning av kraven för datainhämtning.
 
-Ange en ny eller befintlig datauppsättning som är baserad på det modellbaserade schema som du skapade tidigare. Ange och välj andra alternativ i informationsgränssnittet för dataflöden.
+Ange en ny eller befintlig datauppsättning som baseras på det relationsschema som du skapade tidigare. Ange och välj andra alternativ i informationsgränssnittet för dataflöden.
 
 
 ### Mappning
 
-Mappa fälten i tabellen i den inbyggda datalagerlösningen till fälten som du har angett för det modellbaserade schemat.
+Mappa fälten i tabellen i den inbyggda datalagerlösningen till fälten som du har angett för relationsschemat.
 
 
 ### Schemaläggning
@@ -90,6 +90,6 @@ När du är klar med konfigurationen av källkopplingen skapas ett dataflöde. F
 
 >[!MORELIKETHIS]
 >
->[Data Mirror snabbstartsguide: Spegla och använda modellbaserade data](model-based.md)
->&#x200B;>[Data Mirror (Experience Platform-dokumentation)](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[Modellbaserade scheman (Experience Platform-dokumentation)](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/model-based)
+>[Data Mirror snabbstartsguide: Spegla och använda relationsdata](relational.md)
+>[Data Mirror (Experience Platform-dokumentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[Relationsscheman (Experience Platform-dokumentation)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational)
