@@ -94,7 +94,7 @@ I tabellerna nedan finns en översikt över de tillgängliga menyerna.
 |---|---|---|---|
 | **[!UICONTROL Blank panel]** | **[!UICONTROL *opt+b *]** | **[!UICONTROL *alt+b *]** | Infoga en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md). |
 | **[!UICONTROL Media concurrent viewers]** | **[!UICONTROL *opt+h *]** | **[!UICONTROL *alt-h *]** | Infoga en [panel för parallella medievyer](/help/analysis-workspace/c-panels/media-concurrent-viewers.md). |
-| **[!UICONTROL Media playback time spent]** | **[!UICONTROL *opt+i *]** | **[!UICONTROL *alt+i *]** | Infoga en [medieuppspelningstid som har använts på panelen ](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
+| **[!UICONTROL Media playback time spent]** | **[!UICONTROL *opt+i *]** | **[!UICONTROL *alt+i *]** | Infoga en [medieuppspelningstid som har använts på panelen &#x200B;](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
 | **[!UICONTROL Media average minute audience]** | **[!UICONTROL *opt+m *]** | **[!UICONTROL *alt+m *]** | Infoga en [medieminarium](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)-målgruppspanel. |
 | **[!UICONTROL Attribution]** | **[!UICONTROL *opt+e *]** | **[!UICONTROL *alt+e *]** | Infoga en [attribueringspanel](/help/analysis-workspace/c-panels/attribution.md). |
 | **[!UICONTROL Freeform]** | **[!UICONTROL *opt+a *]** | **[!UICONTROL *alt+a *]** | Infoga en [friformspanel](/help/analysis-workspace/c-panels/freeform-panel.md). |

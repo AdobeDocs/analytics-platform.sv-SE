@@ -386,7 +386,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 
 1. Starta RStudio.
 1. Skapa en ny R Markdown-fil eller hämta [det här exemplet på R-markeringsfil](assets/BI-Extension.Rmd.zip).
-1. I ditt första segment anger du följande programsatser mellan ` ```{r} ` och ` ``` `. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värden från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till de värden som krävs för de olika parametrarna, till exempel `host`, `dbname` och `user`. Exempel:
+1. I ditt första segment anger du följande programsatser mellan ` ` ``{r} ` och ` `` ` `. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värden från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till de värden som krävs för de olika parametrarna, till exempel `host`, `dbname` och `user`. Exempel:
 
    ```R
    library(rstudioapi)
@@ -407,7 +407,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 
    ![RStudio, konfigurationssteg 1](assets/rstudio-config-step1.png)
 
-1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
+1. Skapa ett nytt segment och ange följande programsatser mellan ` ` `` {r} ` och ` `` ` `.
 
    ```R
    con <- dbConnect(
@@ -424,7 +424,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 1. Kör segmentet. Du bör inte se några utdata om anslutningen lyckas.
 
 
-1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
+1. Skapa ett nytt segment och ange följande programsatser mellan ` ` `` {r} ` och ` `` ` `.
 
    ```R
    views <- dbListTables(con)
@@ -434,7 +434,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 1. Kör segmentet. Du bör se `character(0)` som den enda utdatafilen.
 
 
-1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
+1. Skapa ett nytt segment och ange följande programsatser mellan ` ` `` {r} ` och ` `` ` `.
 
    ```R
    glimpse(dv)
@@ -506,7 +506,7 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 
    En linjediagramvisualisering ersätter tabellen och använder samma data som tabellen. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI-filtret Datumintervall med VERSALER 2 ](assets/uc2-pbi-daterange.png)
+   ![Power BI-filtret Datumintervall med VERSALER 2 &#x200B;](assets/uc2-pbi-daterange.png)
 
 1. Visualisering av linjediagram:
 
@@ -528,7 +528,7 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 
    1. Dra och släpp **[!UICONTROL Daterangeday]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Columns]**.
       * Välj **[!UICONTROL Day]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL DAY(Daterangeday)]**.
-   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
+   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
    1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
@@ -554,7 +554,7 @@ Ett exempel på **[!UICONTROL Daily Trend]**-panel för användningsfallet:
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Instrumentpanel för bordsdator ](assets/uc2-tableau-dashboard.png)
+      ![Instrumentpanel för bordsdator &#x200B;](assets/uc2-tableau-dashboard.png)
 
 
 >[!TAB Sökare]
@@ -604,7 +604,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    ## Daily Events
@@ -665,7 +665,7 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
 
    1. Dra och släpp **[!UICONTROL Daterangehour]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Columns]**.
       * Välj **[!UICONTROL More]** > **[!UICONTROL Hours]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL HOUR(Daterangeday)]**.
-   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
+   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
    1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
@@ -691,7 +691,7 @@ Ett exempel på **[!UICONTROL Hourly Trend]**-panel för användningsfallet:
 
       **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
-      ![Instrumentpanel för bordsdator ](assets/uc3-tableau-dashboard.png)
+      ![Instrumentpanel för bordsdator &#x200B;](assets/uc3-tableau-dashboard.png)
 
 
 >[!TAB Sökare]
@@ -742,7 +742,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    ## Hourly Events
@@ -811,7 +811,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 
    En linjediagramvisualisering ersätter tabellen och använder samma data som tabellen. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI-filtret Datumintervall med VERSALER 2 ](assets/uc4-pbi-filter-daterange.png)
+   ![Power BI-filtret Datumintervall med VERSALER 2 &#x200B;](assets/uc4-pbi-filter-daterange.png)
 
 1. Visualisering av linjediagram:
 
@@ -833,7 +833,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 
    1. Dra och släpp **[!UICONTROL Daterangeday]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Columns]**.
       * Välj **[!UICONTROL MONTH]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL MONTH(Daterangeday)]**.
-   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
+   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
    1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
@@ -859,7 +859,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Instrumentpanel för bordsdator ](assets/uc4-tableau-dashboard.png)
+      ![Instrumentpanel för bordsdator &#x200B;](assets/uc4-tableau-dashboard.png)
 
 
 >[!TAB Sökare]
@@ -909,7 +909,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    ## Hourly Events
@@ -983,7 +983,7 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 
    1. Välj **[!UICONTROL Sum of purchase_revenue]** om du vill sortera produktnamnen i fallande inköpsintäktsordning. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop Use Case 5 Table status ](assets/uc5-pbi-table.png)
+   ![Power BI Desktop Use Case 5 Table status &#x200B;](assets/uc5-pbi-table.png)
 
 1. I rutan **[!UICONTROL Filters]**:
 
@@ -1026,8 +1026,8 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
       ![Datorfilter för Tablet PC](assets/uc5-tableau-filter.png)
 
    1. Dra och släpp **[!UICONTROL Product Name]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Rows]**.
-   1. Dra och släpp **[!UICONTROL Purchases]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Purchases)]**.
-   1. Dra och släpp **[!UICONTROL Purchase Revenue]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet intill **[!UICONTROL Columns]**och vänster från **[!UICONTROL SUM(Purchases)]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Dra och släpp **[!UICONTROL Purchases]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Purchases)]**.
+   1. Dra och släpp **[!UICONTROL Purchase Revenue]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet intill **[!UICONTROL Columns]**&#x200B;och vänster från **[!UICONTROL SUM(Purchases)]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Om du vill beställa båda diagrammen i fallande inköpsintäktsordning för du muspekaren över rubriken **[!UICONTROL Purchase Revenue]** och väljer sorteringsikonen.
    1. Om du vill begränsa antalet poster i diagrammen väljer du **[!UICONTROL SUM(Purchase Revenue)]** i **[!UICONTROL Rows]** och väljer **[!UICONTROL Filter]** i listrutan.
    1. I dialogrutan **[!UICONTROL Filter \[Purchase Revenue\]]** väljer du **[!UICONTROL Range of values]** och anger lämpliga värden. Till exempel: `1,000,000` - `2,000,000`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
@@ -1059,7 +1059,7 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 
    **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
-   ![Instrumentpanel för bordsdator ](assets/uc5-tableau-dashboard.png)
+   ![Instrumentpanel för bordsdator &#x200B;](assets/uc5-tableau-dashboard.png)
 
 
 
@@ -1136,7 +1136,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    library(tidyr)
@@ -1201,7 +1201,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
    1. Välj **[!UICONTROL sum purchases]**
 
 1. Om du vill ändra det lodräta stapeldiagrammet till en tabell kontrollerar du att tabellen är markerad och väljer **[!UICONTROL Matrix]** i rutan **[!UICONTROL Visualizations]**.
-   * Dra **[!UICONTROL product_name]** från **[!UICONTROL Columns]** och släpp fältet under **[!UICONTROL product_categor]**y i **[!UICONTROL Rows]** i rutan **[!UICONTROL Visualization]**.
+   * Dra **[!UICONTROL product_name]** från **[!UICONTROL Columns]** och släpp fältet under **[!UICONTROL product_categor]**&#x200B;y i **[!UICONTROL Rows]** i rutan **[!UICONTROL Visualization]**.
 
 1. Om du vill begränsa antalet produkter som visas i tabellen väljer du **[!UICONTROL product_name is (All)]** i rutan **[!UICONTROL Filters]**.
 
@@ -1214,7 +1214,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
 1. Om du vill dela upp varje kategori i tabellen väljer du **[!UICONTROL +]** på produktkategorinivå. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI-matristabell med flera dimensioner för stationära datorer ](assets/uc6-powerbi-data.png)
+   ![Power BI-matristabell med flera dimensioner för stationära datorer &#x200B;](assets/uc6-powerbi-data.png)
 
 1. Välj **[!UICONTROL Home]** på den översta menyn och välj **[!UICONTROL New visual]**. En ny visuell vy läggs till i rapporten.
 
@@ -1270,7 +1270,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Flera dimensioner rankade för Tableu Desktop ](assets/uc6-tableau-category.png)
+      ![Flera dimensioner rankade för Tableu Desktop &#x200B;](assets/uc6-tableau-category.png)
 
 1. Byt namn på aktuellt **[!UICONTROL Sheet 1]**-blad till `Category`.
 1. Välj **[!UICONTROL New Worksheet]** om du vill skapa ett nytt blad och ändra namnet till `Data`.
@@ -1316,7 +1316,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
    **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
-   ![Instrumentpanel för bordsdator ](assets/uc6-tableau-final.png)
+   ![Instrumentpanel för bordsdator &#x200B;](assets/uc6-tableau-final.png)
 
 
 >[!TAB Sökare]
@@ -1396,7 +1396,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    ## Multiple dimensions ranked
@@ -1426,7 +1426,7 @@ I det här fallet vill du ha det tydliga antalet produktnamn som rapporterades i
 
 Om du vill rapportera ett distinkt antal produktnamn anger du ett beräknat mått i Customer Journey Analytics, med **[!UICONTROL Title]** `Product Name (Count Distinct)` och **[!UICONTROL External Id]** `product_name_count_distinct`.
 
-![Beräknade Customer Journey Analytics-produktnamn (Distincr Count) ](assets/cja-calc-metric-distinct-count-product-names.png)
+![Beräknade Customer Journey Analytics-produktnamn (Distincr Count) &#x200B;](assets/cja-calc-metric-distinct-count-product-names.png)
 
 Du kan sedan använda det måttet i en **[!UICONTROL Count Distinct Dimension Values]**-panel för följande användningsfall:
 
@@ -1515,7 +1515,7 @@ Du kan också använda funktionen för antal som skiljer sig från Power BI.
 
    **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
-   ![Instrumentpanel för bordsdator ](assets/uc7-tableau-final.png)
+   ![Instrumentpanel för bordsdator &#x200B;](assets/uc7-tableau-final.png)
 
 
 Du kan också använda funktionen för att räkna distinkt från skrivbordet i Tableu.
@@ -1565,7 +1565,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    ## Count Distinct
@@ -1712,7 +1712,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment. Se till att du använder rätt namn för datumintervall. Exempel: `Last Year 2023`.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment. Se till att du använder rätt namn för datumintervall. Exempel: `Last Year 2023`.
 
    ```R
    ## Monthly Events for Last Year
@@ -1880,7 +1880,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment. Se till att du använder rätt filternamn. Exempel: `Fishing Products`.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment. Se till att du använder rätt filternamn. Exempel: `Fishing Products`.
 
    ```R
    ## Dimension filtered by name
@@ -2045,7 +2045,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment. Se till att du använder en lämplig kategori. Till exempel `Hunting`.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment. Se till att du använder en lämplig kategori. Till exempel `Hunting`.
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value
@@ -2300,7 +2300,7 @@ Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    ## Dimension 1 Sorted
@@ -2585,7 +2585,7 @@ Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    ## Dimension 1 Limited
@@ -2655,7 +2655,7 @@ Mätvärden från Customer Journey Analytics identifieras av [!UICONTROL Compone
 Filter som du definierar i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL filterName]** . När du använder ett **[!UICONTROL filterName]**-fält i Power BI Desktop kan du ange vilket filter som ska användas.
 
 **Beräknade mått**
-Beräknade mätvärden som du definierar i Customer Journey Analytics identifieras av den [!UICONTROL External ID] som du har definierat för det beräknade mätvärdet. Det beräknade måttet **[!UICONTROL Product Name (Count Distinct)]** har till exempel [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** och visas som **[!UICONTROL cm_product_name_count_distinc]**t i Power BI Desktop.
+Beräknade mätvärden som du definierar i Customer Journey Analytics identifieras av den [!UICONTROL External ID] som du har definierat för det beräknade mätvärdet. Det beräknade måttet **[!UICONTROL Product Name (Count Distinct)]** har till exempel [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** och visas som **[!UICONTROL cm_product_name_count_distinc]**&#x200B;t i Power BI Desktop.
 
 **Datumintervall**
 Datumintervall som du definierar i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL daterangeName]** . När du använder ett **[!UICONTROL daterangeName]**-fält kan du ange vilket datumintervall som ska användas.
@@ -2844,7 +2844,7 @@ Customer Journey Analytics-komponenterna (mått, mått, filter, beräknade värd
 
 **Anpassade omformningar**
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    df <- dv %>%
@@ -2908,7 +2908,7 @@ För de flesta visualiseringar från Customer Journey Analytics erbjuder Power B
 | ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Punkt](/help/analysis-workspace/visualizations/bullet-graph.md) |  |
 | ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
 | ![Kombination](/help/assets/icons/ComboChart.svg) | [Kombination](/help/analysis-workspace/visualizations/combo-charts.md) | [Stapeldiagram, stapeldiagram, linjediagram och grupperade stapeldiagram](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#combo-charts) |
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | [Diagram ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#doughnut-charts) |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | [Diagram &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#doughnut-charts) |
 | ![ConversionTratt](/help/assets/icons/ConversionFunnel.svg) | [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Funnel](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#funnel-charts). |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md) | Dispositionsträd? |
 | ![VisaTabell](/help/assets/icons/ViewTable.svg)</p> | [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tabell](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#tables) och [Matris](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#matrix) |
@@ -3103,7 +3103,7 @@ Var och en av de BI-verktyg som stöds har några kavattningar i arbetet med Cus
 * Power BI Desktop Advanced datumintervallfiltrering är exklusiv.  För slutdatumet måste du välja ett som är efter dagen som du vill rapportera på. Exempel: **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL and before]** `1/2/2023`.
 * Power BI Skrivbord är som standard **[!UICONTROL Import]** när du skapar en anslutning. Kontrollera att du använder **[!UICONTROL Direct Query]**.
 * Power BI Desktop visar dataomvandlingar via Power Query.  Power Query fungerar i första hand med Import-typanslutningar så många omformningar som du använder som datum- eller strängfunktioner ger ett felmeddelande om att du måste växla till en Import-typanslutning.  Om du behöver omforma data vid frågetillfället bör du använda härledda dimensioner och mätvärden så att Power BI inte behöver göra själva omformningarna.
-* Power BI Desktop förstår inte hur typkolumner för datum och tid ska hanteras. Därför stöds inte **[!UICONTROL daterange*X *]**-dimensioner som **[!UICONTROL daterangehour]**och **[!UICONTROL daterangeminute]**.
+* Power BI Desktop förstår inte hur typkolumner för datum och tid ska hanteras. Därför stöds inte **[!UICONTROL daterange*X *]**-dimensioner som **[!UICONTROL daterangehour]**&#x200B;och **[!UICONTROL daterangeminute]**.
 * Power BI Desktop försöker som standard skapa flera anslutningar med hjälp av fler sessioner i frågetjänsten.  Gå till Power BI-inställningarna för ditt projekt och inaktivera parallella frågor.
 * Power BI Desktop sköter all sortering och begränsning på klientsidan. Power BI Desktop har också olika semantik för toppfiltrering av *X* som innehåller bundna värden. Du kan alltså inte skapa samma sortering och begränsning som i Analysis Workspace.
 * I tidigare versioner av Power BI Desktop, oktober 2024-versionen, bryts PostgreSQL-datakällor. Se till att du använder den version som omnämns i den här artikeln.

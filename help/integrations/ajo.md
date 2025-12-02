@@ -25,7 +25,7 @@ När du har aktiverat Customer Journey Analytics-rapportering för Journey Optim
 
 ### Anslutning
 
-Anslutningen har namnet **[!UICONTROL AJO Enabled Connection (*sandbox name *)]**och har följande utanför rutans värden för konfiguration och datauppsättningar:
+Anslutningen har namnet **[!UICONTROL AJO Enabled Connection (*sandbox name *)]**&#x200B;och har följande utanför rutans värden för konfiguration och datauppsättningar:
 
 | **Anslutningsinställningar** | Värde |
 |---|---|
@@ -44,7 +44,7 @@ Anslutningen har namnet **[!UICONTROL AJO Enabled Connection (*sandbox name *)]*
 | Namn på datauppsättning | Schema | Datauppsättningstyp | Datakälltyp | Person-ID | Nyckel | Matchningsnyckel | Importera nya data | Backfill-data |
 |---|---|---|---|---|---|---|---|---|
 | [!UICONTROL AJO Entity Dataset] | [!UICONTROL AJO Entity Record Schema] | [!UICONTROL Lookup] | [!UICONTROL Other] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status grön](assets/../../connections/assets/status-green.svg) på | ![Status grå](assets/../../connections/assets/status-gray.svg) av |
-| [!UICONTROL Journey Step Events] | [!UICONTROL Journey Step Event schema for Journey Orchestration] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL  IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) på | ![Status grå](assets/../../connections/assets/status-gray.svg) av |
+| [!UICONTROL Journey Step Events] | [!UICONTROL Journey Step Event schema for Journey Orchestration] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL &#x200B; IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) på | ![Status grå](assets/../../connections/assets/status-gray.svg) av |
 | [!UICONTROL AJO Email Tracking Experience Event Dataset] | [!UICONTROL AJO Email Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) på | ![Status grå](assets/../../connections/assets/status-gray.svg) av |
 | [!UICONTROL AJO Message Feedback Event Dataset] | [!UICONTROL AJO Message Feedback Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) på | ![Status grå](assets/../../connections/assets/status-gray.svg) av |
 | [!UICONTROL AJO Push Tracking Experience Event Dataset] | [!UICONTROL AJO Push Tracking Experience Event Schema] | [!UICONTROL Event] | [!UICONTROL Other] | [!UICONTROL IdentityMap(\<primary\>)] | - | - | ![Status grön](assets/../../connections/assets/status-green.svg) på | ![Status grå](assets/../../connections/assets/status-gray.svg) av |
