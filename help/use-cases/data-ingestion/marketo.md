@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: ef8a2d08-848b-4072-b400-7b24955a085b
 role: Admin
-source-git-commit: fedb1337b32e44fc00989bace6a4d1788043f55f
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1059'
 ht-degree: 1%
@@ -33,19 +33,19 @@ Så här rapporterar du Marketo Engage-data i Customer Journey Analytics:
 
 +++ &#x200B;1. Mappa Marketo källdatafält till deras XDM-mål
 
-Mappa objekten [Personer](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) och [Aktiviteter](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) till deras respektive målfält för XDM-schemat.
+Mappa objekten [Personer](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) och [Aktiviteter](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) till deras respektive målfält för XDM-schemat.
 
 +++
 
 +++ &#x200B;2. Infoga Marketo-data i Adobe Experience Platform
 
-Använd [Marketo Engage-anslutningen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) för att hämta data från Marketo till Experience Platform och hålla dessa data uppdaterade med plattformsanslutna program.
+Använd [Marketo Engage-anslutningen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) för att hämta data från Marketo till Experience Platform och hålla dessa data uppdaterade med plattformsanslutna program.
 
 +++
 
 +++ &#x200B;3. Konfigurera en anslutning till datauppsättningen i Customer Journey Analytics
 
-För att kunna rapportera om Experience Platform datauppsättningar måste du först upprätta en anslutning mellan datauppsättningar i Experience Platform och Customer Journey Analytics. Se [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/create-connection).
+För att kunna rapportera om Experience Platform datauppsättningar måste du först upprätta en anslutning mellan datauppsättningar i Experience Platform och Customer Journey Analytics. Se [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection).
 
 +++
 
@@ -54,7 +54,7 @@ För att kunna rapportera om Experience Platform datauppsättningar måste du f�
 
 En [datavy](/help/data-views/data-views.md) är en behållare som är specifik för Customer Journey Analytics och som gör att du kan avgöra hur data från en anslutning ska tolkas. Här anges alla mått och mätvärden som är tillgängliga i Analysis Workspace - i det här fallet mått och mått som är specifika för Marketo. Det anger också vilka kolumner som måtten och mätvärdena hämtar data från. Datavyer definieras som förberedelser för rapportering i Analysis Workspace.
 
-+++
++++ 
 
 +++ &#x200B;5. Rapportera i Analysis Workspace
 
@@ -115,7 +115,7 @@ Marketo Engage erbjuder rapporter i appen med fokus på nyckeltal för automatis
 * **Avancerad BI-analys (tillägg)**: Dra och släpp, skapa anpassade rapporter genom att peka och klicka för att analysera program-/konto-/lead-data (se den senaste avancerade BI Analytics-översikten).
 * **Fördefinierade instrumentpaneler**: För kampanjresultat, kanaleffektivitet, pipeline/intäktsbidrag.
 * **Program- och kanalanalys**: Attribution och ROI specific to Marketo-managed travel.
-* **Marknadsföringscentrerad**: Fokuserar på användare som behöver genomskinlighet i marknadsföringstratten: e-poststatistik, formulär, smarta kampanjer och intäktseffekter.
+* **Marknadsföringscentrerad**: Fokuserar på användare som behöver genomskinlighet i marknadsföringsversionen av funnel: e-poststatistik, formulär, smarta kampanjer och intäktseffekter.
 
 
 #### Vanliga användningsfall för Marketo Engage

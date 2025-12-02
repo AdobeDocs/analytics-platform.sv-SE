@@ -5,7 +5,7 @@ title: Konfigurera platser för molnexport
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: 5adcab1df932f5c8af1f140fb6707f2d56726ae3
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2026'
 ht-degree: 0%

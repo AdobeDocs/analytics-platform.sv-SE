@@ -4,7 +4,7 @@ description: Lär dig hantera målgrupper i Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Genom att hantera tidigare skapade målgrupper kan ni:
 * Få insikt i hur lång tid det tog att producera en målgrupp **från Customer Journey Analytics.** Det tog att få insikt i hur lång tid det tog att producera en målgrupp. Och hur lång tid det tog att få publiken att visas i kundplattformen i realtid för aktiveringsändamål.
 * Se om målgrupperna i Customer Journey Analytics **används aktivt av kundplattformen i realtid**. Eller (helst) alla Experience Platform-program som använder de målgrupper som skapats av Customer Journey Analytics.
 
-Om du har [åtkomst till målgruppsvyn](/help/technotes/access-control.md#user-level-access) kan du visa målgrupper. Om du har [åtkomst för att skapa &#x200B;](/help/technotes/access-control.md#user-level-access) målgrupper kan du redigera och ta bort målgrupper.
+Om du har [åtkomst till målgruppsvyn](/help/technotes/access-control.md#user-level-access) kan du visa målgrupper. Om du har [åtkomst för att skapa ](/help/technotes/access-control.md#user-level-access) målgrupper kan du redigera och ta bort målgrupper.
 
 ## Visa målgrupper i publiklistan
 
@@ -80,9 +80,9 @@ Följande är vanliga åtgärder i hanteraren för schemalagda projekt. Du kan v
 
 | Ikon | Åtgärd | Beskrivning |
 |:---:|---|---|
-| ![Etiketter](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Tagga de valda målgrupperna. I dialogrutan **[!UICONTROL Update tags: *målgruppsnamn *]**&#x200B;väljer du taggar i listrutan eller skriver en eller flera nya taggar. Välj **[!UICONTROL Save]**&#x200B;att spara. |
+| ![Etiketter](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Tagga de valda målgrupperna. I dialogrutan **[!UICONTROL Update tags: *målgruppsnamn *]**väljer du taggar i listrutan eller skriver en eller flera nya taggar. Välj **[!UICONTROL Save]**att spara. |
 | ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort de valda målgrupperna. |
-| ![Redigera](/help/assets/icons/Edit.svg) | **[!UICONTROL Rename]** | Byt namn på den valda målgruppen. Använd dialogrutan **[!UICONTROL Rename: *målgruppsnamn *]**&#x200B;om du vill byta namn på målgruppen och välja **[!UICONTROL Save]**&#x200B;att spara. |
+| ![Redigera](/help/assets/icons/Edit.svg) | **[!UICONTROL Rename]** | Byt namn på den valda målgruppen. Använd dialogrutan **[!UICONTROL Rename: *målgruppsnamn *]**om du vill byta namn på målgruppen och välja **[!UICONTROL Save]**att spara. |
 
 Följande åtgärder är tillgängliga i det blå åtgärdsfältet när du väljer ett eller flera schemalagda projekt.
 

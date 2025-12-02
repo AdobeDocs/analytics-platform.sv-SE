@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 1%
@@ -96,7 +96,7 @@ I tabellerna nedan indikerar ![AI genererad](/help/assets/icons/AI.svg) ett AI/M
 | Övergripande ton för resurs | ![AI genererade](/help/assets/icons/AI.svg) Övergripande ton för resursen. | Dimension<br/>Härlett fält |
 | Förgrundsfärger för resurs | ![AI genererade](/help/assets/icons/AI.svg) förgrundsfärger för resursen. | Dimension<br/>Härlett fält |
 | Bakgrundsfärger för resurs | ![AI genererade](/help/assets/icons/AI.svg) bakgrundsfärger för resursen. | Dimension<br/>Härlett fält |
-| Resurstaggar | ![AI genererade &#x200B;](/help/assets/icons/AI.svg) taggar för resursen. | Dimension<br/>Härlett fält |
+| Resurstaggar | ![AI genererade ](/help/assets/icons/AI.svg) taggar för resursen. | Dimension<br/>Härlett fält |
 | Resursscener | ![AI genererade](/help/assets/icons/AI.svg) scener för resursen. | Dimension<br/>Härlett fält |
 | Resursobjekt | ![AI genererade](/help/assets/icons/AI.svg) objekt för resursen. | Dimension<br/>Härlett fält |
 | Resursfotostilar | ![AI genererade](/help/assets/icons/AI.svg) fotostilar för resursen. | Dimension<br/>Härlett fält |

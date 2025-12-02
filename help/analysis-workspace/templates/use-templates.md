@@ -4,7 +4,7 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 6cb72495bd190a31f0cb1533f0b33a0929d8a35b
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '20733'
 ht-degree: 0%
@@ -241,7 +241,7 @@ Så här kommer du åt alla tillgängliga färdiga mallar:
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Utbildning - självstudiekurs**] | Lär dig vanliga Analysis Workspace-termer och steg för att bygga din första analys |
 | [!UICONTROL **Sidor**] | <!--duplicated in Engagement section--> Identifiera de mest populära och minst populära sidorna. <p>**Detta kan hjälpa dig** att bättre förstå din målgrupp och vilken typ av information de är mest intresserade av.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av en mängd saker, till exempel justera sidmetadata för att öka synligheten på sidor som visas i mindre grad, eller lägga tid på att förbättra innehållet på de sidor som visas mest.</p><p>I den här mallen används måtten Siddimension och Sidvisning.</p> |
 | [!UICONTROL **Sidvyer**] | <!--duplicated in Engagement section--> Visa det totala antalet sidvisningar. Data visas över en tidsperiod och jämförs med tidigare perioder. <p>**Detta kan hjälpa dig** att bättre förstå hur trafiken på din webbplats kan öka eller minska med tiden.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera effekten av en nyligen lanserad marknadsföringskampanj genom att jämföra webbplatstrafiken före och efter att kampanjen har startats. Eller jämför semestertrafiken år för år.</p><p>I den här mallen används måtten Dag och Sidvisning.</p> |
@@ -383,13 +383,13 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Lär dig vilka innehålls- och innehållsattribut som fungerar bäst."
->abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
+>abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
 
 
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Nyckeltal**] | <!--duplicated in Most popular section--> Visa en rapport som visar sidvisningar, besök och unika besökarmått sida vid sida. Data visas över en tidsperiod och jämförs med tidigare perioder. <p>**Detta kan hjälpa dig** att jämföra dessa viktiga mätvärden för att få en mer fullständig bild av antalet unika personer som besöker webbplatsen, antalet gånger som sidorna besöktes och antalet sessioner.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera det genomsnittliga antalet sidor som varje person tittar på när han/hon besöker webbplatsen under en viss vecka eller månad, och hur detta ändrades under vissa tider på året eller före och efter det att marknadsföringskampanjer kördes. </p><p>I den här mallen används måtten Dag, Sidvisning, Besök och Unika besökare.</p> |
 | [!UICONTROL **Sidvyer**] | <!--duplicated in Most popular section-->Visa det totala antalet sidvisningar. Data visas över en tidsperiod och jämförs med tidigare perioder. <p>**Detta kan hjälpa dig** att bättre förstå hur trafiken på din webbplats kan öka eller minska med tiden.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att utvärdera effekten av en nyligen lanserad marknadsföringskampanj genom att jämföra webbplatstrafiken före och efter att kampanjen har startats. Eller jämför semestertrafiken år för år.</p><p>I den här mallen används måtten Dag och Sidvisning.</p> |
 | [!UICONTROL **Sidor**] | <!--duplicated in Most popular section-->Identifiera de mest populära och minst populära sidorna. <p>**Detta kan hjälpa dig** att bättre förstå din målgrupp och vilken typ av information de är mest intresserade av.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av en mängd saker, till exempel justera sidmetadata för att öka synligheten på sidor som visas i mindre grad, eller lägga tid på att förbättra innehållet på de sidor som visas mest.</p><p>I den här mallen används måtten Siddimension och Sidvisning.</p> |
@@ -467,7 +467,7 @@ Följande mallar är tillgängliga:
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Produktkonverteringstratt**] | Visa produktkonvertering i en trattvisualisering som visar kundvagnar, utcheckningar och order. Du kan också se konverteringsprocentsatser, intäktsgenomsnitt, enhetsmedelvärden och ordermedelvärden.<p>**Det här kan hjälpa dig** att bättre förstå hur människor går igenom och släpper under konverteringsprocessen.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att förbättra din webbplats för att underlätta en smidigare utcheckningsprocess.</p> |
 | **Produkter** | Se vilka produkter som genererar nyckeltal, t.ex. de främsta säljarna eller de mest visade. <p>**Detta kan hjälpa dig** att bättre förstå vilka produkter som är mest framgångsrika.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att öka finansieringen av framgångsrika produkter och minska finansieringen av mindre framgångsrika produkter.</p><p>I den här mallen används ordermåttet och produktdimensionen. |
 | **Produktprestanda** | Se vilka produkter som ger bäst resultat.<p>**Detta kan hjälpa dig** att bättre förstå vilka produkter som är mest framgångsrika.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att öka finansieringen av framgångsrika produkter och minska finansieringen av mindre framgångsrika produkter.</p><p>I den här mallen används måtten för produktvyer, kundvagnstillägg, beställningar, intäkter och enheter. Det använder också produktdimensionen. |
@@ -655,7 +655,7 @@ Följande mallar är tillgängliga:
 <!--need to add audience overview: - **[!UICONTROL Audience overview]** - View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p> - -->
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Första och upprepa besökare**] | Visa en jämförelse av förstagångsbesökare för att upprepa besökare. <p>**Detta kan hjälpa dig** att bättre förstå hur effektiv din webbplats är när det gäller att behålla kundlojaliteten, eller hur ofta du skaffar nya kunder.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att erbjuda incitament för framtida köp till förstagångsbesökare för att locka dem att återvända.</p><!-- This template uses the --> |
 | **Person-ID** | Visa enskilda användarbeteenden i olika kanaler.<p>**Detta kan hjälpa dig** att bättre förstå hela kundresan och interaktioner över flera kontaktytor.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att anpassa marknadsföringen för att bättre anpassa användarnas preferenser.</p><!-- This template uses the --> |
 | **Geografiska länder** | Se det land som besökarna kommer ifrån.<p>**Det här kan hjälpa dig** att bättre förstå vad de populäraste länderna besökarna kommer från när de besöker din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att använda data för att fokusera på marknadsföringsaktiviteter i dessa länder, eller se till att webbplatsupplevelsen är optimal i länder som har olika primära språk.</p><p>Den här mallen använder dimensionen Länder. </p> |
@@ -774,7 +774,7 @@ Följande mallar är tillgängliga:
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Marknadskanaler**] > [!UICONTROL **Översiktsrapport för kanaler**] | När du använder anpassad attribuering visar den här mallen hur besökare kommer till din webbplats.<p>**Detta kan hjälpa dig** att bättre förstå vilka av era marknadsföringskanaler som är mest effektiva.</p><p>**Baserat på vad du lär dig kan du** göra många saker, som att investera mer i effektiva marknadsföringskanaler och ta bort från mindre effektiva marknadsföringskanaler.</p><p>Den här mallen använder dimensionerna ID (variabler/marketingchannel) och Intäktsmått.</p> |
 | [!UICONTROL **Marknadskanaler**] > [!UICONTROL **Första beröringskanalen**] | Visa den första marknadsföringskanalen som en besökare matchar under besökarens engagemangsperiod (30 dagar som standard). <p>**Detta kan hjälpa dig** att bättre förstå vilka marknadsföringskanaler som driver den inledande trafiken till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel fokusera marknadsföringen på områden som är mest effektiva.</p><p>I den här mallen används dimensionen Första beröringskanalen.</p> |
 | [!UICONTROL **Marknadsföringskanaler**] > [!UICONTROL **Första beröringskanalinformationen**] | Visa information om den första marknadsföringskanalen som en besökare matchar under besökarens insatsperiod (30 dagar som standard).<p>**Detta kan hjälpa dig** att bättre förstå vad som har bidragit till träffmatchningen i en marknadsföringskanal. Om en besökare till exempel kom till din webbplats och matchade med marknadsföringskanalen Betald sökning kan du använda kanalinformationen för att se vilken sökmotor som användes eller vilket nyckelord de sökte efter.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel fokusera marknadsföringen på områden som är mest effektiva.</p><p>Den här mallen använder dimensionen Första beröringskanalen Detalj.</p> |
@@ -844,7 +844,7 @@ Följande mallar är tillgängliga:
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Skärmar för mobilappar**] | Visa antalet händelser, sessioner och personer som är associerade med varje skärm i mobilappen.<p>**Det här kan hjälpa dig** att bättre förstå vilka skärmar på din webbplats som är populäraste.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra innehåll på de vanligaste skärmarna.</p><p>I den här mallen används ändringsmåtten Händelser, Sessioner, Personer och Procent. Även sidtitelsdimensionen används.</p> |
 | **Åtgärder för mobilappar** | Visa de åtgärder som andra vidtar i din mobilapp. <p>**Det här kan hjälpa dig** att bättre förstå hur andra använder din app och det värde som får av den.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra framkallningsfunktioner som kompletterar eller förbättrar dem som är populäraste.</p><p>I den här mallen används ändringsmåtten Händelser, Sessioner, Personer och Procent. |
 | **Användning av mobilappar** | Visa antalet användare, starter och första starter för appen samt den genomsnittliga sessionslängden.<p>**Det här kan hjälpa dig** att bättre förstå hur mycket din app används. </p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att förbättra appprestanda så att den kan anpassas till användningsmängden.</p><!-- This template uses the --> |
@@ -880,7 +880,7 @@ Följande mallar är tillgängliga:
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Mobiloperatör**] | Visa telekommunikationsföretaget som tillhandahåller mobil nätverksanslutning till de mobila enheterna som användarna använder för att få tillgång till din webbplats.<p>**Det här kan hjälpa dig** att bättre förstå vilka mobiloperatörer som är populärast hos din användarbas.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av en mängd saker, som att anpassa innehållsleveransen baserat på nätverkskapaciteten för olika operatörer för att säkerställa en smidig användarupplevelse.</p><p>I den här mallen används mobiloperatörsdimensionen.</p> |
 | **Enheter** | Visa märke och modell för mobila enheter som används för att komma åt din webbplats.<p>**Det här kan hjälpa dig** att bättre förstå vilka mobila enheter som är populärast bland dina användare.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera återgivningen av din webbplats för de vanligaste mobila enheterna.</p><p>Den här mallen använder dimensionen Mobilenhetsnamn.</p> |
 | **Enhetstyp** | Visa de mobila enhetstyper som användare använder för att få tillgång till din webbplats, t.ex. telefoner och surfplattor.<p>**Detta kan hjälpa dig** att bättre förstå de olika typer av mobila enheter som används för att komma åt din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera webbplatsen för de typer av mobila enheter som används mest.</p><p>Den här mallen använder dimensionen för mobilenhetstyp.</p> |
@@ -944,7 +944,7 @@ Följande mallar är tillgängliga:
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Minut av timmen**] | Visa antalet händelser, sessioner och personer på din webbplats, uppdelat efter minut. Om du t.ex. har en rapport med en rapporttidsram på en dag grupperas den första minuten i varje timme på dagen i samma dimensionsobjekt.<p>**Detta kan hjälpa dig** att förstå trender på detaljnivå.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att optimera resurser för topptider, ända ned till minuten.</p><p>I den här mallen används dimensionen Minut för timme.</p> |
 | **Timme på dagen** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter timme på dagen. Om du t.ex. har en rapport som sträcker sig från 1 januari till 7 januari grupperas den första timmen för varje dag i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå när webbplatsen besöks mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.</p><p>Den här mallen använder dimensionen Timme för dag.</p> |
 | **AM/PM** | Visa händelser, sessioner och personer på din webbplats, uppdelade efter AM och PM. Om du till exempel har en rapport som sträcker sig från 1 januari till 7, grupperas AM-timmarna för varje dag i samma dimensionsobjekt.<p>**Det här kan hjälpa dig** att bättre förstå när webbplatsen besöks mest och minst ofta.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel tilldela mer datorresurser till din webbplats under mycket trafik.</p><p>Den här mallen använder AM/PM-dimensionen.</p> |
@@ -984,7 +984,7 @@ Följande mallar är tillgängliga:
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Översikt över flera kanaler**] | Se hur trafiken distribueras över flera kanaler. <p>**Detta kan hjälpa dig** att bättre förstå vilka kanaler som är mest framgångsrika när det gäller trafik och engagemang. </p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av det du vill, till exempel fokusera marknadsföringen på de kanaler som ger störst avkastning på investeringen.</p><p>I den här mallen används användar-, sessions- och händelsemätningar.</p> |
 | **Webb+App** | Visa webbtrafik och mobiltrafik tillsammans.<p>**Detta kan hjälpa dig** att bättre förstå hur webb- och mobiltrafiken distribueras till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att avsätta mer resurser till din mobilappsupplevelse när den når en viss trafiknivå.</p><p>I den här mallen används mått för webbsessioner, mobilappssessioner och flerkanalssessioner för Web+App.</p> |
 | **Online/Offline** | Visa trafik online och offline tillsammans.<p>**Detta kan hjälpa dig** att bättre förstå hur online- och offlinetrafik distribueras till din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att avsätta mer resurser till din onlineupplevelse när den når en viss trafiknivå.</p><!-- This template uses the ... --> |
@@ -1021,7 +1021,7 @@ Följande mallar är tillgängliga:
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Kontrollpanel för samtalscenter**] | Visa kundtjänstdata, inklusive varför kunderna ringde och antalet gånger. <p>**Det här kan hjälpa dig** att bättre förstå var kunderna har problem och var resurser från callcenter spenderas.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att åtgärda produktproblem som genererar högre kundtjänsttrafik, vilket i slutänden förbättrar produktlönsamheten.</p> |
 | **Försäljningsställe** | Visa transaktionsdata (POS), inklusive intjänade intäkter, utförda order och sålda enheter. Den här mallen innehåller även visualiseringar som visar information om de främsta butikerna, de viktigaste produkterna och de viktigaste produktkategorierna samt online- och offlineförsäljning. <p>**Det här kan hjälpa dig** att bättre förstå vilka produkter som är era mest säljande produkter på olika butiksplatser och online.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att tilldela fler marknadsföringsresurser till produkter och kanaler med höga prestanda.</p><p>I den här mallen används måtten för användare, intäkter och order.</p> |
 | **Journey Optimizer e-postanalys** | Se hur de e-postmeddelanden du utformar och skickar med Adobe Journey Optimizer genererar nya medlemskap, lojalitetsmedlemmar och korsförsäljningsmöjligheter. <p>**Detta kan hjälpa dig** att bättre förstå hur effektiva e-postmeddelanden är som du utformar och skickar med Adobe Journey Optimizer.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att justera din e-poststrategi för en viss e-postkampanj.</p> |
@@ -1060,7 +1060,7 @@ Följande mallar är tillgängliga:
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Journey Optimizer-kampanjer**] | Se viktiga mätvärden för era Journey Optimizer-kampanjer, inklusive e-postkampanjer, experiment, i appen, SMS med mera.<p>**Detta kan hjälpa dig** att bättre förstå detaljer som antalet klick och antalet levererade meddelanden, vilket ger en heltäckande insikt i kampanjens effektivitet och engagemangsnivå.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, som att justera dina kampanjer baserat på målpublikens engagemangsnivåer.</p> |
 | **Journey Optimizer-resor** | Se viktiga mätvärden för era Journey Optimizer-resor, inklusive e-postresor, experimenterande, i appen, SMS med mera.<p>**Detta kan hjälpa dig** att bättre förstå detaljer som antalet klick och antalet levererade meddelanden, vilket ger en heltäckande insikt i hur effektiv din resa är och hur hög engagemanget är.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av något som helst, som att justera dina kampanjer baserat på målpublikens engagemangsnivåer.</p> |
 | **Journey Optimizer landningssidor** | Visa användarbeteende, engagemangsmönster, konverteringsgrader och andra viktiga mätvärden.<p>**Detta kan hjälpa dig** att bättre förstå hur effektiv din landningssida är. </p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att optimera prestanda för landningssidor.</p> |
@@ -1080,14 +1080,14 @@ Följande mallar är tillgängliga:
 >abstract="**Detta kan hjälpa dig** att spåra möteskonverteringsgrader, identifiera högpresterande gruppmedlemmar, förstå säsongstrender i bokningsbeteende och identifiera vilka sidor som genererar de mest värdefulla mötesförfrågningarna.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att optimera processen för mötesförfrågan, distribuera resurser till högkonverterande sidor, utveckla målinriktad utbildning för konsulter med lägre bokningsfrekvens eller implementera nya strategier för att minska antalet missade möten."
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Brand Concierge - översikt**] | Analysera användarengagemanget med hjälp av konversationsmönster, användarfeedback och hur effektiva era rekommendationer är. <p>**Detta kan hjälpa dig** att identifiera interaktionsmönster, utvärdera konversationskvaliteten, spåra trender för kundnöjdhet och mäta effekten av länkrekommendationer.</p><p>**Baserat på vad du lär dig kan du** göra något av följande, som att förfina AI-agentens svar, utveckla riktat innehåll för vanliga problem, förbättra rekommendationsalgoritmer eller skapa specialiserade vägar för olika användarsegment.</p> |
 | **Brand Concierge B2B-möten** | Spåra hela livscykeln för B2B-mötesförfrågningar. Övervaka konverteringsgraden, utvärdera konsultens bokningsprestanda och identifiera era mest effektiva leads-genereringskanaler. <p>**Detta kan hjälpa dig** att spåra möteskonverteringsgrader, identifiera högpresterande gruppmedlemmar, förstå säsongsrelaterade trender i bokningsbeteende och identifiera vilka webbadresser som genererar de mest värdefulla mötesförfrågningarna. </p><p>**Baserat på vad du lär dig kan du** göra något av följande, t.ex. optimera processen för mötesförfrågan, distribuera resurser till URL:er med hög konverteringsgrad, utveckla målinriktad utbildning för konsulter med lägre bokningsfrekvens eller implementera nya strategier för att minska antalet missade möten.</p> |
 
 
 ### B2B-mallar {#b2b-templates}
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 
 <!-- CJA B2B Edition only -->
@@ -1110,7 +1110,7 @@ Följande mallar är tillgängliga:
 Följande mallar är tillgängliga:
 
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
-| --- | --- | 
+| --- | --- |
 | [!UICONTROL **Översikt över B2B-kontoengagemang**] | Se hur aktiva era konton är över händelser, människor och möjligheter.<p>**Detta kan hjälpa dig** att bättre förstå om interaktionen på kontonivå trendar upp eller ned, jämför aktiviteter mellan konton och bestämma var fokus ska ligga på kundlojalitet eller kundvärvning.</p><p>**Baserat på vad du lär dig kan du** göra något av det du vill, som att fokusera på konton som är mindre engagerade men som kräver mer uppmärksamhet på grund av kontots betydelse.</p> |
 | [!UICONTROL **B2B-säljprojektsåtagande - översikt**] | Spåra engagemanget på affärsmöjlighetsnivå och hitta avtal som ökar eller minskar spänningen.<p>**Detta kan hjälpa dig** att förutsäga avtalsutvecklingen mer korrekt och fokusera på aktivering där engagemang ökar eller stannar.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att göra ytterligare affärer som nästan är slutna och att undersöka varför andra avtal tappar fart.</p> |
 | [!UICONTROL **B2B Buying Group Activity**] | Visualisera inköpsgruppsaktivitet inom varje konto för att informera om hur konto och inköp av gruppmarknadsföring fungerar.<p>**Detta kan hjälpa dig** att visualisera vilka inköpsgrupper, och vilka personer inom dessa inköpsgrupper, som är mest engagerade, och framhäva luckorna i gruppdeltagandet.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, som att försöka engagera fler personer i att köpa grupper som inte verkar vara inblandade.</p> |

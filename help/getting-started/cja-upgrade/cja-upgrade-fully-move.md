@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
@@ -98,29 +98,29 @@ När du inte längre behöver Adobe Analytics för de syften som beskrivs i avsn
 
    Den här processen skiljer sig åt beroende på vilken datainsamlingsmetod du använde för att implementera Adobe Analytics:
 
-+++ AppMeasurement
+   +++ AppMeasurement
 
    [Inaktivera AppMeasurement datainsamling](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md).
 
-+++
+   +++
 
-+++ Analystillägg (taggar)
+   +++ Analystillägg (taggar)
 
    Inaktivera Analytics-tillägget i taggar.
 
-+++
+   +++
 
-+++ API
+   +++ API
 
    Inaktivera API-datainsamling.
 
-+++
+   +++
 
-+++ Tredje part
+   +++ Tredje part
 
    Arbeta med tagghanteraren för att ta bort AppMeasurement-biblioteket från tredjepartssystemet för tagghantering.
 
-+++
+   +++
 
 1. Ta bort Adobe Analytics som en tjänst från datastream.
 

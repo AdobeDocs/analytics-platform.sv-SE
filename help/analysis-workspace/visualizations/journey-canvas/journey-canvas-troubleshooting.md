@@ -4,7 +4,7 @@ title: Felsökning av arbetsytan på resan
 feature: Visualizations
 role: User
 exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Följande information kan hjälpa dig att felsöka oönskade resultat som du kan
 
 I Resans arbetsyta kan noder som kommer senare under resan visa ett högre procentvärde eller ett högre antal än noder som kommer tidigare under resan.
 
-Till skillnad från i Utfallsvisualiseringar, som alltid är trattformade (där deltagandet minskar i varje steg), kan visualiseringar av arbetsytan på resande fot ha större delaktighet i senare steg av resan än i tidigare steg.
+Till skillnad från Fallout-visualiseringar, som alltid är funnel-formade (där deltagandet minskar i varje steg), kan visualiseringar av arbetsytan på resande fot ha större delaktighet i senare steg av resan än i tidigare steg.
 
 Detta kan inträffa i följande scenarier:
 
@@ -87,7 +87,7 @@ Siffrorna som visas på varje nod i en resa förblir konstanta oavsett vad som h
 
 I följande avsnitt visas hur procentsatserna kan ändras för samma resa, beroende på vilket av följande alternativ som har valts i fältet **[!UICONTROL Percentage value]**:
 
-+++ Procent av startnod
++++Procent av startnod
 
 Nodarna i den här resan innehåller följande statistik när fältet **[!UICONTROL Percentage value]** är inställt på **[!UICONTROL Percent of start node]**:
 
@@ -115,7 +115,7 @@ Nodarna i den här resan innehåller följande statistik när fältet **[!UICONT
 
 +++
 
-+++ Procent av totalt
++++Procent av totalt
 
 Nodarna i den här resan innehåller följande statistik när fältet **[!UICONTROL Percentage value]** är inställt på **[!UICONTROL Percent of total]**:
 

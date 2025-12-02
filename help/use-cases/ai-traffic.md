@@ -4,7 +4,7 @@ description: Förstå hur ni kan använda härledda fält som grund för att rap
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 39b3e0eb43e69c81c12e56fc7605e5746c2d650c
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%

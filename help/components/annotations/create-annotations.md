@@ -4,7 +4,7 @@ description: Lär dig skapa anteckningar i Analysis Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Om du vill definiera anteckningen använder du [[!UICONTROL Annotation builder]]
 <!-- markdownlint-enable MD034 -->
 
 
-Dialogrutan **[!UICONTROL Annotations builder]** används för att skapa nya eller redigera befintliga anteckningar. Dialogrutan heter **[!UICONTROL New annotation]** eller **[!UICONTROL Edit annotation]** för anteckningar som du skapar eller hanterar från [[!UICONTROL Annotations]-hanteraren &#x200B;](/help/components/annotations/manage-annotations.md).
+Dialogrutan **[!UICONTROL Annotations builder]** används för att skapa nya eller redigera befintliga anteckningar. Dialogrutan heter **[!UICONTROL New annotation]** eller **[!UICONTROL Edit annotation]** för anteckningar som du skapar eller hanterar från [[!UICONTROL Annotations]-hanteraren ](/help/components/annotations/manage-annotations.md).
 
 
 >[!BEGINTABS]

@@ -5,7 +5,7 @@ feature: Workspace Basics
 title: Snabbtangenter
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
@@ -18,16 +18,16 @@ Snabbtangenter (kortkommandon) finns i Analysis Workspace för smidig navigering
 
 Observera att följande symboler kan användas på tangentbordet:
 
-- **⇧** för **[!UICONTROL **&#x200B; shift &#x200B;**]**.
-- **⌘** för **[!UICONTROL **&#x200B; cmd &#x200B;**]** (kommando).
-- **⌃** för **[!UICONTROL **&#x200B; ctrl &#x200B;**]** (kontroll).
-- **⌥** för **[!UICONTROL **&#x200B; opt &#x200B;**]** (alternativ).
-- **⎇** för **[!UICONTROL **&#x200B; alt &#x200B;**]** (alternativ).
+- **⇧** för **[!UICONTROL ** shift **]**.
+- **⌘** för **[!UICONTROL ** cmd **]** (kommando).
+- **⌃** för **[!UICONTROL ** ctrl **]** (kontroll).
+- **⌥** för **[!UICONTROL ** opt **]** (alternativ).
+- **⎇** för **[!UICONTROL ** alt **]** (alternativ).
 
 ## Navigeringsåtgärder
 
 | Åtgärd | Genväg till Mac | Kortkommando i Windows |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Skapa nytt projekt | **[!UICONTROL *cmd + shift + p *]** | **[!UICONTROL *Ctrl + Skift + p *]** |
 | Öppna befintligt projekt | **[!UICONTROL *cmd + o *]** | **[!UICONTROL *ctr + o *]** |
 | Gå till rutan Paneler | **[!UICONTROL *opt + shift + 1 *]** | **[!UICONTROL *alt + Skift + 1 *]** |
@@ -35,13 +35,13 @@ Observera att följande symboler kan användas på tangentbordet:
 | Gå till rutan Komponenter | **[!UICONTROL *opt + shift + 3 *]** | **[!UICONTROL *alt + Skift + 3 *]** |
 | Komprimera/expandera alla paneler | **[!UICONTROL *opt + m *]** | **[!UICONTROL *alt + m *]** |
 | Visa/dölj aktiv panel | **[!UICONTROL *opt + cmd + m *]** | **[!UICONTROL *alt + Ctrl + m *]** |
-| Flytta till nästa panel | **[!UICONTROL *opt *+ {2 }︎]**▶ | **[!UICONTROL *alt *+ {2 }︎]**▶ |
-| Flytta till föregående panel | **[!UICONTROL *opt *+ {2 }︎]**◀ | **[!UICONTROL *alt *+ {2 }︎]**◀ |
+| Flytta till nästa panel | **[!UICONTROL *opt *+ {2 }︎▶]** | **[!UICONTROL *alt *+ {2 }︎▶]** |
+| Flytta till föregående panel | **[!UICONTROL *opt *+ {2 }︎◀]** | **[!UICONTROL *alt *+ {2 }︎◀]** |
 
 ## Analysåtgärder
 
 | Åtgärd | Genväg till Mac | Kortkommando i Windows |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Sök i den vänstra panelen | **[!UICONTROL *cmd + /*]** | **[!UICONTROL *ctrl + /*]** |
 | Skapa en avisering | **[!UICONTROL *cmd + shift + a *]** | **[!UICONTROL *Ctrl + Skift + a *]** |
 | Skapa beräknat mått | **[!UICONTROL *cmd + shift + c *]** | **[!UICONTROL *Ctrl + Skift + c *]** |
@@ -58,7 +58,7 @@ Observera att följande symboler kan användas på tangentbordet:
 ## Lägga till paneler och visualiseringar
 
 | Åtgärd | Genväg till Mac | Kortkommando i Windows |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Ny attributpanel | **[!UICONTROL *opt + e *]** | **[!UICONTROL *alt + e *]** |
 | Ny tom panel | **[!UICONTROL *opt + b *]** | **[!UICONTROL *alt + b *]** |
 | Ny friformspanel | **[!UICONTROL *opt + a *]** | **[!UICONTROL *alt + a *]** |
@@ -71,14 +71,14 @@ Observera att följande symboler kan användas på tangentbordet:
 ## Flytta panelåtgärder
 
 | Åtgärd | Genväg till Mac | Kortkommando i Windows |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Flytta panelen uppåt | **[!UICONTROL *cmd + opt + up *]** | **[!UICONTROL *alt + Ctrl + uppåt *]** |
 | Flytta panelen nedåt | **[!UICONTROL *cmd + opt + down *]** | **[!UICONTROL *alt + Ctrl + nedåt *]** |
 
 ## Demokratiseringsåtgärder
 
 | Åtgärd | Genväg till Mac | Kortkommando i Windows |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Spara projekt | **[!UICONTROL *cmd + s *]** | **[!UICONTROL *ctrl + s *]** |
 | Spara projekt som | **[!UICONTROL *cmd + shift + s *]** | **[!UICONTROL *Ctrl + Skift + s *]** |
 | Spara som mall | **[!UICONTROL *opt + t *]** | **[!UICONTROL *alt + t *]** |

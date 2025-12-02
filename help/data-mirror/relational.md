@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 2%
@@ -219,7 +219,7 @@ I steget **[!UICONTROL Authentication]** väljer du:
 
    1. Välj **[!UICONTROL Next]**.
 
-  Mer information om hur du ansluter och autentiserar när du använder [Azure-databaserna](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/databricks) eller [Snowflake](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/snowflake) finns i dokumentationen för Experience Platform.
+  Mer information om hur du ansluter och autentiserar när du använder [Azure-databaserna](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) eller [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake) finns i dokumentationen för Experience Platform.
 
 
 ### Markera data
@@ -393,7 +393,7 @@ Så här skapar du ditt projekt:
    1. Välj **[!UICONTROL Create]**.
 
 
-4. Kontrollera att **[!UICONTROL New project]** datavyn[&#x200B; är markerad på arbetsytan &#x200B;](#set-up-a-data-view). Datavyn länkar till [anslutningen](#set-up-a-connection) som innehåller speglade data.
+4. Kontrollera att **[!UICONTROL New project]** datavyn[ är markerad på arbetsytan ](#set-up-a-data-view). Datavyn länkar till [anslutningen](#set-up-a-connection) som innehåller speglade data.
 
 5. Om du vill skapa din första rapport drar och släpper du mått och mått på **[!UICONTROL Freeform table]** på panelen **[!UICONTROL Freeform]**. Dra till exempel **[!UICONTROL Revenue Amount (Numeric)]** till **[!UICONTROL _Dra ett mätvärde hit_]**. Dra **[!UICONTROL PersonId]** och släpp fältet på den första kolumnrubriken. Gör andra justeringar som du vill.
 

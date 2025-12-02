@@ -5,7 +5,7 @@ title: Hantera exportloggar
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
-source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Konfigurera kolumner på fliken [!UICONTROL Logs]:
    |---------|----------|
    | Exportnamn | Namnet på exporten. Användare ger exporterar ett namn när de skapar dem, vilket beskrivs i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md). |
    | Export-ID | Det ID som automatiskt tilldelas till exporten när den skapas. <!-- True? --> |
-   | Instans-ID | ID:t för instansen Customer Journey Analytics. <!-- True? --> |
+   | Instans-ID | ID för Customer Journey Analytics-instansen. <!-- True? --> |
    | Datavy name | Namnet på datavyn som är associerad med exporten. Användare kan välja datavyn när de skapar exporten, vilket beskrivs i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md). |
    | Antal filer | Antalet filer som ingår i exporten. |
    | Storlek | Storleken på exporten.<p>Filstorleken beräknas med basen 1024, som ibland representeras som KIB och MIB. Om din molnleverantör beräknar storleken med basen 1000 kan det leda till att storleken som visas i din molnleverantör skiljer sig något från storleken som visas här.</p> |
@@ -137,4 +137,4 @@ Konfigurera kolumner på fliken [!UICONTROL Logs]:
 
 ## Visa granskningsloggar
 
-Fullbordsexporter spåras också i [Customer Journey Analytics granskningsloggarna](/help/privacy/audit-log.md). <!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->
+Fullständiga tabellexporter spåras också i [Customer Journey Analytics granskningsloggar](/help/privacy/audit-log.md). <!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->

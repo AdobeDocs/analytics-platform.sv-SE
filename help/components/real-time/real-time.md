@@ -4,7 +4,7 @@ title: Översikt över realtidsrapportering
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: 59d48b84ddd34ef161ec0b11f023ccccf9b2e892
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 2%
@@ -44,7 +44,7 @@ Du vill validera, till exempel:
 
 ## Så här fungerar det
 
-Realtidsrapportering använder en konsoliderad datamängd som är helt skild från den [konsoliderade (kombinerade) datamängden &#x200B;](/help/connections/combined-dataset.md) som används för standardrapportering. Du använder [Uppdatera i realtid-växeln](use-real-time.md) för att växla mellan:
+Realtidsrapportering använder en konsoliderad datamängd som är helt skild från den [konsoliderade (kombinerade) datamängden ](/help/connections/combined-dataset.md) som används för standardrapportering. Du använder [Uppdatera i realtid-växeln](use-real-time.md) för att växla mellan:
 
 * Realtidsrapportering för en konsoliderad datauppsättning som innehåller upp till 24 timmars rullande data.
 * Standardrapportering på den konsoliderade datauppsättningen som innehåller upp till 13 månaders rullande data (eller längre om du har licensierat tillägget för utökad datakapacitet).

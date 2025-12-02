@@ -4,7 +4,7 @@ description: Lär dig hantera anteckningar i Workspace.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Anteckningshanteraren har följande gränssnittselement:
 Anteckningslistan ➊ visar alla anteckningar som du äger, anteckningarna som har omfattats av alla dina projekt och de anteckningar som har delats med dig. Listan innehåller följande kolumner:
 
 | Kolumn | Beskrivning |
-| --- | --- | 
+| --- | --- |
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill prioritera ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) en anteckning. |
 | **[!UICONTROL Title and description]** | Finns i Annotations Builder. Om du vill redigera titeln och beskrivningen markerar du titellänken. [Anteckningsverktyget](/help/components/annotations/create-annotations.md#annotation-builder) öppnas. En delad anteckning har markerats med ![Dela](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Data view]** | De datavyer som den här anteckningen gäller för. |
@@ -57,7 +57,7 @@ Du kan utföra åtgärder på anteckningar med åtgärdsfältet ➋. Åtgärdsf�
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Add]** | Lägg till en till anteckning med [Anteckningsverktyget](create-annotations.md#annotation-builder). |
 | ![Sök](/help/assets/icons/Search.svg) | [!UICONTROL *Sök efter titel*] | Om ingen anteckning är markerad i listan söker du efter anteckningar med det här sökfältet. |
 | ![Etikett](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Tagga de markerade anteckningarna. I dialogrutan **[!UICONTROL Tag Component]** markerar eller avmarkerar du taggarna för de markerade anteckningarna. Välj **[!UICONTROL Save]** om du vill spara taggarna för de markerade anteckningarna. |
-| ![Dela](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Share]** | Dela de markerade anteckningarna. I dialogrutan **[!UICONTROL Share Component]** kan du ![&#x200B; söka &#x200B;](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda anteckningarna. Mer information finns i [Dela anteckningar](#share-annotations). |
+| ![Dela](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Share]** | Dela de markerade anteckningarna. I dialogrutan **[!UICONTROL Share Component]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda anteckningarna. Mer information finns i [Dela anteckningar](#share-annotations). |
 | ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort de markerade anteckningarna. Du uppmanas att bekräfta åtgärden. |
 | ![Redigera](/help/assets/icons/Edit.svg) | **[!UICONTROL Rename]** | Byt namn på en enskild markerad anteckning. När du väljer det här alternativet kan du byta namn på anteckningen. |
 | ![Kopiera](/help/assets/icons/Copy.svg) | **[!UICONTROL Copy]** | Kopiera de markerade anteckningarna. Nya anteckningar skapas med samma namn och suffix (Kopiera) |

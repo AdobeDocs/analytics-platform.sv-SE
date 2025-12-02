@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
-source-wordcount: '4618'
+source-wordcount: '4440'
 ht-degree: 7%
 
 ---
@@ -278,7 +278,7 @@ Uppslagsdata är tillgängliga i datauppsättningen Example Lookup Data. Exempel
 | 17 | def321 | def-adgroup | 321 Kampanj |
 | 18 | ghi321 | ghi-adgroup | 321 Kampanj |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg) Hämta exempelsökdata](./assets/lookup-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -293,7 +293,7 @@ Sammanfattningsdata behöver ett sammanfattningsschema i Experience Platform. Et
 
 Så här skapar du ett sammanfattningsschema i Experience Platform:
 
-1. Välj **[!UICONTROL Experience Platform]** på menyn   ![&#x200B; App &#x200B;](/help/assets/icons/Apps.svg)   appväxlare.
+1. Välj **[!UICONTROL Experience Platform]** på menyn   ![ App ](/help/assets/icons/Apps.svg)   appväxlare.
 1. Välj **[!UICONTROL Schemas]** i den vänstra listen.
 1. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create schema]**.
 1. Välj **[!UICONTROL Manual]** i dialogrutan **[!UICONTROL Create a schema]**. Använd sedan **[!UICONTROL Select]** för att fortsätta.
@@ -306,7 +306,7 @@ Strukturen för ditt grundläggande sammanfattningsschema visas, redo att utöka
 Så här lägger du till en fältgrupp som innehåller fälten för exempeldata:
 
 1. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** i **[!UICONTROL Field groups]**.
-1. Välj **[!UICONTROL Create new field group]** i dialogrutan **[!UICONTROL Add field groups]**.
+1. Välj **[!UICONTROL Add field groups]** i dialogrutan **[!UICONTROL Create new field group]**.
 1. Ange **[!UICONTROL Display name]** som fältgrupp, till exempel `Example Summary Data`. Ange en beskrivning om du vill.
 1. Välj **[!UICONTROL Add field groups]**.
 1. Du är tillbaka i schemastrukturens användargränssnitt. Välj nya **[!UICONTROL Example Summary Data]** i **[!UICONTROL Field groups]**.
@@ -342,11 +342,11 @@ Om du vill lagra sammanfattningsdata i Experience Platform måste du först skap
 
 Så här skapar du en datauppsättning:
 
-1. Välj **[!UICONTROL Experience Platform]** på menyn   ![&#x200B; App &#x200B;](/help/assets/icons/Apps.svg)   appväxlare.
+1. Välj **[!UICONTROL Experience Platform]** på menyn   ![ App ](/help/assets/icons/Apps.svg)   appväxlare.
 1. Välj **[!UICONTROL Datasets]** i den vänstra listen.
 1. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create dataset]**.
-1. Välj **[!UICONTROL Create dataset from schema]** på skärmen **[!UICONTROL Datasets]** > **[!UICONTROL Create datasets]**.
-1. I **[!UICONTROL Select schema]**-steget i guiden **[!UICONTROL Workflows]** > **[!UICONTROL Create dataset from schema]** söker ![&#x200B; efter och väljer &#x200B;](/help/assets/icons/Search.svg).**[!UICONTROL Example Summary Data Schema]**
+1. Välj **[!UICONTROL Datasets]** på skärmen **[!UICONTROL Create datasets]** > **[!UICONTROL Create dataset from schema]**.
+1. I **[!UICONTROL Select schema]**-steget i guiden **[!UICONTROL Workflows]** > **[!UICONTROL Create dataset from schema]** söker ![ efter och väljer ](/help/assets/icons/Search.svg).**[!UICONTROL Example Summary Data Schema]**
 1. Välj **[!UICONTROL Next]**.
 1. I steget **[!UICONTROL Configure dataset]** i guiden **[!UICONTROL Workflows]** > **[!UICONTROL Create dataset from schema]**:
    1. Ange **[!UICONTROL Name]** som datamängd, till exempel: `Example Summary Data Dataset`. Ange en beskrivning om du vill.
@@ -356,7 +356,7 @@ En skärm med information om din nya datauppsättning visas.
 
 Så här överför du exempeldata till den här datauppsättningen:
 
-1. Välj **[!UICONTROL Experience Platform]** på menyn   ![&#x200B; App &#x200B;](/help/assets/icons/Apps.svg)   appväxlare.
+1. Välj **[!UICONTROL Experience Platform]** på menyn   ![ App ](/help/assets/icons/Apps.svg)   appväxlare.
 1. Välj **[!UICONTROL Workflows]** i den vänstra listen.
    1. Välj **[!UICONTROL Map CSV to XDM schema]** bland **[!UICONTROL Data ingestion]**-alternativen på skärmen **[!UICONTROL Workflows]**.
    1. Välj **[!UICONTROL Launch]** på panelen **[!UICONTROL Map CSV to XDM schema]**.
@@ -376,7 +376,7 @@ Så här överför du exempeldata till den här datauppsättningen:
    1. Du kan också välja ![Förhandsgranska](/help/assets/icons/Preview.svg) **[!UICONTROL Preview data]** om du vill öppna en dialogruta med en förhandsgranskning av data som har lästs in i datauppsättningen.
    1. Välj **[!UICONTROL Finish]**.
 
-I **[!UICONTROL Sources]** > **[!UICONTROL Dataflow - XX/XX/XXXX, XX:XX XX]** visas status för din överföring. Uppdatera för att se uppdateringar av överföringen. När det är klart läses dina exempeldata in i Experience Platform.
+I **[!UICONTROL Sources]** > **[!UICONTROL Dataflow - XX/XX/XXXX, XX:XXXX]** visas status för din överföring. Uppdatera för att se uppdateringar av överföringen. När det är klart läses dina exempeldata in i Experience Platform.
 
 
 
@@ -386,7 +386,7 @@ I **[!UICONTROL Sources]** > **[!UICONTROL Dataflow - XX/XX/XXXX, XX:XX XX]** vi
 Om du vill använda exempeldata i Customer Journey Analytics skapar du en anslutning som innehåller datauppsättningen Exempelsammanfattning från Experience Platform.
 
 
-1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![&#x200B; App &#x200B;](/help/assets/icons/Apps.svg)   appväxlare.
+1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![ App ](/help/assets/icons/Apps.svg)   appväxlare.
 1. Välj **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 1. Välj **[!UICONTROL Create new connection]**.
 1. I **[!UICONTROL Connections]** > **[!UICONTROL Untitled connection]**:
@@ -421,13 +421,13 @@ Om du vill använda exempeldata i Customer Journey Analytics skapar du en anslut
 
       1. Välj **[!UICONTROL Add datasets]**.
 
-1. Välj **[!UICONTROL Save]** på anslutningsskärmen **[!UICONTROL Connections]** > **[!UICONTROL Example Connection using Summary Data]** för att spara anslutningen.
+1. Välj **[!UICONTROL Connections]** på anslutningsskärmen **[!UICONTROL Example Connection using Summary Data]** > **[!UICONTROL Save]** för att spara anslutningen.
 
 Data från datauppsättningarna läggs till i Customer Journey Analytics, som kan ta några timmar. Var tålmodig innan du fortsätter.
 
 Efter en stund kontrollerar du att data från datauppsättningarna har lästs in korrekt i Customer Journey Analytics.
 
-1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![&#x200B; App &#x200B;](/help/assets/icons/Apps.svg)   appväxlare.
+1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![ App ](/help/assets/icons/Apps.svg)   appväxlare.
 1. Välj **[!UICONTROL Connections]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 1. Välj din anslutning, till exempel **[!UICONTROL Example Connection Using Summary Data]**.
 1. Välj ett lämpligt datumintervall i informationen för **[!UICONTROL Connection]** > **[!UICONTROL Example Connection Using Summary data]**.
@@ -442,7 +442,7 @@ I listan med **[!UICONTROL Datasets]** bör värdena i kolumnen **[!UICONTROL Re
 
 För att vara säker på att du kan rapportera rätt data i Workspace vill du skapa en datavy med relevanta mått och mått.
 
-1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![&#x200B; App &#x200B;](/help/assets/icons/Apps.svg)   appväxlare.
+1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![ App ](/help/assets/icons/Apps.svg)   appväxlare.
 1. Välj **[!UICONTROL Data views]**, eventuellt från **[!UICONTROL Data management]**, på den översta menyn.
 1. Välj **[!UICONTROL Create new data view]**.
 1. Gå igenom guideskärmarna i **[!UICONTROL Data views]** för att konfigurera datavyn.
@@ -541,7 +541,7 @@ Du har nu konfigurerat datavyn för korrekt rapportering av sammanfattningsdata.
 
 Skapa ett nytt projekt i Analysis Workspace om du vill rapportera sammanfattningsdata.
 
-1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![&#x200B; App &#x200B;](/help/assets/icons/Apps.svg)   appväxlare.
+1. Välj **[!UICONTROL Customer Journey Analytics]** på menyn   ![ App ](/help/assets/icons/Apps.svg)   appväxlare.
 1. Välj **[!UICONTROL Workspace]** på den översta menyn.
 1. Välj **[!UICONTROL Create project]**.
 1. Välj **[!UICONTROL Blank Workspace project]** i dialogrutan med alternativ för att skapa ett tomt Workspace-projekt.
@@ -577,10 +577,10 @@ Du vill använda kraften i att rapportera sammanfattningsdata och rapportera om 
 Lägg till dina beräknade värden i rapporten.
 
 1. Dra **[!UICONTROL Cost per Impression]** ![Beräkna](/help/assets/icons/Calculator.svg) från **[!UICONTROL Metrics]** och släpp måttet för att lägga till det som en extra kolumn i friformstabellen.
-   1. Välj ![Ange &#x200B;](/help/assets/icons/Setting.svg) kolumninställningar.
+   1. Välj ![Ange ](/help/assets/icons/Setting.svg) kolumninställningar.
       1. Inaktivera **[!UICONTROL Percent]**.
 1. Dra **[!UICONTROL Return on Ad Spend]** ![Beräkna](/help/assets/icons/Calculator.svg) från **[!UICONTROL Metrics]** och släpp måttet för att lägga till det som en extra kolumn i friformstabellen.
-   1. Välj ![Ange &#x200B;](/help/assets/icons/Setting.svg) kolumninställningar.
+   1. Välj ![Ange ](/help/assets/icons/Setting.svg) kolumninställningar.
       1. Inaktivera **[!UICONTROL Percent]**.
       1. Aktivera **[!UICONTROL Conditional formatting]**.
          1. Välj **[!UICONTROL Auto-generated]**.
@@ -603,4 +603,4 @@ Det färdiga projektet ska se ut som det som visas nedan.
 >[!MORELIKETHIS]
 >
 >[Sammanfattningsdata](/help/data-views/summary-data.md)
->[Komponentinställningar för sammanfattningsdatagrupp &#x200B;](/help/data-views/component-settings/summary-data-group.md)
+>[Komponentinställningar för sammanfattningsdatagrupp ](/help/data-views/component-settings/summary-data-group.md)

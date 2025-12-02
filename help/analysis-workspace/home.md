@@ -6,7 +6,7 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 9056b8b172ae7a2267bf12de4b2355d1a1364b32
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 1%
@@ -94,7 +94,7 @@ I tabellerna nedan finns en översikt över de tillgängliga menyerna.
 |---|---|---|---|
 | **[!UICONTROL Blank panel]** | **[!UICONTROL *opt+b *]** | **[!UICONTROL *alt+b *]** | Infoga en [tom panel](/help/analysis-workspace/c-panels/blank-panel.md). |
 | **[!UICONTROL Media concurrent viewers]** | **[!UICONTROL *opt+h *]** | **[!UICONTROL *alt-h *]** | Infoga en [panel för parallella medievyer](/help/analysis-workspace/c-panels/media-concurrent-viewers.md). |
-| **[!UICONTROL Media playback time spent]** | **[!UICONTROL *opt+i *]** | **[!UICONTROL *alt+i *]** | Infoga en [medieuppspelningstid som har använts på panelen &#x200B;](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
+| **[!UICONTROL Media playback time spent]** | **[!UICONTROL *opt+i *]** | **[!UICONTROL *alt+i *]** | Infoga en [medieuppspelningstid som har använts på panelen ](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
 | **[!UICONTROL Media average minute audience]** | **[!UICONTROL *opt+m *]** | **[!UICONTROL *alt+m *]** | Infoga en [medieminarium](/help/analysis-workspace/c-panels/average-minute-audience-panel.md)-målgruppspanel. |
 | **[!UICONTROL Attribution]** | **[!UICONTROL *opt+e *]** | **[!UICONTROL *alt+e *]** | Infoga en [attribueringspanel](/help/analysis-workspace/c-panels/attribution.md). |
 | **[!UICONTROL Freeform]** | **[!UICONTROL *opt+a *]** | **[!UICONTROL *alt+a *]** | Infoga en [friformspanel](/help/analysis-workspace/c-panels/freeform-panel.md). |
@@ -164,6 +164,6 @@ När du är klar med projektet och samlar in åtgärdbara insikter kan andra vil
 ## Ytterligare resurser {#resources}
 
 - Sidan [Learning landing](/help/getting-started/landing.md#learning) i Customer Journey Analytics. Den här sidan är ett bra sätt att lära känna Analysis Workspace. Speciellt om Workspace Basic. I den här mallen beskrivs vanliga termer och steg för hur du skapar din första analys i Workspace
-- Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/overview).
-- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/sv/docs/release-notes/experience-cloud/current).
+- Adobe erbjuder hundratals [självstudiekurser i Analytics-videor](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/overview).
+- Information om nya funktioner finns i [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current).
 

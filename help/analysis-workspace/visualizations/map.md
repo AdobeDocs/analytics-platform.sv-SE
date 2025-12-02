@@ -4,10 +4,10 @@ title: Karta
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: ab0e6f0578cbc6f856c2b0a46b1231cce145b84c
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2612'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs kartvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs kartvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Karta](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -67,7 +67,7 @@ Så här lägger du till följande sammanhangsetiketter:
 
 1. På sidan Datavyer markerar du datavyn som innehåller data som du vill analysera i mappningsvisualiseringen.
 
-1. Välj fliken **[!UICONTROL Components]**.
+1. Klicka på fliken **[!UICONTROL Components]**.  
 
 1. (Villkorligt) Om du använder Web SDK och har konfigurerat latitud och longitud så att de fylls i i dataströmmen, eller om du använder Analytics Source Connector för att fylla i händelsedata, bör latitud- och longitudfält redan vara tillgängliga i ditt schema och fyllas i med rätt kontextetiketter.
 
@@ -111,7 +111,7 @@ Så här lägger du till följande sammanhangsetiketter:
 
 1. På sidan Datavy väljer du den datavy som innehåller data som du vill analysera med färdiga mallar som använder kartvisualiseringen. I den här datavyn väljer du fem dimensioner: en med landsuppgifter, en med regiondata, en med stadsuppgifter, en med statliga data och en med DMA-data. Etikettera sedan dessa dimensioner med motsvarande sammanhangsetikett.
 
-1. Välj fliken **[!UICONTROL Components]**.
+1. Klicka på fliken **[!UICONTROL Components]**.  
 
 1. (Villkorligt) Om du använder Web SDK och har konfigurerat geofält som ska fyllas i i dataströmmen, eller om du använder Analytics Source Connector för att fylla i händelsedata, bör geofält redan vara tillgängliga i ditt schema och fyllas i med rätt kontextetiketter.
 

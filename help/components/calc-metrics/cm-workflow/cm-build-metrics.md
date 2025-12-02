@@ -3,7 +3,7 @@ description: Lär dig mer om det beräknade mätverktyget som ger en arbetsyta d
 title: Bygg mått
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1451'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 >id="components_calculatedmetrics_productcompatibility"
 >title="Produktkompatibilitet"
 >abstract="Anger var i Customer Journey Analytics det här beräknade måttet kan användas, t.ex. i Analysis Workspace, Report Builder o.s.v. Vissa beräknade värden kan inte användas med experimenterande."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_externalid"
@@ -31,7 +31,7 @@ Du kan använda verktyget för beräknade mätvärden för att skapa eller redig
 
 ## Områden för verktyget för beräknade mätvärden
 
-Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa nya eller redigera befintliga beräknade värden. Dialogrutan heter **[!UICONTROL New calculated metric]** eller **[!UICONTROL Edit calculated metric]** för mått som du skapar eller hanterar från [[!UICONTROL Calculated metrics]-hanteraren &#x200B;](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa nya eller redigera befintliga beräknade värden. Dialogrutan heter **[!UICONTROL New calculated metric]** eller **[!UICONTROL Edit calculated metric]** för mått som du skapar eller hanterar från [[!UICONTROL Calculated metrics]-hanteraren ](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 >[!BEGINTABS]
 
@@ -200,5 +200,5 @@ Om du vill ta bort en behållare väljer du ![Stäng](/help/assets/icons/Close.s
 >[!MORELIKETHIS]
 >
 >[Använda funktioner](cm-using-functions.md)
->&#x200B;>[Segment](/help/components/segments/seg-overview.md)
+>[Segment](/help/components/segments/seg-overview.md)
 >

@@ -4,7 +4,7 @@ title: Skapa aviseringar
 feature: Workspace Basics
 role: User, Admin
 exl-id: 5b4b2e2b-0a73-48df-a40c-98d2c47f94c8
-source-git-commit: 9e07dfc84bc06aef987d99c225cefb4e0406f552
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Så här skapar du en varning:
 
 <!-- Note that there are difference in how alerts are created in CJA vs AA. In AA you can create alerts from the Workspace menu and using a shortcut; these are not possible in CJA... -->
 
-1. I Customer Journey Analytics väljer du **[!UICONTROL Components]** > **[!UICONTROL Alerts]**. Välj [AddCircle](alert-manager.md) ![&#x200B; i &#x200B;](/help/assets/icons/AddCircle.svg)Alerts Manager **[!UICONTROL Add]** om du vill skapa en ny avisering, eller välj någon av de aviseringar som visas om du vill ändra en befintlig avisering.
+1. I Customer Journey Analytics väljer du **[!UICONTROL Components]** > **[!UICONTROL Alerts]**. Välj [AddCircle](alert-manager.md) ![ i ](/help/assets/icons/AddCircle.svg)Alerts Manager **[!UICONTROL Add]** om du vill skapa en ny avisering, eller välj någon av de aviseringar som visas om du vill ändra en befintlig avisering.
 
 1. I Analysis Workspace markerar du ett eller flera linjeobjekt i en frihandstabell och väljer **[!UICONTROL Create alert from selection]** på snabbmenyn. Den här åtgärden fyller omedelbart i varningsverktyget i förväg för att skapa en avisering med rätt mått och segment.
 

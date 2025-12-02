@@ -4,7 +4,7 @@ title: Paneler - översikt
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 1%
@@ -89,7 +89,7 @@ Du kan hantera en panel på följande sätt:
 
 ## Datavy
 
-Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**&#x200B;i listrutan längst upp till höger på panelen.
+Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**i listrutan längst upp till höger på panelen.
 
 När du skapar ett tomt Workspace-projekt är standarddatavyn för den första panelen datavyn som du senast arbetade med i Customer Journey Analytics.
 
@@ -180,7 +180,7 @@ Med statiska rullgardinssegment kan du interagera med data på ett kontrollerat 
 
 Statiska rullgardinssegment kan också användas för att konsolidera många projekt till ett. Om du till exempel har många versioner av samma projekt med olika landssegment tillämpade, kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landssegment.
 
-![Statiska nedrullningsbara segment med markerat segment för marknadskanalen &quot;Direkt&quot;. &#x200B;](assets/dropdown-filter-intro.png)
+![Statiska nedrullningsbara segment med markerat segment för marknadskanalen &quot;Direkt&quot;. ](assets/dropdown-filter-intro.png)
 
 ##### Skapa statiska rullgardinssegment
 

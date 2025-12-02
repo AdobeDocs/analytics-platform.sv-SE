@@ -3,7 +3,7 @@ description: Lär dig hur du delar, filtrerar, taggar, godkänner, kopierar, tar
 title: Hantera beräknade värden
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Den beräknade mätvärdeslistan ➊ visar alla beräknade värden som du äger 
 <!-- I think this table incorrectly talks about quick calculated metrics -->
 
 | Kolumn | Beskrivning |
-| --- | --- | 
+| --- | --- |
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Välj om du vill prioritera ![Star](/help/assets/icons/Star.svg) eller ![StarOutline](/help/assets/icons/StarOutline.svg) ett beräknat mått. Se [Markera beräknat mått som favorit](/help/components/segments/seg-favorite.md) |
 | **[!UICONTROL Title and description]** | Om du vill redigera det beräknade måttet väljer du titellänken, som öppnar verktyget [Beräknade mått](cm-build-metrics.md). Ett delat beräknat mått har indikerats med ![Dela](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Data view]** | De datavyer som det här beräknade måttet gäller för. |
@@ -56,7 +56,7 @@ Du kan använda åtgärdsfältet ➋ för att utföra åtgärder på filter. Åt
 | ![AddCircle](/help/assets/icons/AddCircle.svg) | **[!UICONTROL Add]** | Lägg till ytterligare beräknade mått med hjälp av [verktyget Beräknade mätvärden](cm-build-metrics.md). |
 | ![Sök](/help/assets/icons/Search.svg) | [!UICONTROL *Sök efter titel*] | Om inget beräknat mätvärde är markerat i listan söker du efter filter med det här sökfältet. |
 | ![Etikett](/help/assets/icons/Label.svg) | **[!UICONTROL Tag]** | Tagga de valda beräknade måtten. I dialogrutan **[!UICONTROL Tag Calculated metric]** markerar eller avmarkerar du taggarna för det valda beräknade måttet. Välj **[!UICONTROL Save]** om du vill spara taggarna för de valda beräknade måtten. Mer information finns i [Tagga beräknade värden](cm-tagging.md). |
-| ![Dela](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Share]** | Dela de valda beräknade måtten. I dialogrutan **[!UICONTROL Share Calculated metrics]** kan du ![&#x200B; söka &#x200B;](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda beräknade måtten. Mer information finns i [Dela beräknade värden](cm-sharing.md). |
+| ![Dela](/help/assets/icons/ShareAlt.svg) | **[!UICONTROL Share]** | Dela de valda beräknade måtten. I dialogrutan **[!UICONTROL Share Calculated metrics]** kan du ![ söka ](/help/assets/icons/Search.svg) *söka efter enskilda personer eller grupper* eller välja **[!UICONTROL Organization]** eller **[!UICONTROL Groups]**. Välj **[!UICONTROL Save]** om du vill spara delningsinformation för de valda beräknade måtten. Mer information finns i [Dela beräknade värden](cm-sharing.md). |
 | ![Ta bort](/help/assets/icons/Delete.svg) | **[!UICONTROL Delete]** | Ta bort de valda beräknade måtten. Du uppmanas att bekräfta åtgärden. |
 | ![Redigera](/help/assets/icons/Edit.svg) | **[!UICONTROL Rename]** | Byt namn på ett enskilt valt beräknat mått. När du väljer det här alternativet kan du byta namn på det beräknade mätvärdet. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Approve]** | Godkänn de valda beräknade mätvärdena. Se [Godkänn beräknade värden](cm-approving.md). |

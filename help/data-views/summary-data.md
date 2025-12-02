@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 2%
@@ -116,7 +116,7 @@ Tidszonen för dina sammanfattningsdata definieras på sammanfattningsschemaniv�
   | 2024-07-29T01:00:00 | `America/`<br/>`Los_Angeles` | 2024-07-28T18:00:00 | PST | 2024-07-28T18:00:00 |
   | 2024-07-30T01:00:00-05:00 | `Australia/`<br/>`Sydney` | 2024-07-30T17:00:00 | CET | 2024-07-30T08:00:00 |
 
-  För tidszoner med 30 minuters förskjutning (till exempel IST, Indien, standardtid), tas 30 minuters förskjutningen bort vid rapportering av sammanfattningsdata. Till exempel rapporteras 12:30 som 12:00.
+  För tidszoner med 30 minuters förskjutning (till exempel IST, Indien, standardtid), tas 30 minuters förskjutningen bort vid rapportering av sammanfattningsdata. Till exempel: 12:30 rapporteras som 12:00.
 
 
 För att vara säker på att rätt tidszon används för dina timgranulerade sammanfattningsdata måste du se till att schemat som används för sammanfattningsdata har rätt tidszon konfigurerad.
@@ -142,7 +142,7 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 
 | Variabel | Värde |
 |---|---|
-| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | Mer information om hur du anger värden för dessa variabler finns i [Autentisera och få åtkomst till Experience Platform API:er](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/platform-apis/api-authentication). |
+| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | Mer information om hur du anger värden för dessa variabler finns i [Autentisera och få åtkomst till Experience Platform API:er](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication). |
 | `$SCHEMA_ID` | Du kan hitta ID:t för ditt schema i Experience Platform-gränssnittet. Välj ditt sammanfattningsschema i listan med scheman och sök efter **[!UICONTROL API Usage]** > **[!UICONTROL Schema ID]** i den högra panelen. Använd det ID:t som värde. |
 | `$GRANULARITY` | Ange `hour` eller `day` som värde. |
 | `$TIMEZONE` | Ange rätt värde för tidszonsidentifierare från TZ-identifierarkolumnen i [List of tz database time zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). Till exempel: `America/Los_Angeles`. |

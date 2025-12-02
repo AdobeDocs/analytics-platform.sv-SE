@@ -5,7 +5,7 @@ title: Hantera exporter
 feature: Components
 exl-id: 0c21802a-c46f-41be-9356-d836c038b174
 role: User
-source-git-commit: 6f8a43acfba23d6faeff078873742315f1506699
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Hantera exporter
 
-När du har exporterat en fullständig tabell enligt beskrivningen i [Exportera Customer Journey Analytics till molnet](/help/analysis-workspace/export/export-cloud.md) är exporten tillgänglig på fliken [!UICONTROL Exports] på sidan [!UICONTROL Exports].
+När du har exporterat en fullständig tabell enligt beskrivningen i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md) är exporten tillgänglig på fliken [!UICONTROL Exports] på sidan [!UICONTROL Exports].
 
 Du kan bara se de exporter som du skapar.
 
@@ -78,7 +78,7 @@ Du kan duplicera en befintlig export.
 
 1. Välj [!UICONTROL **Duplicera**].
 
-   En dubblett av exporten skapas. Namnet på den nya exporten matchar namnet på den ursprungliga exporten, med _[!UICONTROL - Copy]_&#x200B;som tillägg till filnamnet.
+   En dubblett av exporten skapas. Namnet på den nya exporten matchar namnet på den ursprungliga exporten, med _[!UICONTROL - Copy]_som tillägg till filnamnet.
 
 1. (Valfritt) [Redigera den nya exporten](#edit-an-export), inklusive filnamnet och andra egenskaper som du vill ändra.
 

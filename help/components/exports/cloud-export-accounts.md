@@ -5,7 +5,7 @@ title: Konfigurera molnexportkonton
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 882e280da3f65e297abccd475d381832fd236843
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
      >[!AVAILABILITY]
      >
-     >Detta avsnitt gäller implementeringar av Experience Platform som körs på Amazon Web Services (AWS). Experience Platform som körs på AWS är för närvarande tillgängligt för ett begränsat antal kunder. Mer information om den Experience Platform-infrastruktur som stöds finns i [Experience Platform översikt över flera moln](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/multi-cloud).
+     >Detta avsnitt gäller implementeringar av Experience Platform som körs på Amazon Web Services (AWS). Experience Platform som körs på AWS är för närvarande tillgängligt för ett begränsat antal kunder. Mer information om den Experience Platform-infrastruktur som stöds finns i [Experience Platform översikt över flera moln](https://experienceleague.adobe.com/en/docs/experience-platform/landing/multi-cloud).
 
      Dialogrutan [!UICONTROL **Konto skapat**] visas.
 
@@ -112,9 +112,9 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
       1. Om du inte redan har det hämtar du [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-      1. Följ stegen som beskrivs i [Ansluta din Data Landing Zone-behållare till Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=sv-SE#connect-your-data-landing-zone-container-to-azure-storage-explorer) i Adobe Experience Platform-dokumentationen.
+      1. Följ stegen som beskrivs i [Ansluta din Data Landing Zone-behållare till Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer) i Adobe Experience Platform-dokumentationen.
 
-         Du kan hoppa över de uppgifter som beskrivs i avsnitten [Hämta autentiseringsuppgifterna för din Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=sv-SE#retrieve-dlz-credentials) och [Uppdatera autentiseringsuppgifter för Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=sv-SE#update-dlz-credentials) eftersom den URI som du kopierade innehåller dessa autentiseringsuppgifter.
+         Du kan hoppa över de uppgifter som beskrivs i avsnitten [Hämta autentiseringsuppgifterna för din Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) och [Uppdatera autentiseringsuppgifter för Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials) eftersom den URI som du kopierade innehåller dessa autentiseringsuppgifter.
 
       1. När du följer Adobe Experience Platform-dokumentationen och kommer till fältet [!UICONTROL **Plumbibehållare-SAS-URL**] klistrar du in den SAS-URI som du kopierade i steg 3.
 
@@ -122,7 +122,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
          >
          >Du måste utföra den här åtgärden var 7:e dag eftersom SAS-URI:n går ut 7 dagar efter att den har skapats. Du kan skapa ett skript för att automatisera den här processen.
 
-         ![Fönstret Ange anslutningsinformation med fältet SAS-URL &#x200B;](assets/blob-container-sas-uri.png)
+         ![Fönstret Ange anslutningsinformation med fältet SAS-URL ](assets/blob-container-sas-uri.png)
 
    1. Välj [!UICONTROL **Nästa**] > [!UICONTROL **Anslut**].
 
