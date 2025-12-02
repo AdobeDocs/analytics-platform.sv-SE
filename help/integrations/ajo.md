@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Integrera Journey Optimizer
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started) hjälper dig att leverera sammankopplade, kontextuella och personaliserade upplevelser. Det gör att era kunder får ta nästa steg i kundresan.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/get-started/get-started) hjälper dig att leverera sammankopplade, kontextuella och personaliserade upplevelser. Det gör att era kunder får ta nästa steg i kundresan.
 
 Du kan konfigurera data som genereras av Journey Optimizer för att utföra avancerad analys i Customer Journey Analytics. Du kan konfigurera integreringen automatiskt. Vid behov kan du göra ytterligare manuella anpassningar av datauppsättningar, dimensioner eller mätvärden som är tillgängliga i din anslutning eller datavyer.
 
 ## Konfigurera Journey Optimizer-integrering automatiskt
 
-Journey Optimizer har stöd för att använda Customer Journey Analytics som rapportmotor. Se [Kom igång med det nya rapporteringsgränssnittet](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) i Journey Optimizer-dokumentationen.
+Journey Optimizer har stöd för att använda Customer Journey Analytics som rapportmotor. Se [Kom igång med det nya rapporteringsgränssnittet](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja) i Journey Optimizer-dokumentationen.
 
 När du har aktiverat Customer Journey Analytics-rapportering för Journey Optimizer skapas automatiskt en [anslutning](/help/connections/overview.md) och [datavy](/help/data-views/data-views.md) för den specifika sandlådan.
 
@@ -102,7 +102,7 @@ I följande avsnitt beskrivs hur du manuellt kan använda data som genererats av
 
 ### Skicka data från Journey Optimizer till Experience Platform
 
-Adobe Experience Platform är den centrala datakällan och länken mellan Journey Optimizer och Customer Journey Analytics. I [Kom igång med datauppsättningar](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/data-management/datasets/get-started-datasets) i användarhandboken för Journey Optimizer finns anvisningar om hur du skickar Journey Optimizer-data till Experience Platform som en datauppsättning.
+Adobe Experience Platform är den centrala datakällan och länken mellan Journey Optimizer och Customer Journey Analytics. I [Kom igång med datauppsättningar](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/data-management/datasets/get-started-datasets) i användarhandboken för Journey Optimizer finns anvisningar om hur du skickar Journey Optimizer-data till Experience Platform som en datauppsättning.
 
 ### Skapa en anslutning
 

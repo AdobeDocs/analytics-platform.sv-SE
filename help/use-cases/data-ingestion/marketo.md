@@ -33,19 +33,19 @@ Så här rapporterar du Marketo Engage-data i Customer Journey Analytics:
 
 +++ &#x200B;1. Mappa Marketo källdatafält till deras XDM-mål
 
-Mappa objekten [Personer](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) och [Aktiviteter](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) till deras respektive målfält för XDM-schemat.
+Mappa objekten [Personer](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) och [Aktiviteter](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) till deras respektive målfält för XDM-schemat.
 
 +++
 
 +++ &#x200B;2. Infoga Marketo-data i Adobe Experience Platform
 
-Använd [Marketo Engage-anslutningen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) för att hämta data från Marketo till Experience Platform och hålla dessa data uppdaterade med plattformsanslutna program.
+Använd [Marketo Engage-anslutningen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) för att hämta data från Marketo till Experience Platform och hålla dessa data uppdaterade med plattformsanslutna program.
 
 +++
 
 +++ &#x200B;3. Konfigurera en anslutning till datauppsättningen i Customer Journey Analytics
 
-För att kunna rapportera om Experience Platform datauppsättningar måste du först upprätta en anslutning mellan datauppsättningar i Experience Platform och Customer Journey Analytics. Se [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/create-connection).
+För att kunna rapportera om Experience Platform datauppsättningar måste du först upprätta en anslutning mellan datauppsättningar i Experience Platform och Customer Journey Analytics. Se [Skapa eller redigera en anslutning](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/create-connection).
 
 +++
 

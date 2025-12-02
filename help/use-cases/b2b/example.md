@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Ett exempel på ett personbaserat B2B-projekt
 
-I den här artikeln visas ett exempel på hur du vill rapportera persondata i Customer Journey Analytics korrekt i samband med en vanlig personbaserad B2B-konfiguration. En sådan konfiguration underlättas av [Real-Time CDP B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  I användningsexemplet förklaras hur du konfigurerar, konfigurerar och rapporterar profilbaserade B2B-data i Customer Journey Analytics.
+I den här artikeln visas ett exempel på hur du vill rapportera persondata i Customer Journey Analytics korrekt i samband med en vanlig personbaserad B2B-konfiguration. En sådan konfiguration underlättas av [Real-Time CDP B2B edition](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  I användningsexemplet förklaras hur du konfigurerar, konfigurerar och rapporterar profilbaserade B2B-data i Customer Journey Analytics.
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Ett separat avsnitt för kontobaserade användningsfall för rapportering publiceras med utgåvan av [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md).
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Ett separat avsnitt för kontobaserade användningsfall för rapportering publiceras med utgåvan av [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md).
 
 ## Anslutning
 
@@ -43,7 +43,7 @@ Definiera anslutningen så att den inkluderar alla relevanta B2B-datauppsättnin
 -->
 
 
-Relationen mellan B2B-sökscheman, profilschemat och händelseschemat definieras i B2B-konfigurationen i Experience Platform. Se Scheman i [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/schemas/b2b) och [Definiera en många-till-ett-relation mellan två scheman i Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
+Relationen mellan B2B-sökscheman, profilschemat och händelseschemat definieras i B2B-konfigurationen i Experience Platform. Se Scheman i [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/sv/docs/experience-platform/rtcdp/schemas/b2b) och [Definiera en många-till-ett-relation mellan två scheman i Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 Om du vill se till att en anslutning som stöder personbaserade sökningar av dina B2B-data är korrekt konfigurerad använder du följande bild för en översikt och följer dessa steg:

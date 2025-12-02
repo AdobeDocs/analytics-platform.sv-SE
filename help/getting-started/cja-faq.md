@@ -34,7 +34,7 @@ Nej, [!UICONTROL Customer Journey Analytics] stöder alla ID:n i en datauppsätt
 
 +++**Vad händer om jag behöver ETL (Extract, Transform, Load) för mina data före [!UICONTROL Customer Journey Analytics]?**
 
-Customer Journey Analytics innehåller funktioner för [dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html) som hjälper dig att omvandla dina data innan du skickar dem till Adobe Experience Platform dataruta. Om du behöver ETL efter att data redan har importerats, kan [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html#queries) erbjuda några begränsade alternativ, men det kan tillkomma extra avgifter.
+Customer Journey Analytics innehåller funktioner för [dataprep](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html?lang=sv-SE) som hjälper dig att omvandla dina data innan du skickar dem till Adobe Experience Platform dataruta. Om du behöver ETL efter att data redan har importerats, kan [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=sv-SE#queries) erbjuda några begränsade alternativ, men det kan tillkomma extra avgifter.
 
 +++
 
@@ -80,7 +80,7 @@ När Adobe aktiveras första gången fylls data i igen så långt du valt (upp t
 
 +++**Kan jag kombinera data från olika [!UICONTROL Adobe Experience Platform] sandlådor i en [!UICONTROL Customer Journey Analytics]-anslutning?**
 
-Nej, du kan inte komma åt data över sandlådor. Du kan bara kombinera datauppsättningar som finns i samma sandlåda. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#select-sandbox-and-datasets)
+Nej, du kan inte komma åt data över sandlådor. Du kan bara kombinera datauppsättningar som finns i samma sandlåda. [Läs mer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=sv-SE#select-sandbox-and-datasets)
 
 +++
 
@@ -101,7 +101,7 @@ Med din rätt till Customer Journey Analytics kan du importera data till Experie
 
 +++**Hur hämtar jag [!UICONTROL Adobe Analytics] data till [!UICONTROL Customer Journey Analytics]?**
 
-[!UICONTROL Adobe Analytics]-data kan anslutas till Experience Platform via [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html). De flesta [!UICONTROL Adobe Analytics] fält hämtas över i XDM-format, men andra fält är inte tillgängliga än.
+[!UICONTROL Adobe Analytics]-data kan anslutas till Experience Platform via [Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=sv-SE). De flesta [!UICONTROL Adobe Analytics] fält hämtas över i XDM-format, men andra fält är inte tillgängliga än.
 
 +++
 
@@ -134,7 +134,7 @@ Nej, du kan använda valfritt ID, inklusive en hash av ett kund-ID som inte är 
 >
 >Det finns ingen fast datastorlek i Customer Journey Analytics och därför kan Adobe inte binda sig till en standardintag. Adobe arbetar aktivt för att minska dessa latenser genom nya uppdateringar och optimering av intaget.
 
-* Live-data eller händelser: bearbetas och hämtas inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek > 50 miljoner rader: längre än 90 minuter.) Om sömnad är aktiverat kan intag ta upp till 4 timmar. Mer information finns i [skyddsutkast](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/guardrails).
+* Live-data eller händelser: bearbetas och hämtas inom 90 minuter när data finns tillgängliga i Adobe Experience Platform. (Batchstorlek > 50 miljoner rader: längre än 90 minuter.) Om sömnad är aktiverat kan intag ta upp till 4 timmar. Mer information finns i [skyddsutkast](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/technotes/guardrails).
 * Små backfillar: inom sju dagar
 * Stora backfillar: inom 30 dagar
 
@@ -145,7 +145,7 @@ Adobe har nyligen förändrat hur data behandlas i Customer Journey Analytics:
 
 ## &#x200B;5. Ange rullande fönster för [!UICONTROL Connection] datalagring {#data-retention}
 
-Med inställningen [**[!UICONTROL Enable rolling data window]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html#create-connection) kan du definiera Customer Journey Analytics-datalagring som ett rullande fönster på månader (tre månader, sex månader osv.). Den är inställd på en [!UICONTROL connection]-nivå, inte på en [!UICONTROL dataset]-nivå. Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för datalagring för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar.
+Med inställningen [**[!UICONTROL Enable rolling data window]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=sv-SE#create-connection) kan du definiera Customer Journey Analytics-datalagring som ett rullande fönster på månader (tre månader, sex månader osv.). Den är inställd på en [!UICONTROL connection]-nivå, inte på en [!UICONTROL dataset]-nivå. Datalagringen baseras på tidsstämplar för händelsedatamängder och gäller endast för händelsedatamängder. Det finns ingen inställning för datalagring för profil- eller uppslagsdatauppsättningar eftersom det inte finns några tillämpliga tidsstämplar.
 
 Den största fördelen är att du bara lagrar eller rapporterar data som är tillämpliga och användbara och tar bort äldre data som inte längre är användbara. Det hjälper er att hålla er inom avtalsgränserna och minskar risken för överlagringskostnader.
 
@@ -166,7 +166,7 @@ Vid borttagning av data bör du tänka på sex typer av komponenter: sandlåda, 
 
 ## &#x200B;7. Att tänka på när du sammanfogar rapportsviter i Customer Journey Analytics {#merge-reportsuite}
 
-Om du tänker importera Adobe Analytics-data via [Adobe Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html) bör du tänka på dessa förändringar när du sammanfogar två eller flera rapportsviter från Adobe Analytics.
+Om du tänker importera Adobe Analytics-data via [Adobe Analytics-källkopplingen](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=sv-SE) bör du tänka på dessa förändringar när du sammanfogar två eller flera rapportsviter från Adobe Analytics.
 
 | Problem | Villkor |
 | --- | --- |
@@ -181,7 +181,7 @@ Om du tänker importera Adobe Analytics-data via [Adobe Analytics-källkopplinge
 
 +++**Kan jag dela/publicera [!UICONTROL audiences] från [!DNL Customer Journey Analytics] till Experience Platform Real-Time CDP eller andra Experience Cloud-program?**
 
-Du kan [skapa och publicera målgrupper](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/audiences/publish) som identifieras i Customer Journey Analytics till kundprofilen i realtid i Adobe Experience Platform för kundanpassning och personalisering.
+Du kan [skapa och publicera målgrupper](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/audiences/publish) som identifieras i Customer Journey Analytics till kundprofilen i realtid i Adobe Experience Platform för kundanpassning och personalisering.
 
 +++
 
@@ -235,14 +235,14 @@ Ibland kanske du märker att det totala antalet händelser som har kapslats av d
 
 1. Om du checkar in [!UICONTROL Adobe Experience Platform] finns det dessutom ingen datauppsättning med ID:t 5f21c12b732044194bffc1d0, vilket innebär att någon tog bort den här datauppsättningen från [!UICONTROL Adobe Experience Platform] när den första anslutningen skapades. Senare lades den till i Customer Journey Analytics igen, men en annan [!UICONTROL Platform Dataset ID] genererades av [!UICONTROL Adobe Experience Platform].
 
-Läs mer om [konsekvenserna av datauppsättningen och borttagning av anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html#implications-of-deleting-data-components) i [!UICONTROL Customer Journey Analytics] och [!UICONTROL Adobe Experience Platform].
+Läs mer om [konsekvenserna av datauppsättningen och borttagning av anslutningar](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=sv-SE#implications-of-deleting-data-components) i [!UICONTROL Customer Journey Analytics] och [!UICONTROL Adobe Experience Platform].
 
 
 ## &#x200B;12. Regional datainsamling
 
 Adobe Experience Cloud använder Regional Data Collection (RDC) så att interaktionen mellan besökarna och Adobe och andra lösningar sker så nära besökarna som möjligt. När data har samlats in lokalt på ett datainsamlingscenter (DCC, även kallat Edge-webbplats, en del av Platform Edge Network) vidarebefordras de via en säker anslutning till relevanta lösningar baserat på konfigurationen av ditt datastam och/eller din händelsevidarebefordran.
 
-![Dataflöde med Edge Networks](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
+![Dataflöde med Edge Networks](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=sv-SE)
 
 I den regionala datainsamlingsprocessen används följande steg:
 
@@ -272,4 +272,4 @@ När data når det regionala datacentret avgör datastreamkonfigurationen hur da
 Customer Journey Analytics kräver datauppsättningar från Adobe Experience Platform, så din konfiguration för dataström/händelsevidarebefordran kräver att Adobe Experience Platform-tjänsten dirigerar data från det regionala datacentret till datacentret där din Adobe Experience Platform-instans finns. Customer Journey Analytics och dess stödtjänster och infrastruktur driftsätts i samma Adobe Experience Platform-instans.
 
 
-Se [Översikt över datainsamling](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) om du vill ha mer information om hur du samlar in data utanför Adobe Experience Platform Edge Network och dess regionala datacenter.
+Se [Översikt över datainsamling](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=sv-SE) om du vill ha mer information om hur du samlar in data utanför Adobe Experience Platform Edge Network och dess regionala datacenter.

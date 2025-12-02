@@ -142,7 +142,7 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 
 | Variabel | Värde |
 |---|---|
-| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | Mer information om hur du anger värden för dessa variabler finns i [Autentisera och få åtkomst till Experience Platform API:er](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication). |
+| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | Mer information om hur du anger värden för dessa variabler finns i [Autentisera och få åtkomst till Experience Platform API:er](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/platform-apis/api-authentication). |
 | `$SCHEMA_ID` | Du kan hitta ID:t för ditt schema i Experience Platform-gränssnittet. Välj ditt sammanfattningsschema i listan med scheman och sök efter **[!UICONTROL API Usage]** > **[!UICONTROL Schema ID]** i den högra panelen. Använd det ID:t som värde. |
 | `$GRANULARITY` | Ange `hour` eller `day` som värde. |
 | `$TIMEZONE` | Ange rätt värde för tidszonsidentifierare från TZ-identifierarkolumnen i [List of tz database time zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). Till exempel: `America/Los_Angeles`. |

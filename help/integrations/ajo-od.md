@@ -14,19 +14,19 @@ ht-degree: 0%
 # Integrera beslutshantering
 
 
-Adobe Journey Optimizer [Beslutshantering](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html) förenklar personaliseringen med ett centralt bibliotek med marknadsföringserbjudanden och en beslutsmotor som tillämpar regler och begränsningar på komplexa realtidsprofiler som skapats av Adobe Experience Platform för att hjälpa dig att skicka rätt erbjudande till dina kunder vid rätt tidpunkt.
+Adobe Journey Optimizer [Beslutshantering](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=sv-SE) förenklar personaliseringen med ett centralt bibliotek med marknadsföringserbjudanden och en beslutsmotor som tillämpar regler och begränsningar på komplexa realtidsprofiler som skapats av Adobe Experience Platform för att hjälpa dig att skicka rätt erbjudande till dina kunder vid rätt tidpunkt.
 
-Beslutshantering är en del av och integrerad med Adobe Journey Optimizer. Den kan också användas oberoende av resor och kampanjer som definierats i Adobe Journey Optimizer, med det omfattande stödet för [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html) .
+Beslutshantering är en del av och integrerad med Adobe Journey Optimizer. Den kan också användas oberoende av resor och kampanjer som definierats i Adobe Journey Optimizer, med det omfattande stödet för [API](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/api-reference/getting-started.html?lang=sv-SE) .
 
 Du kan importera data som genererats av Beslutshantering för att utföra avancerad analys i Customer Journey Analytics genom att utföra följande steg:
 
 ## Skicka data från beslutshantering till Adobe Experience Platform
 
-Adobe Experience Platform fungerar som den centrala datakällan och länken mellan Beslutshantering och Customer Journey Analytics. Data från beslutshantering samlas in i Experience Platform **automatiskt** eller som en del av **explicit skickade upplevelsehändelser** (till exempel visningar eller klickningar). Mer information finns i [Komma igång med datainsamling](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html).
+Adobe Experience Platform fungerar som den centrala datakällan och länken mellan Beslutshantering och Customer Journey Analytics. Data från beslutshantering samlas in i Experience Platform **automatiskt** eller som en del av **explicit skickade upplevelsehändelser** (till exempel visningar eller klickningar). Mer information finns i [Komma igång med datainsamling](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/collect-event-data/data-collection.html?lang=sv-SE).
 
 ## Skapa en anslutning
 
-När data för beslutshantering finns i Adobe Experience Platform kan du skapa en [anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) baserat på dina data för beslutshantering. Du kan också lägga till data för beslutshantering i en befintlig anslutning.
+När data för beslutshantering finns i Adobe Experience Platform kan du skapa en [anslutning](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=sv-SE) baserat på dina data för beslutshantering. Du kan också lägga till data för beslutshantering i en befintlig anslutning.
 
 Välj och konfigurera följande datauppsättningar:
 
@@ -42,7 +42,7 @@ Välj och konfigurera följande datauppsättningar:
 
 ## Skapa en datavy
 
-När en anslutning har skapats kan du skapa en eller flera [datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html) för att konfigurera önskade mått och mätvärden som är tillgängliga i Customer Journey Analytics.
+När en anslutning har skapats kan du skapa en eller flera [datavyer](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=sv-SE) för att konfigurera önskade mått och mätvärden som är tillgängliga i Customer Journey Analytics.
 
 >[!NOTE]
 >

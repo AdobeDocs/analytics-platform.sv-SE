@@ -90,4 +90,4 @@ Följande alternativ på snabbmenyn är tillgängliga när du väljer en kolumnr
 
 ## Ändra radhöjd
 
-Du kan ange [vydensiteten](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**.
+Du kan ange [vydensiteten](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**.

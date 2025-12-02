@@ -105,7 +105,7 @@ När du går igenom användningsexemplen ersätter du de här exempelobjekten me
       1. Välj **[!UICONTROL OK]**.
    1. I dialogrutan **[!UICONTROL PostgreSQL database]** - **[!UICONTROL Database]**:
       ![PowerBI Desktop-användare och lösenord](assets/powerbi-userpassword.png)
-      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera värdena **[!UICONTROL Username]** och **[!UICONTROL Password]** från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** i fälten **[!UICONTROL User name]** och **[!UICONTROL Password]**. Om du använder en [icke-förfallande autentiseringsuppgift](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) ska du använda lösenordet för dina icke-förfallande autentiseringsuppgifter.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera värdena **[!UICONTROL Username]** och **[!UICONTROL Password]** från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** i fälten **[!UICONTROL User name]** och **[!UICONTROL Password]**. Om du använder en [icke-förfallande autentiseringsuppgift](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) ska du använda lösenordet för dina icke-förfallande autentiseringsuppgifter.
       1. Kontrollera att listrutan för **[!UICONTROL Select which level to apply these settings to]** är inställd på **[!UICONTROL Server]** som du har definierat tidigare.
       1. Välj **[!UICONTROL Connect]**.
    1. I dialogrutan **[!UICONTROL Navigator]** hämtas datavyer. Den här hämtningen kan ta en stund. När du har hämtat det här ser du följande i Power BI Desktop.
@@ -122,7 +122,7 @@ När du går igenom användningsexemplen ersätter du de här exempelobjekten me
 
 ### Till FLATTEN eller inte
 
-Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 | FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
 |---|---|:---:|---|
@@ -133,8 +133,8 @@ Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer info
 ### Mer information
 
 * [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
-* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
-* [Anslut Power BI till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi).
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials)
+* [Anslut Power BI till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/power-bi).
 
 
 
@@ -160,7 +160,7 @@ Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer info
       1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Database]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Database]**. Lägg till `%3FFLATTEN` i värdet som du klistrar in. Till exempel: `prod:cja%3FFLATTEN`.
       1. Välj **[!UICONTROL Username and Password]** i listrutan **[!UICONTROL Authentication]**.
       1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Username]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Username]**.
-      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Password]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Password]**. Om du använder en [icke-förfallande autentiseringsuppgift](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) ska du använda lösenordet för dina icke-förfallande autentiseringsuppgifter.
+      1. Använd ![Kopiera](/help/assets/icons/Copy.svg) för att kopiera och klistra in **[!UICONTROL Password]** från Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]**-panelen till **[!UICONTROL Password]**. Om du använder en [icke-förfallande autentiseringsuppgift](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect) ska du använda lösenordet för dina icke-förfallande autentiseringsuppgifter.
       1. Kontrollera att **[!UICONTROL Require SSL]** är markerad.
       1. Välj **[!UICONTROL Sign In]**.
 
@@ -176,7 +176,7 @@ Power BI Desktop stöder följande scenarier för parametern `FLATTEN`. Mer info
 
 ### Till FLATTEN eller inte
 
-Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 | FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
 |---|---|:---:|---|
@@ -187,8 +187,8 @@ Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer inform
 ### Mer information
 
 * [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
-* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
-* [Anslut skrivbordet till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials)
+* [Anslut skrivbordet till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/tableau).
 
 
 >[!TAB Sökare]
@@ -253,7 +253,7 @@ Tableu Desktop stöder följande scenarier för parametern `FLATTEN`. Mer inform
 
 ### Till FLATTEN eller inte
 
-Looker stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+Looker stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 | FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
 |---|---|:---:|---|
@@ -264,7 +264,7 @@ Looker stöder följande scenarier för parametern `FLATTEN`. Mer information fi
 ### Mer information
 
 * [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
-* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials)
 
 
 >[!TAB Jupyter-anteckningsbok]
@@ -360,7 +360,7 @@ Looker stöder följande scenarier för parametern `FLATTEN`. Mer information fi
 
 ### Till FLATTEN eller inte
 
-Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 | FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
 |---|---|:---:|---|
@@ -371,7 +371,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 ### Mer information
 
 * [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
-* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials)
 
 >[!TAB RStudio]
 
@@ -446,7 +446,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 
 ### Till FLATTEN eller inte
 
-RStudio stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
+RStudio stöder följande scenarier för parametern `FLATTEN`. Mer information finns i [Förenkla kapslade data](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 | FLATTEN-parameter | Exempel | Stöds | Anmärkningar |
 |---|---|:---:|---|
@@ -457,7 +457,7 @@ RStudio stöder följande scenarier för parametern `FLATTEN`. Mer information f
 ### Mer information
 
 * [Förutsättningar](/help/data-views/bi-extension.md#prerequisites)
-* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Handbok för autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials)
 
 >[!ENDTABS]
 

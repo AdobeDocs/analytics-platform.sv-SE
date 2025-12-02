@@ -17,7 +17,7 @@ ht-degree: 0%
 Med kurering kan du begränsa komponenterna (mått, mått, segment, datumintervall) innan du delar ett projekt. När en mottagare öppnar projektet visas en begränsad uppsättning komponenter som du har valt för dem. Kurering är ett valfritt men rekommenderat steg innan du delar ett projekt.
 
 >[!NOTE]
-> Produktprofiler är den primära mekanismen som styr vilka komponenter en användare kan se. De hanteras via [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/admin-tool-experience-cloud). Kuration är ett sekundärt segment.
+> Produktprofiler är den primära mekanismen som styr vilka komponenter en användare kan se. De hanteras via [Adobe Experience Cloud Admin Console](https://experienceleague.adobe.com/sv/docs/core-services/interface/administration/admin-tool-experience-cloud). Kuration är ett sekundärt segment.
 
 ## Använd projektstrukturering
 
