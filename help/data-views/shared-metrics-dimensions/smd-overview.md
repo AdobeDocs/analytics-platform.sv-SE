@@ -66,7 +66,7 @@ Alla delade mått och mått visas under de fyra översiktskorten.
    * **[!UICONTROL Description]**: Komponentens [description](/help/data-views/component-settings/overview.md).
    * **[!UICONTROL Context labels]**: Komponentens [kontextetiketter](/help/data-views/component-settings/overview.md).
    * **[!UICONTROL Include/Exclude values]**: Visar antalet regler som anges under [Inkludera/exkludera värden](/help/data-views/component-settings/include-exclude-values.md).
-   * **[!UICONTROL Data usage labels]**: [Dataanvändningsetiketter](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) för schemafältet.
+   * **[!UICONTROL Data usage labels]**: [Dataanvändningsetiketter](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview) för schemafältet.
    * **[!UICONTROL Deprecated]**: Anger om den borttagna flaggan har angetts.
    * **[!UICONTROL Format]**: Det format som värden visas i. Booleaner visas vanligtvis som `True | False`, mått visas vanligtvis som `Decimal` osv.
    * **[!UICONTROL Metric deduplication]**: Komponentens [Metrisk deduplicering](/help/data-views/component-settings/metric-deduplication.md) -inställningar.
