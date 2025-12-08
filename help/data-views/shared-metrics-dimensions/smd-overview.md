@@ -2,9 +2,9 @@
 title: Översikt över delade mått och mått
 description: Använd samma mått eller måttreferens för flera datavyer.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 1de8b8f40a7e1be0de0e6cbed5cc57ff834f2377
 workflow-type: tm+mt
-source-wordcount: '1155'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,13 @@ Alla delade mått och mått visas under de fyra översiktskorten.
 
 ![Tillgängliga mått och måttförhandsvisningar](assets/shared-metrics-dimensions.png)
 
-* **Filter**: Välj ikonen ![Filter &#x200B;](../../assets/icons/Filter.svg) om du vill visa eller dölja tillgängliga filter. Följande filter är tillgängliga:
+* **Filter**: Välj ikonen ![Filter ](../../assets/icons/Filter.svg) om du vill visa eller dölja tillgängliga filter. Följande filter är tillgängliga:
    * **[!UICONTROL Component type]**: Visa endast dimensioner eller endast mått.
    * **[!UICONTROL Dataset]**: Visa endast komponenter där datauppsättningen ingår i datavyer som en komponent delas med.
    * **[!UICONTROL Data view]**: Visa endast komponenter som delas med den datavyn.
    * **[!UICONTROL Created by]**: Visa endast komponenter som har skapats av en viss användare.
    * **[!UICONTROL Duplicates]**: Visa endast komponenter som har samma komponent-ID som en annan komponent. De här filtren är identiska med att granska komponenter via översiktskorten.
-* **Sök**: Använd ikonen ![Sök &#x200B;](../../assets/icons/Search.svg) för att söka efter en komponent efter namn.
+* **Sök**: Använd ikonen ![Sök ](../../assets/icons/Search.svg) för att söka efter en komponent efter namn.
 * **[!UICONTROL Connection]**: En nedrullningsbar meny som ändrar [anslutningen](/help/connections/overview.md). Delade mått och mätvärden är alltid specifika för en enda anslutning.
 * **[!UICONTROL Customize table]**: Välj ikonen ![Anpassa tabell](/help/assets/icons/ColumnSetting.svg) om du vill visa eller dölja kolumner i tabellen. Tillgängliga alternativ är:
    * **[!UICONTROL Field name]**: Namnet på den delade dimensionen eller måttet. Det här fältet visas alltid.
@@ -66,7 +66,7 @@ Alla delade mått och mått visas under de fyra översiktskorten.
    * **[!UICONTROL Description]**: Komponentens [description](/help/data-views/component-settings/overview.md).
    * **[!UICONTROL Context labels]**: Komponentens [kontextetiketter](/help/data-views/component-settings/overview.md).
    * **[!UICONTROL Include/Exclude values]**: Visar antalet regler som anges under [Inkludera/exkludera värden](/help/data-views/component-settings/include-exclude-values.md).
-   * **[!UICONTROL Data usage labels]**: [Dataanvändningsetiketter](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview) för schemafältet.
+   * **[!UICONTROL Data usage labels]**: [Dataanvändningsetiketter](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) för schemafältet.
    * **[!UICONTROL Deprecated]**: Anger om den borttagna flaggan har angetts.
    * **[!UICONTROL Format]**: Det format som värden visas i. Booleaner visas vanligtvis som `True | False`, mått visas vanligtvis som `Decimal` osv.
    * **[!UICONTROL Metric deduplication]**: Komponentens [Metrisk deduplicering](/help/data-views/component-settings/metric-deduplication.md) -inställningar.
@@ -80,7 +80,7 @@ Alla delade mått och mått visas under de fyra översiktskorten.
    * **[!UICONTROL Summary data group]**: Komponentens [Inställningar för datagrupp för sammanfattning](/help/data-views/component-settings/summary-data-group.md).
    * **[!UICONTROL Date created]**: Det datum då komponenten skapades eller importerades.
    * **[!UICONTROL Last modified]**: Om komponenten har ändrats efter att den skapades, datumet då den senast ändrades.
-* **[!UICONTROL Job history]**: Välj ikonen ![&#x200B; Historik &#x200B;](/help/assets/icons/History.svg) för att öppna ett modalt fönster som visar alla instanser av import av dimensioner och mått från enskilda datavyer.
+* **[!UICONTROL Job history]**: Om du importerar eller delar ett stort antal komponenter skapas ett jobb automatiskt. Välj ikonen ![Historik](/help/assets/icons/History.svg) om du vill öppna ett modalt fönster som visar alla instanser av import av dimensioner och mått från enskilda datavyer. Om inga av dina import- eller delningsåtgärder är tillräckligt stora för att utlösa ett jobb visas inte den här knappen.
 
 ## Redigera komponenter eller dela komponenter till datavyer
 
@@ -90,6 +90,6 @@ Använd kryssrutan bredvid en komponent för att visa alla tillgängliga åtgär
 
 * ![Pennikon](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]**: Öppna de valda dimensionerna och måtten i den [delade komponentredigeraren](shared-component-editor.md) där du kan justera deras [komponentinställningar](/help/data-views/component-settings/overview.md). När du markerar flera komponenter som ska redigeras öppnas alla i komponentredigeraren. Du kan skift + klicka på komponenter i komponentredigeraren om du vill redigera samma fält för flera komponenter.
 * ![Delningsikon](/help/assets/icons/ShareAlt.svg) **[!UICONTROL Share to data view(s)]**: Öppnar ett fönster som visar alla datavyer som är tillgängliga i den valda anslutningen. Markera kryssrutan för varje datavy som du vill göra den här komponenten tillgänglig i och välj sedan **[!UICONTROL Share]**.
-* ![Ikonen för att sluta dela &#x200B;](/help/assets/icons/SaveTo.svg) **[!UICONTROL Unshare from data view(s)]**: Öppnar ett fönster som visar alla datavyer som den här komponenten för närvarande delas med. Markera kryssrutan för varje datavy som du vill ta bort den här komponentens tillgänglighet från och välj sedan **[!UICONTROL Unshare]**.
+* ![Ikonen för att sluta dela ](/help/assets/icons/SaveTo.svg) **[!UICONTROL Unshare from data view(s)]**: Öppnar ett fönster som visar alla datavyer som den här komponenten för närvarande delas med. Markera kryssrutan för varje datavy som du vill ta bort den här komponentens tillgänglighet från och välj sedan **[!UICONTROL Unshare]**.
 * ![Duplicera ikon](/help/assets/icons/Copy.svg) **[!UICONTROL Duplicate]**: Skapar en kopia av de markerade komponenterna. Ett nytt komponent-ID genereras för duplicerade komponenter.
 * ![Ta bort ikon](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]**: Tar bort de markerade komponenterna från gränssnittet. Om de markerade komponenterna delas med datavyer delas de inte.
