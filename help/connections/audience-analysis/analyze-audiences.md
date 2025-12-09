@@ -6,22 +6,24 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
+source-git-commit: f23775342a29d758b478206a77386e18a58312a6
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
 
 # Analysera Experience Platform-målgrupper i Customer Journey Analytics {#analyze-audiences-RTCDP}
 
-Du kan börja analysera Experience Platform-målgrupper i Customer Journey Analytics när du har [skapat en konfiguration för målgruppsanalys](/help/connections/audience-analysis/audience-analysis-configure.md), när målgruppsdata är tillgängliga som nya dimensioner i Analysis Workspace.
+När du har [skapat en målgruppsanalyskonfiguration](/help/connections/audience-analysis/audience-analysis-configure.md) blir målgruppsdata tillgängliga som nya dimensioner i datavyer där du konfigurerar dem att skapas. Ni kan använda de nya målgruppsdimensionerna var som helst i Analysis Workspace om ni har tillgång till en datavy där målgruppsanalysdimensionerna lades till.
+
+## Använda mallen Målgruppsöversikt
 
 En mall för en publiköversikt finns i Customer Journey Analytics.
 
 <!-- Can you also use the new audience dimensions in any project, regardless of whether it's a template? I assume so -->
 
-<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? -->
+<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? Are they the dimensions available in the Audience overview template? (Audience Name, Audience Origin, Exited Audience Name, Exited Audience Origin; Audience Description, Exited Audience Description). Metrics included (Distinct Audiences) -->
 
 Mer information om hur du får åtkomst till mallen för målgruppsöversikt finns i [Åtkomst till och kör en mall](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) i [Använd mallar](/help/analysis-workspace/templates/use-templates.md).
 
@@ -49,7 +51,7 @@ Välj upp till tre målgrupper i tabellen på den här panelen för att se hur d
 
 Visar data för alla befintliga målgrupper med användningshändelser som är associerade med den valda datavyn. Data visas alltid i går, så om du ändrar panelens datumintervall blir data felaktiga. &quot;Utdragna målgrupper&quot; är målgrupper där personer med användningshändelser lämnade eller slutade igår.
 
-Använd tabellen i den här panelen för att bättre förstå målgruppernas beteende. Dra dimensionen Befintlig målgruppsbeskrivning från den markerade datavyn och lägg till den som en uppdelning. Eller använd någon annan interaktionsdimension eller mätmetod (som Sida, Åtgärd o.s.v.) som uppdelning.
+Använd tabellen i den här panelen för att bättre förstå målgruppernas beteende. Dra dimensionen Avslutade målgruppsbeskrivning från den markerade datavyn och lägg till den som en uppdelning. Eller använd någon annan interaktionsdimension eller mätmetod (som Sida, Åtgärd o.s.v.) som uppdelning.
 
 ## Avancerad målgruppspanel
 

@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
+source-git-commit: f23775342a29d758b478206a77386e18a58312a6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '678'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,10 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Målgruppsanalys skiljer sig från målgruppspublicering, som gör att ni kan skapa och publicera målgrupper som identifieras i Customer Journey Analytics till Adobe Experience Platform för kundanpassning och personalisering. Mer information om målgruppspublicering finns i [Översikt över målgruppspublicering](/help/components/audiences/audiences-overview.md).
+>Förstå skillnaden mellan målgruppsanalys och publikpublicering:
+>
+>* **Målgruppsanalys**: Gör att du kan importera målgruppsmedlemskapsdata från Experience Platform-profildatauppsättningar till en Customer Journey Analytics-anslutning.
+>* **Målgruppspublicering**: Gör att du kan skapa och publicera målgrupper som identifieras i Customer Journey Analytics till Adobe Experience Platform för kundanpassning och personalisering. Mer information om målgruppspublicering finns i [Översikt över målgruppspublicering](/help/components/audiences/audiences-overview.md).
 
 Med hjälp av målgruppsanalys kan ni importera målgruppsmedlemskapsdata från Experience Platform-profildatauppsättningar till en Customer Journey Analytics-anslutning. Publiken blir tillgänglig som nya dimensioner för användning i Analysis Workspace.
 
@@ -46,6 +49,12 @@ När du konfigurerar målgruppsanalys väljer du den sandlåda och sammanfogning
 
 Mer information finns i [Konfigurera målgruppsanalys](/help/connections/audience-analysis/audience-analysis-configure.md).
 
+## Hantera konfigurationer för målgruppsanalys
+
+Ni kan hantera konfigurationer för målgruppsanalys efter att de har skapats. Du kan visa, redigera och ta bort konfigurationer.
+
+Information om hur du hanterar befintliga konfigurationer för målgruppsanalys finns i [Hantera konfigurationer för målgruppsanalys](/help/connections/audience-analysis/audience-analysis-manage.md).
+
 ## Analysera målgruppsdata i Customer Journey Analytics
 
 Med målgruppsdata i Customer Journey Analytics kan ni få användbara insikter om hur målgruppsmedlemmarna beter sig i olika kanaler.
@@ -57,6 +66,16 @@ Du kan till exempel spåra beteendet hos enskilda kunder som ingick i samma e-po
 * Målgruppsmedlemmar som till slut gjorde ett butiksköp
 
 Mer information finns i [Analysera Experience Platform-målgrupper i Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+
+## Målgruppsanalysroll och behörighetskrav
+
+Följande Customer Journey Analytics-roller och Experience Platform-behörigheter krävs för målgruppsanalys:
+
+| Funktion | Customer Journey Analytics roll- eller behörighetskrav | Experience Platform behörighetskrav |
+|---------|----------|----------|
+| [Skapa konfigurationer för målgruppsanalys](/help/connections/audience-analysis/audience-analysis-configure.md) | Systemadministratör | <ul><li>Datauppsättningar: Läsbehörigheter</li><li>Scheman: Läs, Skriv</li><li>och identitetsnamnutrymmen: Läs</li></ul> |
+| [Visa målgruppsanalysdimensioner i datavyn](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Produktprofiladministratör för den produktprofil som datavyn har tilldelats <p>Mer information finns i [Åtkomstkontroll](/help/technotes/access-control.md).</p> | Ej tillämpligt |
+| Använd målgruppsanalysdimensioner i Analysis Workspace | Åtkomst till en datavy där målgruppsanalysdimensionerna lades till | Ej tillämpligt |
 
 
 
