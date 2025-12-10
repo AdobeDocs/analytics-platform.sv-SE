@@ -5,9 +5,9 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
+source-git-commit: 95e50b73533c627f05c3b8dfe112b28b4f9e70c1
 workflow-type: tm+mt
-source-wordcount: '2369'
+source-wordcount: '2510'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Innehåller övergripande inställningar för datavyn.
 >id="dataview_dataviewsinadobejourneyoptimizer"
 >title="Datavyer i Journey Optimizer"
 >abstract="Customer Journey Analytics måste använda en anslutning och datavy som är kompatibel med Adobe Journey Optimizer. Som standard skapas en anslutning och en datavy automatiskt för detta.<br/>Du kan också aktivera det här alternativet om du vill göra den här datavyn till standarddatavyn som används i Adobe Journey Optimizer-rapporter. När det här alternativet är aktiverat läggs alla nödvändiga komponenter som krävs för Journey Optimizer till i datavyn, och alla nödvändiga Journey Optimizer-datauppsättningar läggs till i anslutningen som är kopplad till datavyn."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/integrations/ajo#connection" text="Vilka komponenter och datauppsättningar som läggs till."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#connection" text="Vilka komponenter och datauppsättningar som läggs till."
 
 
 Innehåller inställningar som är tillämpliga när du använder Adobe Journey Optimizer förutom Customer Journey Analytics.
@@ -100,10 +100,10 @@ Anger namnet på behållare för datavyn. Behållarnamn används ofta i [segment
 
 | Inställning | Beskrivning |
 | --- | --- |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Global Account container name]** | `Global Account` (standard). Behållaren [!UICONTROL Global Account] innehåller alla sessioner och händelser för globala konton inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Account container name]** | `Account` (standard). Behållaren [!UICONTROL Account] innehåller alla sessioner och händelser för konton inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Opportunity container name]** | `Opportunity` (standard). Behållaren [!UICONTROL Opportunity] innehåller alla sessioner och händelser för affärsmöjligheter inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Buying group container name]** | `Buying Group` (standard). Behållaren [!UICONTROL Buying group] innehåller alla sessioner och händelser för att köpa grupper inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Global Account container name]** | `Global Account` (standard). Behållaren [!UICONTROL Global Account] innehåller alla sessioner och händelser för globala konton inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Account container name]** | `Account` (standard). Behållaren [!UICONTROL Account] innehåller alla sessioner och händelser för konton inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Opportunity container name]** | `Opportunity` (standard). Behållaren [!UICONTROL Opportunity] innehåller alla sessioner och händelser för affärsmöjligheter inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Buying group container name]** | `Buying Group` (standard). Behållaren [!UICONTROL Buying group] innehåller alla sessioner och händelser för att köpa grupper inom den angivna tidsramen. Om din organisation använder en annan term kan du byta namn på behållaren här. |
 | **[!UICONTROL Person container name]** | `Person` (standard). Behållaren [!UICONTROL Person] innehåller alla sessioner och händelser för personer inom den angivna tidsramen. Om din organisation använder en annan term (till exempel &quot;Besökare&quot; eller &quot;Användare&quot;) kan du byta namn på behållaren här. |
 | **[!UICONTROL Session container name]** | `Session` (standard). Med behållaren [!UICONTROL Session] kan du identifiera sidinteraktioner, kampanjer eller konverteringar för en viss session. Du kan byta namn på den här behållaren till &#39;Besök&#39; eller någon annan term som din organisation föredrar. |
 | **[!UICONTROL Event container name]** | `Event` (standard). Behållaren [!UICONTROL Event] definierar enskilda händelser i en datamängd. Om din organisation använder en annan term (till exempel &quot;träffar&quot; eller &quot;Sidvisningar&quot;) kan du byta namn på behållaren här. |
@@ -120,7 +120,7 @@ Anger det kalenderformat som du vill att datavyn ska följa. Du kan ha flera dat
 | [!UICONTROL **Kalendertyp**] | Bestäm hur veckors i månaden ska grupperas.<br>**Gregoriansk:** Standardkalenderformat. Kvartal grupperas efter månad.<br>**4-5-4 Detaljhandel:** En standardiserad 4-5-4 butikskalender. Den första och sista månaden i kvartalet innehåller 4 veckor, medan den andra månaden i kvartalet består av 5 veckor.<br>**Anpassad (4-5-4):** Liknar 4-5-4-kalendern förutom att du kan välja den första dagen på året och vilket år som den extra veckan inträffar.<br>**Anpassad (4-4-5):** Den första och den andra månaden i varje kvartal innehåller 4 veckor, medan den sista veckan i varje kvartal består av 5 veckor.<br>**Anpassad (5-4-4):** Den första månaden i varje kvartal består av 5 veckor, medan den andra och tredje månaden i varje kvartal består av 4 veckor. |
 | [!UICONTROL **Årets första månad**] och [!UICONTROL **veckodag**] | Synlig för den gregorianska kalendertypen. Ange vilken månad du vill att kalenderåret ska börja på och vilken dag du vill att varje vecka ska börja på. |
 | [!UICONTROL **Första dagen på aktuellt år**] | Synlig för anpassade kalendertyper. Ange vilken dag på året som du vill att det aktuella året ska börja. Kalendern formaterar automatiskt den första dagen i varje vecka baserat på det här värdet. |
-| [!UICONTROL **År då den extra veckan inträffar**] | Med de flesta 364-dagars kalendrar (52 veckor på 7 dagar vardera) ackumulerar varje år kvarvarande dagar tills de blir upp till en extra vecka. Den här extra veckan läggs sedan till den sista månaden under det året. Ange vilket år du vill lägga till den extra veckan i. |
+| [!UICONTROL **År då den extra veckan inträffar**] | Med de flesta 364-dagars kalendrar (52 veckor på 7 dagar vardera) ackumulerar varje år kvarvarande dagar tills de blir upp till en extra vecka. Den här extra veckan läggs sedan till den sista månaden under det året. Ange vilket år du vill lägga till den extra veckan i.<br><br/>**Extra veckor och skottår**<br/> När du väljer en anpassad **[!UICONTROL Calendar type]** (**[!UICONTROL Custom (4‑5‑4)]**, **[!UICONTROL Custom (4‑4‑5)]** eller **[!UICONTROL Custom (5‑4‑4)]**) ackumuleras kvarvarande dagar varje år tills dagarna blir en hel extra vecka (7 dagar). Den här extra veckan läggs till det år du väljer i **[!UICONTROL Year in which the "extra" week occurs]**.<br/><br/>Löpår visas inte avsiktligt i **[!UICONTROL Year in which the "extra" week occurs]**. Ett skottår kan dock fortfarande innehålla 53 veckor. Om du vill tvinga ett skottår att innehålla 53 veckor, väljer du ett år som inte är skottår från **[!UICONTROL Year in which the "extra" week occurs]** för att försäkra dig om att den kumulativa datumavvikelsen blir upp till 7 dagar för målskottsåret. Om du till exempel vill ha 53 veckor 2024 väljer du **[!UICONTROL 2019]**. Under perioden 2019-2024 är den totala tidsskillnaden 7 dagar (2020 (+2), 2021 (+1), 2022 (+1), 2023 (+1) och 2024 (+2), vilket leder till en 53:e vecka 200 24.<br/><br/>Markeringen för **[!UICONTROL First day of current year]** påverkar var den extra veckan hamnar. Bekräfta konfigurationen med hjälp av kalenderförhandsgranskningen. |
 
 {style="table-layout:auto"}
 
@@ -182,45 +182,45 @@ Du kan filtrera ![Filterikonen](https://spectrum.adobe.com/static/icons/workflow
 >id="dataview_includedcomponents_filter_datagovernance_custom"
 >title="Egna etiketter"
 >abstract="Förutom etiketterna från Adobe kan du även definiera egna etiketter för din organisation."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_contract"
 >title="Kontraktsetiketter"
 >abstract="Kontraktsetiketter (C) används för att kategorisera data som har avtalsmässiga skyldigheter eller som är relaterade till organisationens policyer för datastyrning."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_identity"
 >title="Identitetsetiketter"
 >abstract="Identity (I)-etiketter används för att kategorisera data som kan identifiera eller kontakta en viss person."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_sensitive"
 >title="Känsliga etiketter"
 >abstract="Känsliga (S) etiketter används för att kategorisera data som du, och din organisation, anser vara känsliga."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_partnerecosystem"
 >title="Partnerekosystem"
 >abstract="P-etiketter (Partner Ecosystem) används för att kategorisera data som delas med tredjepartspartners."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="Policyer"
 >abstract="För att dataanvändningsetiketter effektivt ska stödja regelefterlevnad måste dataanvändningsprinciper implementeras. Dataanvändningspolicyer är regler som beskriver den typ av marknadsföringsåtgärder som du tillåts eller begränsas från att utföra på data inom Experience Platform. Filtren Profiler tillämpar den aktiverade principen på datavyn."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
 
 
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_responsibleengagement"
 >title="Ansvariga interaktionsetiketter"
 >abstract="Ansvariga interaktionsetiketter används för att stödja ansvarsfullt engagemang."
->additional-url="https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview" text="Översikt över etiketter för dataanvändning"
 
 
 **[!UICONTROL Included components]** innehåller listan med **[!UICONTROL Metrics]** och **[!UICONTROL Dimensions]** som du konfigurerar för datavyn.
