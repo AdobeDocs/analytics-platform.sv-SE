@@ -219,7 +219,7 @@ I steget **[!UICONTROL Authentication]** väljer du:
 
    1. Välj **[!UICONTROL Next]**.
 
-  Mer information om hur du ansluter och autentiserar när du använder [Azure-databaserna](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) eller [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake) finns i dokumentationen för Experience Platform.
+  Mer information om hur du ansluter och autentiserar när du använder [Azure-databaserna](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/databricks) eller [Snowflake](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/snowflake) finns i dokumentationen för Experience Platform.
 
 
 ### Markera data
