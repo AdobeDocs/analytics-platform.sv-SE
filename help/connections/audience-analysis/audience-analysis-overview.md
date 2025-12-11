@@ -6,7 +6,7 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: f23775342a29d758b478206a77386e18a58312a6
+source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 2%
@@ -37,7 +37,7 @@ I följande diagram och tillhörande tabell visas hur en målgruppsanalyskonfigu
 | 3 | Profildatamängd | Måste innehålla de målgruppsdata från Experience Platform som du vill analysera. Den här profildatauppsättningen läggs till i anslutningen som du väljer. |
 | 4 | Kopplingsprincip | Sammanslagningsprincipen som är kopplad till de Experience Platform-målgrupper som du vill analysera. |
 | 5 | Profildata | Profildata som är associerade med den sammanfogningsprincip som du väljer. Dessa data är tillgängliga i Experience Platform datamängder. |
-| 6 | Ny datauppsättning för sökning | Innehåller egna namn för de nya målgruppsdimensionerna som skapas. Uppslagsdatauppsättningen skapas automatiskt och läggs till i anslutningen tillsammans med den profildatauppsättning som du väljer. |
+| 6 | Ny datauppsättning för sökning | Innehåller egna namn för de nya målgruppsdimensionerna som skapas. <p>Uppslagsdatauppsättningen skapas automatiskt och läggs till i anslutningen tillsammans med den profildatauppsättning som du väljer.</p> |
 | 7 | Anslutning | Anslutningen där du vill lägga till den valda profildatauppsättningen. |
 | 8 | Nya målgruppsdimensioner | Nya målgruppsdimensioner <!--and metrics?--> som representerar de Experience Platform-målgrupper som ingår i den profildatauppsättning som du har valt och som är tillgängliga för rapportering i Analysis Workspace. Dessa dimensioner skapas automatiskt. |
 | 9 | Datavyer | De datavyer som du väljer och som är kopplade till anslutningen. Detta är de datavyer som du vill använda när du analyserar Experience Platform målgruppsdata inom Analysis Workspace. Dessa datavyer konfigureras automatiskt med Experience Platform målgruppsdata för rapportering. |
@@ -73,7 +73,7 @@ Följande Customer Journey Analytics-roller och Experience Platform-behörighete
 
 | Funktion | Customer Journey Analytics roll- eller behörighetskrav | Experience Platform behörighetskrav |
 |---------|----------|----------|
-| [Skapa konfigurationer för målgruppsanalys](/help/connections/audience-analysis/audience-analysis-configure.md) | Systemadministratör | <ul><li>Datauppsättningar: Läsbehörigheter</li><li>Scheman: Läs, Skriv</li><li>och identitetsnamnutrymmen: Läs</li></ul> |
+| [Skapa konfigurationer för målgruppsanalys](/help/connections/audience-analysis/audience-analysis-configure.md) | Systemadministratör | <ul><li>Datauppsättningar: Läsbehörigheter</li><li>Scheman: Läs, Skriv</li><li>Identitetsnamnutrymmen: Läs</li></ul> |
 | [Visa målgruppsanalysdimensioner i datavyn](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Produktprofiladministratör för den produktprofil som datavyn har tilldelats <p>Mer information finns i [Åtkomstkontroll](/help/technotes/access-control.md).</p> | Ej tillämpligt |
 | Använd målgruppsanalysdimensioner i Analysis Workspace | Åtkomst till en datavy där målgruppsanalysdimensionerna lades till | Ej tillämpligt |
 
