@@ -120,7 +120,7 @@ Customer Journey Analytics utvidgar begreppet identiteter utöver ECID:n till at
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använda identitet i Customer Journey Analytics](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använda identitet i Customer Journey Analytics](https://video.tv.adobe.com/v/3477621/?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
