@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Generera presentationer från Workspace-rapporter
 feature: Curate and Share
 role: User
-source-git-commit: 6b8a9fd25aaf83eaad3bc9cba0ce9349afb5471c
+source-git-commit: 1ec10a006578bc5ddf5f08501f8d72a9623245d5
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 0%
@@ -125,49 +125,53 @@ Dataartiklar består av en rubrikbild, sammanfattningsbild, detaljbilder och avs
 
    Gör något av följande om du vill överföra en anpassad mall:
 
-   * (Rekommenderas) Hämta en tom mall och ändra den.
+   +++(Rekommenderas) Hämta en tom mall och ändra den
 
-      1. Hämta [den här tomma mallen](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
+   1. Hämta [den här tomma mallen](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
-      1. Använd dina anpassade format på den tomma mallen.
+   1. Använd dina anpassade format på den tomma mallen.
 
-      1. Ladda upp mallen igen utan att ändra några malllayoutsnamn:
+   1. Ladda upp mallen igen utan att ändra några malllayoutsnamn:
 
-         Dra en tom mall med dina anpassade format till släppområdet från filsystemet.
+      Dra en tom mall med dina anpassade format till släppområdet från filsystemet.
 
-         eller
+      eller
 
-         Välj **[!UICONTROL Browse]**, bläddra sedan till och välj en tom mall där dina anpassade format används från filsystemet.
+      Välj **[!UICONTROL Browse]**, bläddra sedan till och välj en tom mall där dina anpassade format används från filsystemet.
 
-      1. I avsnittet **[!UICONTROL Layout mapping]** mappas varje bildrutelayout som används i genererade presentationer automatiskt till en bildruta från ditt överförda tema. Granska valen för att kontrollera att de är korrekta.
+   1. I avsnittet **[!UICONTROL Layout mapping]** mappas varje bildrutelayout som används i genererade presentationer automatiskt till en bildruta från ditt överförda tema. Granska valen för att kontrollera att de är korrekta.
 
-         ![Layoutmappning](assets/generate-slides-layout-mapping.png)
+      ![Layoutmappning](assets/generate-slides-layout-mapping.png)
 
-      1. (Villkorligt) Om en bildrutelayout är felaktigt mappad väljer du **[!UICONTROL Change selection]** ovanför den bildruta som valdes i den överförda presentationen och väljer sedan den bildruta som matchar layouten.
+   1. (Villkorligt) Om en bildrutelayout är felaktigt mappad väljer du **[!UICONTROL Change selection]** ovanför den bildruta som valdes i den överförda presentationen och väljer sedan den bildruta som matchar layouten.
 
-         Upprepa den här processen för varje bildruta som har mappats felaktigt.
+      Upprepa den här processen för varje bildruta som har mappats felaktigt.
 
-   * Överför en anpassad mall direkt.
+   +++
 
-      1. Dra den anpassade mallen från filsystemet till släppområdet.
+   +++Överföra en anpassad mall direkt 
 
-         eller
+   1. Dra den anpassade mallen från filsystemet till släppområdet.
 
-         Välj **[!UICONTROL Browse]**, bläddra sedan till och välj din anpassade mall från filsystemet.
+      eller
 
-         Kontrollera att den överförda filen har mallayouter med följande namn: &quot;Title_Slide&quot;, &quot;Section_Divider&quot;, &quot;Title_Text&quot;, &quot;Title_Chart&quot;, &quot;Title_Two_Content_Mixed&quot;, &quot;Title_Three_Content_Mixed&quot;.
+      Välj **[!UICONTROL Browse]**, bläddra sedan till och välj din anpassade mall från filsystemet.
 
-         Upp till 15 malllayouter stöds.
+      Kontrollera att den överförda filen har mallayouter med följande namn: &quot;Title_Slide&quot;, &quot;Section_Divider&quot;, &quot;Title_Text&quot;, &quot;Title_Chart&quot;, &quot;Title_Two_Content_Mixed&quot;, &quot;Title_Three_Content_Mixed&quot;.
 
-         .pptx- och .potx-filer som är upp till 25 MB stora stöds.
+      Upp till 15 malllayouter stöds.
 
-      1. I avsnittet **[!UICONTROL Layout mapping]** mappas varje bildrutelayout som används i genererade presentationer automatiskt till en bildruta från ditt överförda tema. Granska valen för att kontrollera att de är korrekta.
+      .pptx- och .potx-filer som är upp till 25 MB stora stöds.
 
-         ![Anpassad mall för layoutmappning](assets/generate-slides-layout-mapping-custom-template.png)
+   1. I avsnittet **[!UICONTROL Layout mapping]** mappas varje bildrutelayout som används i genererade presentationer automatiskt till en bildruta från ditt överförda tema. Granska valen för att kontrollera att de är korrekta.
 
-      1. (Villkorligt) Om en bildrutelayout är felaktigt mappad väljer du **[!UICONTROL Change selection]** ovanför den bildruta som valdes i den överförda presentationen och väljer sedan den bildruta som matchar layouten.
+      ![Anpassad mall för layoutmappning](assets/generate-slides-layout-mapping-custom-template.png)
 
-         Upprepa den här processen för varje bildruta som har mappats felaktigt.
+   1. (Villkorligt) Om en bildrutelayout är felaktigt mappad väljer du **[!UICONTROL Change selection]** ovanför den bildruta som valdes i den överförda presentationen och väljer sedan den bildruta som matchar layouten.
+
+      Upprepa den här processen för varje bildruta som har mappats felaktigt.
+
+   +++
 
 1. Välj **[!UICONTROL Export PPT]**.
 
@@ -185,7 +189,7 @@ Möjligheten att generera bilder är aktiverad som standard för alla användare
 
 Administratörer av produktprofiler vars organisationer har licens att generera bilder kan vid behov inaktivera åtkomsten.
 
-I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** åtkomsten till den här funktionen. En [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console] om de vill inaktivera åtkomst:
+I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** åtkomsten till den här funktionen. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console] om de vill inaktivera åtkomst:
 1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
 1. Välj titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL Data storytelling].
 1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.
