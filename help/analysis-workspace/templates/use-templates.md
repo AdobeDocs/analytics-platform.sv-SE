@@ -4,7 +4,7 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
+source-git-commit: 11a550e0cd67db106e2dd399843c4cf0923467ad
 workflow-type: tm+mt
 source-wordcount: '20733'
 ht-degree: 0%
@@ -383,7 +383,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Lär dig vilka innehålls- och innehållsattribut som fungerar bäst."
->abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
+>abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
 
 
 Följande mallar är tillgängliga:
@@ -1070,12 +1070,12 @@ Följande mallar är tillgängliga:
 ### Brand Concierge {#brand-concierge-templates}
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge-b2c"
+>id="template--brand-concierge--concierge"
 >title="Analysera användarengagemanget med hjälp av konversationsmönster, användarfeedback och hur effektiva era rekommendationer är."
 >abstract="**Detta kan hjälpa dig** att identifiera interaktionsmönster, utvärdera konversationskvaliteten, spåra trender för kundnöjdhet och mäta effekten av länkrekommendationer.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att förfina AI-agentens svar, utveckla riktat innehåll för vanliga problem, förbättra rekommendationsalgoritmer eller skapa specialiserade vägar för olika användarsegment."
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge--concierge"
+>id="template--brand-concierge--meeting"
 >title="Spåra hela livscykeln för B2B-mötesförfrågningar. Övervaka konverteringsgrader, konsultprestanda och identifiera era mest effektiva leads-genereringskanaler."
 >abstract="**Detta kan hjälpa dig** att spåra möteskonverteringsgrader, identifiera högpresterande gruppmedlemmar, förstå säsongstrender i bokningsbeteende och identifiera vilka sidor som genererar de mest värdefulla mötesförfrågningarna.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att optimera processen för mötesförfrågan, distribuera resurser till högkonverterande sidor, utveckla målinriktad utbildning för konsulter med lägre bokningsfrekvens eller implementera nya strategier för att minska antalet missade möten."
 
@@ -1087,7 +1087,7 @@ Följande mallar är tillgängliga:
 
 ### B2B-mallar {#b2b-templates}
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 
 <!-- CJA B2B Edition only -->
