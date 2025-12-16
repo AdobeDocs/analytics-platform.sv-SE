@@ -4,18 +4,22 @@ keywords: Analysis Workspace
 title: Generera presentationer från Workspace-rapporter
 feature: Curate and Share
 role: User
-source-git-commit: 8ddfc194c873bdb3fe12f3aeb04c01bcad83d0a5
+source-git-commit: 82ca99af8f344b713e285980145fa0ee6ae6ae1c
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1621'
 ht-degree: 0%
 
 ---
 
 # Data storytelling: Generera bildpresentationer från Workspace-rapporter {#generate-powerpoint}
 
-{{release-limited-testing}}
+>[!AVAILABILITY]
+>
+>Dataljudsberättande är en skicklighet under [Data Insights Agent](/help/data-analysis-ai.md). Den här funktionen är i den begränsade testfasen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Customer Journey Analytics funktionsreleaser](/help/release-notes/releases.md).
 
 <!-- also remove lmited testing note from: /help/technotes/access-control.md -->
+
+<!--at GA in January, replace Limited Testing note with this: Data Storytelling is a skill under Data Insights Agent and is available to eligible customers for a limited time. Access to Data Insights Agent will end on 28th February 2026. To continue using Data Insights Agent or other Adobe Experience Platform Agents without interruption, please contact your Adobe account representative to learn more about licensing Adobe Experience Platform Agent Orchestrator. -->
 
 Användare med [nödvändig behörighet](#permission-requirements-to-generate-slides) kan automatiskt generera .pptx-presentationer baserat på Analysis Workspace-projekt. När du skapar dessa bildpresentationer skapar Customer Journey Analytics automatiskt en berättelse utifrån era data genom att identifiera viktiga insikter och konvertera dem till bilder som är klara för intressenter.
 
@@ -189,7 +193,7 @@ Möjligheten att generera bilder är aktiverad som standard för alla användare
 
 Administratörer av produktprofiler vars organisationer har licens att generera bilder kan vid behov inaktivera åtkomsten.
 
-I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** åtkomsten till den här funktionen. En [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console] om de vill inaktivera åtkomst:
+I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** åtkomsten till den här funktionen. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console] om de vill inaktivera åtkomst:
 1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
 1. Välj titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL Data storytelling].
 1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.
