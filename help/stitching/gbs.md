@@ -19,7 +19,7 @@ I diagrambaserade sammanfogningar anger du en händelsedatamängd samt det best�
 
 >[!NOTE]
 >
->Du måste kontrollera att datauppsättningen är [aktiverad för identitetstjänsten ](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
+>Du måste kontrollera att datauppsättningen är [aktiverad för identitetstjänsten &#x200B;](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
 >
 
 
@@ -27,7 +27,7 @@ I diagrambaserade sammanfogningar anger du en händelsedatamängd samt det best�
 
 ## IdentityMap
 
-Diagrambaserad sammanfogning stöder användning av fältgruppen [`identityMap` ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
+Diagrambaserad sammanfogning stöder användning av fältgruppen [`identityMap` &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
 
 - Använd den primära identiteten i `identityMap` namnutrymmen för att definiera persistentID:
    - Om flera primära identiteter hittas i olika namnutrymmen sorteras identiteterna i namnutrymmena lexigrafiskt och den första identiteten markeras.
