@@ -5,21 +5,20 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: dd4ebd86cbb6640575a0eb05aa00aadfa2c7c410
+source-git-commit: 90a285fcd96866974087c53d402e85b4a2d83ccf
 workflow-type: tm+mt
-source-wordcount: '1549'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
 
 # Diagrambaserad utjämning
 
-
 I diagrambaserade sammanfogningar anger du en händelsedatamängd samt det beständiga ID:t (cookie) och namnutrymmet för person-ID:t för den datauppsättningen. Diagrambaserad sammanfogning lägger till en ny kolumn för det sammanfogade ID:t i händelsedatamängden. Sedan används det beständiga ID:t för att fråga efter identitetsdiagrammet från Experience Platform Identity Service med det namnområde som anges för att uppdatera det sammanfogade ID:t.
 
 >[!NOTE]
 >
->Du måste kontrollera att datauppsättningen är [aktiverad för identitetstjänsten &#x200B;](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
+>Du måste kontrollera att datauppsättningen är [aktiverad för identitetstjänsten ](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
 >
 
 
@@ -27,7 +26,7 @@ I diagrambaserade sammanfogningar anger du en händelsedatamängd samt det best�
 
 ## IdentityMap
 
-Diagrambaserad sammanfogning stöder användning av fältgruppen [`identityMap` &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
+Diagrambaserad sammanfogning stöder användning av fältgruppen [`identityMap` ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
 
 - Använd den primära identiteten i `identityMap` namnutrymmen för att definiera persistentID:
    - Om flera primära identiteter hittas i olika namnutrymmen sorteras identiteterna i namnutrymmena lexigrafiskt och den första identiteten markeras.
@@ -118,7 +117,7 @@ Tänk på följande två identitetsdiagramuppdateringar över tiden för besöka
 
 ![Identitetsdiagram 3579](assets/identity-graphs.svg)
 
-Du kan visa ett identitetsdiagram över tiden för en viss profil med [Identity Graph Viewer](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-viewer). Se även [Identitetstjänstens länkningslogik](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-linking-logic) för att få en bättre förståelse för logiken som används vid länkning av identiteter.
+Du kan visa ett identitetsdiagram över tiden för en viss profil med [Identity Graph Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Se även [Identitetstjänstens länkningslogik](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) för att få en bättre förståelse för logiken som används vid länkning av identiteter.
 
 ### Steg 1: Liveutjämning
 
@@ -126,15 +125,15 @@ Livehäftning försöker häfta ihop varje händelse vid samlingen till känd in
 
 +++ Information
 
-| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Diagram](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Stitched ID (after live stitch) |
+| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Datamappning](/help/assets/icons/DataMapping.svg) | Stitched ID (after live stitch) |
 |--:|---|---|---|---|
-| 1 | 2023-05-12 11:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` |
-| 2 | 2023-05-12 14:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 3 | 2023-05-12 15:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 4 | 2023-05-12 17:00 | `3579` | `3579` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `3579` |
-| 5 | 2023-05-12 19:00 | `3579` | `3579` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
-| 6 | 2023-05-13 15:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 7 | 2023-05-13 16:30 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` |
+| 1 | 2023-05-12 11:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) *odefinierad* | `246` |
+| 2 | 2023-05-12 14:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 4 | 2023-05-12 17:00 | `3579` | `3579` ![Förgrening1](/help/assets/icons/Branch1.svg) *odefinierad* | `3579` |
+| 5 | 2023-05-12 19:00 | `3579` | `3579` ![Förgrening1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 6 | 2023-05-13 15:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 7 | 2023-05-13 16:30 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -149,16 +148,16 @@ Med jämna mellanrum (beroende på vilket uppslagsfönster som har valts) beräk
 
 +++ Information
 
-Med en replay-sammanslagning som inträffar 2023-05-13 16:30, med en 24-timmars uppslagsfönsterkonfiguration, sys vissa händelser i exemplet om (indikeras av ![Replay](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)).
+Med en replay-sammanslagning som inträffar 2023-05-13 16:30, med en 24-timmars uppslagsfönsterkonfiguration, sys vissa händelser i exemplet om (indikeras av ![Replay](/help/assets/icons/Replay.svg)).
 
-| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Diagram](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Stitched ID <br/> (after live stitch) | Stitched ID <br/> (after replay 24 hours) |
+| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Datamappning](/help/assets/icons/DataMapping.svg) | Stitched ID <br/> (after live stitch) | Stitched ID <br/> (after replay 24 hours) |
 |---|---|---|---|---|---|
-| 2 | 2023-05-12 14:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 3 | 2023-05-12 15:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| ![Spela upp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)  | 2023-05-12 17:00 | `3579` | `3579` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
-| ![Spela upp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)  | 2023-05-12 19:00 | `3579` | `3579` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![Spela upp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)  | 2023-05-13 15:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Spela upp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+| 2 | 2023-05-12 14:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| ![Spela upp](/help/assets/icons/Replay.svg)  | 2023-05-12 17:00 | `3579` | `3579` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![Spela upp](/help/assets/icons/Replay.svg)  | 2023-05-12 19:00 | `3579` | `3579` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![Spela upp](/help/assets/icons/Replay.svg)  | 2023-05-13 15:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Spela upp](/help/assets/icons/Replay.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg)`a.b@yahoo.co.uk`<br/>`246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -166,15 +165,15 @@ Med en replay-sammanslagning som inträffar 2023-05-13 16:30, med en 24-timmars 
 Med replay stitching på 2023-05-13 16:30, med en 7-dagars konfiguration av uppslagsfönstret, resys alla händelser från exemplet.
 
 
-| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Diagram](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Stitched ID <br/> (after live stitch) | Stitched ID <br/> (after replay 7 days) |
+| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Datamappning](/help/assets/icons/DataMapping.svg) | Stitched ID <br/> (after live stitch) | Stitched ID <br/> (after replay 7 days) |
 |---|---|---|---|---|---|
-| ![Spela upp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)  | 2023-05-12 11:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *undefined* | `246` | `a.b@yahoo.co.uk` |
-| ![Spela upp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Spela upp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)  | 2023-05-12 15:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Spela upp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)  | 2023-05-12 17:00 | `3579` | `3579` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
-| ![Spela upp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)  | 2023-05-12 19:00 | `3579` | `3579` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![Spela upp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)  | 2023-05-13 15:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Spela upp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+| ![Spela upp](/help/assets/icons/Replay.svg)  | 2023-05-12 11:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) *odefinierad* | `246` | `a.b@yahoo.co.uk` |
+| ![Spela upp](/help/assets/icons/Replay.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Spela upp](/help/assets/icons/Replay.svg)  | 2023-05-12 15:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Spela upp](/help/assets/icons/Replay.svg)  | 2023-05-12 17:00 | `3579` | `3579` ![Förgrening1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![Spela upp](/help/assets/icons/Replay.svg)  | 2023-05-12 19:00 | `3579` | `3579` ![Förgrening1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![Spela upp](/help/assets/icons/Replay.svg)  | 2023-05-13 15:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Spela upp](/help/assets/icons/Replay.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -188,15 +187,15 @@ När du tar emot en begäran om sekretess, tas det sammanslagna ID:t bort i alla
 
 Följande tabell representerar samma data som ovan, men visar vilken effekt en sekretessbegäran (till exempel 2023-05-13 18:00) har på exempelhändelserna.
 
-| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Diagram](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | Stitched ID (after privacy request) |
+| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Datamappning](/help/assets/icons/DataMapping.svg) | Stitched ID (after privacy request) |
 |--:|---|---|---|---|
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 1 | 2023-05-12 11:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 2 | 2023-05-12 14:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 3 | 2023-05-12 15:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 4 | 2023-05-12 17:00 | `3579` | `3579` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 5 | 2023-05-12 19:00 | `3579` | `3579` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 6 | 2023-05-13 15:00 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 7 | 2023-05-13 16:30 | `246` | `246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![Länk](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `246` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 2 | 2023-05-12 14:00 | `246` | `246`![Förgrening1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg)  | 2023-05-12 15:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![Förgrening1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg)  | 2023-05-12 19:00 | `3579` | `3579` ![Förgrening1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg)  | 2023-05-13 15:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `246` |
 
 {style="table-layout:auto"}
 
@@ -207,8 +206,8 @@ Följande tabell representerar samma data som ovan, men visar vilken effekt en s
 Följande krav gäller specifikt för diagrambaserad sammanfogning:
 
 - Händelsedatauppsättningen i Adobe Experience Platform, som du vill använda sammanfogning på, måste ha en kolumn som identifierar en profil på varje rad, **beständigt ID**. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Experience Platform identitetstjänst.
-- Det beständiga ID:t måste också vara [definierat som en identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/fields/identity) i schemat.
-- Identitetsdiagrammet från Experience Platform Identity Service måste ha ett namnutrymme (till exempel `Email` eller `Phone`) som du vill använda vid sammanfogning för att matcha **person-ID**. Mer information finns i [Experience Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home).
+- Det beständiga ID:t måste också vara [definierat som en identitet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity) i schemat.
+- Identitetsdiagrammet från Experience Platform Identity Service måste ha ett namnutrymme (till exempel `Email` eller `Phone`) som du vill använda vid sammanfogning för att matcha **person-ID**. Mer information finns i [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home).
 
 >[!NOTE]
 >
@@ -222,7 +221,7 @@ Följande begränsningar gäller specifikt för diagrambaserad sammanfogning:
 - Tidsstämplar beaktas inte vid sökning efter person-ID med det angivna namnutrymmet. Det är alltså möjligt att ett beständigt ID sammanfogas med ett person-ID från en post som har en tidigare tidsstämpel.
 - I scenarier med delade enheter, där namnutrymmet i diagrammet innehåller flera identiteter, används den första lexikografiska identiteten. Om namnutrymmesbegränsningar och -prioriteringar konfigureras som en del av releasen av regler för diagramlänkning, används den senast autentiserade användarens identitet. Mer information finns i [Delade enheter](/help/use-cases/stitching/shared-devices.md).
 - I identitetsdiagrammet finns det en hård gräns på tre månader för att efterfylla identiteter. Du använder bakåtfyllnadsidentiteter om du inte använder ett Experience Platform-program, som Customer Data Platform i realtid, för att fylla i identitetsdiagrammet.
-- [Identitetstjänstens skyddsprofiler](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/guardrails) gäller. Se till exempel följande [statiska begränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/guardrails#static-limits):
+- [Identitetstjänstens skyddsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) gäller. Se till exempel följande [statiska begränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Maximalt antal identiteter i ett diagram: 50.
    - Maximalt antal länkar till en identitet för ett enskilt batchintag: 50.
    - Maximalt antal identiteter i en XDM-post för diagraminmatning: 20.

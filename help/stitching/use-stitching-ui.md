@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 6ebd1604e01af068228d7a5e4a78fdccf852f480
+source-git-commit: c67225619153218e3dca1eacea204f2b033dfb14
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -30,14 +30,13 @@ Så här aktiverar du sammanfogning av en händelsedatamängd i anslutningsgrän
    * flera fält som är konfigurerade som en identitet och som gör att du kan välja olika värden för ett beständigt ID och ett person-ID.
    * minst ett fält som är markerat som primär identitet med ett associerat namnutrymme om du vill använda identitetskartan och det primära ID-namnutrymmet för ett beständigt ID eller person-ID.
 
-* Om du vill använda diagrambaserad sammanfogning och du förväntar dig att händelsedatamängden ska bidra till identitetsdiagrammet, bör du [aktivera datamängden för identitetstjänsten](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service). En datauppsättning bidrar till identitetsdiagrammet när datauppsättningen innehåller relevanta person-ID:n bredvid beständiga ID:n.
-
+* Om du vill använda diagrambaserad sammanfogning och du förväntar dig att händelsedatamängden ska bidra till identitetsdiagrammet (eftersom datamängden innehåller relevanta person-ID:n bredvid beständiga ID:n), bör du [aktivera datamängden för identitetstjänsten](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
 
 ## Preflight-kontroller
 
 Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
 
-* Se till att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
+* Se till att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verifiera identitetstäckning för både beständigt ID och person-ID:
    * Beständigt ID: Fråga efter 7 dagars data där ditt beständiga ID-fält inte är null och dividera med en fråga på 7 dagars data för alla händelser i datauppsättningen. Procentandelen bör vara över 95 %.
 
