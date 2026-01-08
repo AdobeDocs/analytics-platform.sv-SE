@@ -50,7 +50,7 @@ Om du vill konfigurera och aktivera funktionen *mappa analysdata från flera IMS
 
 När kontohanteraren har fått e-postmeddelandet med en begäran om att mappa analysdata från flera organ, granskas begäran inom Adobe. Kontohanteraren kontaktar dig om du har frågor, utbildning eller annan information.
 
-När mappningen har godkänts skapas den och du meddelas. Namnet på IMS-källorganisationen läggs till efter namnet på rapportsviten i listan [i Analytics-rapportsviterna](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) i Experience Platform.
+När mappningen har godkänts skapas den och du meddelas. Namnet på IMS-källorganisationen läggs till efter namnet på rapportsviten i listan [i Analytics-rapportsviterna](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) i Experience Platform.
 
 ## Begränsningar och risker
 
