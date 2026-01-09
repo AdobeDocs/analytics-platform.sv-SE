@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
+source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '675'
 ht-degree: 2%
 
 ---
@@ -41,11 +41,14 @@ I följande diagram och tillhörande tabell visas hur en målgruppsanalyskonfigu
 | 7 | Anslutning | Anslutningen där du vill lägga till den valda profildatauppsättningen. |
 | 8 | Nya målgruppsdimensioner | Nya målgruppsdimensioner <!--and metrics?--> som representerar de Experience Platform-målgrupper som ingår i den profildatauppsättning som du har valt och som är tillgängliga för rapportering i Analysis Workspace. Dessa dimensioner skapas automatiskt. |
 | 9 | Datavyer | De datavyer som du väljer och som är kopplade till anslutningen. Detta är de datavyer som du vill använda när du analyserar Experience Platform målgruppsdata inom Analysis Workspace. Dessa datavyer konfigureras automatiskt med Experience Platform målgruppsdata för rapportering. |
-| 10 | Analysis Workspace | Det område i Customer Journey Analytics där du skapar rapporter som innehåller de målgrupper i Experience Platform som är intresserade. |
 
 ## Konfigurera målgruppsanalys
 
 När du konfigurerar målgruppsanalys väljer du den sandlåda och sammanfogningsprincip som är kopplad till de Experience Platform-målgrupper som du vill analysera. Customer Journey Analytics skapar en ny uppslagsdatauppsättning och lägger sedan automatiskt till uppslagsdatauppsättningen och profildatauppsättningen till den anslutning du väljer.
+
+>[!NOTE]
+>
+>Målgrupperna är tillgängliga i Customer Journey Analytics datavyer dagen efter att du har skapat konfigurationen för målgruppsanalys.
 
 Mer information finns i [Konfigurera målgruppsanalys](/help/connections/audience-analysis/audience-analysis-configure.md).
 
