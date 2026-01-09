@@ -399,7 +399,7 @@ Så här skapar du ditt projekt:
    1. Välj **[!UICONTROL Create]**.
 
 
-4. Kontrollera att **[!UICONTROL New project]** datavyn[ är markerad på arbetsytan ](#set-up-a-data-view). Datavyn länkar till [anslutningen](#set-up-a-connection) som innehåller speglade data.
+4. Kontrollera att **[!UICONTROL New project]** datavyn[&#x200B; är markerad på arbetsytan &#x200B;](#set-up-a-data-view). Datavyn länkar till [anslutningen](#set-up-a-connection) som innehåller speglade data.
 
 5. Om du vill skapa din första rapport drar och släpper du mått och mått på **[!UICONTROL Freeform table]** på panelen **[!UICONTROL Freeform]**. Dra till exempel **[!UICONTROL Revenue Amount (Numeric)]** till **[!UICONTROL _Dra ett mätvärde hit_]**. Dra **[!UICONTROL PersonId]** och släpp fältet på den första kolumnrubriken. Gör andra justeringar som du vill.
 
