@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: 0e86227915404fe62fcd1f27e95eb3b1bb673030
+source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2083'
 ht-degree: 2%
 
 ---
@@ -173,6 +173,8 @@ Definiera ett schema som modellerar dessa data. Så här konfigurerar du ditt sc
 
      ![Versionsbeskrivare](assets/platform-schema-id.png)
 
+     I ett verkligt scenario kanske du vill använda ett mer lämpligt fält som [versionsbeskrivare](aep.md#schema). Ett fält som till exempel håller reda på den senaste ändringstiden.
+
    * Fältet **[!UICONTROL personid]** är konfigurerat och **[!UICONTROL timestamp]** är **[!UICONTROL Primary key]**. Välj ![Lägg till](/help/assets/icons/Add.svg) **[!UICONTROL Create composite primary key]** om du vill skapa en sammansatt nyckel.
 
      ![Sammansatt nyckel](assets/platform-schema-compositekey.png)
@@ -180,6 +182,8 @@ Definiera ett schema som modellerar dessa data. Så här konfigurerar du ditt sc
      Fältet **[!UICONTROL personid]** är även konfigurerat som **[!UICONTROL Identity]**, med **[!UICONTROL CRMID]** som **[!UICONTROL Identity namespace]**.
 
      ![Personbeskrivning](assets/platform-schema-personid.png)
+
+     Fältet **[!UICONTROL personid]** behöver inte vara **[!UICONTROL Primary key]**. I ett scenario för verkligt liv har du troligen ett annat fält för att spåra primärnyckeln, som är skilt från **[!UICONTROL personid]**.
 
    * Fältet **[!UICONTROL timestamp]** är konfigurerat och fältet **[!UICONTROL personid]** är **[!UICONTROL Primary key]**. Fältet **[!UICONTROL timestamp]** har även konfigurerats som **[!UICONTROL Timestamp descriptor]**. Du behöver bara definiera ett fält som **[!UICONTROL Timestamp descriptor]** för tidsseriens relationsdata.
 
@@ -189,6 +193,8 @@ Definiera ett schema som modellerar dessa data. Så här konfigurerar du ditt sc
    Om du har definierat **[!UICONTROL Primary key]**, **[!UICONTROL Version descriptor]** och **[!UICONTROL Timestamp descriptor]** korrekt försvinner varningen ovanför schemadefinitionen.
 
 1. Välj **[!UICONTROL Save]** om du vill spara ditt schema.
+
+På liknande sätt kan du konfigurera en postbaserad relation [schema](aep.md#schema). Om du till exempel vill innehålla profil- och sökdata.
 
 
 ## Använda en källkoppling
@@ -219,7 +225,7 @@ I steget **[!UICONTROL Authentication]** väljer du:
 
    1. Välj **[!UICONTROL Next]**.
 
-  Mer information om hur du ansluter och autentiserar när du använder [Azure-databaserna](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/databricks) eller [Snowflake](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/databases/snowflake) finns i dokumentationen för Experience Platform.
+  Mer information om hur du ansluter och autentiserar när du använder [Azure-databaserna](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) eller [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake) finns i dokumentationen för Experience Platform.
 
 
 ### Markera data
@@ -254,7 +260,7 @@ I steget **[!UICONTROL Dataflow detail]**:
 
 I steget **[!UICONTROL Mapping]**:
 
-1. Mappa fälten. Från schemat i Google BigQuery (**[!UICONTROL Source data]**) till fälten i schemat som du har definierat i Experience Platform (**[!UICONTROL Target fields]**).
+1. Mappa fälten i schemat i Google BigQuery (**[!UICONTROL Source data]**) till fälten i schemat som du har definierat i Experience Platform (**[!UICONTROL Target fields]**).
 
    ![Experience Platform - Source Connector - mappning](assets/platform-sources-mapping.png)
 
@@ -393,7 +399,7 @@ Så här skapar du ditt projekt:
    1. Välj **[!UICONTROL Create]**.
 
 
-4. Kontrollera att **[!UICONTROL New project]** datavyn[&#x200B; är markerad på arbetsytan &#x200B;](#set-up-a-data-view). Datavyn länkar till [anslutningen](#set-up-a-connection) som innehåller speglade data.
+4. Kontrollera att **[!UICONTROL New project]** datavyn[ är markerad på arbetsytan ](#set-up-a-data-view). Datavyn länkar till [anslutningen](#set-up-a-connection) som innehåller speglade data.
 
 5. Om du vill skapa din första rapport drar och släpper du mått och mått på **[!UICONTROL Freeform table]** på panelen **[!UICONTROL Freeform]**. Dra till exempel **[!UICONTROL Revenue Amount (Numeric)]** till **[!UICONTROL _Dra ett mätvärde hit_]**. Dra **[!UICONTROL PersonId]** och släpp fältet på den första kolumnrubriken. Gör andra justeringar som du vill.
 
