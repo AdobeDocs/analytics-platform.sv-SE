@@ -4,10 +4,10 @@ title: Varningar - översikt
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 65e46a5d2a6759dd83b24bba2d1d4ee283b907c9
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 0%
+source-wordcount: '465'
+ht-degree: 2%
 
 ---
 
@@ -15,16 +15,21 @@ ht-degree: 0%
 
 Med varningar i Customer Journey Analytics kan du meddelas baserat på ändrade procentsatser eller specifika datapunkter.
 
-Beroende på ditt Customer Journey Analytics-paket kan du även använda varningar som utlöses baserat på avvikelsetrösklar. Dessa aviseringar (kallas även&quot;Intelligent Alerts&quot;) ger detaljerade kontroller som kan integreras med [avvikelseidentifiering](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) och aktiveras när du behöver dem som mest.
+Beroende på ditt Customer Journey Analytics-paket kan du även använda varningar som utlöses baserat på avvikelsetrösklar. Dessa aviseringar (kallas även *Intelligent Alerts*) ger detaljerade kontroller som kan integreras med [avvikelseidentifiering](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) och aktiveras när du behöver dem som mest.
 
-Med varningar kan du:
+* Förhandsgranska hur ofta en varning utlöses.
+* Skicka aviseringar via e-post eller SMS med länkar till automatiskt genererade Analysis Workspace-projekt.
+* Skapa *staplade* aviseringar som fångar in flera mätvärden i en enda avisering.
+* Bygg aviseringar baserade på:
+   * Anomalier i mätvärden som finns, är över eller under förväntade tröskelvärden.
 
-* Förhandsgranska hur ofta en varning utlöses
-* Skicka aviseringar via e-post eller SMS med länkar till autogenererade Analysis Workspace-projekt
-* Skapa&quot;staplade&quot; aviseringar som fångar in flera mätvärden i en enda avisering
-* Bygg aviseringar baserade på avvikelser (tröskelvärdena 90 %, 95 %, 99 %, 99,75 % och 99,9 %, % förändring, över/under) (endast tillgängligt för Customer Journey Analytics-kunder med något av paketen Select, Prime eller Ultimate)
+     [Analysidentifiering](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) skapar ett förväntat värde plus en övre och nedre gräns med historiska data. Om det faktiska måttvärdet ligger över den övre gränsen eller under den nedre gränsen, definierad som tröskelvärdet, betraktas händelsen som en avvikelse vid tröskelvärdet för konfidensnivå och utlöser varningen. Ett högre tröskelvärde (till exempel 99 % eller 99,9 %) innebär ett bredare band, vilket ger färre varningar som orsakas av mer extrema avvikelser. Ett lägre tröskelvärde (till exempel 90 %) innebär ett smalare band, vilket ger fler varningar som orsakas av mindre extrema avvikelser.
+   * Förändringar i mätvärden med en viss procentandel.
+   * Mätvärden som är över, under eller lika med ett specifikt värde. (endast för Adobe Analytics-kunder med ett Select-, Prime- eller Ultimate-paket)
 
-I följande videofilm visas en grundläggande översikt över aviseringar: [Varningar](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=sv-SE) (5:34)
+Den här [videosjälvstudien](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts) ger en grundläggande översikt över varningar.
+
+
 
 ## Förstå hur varningar skiljer sig
 
