@@ -1,13 +1,13 @@
 ---
 title: Skapa ett schema som kan användas med Customer Journey Analytics
-description: Läs mer om rekommenderad sökväg när du uppgraderar från Adobe Analytics till Customer Journey Analytics
+description: Lär dig hur du utformar ett XDM-schema som frigör Customer Journey Analytics flexibilitet och stöder en praktisk migreringsväg från Adobe Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 3dc53d6955eab3048ebf8a7c9d232b4b5739c6bd
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '1455'
 ht-degree: 0%
 
 ---
@@ -25,35 +25,112 @@ ht-degree: 0%
 
 {{upgrade-note-step}}
 
-Adobe rekommenderar att du skapar ett anpassat XDM-schema (Experience Data Model) som kan användas med Web SDK när du uppgraderar från Adobe Analytics till Customer Journey Analytics. Du kan också använda Adobe Analytics standardschema, som använder fältgruppen Adobe Analytics ExperienceEvent.
+Adobe rekommenderar att du skapar ett anpassat [Experience Data Model](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) (XDM)-schema för Customer Journey Analytics när du implementerar [Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/collection/home). Det här schemat skapas vanligtvis innan implementeringsändringar eller kod ändras. Med ett anpassat schema kan du utforma ett koncist, organisationsspecifikt datakontrakt utan att ärva begränsningar från Adobe Analytics eller hantera tusentals oanvända fält. Se [Välj ditt schema för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) om du vill veta mer om vilka schematyper som är tillgängliga för din organisation.
 
-Ett anpassat XDM-schema möjliggör ett smidigt schema som är anpassat efter organisationens behov och de plattformsspecifika program som du använder. Till skillnad från det Adobe Analytics-standardschema som använder fältgruppen Adobe Analytics ExperienceEvent behöver du inte gå igenom tusentals oanvända fält för att hitta det fält som behöver uppdateras när du behöver ändra ett anpassat XDM-schema.
+Scheman är avsedda att vara prydliga versioner av hur ni vill att era data ska struktureras på lång sikt. Förändringar av scheman är dyra eftersom de påverkar datainsamling, validering och tjänster längre fram i kedjan. Du kan lägga till i scheman över tid när affärskraven tillåter det, men schemafält kan inte tas bort när data börjar flöda in i dem.
 
-Mer information om de här schemaalternativen finns i [Välja schema för Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md).
+## Jämför scheman med datavyer
 
-Granska följande avsnitt när du börjar skapa XDM-schemat.
+Datalindelningen för Customer Journey Analytics innehåller separata områden för datainsamling och datatolkning. När du uppgraderar från Adobe Analytics försöker ett vanligt felsteg att återskapa props och eVars med sina beteenden i XDM. Använd istället Web SDK för att samla in data och använd [datavyer](/help/data-views/data-views.md) för att avgöra hur data tolkas i rapporter.
 
-## Undvik Adobe Analytics-begränsningar i XDM-schemat
+| Lager | Primärt syfte | Vad tillhör | Vad som inte hör till |
+|---|---|---|---|
+| **XDM-schema** | Definiera den varaktiga strukturen och innebörden av insamlade data | Händelse- och entitetsform, fältinnebörd, relationer, tillåtna värden, återanvändning över kanaler | Numrerade&quot;fack&quot; (eVar1/prop1), attribuerings-/beständighetslogik, rapportspecifika temporära lösningar |
+| **Datavyer** | Definiera hur insamlade data fungerar i analysen | Komponentinställningar, attribuering och beständighetsbeteende, härledda fält, filtrerade mätvärden, beräknade värden | Fältens grundläggande betydelse. Den betydelsen bör vara stabil i schemat |
 
-Customer Journey Analytics underliggande arkitektur ger mycket större flexibilitet än Adobe Analytics. Att skapa ett nytt XDM-schema är ett viktigt sätt att låsa upp den flexibiliteten. När du uppgraderar till Customer Journey Analytics bör du se till att du inte överför onödiga Adobe Analytics-begränsningar till ditt schema.
+## Jämför scheman med Adobe Analytics datainsamling
 
->[!NOTE]
+Den Experience Data Model som Customer Journey Analytics använder ger betydligt större flexibilitet än de flesta andra Analytics-lösningar (inklusive Adobe Analytics). Att skapa ett stabilt schema är er organisations möjlighet att undvika att överföra begränsningar som finns i andra Analytics-produkter.
+
+| Vanlig Adobe Analytics-vana | Bättre arbetssätt i XDM + CJA |
+|---|---|
+| Utforma runt numrerade kortplatser (`eVar1`-`eVar250`, `prop1`-`prop75`) | Skapa fält med stabil innebörd (till exempel `search.term`, `content.category`, `user.membershipTier`) och återanvänd dem konsekvent |
+| Kodning av beständighet/allokering/utgångsdatum i datamodellen | Hämta varaktiga fakta i schemat; tillämpa attribuering och beständighetsbeteende på datavynivå |
+| Duplicera samma värde i flera variabler för att få rapportbeteenden | Lagra värdet en gång och skapa flera komponenter (mått/mått) från det i datavyer |
+| Skapa ett unikt&quot;mätfält&quot; för varje antal som du kanske vill ha | Fånga in rätt fakta en gång (ofta som enum/booleans/strings) och definiera sedan mätvärden som filtrerade tal i datavyer |
+| Utforma variabler för att&quot;lösa upp&quot;-rapportering | Utforma ditt schema för att på ett tillförlitligt sätt fånga in fakta och använda datavyer för att lösa rapporteringssemantik |
+
+## Skapa ett schema med gemensamma attribut
+
+Ett enhetligt schema över flera kanaler blir möjligt när du standardiserar en uppsättning återanvändbara attribut som visas i många händelser. Några exempel är:
+
+* **Experience context:** plats-/appnamn, miljö, språkområde, kanal, varumärke
+* **Resekontext:** kampanjidentifierare, refererande kontext, experimentidentifierare
+* **Användartillstånd:** inloggad status, medlemsnivå, kontotyp
+* **Interaktionsinformation:** interaktionsnamn/typ, gränssnittsområde, elementetikett, felkategori
+
+Nyckeln är att standardisera det som fältet representerar oavsett kanal. Undvik att modellera samma koncept på olika sätt i olika kanaler om de inte representerar olika koncept. Det kan till exempel vara klokt att undvika separata schemafält för webbkampanjer-ID:n och mobilkampanjer-ID:n. Separata schemafält gör det svårare att upprätta kanalövergripande avkastning på annonsutgiftsdata. Om det krävs en differentiering i rapporteringen kan du segmentera efter kanal eller slå samman flera fält för att göra den skillnaden. Samma schemafält kan användas i valfritt antal dimensioner eller mätvärden.
+
+Ett praktiskt sätt att stödja flera kanaler samtidigt som en enda schemastrategi behålls är att använda ett **core + extensions** -mönster:
+
+* **Kärnfält:** fält som gäller i stort sett för alla kanaler och team
+* **Tillägg:** kanal- eller domänspecifika fältgrupper som endast gäller där det behövs (webbinteraktion, handel, mobillivscykel, serversidesinformation)
+
+Det här mönstret har stöd för en enda strategi för organisationsscheman utan att tvinga alla team att fylla i fält som inte gäller för deras kanal.
+
+## Föredra standardfältgrupper där de passar
+
+Adobe rekommenderar att du använder standardiserade fältgrupper där de passar dina behov och utökar dem med anpassade fält för organisationsspecifika koncept.
+
+Standardfältgrupper hjälper dig vanligtvis:
+
+* Minska tvetydigheten genom att använda känd fältsemantik
+* Enklare justering mellan team
+* Stöd för samverkan mellan olika Adobe Experience Platform-program
+
+Anpassade fält är lämpliga när:
+
+* Din organisation har koncept som inte mappas korrekt till standardfält
+* Du behöver ytterligare attribut för att uppfylla kraven på rapportering, styrning eller aktivering
+* Du vill representera en företagsspecifik taxonomi (till exempel interna innehållskategorier)
+
+## Bestäm var&quot;metrisk innebörd&quot; bor
+
+I Adobe Analytics behandlar många team variabeln `events` som vart mätvärden går. I Customer Journey Analytics kan du modellera mätvärden på flera olika sätt beroende på vad du behöver räkna och hur du vill tolka dem.
+
+När du skapar ett schema måste du hålla dig till fakta. Exempel: `error.type = "validation"`, `user.isLoggedIn = true`, `checkout.step = "shipping"`. Definiera mätvärden i datavyn som antal och filtrerade räkningar över dessa fakta. Exempel:
+
+* `checkout.step` (enum/string) kan strömma:
+   * &quot;Utcheckning: Leveranssteget har nåtts&quot; (räkna där `checkout.step == "shipping"`)
+   * &quot;Utcheckning: Betalningssteget har nåtts&quot;
+* `error.type` (enum/string) kan strömma:
+   * &quot;Valideringsfel&quot;
+   * &quot;Auktoriseringsfel&quot;
+* `user.isLoggedIn` (boolesk) kan strömma:
+   * &quot;Autentiserade sessioner&quot;
+   * &quot;Autentiserade konverteringar&quot;
+
+>[!TIP]
 >
->Följande information är inte fullständig ännu. Den kommer att vara fullständig inom den närmaste framtiden.
+>När du bestämmer dig för om något ska vara ett dedikerat fält eller ett härlett fält senare bör du föredra att fånga det varaktiga faktumet i schemat om det är praktiskt och stabilt. Du kan använda härledda fält för att korrigera eller ändra form på data efter insamlingen.
 
-| Adobe Analytics dataarkitektur | XDM-schemaarkitektur |
-|---------|----------|
-| Enskilda mätvärden läggs till i Analytics-dataarkitekturen.<br/>I Adobe Analytics har du till exempel olika eVar för varje händelse. | Skapa enskilda mått i datavyn i stället för i XDM-schemat. Det ger större flexibilitet om du behöver göra ändringar vid ett senare tillfälle.<br/>I Customer Journey Analytics har du till exempel en enda händelse i schemat och använder create-händelser i datavyn. |
-| Props och eVars krävs för att skapa anpassade variabler. |  |
+## Upprätthålla pariteten med Adobe Analytics under övergången utan schemabagage
 
-## Identifiera ert datateam och andra intressenter i hela organisationen
+Vissa organisationer måste fortsätta rapportera från Adobe Analytics medan de uppgraderar till Customer Journey Analytics. Du kan behålla paritet utan att införa analysspecifika artefakter i din långsiktiga schemadedesign enligt följande:
 
->[!NOTE]
->
->Den här informationen är inte tillgänglig än. Den kommer att finnas tillgänglig inom den närmaste framtiden.
+1. **Använd XDM-fältsökvägar som Adobe Analytics känner igen och automatiskt mappar:** När du skickar identifierade XDM-fält via Edge Network till Adobe Analytics [mappas de automatiskt](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) utan extra konfiguration.
+1. **Använd anpassade XDM-fält för organisationsspecifika koncept:** Alla XDM-fält som inte automatiskt mappas till en Analytics-variabel vidarebefordras som [Kontextdatavariabler](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/contextdata) i Adobe Analytics.
+1. **Använd Adobe Analytics bearbetningsregler för att mappa dessa kontextdatavariabler till props/eVars:** [Med bearbetningsregler](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) kan du till slut mappa anpassade XDM-fält till alla eVar eller prop. Detta koncept stöder paritetsrapportering i Adobe Analytics samtidigt som ditt schema hålls rent och fokuserat på Customer Journey Analytics.
 
-## Överväg andra Adobe Experience Platform-program som används i er organisation
+## Identifiera intressenter och definiera ägarskap
 
->[!NOTE]
->
->Den här informationen är inte tillgänglig än. Den kommer att finnas tillgänglig inom den närmaste framtiden.
+Schemadesignen lyckas när fältinnebörden avtalas och upprätthålls. Organisationsstrukturen varierar, men följande roller är vanliga:
+
+* **Analysadministratör/analytiker**: definierar rapportfrågor, validerar att fält representerar meningsfulla begrepp och granskar analyssemantik i datavyer.
+* **Utvecklare/implementeringsägare**: Ser till att fält kan samlas in på ett tillförlitligt sätt med Web SDK och justeras mot datalagret/appinstrumenteringen.
+* **Dataarkitekt/ingenjör**: Säkerställer schemakompatibilitet, återanvändning över domäner och kompatibilitet med underordnade tjänster.
+* **Intresserad av sekretess- och styrningsfrågor**: Granska datamängdsminimering, förväntat samtycke och begränsningar för dataanvändning.
+
+Definiera en tydlig ägare för schemaändringar. Ett stabilt schema med disciplinerad ändringskontroll förhindrar att längre fram i kedjan bryts och minskar omarbetningen. Överväg att använda ett arbetsflöde för spårning av styrning eller verktyg för att demokratisera förfrågningar och hantera ändringskontroll över tid.
+
+## Sekretess- och styrningsaspekter
+
+Schemadesignen bör återspegla förväntningarna på integritet och styrning, enligt din organisations sekretesspolicy. Tänk på följande när du skapar ditt schema:
+
+* Samla bara in det du behöver för att få stöd för definierade användningsfall.
+* Se till att kraven på samtycke och dataanvändning återspeglas i er insamlingsstrategi. Mer information finns i [Använd SDK för att bearbeta kundens medgivandedata](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk).
+* Tänk på hur känsliga fält är märkta och styrda med Adobe Experience Platform styrningsverktyg. Mer information finns i [Adobe Customer Journey Analytics och datastyrning](/help/privacy/privacy-overview.md).
+
+## Nästa steg
+
+När du väl har etablerat och kommit överens om en schemaarkitektur kan du börja skapa den i Adobe Experience Platform. Mer information finns i [Skapa ett anpassat schema att använda med Customer Journey Analytics](cja-upgrade-schema-create.md).

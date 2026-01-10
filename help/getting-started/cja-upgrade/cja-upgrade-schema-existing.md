@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: a2b90ab2-2fcb-4bf4-a862-2f0675dc2fe2
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 3dc53d6955eab3048ebf8a7c9d232b4b5739c6bd
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -20,10 +20,6 @@ ht-degree: 0%
 >id="cja-upgrade-schema-tailored"
 >title="Använd ett anpassat schema"
 >abstract="(Rekommenderas) Om du anpassar ditt schema kan din organisation bara spåra det du behöver och undvika de overheadkostnader som är kopplade till dumma och onödiga fält. Det här alternativet inkluderar fältgrupper som lagts till av Web SDK och fältgrupper som är anpassade efter din organisation."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-default"

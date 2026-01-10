@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: 3dc53d6955eab3048ebf8a7c9d232b4b5739c6bd
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 0%
@@ -21,18 +21,10 @@ ht-degree: 0%
 >title="Skapa önskat anpassat schema i Adobe Experience Platform"
 >abstract="Använd användargränssnittet i Adobe Experience Platform för att skapa ett schema så att Adobe vet vilket format som ska användas för att lagra data.<br><br>I det här steget ska du skapa det schema som din organisation har godkänt. Den beräknade tiden för att skapa schemat i Adobe Experience Platform-gränssnittet är ungefär en vecka, beroende på hur många dimensioner och mått som behöver skapas."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-create-default-aa"
 >title="Skapa ett schema med fältgruppen Adobe Analytics ExperienceEvent"
 >abstract="Använd fältgruppen Adobe Analytics ExperienceEvent för att skapa ett schema i Adobe Experience Platform som innehåller alla fält som används av Adobe Analytics.<br><br>Det är enkelt att skapa ett schema baserat på fältgruppen Adobe Analytics ExperienceEvent, vilket tar bara några minuter att slutföra."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
@@ -92,7 +84,7 @@ Så här skapar du ett anpassat schema:
 
    Fältgrupper är återanvändbara samlingar av objekt och attribut som gör att du enkelt kan utöka ditt schema.
 
-   1. Välj **[!UICONTROL + Add]** i avsnittet **[!UICONTROL Field groups]**.
+   1. Välj **[!UICONTROL Field groups]** i avsnittet **[!UICONTROL + Add]**.
 
       ![Lägg till fältgrupp](assets/add-field-group-button.png)
 
@@ -116,11 +108,11 @@ Så här skapar du ett anpassat schema:
 
 1. (Valfritt) Om du har anpassade fält som du vill inkludera i ditt schema skapar du en anpassad fältgrupp och lägger till anpassade fält i fältgruppen.
 
-   1. Välj **[!UICONTROL + Add]** i avsnittet **[!UICONTROL Field groups]**.
+   1. Välj **[!UICONTROL Field groups]** i avsnittet **[!UICONTROL + Add]**.
 
       ![Lägg till fältgrupp](assets/add-field-group-button.png)
 
-   1. Välj **[!UICONTROL Create new field group]** i dialogrutan [!UICONTROL Add fields groups].
+   1. Välj [!UICONTROL Add fields groups] i dialogrutan **[!UICONTROL Create new field group]**.
 
    1. Ange ett visningsnamn och en valfri beskrivning och välj sedan **[!UICONTROL Add field groups]**.
 
@@ -132,7 +124,7 @@ Så här skapar du ett anpassat schema:
 
    >[!NOTE]
    >
-   >Om fältgruppen inte är tillgänglig söker du efter en annan fältgrupp som innehåller identitetsfält. Eller [skapa en ny fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=sv-SE) och [lägg till nya identitetsfält](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html?lang=sv-SE#define-a-identity-field) (som `ecid`, `crmId` och andra som du behöver) i fältgruppen och markera den nya fältgruppen.
+   >Om fältgruppen inte är tillgänglig söker du efter en annan fältgrupp som innehåller identitetsfält. Eller [skapa en ny fältgrupp](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html) och [lägg till nya identitetsfält](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/identity.html#define-a-identity-field) (som `ecid`, `crmId` och andra som du behöver) i fältgruppen och markera den nya fältgruppen.
 
    ![Identifieringsobjekt](assets/identification-field.png)
 
@@ -162,7 +154,7 @@ Så här skapar du ett anpassat schema:
 
    Du uppmanas att aktivera schemat för profilen. När data har aktiverats, när data har importerats till datauppsättningar som baseras på detta schema, sammanfogas dessa data i kundprofilen i realtid.
 
-   Mer information finns i [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE#profile).
+   Mer information finns i [Aktivera schemat för användning i kundprofilen i realtid](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#profile).
 
    >[!IMPORTANT]
    >
@@ -188,6 +180,6 @@ Så här skapar du ett anpassat schema:
 
    * Aktivera schemat för profilen
 
-   Mer information om hur du lägger till och tar bort fältgrupper och enskilda fält i ett schema finns i [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=sv-SE).
+   Mer information om hur du lägger till och tar bort fältgrupper och enskilda fält i ett schema finns i [Skapa och redigera scheman i användargränssnittet](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html).
 
 {{upgrade-final-step}}
