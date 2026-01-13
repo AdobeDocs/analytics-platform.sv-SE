@@ -6,10 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
+source-git-commit: 9d9c4dbba13f61af4a47bbb0f87533fb950976bc
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 2%
+source-wordcount: '708'
+ht-degree: 1%
 
 ---
 
@@ -80,7 +80,13 @@ Följande Customer Journey Analytics-roller och Experience Platform-behörighete
 | [Visa målgruppsanalysdimensioner i datavyn](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Produktprofiladministratör för den produktprofil som datavyn har tilldelats <p>Mer information finns i [Åtkomstkontroll](/help/technotes/access-control.md).</p> | Ej tillämpligt |
 | Använd målgruppsanalysdimensioner i Analysis Workspace | Åtkomst till en datavy där målgruppsanalysdimensionerna lades till | Ej tillämpligt |
 
+## Gränser för målgruppsanalys
 
+Tänk på följande gränser när [målgruppsanalys](/help/connections/audience-analysis/audience-analysis-configure.md) konfigureras:
+
+* En enda sandlåda har stöd för upp till 100 konfigurationer för målgruppsanalys.
+
+* En anslutning kan bara kopplas till en målgruppsanalyskonfiguration.
 
 
 
