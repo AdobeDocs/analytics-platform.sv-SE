@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Generera presentationer från Workspace-rapporter
 feature: Curate and Share
 role: User
-source-git-commit: 82ca99af8f344b713e285980145fa0ee6ae6ae1c
+source-git-commit: 06e6dd99d318812447d903f2e14e4daba80d4957
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1633'
 ht-degree: 0%
 
 ---
@@ -193,7 +193,7 @@ Möjligheten att generera bilder är aktiverad som standard för alla användare
 
 Administratörer av produktprofiler vars organisationer har licens att generera bilder kan vid behov inaktivera åtkomsten.
 
-I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** åtkomsten till den här funktionen. En [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console] om de vill inaktivera åtkomst:
+I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** åtkomsten till den här funktionen. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console] om de vill inaktivera åtkomst:
 1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
 1. Välj titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL Data storytelling].
 1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.
@@ -228,9 +228,7 @@ Följande Analysis Workspace-element och -funktioner som används i ett projekt 
 
    * Kombination
 
-   * Utfall
-
-   * Flöde
+   * Frihandstabeller med flera dimensionskolumner (tabeller med en enda dimensionskolumn stöds)
 
    * Reseduk
 
