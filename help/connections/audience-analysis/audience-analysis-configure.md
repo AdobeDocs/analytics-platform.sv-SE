@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
+source-git-commit: 7926f043c9e2808a083f8947fa0882c0faa4051d
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1320'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,12 @@ ht-degree: 0%
 
 Med hjälp av målgruppsanalys kan ni importera målgruppsmedlemskapsdata från Experience Platform-profildatauppsättningar till en Customer Journey Analytics-anslutning. Publiken blir tillgänglig som nya dimensioner för användning i Analysis Workspace. Mer detaljerad översiktsinformation om målgruppsanalys finns i [Översikt över målgruppsanalys](/help/connections/audience-analysis/audience-analysis-overview.md).
 
+>[!IMPORTANT]
+>
+>Målgruppsdata bearbetas om och genereras varje kväll, vilket gör målgruppsdata korrekta för analys bara för föregående dag (&quot;igår&quot;).
+>
+>Målgrupperna är tillgängliga i Customer Journey Analytics datavyer dagen efter att du har skapat konfigurationen för målgruppsanalys.
+
 ## Skapa en konfiguration för målgruppsanalys
 
 När du skapar en konfiguration för målgruppsanalys väljer du sandlådan och sammanfogningsprincipen som är kopplad till de Experience Platform-målgrupper som du vill analysera. Customer Journey Analytics skapar en ny uppslagsdatauppsättning och lägger sedan automatiskt till uppslagsdatauppsättningen och profildatauppsättningen till den anslutning du väljer.
@@ -74,14 +80,14 @@ Så här skapar du en konfiguration för målgruppsanalys:
    | Fält | Beskrivning |
    |---------|----------|
    | **[!UICONTROL Name]** | Ange ett namn för konfigurationen. |
-   | **[!UICONTROL Sandbox]** | Markera den Experience Platform-sandlåda som innehåller den profildatauppsättning som du vill lägga till i anslutningen. En enda sandlåda har stöd för upp till 100 konfigurationer för målgruppsanalys. <p>Adobe Experience Platform tillhandahåller [sandlådor](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home) som partitionerar en enda plattformsinstans till separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Du kan tänka dig sandlådor som&quot;dataisoleringar&quot; som innehåller datauppsättningar. Sandlådor används för att styra åtkomst till datauppsättningar.</p> |
+   | **[!UICONTROL Sandbox]** | Markera den Experience Platform-sandlåda som innehåller den profildatauppsättning som du vill lägga till i anslutningen. En enda sandlåda har stöd för upp till 100 konfigurationer för målgruppsanalys. <p>Adobe Experience Platform tillhandahåller [sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) som partitionerar en enda plattformsinstans till separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Du kan tänka dig sandlådor som&quot;dataisoleringar&quot; som innehåller datauppsättningar. Sandlådor används för att styra åtkomst till datauppsättningar.</p> |
 
 1. Ange följande information i avsnittet **[!UICONTROL Profile dataset]**:
 
    | Fält | Beskrivning |
    |---------|----------|
    | **[!UICONTROL Merge policy]** | Välj den sammanfogningsprincip som motsvarar den profildatauppsättning som du vill använda för målgruppsanalys. <p>Sammanslagningsprinciper avgör hur Adobe Experience Platform kombinerar profildata från flera datauppsättningar till enhetliga kundprofiler som används för att skapa målgrupper. Den sammanfogningsprincip du väljer påverkar vilka profilattribut som ingår i dina målgrupper. Varje dag genereras en ögonblicksbild av dessa data i Experience Platform. Den här ögonblicksbilden ger en statisk vy av data vid en viss tidpunkt och innehåller inga händelsedata.</p><p>Välj sammanfogningsprincipen **[!UICONTROL Default Timebased]** om du ser flera sammanfogningsprinciper och du är osäker på vilken du ska välja. Du kan också rådfråga ditt datateam för att få en bättre förståelse för vilka målgrupper som är kopplade till varje kopplingsregel.</p> |
-   | **[!UICONTROL Profile dataset]** | Profildatauppsättningen som är associerad med den sammanfogningsprincip som du har valt. Profildatauppsättningen innehåller de målgruppsdata från Experience Platform som du vill analysera. Den här profildatauppsättningen läggs till i anslutningen som du väljer.<p>När du har valt en sammanfogningsprincip visas export av ögonblicksbilder av profiler. Till exempel: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Mer information finns i [Datauppsättningar för profilattribut](https://experienceleague.adobe.com/sv/docs/experience-platform/dashboards/query#profile-attribute-datasets) i Experience Platform Dashboards Guide.</p> |
+   | **[!UICONTROL Profile dataset]** | Profildatauppsättningen som är associerad med den sammanfogningsprincip som du har valt. Profildatauppsättningen innehåller de målgruppsdata från Experience Platform som du vill analysera. Den här profildatauppsättningen läggs till i anslutningen som du väljer.<p>När du har valt en sammanfogningsprincip visas export av ögonblicksbilder av profiler. Till exempel: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Mer information finns i [Datauppsättningar för profilattribut](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) i Experience Platform Dashboards Guide.</p> |
 
 1. Klicka på **[!UICONTROL Connection]** i avsnittet **[!UICONTROL Select a connection]**.
 
@@ -93,9 +99,10 @@ Så här skapar du en konfiguration för målgruppsanalys:
 
    | Fält | Beskrivning |
    |---------|----------|
-   | **[!UICONTROL Person ID]** | Välj ett fält i schemat som representerar person-ID:t. Markeringen är begränsad till listan med fält i schemat som är markerade som Identitet och som har ett identitetsnamnutrymme.<p>Om det inte finns några person-ID:n att välja från betyder det att ett eller flera person-ID:n inte har definierats i schemat. Mer information finns i [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/fields/identity).</p> |
-   | **[!UICONTROL Use primary identity namespace]** | Det här alternativet visar om du väljer **[!UICONTROL Identity Map]** som person-ID.<p>Aktivera det här alternativet om du vill att Customer Journey Analytics ska hitta identiteten i identitetskartan som är markerad med ett primär=true-attribut och sedan använda den identiteten som ID för den raden. Den här identiteten är den primärnyckel som används i Experience Platform för partitionering. Och den här identiteten är också den primära kandidaten för användning som Customer Journey Analytics person-ID (beroende på hur datauppsättningen konfigureras i en Customer Journey Analytics-anslutning).</p> |
-   | **[!UICONTROL Identity namespace]** | Det här alternativet visar om du väljer **[!UICONTROL Identity Map]** som person-ID. Det här alternativet är inaktiverat om du använder namnutrymmet för primärt ID. <p>Identitetsnamnutrymmen är en komponent i [Experience Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces). Namnutrymmen fungerar som indikatorer för det sammanhang som en identitet relateras till. Om du anger ett namnutrymme söker Customer Journey Analytics igenom varje rads identitetskarta efter namnutrymmesnyckeln och använder identiteten under namnutrymmet som ID för den raden. Eftersom Customer Journey Analytics inte kan göra en fullständig datauppsättningssökning av alla rader för att avgöra vilka namnutrymmen som finns, visas alla möjliga namnutrymmen i listrutan. Du måste veta vilka namnutrymmen som anges i data. Dessa namnutrymmen identifieras inte automatiskt.</p> |
+   | **[!UICONTROL Person ID]** | Välj ett fält i schemat som representerar person-ID:t.<p>Markeringen är begränsad till listan med fält i schemat som är markerade som Identitet och som har ett identitetsnamnutrymme. **[!UICONTROL IdentityMap]** är markerat som standard och passar de flesta konfigurationer. </p><p>Om det inte finns några person-ID:n att välja från betyder det att ett eller flera person-ID:n inte har definierats i schemat. Mer information finns i [Definiera identitetsfält i användargränssnittet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity).</p> |
+   | **[!UICONTROL Use primary identity namespace]** | Det här alternativet visar om du väljer **[!UICONTROL Identity Map]** som person-ID. <p>Aktivera det här alternativet om du vill att Customer Journey Analytics ska hitta identiteten i identitetskartan som är markerad med ett primär=true-attribut och sedan använda den identiteten som ID för den raden. Den här identiteten är den primärnyckel som används i Experience Platform för partitionering. Och den här identiteten är också den primära kandidaten för användning som Customer Journey Analytics person-ID (beroende på hur datauppsättningen konfigureras i en Customer Journey Analytics-anslutning).</p> |
+   | **[!UICONTROL Identity namespace]** | Det här alternativet visar om du väljer **[!UICONTROL Identity Map]** som person-ID. Det här alternativet är inaktiverat om du använder namnutrymmet för primärt ID. <p>Identitetsnamnutrymmen är en komponent i [Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces). Namnutrymmen fungerar som indikatorer för det sammanhang som en identitet relateras till. Om du anger ett namnutrymme söker Customer Journey Analytics igenom varje rads identitetskarta efter namnutrymmesnyckeln och använder identiteten under namnutrymmet som ID för den raden. Eftersom Customer Journey Analytics inte kan göra en fullständig datauppsättningssökning av alla rader för att avgöra vilka namnutrymmen som finns, visas alla möjliga namnutrymmen i listrutan. Du måste veta vilka namnutrymmen som anges i data. Dessa namnutrymmen identifieras inte automatiskt.</p> |
+   | **[!UICONTROL Account ID]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} | (visas endast för kontobaserade anslutningar) Det konto-ID som används för att stödja kontobaserad rapportering för datauppsättningen. |
 
 1. Klicka på **[!UICONTROL Data views]** i avsnittet **[!UICONTROL Select data views]**.
 

@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 9d9c4dbba13f61af4a47bbb0f87533fb950976bc
+source-git-commit: ca2adce7be8a28fa72323915473a8c2283741889
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '728'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,9 @@ I följande diagram och tillhörande tabell visas hur en målgruppsanalyskonfigu
 
 När du konfigurerar målgruppsanalys väljer du den sandlåda och sammanfogningsprincip som är kopplad till de Experience Platform-målgrupper som du vill analysera. Customer Journey Analytics skapar en ny uppslagsdatauppsättning och lägger sedan automatiskt till uppslagsdatauppsättningen och profildatauppsättningen till den anslutning du väljer.
 
->[!NOTE]
+>[!IMPORTANT]
+>
+>Målgruppsdata bearbetas om och genereras varje kväll, vilket gör målgruppsdata korrekta för analys bara för föregående dag (&quot;igår&quot;).
 >
 >Målgrupperna är tillgängliga i Customer Journey Analytics datavyer dagen efter att du har skapat konfigurationen för målgruppsanalys.
 
