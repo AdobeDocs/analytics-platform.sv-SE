@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: c67225619153218e3dca1eacea204f2b033dfb14
+source-git-commit: 3479227eb703583255d40de3d07d071ad2f89950
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Så här aktiverar du sammanfogning av en händelsedatamängd i anslutningsgrän
 
 Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
 
-* Se till att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
+* Se till att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verifiera identitetstäckning för både beständigt ID och person-ID:
    * Beständigt ID: Fråga efter 7 dagars data där ditt beständiga ID-fält inte är null och dividera med en fråga på 7 dagars data för alla händelser i datauppsättningen. Procentandelen bör vara över 95 %.
 
@@ -144,3 +144,11 @@ Utöver de [fältbaserade syningsbegränsningarna](/help/stitching/fbs.md#limita
 
 * Du kan bara sammanfoga en händelsedatamängd en gång som en del av en enda anslutning. Du kan inte definiera samma händelsedatamängd mer än en gång och använda en separat sammanfogningskonfiguration för varje instans. Om du vill använda olika sammanfogningskonfigurationer på samma datauppsättning använder du en separat anslutning för varje konfiguration.
 
+
+## Migrering
+
+Stitching som är aktiverat i gränssnittet Connections kan användas samtidigt utan problem med begärandebaserad sammanfogning.
+
+Du har t.ex. webbaserade sammanslagna datauppsättningar i datasjön som ett resultat av tidigare eller nuvarande begäran om sammanfogning. Du kan lägga till sammanfogade data från en call-center-datauppsättning med hjälp av gränssnittet Anslutningar för att kombinera dessa data med de webbaserade data.
+
+Så småningom kommer Adobe automatiskt att migrera dina begärandatabaserade dataset till den nya sammanfogningen av anslutningar.

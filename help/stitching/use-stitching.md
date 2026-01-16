@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%
@@ -18,13 +18,13 @@ När din organisation uppfyller alla [krav](overview.md#prerequisites) och förs
 
 ## Välj alternativ
 
-Det Customer Journey Analytics-paket som du är berättigad till avgör vilka metoder som är tillgängliga för sammanfogning, alternativ för inledande varaktighet för efterfyllning, fönster för uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Mer information finns i [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/customer-journey-analytics.html). Bestäm vilka alternativ som är tillgängliga innan du begär support.
+Det Customer Journey Analytics-paket som du är berättigad till avgör vilka metoder som är tillgängliga för sammanfogning, alternativ för inledande varaktighet för efterfyllning, fönster för uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Mer information finns i [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html). Bestäm vilka alternativ som är tillgängliga innan du begär support.
 
 | | Customer Journey Analytics<br/>Välj | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
-| Tillgängliga sammanfogningsmetoder | <li>Fältbaserad stygn</li> | <li>Fältbaserad stygn</li><li>Diagrambaserad utjämning</li> | <li>Fältbaserad stygn</li><li>Diagrambaserad utjämning</li> |
+| Tillgängliga sammanfogningsmetoder | Fältbaserad stygn | Fältbaserad häftning<br/>Diagrambaserad häftning | Fältbaserad häftning<br>Diagrambaserad häftning</li> |
 | Varaktighet för engångssammanfogning av bakfyllning | 13 månader | 13 månader | 25 månader |
-| Fönster för uppspelning och uppspelningsfrekvens | <li>1 dag, varje dag</li><li>upp till 7 dagar, varje vecka</li> | <li>1 dag, varje dag</li><li>upp till 14 dagar, varje vecka</li> | <li>1 dag, varje dag</li><li>upp till 30 dagar, varje vecka</li> |
+| Fönster för uppspelning och uppspelningsfrekvens | 1 dag, varje dag<br/>upp till 7 dagar, varje vecka | 1 dag, varje dag<br/>upp till 14 dagar, varje vecka | 1 dag, varje dag<br/>upp till 30 dagar, varje vecka |
 | Högsta antal datauppsättningar som tillåts för sammanfogning | 5 | 15 | 50 |
 
 ## Begär support
