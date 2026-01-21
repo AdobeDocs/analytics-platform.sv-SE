@@ -86,7 +86,7 @@ Utöver att läggas till som produktadministratör i **Customer Journey Analytic
 
   För mer information om Experience Platform-behörigheter, se [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
-* Använd BI-tillägget [](../data-views/bi-extension.md)
+* Använd BI-tillägget [&#128279;](../data-views/bi-extension.md)
 
   För användare att använda BI-tillägget finns en produktadministratör
 
@@ -135,7 +135,7 @@ Fliken **[!UICONTROL Permissions]** ingår i varje produktprofil i [Admin Consol
 | [!UICONTROL Reporting Tools] | [!UICONTROL AI Assistant: Product Knowledge] | Ge användarna tillgång till [AI-assistenten](../ai-assistant.md) för produktinformation. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Intelligent Captions] | Låt användarna komma åt [Intelligenta bildtexter](/help/analysis-workspace/visualizations/intelligent-captions.md). |
 | [!UICONTROL Data View Tools] | [!UICONTROL Full Table Export] | Låt användare [exportera hela tabeller till molnet](/help/analysis-workspace/export/export-cloud.md). |
-| [!UICONTROL Data View Tools] | [!UICONTROL CJA BI Extension] | Låt användare använda BI-tillägget[](../data-views/bi-extension.md). |
+| [!UICONTROL Data View Tools] | [!UICONTROL CJA BI Extension] | Låt användare använda BI-tillägget[&#128279;](../data-views/bi-extension.md). |
 
 {style="table-layout:auto"}
 
