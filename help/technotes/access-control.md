@@ -63,7 +63,7 @@ Utöver att läggas till som produktadministratör i **Customer Journey Analytic
   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Skrivskyddad åtkomst för datauppsättningar och scheman. |
   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Skrivskyddad åtkomst för identitetsnamnrymder. |
 
-  För mer information om Experience Platform-behörigheter, se [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+  För mer information om Experience Platform-behörigheter, se [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/permissions).
 
 
 * Om Journey Optimizer är integrerad med Customer Journey Analytics där Journey Optimizer-anslutningar finns, måste även resebehörigheter läggas till för att få tillgång till Connections:
@@ -75,7 +75,7 @@ Utöver att läggas till som produktadministratör i **Customer Journey Analytic
   | [!UICONTROL Journeys] | [!UICONTROL View Journeys] | Skrivskyddad tillgång till resor. |
   | [!UICONTROL Journeys] | [!UICONTROL Manage Journeys] | Läs, skapa, redigera och ta bort resor. |
 
-* Exportera dataset till [destinationer](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)
+* Exportera dataset till [destinationer](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/export-datasets)
 
   För att kunna utföra den här åtgärden måste användarna ingå i en **Experience Platform-produktprofil** som ger följande behörigheter:
 
@@ -84,13 +84,13 @@ Utöver att läggas till som produktadministratör i **Customer Journey Analytic
   | [!UICONTROL Destinations] | [!UICONTROL Manage Destinations] | Åtkomst för att läsa, skapa och ta bort målanslutningar och målkonton. |
   | [!UICONTROL Destinations] | [!UICONTROL Activate Destinations] | Låt användare aktivera segment till befintliga destinationer. Aktiverar kartläggningssteget i aktiveringsarbetsflödet. Denna behörighet kräver också att behörigheten Visa destinationer ges till användaren som vill aktivera data till destinationer. |
 
-  För mer information om Experience Platform-behörigheter, se [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+  För mer information om Experience Platform-behörigheter, se [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/permissions).
 
 * Använd BI-tillägget [&#128279;](../data-views/bi-extension.md)
 
   För användare att använda BI-tillägget finns en produktadministratör
 
-   * måste säkerställa att användarens Experience Platform-behörigheter inkluderar en roll som har resursen Query Service med alternativen Hantera frågor och Hantera Query Service Integration. För mer information om Experience Platform-behörigheter, se [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
+   * måste säkerställa att användarens Experience Platform-behörigheter inkluderar en roll som har resursen Query Service med alternativen Hantera frågor och Hantera Query Service Integration. För mer information om Experience Platform-behörigheter, se [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/permissions).
 
      | Kategori | Behörighet | Beskrivning |
      |---|---|---|
@@ -127,10 +127,10 @@ Fliken **[!UICONTROL Permissions]** ingår i varje produktprofil i [Admin Consol
 | [!UICONTROL Reporting Tools] | [!UICONTROL Labs Access] | Låt användare komma åt fliken [Labs](/help/labs/labs.md) i Customer Journey Analytics. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Annotation Creation] | Låt användare skapa [anteckningar](/help/components/annotations/overview.md). Användare kan endast tagga, dela, ta bort och byta namn på de anteckningar de skapar eller anteckningar som delas med dem. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audience View] | Låt användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Audience Creation] | Låt användare skapa [målgrupper](/help/components/audiences/audiences-overview.md). Kräver [Hantera segment](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) i Adobe Experience Platform. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Audience Creation] | Låt användare skapa [målgrupper](/help/components/audiences/audiences-overview.md). Kräver [Hantera segment](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home) i Adobe Experience Platform. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Data storytelling] | Låt användare [generera bildpresentationer baserat på Workspace-projekt.](/help/analysis-workspace/curate-share/generate-slides.md)<p>Data storytelling är i den begränsade testfasen av lanseringen och är kanske inte tillgänglig än i din miljö. Den här anteckningen tas bort när funktionen är allmänt tillgänglig. Mer information om Customer Journey Analytics finns i [Customer Journey Analytics funktionsreleaser](/help/release-notes/releases.md).</p> |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audit Logs Access] | Tvinga behörighetskontrollen för användargränssnittet för [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) och granskningsloggarna. |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Share Project Links With Anyone] | Låt användare [dela projekt med vem som helst.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Share Project Links With Anyone] | Låt användare [dela projekt med vem som helst.](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Forecasting] | Ge användarna tillgång till funktionen [Prognoser](../analysis-workspace/c-forecast/forecasting.md) i Analysis Workspace |
 | [!UICONTROL Reporting Tools] | [!UICONTROL AI Assistant: Product Knowledge] | Ge användarna tillgång till [AI-assistenten](../ai-assistant.md) för produktinformation. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Intelligent Captions] | Låt användarna komma åt [Intelligenta bildtexter](/help/analysis-workspace/visualizations/intelligent-captions.md). |
