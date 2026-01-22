@@ -4,9 +4,9 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 11a550e0cd67db106e2dd399843c4cf0923467ad
+source-git-commit: 3f369122863df4f3fc339730ced8c193360d07c6
 workflow-type: tm+mt
-source-wordcount: '20733'
+source-wordcount: '20833'
 ht-degree: 0%
 
 ---
@@ -383,7 +383,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Lär dig vilka innehålls- och innehållsattribut som fungerar bäst."
->abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
+>abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
 
 
 Följande mallar är tillgängliga:
@@ -652,10 +652,9 @@ Följande mallar är tillgängliga:
 
 Följande mallar är tillgängliga:
 
-<!--need to add audience overview: - **[!UICONTROL Audience overview]** - View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p><p>For more information, see [Analyze Experience Platform audiences in Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> - -->
-
 | Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
 | --- | --- |
+| **[!UICONTROL Audience overview]** | Se vilka målgrupper som finns representerade bland de personer som besöker er webbplats.<p>**Det här kan hjälpa dig** att bättre förstå allmän information om målgrupperna, var målgrupperna kommer (RTCDP, Customer Journey Analytics och så vidare), vilka målgrupper som överlappar med mera.</p><p>**Baserat på vad du lär dig kan du** göra ett antal saker, till exempel använda data för att fokusera på marknadsföringssatsningar för dessa specifika målgrupper, eller skapa anpassade upplevelser för kunder som spänner över flera målgrupper.</p><p>I den här mallen används dimensionerna Målgruppsnamn, Audience Origin, Exited Audience Name och Exited Audience Origin.</p><p>Mer information finns i [Analysera Experience Platform-målgrupper i Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Första och upprepa besökare**] | Visa en jämförelse av förstagångsbesökare för att upprepa besökare. <p>**Detta kan hjälpa dig** att bättre förstå hur effektiv din webbplats är när det gäller att behålla kundlojaliteten, eller hur ofta du skaffar nya kunder.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att erbjuda incitament för framtida köp till förstagångsbesökare för att locka dem att återvända.</p><!-- This template uses the --> |
 | **Person-ID** | Visa enskilda användarbeteenden i olika kanaler.<p>**Detta kan hjälpa dig** att bättre förstå hela kundresan och interaktioner över flera kontaktytor.</p><p>**Baserat på vad du lär dig kan du** göra vilket som helst av en rad saker, som att anpassa marknadsföringen för att bättre anpassa användarnas preferenser.</p><!-- This template uses the --> |
 | **Geografiska länder** | Se det land som besökarna kommer ifrån.<p>**Det här kan hjälpa dig** att bättre förstå vad de populäraste länderna besökarna kommer från när de besöker din webbplats.</p><p>**Baserat på vad du lär dig kan du** göra flera saker, som att använda data för att fokusera på marknadsföringsaktiviteter i dessa länder, eller se till att webbplatsupplevelsen är optimal i länder som har olika primära språk.</p><p>Den här mallen använder dimensionen Länder. </p> |
@@ -1087,7 +1086,7 @@ Följande mallar är tillgängliga:
 
 ### B2B-mallar {#b2b-templates}
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 
 <!-- CJA B2B Edition only -->
