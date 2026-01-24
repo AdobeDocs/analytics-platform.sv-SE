@@ -45,4 +45,4 @@ I enlighet med CCPA stöder Privacy Service ansökningar om att avanmäla sig fr
 
 >[!MORELIKETHIS]
 >
->* [Blogg: Så här behåller du effektiv styrning i Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)
+>* [Blogg: Så här behåller du effektiv styrning i Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=sv)

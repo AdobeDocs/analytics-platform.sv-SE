@@ -48,6 +48,6 @@ Customer Journey Analytics-administratörer kan lägga till beskrivningar för d
 
 >[!MORELIKETHIS]
 >
->[Identifiera djupare kundinsikter med händelsedjupsfunktionen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947#M576)
+>[Identifiera djupare kundinsikter med händelsedjupsfunktionen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=sv#M576)
 >
 

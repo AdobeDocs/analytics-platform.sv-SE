@@ -114,5 +114,5 @@ Se [Importera och använda ad hoc-data](./adhoc.md)
 
 >[!MORELIKETHIS]
 >
->Blogg: [En närmare titt på databearbetning och inmatning i Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
+>Blogg: [En närmare titt på databearbetning och inmatning i Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=sv)
 

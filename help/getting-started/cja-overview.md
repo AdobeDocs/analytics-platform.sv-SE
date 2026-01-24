@@ -111,6 +111,6 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arkitektur och in
 
 >[!MORELIKETHIS]
 >
->* [Adobe Customer Journey Analytics Crash Course for Analysts](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
->* [Optimera din minuppsättning och ditt Adobe Customer Journey Analytics-arbetsflöde: Teammodeller för organisationer av alla storlekar](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
->* [Beredskap för att bygga upp organisationen: Handbok för att skapa en&quot;People-First Guide&quot; för att skala Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)
+>* [Adobe Customer Journey Analytics Crash Course for Analysts](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261?profile.language=sv)
+>* [Optimera din minuppsättning och ditt Adobe Customer Journey Analytics-arbetsflöde: Teammodeller för organisationer av alla storlekar](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456?profile.language=sv)
+>* [Beredskap för att bygga upp organisationen: Handbok för att skapa en&quot;People-First Guide&quot; för att skala Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273?profile.language=sv)

@@ -154,5 +154,5 @@ Kontrollera att komponentinställningarna för en sammanfattningsdatagrupp är d
 >[!MORELIKETHIS]
 >
 >- I artikeln [Använd sammanfattningsdata](/help/use-cases/data-views/summary-data.md) finns ett detaljerat exempel på hur du använder och rapporterar om sammanfattningsdata.
->- Blogg: [Hur sammanfattningsdata förbättrar Adobe Customer Journey Analytics-datauppsättningar](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
+>- Blogg: [Hur sammanfattningsdata förbättrar Adobe Customer Journey Analytics-datauppsättningar](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=sv)
 

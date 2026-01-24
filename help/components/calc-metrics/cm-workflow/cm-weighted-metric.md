@@ -38,7 +38,7 @@ Du kan också definiera en [studsfrekvens med hjälp av härledda fält](/help/d
 
 Härledda fält är en del av en datavy som har fördelen att inte alla användare kan åsidosätta eller ändra definitionen av ett värde för studsfrekvens. Den fördelen innebar också en begränsning. Användare som inte har tillgång till en datavy kan inte använda härledda fält och måste använda segment och beräknade värden för att definiera en studsfrekvens.
 
-Mer bakgrundsinformation om hur du beräknar studsar och studsfrekvens i Customer Journey Analytics finns i det här [blogginlägget](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446).
+Mer bakgrundsinformation om hur du beräknar studsar och studsfrekvens i Customer Journey Analytics finns i det här [blogginlägget](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=sv).
 
 +++
 

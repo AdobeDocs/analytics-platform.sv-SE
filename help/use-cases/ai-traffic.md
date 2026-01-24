@@ -297,6 +297,6 @@ Använd de härledda fälten och segmenten för att rapportera och analysera om 
 
 >[!MORELIKETHIS]
 >
->Denna artikel baseras på bloggartikeln [Spåra och analysera LLM och AI-genererad trafik i Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
+>Denna artikel baseras på bloggartikeln [Spåra och analysera LLM och AI-genererad trafik i Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=sv).
 >
 >

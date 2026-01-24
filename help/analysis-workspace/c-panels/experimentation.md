@@ -180,8 +180,8 @@ Beräknade mätvärden som inte är kompatibla med panelen Experimentation har v
 
 ## Använda beräknade värden på panelen Experimentera
 
-I det här blogginlägget finns information om [hur du använder beräknade värden på panelen Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+I det här blogginlägget finns information om [hur du använder beräknade värden på panelen Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=sv).
 
 >[!MORELIKETHIS]
->[Mastering Adobe Customer Journey Analytics Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
+>[Mastering Adobe Customer Journey Analytics Experimentation](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=sv)
 >
