@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 hide: true
 hidefromtoc: true
-source-git-commit: 3c34bd50c12b370f5e9f95ac5d6357de4f63e5f6
+source-git-commit: 925da525b61c2a24156159f4029303c297e0af10
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '1162'
 ht-degree: 0%
 
 ---
@@ -46,17 +46,46 @@ Om du vill konfigurera och aktivera funktionen *mappa analysdata från flera IMS
    | --- |
    | *Företagsnamnrepresentant*, om du vill ge den valda målorganisationen åtkomst till följande IMS-organ (lista över IMS-källorgan) måste du se till att en administratör för varje IMS-organisation skickar sitt godkännande för att ge åtkomst till deras data. Detta bidrar till att säkerställa att vi har respekterat dataåtkomstbehörigheterna från alla IMS-organisationer som påverkas. Se till att vi har fått rätt godkännande genom att ha en registrerad Adobe-administratör för varje administratör eller ett svar på det här e-postmeddelandet med namn och IMS-organisation som de representerar och som anger att de godkänner att IMS-organisationens data ska visas i målorganisationen [list destination IMS org]. Observera att den här administratören måste vara en administratör som är registrerad i Adobe-systemet som administratör för den IMS-organisationen. |
 
-1. Skicka ett e-postmeddelande som mål-IMS-organisationsadministratör till den kontohanterare i Adobe som begär mappning från rapportsviter inom flera IMS-målorganisationer till mål-IMS-organisationen. Bifoga e-postmeddelanden om godkännande som du har fått från IMS-administratörerna för källorganisationen.
+1. Skicka ett e-postmeddelande till kontohanteraren för Adobe för IMS-organisationens måladministratör som begär mappning från rapportsviter inom flera IMS-målorganisationer till IMS-målorganisationen. Bifoga e-postmeddelanden om godkännande som du har fått från IMS-administratörerna för källorganisationen.
 
-När kontohanteraren har fått e-postmeddelandet med en begäran om att mappa analysdata från flera organ, granskas begäran inom Adobe. Kontohanteraren kontaktar dig om du har frågor, utbildning eller annan information.
+När Adobe Account Manager har fått e-postmeddelandet med en begäran om att mappa analysdata från flera organ, granskas begäran inom Adobe. Adobe Account Manager kontaktar dig om du har frågor, utbildning eller annan information.
 
-När mappningen har godkänts skapas den och du meddelas. Namnet på IMS-källorganisationen läggs till efter namnet på rapportsviten i listan [i Analytics-rapportsviterna](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) i Experience Platform.
+När mappningen har godkänts skapas den och du meddelas. Namnet på IMS-källorganisationen läggs till efter namnet på rapportsviten i listan [i Analytics-rapportsviterna](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) i Experience Platform.
 
-## Begränsningar och risker
+
+## Begränsningar
 
 Följande begränsningar gäller för funktionen *map Analytics data från flera IMS-organisationer*:
 
 * Du kan bara ansluta en rapportsserie en gång till olika organisationer.
 * Du måste ta bort alla anslutningar för en IMS-organisation som är definierad som mål-IMS-organisation i en mappning innan du kan begära att mappningen ska tas bort.
 * ECID:n är inte kompatibla mellan mappade IMS-källorganisationer och inte kompatibla med IMS-målorganisationen.
-* En användare med tillräcklig behörighet för att konfigurera Analytics-källkopplingen i mål-IMS-organisationen kan importera Analytics-data från alla mappade IMS-källorganisationer. Inga behörigheter kontrolleras för den användaren för någon IMS-källorganisation.
+
+
+## Överväganden
+
+Du kan tänka på följande innan du begär funktionen *mappa analysdata från flera IMS-organisationer*:
+
+### Profiler
+
+När funktionen *Mappa analysdata från flera IMS-organisationer* har godkänts kan du lägga till data i Experience Platform för en eller flera rapportsviter i IMS-målorganisationen. Det gör du genom att konfigurera [Analytics-källkopplingen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Måldatauppsättningar skapas sedan i Experience Platform. Som en del av den här konfigurationen och processen kan du välja att skicka profildata från en eller flera rapportsviter till profiltjänsten.
+
+Uppskatta det totala antalet profiler som är resultatet av konfigurationen och processen enligt ovan. Se till att det totala antalet ligger inom det antal profiler som du enligt avtal har rätt till för målorganisationen. Använd [filtreringsregler och villkor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} om du vill inkludera eller exkludera data selektivt från konsumtion till profiltjänsten. Eller inaktivera alternativet att skicka profildata till profiltjänsten för relevanta rapportsviter.
+
+
+### Stitlar
+
+När funktionen *Mappa analysdata från flera IMS-organisationer* har godkänts kan du lägga till data i Experience Platform för en eller flera rapportsviter i IMS-målorganisationen. Det gör du genom att konfigurera [Analytics-källkopplingen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Måldatamängder för de rapportsviter du konfigurerade i Analytics-källkopplingen skapas sedan i Experience Platform. Som en del av den här konfigurationen och processen kan du välja att skicka profildata från en eller flera rapportsviter till profiltjänsten.
+
+Du kan använda både [fältbaserad](/help/stitching/fbs.md) och [diagrambaserad](/help/stitching/gbs.md) sammanfogning på måldatamängderna. När du använder diagrambaserad sammanfogning på en eller flera av dessa måldatamängder måste du se till att du håller dig inom dina avtalsenliga berättiganden för antalet profiler enligt beskrivningen i avsnittet [Profiler](#profiles).
+
+Om du inte är licensierad för kundprofil i realtid, men ändå vill använda diagrambaserad sammanfogning på en eller flera måldatauppsättningar, kontrollerar du att du bara aktiverar [identitetstjänsten](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) för dessa måldatauppsättningar.
+
+
+### Behörigheter
+
+En användare med tillräcklig behörighet för att konfigurera Analytics-källkopplingen i mål-IMS-organisationen kan importera Analytics-data från alla mappade IMS-källorganisationer. Inga behörigheter kontrolleras för den användaren för någon IMS-källorganisation.
+
+### Rapport om data
+
+Funktionen *Mappa analysdata från flera IMS-organisationer* är bara ett första steg för att säkerställa att du kan använda data som en del av en Customer Journey Analytics [anslutning](/help/connections/overview.md), en eller flera [datavyer](/help/data-views/data-views.md) och [arbetsyteprojekt](/help/analysis-workspace/home.md). Du måste noggrant kontrollera de data som du nu har tillgängliga i en IMS-organisation. Ta hänsyn till funktioner som datapresentation, härledda fält, extra uppslagstabeller med mera innan du kan rapportera dessa data på rätt sätt.
