@@ -3,7 +3,7 @@ title: Inkludera flera dimensioner i en frihandstabell
 description: Lär dig hur du inkluderar flera dimensioner i en frihandstabell
 feature: Visualizations
 role: User
-source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
+source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 0%
@@ -116,3 +116,4 @@ Följande dimensionskombinationer stöds inte och Analysis Workspace tillåter i
 * Flera dimensioner från fält som refererar till olika [arrayer av objekt](/help/use-cases/object-arrays.md) som används tillsammans i samma friformstabell.
 
   Flera dimensioner tillåts tillsammans i samma friformstabell om de refererar till samma objektmatris.
+
