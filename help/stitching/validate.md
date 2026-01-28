@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
+source-git-commit: 99b434e62d859c96bfda53731f3f8a0750850501
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,12 @@ Analysmetoderna innehåller [inställningar för datavykomponenten](/help/data-v
 >
 >Sammanfogning (validering av) av en eller flera datauppsättningar bidrar i slutändan till bättre analyser och insikter. I den här artikeln beskrivs emellertid inte det övergripande värdet för en Customer Journey Analytics-konfiguration som har alla datauppsättningar i Experience Platform justerade mot samma ID-namnutrymme. Och att alla dessa datauppsättningar är väl sammanfogade för att kunna utföra analyser under hela kundresan.
 
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching Enablement and validation](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 ## Krav för datavy
 
@@ -88,7 +94,7 @@ När du skapar en anslutning måste du definiera vilket fält eller vilken ident
 Du vill mäta identifieringsprestanda före och efter sammanfogning. Om du vill göra det skapar du ytterligare tre beräknade mått:
 
 1. Ett **[!UICONTROL Stitched authentication rate]** beräknat mått som beräknar antalet händelser där namnutrymmet som sammanfogats har angetts till önskad identitet över det totala antalet händelser. När du konfigurerade datavyn skapade du ett **[!UICONTROL Email stitched namespace]**-mått som innehöll ett filter som endast skulle räknas när en händelse har ett namnutrymme som är inställt på e-post. Det beräknade måttet använder det här **[!UICONTROL Email stitched namespace]**-måttet för att ge en indikation på vilken procentandel av data som har den önskade identiteten.
-   ![Beräknad autentiseringsfrekvens för statiska element &#x200B;](assets/calcmetric-stitchedauthenticationrate.png)
+   ![Beräknad autentiseringsfrekvens för statiska element ](assets/calcmetric-stitchedauthenticationrate.png)
 
 1. Ett **[!UICONTROL Percent increase]** beräknat mått som beräknar den råa procentuella ändringen mellan den aktuella identifieringsfrekvensen och den sammanslagna.
    ![Procentökning beräknat mätvärde](assets/calcmetric-percentincrease.png)
