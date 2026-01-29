@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: a8c158e66b66f2110df12fac794b2223f1922b1f
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 11%
+source-wordcount: '1363'
+ht-degree: 10%
 
 ---
 
@@ -494,7 +494,24 @@ ht-degree: 11%
       + [Datavyer använder exempel](/help/use-cases/data-views/data-views-usecases.md)
       + [Använd bindningsdimensioner och mätvärden](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [Använd sammanfattningsdata](/help/use-cases/data-views/summary-data.md)
-      + [Användningsexempel för BI-tillägg](/help/use-cases/data-views/bi-extension-usecases.md)
+      + BI-tillägg {#bi-extension}
+         + [Användningsexempel](/help/use-cases/data-views/bi-extension-usecases.md)
+         + [Visa och koppla data](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
+         + [Daglig trend](/help/use-cases/data-views/bi-extension/daily-trend.md)
+         + [Trend varje timme](/help/use-cases/data-views/bi-extension/hourly-trend.md)
+         + [Månadstrender](/help/use-cases/data-views/bi-extension/monthly-trend.md)
+         + [Enkel dimension rankad](/help/use-cases/data-views/bi-extension/single-dimension-ranked.md)
+         + [Flera dimensioner rankade](/help/use-cases/data-views/bi-extension/multiple-dimension-ranked.md)
+         + [Räkna distinkta dimensionsvärden](/help/use-cases/data-views/bi-extension/count-distinct-dimension-values.md)
+         + [Använd datumintervallnamn för att filtrera](/help/use-cases/data-views/bi-extension/use-date-range-names-to-filter.md)
+         + [Använd segmentnamn för att segmentera](/help/use-cases/data-views/bi-extension/use-segment-names-to-segment.md)
+         + [Använd dimensionsvärden för att segmentera](/help/use-cases/data-views/bi-extension/use-dimension-values-to-segment.md)
+         + [Sortera](/help/use-cases/data-views/bi-extension/sort.md)
+         + [Gränser](/help/use-cases/data-views/bi-extension/limits.md)
+         + [Omformningar](/help/use-cases/data-views/bi-extension/transformations.md)
+         + [Visualiseringar](/help/use-cases/data-views/bi-extension/visualizations.md)
+         + [Caveats](/help/use-cases/data-views/bi-extension/caveats.md)
+
    + Härledda fält {#derived-fields}
       + [Rapport om trafik som genererats av LLM och AI](/help/use-cases/ai-traffic.md)
       + [Rapport om mål](../use-cases/goals-using-derived-fields.md)
