@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 3479227eb703583255d40de3d07d071ad2f89950
+source-git-commit: 32997d0fd9801099a75287f63197d3b4c2ba81ef
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Så här aktiverar du sammanfogning av en händelsedatamängd i anslutningsgrän
 
 Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
 
-* Se till att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
+* Se till att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verifiera identitetstäckning för både beständigt ID och person-ID:
    * Beständigt ID: Fråga efter 7 dagars data där ditt beständiga ID-fält inte är null och dividera med en fråga på 7 dagars data för alla händelser i datauppsättningen. Procentandelen bör vara över 95 %.
 
@@ -136,7 +136,13 @@ Om du vill aktivera sammanfogning går du till händelsedatamängdsavsnittet i d
 
 1. Välj ett uppslagsfönster i listrutan **[!UICONTROL Lookback window]**. Vilka alternativ som är tillgängliga beror på vilket Customer Journey Analytics-paket du har rätt till.
 
-När du har sparat en anslutning är sammanfogningsprocessen för datauppsättningar som har aktiverats för sammanfogning aktiverad när dataanvändningen för dessa datauppsättningar börjar
+När du har sparat en anslutning aktiveras sammanfogningsprocessen för datauppsättningar som är aktiverade för sammanfogning när dataanvändningen för dessa datauppsättningar börjar.
+
+>[!CAUTION]
+>
+>För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
+>
+
 
 ## Begränsningar
 
