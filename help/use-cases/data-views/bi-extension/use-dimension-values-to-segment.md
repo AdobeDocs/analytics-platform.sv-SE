@@ -154,7 +154,7 @@ En visualisering visar **[!UICONTROL Error fetching data for this visual]**.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment. Se till att du använder en lämplig kategori. Till exempel `Hunting`.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment. Se till att du använder en lämplig kategori. Till exempel `Hunting`.
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value

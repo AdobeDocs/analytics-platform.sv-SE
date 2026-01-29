@@ -56,7 +56,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 
    En linjediagramvisualisering ersätter tabellen och använder samma data som tabellen. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI-filtret Datumintervall med VERSALER 2 ](../assets/uc4-pbi-filter-daterange.png)
+   ![Power BI-filtret Datumintervall med VERSALER 2 &#x200B;](../assets/uc4-pbi-filter-daterange.png)
 
 1. Visualisering av linjediagram:
 
@@ -78,7 +78,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 
    1. Dra och släpp **[!UICONTROL Daterangeday]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Columns]**.
       * Välj **[!UICONTROL MONTH]** i listrutan **[!UICONTROL Daterangeday]** så att värdet uppdateras till **[!UICONTROL MONTH(Daterangeday)]**.
-   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
+   1. Dra och släpp **[!UICONTROL Occurrences]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Occurrences)]**.
    1. Ändra **[!UICONTROL Standard]** till **[!UICONTROL Entire View]** från den nedrullningsbara menyn **[!UICONTROL Fit]** i verktygsfältet.
 
       Ditt skrivbord ska se ut så här nedan.
@@ -104,7 +104,7 @@ Ett exempel på **[!UICONTROL Monthly Trend]**-panel för användningsfallet:
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Instrumentpanel för bordsdator ](../assets/uc4-tableau-dashboard.png)
+      ![Instrumentpanel för bordsdator &#x200B;](../assets/uc4-tableau-dashboard.png)
 
 
 >[!TAB Sökare]
@@ -154,7 +154,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    ## Hourly Events

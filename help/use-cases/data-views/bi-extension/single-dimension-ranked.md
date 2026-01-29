@@ -61,7 +61,7 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 
    1. Välj **[!UICONTROL Sum of purchase_revenue]** om du vill sortera produktnamnen i fallande inköpsintäktsordning. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI Desktop Use Case 5 Table status ](../assets/uc5-pbi-table.png)
+   ![Power BI Desktop Use Case 5 Table status &#x200B;](../assets/uc5-pbi-table.png)
 
 1. I rutan **[!UICONTROL Filters]**:
 
@@ -104,8 +104,8 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
       ![Datorfilter för Tablet PC](../assets/uc5-tableau-filter.png)
 
    1. Dra och släpp **[!UICONTROL Product Name]** från listan **[!UICONTROL Tables]** i rutan **[!UICONTROL Data]** och släpp posten i fältet bredvid **[!UICONTROL Rows]**.
-   1. Dra och släpp **[!UICONTROL Purchases]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Purchases)]**.
-   1. Dra och släpp **[!UICONTROL Purchase Revenue]** från listan **[!UICONTROL Tables (*Måttnamn *)]**i rutan **[!UICONTROL Data]**och släpp posten i fältet intill **[!UICONTROL Columns]**och vänster från **[!UICONTROL SUM(Purchases)]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Dra och släpp **[!UICONTROL Purchases]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet bredvid **[!UICONTROL Rows]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Purchases)]**.
+   1. Dra och släpp **[!UICONTROL Purchase Revenue]** från listan **[!UICONTROL Tables (*Måttnamn *)]**&#x200B;i rutan **[!UICONTROL Data]**&#x200B;och släpp posten i fältet intill **[!UICONTROL Columns]**&#x200B;och vänster från **[!UICONTROL SUM(Purchases)]**. Värdet konverteras automatiskt till **[!UICONTROL SUM(Purchase Revenue)]**.
    1. Om du vill beställa båda diagrammen i fallande inköpsintäktsordning för du muspekaren över rubriken **[!UICONTROL Purchase Revenue]** och väljer sorteringsikonen.
    1. Om du vill begränsa antalet poster i diagrammen väljer du **[!UICONTROL SUM(Purchase Revenue)]** i **[!UICONTROL Rows]** och väljer **[!UICONTROL Filter]** i listrutan.
    1. I dialogrutan **[!UICONTROL Filter \[Purchase Revenue\]]** väljer du **[!UICONTROL Range of values]** och anger lämpliga värden. Till exempel: `1,000,000` - `2,000,000`. Välj **[!UICONTROL Apply]** och **[!UICONTROL OK]**.
@@ -137,7 +137,7 @@ Ett exempel på **[!UICONTROL Single Dimension Ranked]**-panel för användnings
 
    **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
-   ![Instrumentpanel för bordsdator ](../assets/uc5-tableau-dashboard.png)
+   ![Instrumentpanel för bordsdator &#x200B;](../assets/uc5-tableau-dashboard.png)
 
 
 
@@ -214,7 +214,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    library(tidyr)

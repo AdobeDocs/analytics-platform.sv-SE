@@ -49,7 +49,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
    1. Välj **[!UICONTROL sum purchases]**
 
 1. Om du vill ändra det lodräta stapeldiagrammet till en tabell kontrollerar du att tabellen är markerad och väljer **[!UICONTROL Matrix]** i rutan **[!UICONTROL Visualizations]**.
-   * Dra **[!UICONTROL product_name]** från **[!UICONTROL Columns]** och släpp fältet under **[!UICONTROL product_categor]**y i **[!UICONTROL Rows]** i rutan **[!UICONTROL Visualization]**.
+   * Dra **[!UICONTROL product_name]** från **[!UICONTROL Columns]** och släpp fältet under **[!UICONTROL product_categor]**&#x200B;y i **[!UICONTROL Rows]** i rutan **[!UICONTROL Visualization]**.
 
 1. Om du vill begränsa antalet produkter som visas i tabellen väljer du **[!UICONTROL product_name is (All)]** i rutan **[!UICONTROL Filters]**.
 
@@ -62,7 +62,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
 1. Om du vill dela upp varje kategori i tabellen väljer du **[!UICONTROL +]** på produktkategorinivå. Ditt Power BI-skrivbord ska se ut så här nedan.
 
-   ![Power BI-matristabell med flera dimensioner för stationära datorer ](../assets/uc6-powerbi-data.png)
+   ![Power BI-matristabell med flera dimensioner för stationära datorer &#x200B;](../assets/uc6-powerbi-data.png)
 
 1. Välj **[!UICONTROL Home]** på den översta menyn och välj **[!UICONTROL New visual]**. En ny visuell vy läggs till i rapporten.
 
@@ -118,7 +118,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
       Ditt skrivbord ska se ut så här nedan.
 
-      ![Flera dimensioner rankade för Tableu Desktop ](../assets/uc6-tableau-category.png)
+      ![Flera dimensioner rankade för Tableu Desktop &#x200B;](../assets/uc6-tableau-category.png)
 
 1. Byt namn på aktuellt **[!UICONTROL Sheet 1]**-blad till `Category`.
 1. Välj **[!UICONTROL New Worksheet]** om du vill skapa ett nytt blad och ändra namnet till `Data`.
@@ -164,7 +164,7 @@ Ett exempel på **[!UICONTROL Multiple Dimension Ranked]**-panel för användnin
 
    **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
-   ![Instrumentpanel för bordsdator ](../assets/uc6-tableau-final.png)
+   ![Instrumentpanel för bordsdator &#x200B;](../assets/uc6-tableau-final.png)
 
 
 >[!TAB Sökare]
@@ -244,7 +244,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    ## Multiple dimensions ranked

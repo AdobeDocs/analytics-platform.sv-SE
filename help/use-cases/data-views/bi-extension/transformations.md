@@ -47,7 +47,7 @@ Mätvärden från Customer Journey Analytics identifieras av [!UICONTROL Compone
 Filter som du definierar i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL filterName]** . När du använder ett **[!UICONTROL filterName]**-fält i Power BI Desktop kan du ange vilket filter som ska användas.
 
 **Beräknade mått**
-Beräknade mätvärden som du definierar i Customer Journey Analytics identifieras av den [!UICONTROL External ID] som du har definierat för det beräknade mätvärdet. Det beräknade måttet **[!UICONTROL Product Name (Count Distinct)]** har till exempel [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** och visas som **[!UICONTROL cm_product_name_count_distinc]**t i Power BI Desktop.
+Beräknade mätvärden som du definierar i Customer Journey Analytics identifieras av den [!UICONTROL External ID] som du har definierat för det beräknade mätvärdet. Det beräknade måttet **[!UICONTROL Product Name (Count Distinct)]** har till exempel [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** och visas som **[!UICONTROL cm_product_name_count_distinc]**&#x200B;t i Power BI Desktop.
 
 **Datumintervall**
 Datumintervall som du definierar i Customer Journey Analytics är tillgängliga som en del av fältet **[!UICONTROL daterangeName]** . När du använder ett **[!UICONTROL daterangeName]**-fält kan du ange vilket datumintervall som ska användas.
@@ -236,7 +236,7 @@ Customer Journey Analytics-komponenterna (mått, mått, filter, beräknade värd
 
 **Anpassade omformningar**
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    df <- dv %>%

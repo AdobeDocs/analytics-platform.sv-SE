@@ -341,7 +341,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 
 1. Starta RStudio.
 1. Skapa en ny R Markdown-fil eller hämta [det här exemplet på R-markeringsfil](../assets/BI-Extension.Rmd.zip).
-1. I ditt första segment anger du följande programsatser mellan ` ```{r} ` och ` ``` `. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värden från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till de värden som krävs för de olika parametrarna, till exempel `host`, `dbname` och `user`. Exempel:
+1. I ditt första segment anger du följande programsatser mellan ` ` ``{r} ` och ` `` ` `. Använd ![Kopiera](/help/assets/icons/Copy.svg) om du vill kopiera och klistra in värden från panelen Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** till de värden som krävs för de olika parametrarna, till exempel `host`, `dbname` och `user`. Exempel:
 
    ```R
    library(rstudioapi)
@@ -362,7 +362,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 
    ![RStudio, konfigurationssteg 1](../assets/rstudio-config-step1.png)
 
-1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
+1. Skapa ett nytt segment och ange följande programsatser mellan ` ` `` {r} ` och ` `` ` `.
 
    ```R
    con <- dbConnect(
@@ -379,7 +379,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 1. Kör segmentet. Du bör inte se några utdata om anslutningen lyckas.
 
 
-1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
+1. Skapa ett nytt segment och ange följande programsatser mellan ` ` `` {r} ` och ` `` ` `.
 
    ```R
    views <- dbListTables(con)
@@ -389,7 +389,7 @@ Jupyter Notebook stöder följande scenarier för parametern `FLATTEN`. Mer info
 1. Kör segmentet. Du bör se `character(0)` som den enda utdatafilen.
 
 
-1. Skapa ett nytt segment och ange följande programsatser mellan ` ``` {r} ` och ` ``` `.
+1. Skapa ett nytt segment och ange följande programsatser mellan ` ` `` {r} ` och ` `` ` `.
 
    ```R
    glimpse(dv)

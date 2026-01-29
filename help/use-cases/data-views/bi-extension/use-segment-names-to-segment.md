@@ -153,7 +153,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment. Se till att du använder rätt filternamn. Exempel: `Fishing Products`.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment. Se till att du använder rätt filternamn. Exempel: `Fishing Products`.
 
    ```R
    ## Dimension filtered by name

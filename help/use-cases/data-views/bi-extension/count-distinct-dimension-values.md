@@ -20,7 +20,7 @@ I det här fallet vill du ha det tydliga antalet produktnamn som rapporterades i
 
 Om du vill rapportera ett distinkt antal produktnamn anger du ett beräknat mått i Customer Journey Analytics, med **[!UICONTROL Title]** `Product Name (Count Distinct)` och **[!UICONTROL External Id]** `product_name_count_distinct`.
 
-![Beräknade Customer Journey Analytics-produktnamn (Distincr Count) ](../assets/cja-calc-metric-distinct-count-product-names.png)
+![Beräknade Customer Journey Analytics-produktnamn (Distincr Count) &#x200B;](../assets/cja-calc-metric-distinct-count-product-names.png)
 
 Du kan sedan använda det måttet i en **[!UICONTROL Count Distinct Dimension Values]**-panel för följande användningsfall:
 
@@ -109,7 +109,7 @@ Du kan också använda funktionen för antal som skiljer sig från Power BI.
 
    **[!UICONTROL Dashboard 1]**-vyn ska se ut så här nedan.
 
-   ![Instrumentpanel för bordsdator ](../assets/uc7-tableau-final.png)
+   ![Instrumentpanel för bordsdator &#x200B;](../assets/uc7-tableau-final.png)
 
 
 Du kan också använda funktionen för att räkna distinkt från skrivbordet i Tableu.
@@ -159,7 +159,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    ## Count Distinct

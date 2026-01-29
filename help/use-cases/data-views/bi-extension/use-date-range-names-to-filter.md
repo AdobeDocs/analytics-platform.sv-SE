@@ -138,7 +138,7 @@ En visualisering och en tabell som liknar den visas nedan.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment. Se till att du använder rätt namn för datumintervall. Exempel: `Last Year 2023`.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment. Se till att du använder rätt namn för datumintervall. Exempel: `Last Year 2023`.
 
    ```R
    ## Monthly Events for Last Year

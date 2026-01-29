@@ -260,7 +260,7 @@ Frågan körs av BI-tillägget enligt definitionen i Jupyter-anteckningsbok.
 
 >[!TAB RStudio]
 
-1. Ange följande programsatser mellan ` ```{r} ` och ` ``` ` i ett nytt segment.
+1. Ange följande programsatser mellan ` ` ``{r} ` och ` `` ` ` i ett nytt segment.
 
    ```R
    ## Dimension 1 Limited
