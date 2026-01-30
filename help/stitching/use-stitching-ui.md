@@ -33,7 +33,7 @@ Så här aktiverar du sammanfogning av en händelsedatamängd i anslutningsgrän
 
 Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
 
-* Se till att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
+* Se till att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
 * Verifiera identitetstäckning för både beständigt ID och person-ID:
    * Beständigt ID: Fråga efter 7 dagars data där ditt beständiga ID-fält inte är null och dividera med en fråga på 7 dagars data för alla händelser i datauppsättningen. Procentandelen bör vara över 95 %.
 
