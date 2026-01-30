@@ -5,20 +5,28 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
 # Begär sammanfogning
 
+
+>[!IMPORTANT]
+>
+>Framställning genom Adobe behövs inte längre och den här metoden är inaktuell. [Aktivera sammanslagning i anslutningsgränssnittet](use-stitching-ui.md).
+>
+
+
+
 När din organisation uppfyller alla [krav](overview.md#prerequisites) och förstår vanliga [begränsningar](overview.md#limitations) och att sammanfoga metodspecifika ([fältbaserade](fbs.md#limitations)- och [diagrambaserade](gbs.md#limitations)) begränsningar, kan du följa de här stegen för att begära och börja använda sammanfogning i Customer Journey Analytics.
 
 ## Välj alternativ
 
-Det Customer Journey Analytics-paket som du är berättigad till avgör vilka metoder som är tillgängliga för sammanfogning, alternativ för inledande varaktighet för efterfyllning, fönster för uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Mer information finns i [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/customer-journey-analytics.html). Bestäm vilka alternativ som är tillgängliga innan du begär support.
+Det Customer Journey Analytics-paket som du är berättigad till avgör vilka metoder som är tillgängliga för sammanfogning, alternativ för inledande varaktighet för efterfyllning, fönster för uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Mer information finns i [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html). Bestäm vilka alternativ som är tillgängliga innan du begär support.
 
 | | Customer Journey Analytics<br/>Välj | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
@@ -54,25 +62,3 @@ Det Customer Journey Analytics-paket som du är berättigad till avgör vilka me
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
 När datavyn har konfigurerats kan du köra Customer Journey Analytics rapportanalys i alla kanaler och på alla enheter.
-
-<!-- Uncomment once stitching UI is available (for limited testing)..
-
-### Do It Yourself
-
-|Positive|[!BADGE New Feature]{type=Positive before-title="false"}|
-
-{{release-limited-testing-section}}
-
-Alternatively, you can set up and use stitching through the Customer Journey Analytics user interface:
-
-1. Go to the [Create and manage stitched datasets](stitching-ui.md) and follow steps to rekey your dataset.
-
-2. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
-
-3. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
-   
-4. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
-
-Once the data view is set up, the cross-channel analysis in Customer Journey Analytics is just like any other analysis in Customer Journey Analytics, except now the data operates across channels and devices.
-
--->

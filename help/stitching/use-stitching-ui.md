@@ -5,10 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-badgePremium: label="Beta" type="Informative"
-source-git-commit: 92754044cad67627987b0912367eddc48d1aee89
+source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -34,7 +33,7 @@ Så här aktiverar du sammanfogning av en händelsedatamängd i anslutningsgrän
 
 Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
 
-* Se till att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
+* Se till att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verifiera identitetstäckning för både beständigt ID och person-ID:
    * Beständigt ID: Fråga efter 7 dagars data där ditt beständiga ID-fält inte är null och dividera med en fråga på 7 dagars data för alla händelser i datauppsättningen. Procentandelen bör vara över 95 %.
 
@@ -138,7 +137,7 @@ När du har sparat en anslutning aktiveras sammanfogningsprocessen för dataupps
 
 >[!CAUTION]
 >
->För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**&#x200B;för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
+>För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
 >
 
 
