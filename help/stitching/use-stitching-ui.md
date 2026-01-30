@@ -137,7 +137,7 @@ När du har sparat en anslutning aktiveras sammanfogningsprocessen för dataupps
 
 >[!CAUTION]
 >
->För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
+>För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**&#x200B;för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
 >
 
 
