@@ -21,7 +21,7 @@ I fältbaserad sammanfogning anger du en händelsedatamängd samt det beständig
 
 ## IdentityMap
 
-Fältbaserad sammanfogning stöder användning av fältgruppen [`identityMap` ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
+Fältbaserad sammanfogning stöder användning av fältgruppen [`identityMap` &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
 
 - Använd den primära identiteten i `identityMap` namnutrymmen för att definiera persistentID:
    - Om flera primära identiteter hittas i olika namnutrymmen sorteras identiteterna i namnutrymmena lexikografiskt och den första identiteten markeras.
