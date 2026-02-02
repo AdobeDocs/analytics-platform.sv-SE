@@ -1,15 +1,15 @@
 ---
-title: Konfigurera inställningar för Report Builder i Customer Journey Analytics
-description: Beskriver hur du anger inställningar för offlineläge, språk, aktuellt läge och felsökning.
+title: Konfigurera inställningar för Report Builder
+description: Lär dig konfigurera inställningar för Report Builder.
 role: Admin
 feature: Report Builder
 type: Documentation
 exl-id: 32423cb4-1a4c-4ea3-ad4b-9520aff9ae4b
 solution: Customer Journey Analytics
-source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 0%
+source-wordcount: '224'
+ht-degree: 1%
 
 ---
 

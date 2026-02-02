@@ -1,14 +1,14 @@
 ---
-title: Så här schemalägger du arbetsböcker med Report Builder i Customer Journey Analytics
-description: Lär dig använda schemafunktionen i Report Builder
+title: Schemalägg arbetsböcker med Report Builder
+description: Lär dig använda schemafunktionen i Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---

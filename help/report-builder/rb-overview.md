@@ -1,14 +1,14 @@
 ---
-title: Vad är Report Builder i Customer Journey Analytics?
-description: Beskriver Report Builder för Customer Journey Analytics
+title: Report Builder - översikt
+description: Läs mer om Report Builder funktioner.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 56bf524d-101d-4745-b2ef-9770c50f6774
 solution: Customer Journey Analytics
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '330'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Report Builder för Customer Journey Analytics är ett Microsoft Excel-tillägg.
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder för Customer Journey Analytics](https://video.tv.adobe.com/v/3452584?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder för Customer Journey Analytics](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

@@ -1,14 +1,14 @@
 ---
-title: Vad är begränsade etiketter i Report Builder?
-description: Beskriver begränsade etiketter i Report Builder
+title: Begränsade etiketter i Report Builder
+description: Läs om begränsade etiketter i Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
-source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 Vanligtvis ärvs datastyrningsrelaterade inställningar i Customer Journey Analytics från Experience Platform. Integrationen mellan Customer Journey Analytics och Experience Platform Data Governance möjliggör märkning av känsliga Customer Journey Analytics-data och tillämpning av sekretesspolicyer.
 
-Sekretessetiketter och integritetspolicyer som skapas för datauppsättningar som används av Experience Platform kan visas i arbetsflödet för Customer Journey Analytics datavyer. Dessa etiketter stoppar eller varnar användare som skapar mätvärden och dimensioner från känsliga fält. Mer information om datauppsättningar finns i [Datauppsättningsöversikt](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/overview)
+Sekretessetiketter och integritetspolicyer som skapas för datauppsättningar som används av Experience Platform kan visas i arbetsflödet för Customer Journey Analytics datavyer. Dessa etiketter stoppar eller varnar användare som skapar mätvärden och dimensioner från känsliga fält. Mer information om datauppsättningar finns i [Datauppsättningsöversikt](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)
 
 När data exporteras från Customer Journey Analytics (via rapportering, export, API osv.) läggs dessutom varningar eller etiketter till för att meddela användarna att en rapport innehåller känslig information som behöver behandlas på ett visst sätt.
 
 Tack vare den här integreringen kan ni hantera regelefterlevnaden. Datahanteringen i organisationen kan ange regler som begränsar användningen. Detta innebär att era Customer Journey Analytics-användare kan använda data med större tillförsikt, eftersom de vet att de följer de regler som definieras av datasegmenter.
 
-Mer information finns i [Customer Journey Analytics och datastyrning](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-privacy/privacy-overview)
+Mer information finns i [Customer Journey Analytics och datastyrning](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-privacy/privacy-overview)
 
 ## Visa begränsade data
 
@@ -34,7 +34,7 @@ Det finns två Adobe-definierade policyer i Customer Journey Analytics som påve
 
 Komponenter som omfattas av de här profilerna är nedtonade och har en ![InfoOutline](/help/assets/icons/InfoOutline.svg) -ikon. När du hovrar över infoikonen visas en anteckning som anger följande: **[!UICONTROL Policies have been applied to this field prohibiting use of this data]**.
 
-Mer information finns i [Etiketter och profiler](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/data-governance).
+Mer information finns i [Etiketter och profiler](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance).
 
 
 ![Principanteckningen anger att data inte får användas.](assets/restricted-label.png){zoomable="yes"}

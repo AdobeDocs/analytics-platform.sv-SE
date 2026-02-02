@@ -1,14 +1,14 @@
 ---
-title: Hantera datablock med Report Builder i Customer Journey Analytics
-description: Beskriver hur du använder hanteringsfunktionen i Report Builder
+title: Hantera datablock i Report Builder
+description: Lär dig hur du hanterar datablock i Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 70103020-a4a9-43be-933c-bde5a6d088c8
-source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Använd fältet ![Sök](/help/assets/icons/Search.svg) **[!UICONTROL _Sök_]** f
 
 ## Redigera datablock
 
-Du kan redigera datavyer och datumintervalldatablock. Eller segmenten som tillämpas på datablock.
+Du kan redigera datavyer och datumintervall för datablock. Eller segmenten som tillämpas på datablock.
 
 Du kan till exempel ersätta ett befintligt segment med ett nytt segment i ett eller flera datablock.
 

@@ -1,14 +1,14 @@
 ---
 title: Filtrera dimensioner i Report Builder
-description: Beskriver hur du använder filterdimensioner i Report Builder för Customer Journey Analytics
+description: Lär dig filtrera dimensioner i Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 5730d5f3-de76-429f-81f5-ebe6b62a9480
 solution: Customer Journey Analytics
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: a18b628f02889911c7663c32f31ef3c3bec3cf2e
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '933'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,7 @@ Så här anger du filtervillkor:
 
 Du kan inkludera upp till 10 villkorsobjekt.
 
-### **[!UICONTROL &#x200B; Specific]**
+### **[!UICONTROL  Specific]**
 
 Med alternativet **[!UICONTROL Specific]** kan du skapa en fast lista med dimensionsobjekt för varje dimension. Använd filtertypen **[!UICONTROL Specific]** för att ange exakt vilka dimensionsobjekt som ska inkluderas i filtret. Du kan markera objekt från en lista eller från ett cellintervall.
 

@@ -1,14 +1,14 @@
 ---
-title: Så här konfigurerar du Report Builder i Customer Journey Analytics
-description: Beskriver hur du konfigurerar Report Builder i Customer Journey Analytics
+title: Konfigurera Report Builder
+description: Beskriver hur du konfigurerar Report Builder i Customer Journey Analytics.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Om fliken **[!UICONTROL Store]** inte visas:
 
 Om din organisation blockerar åtkomsten till Microsoft Store:
 
-- Kontakta IT-avdelningen eller säkerhetsteamet för att få Report Builder-tillägget godkänt. Välj fliken **[!UICONTROL Admin Managed]** i Office **[!UICONTROL Add-ins]**-dialogrutan när du har godkänt.
+- Kontakta IT-avdelningen eller säkerhetsteamet för att få Report Builder-tillägget godkänt. Välj fliken **[!UICONTROL Add-ins]** i Office **[!UICONTROL Admin Managed]**-dialogrutan när du har godkänt.
 
   ![Fliken Administratörshantering i dialogrutan Office-tillägg.](./assets/image1.png){zoomable="yes"}
 

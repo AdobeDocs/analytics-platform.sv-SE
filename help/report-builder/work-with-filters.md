@@ -1,14 +1,14 @@
 ---
-title: Så här använder du segment i Report Builder i Customer Journey Analytics
-description: Beskriver hur du använder segment i Report Builder för Customer Journey Analytics
+title: Arbeta med segment i Report Builder
+description: Lär dig använda segment i Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 1f39d7f4-b508-45d8-9b97-81242c3805d3
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---

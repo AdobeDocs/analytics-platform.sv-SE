@@ -1,14 +1,14 @@
 ---
-title: Så här skapar du ett datablock med Report Builder i Customer Journey Analytics
-description: Beskriver hur du skapar ett datablock.
+title: Skapa ett datablock i Report Builder
+description: Lär dig hur du skapar ett datablock.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 7d3300336a955facc230f335d1452096700ea98b
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -114,7 +114,7 @@ Om du vill skapa datablocket väljer du rapportkomponenter och anpassar sedan la
 >[!MORELIKETHIS]
 >
 >[Välj en datavy](select-data-view.md)
->[Välj ett datumintervall &#x200B;](select-date-range.md)
->[Filterdimensioner &#x200B;](filter-dimensions.md)
->[Arbeta med segment &#x200B;](work-with-filters.md)
+>[Välj ett datumintervall ](select-date-range.md)
+>[Filterdimensioner ](filter-dimensions.md)
+>[Arbeta med segment ](work-with-filters.md)
 >

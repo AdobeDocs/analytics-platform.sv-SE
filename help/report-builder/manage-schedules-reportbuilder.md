@@ -1,17 +1,17 @@
 ---
-title: Hantera schemalagda arbetsböcker i Report Builder i Adobe Analytics
-description: Lär dig hur du hanterar schemalagda arbetsböcker i Report Builder för att skydda mål
+title: Hantera schemalagda arbetsböcker i Report Builder
+description: Lär dig hantera schemalagda arbetsböcker i Report Builder.
 role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
-source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
+exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
-
 
 # Hantera schemalagda arbetsböcker
 
