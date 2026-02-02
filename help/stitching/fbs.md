@@ -21,7 +21,7 @@ I fältbaserad sammanfogning anger du en händelsedatamängd samt det beständig
 
 ## IdentityMap
 
-Fältbaserad sammanfogning stöder användning av fältgruppen [`identityMap` &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
+Fältbaserad sammanfogning stöder användning av fältgruppen [`identityMap` &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
 
 - Använd den primära identiteten i `identityMap` namnutrymmen för att definiera persistentID:
    - Om flera primära identiteter hittas i olika namnutrymmen sorteras identiteterna i namnutrymmena lexikografiskt och den första identiteten markeras.
@@ -214,7 +214,7 @@ Följande krav gäller specifikt för fältbaserad sammanfogning:
    - Ett **person-ID**, en identifierare som bara är tillgänglig på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en profil autentiseras. Du kan använda praktiskt taget vilken identifierare som helst. Stitching ser till att det här fältet innehåller den faktiska person-ID-informationen. För bästa resultat av sammanfogning bör ett person-ID skickas inom datauppsättningens händelser minst en gång för varje beständigt ID. Om du tänker ta med den här datauppsättningen i en Customer Journey Analytics-anslutning bör de andra datauppsättningarna också ha en liknande gemensam identifierare.
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
