@@ -9,7 +9,7 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: a8c158e66b66f2110df12fac794b2223f1922b1f
+source-git-commit: 905d32421b4c1d3135a51dfd9898a02e750555d0
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 10%
@@ -139,6 +139,11 @@ ht-degree: 10%
    + [Kombinerade händelsedatamängder](../connections/combined-dataset.md)
    + [Standardsökningar](../connections/standard-lookups.md)
    + [B2B-sökningar](../connections/transform-datasets-b2b-lookups.md)
+   + Målgruppsanalys {#audience-analysis}
+      + [Översikt](/help/connections/audience-analysis/audience-analysis-overview.md)
+      + [Konfigurera](/help/connections/audience-analysis/audience-analysis-configure.md)
+      + [Hantera](/help/connections/audience-analysis/audience-analysis-manage.md)
+      + [Analysera](/help/connections/audience-analysis/analyze-audiences.md)
 + Datavyer {#cja-dataviews}
    + [Översikt över datavyer](../data-views/data-views.md)
    + [Skapa eller redigera en datavy](../data-views/create-dataview.md)
@@ -163,11 +168,6 @@ ht-degree: 10%
    + Delade mått{#shared-metrics-dimensions}
       + [Översikt](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [Redigerare](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-   + Målgruppsanalys {#audience-analysis}
-      + [Översikt](/help/connections/audience-analysis/audience-analysis-overview.md)
-      + [Konfigurera](/help/connections/audience-analysis/audience-analysis-configure.md)
-      + [Hantera](/help/connections/audience-analysis/audience-analysis-manage.md)
-      + [Analysera](/help/connections/audience-analysis/analyze-audiences.md)
 + verktyg {#tools}
    + Tillgångsöverföring {#asset-transfer}
       + [Överför resurser](../tools/asset-transfer/transfer-assets.md)
