@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 39d3a233166e2ce2035df2ce821dd16181e5e13e
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 I det här användningsexemplet beskrivs hur du använder funktionerna i härledda fält för att ange mål för en viss dimension och sedan använda dessa mål i ditt Workspace-projekt.
 
-Om du inte känner till härledda fält kan du få en introduktion i [självstudiekursen](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=sv-SE) och [dokumentationen](../data-views/derived-fields/derived-fields.md) .
+Om du inte känner till härledda fält kan du få en introduktion i [självstudiekursen](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html) och [dokumentationen](../data-views/derived-fields/derived-fields.md) .
 
 
 ## Definiera mål
@@ -67,7 +67,9 @@ Om du vill använda mål i ditt Workspace-projekt använder du den beräknade m�
 
 Du kan använda dessa beräknade värden för att rapportera förloppet i frihandstabeller och visualiseringar. Exempel:
 
-![Frihandsregister som visar mål för marknadsföringsintäkter](assets/freeform-table-product-order-goals.png)
+![Frihandsregister som visar mål för marknadsföringsintäkter](assets/freeform-table-marketing-channel-revenue-goals.png)
+
+
 
 
 ### Intäktsmål för marknadsföringskanaler
@@ -82,4 +84,4 @@ Du kan använda dessa beräknade värden för att rapportera förloppet i frihan
 
 Du kan använda dessa beräknade värden för att rapportera förloppet i frihandstabeller och visualiseringar. Exempel:
 
-![Frihandsregister som visar mål för marknadsföringsintäkter](assets/freeform-table-marketing-channel-revenue-goals.png)
+![Frihandsregister som visar mål för marknadsföringsintäkter](assets/freeform-table-product-order-goals.png)
