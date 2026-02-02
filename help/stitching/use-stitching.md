@@ -1,13 +1,13 @@
 ---
-title: Begär sammanfogning
-description: Hur man begär sammanfogning
+title: Begär textning
+description: Lär dig hur du begär sammanfogning.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,11 @@ ht-degree: 0%
 >Framställning genom Adobe behövs inte längre och den här metoden är inaktuell. [Aktivera sammanslagning i anslutningsgränssnittet](use-stitching-ui.md).
 >
 
-
-
-När din organisation uppfyller alla [krav](overview.md#prerequisites) och förstår vanliga [begränsningar](overview.md#limitations) och att sammanfoga metodspecifika ([fältbaserade](fbs.md#limitations)- och [diagrambaserade](gbs.md#limitations)) begränsningar, kan du följa de här stegen för att begära och börja använda sammanfogning i Customer Journey Analytics.
+När din organisation uppfyller allmänna [krav](overview.md#prerequisites), förstår vanliga [begränsningar](overview.md#limitations) och också sammanfogar metodspecifika ([fältbaserade](fbs.md) och [diagrambaserade](gbs.md)) krav och begränsningar, kan du följa de här stegen för att begära och börja använda sammanfogning i Customer Journey Analytics.
 
 ## Välj alternativ
 
-Det Customer Journey Analytics-paket som du är berättigad till avgör vilka metoder som är tillgängliga för sammanfogning, alternativ för inledande varaktighet för efterfyllning, fönster för uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Mer information finns i [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/customer-journey-analytics.html). Bestäm vilka alternativ som är tillgängliga innan du begär support.
+Det Customer Journey Analytics-paket som du är berättigad till avgör vilka sammanfogningsmetoder som är tillgängliga, alternativ för inledande varaktighet för bakåtfyllning, fönster för uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Mer information finns i [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html). Bestäm vilka alternativ som är tillgängliga innan du begär support.
 
 | | Customer Journey Analytics<br/>Välj | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
 |---|---|---|---|
@@ -47,7 +45,7 @@ Det Customer Journey Analytics-paket som du är berättigad till avgör vilka me
       - För diagrambaserad sammanfogning anger du namnutrymmet för det beständiga ID:t och det identitetsnamnutrymme som ska användas för att fråga efter identitetsdiagrammet.
    - Om datauppsättningen inte stöder `identityMap`:
       - För fältbaserad sammanfogning är kolumnnamnet för person-ID:t för den önskade datauppsättningen (personidentifieraren, som också fungerar som en länk mellan datauppsättningar i samband med en anslutning).
-      - För diagrambaserad sammanfogning används det identitetsnamnutrymme som ska användas för att fråga efter identitetsdiagrammet.
+      - För diagrambaserad sammanfogning är det identitetsnamnutrymme som du vill använda för att fråga efter identitetsdiagrammet.
    - Du kan välja mellan uppslagsfönster och uppspelningsfrekvens. Se ditt Customer Journey Analytics-paket för de [alternativ](#options) som är tillgängliga.
    - Namn på sandlåda.
 
@@ -62,3 +60,11 @@ Det Customer Journey Analytics-paket som du är berättigad till avgör vilka me
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
 När datavyn har konfigurerats kan du köra Customer Journey Analytics rapportanalys i alla kanaler och på alla enheter.
+
+## Begränsningar
+
+- Använd alla ändringar du gör i källhändelsens dataschema även i det nya sammanfogade dataschemat.
+
+- Om du tar bort källdatauppsättningen avbryts bearbetningen av den sammanfogade datauppsättningen och tas bort av systemet.
+
+- Dataanvändningsetiketter sprids inte automatiskt till det sammanslagna dataset-schemat. Om du har använt dataanvändningsetiketter på källdataschemat måste du använda dessa dataanvändningsetiketter manuellt på det sammanslagna dataset-schemat. Mer information finns i [Hantera dataanvändningsetiketter i Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview).

@@ -1,41 +1,38 @@
 ---
-title: Använd stygn
-description: Hur du använder stygn
+title: Aktivera textning
+description: Lär dig hur du aktiverar sammanfogning i anslutningsgränssnittet.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
 
-# Använd stygn
+# Aktivera sammanfogning
 
 Du kan aktivera sammanfogning för en eller flera händelsedatamängder som du har konfigurerat som en del av anslutningen. Det Customer Journey Analytics-paket du har licensierat avgör hur många händelsedatamängder du kan aktivera för sammanfogning.
 
-Du kan aktivera sammanfogning som en del av [datauppsättningsinställningarna](/help/connections/create-connection.md#dataset-settings) för en händelsedatauppsättning när du [skapar en anslutning](/help/connections/create-connection.md) eller när du [redigerar en anslutning](/help/connections/manage-connections.md#edit-a-connection).
+Du aktiverar sammanfogning som en del av [datauppsättningsinställningarna](/help/connections/create-connection.md#dataset-settings) för en händelsedatamängd när du [skapar en anslutning](/help/connections/create-connection.md) eller när du [redigerar en anslutning](/help/connections/manage-connections.md#edit-a-connection).
 
 ## Förutsättningar
 
-Så här aktiverar du sammanfogning av en händelsedatamängd i anslutningsgränssnittet:
+Du måste kontrollera och uppfylla kraven för sammanfogningsmetoden som du anger: [fältbaserad sammanfogning](fbs.md#prerequisites) eller [diagrambaserad sammanfogning](gbs.md#prerequisites).
 
-* Schemat som datauppsättningen baseras på ska ha:
-
-   * flera fält som är konfigurerade som en identitet och som gör att du kan välja olika värden för ett beständigt ID och ett person-ID.
-   * minst ett fält som är markerat som primär identitet med ett associerat namnutrymme om du vill använda identitetskartan och det primära ID-namnutrymmet för ett beständigt ID eller person-ID.
-
-* Om du vill använda diagrambaserad sammanfogning och du förväntar dig att händelsedatamängden ska bidra till identitetsdiagrammet (eftersom datamängden innehåller relevanta person-ID:n bredvid beständiga ID:n), bör du [aktivera datamängden för identitetstjänsten](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
 
 ## Preflight-kontroller
 
 Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
 
-* Se till att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
+* Om du ska använda XDM-schemafält för beständigt ID/person-ID kontrollerar du att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verifiera identitetstäckning för både beständigt ID och person-ID:
-   * Beständigt ID: Fråga efter 7 dagars data där ditt beständiga ID-fält inte är null och dividera med en fråga på 7 dagars data för alla händelser i datauppsättningen. Procentandelen bör vara över 95 %.
+
+   * **Beständigt ID**
+
+     Fråga 7 dagar efter data där det beständiga ID-fältet inte är null och dividera med en fråga på 7 dagar med data för alla händelser i datauppsättningen. Procentandelen bör vara över 95 %.
 
      Exempel på en fråga som du kan använda för verifiering:
 
@@ -60,39 +57,35 @@ Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händ
       * `{END_DATE}` är slutdatumet i standardformat. Till exempel: `2024-01-08 00:00:00`.
 
 
-   * Person-ID - Fråga 7 dagar efter data där ditt person-ID-fält inte är null och dividera med en fråga på 7 dagar med data för alla händelser i din datauppsättning. Procentandelen bör vara över 5%.
+   * **Person-ID**
+      * För diagrambaserade sammanfogningar måste identitetsdiagrammet innehålla fragment som länkar ID-värden från det valda beständiga ID-namnutrymmet och ID-namnutrymmet. Du kan köra ett test genom att gå till [Experience Platform Identity Graphics Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} och fråga efter diagrammet med några beständiga ID-testvärden. Kontrollera om dessa beständiga ID-värden är länkade till värden för person-ID i diagrammet.
+      * För fältbaserad sammanfogning frågar du 7 dagar med data där ditt person-ID-fält inte är null och dividerar med en fråga på 7 dagar med data för alla händelser i din datamängd. Den här procentandelen bör helst vara över 5 procent.
 
-     Exempel på en fråga som du kan använda för verifiering:
+        Exempel på en fråga som du kan använda för verifiering:
 
-     ```sql
-     SELECT
-       COUNT(*) AS total_events,
-       COUNT({PERSON_ID_FIELD}) AS events_with_personid,
-       ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
-     FROM 
-       {DATASET_TABLE_NAME}
-     WHERE
-       TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-       AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
-     ```
+        ```sql
+        SELECT
+          COUNT(*) AS total_events,
+          COUNT({PERSON_ID_FIELD}) AS events_with_personid,
+          ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
+        FROM 
+          {DATASET_TABLE_NAME}
+        WHERE
+          TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+          AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
+        ```
 
-     Var:
+        Var:
 
-      * `{PERSON_ID_FIELD}` är fältet för person-ID:t. Till exempel: `identityMap.crmId[0]`.
-      * `{DATASET_TABLE_NAME}` är tabellnamnet för händelsedatamängden.
-      * `{FORMAT_STRING}` är formatsträngen för tidsstämpelfältet. Till exempel: `MM/DD/YY HH12:MI AM`.
-      * `{START_DATE}` är startdatum. Till exempel: `2024-01-01 00:00:00`.
-      * `{END_DATE}` är slutdatumet i standardformat. Till exempel: `2024-01-08 00:00:00`.
+         * `{PERSON_ID_FIELD}` är fältet för person-ID:t. Till exempel: `identityMap.crmId[0]`.
+         * `{DATASET_TABLE_NAME}` är tabellnamnet för händelsedatamängden.
+         * `{FORMAT_STRING}` är formatsträngen för tidsstämpelfältet. Till exempel: `MM/DD/YY HH12:MI AM`.
+         * `{START_DATE}` är startdatum. Till exempel: `2024-01-01 00:00:00`.
+         * `{END_DATE}` är slutdatumet i standardformat. Till exempel: `2024-01-08 00:00:00`.
 
 
 
 ## Aktivera identitetssammanfogning
-
->[!NOTE]
->
->Om **[!UICONTROL Enable identity stitching]** inte är tillgängligt i gränssnittet Anslutningar använder du [förfrågningsproceduren för att aktivera sammanfogning](/help/stitching/use-stitching.md) för en datauppsättning.
-
-
 
 Om du vill aktivera sammanfogning går du till händelsedatamängdsavsnittet i dialogrutan **[!UICONTROL Add datasets]** eller **[!UICONTROL Edit dataset]**:
 
@@ -100,7 +93,7 @@ Om du vill aktivera sammanfogning går du till händelsedatamängdsavsnittet i d
 
 1. Välj **[!UICONTROL Enable identity stitching]**.
 
-   Om du aktiverar sammanfogning för en befintlig händelsedatamängd visar dialogrutan **[!UICONTROL Change Person ID]** konsekvenserna av en ändring av person-ID på grund av användningen av sammanfogning. Välj **[!UICONTROL Continue]** om du vill fortsätta.
+   Om du aktiverar eller inaktiverar sammanfogning för en sparad händelsedatamängd i anslutningen visar dialogrutan **[!UICONTROL Change Person ID]** konsekvenserna av en ändring av person-ID. Välj **[!UICONTROL Continue]** om du vill fortsätta.
 
    Dialogrutan **[!UICONTROL Enable identity stitching]** sammanfattar konsekvenserna av att sy ihop identiteter. Välj **[!UICONTROL Continue]** om du vill fortsätta.
 
@@ -126,18 +119,18 @@ Om du vill aktivera sammanfogning går du till händelsedatamängdsavsnittet i d
    >Se till att du har rätt att använda identitetsdiagrammet.
    >
 
-   Innan dess visas en **[!UICONTROL Change to identity graph]**-dialogruta för att kontrollera att du har [slutfört konfigurationen av identitetsdiagrammet för datauppsättningen](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) innan du använder identitetsdiagrammet för sammanfogning. Välj **[!UICONTROL Continue]** om du vill fortsätta.
+   Innan dess visas en **[!UICONTROL Change to identity graph]**-dialogruta för att kontrollera att du har slutfört konfigurationen av identitetsdiagrammet för datauppsättningen som en del av de [diagrambaserade förutsättningarna](/help/stitching/gbs.md#prerequisites) innan du använder identitetsdiagrammet för sammanfogning. Välj **[!UICONTROL Continue]** om du vill fortsätta.
 
    * Välj ett namnutrymme i listrutan **[!UICONTROL Namespace]**.
 
 
-1. Välj ett uppslagsfönster i listrutan **[!UICONTROL Lookback window]**. Vilka alternativ som är tillgängliga beror på vilket Customer Journey Analytics-paket du har rätt till.
+1. Välj ett uppspelningsfönster i listrutan **[!UICONTROL Replay window]**. Vilka alternativ som är tillgängliga beror på vilket Customer Journey Analytics-paket du har rätt till.
 
 När du har sparat en anslutning aktiveras sammanfogningsprocessen för datauppsättningar som är aktiverade för sammanfogning när dataanvändningen för dessa datauppsättningar börjar.
 
 >[!CAUTION]
 >
->För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**&#x200B;för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
+>För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
 >
 
 
@@ -154,4 +147,4 @@ Stitching som är aktiverat i gränssnittet Connections kan användas samtidigt 
 
 Du har t.ex. webbaserade sammanslagna datauppsättningar i datasjön som ett resultat av tidigare eller nuvarande begäran om sammanfogning. Du kan lägga till sammanfogade data från en call-center-datauppsättning med hjälp av gränssnittet Anslutningar för att kombinera dessa data med de webbaserade data.
 
-Så småningom kommer Adobe automatiskt att migrera dina begärandatabaserade dataset till den nya sammanfogningen av anslutningar.
+Så småningom kommer Adobe att migrera dina begärandatabaserade dataset till den nya sammanfogningen av anslutningar.

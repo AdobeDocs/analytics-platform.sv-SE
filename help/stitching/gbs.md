@@ -1,35 +1,30 @@
 ---
-title: Diagrambaserad utjämning
-description: Beskriver konceptet med och funktionen hos grafbaserade stygn
+title: Diagrambaserad textning
+description: Beskriver konceptet med och funktionen hos grafbaserade stygn.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 90a285fcd96866974087c53d402e85b4a2d83ccf
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
 
 # Diagrambaserad utjämning
 
-I diagrambaserade sammanfogningar anger du en händelsedatamängd samt det beständiga ID:t (cookie) och namnutrymmet för person-ID:t för den datauppsättningen. Diagrambaserad sammanfogning lägger till en ny kolumn för det sammanfogade ID:t i händelsedatamängden. Sedan används det beständiga ID:t för att fråga efter identitetsdiagrammet från Experience Platform Identity Service med det namnområde som anges för att uppdatera det sammanfogade ID:t.
-
->[!NOTE]
->
->Du måste kontrollera att datauppsättningen är [aktiverad för identitetstjänsten &#x200B;](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
->
+I diagrambaserade sammanfogningar anger du en händelsedatamängd. Och för den händelsedatauppsättningen anger du det beständiga ID:t (cookie) och det önskade namnutrymmet för sammanfogning från ID-värdena för identitetsdiagrammet. Diagrambaserad sammanfogning lägger till en ny kolumn för det sammanfogade ID:t i händelsedatamängden. Det beständiga ID:t används för att fråga efter identitetsdiagrammet från Experience Platform Identity Service, med namnutrymmet för sammanslagning angivet, för att uppdatera det sammanfogade ID:t.
 
 
 ![Diagrambaserad utjämning](/help/stitching/assets/gbs.png)
 
 ## IdentityMap
 
-Diagrambaserad sammanfogning stöder användning av fältgruppen [`identityMap` &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
+Diagrambaserad sammanfogning stöder användning av fältgruppen [`identityMap` ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
 
 - Använd den primära identiteten i `identityMap` namnutrymmen för att definiera persistentID:
-   - Om flera primära identiteter hittas i olika namnutrymmen sorteras identiteterna i namnutrymmena lexigrafiskt och den första identiteten markeras.
+   - Om flera primära identiteter hittas i olika namnutrymmen sorteras identiteterna i namnutrymmena lexikografiskt och den första identiteten markeras.
    - Om flera primära identiteter hittas i ett och samma namnutrymme markeras den första lexikografiska tillgängliga primära identiteten.
 
   I exemplet nedan resulterar namnutrymmen och identiteter i en sorterad lista med primära identiteter och slutligen den valda identiteten.
@@ -98,7 +93,7 @@ Med hjälp av häftning blir det minst två omgångar data i en given datauppsä
 
 - **Liveutjämning**: försöker sammanfoga varje träff (händelse) när den kommer in, med det beständiga ID:t för att leta upp person-ID:t för det valda namnområdet genom att fråga efter identitetsdiagrammet. Om person-ID:t är tillgängligt från sökningen sammanfogas detta person-ID omedelbart.
 
-- **Spela upp sammanfogning**: *spelar upp* data baserat på uppdaterade identiteter från identitetsdiagrammet. På den här scenen sammanfogas träffar från tidigare okända enheter (beständiga ID:n) när identitetsdiagrammet har matchat identiteten för ett namnutrymme. Uppspelningen bestäms av två parametrar: **frequency** och **lookback window**. Adobe erbjuder följande kombinationer av dessa parametrar:
+- **Spela upp sammanfogning**: *spelar upp* data baserat på uppdaterade identiteter från identitetsdiagrammet. På den här scenen sammanfogas träffar från tidigare okända enheter (beständiga ID:n) när identitetsdiagrammet har matchat identiteten för ett namnutrymme. Två parametrar bestämmer återspelningen: **frequency** och **lookback window**. Adobe erbjuder följande kombinationer av dessa parametrar:
    - **Daglig sökning efter en daglig frekvens**: Data spelas upp varje dag med ett 24-timmars uppslagsfönster. Det här alternativet har en fördel som innebär att det är mycket vanligare att spela upp filer, men oautentiserade profiler måste autentiseras samma dag som de besöker webbplatsen.
    - **Veckovis uppslag med en veckofrekvens**: Data spelas upp en gång i veckan med ett veckovisa uppslagsfönster (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en vecka gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
    - **Veckovis uppspelning på en veckofrekvens**: Data spelas upp en gång i veckan med ett varannan vecka-uppslag (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än två veckor gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
@@ -111,13 +106,13 @@ Med hjälp av häftning blir det minst två omgångar data i en given datauppsä
   >Frigörandeprocessen, som en del av begäran om integritet, ändras i början av 2025. Den aktuella enhetsprocessen ändrar namn på händelser med den senaste versionen av kända identiteter. Denna omfördelning av händelser till en annan identitet kan få oönskade juridiska konsekvenser. För att åtgärda dessa problem uppdaterar den nya upplösningsprocessen från och med 2025 händelser som omfattas av sekretessposten med det beständiga ID:t.
   > 
 
-Data utanför uppslagsfönstret spelas inte upp igen. En profil måste autentiseras inom ett angivet uppslagsfönster för att ett oautentiserat besök ska kunna identifieras tillsammans. När en enhet känns igen är den sydd från den punkten framåt.
+Data utanför uppslagsfönstret spelas inte upp igen. En profil måste autentiseras inom ett visst fönster för att ett oautentiserat besök och ett autentiserat besök ska kunna identifieras tillsammans. När en enhet känns igen är den sydd från den punkten framåt.
 
 Tänk på följande två identitetsdiagramuppdateringar över tiden för besökare A (med beständigt ID `246`) och besökare B (med beständigt ID `3579`) och hur dessa uppdateringar påverkar stegen i diagrambaserad sammanfogning.
 
 ![Identitetsdiagram 3579](assets/identity-graphs.svg)
 
-Du kan visa ett identitetsdiagram över tiden för en viss profil med [Identity Graph Viewer](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-viewer). Se även [Identitetstjänstens länkningslogik](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-linking-logic) för att få en bättre förståelse för logiken som används vid länkning av identiteter.
+Du kan visa ett identitetsdiagram över tiden för en viss profil med [Identity Graph Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Se även [Identitetstjänstens länkningslogik](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) för att få en bättre förståelse för logiken som används vid länkning av identiteter.
 
 ### Steg 1: Liveutjämning
 
@@ -206,8 +201,13 @@ Följande tabell representerar samma data som ovan, men visar vilken effekt en s
 Följande krav gäller specifikt för diagrambaserad sammanfogning:
 
 - Händelsedatauppsättningen i Adobe Experience Platform, som du vill använda sammanfogning på, måste ha en kolumn som identifierar en profil på varje rad, **beständigt ID**. Till exempel ett besökar-ID som genererats av ett Adobe Analytics AppMeasurement-bibliotek eller ett ECID som genererats av Experience Platform identitetstjänst.
-- Det beständiga ID:t måste också vara [definierat som en identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/fields/identity) i schemat.
-- Identitetsdiagrammet från Experience Platform Identity Service måste ha ett namnutrymme (till exempel `Email` eller `Phone`) som du vill använda vid sammanfogning för att matcha **person-ID**. Mer information finns i [Experience Platform Identity Service](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/home).
+- Identitetsdiagrammet från Experience Platform Identity Service måste ställas in på sandlådenivå innan Graph-baserad sammanfogning aktiveras.
+   - Identitetsdiagrammet måste ha ett namnutrymme (t.ex. `Email` eller `Phone`) som du vill använda vid sammanfogning för att matcha person-ID:t.
+   - Identitetsdiagrammet måste fyllas i med identitetsinformation från alla relevanta datauppsättningar (av typen *event* eller *profile* och som innehåller minst två användbara namnutrymmen med ID-värden).
+   - Alla datauppsättningar som innehåller sådana relevanta identiteter måste vara [aktiverade för datainhämtning från identitetsdiagram](faq.md#enable-a-dataset-for-the-identity-service). Detta gör att inkommande identiteter läggs till i diagrammet över tiden från alla nödvändiga källor.
+   - Om du redan använder kunddataprofilen i realtid eller Adobe Journey Optimizer ett tag bör diagrammet redan vara inställt i viss utsträckning.<br/>Om det också krävs en bakåtfyllning av historiska fogar för datauppsättningen som har aktiverats med diagrambaserad sammanfogning, bör diagrammet redan innehålla historiska identiteter för hela perioden för att få önskat sammanfogningsresultat.
+- Om du vill använda diagrambaserad sammanfogning och du förväntar dig att händelsedatamängden ska bidra till identitetsdiagrammet, bör du [aktivera datamängden för identitetstjänsten](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
+- Det beständiga ID:t och person-ID:t kan användas med [identityMap](#identitymap). Eller så kan det beständiga ID:t och person-ID:t vara fält från XDM-schemat. I så fall måste fälten [definieras som en identitet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) i schemat.
 
 >[!NOTE]
 >
@@ -221,7 +221,7 @@ Följande begränsningar gäller specifikt för diagrambaserad sammanfogning:
 - Tidsstämplar beaktas inte vid sökning efter person-ID med det angivna namnutrymmet. Det är alltså möjligt att ett beständigt ID sammanfogas med ett person-ID från en post som har en tidigare tidsstämpel.
 - I scenarier med delade enheter, där namnutrymmet i diagrammet innehåller flera identiteter, används den första lexikografiska identiteten. Om namnutrymmesbegränsningar och -prioriteringar konfigureras som en del av releasen av regler för diagramlänkning, används den senast autentiserade användarens identitet. Mer information finns i [Delade enheter](/help/use-cases/stitching/shared-devices.md).
 - I identitetsdiagrammet finns det en hård gräns på tre månader för att efterfylla identiteter. Du använder bakåtfyllnadsidentiteter om du inte använder ett Experience Platform-program, som Customer Data Platform i realtid, för att fylla i identitetsdiagrammet.
-- [Identitetstjänstens skyddsprofiler](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/guardrails) gäller. Se till exempel följande [statiska begränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/guardrails#static-limits):
+- [Identitetstjänstens skyddsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) gäller. Se till exempel följande [statiska begränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Maximalt antal identiteter i ett diagram: 50.
    - Maximalt antal länkar till en identitet för ett enskilt batchintag: 50.
    - Maximalt antal identiteter i en XDM-post för diagraminmatning: 20.

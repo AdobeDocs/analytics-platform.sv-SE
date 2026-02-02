@@ -1,13 +1,13 @@
 ---
-title: Fältbaserad stygn
-description: Förklaring av konceptet och hur fältbaserad sammanfogning fungerar
+title: Fältbaserad textning
+description: Beskriver konceptet för och hur fältbaserad sammanfogning fungerar.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 90a285fcd96866974087c53d402e85b4a2d83ccf
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1711'
 ht-degree: 2%
 
 ---
@@ -21,10 +21,10 @@ I fältbaserad sammanfogning anger du en händelsedatamängd samt det beständig
 
 ## IdentityMap
 
-Fältbaserad sammanfogning stöder användning av fältgruppen [`identityMap` &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
+Fältbaserad sammanfogning stöder användning av fältgruppen [`identityMap` ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
 
 - Använd den primära identiteten i `identityMap` namnutrymmen för att definiera persistentID:
-   - Om flera primära identiteter hittas i olika namnutrymmen sorteras identiteterna i namnutrymmena lexigrafiskt och den första identiteten markeras.
+   - Om flera primära identiteter hittas i olika namnutrymmen sorteras identiteterna i namnutrymmena lexikografiskt och den första identiteten markeras.
    - Om flera primära identiteter hittas i ett och samma namnutrymme markeras den första lexikografiska tillgängliga primära identiteten.
 
   I exemplet nedan resulterar namnutrymmen och identiteter i en sorterad lista med primära identiteter och slutligen den valda identiteten.
@@ -94,7 +94,7 @@ Med hjälp av häftning blir det minst två omgångar data i en given datauppsä
 
 - **Liveutjämning**: försöker sammanfoga varje träff (händelse) när den kommer in. Träffar från enheter som är *nya* till datauppsättningen (som aldrig har autentiserats) sammanfogas vanligtvis inte på den här nivån. Träffar från enheter som redan känns igen sammanfogas omedelbart.
 
-- **Spela upp sammanfogning**: *spelar upp*-data baserat på unika identifierare (person-ID). På den här scenen sammanfogas träffar från tidigare okända enheter (beständiga ID:n) (till person-ID:n). Uppspelningen bestäms av två parametrar: **frequency** och **lookback window**. Adobe erbjuder följande kombinationer av dessa parametrar:
+- **Spela upp sammanfogning**: *spelar upp*-data baserat på unika identifierare (person-ID). På den här scenen sammanfogas träffar från tidigare okända enheter (beständiga ID:n) (till person-ID:n). Två parametrar bestämmer återspelningen: **frequency** och **lookback window**. Adobe erbjuder följande kombinationer av dessa parametrar:
    - **Daglig sökning efter en daglig frekvens**: Data spelas upp varje dag med ett 24-timmars uppslagsfönster. Det här alternativet har en fördel som innebär att det är mycket vanligare att spela upp filer, men oautentiserade profiler måste autentiseras samma dag som de besöker webbplatsen.
    - **Veckovis uppslag med en veckofrekvens**: Data spelas upp en gång i veckan med ett veckovisa uppslagsfönster (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än en vecka gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
    - **Veckovis uppspelning på en veckofrekvens**: Data spelas upp en gång i veckan med ett varannan vecka-uppslag (se [alternativ](#options)). Det här alternativet ger en fördel som gör att oautentiserade sessioner kan autentiseras mycket lättare. Ej sammanfogade data som är mindre än två veckor gamla bearbetas dock inte om förrän nästa veckovisa uppspelning.
@@ -108,7 +108,7 @@ Med hjälp av häftning blir det minst två omgångar data i en given datauppsä
   > 
 
 
-Data utanför uppslagsfönstret spelas inte upp igen. En profil måste autentiseras inom ett angivet uppslagsfönster för att ett oautentiserat besök ska kunna identifieras tillsammans. När en enhet känns igen är den sys ihop från den punkten framåt.
+Data utanför uppslagsfönstret spelas inte upp igen. En profil måste autentiseras inom ett visst fönster för att ett oautentiserat besök och ett autentiserat besök ska kunna identifieras tillsammans. När en enhet känns igen är den sys ihop från den punkten framåt.
 
 ### Steg 1: Liveutjämning
 
@@ -214,7 +214,7 @@ Följande krav gäller specifikt för fältbaserad sammanfogning:
    - Ett **person-ID**, en identifierare som bara är tillgänglig på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en profil autentiseras. Du kan använda praktiskt taget vilken identifierare som helst. Stitching ser till att det här fältet innehåller den faktiska person-ID-informationen. För bästa resultat av sammanfogning bör ett person-ID skickas inom datauppsättningens händelser minst en gång för varje beständigt ID. Om du tänker ta med den här datauppsättningen i en Customer Journey Analytics-anslutning bör de andra datauppsättningarna också ha en liknande gemensam identifierare.
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
@@ -223,11 +223,11 @@ Följande krav gäller specifikt för fältbaserad sammanfogning:
 Följande begränsningar gäller specifikt för fältbaserad sammanfogning:
 
 - Aktuella funktioner för manuell inmatning är begränsade till ett steg (beständigt ID till person-ID). Återinmatning i flera steg (till exempel beständigt ID till ett person-ID och till ett annat person-ID) stöds inte.
-- Om en enhet delas av flera personer och det totala antalet övergångar mellan användare överstiger 50 000, upphör Customer Journey Analytics att sammanfoga data för den enheten.
+- Om flera personer delar en enhet och det totala antalet övergångar mellan användare överstiger 50 000, upphör Customer Journey Analytics att sammanfoga data för den enheten.
 - Anpassade ID-mappningar som används i din organisation stöds inte.
 - Stiting är skiftlägeskänsligt. För datauppsättningar som genereras via Analytics-källkopplingen rekommenderar Adobe att du granskar alla VISTA-regler eller bearbetningsregler som gäller för person-ID-fältet. Denna granskning säkerställer att inga av dessa regler inför nya formulär med samma ID. Du bör t.ex. se till att inga VISTA-regler eller bearbetningsregler för en del av händelserna endast inför lägre radering av ID-fältet.
 - När du använder Stitching kombineras eller sammanfogas inte fält.
 - Fältet för person-ID ska innehålla en enda typ av ID (ID:n från ett enda namnområde). Fältet för person-ID bör till exempel inte innehålla en kombination av inloggnings-ID och e-post-ID.
 - Om flera händelser inträffar med samma tidsstämpel för samma beständiga ID, men med olika värden i person-ID-fältet, väljs ID baserat på alfabetisk ordning. Om ett beständigt ID A har två händelser med samma tidsstämpel och en av händelserna anger Bob och den andra anger Ann, väljer Ann när de sammanfogar.
 - Var försiktig med scenarier där person-ID:n innehåller platshållarvärden, till exempel `Undefined`. Mer information finns i [Vanliga frågor](faq.md).
-- Du kan inte använda samma namnutrymme, både beständigt ID och person-ID, eftersom namnutrymmena måste kunna utesluter varandra.
+- Du kan inte använda samma namnutrymme för både beständigt ID och person-ID. Namnutrymmena måste vara ömsesidigt uteslutande.

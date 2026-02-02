@@ -1,13 +1,13 @@
 ---
 title: Vanliga frågor om titlar
-description: Vanliga frågor och svar
+description: Läs mer om vanliga frågor och svar om hur du lagar stygn.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2149'
 ht-degree: 2%
 
 ---
@@ -23,8 +23,8 @@ Här är några vanliga frågor om stygn:
 Du kan använda en Flow-visualisering med datauppsättnings-ID-dimensionen.
 
 1. Logga in på [Customer Journey Analytics](https://analytics.adobe.com) och skapa ett tomt Workspace-projekt.
-2. Välj fliken **[!UICONTROL ** Visualiseringar **]** till vänster och dra en **[!UICONTROL **&#x200B; Flödesvisualisering &#x200B;**]** till arbetsytan till höger.
-3. Markera fliken **[!UICONTROL ** Komponenter **]** till vänster och dra dimensionen **[!UICONTROL ** Datauppsättning-ID **]** till mittplatsen **[!UICONTROL **&#x200B; Dimension eller Item &#x200B;**]**.
+2. Välj fliken **[!UICONTROL ** Visualiseringar **]** till vänster och dra en **[!UICONTROL ** Flödesvisualisering **]** till arbetsytan till höger.
+3. Markera fliken **[!UICONTROL ** Komponenter **]** till vänster och dra dimensionen **[!UICONTROL ** Datauppsättning-ID **]** till mittplatsen **[!UICONTROL ** Dimension eller Item **]**.
 4. Den här flödesrapporten är interaktiv. Om du vill expandera flödena till efterföljande eller föregående sidor markerar du något av värdena. Använd högerklicksmenyn för att expandera eller komprimera kolumner. Olika dimensioner kan också användas i samma flödesrapport.
 
 Om du vill byta namn på dimensionsobjekt för datauppsättnings-ID kan du använda en uppslagsdatauppsättning.
@@ -55,11 +55,11 @@ Mer information finns i [Använda delade enheter](/help/use-cases/stitching/shar
 
 +++ Hur hanteras situationer där en person har många beständiga ID:n när sammanfogning används?
 
-I vissa fall kan en enskild användare associera med många beständiga ID:n. Ett exempel är en person som ofta tar bort webbläsarens cookies eller använder webbläsarens privata läge/inkognito-läge.
+I vissa fall kan en enskild användare associera med många beständiga ID:n. Ett exempel är en person som ofta rensar webbläsarens cookies eller använder webbläsarens privata läge/inkognito-läge.
 
 För fältbaserad stygn är antalet beständiga ID:n irrelevant till förmån för person-ID:t. En enskild användare kan tillhöra ett valfritt antal enheter utan att det påverkar Customer Journey Analytics förmåga att fästa ihop olika enheter.
 
-För diagrambaserade sammanfogningar kan en person ha många beständiga ID:n i identitetsdiagrammet. Diagrambaserad sammanfogning använder det beständiga ID:t baserat på det angivna namnutrymmet. Om det finns ett mer beständigt ID för samma namnutrymme används det lexicografiska först beständiga ID:t.
+För diagrambaserade sammanfogningar kan en person ha många beständiga ID:n i identitetsdiagrammet. Diagrambaserad sammanfogning använder det beständiga ID:t baserat på det angivna namnutrymmet. Om det finns mer beständiga ID:n för samma namnutrymme används det lexicografiska först beständiga ID:t.
 
 +++
 
@@ -75,7 +75,7 @@ Livesutsättning är tillgänglig cirka en vecka efter det att Adobe möjliggör
 
 +++ Vad är skillnaden mellan enhetsövergripande analys (en funktion i traditionell analys) och flerkanalsanalys?
 
-[Enhetsövergripande analys](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=sv-SE) är en funktion som är specifik för traditionella Adobe Analytics och som gör att du kan förstå hur människor arbetar på olika enheter. Det finns två arbetsflöden för att länka samman enhetsdata: fältbaserad sammanfogning och enhetsgrafen.
+[Enhetsövergripande analys](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview) är en funktion som är specifik för traditionella Adobe Analytics och som gör att du kan förstå hur människor arbetar på olika enheter. Det finns två arbetsflöden för att länka samman enhetsdata: fältbaserad sammanfogning och enhetsgrafen.
 
 Flerkanalsanalys är ett användningsfall som är specifikt för Customer Journey Analytics och som gör det möjligt att förstå hur människor arbetar på olika enheter och i olika kanaler. Den sammanfogar en datauppsättnings person-ID så att den datauppsättningen kan kombineras med andra datauppsättningar. Den här funktionen fungerar i design på ungefär samma sätt som fältbaserad stygning mellan olika enheter, men implementeringen är annorlunda på grund av att dataarkitekturen skiljer sig mellan traditionell Analytics och Customer Journey Analytics. Mer information finns i [Stitching](overview.md) och [cross-channel analysis](../use-cases/cross-channel/cross-channel.md) use case.
 
@@ -85,7 +85,7 @@ Flerkanalsanalys är ett användningsfall som är specifikt för Customer Journe
 
 +++ Hur hanterar Stitching sekretessförfrågningar?
 
-Adobe hanterar förfrågningar om integritet i enlighet med lokal och internationell lagstiftning. Adobe erbjuder [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=sv-SE) för att skicka in dataåtkomst och borttagningsbegäranden. Förfrågningarna gäller både den ursprungliga och den inmatade datauppsättningen.
+Adobe hanterar förfrågningar om integritet i enlighet med lokal och internationell lagstiftning. Adobe erbjuder [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home) för att skicka in dataåtkomst och borttagningsbegäranden. Förfrågningarna gäller både den ursprungliga och den inmatade datauppsättningen.
 
 >[!IMPORTANT]
 >
@@ -114,7 +114,7 @@ Tänk dig följande data för identiteter, händelser före sammanfogning och ef
 | | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
 
 
-**Aktuell process för sekretesspolicy**
+**Aktuell process för sekretessförfrågningar**
 
 När en sekretessförfrågan tas emot för kunden med CustID Bob tas raderna med genomstrykningsposter bort. Andra händelser får en ny titel med hjälp av identitetskartan. Det första sammanslagna ID:t i den sammanslagna datauppsättningen uppdateras till **Alex**.
 
@@ -169,8 +169,8 @@ När en sekretessförfrågan tas emot för kunden med CustID Bob tas raderna med
 
 Om det beständiga ID-fältet är tomt för en händelse i en datauppsättning som sammanfogas, bestäms det sammanfogade ID:t för den händelsen på ett av två sätt:
 
-* Om fältet för transient ID inte är tomt använder Customer Journey Analytics värdet i transient ID som sammanfogat ID.
-* Om det tillfälliga ID-fältet är tomt lämnar Customer Journey Analytics även det sammanslagna ID:t tomt. I det här fallet är beständigt ID, tillfälligt ID och sammanfogat ID tomma för händelsen. Dessa typer av händelser tas bort från alla Customer Journey Analytics-anslutningar som använder datauppsättningen som sammanfogas där sammanfogat ID valdes som person-ID.
+* Om person-ID-fältet inte är tomt använder Customer Journey Analytics värdet i person-ID som sammanfogat ID.
+* Om fältet för person-ID är tomt lämnas också det sammanslagna ID:t tomt. I det här fallet är beständigt ID, person-ID och sammanfogat ID tomma för händelsen. Dessa typer av händelser tas bort från alla Customer Journey Analytics-anslutningar som använder datauppsättningen som sammanfogas där det sammanfogade ID:t valdes som person-ID.
 
 +++
 
@@ -205,11 +205,11 @@ Vissa mätvärden i Customer Journey Analytics liknar mätvärden i traditionell
 
 | **Customer Journey Analytics sammanfogade data** | **Customer Journey Analytics oschade data** | **Adobe Analytics** | **Analysera Ultimate med CDA** |
 | ----- | ----- | ----- | ----- |
-| **Personer** = Antal distinkta person-ID:n där sammanfogade ID väljs som person-ID. **Personer** kan vara högre eller lägre än **Unika besökare** i traditionella Adobe Analytics, beroende på utfallet av sammanfogningsprocessen. | **Personer** = Antal distinkta person-ID:n baserat på den kolumn som valts som person-ID. **Personer** i Analytics-källanslutningsdatauppsättningar liknar **Unika besökare** i traditionella Adobe Analytics om `endUserIDs._experience.aaid.id` används som person-ID i Customer Journey Analytics. | **Unika besökare** = Antal distinkta besökar-ID. **Unika besökare** kanske inte är samma som antalet distinkta **ECID** s. | Se [Personer](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=sv-SE). |
-| **Sessioner**: Definieras baserat på sessionsinställningarna i Customer Journey Analytics datavy. Sammanfogningsprocessen kan kombinera enskilda sessioner från flera enheter till en enda session. | **Sessioner**: Definieras baserat på sessionsinställningarna som anges i datavyn för Customer Journey Analytics. | **Besök**: Se [Besök](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=sv-SE). | **Besök**: Definieras baserat på sessionsinställningarna som anges i den virtuella [CDA-rapportsviten](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=sv-SE). |
-| **Händelser** = antal rader i sammanslagna data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **förekomster** i traditionella Adobe Analytics. Observera dock Vanliga frågor och svar ovan om rader med ett tomt Persistent ID. | **Händelser** = antal rader i osydda data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **förekomster** i traditionella Adobe Analytics. Observera dock att om några händelser har ett tomt person-ID i de icke sammansatta data som finns i Experience Platform Data Lake, ingår inte dessa händelser i Customer Journey Analytics. | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=sv-SE). | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=sv-SE). |
+| **Personer** = Antal distinkta person-ID:n där sammanfogade ID väljs som person-ID. **Personer** kan vara högre eller lägre än **Unika besökare** i traditionella Adobe Analytics, beroende på utfallet av sammanfogningsprocessen. | **Personer** = Antal distinkta person-ID:n baserat på den kolumn som valts som person-ID. **Personer** i Analytics-källanslutningsdatauppsättningar liknar **Unika besökare** i traditionella Adobe Analytics om `endUserIDs._experience.aaid.id` används som person-ID i Customer Journey Analytics. | **Unika besökare** = Antal distinkta besökar-ID. **Unika besökare** kanske inte är samma som antalet distinkta **ECID** s. | Se [Personer](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/people). |
+| **Sessioner**: Definieras baserat på sessionsinställningarna i Customer Journey Analytics datavy. Sammanfogningsprocessen kan kombinera enskilda sessioner från flera enheter till en enda session. | **Sessioner**: Definieras baserat på sessionsinställningarna som anges i datavyn för Customer Journey Analytics. | **Besök**: Se [Besök](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/visits). | **Besök**: Definieras baserat på sessionsinställningarna som anges i den virtuella [CDA-rapportsviten](https://experienceleague.adobe.com/en/docs/analytics/components/cda/setup). |
+| **Händelser** = antal rader i sammanslagna data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **förekomster** i traditionella Adobe Analytics. Observera dock Vanliga frågor och svar ovan om rader med ett tomt Persistent ID. | **Händelser** = antal rader i osydda data i Customer Journey Analytics. Det här måttet ligger vanligtvis nära **förekomster** i traditionella Adobe Analytics. Observera dock att om några händelser har ett tomt person-ID i de icke sammansatta data som finns i Experience Platform Data Lake, ingår inte dessa händelser i Customer Journey Analytics. | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences). | **Förekomster**: Se [Förekomster](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences). |
 
-Andra mätvärden kan likna i Customer Journey Analytics och Adobe Analytics. Det totala antalet för [anpassade Adobe Analytics-händelser](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=sv-SE) 1-100 är till exempel jämförbart mellan traditionella Adobe Analytics och Customer Journey Analytics (oavsett om de är sammanfogade eller inte). [Skillnader i funktioner](/help/getting-started/aa-vs-cja/cja-aa.md)), t.ex. borttagning av dubbletter av händelser mellan Customer Journey Analytics och Adobe Analytics, kan orsaka diskrepans mellan de två produkterna.
+Andra mätvärden kan likna i Customer Journey Analytics och Adobe Analytics. Det totala antalet för [anpassade Adobe Analytics-händelser](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/custom-events) 1-100 är till exempel jämförbart mellan traditionella Adobe Analytics och Customer Journey Analytics (oavsett om de är sammanfogade eller inte). [Skillnader i funktioner](/help/getting-started/aa-vs-cja/cja-aa.md)), t.ex. borttagning av dubbletter av händelser mellan Customer Journey Analytics och Adobe Analytics, kan orsaka diskrepans mellan de två produkterna.
 
 +++
 
@@ -225,7 +225,7 @@ Ja, Customer Journey Analytics kan använda Identity Map-fält för både [fält
 
 +++ Kommer data att behöva kapslas om för att växla från fältbaserad sammanfogning till diagrambaserad sammanfogning?
 
-Data behöver inte kapslas in på nytt i Experience Platform, men de måste konfigureras om i Customer Journey Analytics. Följ dessa steg:
+Data behöver inte hämtas in på nytt till Experience Platform. Data måste dock konfigureras om i Customer Journey Analytics. Följ dessa steg:
 
 1. Skapa den nya diagrambaserade sydda datauppsättningen med hjälp av diagrambaserad sammanfogning.
 1. Skapa en ny temporär anslutning med ett mycket litet tidsfönster med data.
@@ -248,33 +248,35 @@ Inte om du följer instruktionerna ovan. Annars ber vi Adobe Consulting om ytter
 
 +++ Hur aktiverar man en datauppsättning enbart för identitetstjänsten? 
 
-Du måste se till att en datauppsättning är aktiverad för identitetstjänsten för att kunna använda datauppsättningen i diagrambaserade sammanfogningar.
+Se till att en datauppsättning är aktiverad för identitetstjänsten så att den kan använda datauppsättningen i diagrambaserade sammanfogningar.
 
 Du behöver inte ha någon licens för Real-Time Customer Data Platform för att använda diagrambaserad stygn. Diagrambaserad sammanfogning baseras på ett tillgängligt identitetsdiagram och inte på kundprofiler i realtid.
 
-Om du bara vill aktivera en datauppsättning för identitetstjänsten använder du en `POST`-begäran till `/datasets`-slutpunkten som bara använder taggen `unifiedIdentity`. Exempel:
+Om du vill kontrollera en befintlig datauppsättning och aktivera datauppsättningen enbart för identitetstjänsten använder du en `PATCH`-begäran till `/datasets`-slutpunkten som bara använder `unifiedIdentity`-taggen. Exempel:
 
 ```shell
-curl -X POST \
-  https://platform.adobe.io/data/foundation/catalog/dataSets \
-  -H 'Content-Type: application/json' \
+curl -X PATCH \
+  https://platform.adobe.io/data/foundation/catalog/dataSets/{DATASET_ID} \
+  -H 'Content-Type:application/json-patch+json' \
   -H 'Authorization: Bearer {ACCESS_TOKEN}' \
   -H 'x-api-key: {API_KEY}' \
   -H 'x-gw-ims-org-id: {ORG_ID}' \
   -H 'x-sandbox-name: {SANDBOX_NAME}' \
-  -d '{
-    "schemaRef": {
-        "id": "https://ns.adobe.com/{TENANT_ID}/schemas/31670881463308a46f7d2cb09762715",
-        "contentType": "application/vnd.adobe.xed-full-notext+json; version=1"
-    },
-    "tags": {
-       "unifiedIdentity": ["enabled:true"]
-    }
-  }'
+  -d '[
+        { "op": "add", "path": "/tags/unifiedProfile", "value": ["enabled:true"] }
+      ]'
 ```
 
 Om taggen `unifiedProfile` används i begäran returneras ett fel, även om du inte är licensierad för kunddataprofilen i realtid.
 
-Mer information finns i [Skapa en datauppsättning aktiverad för profil och identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity).
+Mer information finns i [Skapa en datauppsättning aktiverad för profil och identitet](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset).
 
 +++ 
+
+
+## Namnutrymmesvärden med rutor
+
++++ Varför matchar namnutrymmesvärden inte alltid det ID-namnutrymmesvärde som du kan använda i en annan datauppsättning i CJA-anslutningen?
+
+Namnutrymmesvärden som sammanfogats är som standard gemener. `custEmail` blir alltså `custemail`. Om du har en annan datauppsättning med ID-namnområdesvärdet `custEmail` matchar inte de två värdena. Om du vill kringgå det här beteendet i rapporter kan du använda den härledda fältfunktionen [lowercase()](/help/data-views/derived-fields/derived-fields.md#lowercase) för att matcha värden för identitetsnamnrymden.
+

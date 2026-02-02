@@ -1,13 +1,13 @@
 ---
-title: Validera sammanfogning
-description: Hur man validerar sammanfogning
+title: Validera inställningar
+description: Lär dig hur du validerar sammanfogning.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 99b434e62d859c96bfda53731f3f8a0750850501
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Analysmetoderna innehåller [inställningar för datavykomponenten](/help/data-v
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching Enablement and validation](https://video.tv.adobe.com/v/3478124?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching Enablement and validation](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ Dessutom måste du lägga till två sammanslagningsmått som baseras på föreko
    I exemplet nedan fungerar `personalEmail.address` som identitet och används för att skapa måttet **[!UICONTROL _Email set]**.
    ![Mätvärde för e-postuppsättning](assets/emailset-metric.png)
 
-1. Använd fältet `stitchedID.namespae.code` för att skapa en **[!UICONTROL Email stitched namespace]**-dimension. Se till att du anger [Inkludera komponentinställningar för utelämna värden](/help/data-views/component-settings/include-exclude-values.md), så du bör bara ta hänsyn till värden i namnområdet som du försöker höja dataraderna till.
+1. Använd fältet `stitchedID.namespae.code` för att skapa en **[!UICONTROL Email stitched namespace]**-dimension. Se till att du anger [Inkludera exkluderingsvärden i komponentinställningarna](/help/data-views/component-settings/include-exclude-values.md), så att du bara tar hänsyn till värden i namnområdet som du försöker höja dataraderna till.
    1. Välj **[!UICONTROL Set include/exclude values]**.
    1. Välj **[!UICONTROL If all criteria are met]** som **[!UICONTROL Match]**.
    1. Ange **[!UICONTROL Equals]** `email` som **[!UICONTROL Criteria]** för att välja händelser som har höjts till e-postnamnområdet.
@@ -94,7 +94,7 @@ När du skapar en anslutning måste du definiera vilket fält eller vilken ident
 Du vill mäta identifieringsprestanda före och efter sammanfogning. Om du vill göra det skapar du ytterligare tre beräknade mått:
 
 1. Ett **[!UICONTROL Stitched authentication rate]** beräknat mått som beräknar antalet händelser där namnutrymmet som sammanfogats har angetts till önskad identitet över det totala antalet händelser. När du konfigurerade datavyn skapade du ett **[!UICONTROL Email stitched namespace]**-mått som innehöll ett filter som endast skulle räknas när en händelse har ett namnutrymme som är inställt på e-post. Det beräknade måttet använder det här **[!UICONTROL Email stitched namespace]**-måttet för att ge en indikation på vilken procentandel av data som har den önskade identiteten.
-   ![Beräknad autentiseringsfrekvens för statiska element &#x200B;](assets/calcmetric-stitchedauthenticationrate.png)
+   ![Beräknad autentiseringsfrekvens för statiska element ](assets/calcmetric-stitchedauthenticationrate.png)
 
 1. Ett **[!UICONTROL Percent increase]** beräknat mått som beräknar den råa procentuella ändringen mellan den aktuella identifieringsfrekvensen och den sammanslagna.
    ![Procentökning beräknat mätvärde](assets/calcmetric-percentincrease.png)
