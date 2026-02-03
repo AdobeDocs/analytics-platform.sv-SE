@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: 8f7c1f2a89c10be9b33f6e06fcff287e275767cf
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Du måste kontrollera och uppfylla kraven för sammanfogningsmetoden som du ange
 
 Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
 
-* Om du ska använda XDM-schemafält för beständigt ID/person-ID kontrollerar du att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
+* Om du ska använda XDM-schemafält för beständigt ID eller person-ID kontrollerar du att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verifiera identitetstäckning för både beständigt ID och person-ID:
 
    * **Beständigt ID**
@@ -58,7 +58,7 @@ Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händ
 
 
    * **Person-ID**
-      * För diagrambaserade sammanfogningar måste identitetsdiagrammet innehålla fragment som länkar ID-värden från det valda beständiga ID-namnutrymmet och ID-namnutrymmet. Du kan köra ett test genom att gå till [Experience Platform Identity Graphics Viewer](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} och fråga efter diagrammet med några beständiga ID-testvärden. Kontrollera om dessa beständiga ID-värden är länkade till värden för person-ID i diagrammet.
+      * För diagrambaserade sammanfogningar måste identitetsdiagrammet innehålla fragment som länkar ID-värden från det valda beständiga ID-namnutrymmet och ID-namnutrymmet. Du kan köra ett test genom att gå till [Experience Platform Identity Graphics Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} och fråga efter diagrammet med några beständiga ID-testvärden. Kontrollera om dessa beständiga ID-värden är länkade till värden för person-ID i diagrammet.
       * För fältbaserad sammanfogning frågar du 7 dagar med data där ditt person-ID-fält inte är null och dividerar med en fråga på 7 dagar med data för alla händelser i din datamängd. Den här procentandelen bör helst vara över 5 procent.
 
         Exempel på en fråga som du kan använda för verifiering:
@@ -130,7 +130,7 @@ När du har sparat en anslutning aktiveras sammanfogningsprocessen för dataupps
 
 >[!CAUTION]
 >
->För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**&#x200B;för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
+>För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
 >
 
 
