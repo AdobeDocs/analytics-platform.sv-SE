@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: 9bebfaf7e10762bc7382d8b0d55148ee23698dd9
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
@@ -41,16 +41,12 @@ Innan du använder stygn bör du kontrollera att din organisation har förberett
 - Importera önskade data till Adobe Experience Platform:
 
    - Information om Adobe Analytics finns i [Använda Adobe Analytics rapportsvitsdata i Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
-   - Andra typer av data finns i [Skapa ett schema](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/tutorials/create-schema-ui) och [Infoga data](https://experienceleague.adobe.com/sv/docs/experience-platform/ingestion/home) i Adobe Experience Platform-dokumentationen.
+   - Andra typer av data finns i [Skapa ett schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui) och [Infoga data](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home) i Adobe Experience Platform-dokumentationen.
 
 Du kan dra nytta av flerkanalsanalys om du kombinerar en eller flera av dina sammanfogade datauppsättningar med andra datauppsättningar, till exempel callcenter-data, som en del av arbetet med att definiera din Customer Journey Analytics-anslutning. Den här anslutningskonfigurationen förutsätter att dessa andra datauppsättningar redan innehåller ett person-ID på varje rad, som liknar det sammanfogade ID:t.
 
-## Aktivera sammanfogning
+När din organisation uppfyller allmänna [krav](overview.md#prerequisites), förstår vanliga [begränsningar](overview.md#limitations) och också sammanfogar metodspecifika ([fältbaserade](fbs.md) och [diagrambaserade](gbs.md)) krav och begränsningar, kan du följa de här stegen för att begära och börja använda sammanfogning i Customer Journey Analytics.
 
-Du kan aktivera sammanfogning på två sätt:
-
-- [Begäran om att aktivera sammanfogning](/help/stitching/use-stitching.md) (borttagen). När den har godkänts skapas en duplicerad datauppsättning för den datauppsättning som du har begärt sammanfogning för. Den här duplicerade datauppsättningen innehåller en extra kolumn med den sammanslagna identifieraren. Du måste skapa en ny eller redigera en befintlig anslutning som innehåller den sammanslagna datauppsättningen för att kunna använda sammanfogade data i Customer Journey Analytics.
-- [Aktivera sammanfogning i anslutningsgränssnittet](/help/stitching/use-stitching-ui.md). När du konfigurerar sammanfogning för en datauppsättning i anslutningsgränssnittet sker sammanfogningen direkt när data från den datauppsättningen i Customer Journey Analytics hämtas.
 
 ## Begränsningar
 
@@ -65,6 +61,25 @@ Försäkra dig om att du inte förväxlar stygn med:
 - Sammanfogningen av två eller flera datauppsättningar. Gäller endast en datauppsättning. Sammanfogning av datauppsättningar sker som ett resultat av att en Customer Journey Analytics-anslutning skapas och att samma person-ID väljs för de markerade datauppsättningarna i anslutningen.
 
 - Sammanfogning av två datauppsättningar. I Customer Journey Analytics används ofta en join för uppslag eller klassificeringar i Analysis Workspace. Även om sammanfogning använder sammanfogningsfunktioner innebär själva processen mer än sammanfogningar.
+
+
+## Alternativ
+
+Det Customer Journey Analytics-paket som du är berättigad till avgör vilka sammanfogningsmetoder som är tillgängliga, alternativ för inledande varaktighet för bakåtfyllning, fönster för uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Mer information finns i [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html). Bestäm vilka alternativ som är tillgängliga innan du aktiverar sammanfogning.
+
+| | Customer Journey Analytics<br/>Välj | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
+|---|---|---|---|
+| Tillgängliga sammanfogningsmetoder | Fältbaserad stygn | Fältbaserad häftning<br/>Diagrambaserad häftning | Fältbaserad häftning<br>Diagrambaserad häftning</li> |
+| Varaktighet för engångssammanfogning av bakfyllning | 13 månader | 13 månader | 25 månader |
+| Fönster för uppspelning och uppspelningsfrekvens | 1 dag, varje dag<br/>upp till 7 dagar, varje vecka | 1 dag, varje dag<br/>upp till 14 dagar, varje vecka | 1 dag, varje dag<br/>upp till 30 dagar, varje vecka |
+| Högsta antal datauppsättningar som tillåts för sammanfogning | 5 | 15 | 50 |
+
+## Aktivera sammanfogning
+
+Du kan aktivera sammanfogning på två sätt:
+
+- [Begäran om att aktivera sammanfogning](/help/stitching/use-stitching.md) (borttagen). När den har godkänts skapas en duplicerad datauppsättning för den datauppsättning som du har begärt sammanfogning för. Den här duplicerade datauppsättningen innehåller en extra kolumn med den sammanslagna identifieraren. Du måste skapa en ny eller redigera en befintlig anslutning som innehåller den sammanslagna datauppsättningen för att kunna använda sammanfogade data i Customer Journey Analytics.
+- [Aktivera sammanfogning i anslutningsgränssnittet](/help/stitching/use-stitching-ui.md). När du konfigurerar sammanfogning för en datauppsättning i anslutningsgränssnittet sker sammanfogningen direkt när data från den datauppsättningen i Customer Journey Analytics hämtas.
 
 
 ## Journey Optimizer dataset
@@ -83,8 +98,8 @@ Stitching stöder följande automatiskt genererade Journey Optimizer-datauppsät
 >[!MORELIKETHIS]
 >
 >[Fältbaserad häftning](fbs.md)
->[Diagrambaserad häftning &#x200B;](gbs.md)
+>[Diagrambaserad häftning ](gbs.md)
 >[Använd sammanfogning](use-stitching.md)
->[Validera sammanfogning &#x200B;](validate.md)
+>[Validera sammanfogning ](validate.md)
 >[Vanliga frågor om stygn](faq.md)
 

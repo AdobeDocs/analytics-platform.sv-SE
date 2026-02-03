@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: cbb18e9d0990d5df64995c2dabe8362c7c37bb45
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -19,19 +19,6 @@ ht-degree: 0%
 >
 >Framställning genom Adobe behövs inte längre och den här metoden är inaktuell. [Aktivera sammanslagning i anslutningsgränssnittet](use-stitching-ui.md).
 >
-
-När din organisation uppfyller allmänna [krav](overview.md#prerequisites), förstår vanliga [begränsningar](overview.md#limitations) och också sammanfogar metodspecifika ([fältbaserade](fbs.md) och [diagrambaserade](gbs.md)) krav och begränsningar, kan du följa de här stegen för att begära och börja använda sammanfogning i Customer Journey Analytics.
-
-## Välj alternativ
-
-Det Customer Journey Analytics-paket som du är berättigad till avgör vilka sammanfogningsmetoder som är tillgängliga, alternativ för inledande varaktighet för bakåtfyllning, fönster för uppspelningsfrekvens och maximalt antal datauppsättningar som tillåts för sammanfogning. Mer information finns i [Customer Journey Analytics produktbeskrivning](https://helpx.adobe.com/se/legal/product-descriptions/customer-journey-analytics.html). Bestäm vilka alternativ som är tillgängliga innan du begär support.
-
-| | Customer Journey Analytics<br/>Välj | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
-|---|---|---|---|
-| Tillgängliga sammanfogningsmetoder | Fältbaserad stygn | Fältbaserad häftning<br/>Diagrambaserad häftning | Fältbaserad häftning<br>Diagrambaserad häftning</li> |
-| Varaktighet för engångssammanfogning av bakfyllning | 13 månader | 13 månader | 25 månader |
-| Fönster för uppspelning och uppspelningsfrekvens | 1 dag, varje dag<br/>upp till 7 dagar, varje vecka | 1 dag, varje dag<br/>upp till 14 dagar, varje vecka | 1 dag, varje dag<br/>upp till 30 dagar, varje vecka |
-| Högsta antal datauppsättningar som tillåts för sammanfogning | 5 | 15 | 50 |
 
 ## Begär support
 
@@ -67,4 +54,4 @@ När datavyn har konfigurerats kan du köra Customer Journey Analytics rapportan
 
 - Om du tar bort källdatauppsättningen avbryts bearbetningen av den sammanfogade datauppsättningen och tas bort av systemet.
 
-- Dataanvändningsetiketter sprids inte automatiskt till det sammanslagna dataset-schemat. Om du har använt dataanvändningsetiketter på källdataschemat måste du använda dessa dataanvändningsetiketter manuellt på det sammanslagna dataset-schemat. Mer information finns i [Hantera dataanvändningsetiketter i Experience Platform](https://experienceleague.adobe.com/sv/docs/experience-platform/data-governance/labels/overview).
+- Dataanvändningsetiketter sprids inte automatiskt till det sammanslagna dataset-schemat. Om du har använt dataanvändningsetiketter på källdataschemat måste du använda dessa dataanvändningsetiketter manuellt på det sammanslagna dataset-schemat. Mer information finns i [Hantera dataanvändningsetiketter i Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview).
