@@ -4,7 +4,8 @@ description: Visualiseringar använder exempel för BI-tillägg i olika BI-verkt
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: cb0102923f10f39becd40cc4187d2e11fb8c4e2f
+exl-id: a357facb-d536-4c81-847c-a6f0d3f041e7
+source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 6%
@@ -40,7 +41,7 @@ För de flesta visualiseringar från Customer Journey Analytics erbjuder Power B
 | ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Punkt](/help/analysis-workspace/visualizations/bullet-graph.md) |  |
 | ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Kohortabell](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
 | ![Kombination](/help/assets/icons/ComboChart.svg) | [Kombination](/help/analysis-workspace/visualizations/combo-charts.md) | [Stapeldiagram, stapeldiagram, linjediagram och grupperade stapeldiagram](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#combo-charts) |
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | [Diagram &#x200B;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#doughnut-charts) |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Ringdiagram](/help/analysis-workspace/visualizations/donut.md) | [Diagram ](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#doughnut-charts) |
 | ![ConversionTratt](/help/assets/icons/ConversionFunnel.svg) | [Utfall](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Funnel](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#funnel-charts). |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flöde](/help/analysis-workspace/visualizations/c-flow/flow.md) | Dispositionsträd? |
 | ![VisaTabell](/help/assets/icons/ViewTable.svg)</p> | [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tabell](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#tables) och [Matris](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#matrix) |
@@ -216,3 +217,4 @@ Att jämföra visualiseringsfunktionerna i **ggplot2**, datavisualiseringspakete
 
 >[!ENDTABS]
 
++++

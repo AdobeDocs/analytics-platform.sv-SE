@@ -4,7 +4,7 @@ description: Läs mer om CJA datacenter världen över.
 solution: Customer Journey Analytics
 role: Admin
 exl-id: a41686bb-1a7b-4d27-8415-f4a1880b7de5
-source-git-commit: 3fd31ea85dc80a2d3070c8136a8a1984fe14c074
+source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Adobe Customer Journey Analytics ligger hos datacenter i företagsklass från le
 
 Vid etableringen anger kunderna i vilken region deras Adobe Experience Platform-data kommer att finnas. De data som hämtas in till Customer Journey Analytics från Adobe Experience Platform datasjön lagras i samma region.
 
-Mer information finns i [Regional datainsamling](https://experienceleague.adobe.com/sv/docs/core-services/interface/data-collection/rdc) i Adobe Experience Cloud-dokumentationen.
+Mer information finns i [Regional datainsamling](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) i Adobe Experience Cloud-dokumentationen.
 
 
 ## Visa datacentret där data lagras
