@@ -5,23 +5,25 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: b5afcfe2cac8aa12d7f4d0cf98658149707123e3
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1741'
 ht-degree: 0%
 
 ---
 
 # Diagrambaserad utjämning
 
-I diagrambaserade sammanfogningar anger du en händelsedatamängd. Och för den händelsedatauppsättningen anger du det beständiga ID:t (cookie) och det önskade namnutrymmet för sammanfogning från ID-värdena för identitetsdiagrammet. Diagrambaserad sammanfogning lägger till en ny kolumn för det sammanfogade ID:t i händelsedatamängden. Det beständiga ID:t används för att fråga efter identitetsdiagrammet från Experience Platform Identity Service, med namnutrymmet för sammanslagning angivet, för att uppdatera det sammanfogade ID:t.
+I diagrambaserade häftningar anger du en händelsedatamängd, det beständiga ID:t (cookie) för den datauppsättningen och det önskade namnområdet för person-ID från identitetsdiagrammet. Diagrambaserad sammanfogning försöker att göra informationen om person-ID tillgänglig för Customer Journey Analytics dataanalys vid en händelse. Det beständiga ID:t används för att fråga efter identitetsdiagrammet från Experience Platform Identity Service för att hämta person-ID:t från det angivna namnområdet.
+
+Om det inte går att hämta information om person-ID:t för en händelse, används det beständiga ID:t i stället för den *obesydda*-händelsen. I en [datavy](/help/data-views/data-views.md) som är associerad med en [anslutning](/help/connections/overview.md) som innehåller den datauppsättning som är aktiverad för sammanfogning, innehåller ID-datavykomponenten antingen person-ID-värdet eller det beständiga ID-värdet på händelsenivån.
 
 
 ![Diagrambaserad utjämning](/help/stitching/assets/gbs.png)
 
 ## IdentityMap
 
-Diagrambaserad sammanfogning stöder användning av fältgruppen [`identityMap` &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
+Diagrambaserad sammanfogning stöder användning av fältgruppen [`identityMap` ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
 
 - Använd den primära identiteten i `identityMap` namnutrymmen för att definiera persistentID:
    - Om flera primära identiteter hittas i olika namnutrymmen sorteras identiteterna i namnutrymmena lexikografiskt och den första identiteten markeras.
@@ -112,7 +114,7 @@ Tänk på följande två identitetsdiagramuppdateringar över tiden för besöka
 
 ![Identitetsdiagram 3579](assets/identity-graphs.svg)
 
-Du kan visa ett identitetsdiagram över tiden för en viss profil med [Identity Graph Viewer](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-viewer). Se även [Identitetstjänstens länkningslogik](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-linking-logic) för att få en bättre förståelse för logiken som används vid länkning av identiteter.
+Du kan visa ett identitetsdiagram över tiden för en viss profil med [Identity Graph Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Se även [Identitetstjänstens länkningslogik](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) för att få en bättre förståelse för logiken som används vid länkning av identiteter.
 
 ### Steg 1: Liveutjämning
 
@@ -120,7 +122,7 @@ Livehäftning försöker häfta ihop varje händelse vid samlingen till känd in
 
 +++ Information
 
-| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Datamappning](/help/assets/icons/DataMapping.svg) | Stitched ID (after live stitch) |
+| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Datamappning](/help/assets/icons/DataMapping.svg) | Resultat-ID (efter sys live) |
 |--:|---|---|---|---|
 | 1 | 2023-05-12 11:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) *odefinierad* | `246` |
 | 2 | 2023-05-12 14:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
@@ -132,8 +134,8 @@ Livehäftning försöker häfta ihop varje händelse vid samlingen till känd in
 
 {style="table-layout:auto"}
 
-Du kan se hur det sammanslagna ID:t löses för varje händelse. Baserat på tidpunkten, det beständiga ID:t och sökningen av identitetsdiagrammet för det angivna namnutrymmet (samtidigt).
-När sökningen matchar mer än ett sammanfogat ID (som för händelse 7) markeras det lexikografiska första ID som returneras av identitetsdiagrammet (`a.b@yahoo.co.uk` i exemplet).
+Du kan se hur det resulterande ID:t löses för varje händelse. Baserat på tidpunkten, det beständiga ID:t och sökningen av identitetsdiagrammet för det angivna person-ID-namnområdet.
+När sökningen matchar mer än ett resulterande ID (som för händelse 7) markeras det lexikografiska första ID som returneras av identitetsdiagrammet (`a.b@yahoo.co.uk` i exemplet).
 
 +++
 
@@ -145,7 +147,7 @@ Med jämna mellanrum (beroende på vilket uppslagsfönster som har valts) beräk
 
 Med en replay-sammanslagning som inträffar 2023-05-13 16:30, med en 24-timmars uppslagsfönsterkonfiguration, sys vissa händelser i exemplet om (indikeras av ![Replay](/help/assets/icons/Replay.svg)).
 
-| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Datamappning](/help/assets/icons/DataMapping.svg) | Stitched ID <br/> (after live stitch) | Stitched ID <br/> (after replay 24 hours) |
+| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Datamappning](/help/assets/icons/DataMapping.svg) | Resultat-ID <br/> (efter direktsammanfogning) | Resultat-ID <br/> (efter uppspelning 24 timmar) |
 |---|---|---|---|---|---|
 | 2 | 2023-05-12 14:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
 | 3 | 2023-05-12 15:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
@@ -160,7 +162,7 @@ Med en replay-sammanslagning som inträffar 2023-05-13 16:30, med en 24-timmars 
 Med replay stitching på 2023-05-13 16:30, med en 7-dagars konfiguration av uppslagsfönstret, resys alla händelser från exemplet.
 
 
-| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Datamappning](/help/assets/icons/DataMapping.svg) | Stitched ID <br/> (after live stitch) | Stitched ID <br/> (after replay 7 days) |
+| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Datamappning](/help/assets/icons/DataMapping.svg) | Resultat-ID <br/> (efter direktsammanfogning) | Resultat-ID <br/> (efter omspelning 7 dagar) |
 |---|---|---|---|---|---|
 | ![Spela upp](/help/assets/icons/Replay.svg)  | 2023-05-12 11:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) *odefinierad* | `246` | `a.b@yahoo.co.uk` |
 | ![Spela upp](/help/assets/icons/Replay.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
@@ -176,13 +178,13 @@ Med replay stitching på 2023-05-13 16:30, med en 7-dagars konfiguration av upps
 
 ### Steg 3: Begäran om sekretess
 
-När du tar emot en begäran om sekretess, tas det sammanslagna ID:t bort i alla poster för den användare som omfattas av sekretessbegäran.
+När du tar emot en sekretessförfrågan tas det resulterande ID:t bort i alla poster för det ämne som omfattas av sekretessbegäran.
 
 +++ Information
 
 Följande tabell representerar samma data som ovan, men visar vilken effekt en sekretessbegäran (till exempel 2023-05-13 18:00) har på exempelhändelserna.
 
-| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Datamappning](/help/assets/icons/DataMapping.svg) | Stitched ID (after privacy request) |
+| | Tid | Beständigt ID<br/>`ECID` | Namnområde <br/>`Email` ![Datamappning](/help/assets/icons/DataMapping.svg) | Resultat-ID (efter sekretessbegäran) |
 |--:|---|---|---|---|
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Förgrening1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
 | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) 2 | 2023-05-12 14:00 | `246` | `246`![Förgrening1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
@@ -207,7 +209,7 @@ Följande krav gäller specifikt för diagrambaserad sammanfogning:
    - Alla datauppsättningar som innehåller sådana relevanta identiteter måste vara [aktiverade för datainhämtning från identitetsdiagram](faq.md#enable-a-dataset-for-the-identity-service). Detta gör att inkommande identiteter läggs till i diagrammet över tiden från alla nödvändiga källor.
    - Om du redan använder kunddataprofilen i realtid eller Adobe Journey Optimizer ett tag bör diagrammet redan vara inställt i viss utsträckning.<br/>Om det också krävs en bakåtfyllning av historiska fogar för datauppsättningen som har aktiverats med diagrambaserad sammanfogning, bör diagrammet redan innehålla historiska identiteter för hela perioden för att få önskat sammanfogningsresultat.
 - Om du vill använda diagrambaserad sammanfogning och du förväntar dig att händelsedatamängden ska bidra till identitetsdiagrammet, bör du [aktivera datamängden för identitetstjänsten](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- Det beständiga ID:t och person-ID:t kan användas med [identityMap](#identitymap). Eller så kan det beständiga ID:t och person-ID:t vara fält från XDM-schemat. I så fall måste fälten [definieras som en identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/ui/fields/identity?lang=en) i schemat.
+- Det beständiga ID:t och person-ID:t kan användas med [identityMap](#identitymap). Eller så kan det beständiga ID:t och person-ID:t vara fält från XDM-schemat. I så fall måste fälten [definieras som en identitet](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) i schemat.
 
 >[!NOTE]
 >
@@ -221,7 +223,7 @@ Följande begränsningar gäller specifikt för diagrambaserad sammanfogning:
 - Tidsstämplar beaktas inte vid sökning efter person-ID med det angivna namnutrymmet. Det är alltså möjligt att ett beständigt ID sammanfogas med ett person-ID från en post som har en tidigare tidsstämpel.
 - I scenarier med delade enheter, där namnutrymmet i diagrammet innehåller flera identiteter, används den första lexikografiska identiteten. Om namnutrymmesbegränsningar och -prioriteringar konfigureras som en del av releasen av regler för diagramlänkning, används den senast autentiserade användarens identitet. Mer information finns i [Delade enheter](/help/use-cases/stitching/shared-devices.md).
 - I identitetsdiagrammet finns det en hård gräns på tre månader för att efterfylla identiteter. Du använder bakåtfyllnadsidentiteter om du inte använder ett Experience Platform-program, som Customer Data Platform i realtid, för att fylla i identitetsdiagrammet.
-- [Identitetstjänstens skyddsprofiler](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/guardrails) gäller. Se till exempel följande [statiska begränsningar](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/guardrails#static-limits):
+- [Identitetstjänstens skyddsprofiler](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) gäller. Se till exempel följande [statiska begränsningar](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Maximalt antal identiteter i ett diagram: 50.
    - Maximalt antal länkar till en identitet för ett enskilt batchintag: 50.
    - Maximalt antal identiteter i en XDM-post för diagraminmatning: 20.

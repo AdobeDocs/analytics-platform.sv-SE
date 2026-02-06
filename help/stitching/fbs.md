@@ -5,23 +5,27 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: b5afcfe2cac8aa12d7f4d0cf98658149707123e3
 workflow-type: tm+mt
-source-wordcount: '1711'
+source-wordcount: '1797'
 ht-degree: 2%
 
 ---
 
 # Fältbaserad stygn
 
-I fältbaserad sammanfogning anger du en händelsedatamängd samt det beständiga ID:t (cookie) och person-ID:t för den datauppsättningen. Fältbaserad sammanfogning lägger till en ny sammanfogad ID-kolumn i händelsedatamängden och uppdaterar det sammanfogade ID:t baserat på rader som har ett person-ID för det specifika beständiga ID:t. <br/>Du kan använda fältbaserad sammanfogning när du använder Customer Journey Analytics som en fristående lösning (du har inte tillgång till Experience Platform identitetstjänst och tillhörande identitetsdiagram). Eller om du inte vill använda det tillgängliga identitetsdiagrammet.
+I fältbaserad sammanfogning anger du en händelsedatamängd samt det beständiga ID:t (cookie) och person-ID:t för den datauppsättningen. Fältbaserad sammanfogning försöker göra person-ID-informationen tillgänglig för dataanalys i Customer Journey Analytics, för alla anonyma händelser som kommer med ett specifikt beständigt ID.  Informationen hämtas från de rader som har ett person-ID för det specifika beständiga ID:t.
+
+Om det inte går att hämta information om person-ID:t för en händelse, används det beständiga ID:t i stället för den *obesydda*-händelsen. I en [datavy](/help/data-views/data-views.md) som är associerad med en [anslutning](/help/connections/overview.md) som innehåller den datauppsättning som är aktiverad för sammanfogning innehåller person-ID-komponenten antingen värdet för person-ID eller det beständiga ID-värdet på händelsenivån.
+
+Du kan använda fältbaserad sammanfogning när du använder Customer Journey Analytics som en fristående lösning (som inte har tillgång till Experience Platform identitetstjänst och tillhörande identitetsdiagram). Eller om du inte vill använda det tillgängliga identitetsdiagrammet.
 
 ![Fältbaserad häftning](/help/stitching/assets/fbs.png)
 
 
 ## IdentityMap
 
-Fältbaserad sammanfogning stöder användning av fältgruppen [`identityMap` &#x200B;](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
+Fältbaserad sammanfogning stöder användning av fältgruppen [`identityMap` ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) i följande scenarier:
 
 - Använd den primära identiteten i `identityMap` namnutrymmen för att definiera persistentID:
    - Om flera primära identiteter hittas i olika namnutrymmen sorteras identiteterna i namnutrymmena lexikografiskt och den första identiteten markeras.
@@ -120,7 +124,7 @@ Titta på följande exempel där Bob spelar in olika händelser som en del av en
 
 *Data som de såg ut den dag de samlades in:*
 
-| Händelse | Tidsstämpel | Beständigt ID (cookie-ID) | Person-ID | Stitched ID (after live stitch) |
+| Händelse | Tidsstämpel | Beständigt ID (cookie-ID) | Person-ID | Resultat-ID (efter sys live) |
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` ![PilRight](/help/assets/icons/ArrowRight.svg) | - | **`246`** |
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![PilRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
@@ -138,7 +142,7 @@ Titta på följande exempel där Bob spelar in olika händelser som en del av en
 
 Både oautentiserade och autentiserade händelser på nya enheter räknas som separata personer (tillfälligt). Oautentiserade händelser på identifierade enheter sammanfogas live.
 
-Attribution fungerar när den identifierande anpassade variabeln är kopplad till en enhet. I exemplet ovan är alla händelser utom händelserna 1, 8, 9 och 10 direktsammanfogade (de använder alla identifieraren `Bob`). Live stitching &#39;resolves&#39; the stitched ID for event 4, 6 and 12.
+Attribution fungerar när den identifierande anpassade variabeln är kopplad till en enhet. I exemplet ovan är alla händelser utom händelserna 1, 8, 9 och 10 direktsammanfogade (de använder alla identifieraren `Bob`). Live stitching &#39;resolves&#39; the result ID for event 4, 6 and 12.
 
 Försenade data (data med en tidsstämpel som är över 24 timmar gamla) hanteras enligt principen&quot;bästa insats&quot;, samtidigt som sammanslagningen av aktuella data prioriteras för högsta kvalitet.
 
@@ -154,7 +158,7 @@ Följande tabell representerar samma data som ovan, men visar olika tal baserat 
 
 *Samma data efter uppspelning:*
 
-| Händelse | Tidsstämpel | Beständigt ID (cookie-ID) | Person-ID | Stitched ID (after live stitch) | Stitched ID (after replay) |
+| Händelse | Tidsstämpel | Beständigt ID (cookie-ID) | Person-ID | Resultat-ID (efter sys live) | Resultat-ID (efter omspelning) |
 |---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** |
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![PilRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![PilUp](/help/assets/icons/ArrowUp.svg) |
@@ -178,7 +182,7 @@ Attribution fungerar när den identifierande anpassade variabeln är kopplad til
 
 ### Steg 3: Begäran om sekretess
 
-När du tar emot en begäran om sekretess, tas det sammanslagna ID:t bort i alla poster för den användare som omfattas av sekretessbegäran.
+När du tar emot en sekretessbegäran uppdateras all identifieringsinformation som har angetts av sammanfogningsprocessen till ID-värdet för person i alla poster till ett beständigt ID-värde för den användare som är föremål för sekretessbegäran.
 
 +++ Information
 
@@ -186,7 +190,7 @@ Följande tabell representerar samma data som ovan, men visar vilken effekt en s
 
 *Samma data efter en sekretessförfrågan för Bob:*
 
-| Händelse | Tidsstämpel | Beständigt ID (cookie-ID) | Person-ID | Stitched ID (after live stitch) | Stitched ID (after replay) | Person-ID | Stitched ID (after privacy request) |
+| Händelse | Tidsstämpel | Beständigt ID (cookie-ID) | Person-ID | Resultat-ID (efter sys live) | Resultat-ID (efter omspelning) | Person-ID | Resultat-ID (efter sekretessbegäran) |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
 | 2 | 2023-05-12 12:02 | `246` | Bob ![PilRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Pil upp](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
@@ -214,7 +218,7 @@ Följande krav gäller specifikt för fältbaserad sammanfogning:
    - Ett **person-ID**, en identifierare som bara är tillgänglig på vissa rader. Till exempel ett hashas användarnamn eller en e-postadress när en profil autentiseras. Du kan använda praktiskt taget vilken identifierare som helst. Stitching ser till att det här fältet innehåller den faktiska person-ID-informationen. För bästa resultat av sammanfogning bör ett person-ID skickas inom datauppsättningens händelser minst en gång för varje beständigt ID. Om du tänker ta med den här datauppsättningen i en Customer Journey Analytics-anslutning bör de andra datauppsättningarna också ha en liknande gemensam identifierare.
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
