@@ -129,7 +129,7 @@ Om du vill söka efter data från andra datauppsättningar använder du standard
 
 #### Beräkningar
 
-Om du vill utföra beräkningar i fält (kolumner) använder du SQL-standardfunktionerna (till exempel `COUNT(*)`), eller [ math- och statistikoperatorerna och funktionerna ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#math) i Spark SQL. Dessutom har [fönsterfunktioner](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions#window-functions) stöd för att uppdatera aggregeringar och returnera enstaka objekt för varje rad i en ordnad delmängd. Se [Exempel](#examples) om hur du använder dessa funktioner.
+Om du vill utföra beräkningar i fält (kolumner) använder du SQL-standardfunktionerna (till exempel `COUNT(*)`), eller [&#x200B; math- och statistikoperatorerna och funktionerna &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#math) i Spark SQL. Dessutom har [fönsterfunktioner](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions#window-functions) stöd för att uppdatera aggregeringar och returnera enstaka objekt för varje rad i en ordnad delmängd. Se [Exempel](#examples) om hur du använder dessa funktioner.
 
 #### Kapslad datastruktur
 
@@ -154,7 +154,7 @@ Scheman som datauppsättningarna baseras på innehåller ofta komplexa datatyper
 }
 ```
 
-Du kan använda [`explode()` eller andra Arrays-funktioner ](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#arrays) från Spark SQL för att komma till data i en kapslad datastruktur, till exempel:
+Du kan använda [`explode()` eller andra Arrays-funktioner &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/spark-sql-functions#arrays) från Spark SQL för att komma till data i en kapslad datastruktur, till exempel:
 
 ```sql
 select explode(identityMap) from demosys_cja_ee_v1_website_global_v1_1 limit 15;
@@ -400,11 +400,11 @@ Du måste [verifiera](https://experienceleague.adobe.com/en/docs/experience-plat
 
 ### API för flödestjänst
 
-Du kan också exportera och schemalägga export av utdatamängder med API:er. Stegen som ingår beskrivs i [Exportera datauppsättningar med API:t för Flow Service ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets).
+Du kan också exportera och schemalägga export av utdatamängder med API:er. Stegen som ingår beskrivs i [Exportera datauppsättningar med API:t för Flow Service &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets).
 
 #### Kom igång
 
-Om du vill exportera datauppsättningar måste du ha de [nödvändiga behörigheterna](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#permissions). Verifiera också att målet dit du vill skicka din utdatauppsättning har stöd för export av datauppsättningar. Du måste sedan [samla in värdena för obligatoriska och valfria rubriker](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) som du använder i API-anropen. Du måste också [identifiera anslutningsspec- och flödesspec-ID:n för målet ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) som du tänker exportera datamängder till.
+Om du vill exportera datauppsättningar måste du ha de [nödvändiga behörigheterna](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#permissions). Verifiera också att målet dit du vill skicka din utdatauppsättning har stöd för export av datauppsättningar. Du måste sedan [samla in värdena för obligatoriska och valfria rubriker](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-values-headers) som du använder i API-anropen. Du måste också [identifiera anslutningsspec- och flödesspec-ID:n för målet &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#gather-connection-spec-flow-spec) som du tänker exportera datamängder till.
 
 #### Hämta giltiga datauppsättningar
 
@@ -422,7 +422,7 @@ Du måste nu [skapa en basanslutning](https://experienceleague.adobe.com/en/docs
 
 #### Ange exportparametrar
 
-Därefter måste du [skapa ytterligare en målanslutning som lagrar exportparametrarna ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection) för din utdatauppsättning med [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API:t. Dessa exportparametrar inkluderar plats, filformat, komprimering med mera.
+Därefter måste du [skapa ytterligare en målanslutning som lagrar exportparametrarna &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/api/export-datasets#create-target-connection) för din utdatauppsättning med [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection) API:t. Dessa exportparametrar inkluderar plats, filformat, komprimering med mera.
 
 #### Ställ in dataflöde
 
