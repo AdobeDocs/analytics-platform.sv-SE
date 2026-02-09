@@ -5,9 +5,9 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1080'
 ht-degree: 0%
 
 ---
@@ -61,11 +61,13 @@ Med datavyer kan du ändra inställningar för schemaelement spontant utan att b
 
 * Du kan byta namn på behållarna i en datavy och låta de namnändrade behållarna visas i alla Workspace-projekt som baseras på den datavyn.
 
+* Du kan aktivera eller inaktivera Data Insights Agent för en datavy.
+
 ## Krav för datavyer {#prerequisites}
 
 * Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar till Experience Platform datamängder](/help/connections/create-connection.md).
-* Om du vill skapa eller hantera en datavy behöver du en [uppsättning behörigheter i Adobe Admin Console](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview).
-* Om du använder [Adobe Analytics-källkopplingen](/help/data-ingestion/analytics.md) eller har bakgrundskunskap om Adobe Analytics, kanske du vill förstå hur fält i dina scheman och datamängder relaterar till Adobe Analytics-motsvarigheter. Mer information finns i [Mappningar av analysfält](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics).
+* Om du vill skapa eller hantera en datavy behöver du en [uppsättning behörigheter i Adobe Admin Console](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview).
+* Om du använder [Adobe Analytics-källkopplingen](/help/data-ingestion/analytics.md) eller har bakgrundskunskap om Adobe Analytics, kanske du vill förstå hur fält i dina scheman och datamängder relaterar till Adobe Analytics-motsvarigheter. Mer information finns i [Mappningar av analysfält](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics).
 
 ## Datavy settings you can override in Workspace {#settings-override}
 
@@ -84,9 +86,10 @@ Vissa datavyinställningar kan åsidosättas i Analysis Workspace på projektniv
 
 ## Ta bort datavyer {#delete}
 
-Om du tar bort en datavy i [!UICONTROL Customer Journey Analytics] visas ett felmeddelande om att alla [!UICONTROL Workspace]-projekt som är beroende av den här borttagna datavyn inte längre fungerar.
+Om du [tar bort en datavy](/help/data-views/manage-dataviews.md#delete-data-views) i [!UICONTROL Customer Journey Analytics] visas ett felmeddelande om att [!UICONTROL Workspace]-projekt som är beroende av den här borttagna datavyn inte längre fungerar.
 
 ## Nästa steg
 
 * [Skapa datavyer](/help/data-views/create-dataview.md)
+* [Hantera datavyer](/help/data-views/manage-dataviews.md)
 * [Datavyer använder exempel](/help/use-cases/data-views/data-views-usecases.md)

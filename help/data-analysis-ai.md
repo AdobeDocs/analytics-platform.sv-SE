@@ -5,9 +5,9 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 518f2aeac309a34016146b7a4da7823b6fd84cac
+source-git-commit: cb5baf2ec8d3ad4449a9b08d0a025a2d39a11425
 workflow-type: tm+mt
-source-wordcount: '2416'
+source-wordcount: '2389'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Genom att använda Data Insights Agent för att besvara datacentrerade frågor i
 
 | Funktion | I omfånget | Odefinierad |
 | --- | --- | --- |
-| **Visualiseringstyper** | <ul><li>Linje</li><li>Flera rader</li><li>Frihandsregister</li><li>Liggande</li><li>Munk</li><li>Sammanfattningsnummer</li></ul> | <ul><li>Flöde</li><li>Utfall</li><li>Kohortabell</li><li>Område, staplat område</li><li>Stapel, staplad</li><li>Punkt</li><li>Kombination</li><li>Histogram</li><li>Vågrätt streck, vågrätt streck</li><li>Sammanfattning av nyckelmått</li><li>Spridning</li><li>Sammanfattningsändring</li><li>Text</li><li>Treemap</li><li>Venn</li><li>Guidad analys: aktiv tillväxt, konverteringstrender, engagemang, förstahandseffekt, frekvens, tratt, nettotillväxt, Release impact, Retention, Timeline, Trends</li></ul> |
+| **Visualiseringstyper** | <ul><li>Linje</li><li>Flera rader</li><li>Frihandsregister</li><li>Liggande</li><li>Munk</li><li>Sammanfattningsnummer</li></ul> | <ul><li>Flöde</li><li>Utfall</li><li>Kohortabell</li><li>Område, staplat område</li><li>Stapel, staplad</li><li>Punkt</li><li>Kombination</li><li>Histogram</li><li>Vågrätt streck, vågrätt streck</li><li>Sammanfattning av nyckelmått</li><li>Spridning</li><li>Sammanfattningsändring</li><li>Text</li><li>Treemap</li><li>Venn</li><li>Guidad analys: Aktiv tillväxt, konverteringstrender, Engagement, First use impact, Frequency, Funnel, Net growth, Release impact, Retention, Timeline, Trends</li></ul> |
 | **Workspace-åtgärder och agentfunktioner** | <ul><li>Skapa och uppdatera visualiseringar<p>Skapar en friformstabell och tillhörande visualisering (t.ex. en linje, streck, munstycke).<p>Exempel: *Vad är vinsten för SKU:er från februari till maj?*</p></li><li>Ställ uppföljningsfrågor<p>Svara på en fråga i sammanhanget från tidigare uppmaningar. Exempel:</p> <ul><li>Fråga 1: *Trendhändelser från mars.*</li><li>Fråga 2: *Visa data från mars till april i stället*</li></ul> </li><li>Odefinierad snabb upptäckt<p>Om du skickar en fråga som ligger utanför omfånget, till exempel *Exportera det här projektet*, svarar Data Insights Agent genom att informera dig om att frågan ligger utanför omfånget.</p></li></ul> | <ul><li>Dela</li><li>Exportera</li><li>Ladda ned</li><li>Hantera användarinställningar</li><li>Hantera datavy</li><li>Analytics Dashboards-app</li><li>Tillskrivning</li><li>Sammanfattning eller svar direkt<p>Data Insights Agent kan inte svara direkt i chattfältet med ett kortfattat svar från en användarfråga. Exempel på uppmaningar som inte omfattas är *Ge mig en sammanfattning av insikterna från min senaste fråga* och *Sammanfatta markeringarna från radvisualiseringen.*</p></li></ul> |
 | **Tydligare frågor** | Om du ställer en fråga som inte har tillräckligt sammanhang för att Data Insights Agent ska kunna svara på, eller är för generisk, svarar Data Insights Agent med en klargörande fråga eller föreslagna alternativ. <p>Följande klargörande frågor är exempel på komponentrelaterade frågor:</p><ul><li>Mått: *Vilket intäktsmått menade du?*</li><li>Dimension: *Vilka av nedanstående &quot;regioner&quot; vill du fokusera på?*</li><li>Segment: *Vilket kontosegment vill du tillämpa?*</li><li>Datumintervall: *Med&quot;förra månaden&quot;, menade du den senaste hela månaden eller de senaste 30 dagarna?*</li></ul><p>Följande klargörande fråga är ett exempel på en fråga som rör dimensionsobjekt:</p> <ul><li>Vilket &quot;butiksnamn&quot; menade du? (Exempel: Store #5274, Store #2949 osv.)</li></ul> | Tydliga frågor är begränsade till komponenter och dimensionsobjekt. Data Insights Agent kan inte förtydliga saker som datavyer, visualiseringar, datakornighet, jämförelse och omfattning. När klarläggandefrågor inte kan användas, används agenten som standard det som du troligen efterfrågar. Om det returnerar en oväntad visualisering eller datagranularitet kan du ställa en uppföljningsfråga eller justera visualisering och data. |
 | **Datasäkerhet och -korrekthet** | Datasäkerheten och korrektheten kan bekräftas genom att man visar den genererade frihandstabellen och datavisualiseringen. <p>Om du till exempel ber Data Insights Agent att *trendbeställa förra månaden* kan du bekräfta att rätt mått (&quot;order&quot;) och datumintervall (&quot;sista månaden&quot;) har valts på den nyligen genererade panelen, datavisualisering och frihandstabellen. | Data Insights Agent svarar inte genom att informera dig om vilka komponenter eller visualiseringar som lagts till.</p> |
@@ -54,7 +54,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
 * **Behörigheter**: Nödvändiga behörigheter måste beviljas i [!UICONTROL Adobe Admin Console] innan användare kan komma åt Data Insights Agent.
 
-  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
+  Om du vill bevilja behörigheter måste en [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) utföra följande steg i [!UICONTROL Admin Console]:
    1. I **[!UICONTROL Admin Console]** väljer du fliken **[!UICONTROL Products]** för att visa sidan **[!UICONTROL All products and services]**.
    1. Välj **[!UICONTROL Customer Journey Analytics]**.
    1. På fliken **[!UICONTROL Product Profiles]** väljer du titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL AI Assistant: Product Knowledge].
@@ -62,7 +62,7 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
 
       ![Fliken Behörigheter i Admin Console](assets/ai-assistant-permissions-tab.png)
 
-   1. Markera redigeringsikonen **[!UICONTROL Reporting Tools]** Redigera![&#x200B; på raden &#x200B;](/help/assets/icons/Edit.svg) i den angivna tabellen.
+   1. Markera redigeringsikonen **[!UICONTROL Reporting Tools]** Redigera![ på raden ](/help/assets/icons/Edit.svg) i den angivna tabellen.
    1. Bläddra till eller sök efter **[!UICONTROL AI Assistant: Product Knowledge]** och välj sedan plusikonen ![AddCircle](/help/assets/icons/AddCircle.svg) bredvid den här behörigheten.
    1. Bläddra till eller sök efter **[!UICONTROL Data Insights Agent]** och välj sedan plusikonen ![AddCircle](/help/assets/icons/AddCircle.svg) bredvid den här behörigheten.
 
@@ -82,21 +82,10 @@ Följande parametrar styr åtkomsten till Data Insights Agent i Customer Journey
   >* Du kan aktivera maximalt 50 datavyer per IMS-organisation. Om du aktiverar mer än 50 datavyer för alla produktprofiler för en viss organisation kommer Data Insights Agent att använda de 50 mest använda datavyer.
   >* Data Insights Agent kan referera till de inkluderade datavyerna någon gång under samma dag som du aktiverar dem.
 
-  Så här aktiverar du datavyer för Data Insights Agent:
+  Information om hur du aktiverar datavyer för Data Insights Agent finns i [AI-inställningarna för en datavy](/help/data-views/create-dataview.md#ai-settings).
 
-   1. I Customer Journey Analytics väljer du **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
+  Du kan använda [info i Data Insights Agent-kolumnen i datavyer](/help/data-views/manage-dataviews.md#manage-data-views) för att visa antalet datavyer som har aktiverats för Data Insights Agent i din IMS-organisation.
 
-   1. Markera en eller flera datavyer som du vill aktivera för Data Insights Agent och välj sedan **[!UICONTROL Enable for Data Insights Agent]**.
-
-      ![Aktivera datavyer för Data Insights Agent](assets/data-view-enable-dia.png)
-
-  Så här visar du antalet datavyer som har aktiverats för Data Insights Agent i din IMS-organisation:
-
-   1. I Customer Journey Analytics väljer du **[!UICONTROL Data Management]** > **[!UICONTROL Data views]**.
-
-   1. Välj informationsikonen högst upp i kolumnen **[!UICONTROL Data Insights Agent]**.
-
-      ![Data Insights Agent informationsikon](assets/data-insights-agent-tooltip.png)
 
 ## Få tillgång till Data Insights Agent i AI-assistenten
 
@@ -264,7 +253,7 @@ Nedan följer god praxis för din Customer Journey Analytics-konfiguration (data
 >[!MORELIKETHIS]
 >
 >[Komponentinställningar](/help/data-views/component-settings/overview.md)
->[Dataordlista &#x200B;](/help/components/data-dictionary/data-dictionary-overview.md)
->[Godkänn beräknat mått &#x200B;](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->[Dela segment &#x200B;](/help/components/segments/seg-share.md)
+>[Dataordlista ](/help/components/data-dictionary/data-dictionary-overview.md)
+>[Godkänn beräknat mått ](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>[Dela segment ](/help/components/segments/seg-share.md)
 >
