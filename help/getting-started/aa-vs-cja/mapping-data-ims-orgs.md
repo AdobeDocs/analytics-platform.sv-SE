@@ -1,21 +1,22 @@
 ---
-title: Mappa analysdata från flera IMS-organisationer
+title: Cross-IMS-datamappning
 description: Lär dig hur du kan begära att mappa data från rapportsviter från flera IMS-organisationer med olika källor till en IMS-målorganisation.
 role: Admin
 solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 hide: true
 hidefromtoc: true
-source-git-commit: 925da525b61c2a24156159f4029303c297e0af10
+exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
+source-git-commit: 16486ded009a9dbd9170240c0941853a4deec0af
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1137'
 ht-degree: 0%
 
 ---
 
-# Mappa analysdata från flera IMS-organisationer
+# Datamappning mellan IMS
 
-Analysens källanslutning kan bara importera data från Adobe Analytics rapportsviter som tillhör samma organisation som du har rätt att använda Customer Journey Analytics för. Funktionen för att mappa analysdata från flera IMS-organisationer ger en lösning på den här begränsningen. Hur du aktiverar den här funktionen beskrivs i den här artikeln.
+Analysens källanslutning kan bara importera data från Adobe Analytics rapportsviter som tillhör samma organisation som du har rätt att använda Customer Journey Analytics för. Funktionen *Cross-IMS-datamappning* är en funktion för att mappa analysdata från flera IMS-organisationer och ger en lösning på den här begränsningen. Hur du aktiverar den här funktionen beskrivs i den här artikeln.
 
 
 ## Scenario
@@ -28,7 +29,7 @@ Ni har tillgång till flera IMS-organisationer och har Analytics-data i flera ra
 
 Körklar kan du inte rapportera om kombinationen av data från flera rapportsviter i flera IMS-organisationer i Customer Journey Analytics. Anledningen till denna begränsning är att datainmatning från Adobe Analytics till Experience Platform via källkopplingen för analys endast stöder inmatning av data som ägs av en enda IMS-organisation. Den IMS-organisation som du är etablerad för och som du använder för att logga in på Adobe Analytics, Experience Platform och Customer Journey Analytics.
 
-Med funktionen *mappa analysdata från flera IMS-organisationer* kan du begära att Adobe mappar data. Funktionen använder Analytics-källkopplingen för att mappa data från rapportsviter som finns i flera IMS-organisationer för *källa* till datauppsättningar som ingår i en IMS-organisation för *mål*. Exempel:
+Med *Cross-IMS-datamappning* kan du begära att Adobe mappar data. Funktionen använder Analytics-källkopplingen för att mappa data från rapportsviter som finns i flera IMS-organisationer för *källa* för att rapportera sviter (och ultimata datauppsättningar) som ingår i en IMS-organisation för *mål*. Exempel:
 
 | Illustration | Förklaring |
 |---|---|
@@ -38,7 +39,7 @@ Med funktionen *mappa analysdata från flera IMS-organisationer* kan du begära 
 
 ## Så här använder du
 
-Om du vill konfigurera och aktivera funktionen *mappa analysdata från flera IMS-organisationer* måste du begära mappningen via din kontohanterare för Adobe. Så här gör du:
+Om du vill konfigurera och aktivera datamappningen *Cross-IMS* måste du begära mappningen via din kontohanterare för Adobe. Så här gör du:
 
 1. Som administratör för IMS-målorganisation begär du e-postmeddelanden om godkännande från alla IMS-källorganisationens administratörer som du vill mappa rapportsviter för. Du kan använda följande text som mall för e-postmeddelandet för att begära godkännande från IMS-organisationens källadministratörer.
 
@@ -50,12 +51,12 @@ Om du vill konfigurera och aktivera funktionen *mappa analysdata från flera IMS
 
 När Adobe Account Manager har fått e-postmeddelandet med en begäran om att mappa analysdata från flera organ, granskas begäran inom Adobe. Adobe Account Manager kontaktar dig om du har frågor, utbildning eller annan information.
 
-När mappningen har godkänts skapas den och du meddelas. Namnet på IMS-källorganisationen läggs till efter namnet på rapportsviten i listan [i Analytics-rapportsviterna](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) i Experience Platform.
+När mappningen har godkänts skapas den och du meddelas. Namnet på IMS-källorganisationen läggs till efter namnet på rapportsviten i listan [i Analytics-rapportsviterna](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) i Experience Platform.
 
 
 ## Begränsningar
 
-Följande begränsningar gäller för funktionen *map Analytics data från flera IMS-organisationer*:
+Följande begränsningar gäller för datamappningsfunktionen *Cross-IMS*:
 
 * Du kan bara ansluta en rapportsserie en gång till olika organisationer.
 * Du måste ta bort alla anslutningar för en IMS-organisation som är definierad som mål-IMS-organisation i en mappning innan du kan begära att mappningen ska tas bort.
@@ -64,18 +65,18 @@ Följande begränsningar gäller för funktionen *map Analytics data från flera
 
 ## Överväganden
 
-Du kan tänka på följande innan du begär funktionen *mappa analysdata från flera IMS-organisationer*:
+Du kanske vill ta hänsyn till följande ämnen innan du begär datamappningen *Cross-IMS*:
 
 ### Profiler
 
-När funktionen *Mappa analysdata från flera IMS-organisationer* har godkänts kan du lägga till data i Experience Platform för en eller flera rapportsviter i IMS-målorganisationen. Det gör du genom att konfigurera [Analytics-källkopplingen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Måldatauppsättningar skapas sedan i Experience Platform. Som en del av den här konfigurationen och processen kan du välja att skicka profildata från en eller flera rapportsviter till profiltjänsten.
+När funktionen *Cross-IMS-datamappning* har godkänts kan du lägga till data i Experience Platform för en eller flera av rapportsviterna i mål-IMS-organisationen. Det gör du genom att konfigurera [Analytics-källkopplingen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Måldatauppsättningar skapas sedan i Experience Platform. Som en del av den här konfigurationen och processen kan du välja att skicka profildata från en eller flera rapportsviter till profiltjänsten.
 
-Uppskatta det totala antalet profiler som är resultatet av konfigurationen och processen enligt ovan. Se till att det totala antalet ligger inom det antal profiler som du enligt avtal har rätt till för målorganisationen. Använd [filtreringsregler och villkor](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} om du vill inkludera eller exkludera data selektivt från konsumtion till profiltjänsten. Eller inaktivera alternativet att skicka profildata till profiltjänsten för relevanta rapportsviter.
+Uppskatta det totala antalet profiler som är resultatet av konfigurationen och processen enligt ovan. Se till att det totala antalet ligger inom det antal profiler som du enligt avtal har rätt till för målorganisationen. Använd [filtreringsregler och villkor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} om du vill inkludera eller exkludera data selektivt från konsumtion till profiltjänsten. Eller inaktivera alternativet att skicka profildata till profiltjänsten för relevanta rapportsviter.
 
 
 ### Stitlar
 
-När funktionen *Mappa analysdata från flera IMS-organisationer* har godkänts kan du lägga till data i Experience Platform för en eller flera rapportsviter i IMS-målorganisationen. Det gör du genom att konfigurera [Analytics-källkopplingen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Måldatamängder för de rapportsviter du konfigurerade i Analytics-källkopplingen skapas sedan i Experience Platform. Som en del av den här konfigurationen och processen kan du välja att skicka profildata från en eller flera rapportsviter till profiltjänsten.
+När funktionen *Cross-IMS-datamappning* har godkänts kan du lägga till data i Experience Platform för en eller flera av rapportsviterna i mål-IMS-organisationen. Det gör du genom att konfigurera [Analytics-källkopplingen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Måldatamängder för de rapportsviter du konfigurerade i Analytics-källkopplingen skapas sedan i Experience Platform. Som en del av den här konfigurationen och processen kan du välja att skicka profildata från en eller flera rapportsviter till profiltjänsten.
 
 Du kan använda både [fältbaserad](/help/stitching/fbs.md) och [diagrambaserad](/help/stitching/gbs.md) sammanfogning på måldatamängderna. När du använder diagrambaserad sammanfogning på en eller flera av dessa måldatamängder måste du se till att du håller dig inom dina avtalsenliga berättiganden för antalet profiler enligt beskrivningen i avsnittet [Profiler](#profiles).
 
@@ -88,4 +89,4 @@ En användare med tillräcklig behörighet för att konfigurera Analytics-källk
 
 ### Rapport om data
 
-Funktionen *Mappa analysdata från flera IMS-organisationer* är bara ett första steg för att säkerställa att du kan använda data som en del av en Customer Journey Analytics [anslutning](/help/connections/overview.md), en eller flera [datavyer](/help/data-views/data-views.md) och [arbetsyteprojekt](/help/analysis-workspace/home.md). Du måste noggrant kontrollera de data som du nu har tillgängliga i en IMS-organisation. Ta hänsyn till funktioner som datapresentation, härledda fält, extra uppslagstabeller med mera innan du kan rapportera dessa data på rätt sätt.
+Funktionen *Cross-IMS-datamappning* är bara ett första steg som säkerställer att du kan använda data som en del av en Customer Journey Analytics [anslutning](/help/connections/overview.md), en eller flera [datavyer](/help/data-views/data-views.md) och [arbetsyteprojekt](/help/analysis-workspace/home.md). Du måste noggrant kontrollera de data som du nu har tillgängliga i en IMS-organisation. Ta hänsyn till funktioner som datapresentation, härledda fält, extra uppslagstabeller med mera innan du kan rapportera dessa data på rätt sätt.
