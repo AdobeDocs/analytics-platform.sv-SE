@@ -93,7 +93,7 @@ Returnerar det största värdet i en uppsättning dimensionselement för en måt
 
 >[!TIP]
 >
->Använd en [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-sats, till exempel **IF**(*Intäkter* = **Kolumngräns***(Inkomster*), 1, 0), för att markera det objekt som presterar bäst i din detaljnivå.
+>Använd en [IF](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-sats, till exempel **IF**(*Intäkter* = **Kolumngräns***(Inkomster*), 1, 0), för att markera det objekt som presterar bäst i din detaljnivå.
 >
 
 ## Minsta kolumn {#column-minimum}
@@ -123,7 +123,7 @@ Returnerar det minsta värdet i en uppsättning dimensionselement för en måttk
 
 >[!TIP]
 >
->Använd en [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-sats, t.ex. **IF**(*Intäkter* = **Kolumnminimum***(Inkomster*), 1, 0), för att markera det objekt som har lägst prestanda i nedbrytningen.
+>Använd en [IF](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-sats, t.ex. **IF**(*Intäkter* = **Kolumnminimum***(Inkomster*), 1, 0), för att markera det objekt som har lägst prestanda i nedbrytningen.
 >
 
 
