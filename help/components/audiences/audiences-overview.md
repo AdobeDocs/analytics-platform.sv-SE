@@ -4,7 +4,7 @@ description: Läs om begreppet målgruppspublicering i Customer Journey Analytic
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+source-git-commit: 9a7ba4913a4724116455566ff783fb270f5e289c
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Du kan skapa och publicera målgrupper som identifierats i Customer Journey Anal
 Att publicera målgrupper är ett tydligt sätt att aktivera och vidta åtgärder för insikter som hittas i Customer Journey Analytics. Dessa åtgärder kan omfatta:
 
 * Använda publiken för en resa i Adobe Journey Optimizer.
-Mer information om hur du använder målgrupper som publicerats till Experience Platform finns i [Kom igång med målgrupper](https://experienceleague.adobe.com/sv/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences) i Journey Optimizer-dokumentationen.
+Mer information om hur du använder målgrupper som publicerats till Experience Platform finns i [Kom igång med målgrupper](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences) i Journey Optimizer-dokumentationen.
 * Exportera målgruppen till en tredje part via ett Experience Platform-mål.
 * Förbättra kundprofilen i realtid med användbara attribut som bygger på händelsebaserade data i Customer Journey Analytics.
 * Allt detta med minimal fördröjning efter publikens publicering.
@@ -50,7 +50,7 @@ De målgrupper du skapar i Customer Journey Analytics behöver inte baseras på 
 
 ## Datastyrning och samtycke
 
-När du publicerar en målgrupp i Customer Journey Analytics registreras de etiketter och profiler för datastyrning som är kopplade till de fält som används i målgruppen.  När målgruppen aktiveras i någon av Adobe Experience App finns alla tillhörande etiketter och policyer för datastyrning tillgängliga för den målgruppen och lämplig tillsyn kan tillämpas. [Läs mer om samtycke](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=sv-SE#consent-policy).
+När du publicerar en målgrupp i Customer Journey Analytics registreras de etiketter och profiler för datastyrning som är kopplade till de fält som används i målgruppen.  När målgruppen aktiveras i någon av Adobe Experience App finns alla tillhörande etiketter och policyer för datastyrning tillgängliga för den målgruppen och lämplig tillsyn kan tillämpas. [Läs mer om samtycke](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy).
 
 ## Nästa steg
 
