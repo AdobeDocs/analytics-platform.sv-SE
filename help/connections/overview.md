@@ -1,11 +1,11 @@
 ---
-title: Customer Journey Analytics Connections overview
+title: Customer Journey Analytics Connections Overview
 description: Läs mer om anslutningar i Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 09a6ae258d27f8fe9c9a1fc7ed63273620c67c1b
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Anslutningar - översikt
 
-Med anslutningar kan Customer Journey Analytics produktadministratörer definiera vilka [!DNL &#x200B; Experience Platform]-datakällor, till exempel händelser, sökning, profil och sammanfattningsdatauppsättningar, som är inkapslade. Anslutningar utgör grunden för Customer Journey Analytics och avgör tillgängligheten för data (fält) som du kan definiera i en [datavy](/help/data-views/data-views.md) som mått eller mätvärden.
+Med anslutningar kan Customer Journey Analytics produktadministratörer definiera vilka [!DNL  Experience Platform]-datakällor, till exempel händelser, sökning, profil och sammanfattningsdatauppsättningar, som är inkapslade. Anslutningar utgör grunden för Customer Journey Analytics och avgör tillgängligheten för data (fält) som du kan definiera i en [datavy](/help/data-views/data-views.md) som mått eller mätvärden.
 
 >[!IMPORTANT]
 >
@@ -43,7 +43,7 @@ På en hög nivå ger anslutningsarbetsflödet dig möjlighet att:
 | ➋ | [Granska informationen för en anslutning](manage-connections.md#connection-details), som datauppsättningsposter som har importerats, hoppats över eller tagits bort. |
 | ➌ | [Skapa eller redigera konfigurationen för en anslutning](create-connection.md#create-or-edit-a-connection), till exempel ett rullande datafönster, den sandlåda som ska användas, vilka datauppsättningar som är en del av anslutningen, med mera. |
 | ➍ | [Lägg till datauppsättningar i en anslutning](create-connection.md#add-datasets). Anslutningen bör ha minst en händelse- eller sammanfattningsdatauppsättning men kan innehålla en mängd olika datauppsättningar för händelse, profil, sökning och sammanfattning. |
-| ➎ | [Konfigurera inställningarna](create-connection.md#dataset-settings) för datauppsättningar som du lägger till. Du kan bestämma hur olika datauppsättningar ska länkas baserat på en vanlig personbaserad eller [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} kontobaserad identifierare. |
+| ➎ | [Konfigurera inställningarna](create-connection.md#dataset-settings) för datauppsättningar som du lägger till. Du kan bestämma hur olika datauppsättningar ska länkas baserat på en vanlig personbaserad eller [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} kontobaserad identifierare. |
 | ➏ | [Redigera inställningarna för en befintlig datamängd](create-connection.md#edit-a-dataset). Du kan alltid gå tillbaka till datauppsättningsinställningarna i ett senare skede. |
 
 

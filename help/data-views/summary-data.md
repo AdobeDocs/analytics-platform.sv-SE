@@ -1,13 +1,13 @@
 ---
 title: Sammanfattningsdata
-description: Information om hur du använder och konfigurerar sammanfattningsdata i en datavy.
+description: Lär dig mer om detaljer och information om hur du använder och konfigurerar sammanfattningsdata i en datavy.
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1144'
 ht-degree: 2%
 
 ---
@@ -142,7 +142,7 @@ https://platform.adobe.io/data/foundation/schemaregistry/tenant/descriptors \
 
 | Variabel | Värde |
 |---|---|
-| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | Mer information om hur du anger värden för dessa variabler finns i [Autentisera och få åtkomst till Experience Platform API:er](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/platform-apis/api-authentication). |
+| `$ACCESS_TOKEN`<br/>`$API_KEY`<br/>`$ORG_ID`<br/>`$SANDBOX_NAME` | Mer information om hur du anger värden för dessa variabler finns i [Autentisera och få åtkomst till Experience Platform API:er](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication). |
 | `$SCHEMA_ID` | Du kan hitta ID:t för ditt schema i Experience Platform-gränssnittet. Välj ditt sammanfattningsschema i listan med scheman och sök efter **[!UICONTROL API Usage]** > **[!UICONTROL Schema ID]** i den högra panelen. Använd det ID:t som värde. |
 | `$GRANULARITY` | Ange `hour` eller `day` som värde. |
 | `$TIMEZONE` | Ange rätt värde för tidszonsidentifierare från TZ-identifierarkolumnen i [List of tz database time zone](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). Till exempel: `America/Los_Angeles`. |
@@ -154,5 +154,5 @@ Kontrollera att komponentinställningarna för en sammanfattningsdatagrupp är d
 >[!MORELIKETHIS]
 >
 >- I artikeln [Använd sammanfattningsdata](/help/use-cases/data-views/summary-data.md) finns ett detaljerat exempel på hur du använder och rapporterar om sammanfattningsdata.
->- Blogg: [Hur sammanfattningsdata förbättrar Adobe Customer Journey Analytics-datauppsättningar](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=sv)
+>- Blogg: [Hur sammanfattningsdata förbättrar Adobe Customer Journey Analytics-datauppsättningar](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
 

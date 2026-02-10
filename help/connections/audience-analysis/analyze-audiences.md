@@ -4,7 +4,8 @@ description: Lär dig hur du analyserar Experience Platform målgrupper i Custom
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+exl-id: 095cae34-1337-464a-9682-3c899295c0a8
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -56,11 +57,3 @@ Använd tabellen i den här panelen för att bättre förstå målgruppernas bet
 Visar var varje målgrupp som slutade ursprungligen skapades, oavsett om det var i RTCDP, Customer Journey Analytics och så vidare.
 
 Använd tabellen i den här panelen för att bättre förstå hur målgruppens ursprung kan påverka andra faktorer. Dra dimensionen Avslutade målgruppsnamn från den markerade datavyn och lägg till den som en uppdelning. Eller använd någon annan interaktionsdimension eller mätmetod (som Sida, Åtgärd o.s.v.) som uppdelning.
-
-
-
-
-
-
-
-

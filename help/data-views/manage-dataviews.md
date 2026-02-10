@@ -4,13 +4,13 @@ description: Lär dig hur du hanterar datavyer.
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: cb5baf2ec8d3ad4449a9b08d0a025a2d39a11425
+exl-id: c5cf15ab-3eb1-4e6b-93a3-3d89694ca0ea
+source-git-commit: c7cf7250f30e2f6023aa7690391aea149ba12eff
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
-
 
 # Hantera datavyer
 
@@ -29,7 +29,7 @@ Följande kolumner och ikoner är tillgängliga i tabellen:
 | --- | --- |
 | **[!UICONTROL Name]** | Datavyns namn. |
 | ![Information](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Om du vill visa information om datavyn väljer du ![InfoOutline](/help/assets/icons/InfoOutline.svg) bredvid datavyns namn.<br/>Ett popup-fönster visar information om datavyn. |
-| ![Mer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Välj ![Mer](/help/assets/icons/More.svg) om du vill öppna en snabbmeny. Du kan välja:<br/>![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** om du vill [redigera](#edit-data-views) en datavy.<br/>![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** till [kopiera en datavy](#copy-data-views).<br/>![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** om du vill [ta bort](#delete-data-views) en datavy.<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** för att [exportera informationen om datavyn till en CSV-fil](#export-data-views-to-csv).<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Create project]** för att [skapa ett nytt Workspace-projekt](#create-project-from-data-views) för datavyn. |
+| ![Mer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Välj ![Mer](/help/assets/icons/More.svg) om du vill öppna en snabbmeny. Du kan välja:<br/>![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** om du vill [redigera](#edit-data-views) en datavy.<br/>![Kopiera](/help/assets/icons/Copy.svg) **[!UICONTROL Copy]** till [kopiera en datavy](#copy-data-views).<br/>![Ta bort](/help/assets/icons/Delete.svg) **[!UICONTROL Delete]** om du vill [ta bort](#delete-data-views) en datavy.<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** för att [exportera informationen om datavyn till en CSV-fil](#export-data-views-to-csv).<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Create project]** för att [skapa ett nytt Workspace-projekt](#create-project-from-data-views) för datavyn.<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable for Data Insights Agent]** om du vill aktivera en datavy för Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable for Data Insights Agent]** om du vill inaktivera en datavy för Data Insights Agent. |
 | **[!UICONTROL Connection]** | Namnet på anslutningen som är associerad med datavyn. |
 | **[!UICONTROL Sandbox]** | Namnet på sandlådan som är associerad med datavyn. |
 | **[!UICONTROL Owner]** | Datavyns ägare. |
@@ -44,7 +44,7 @@ Om du vill konfigurera vilka kolumner som ska visas i tabellen väljer du ![Kolu
 
 ## Sök datavyer
 
-Du kan snabbt söka efter en datavy med sökrutan ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
+Du kan snabbt söka efter en datavy med rutan ![Sök](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
 
 ## Filtrera datavyer
 
@@ -58,6 +58,8 @@ Om du vill använda ett filter på listan med datavyer markerar du ikonen ![Filt
 | **[!UICONTROL Integrations]** | Endast datavyer med valda integreringar visas. |
 | **[!UICONTROL Use in CJA]** | Välj **[!UICONTROL On]** om du bara vill visa datavyer som har aktiverats för användning med Customer Journey Analytics. Välj **[!UICONTROL Off]** om du bara vill visa datavyer som ännu inte har aktiverats för användning med Customer Journey Analytics. |
 
+
+Välj ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Hide filters]** om du vill dölja filterrutan.
 
 ## Skapa en datavy
 
@@ -152,4 +154,3 @@ Du kan också:
 
 1. Markera en eller flera datavy-rader som antingen är inaktiverade eller aktiverade för Data Insights Agent.
 1. Välj ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable for Data Insights Agent]** eller ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable for Data Insights Agent]** i det blå åtgärdsfältet.
-

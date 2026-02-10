@@ -1,13 +1,13 @@
 ---
 title: Översikt över datavyer
-description: En datavy anger hur du vill tolka dataelement i Customer Journey Analytics-anslutningen, t.ex. mått, dimensioner, sessioner osv.
+description: Lär dig hur en datavy anger hur du vill tolka element i data i Customer Journey Analytics-anslutningen, t.ex. mått, dimensioner, sessioner osv.
 exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,8 @@ Med datavyer kan du ändra inställningar för schemaelement spontant utan att b
 ## Krav för datavyer {#prerequisites}
 
 * Innan du kan skapa datavyer måste du [konfigurera en eller flera anslutningar till Experience Platform datamängder](/help/connections/create-connection.md).
-* Om du vill skapa eller hantera en datavy behöver du en [uppsättning behörigheter i Adobe Admin Console](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-overview).
-* Om du använder [Adobe Analytics-källkopplingen](/help/data-ingestion/analytics.md) eller har bakgrundskunskap om Adobe Analytics, kanske du vill förstå hur fält i dina scheman och datamängder relaterar till Adobe Analytics-motsvarigheter. Mer information finns i [Mappningar av analysfält](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics).
+* Om du vill skapa eller hantera en datavy behöver du en [uppsättning behörigheter i Adobe Admin Console](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview).
+* Om du använder [Adobe Analytics-källkopplingen](/help/data-ingestion/analytics.md) eller har bakgrundskunskap om Adobe Analytics, kanske du vill förstå hur fält i dina scheman och datamängder relaterar till Adobe Analytics-motsvarigheter. Mer information finns i [Mappningar av analysfält](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics).
 
 ## Datavy settings you can override in Workspace {#settings-override}
 

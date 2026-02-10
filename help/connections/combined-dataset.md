@@ -5,9 +5,9 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '946'
 ht-degree: 3%
 
 ---
@@ -32,18 +32,18 @@ Titta på följande exempel. Du har två händelsedatamängder, där vart och et
 
 | example_id | tidsstämpel | string_color | string_Animal | metrisk_a |
 | --- | --- | --- | --- | ---: |
-| user_310 | 1 jan 07:02 | Röd | Fox | |
-| user_310 | 1 jan 07:04 | | | 2 |
-| user_310 | 1 jan 07:08 | Blå | | 3 |
+| user_310 | 1 Jan 7:02 AM | Röd | Fox | |
+| user_310 | 1 Jan 7:04 AM | | | 2 |
+| user_310 | 1 Jan 7:08 AM | Blå | | 3 |
 | user_847 | 2 Jan 12:31 PM | | Sköldpadda | 4 |
-| user_847 | 2 jan 12:44 PM | | | 2 |
+| user_847 | 2 Jan 12:44 PM | | | 2 |
 
 | different_id | tidsstämpel | string_color | string_shape | metrisk_b |
 | --- | --- | --- | --- | ---: |
 | user_847 | 2 Jan 12:26 PM | Gul | Cirkel | 8,5 |
-| user_847 | 2 Jan 1:01 PM | Röd | | |
+| user_847 | 2 jan 1:01 PM | Röd | | |
 | alternateid_656 | 2 Jan 8:58 PM | Röd | Fyrkant | 4,2 |
-| alternateid_656 | 2 jan 9:03 PM | | Triangel | 3,1 |
+| alternateid_656 | 2 Jan 9:03 PM | | Triangel | 3,1 |
 
 När du skapar en anslutning med dessa två händelsedatamängder och har identifierat
 
@@ -54,29 +54,29 @@ följande kombinerade datauppsättning används för rapportering.
 
 | id | tidsstämpel | string_color | string_Animal | string_shape | metrisk_a | metrisk_b |
 | --- | --- | --- | --- | --- | ---: | ---: |
-| user_310 | 1 jan 07:02 | Röd | Fox | | | |
-| user_310 | 1 jan 07:04 | | | | 2 | |
-| user_310 | 1 jan 07:08 | Blå | | | 3 | |
+| user_310 | 1 Jan 7:02 AM | Röd | Fox | | | |
+| user_310 | 1 Jan 7:04 AM | | | | 2 | |
+| user_310 | 1 Jan 7:08 AM | Blå | | | 3 | |
 | user_847 | 2 Jan 12:26 PM | Gul | | Cirkel | | 8,5 |
 | user_847 | 2 Jan 12:31 PM | | Sköldpadda | | 4 | |
-| user_847 | 2 jan 12:44 PM | | | | 2 | |
-| user_847 | 2 Jan 1:01 PM | Röd | | | | |
+| user_847 | 2 Jan 12:44 PM | | | | 2 | |
+| user_847 | 2 jan 1:01 PM | Röd | | | | |
 | alternateid_656 | 2 Jan 8:58 PM | Röd | | Fyrkant | | 4,2 |
-| alternateid_656 | 2 jan 9:03 PM | | | Triangel | | 3,1 |
+| alternateid_656 | 2 Jan 9:03 PM | | | Triangel | | 3,1 |
 
 Tänk på det här scenariot för att illustrera vikten av schemasökvägar. I den första datauppsättningen baseras `string_color` på schemasökvägen `_experience.whatever.string_color` och i den andra datauppsättningen på schemasökvägen `_experience.somethingelse.string_color`. I det här scenariot sammanfogas data **inte** till en kolumn i den resulterande kombinerade datauppsättningen. I stället är resultatet två `string_color`-kolumner i den kombinerade datauppsättningen:
 
 | id | tidsstämpel | _upplevelse.<br/>vad som helst.<br/>strängfärg | _upplevelse.<br/>något annat.<br/>strängfärg | string_Animal | string_shape | metrisk_a | metrisk_b |
 |---|---|---|---|---|---|---:|---:|
-| user_310 | 1 jan 07:02 | Röd | | Fox | | | |
-| user_310 | 1 jan 07:04 | | | | | 2 | |
-| user_310 | 1 jan 07:08 | Blå | | | | 3 | |
+| user_310 | 1 Jan 7:02 AM | Röd | | Fox | | | |
+| user_310 | 1 Jan 7:04 AM | | | | | 2 | |
+| user_310 | 1 Jan 7:08 AM | Blå | | | | 3 | |
 | user_847 | 2 Jan 12:26 PM | | Gul | | Cirkel | | 8,5 |
 | user_847 | 2 Jan 12:31 PM | | | Sköldpadda |  | 4 | |
-| user_847 | 2 jan 12:44 PM | | | | | 2 | |
-| user_847 | 2 Jan 1:01 PM | | Röd | | | | |
+| user_847 | 2 Jan 12:44 PM | | | | | 2 | |
+| user_847 | 2 jan 1:01 PM | | Röd | | | | |
 | alternateid_656 | 2 Jan 8:58 PM | | Röd | | Fyrkant | | 4,2 |
-| alternateid_656 | 2 jan 9:03 PM | | | | Triangel | | 3,1 |
+| alternateid_656 | 2 Jan 9:03 PM | | | | Triangel | | 3,1 |
 
 Den här kombinerade händelsedatamängden används för rapportering. Det spelar ingen roll vilken datauppsättning en rad kommer från. Customer Journey Analytics hanterar alla data som om de fanns i samma datauppsättning. Om ett matchande person-ID visas i båda datauppsättningarna betraktas de som samma unika person. Om ett matchande person-ID visas i båda datauppsättningarna med en tidsstämpel inom 30 minuter betraktas de som en del av samma session. Fält med identiska schemasökvägar sammanfogas.
 
@@ -111,7 +111,7 @@ Med flerkanalsanalys kan ni besvara frågor som:
 * Hur många börjar sin upplevelse i en kanal och avslutar den i en annan?
 * Hur många interagerar med mitt varumärke? Hur många och vilka typer av enheter använder de? Hur överlappar de?
 * Hur ofta startar man en uppgift på en mobil enhet och sedan övergår till en stationär dator för att slutföra uppgiften? Kommer kampanjklickningar som landar på en enhet att leda till konvertering någon annanstans?
-* Hur påverkar min förståelse för kampanjens effektivitet om jag tänker på resor mellan olika enheter? Hur förändras min trattanalys?
+* Hur påverkar min förståelse för kampanjens effektivitet om jag tänker på resor mellan olika enheter? Hur förändras min funnel-analys?
 * Vilka är de vanligaste sökvägarna som användare tar från en enhet till en annan? Var faller de? Var lyckas de?
 * Hur skiljer sig beteendet hos användare med flera enheter från dem som har en enda enhet?
 

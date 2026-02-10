@@ -1,13 +1,13 @@
 ---
-title: Lägga till standardsökningar i datauppsättningar
-description: Använd standardsökningar för att förbättra rapporter med användbara dimensioner i Customer Journey Analytics.
+title: Lägg till standardsökningar i dina datauppsättningar
+description: Lär dig använda standardsökningar för att förbättra rapporter med användbara dimensioner i Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Standardsökningar är bara tillgängliga för datakällor för Analytics-källkoppling i Customer Journey Analytics. Du kan använda dem med Adobe Analytics standardimplementeringar, [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE) eller Experience Platform datainsamlings-API:er.
+>Standardsökningar är bara tillgängliga för datakällor för Analytics-källkoppling i Customer Journey Analytics. Du kan använda dem med Adobe Analytics standardimplementeringar, [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) eller Experience Platform datainsamlings-API:er.
 >
 
 Standarduppslag (även kallat uppslag som tillhandahålls av Adobe) förbättrar möjligheten för Customer Journey Analytics att rapportera vissa dimensioner/attribut som inte är användbara för sig själva, men som är användbara när de sammanfogas med andra data. Exemplen innehåller attribut för mobila enheter och attribut för OS- och webbläsardimensioner, till exempel versionsnummer för webbläsare. En &#39;standardsökning&#39; liknar en uppslagsdatauppsättning. Standardsökningar kan användas i olika Experience Cloud-organisationer. De tillämpas automatiskt på alla händelsedatamängder som innehåller vissa XDM-schemafält (se nedan för de specifika fälten). Det finns en standardsökdatamängd för varje schemaplats som Adobe klassificerar.

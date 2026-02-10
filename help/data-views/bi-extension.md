@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: BI Extension
 role: Admin
 exl-id: ab7e1f15-ead9-46b7-94b7-f81802f88ff5
-source-git-commit: 0d8da0f61e6494801ed3a09823b2f3b7c1bed7a9
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '3190'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 [!DNL Customer Journey Analytics BI extension] aktiverar SQL-åtkomst till de [datavyer](./data-views.md) som du har definierat i Customer Journey Analytics. Dina datatekniker och analytiker kanske känner bättre till Power BI, Tableau Desktop eller andra verktyg för affärsintelligens och visualisering (kallas även BI-verktyg). De kan nu skapa rapporter och kontrollpaneler baserat på samma datavyer som Customer Journey Analytics-användare använder när de skapar sina Analysis Workspace-projekt.
 
-Adobe Experience Platform [frågetjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/query/home) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. När [!DNL Customer Journey Analytics BI extension] är aktiverat utökas funktionaliteten för [!DNL Query Service] så att du kan se dina Customer Journey Analytics-datavyer som tabeller eller vyer i en [!DNL Query Service] -session. Det innebär att de verktyg för affärsintelligens som använder [!DNL Query Service] som PostgresSQL-gränssnitt sömlöst drar nytta av den här utökade funktionen.
+Adobe Experience Platform [frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/home) är SQL-gränssnittet till data som är tillgängliga i datasjön i Experience Platform. När [!DNL Customer Journey Analytics BI extension] är aktiverat utökas funktionaliteten för [!DNL Query Service] så att du kan se dina Customer Journey Analytics-datavyer som tabeller eller vyer i en [!DNL Query Service] -session. Det innebär att de verktyg för affärsintelligens som använder [!DNL Query Service] som PostgresSQL-gränssnitt sömlöst drar nytta av den här utökade funktionen.
 
 De viktigaste fördelarna är:
 
@@ -28,7 +28,7 @@ De viktigaste fördelarna är:
 
 ## Förutsättningar
 
-Om du vill använda den här funktionen kan du använda förfallande eller ej förfallande autentiseringsuppgifter för att ansluta BI-verktyg till [!DNL Customer Journey Analytics BI extension]. Guiden [Autentiseringsuppgifter](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/credentials) innehåller mer information om hur du anger förfallodatum för autentiseringsuppgifter eller ej förfallande autentiseringsuppgifter.
+Om du vill använda den här funktionen kan du använda förfallande eller ej förfallande autentiseringsuppgifter för att ansluta BI-verktyg till [!DNL Customer Journey Analytics BI extension]. Guiden [Autentiseringsuppgifter](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials) innehåller mer information om hur du anger förfallodatum för autentiseringsuppgifter eller ej förfallande autentiseringsuppgifter.
 Nedan visas ytterligare steg för att konfigurera de behörigheter som krävs.
 <!---   Enable the [!UICONTROL Customer Journey Analytics BI extension] in your Experience Platform organization. -->
 
@@ -48,7 +48,7 @@ Eller så kan du:
 
 Så här använder du ej förfallande autentiseringsuppgifter:
 
-* Skapa [icke-förfallande autentiseringsuppgifter i Experience Platform](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials).
+* Skapa [icke-förfallande autentiseringsuppgifter i Experience Platform](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/bi-extension#non-expiring-credentials).
 * Bevilja åtkomst till autentiseringsuppgifter som inte förfaller genom att följa stegen som anges i [Utgående autentiseringsuppgifter](#Expiring-credentials).
 
 Mer information finns i [Åtkomstkontroll för kundresa](../technotes/access-control.md), särskilt [Tilläggsbehörigheter för produktadministratör](../technotes/access-control.md#product-admin-additional-permissions) och [Customer Journey Analytics-behörigheter i Admin Console](../technotes/access-control.md#customer-journey-analytics-permissions-in-admin-console).
@@ -66,9 +66,9 @@ Du kan använda funktionerna direkt i SQL-satser med antingen Frågeredigeraren 
 
 I Adobe Experience Platform:
 
-1. Välj **[!UICONTROL ** Frågor **]** från **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]** i den vänstra listen.
+1. Välj **[!UICONTROL ** Frågor **]** från **[!UICONTROL ** DATAHANTERING **]** i den vänstra listen.
 
-1. Välj ![Skapa fråga](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL **&#x200B; Skapa fråga &#x200B;**]**.
+1. Välj ![Skapa fråga](assets/Smock_AddCircle_18_N.svg) **[!UICONTROL ** Skapa fråga **]**.
 
 1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
@@ -81,13 +81,13 @@ I Adobe Experience Platform:
 
 1. Söka efter och kopiera dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
 
-   1. Välj **[!UICONTROL **&#x200B; Autentiseringsuppgifter &#x200B;**]** i det övre fältet.
+   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
 
    1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
-   1. Om du vill kopiera kommandosträngen använder du ![Kopiera](assets/Smock_Copy_18_N.svg) i avsnittet **[!UICONTROL **&#x200B; PSQL-kommando &#x200B;**]**.
+   1. Om du vill kopiera kommandosträngen använder du ![Kopiera](assets/Smock_Copy_18_N.svg) i avsnittet **[!UICONTROL ** PSQL-kommando **]**.
 
 1. Öppna ett kommando eller ett terminalfönster.
 
@@ -95,7 +95,7 @@ I Adobe Experience Platform:
 
 +++
 
-Mer information finns i [Användargränssnittsguiden för frågeredigeraren](https://experienceleague.adobe.com/sv/docs/experience-platform/query/ui/user-guide).
+Mer information finns i [Användargränssnittsguiden för frågeredigeraren](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/user-guide).
 
 
 ### BI-verktyg
@@ -106,9 +106,9 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
 
-   1. Välj **[!UICONTROL **&#x200B; Autentiseringsuppgifter &#x200B;**]** i det övre fältet.
+   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
 
    1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
@@ -116,32 +116,32 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. I Power BI:
 
-   1. I huvudfönstret väljer du **[!UICONTROL **&#x200B; Hämta data &#x200B;**]** i det övre verktygsfältet.
+   1. I huvudfönstret väljer du **[!UICONTROL ** Hämta data **]** i det övre verktygsfältet.
 
    1. Välj **[!UICONTROL More...]** i den vänstra listen.
 
-   1. På skärmen **Hämta data** söker du efter `PostgresSQL` och väljer **[!UICONTROL **&#x200B; PostgresSQL-databasen &#x200B;**]** i listan.
+   1. På skärmen **Hämta data** söker du efter `PostgresSQL` och väljer **[!UICONTROL ** PostgresSQL-databasen **]** i listan.
 
-   1. I dialogrutan **[!UICONTROL **&#x200B; PostProgressSQL-databas &#x200B;**]**:
+   1. I dialogrutan **[!UICONTROL ** PostProgressSQL-databas **]**:
 
-      1. Klistra in parametern **[!UICONTROL ** Host **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Server &#x200B;**]**.
+      1. Klistra in parametern **[!UICONTROL ** Host **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Server **]**.
 
-      1. Klistra in parametern **[!UICONTROL ** Database **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Database &#x200B;**]** .
+      1. Klistra in parametern **[!UICONTROL ** Database **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Database **]** .
 
-         Lägg till `?FLATTEN` i parametern **[!UICONTROL **&#x200B; Database &#x200B;**]**, så den blir som `prod:cja?FLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
+         Lägg till `?FLATTEN` i parametern **[!UICONTROL ** Database **]**, så den blir som `prod:cja?FLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
       1. Välj **[!UICONTROL Data Connectivity]** när du uppmanas till **[!UICONTROL DirectQuery]**-läge.
 
       1. Du uppmanas att ange **[!UICONTROL Username]** och **[!UICONTROL Password]**. Använd motsvarande parametrar från Experience Platform Queries [!UICONTROL Credentials].
 
 
-   1. När inloggningen är klar visas datavytabellerna för Customer Journey Analytics i Power BI:er **[!UICONTROL **&#x200B; Navigator &#x200B;**]**.
+   1. När inloggningen är klar visas datavytabellerna för Customer Journey Analytics i Power BI:er **[!UICONTROL ** Navigator **]**.
 
-   1. Markera de datavytabeller som du vill använda och välj **[!UICONTROL **&#x200B; Läs in &#x200B;**]**.
+   1. Markera de datavytabeller som du vill använda och välj **[!UICONTROL ** Läs in **]**.
 
    Alla dimensioner och mätvärden som är kopplade till en eller flera markerade tabeller visas i den högra rutan, redo att användas i dina visualiseringar.
 
-   Mer information finns i [Anslut Power BI till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/power-bi). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
+   Mer information finns i [Anslut Power BI till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
 
 +++
 
@@ -149,9 +149,9 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
 
-   1. Välj **[!UICONTROL **&#x200B; Autentiseringsuppgifter &#x200B;**]** i det övre fältet.
+   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
 
    1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
@@ -159,35 +159,35 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. I Tableau Desktop:
 
-   1. Välj **[!UICONTROL ** Mer **]** från **[!UICONTROL **&#x200B; Till en server &#x200B;**]** i den vänstra listen.
+   1. Välj **[!UICONTROL ** Mer **]** från **[!UICONTROL ** Till en server **]** i den vänstra listen.
 
-   1. Välj **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]** i listan.
+   1. Välj **[!UICONTROL ** PostgresSQL **]** i listan.
 
    1. I dialogrutan [!UICONTROL PostgresSQL]:
 
-      1. Klistra in parametern **[!UICONTROL ** Host **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Server &#x200B;**]**.
+      1. Klistra in parametern **[!UICONTROL ** Host **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Server **]**.
 
-      1. Klistra in parametern **[!UICONTROL ** Port **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Port &#x200B;**]**.
+      1. Klistra in parametern **[!UICONTROL ** Port **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Port **]**.
 
-      1. Klistra in parametern **[!UICONTROL ** Database **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Database &#x200B;**]** .
+      1. Klistra in parametern **[!UICONTROL ** Database **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Database **]** .
 
-         Lägg till `%3FFLATTEN` i parametern **[!UICONTROL **&#x200B; Database &#x200B;**]**, så den blir som `prod:cja%3FFLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
+         Lägg till `%3FFLATTEN` i parametern **[!UICONTROL ** Database **]**, så den blir som `prod:cja%3FFLATTEN` till exempel. Mer information finns i [Förenkla kapslade datastrukturer för användning med BI-verktyg från tredje part](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
-      1. Välj **[!UICONTROL ** Användarnamn och lösenord **]** i listan **[!UICONTROL **&#x200B; Autentisering &#x200B;**]**.
+      1. Välj **[!UICONTROL ** Användarnamn och lösenord **]** i listan **[!UICONTROL ** Autentisering **]**.
 
-      1. Klistra in parametern **[!UICONTROL ** Användarnamn **]** från Experience Platform-frågor [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Användarnamn &#x200B;**]**.
+      1. Klistra in parametern **[!UICONTROL ** Användarnamn **]** från Experience Platform-frågor [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Användarnamn **]**.
 
-      1. Klistra in parametern **[!UICONTROL ** Password **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL **&#x200B; Password &#x200B;**]** .
+      1. Klistra in parametern **[!UICONTROL ** Password **]** från Experience Platform Queries [!UICONTROL Credentials] i textfältet **[!UICONTROL ** Password **]** .
 
-      1. Välj **[!UICONTROL **&#x200B; Logga in &#x200B;**]**.
+      1. Välj **[!UICONTROL ** Logga in **]**.
 
-   1. Customer Journey Analytics datavyer visas som tabeller i listan **[!UICONTROL **&#x200B; Tabell &#x200B;**]**.
+   1. Customer Journey Analytics datavyer visas som tabeller i listan **[!UICONTROL ** Tabell **]**.
 
    1. Dra de tabeller som du vill använda på arbetsytan.
 
    Nu kan du arbeta med data från datavytabellerna för att skapa rapporter och visualiseringar.
 
-   Mer information finns i [Ansluta tabell till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/tableau). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
+   Mer information finns i [Ansluta tabell till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
 
 +++
 
@@ -195,9 +195,9 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
 
-   1. Välj **[!UICONTROL **&#x200B; Autentiseringsuppgifter &#x200B;**]** i det övre fältet.
+   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
 
    1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
@@ -214,7 +214,7 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
    Nu kan du arbeta med data från datavytabellerna för att skapa rapporter och visualiseringar.
 
-   Mer information finns i [Anslut sökare till frågetjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/looker). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
+   Mer information finns i [Anslut sökare till frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/looker). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
 
 +++
 
@@ -222,9 +222,9 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
 
-   1. Välj **[!UICONTROL **&#x200B; Autentiseringsuppgifter &#x200B;**]** i det övre fältet.
+   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
 
    1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
@@ -238,7 +238,7 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
    När det är klart kan du arbeta med data för att skapa rapporter och visualiseringar.
 
-   Mer information finns i [Ansluta Jupyter-anteckningsbok till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/jupyter-notebook). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
+   Mer information finns i [Ansluta Jupyter-anteckningsbok till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/jupyter-notebook). Se även [BI-användningsfall för tillägg](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel.
 
 +++
 
@@ -246,9 +246,9 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
 1. Här hittar du information om dina PostgresSQL-autentiseringsuppgifter i Adobe Experience Platform:
 
-   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL **&#x200B; DATAHANTERING &#x200B;**]**).
+   1. Välj **[!UICONTROL ** Frågor **]** i den vänstra listen (under **[!UICONTROL ** DATAHANTERING **]**).
 
-   1. Välj **[!UICONTROL **&#x200B; Autentiseringsuppgifter &#x200B;**]** i det övre fältet.
+   1. Välj **[!UICONTROL ** Autentiseringsuppgifter **]** i det övre fältet.
 
    1. Välj `cja`-databasen för din sandlåda i listan över databaser i listrutan **[!UICONTROL Database]**. Till exempel `prod:cja`.
 
@@ -262,11 +262,11 @@ För närvarande stöds och testas [!DNL Customer Journey Analytics BI extension
 
    När det är klart kan du arbeta med data för att skapa rapporter och visualiseringar.
 
-   Mer information finns i [Anslut RStudio till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/rstudio). Se även [BI-tilläggsanvändningsfall](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel (som använder RPostgres-paketet i stället).
+   Mer information finns i [Anslut RStudio till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/rstudio). Se även [BI-tilläggsanvändningsfall](/help/use-cases/data-views/bi-extension-usecases.md) för ett detaljerat exempel (som använder RPostgres-paketet i stället).
 
 +++
 
-Se [Ansluta klienter till frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/clients/overview) för en översikt och mer information om de olika verktygen som finns.
+Se [Ansluta klienter till frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview) för en översikt och mer information om de olika verktygen som finns.
 
 Se [Användningsexempel](/help/use-cases/data-views/bi-extension-usecases.md) om hur du slutför ett antal användningsfall med Customer Journey Analytics BI-tillägget.
 
@@ -297,7 +297,7 @@ prod:all=> \dv
 
 ### Kapslade kontra separerade
 
-Som standard använder schemat för datavyer kapslade strukturer, precis som de ursprungliga XDM-schemana. Integrationen stöder även alternativet `FLATTEN`. Du kan använda det här alternativet för att tvinga schemat för datavyer (och andra tabeller i sessionen) att förenklas. Förenkling gör det enklare att använda i BI-verktyg som inte stöder strukturerade scheman. Mer information finns i [Arbeta med kapslade datastrukturer i frågetjänsten](https://experienceleague.adobe.com/sv/docs/experience-platform/query/key-concepts/flatten-nested-data).
+Som standard använder schemat för datavyer kapslade strukturer, precis som de ursprungliga XDM-schemana. Integrationen stöder även alternativet `FLATTEN`. Du kan använda det här alternativet för att tvinga schemat för datavyer (och andra tabeller i sessionen) att förenklas. Förenkling gör det enklare att använda i BI-verktyg som inte stöder strukturerade scheman. Mer information finns i [Arbeta med kapslade datastrukturer i frågetjänsten](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data).
 
 
 ### Standardvärden och begränsningar
@@ -316,7 +316,7 @@ Följande ytterligare standardvärden och begränsningar gäller när du använd
 
 ### SQL som stöds
 
-Mer information om vilken typ av SQL som stöds finns i [SQL-referens för frågetjänst](https://experienceleague.adobe.com/sv/docs/experience-platform/query/sql/overview).
+Mer information om vilken typ av SQL som stöds finns i [SQL-referens för frågetjänst](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/overview).
 
 Se tabellen nedan för exempel på den SQL du kan använda.
 
