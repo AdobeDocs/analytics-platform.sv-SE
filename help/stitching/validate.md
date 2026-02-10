@@ -74,7 +74,7 @@ Skapa ett nytt projekt i Workspace och använd en frihandstabell för att visa m
 
 Om du vill visa händelser som har en e-postadress angiven efter sammanslagningsprocessen definierar du ett beräknat mått `Email stitched namespace`. Det beräknade måttet tittar på **[!UICONTROL Events]** som har en **[!UICONTROL Identity Namespace]** som är lika med det hash-kodade e-postnamnutrymmet **[!UICONTROL email_lc_sha256]**.
 
-![Stitching overview - Epostsammanslaget namnutrymme beräknat med ](/help/stitching/assets/cm-email-stitched-namespace.png)
+![Stitching overview - Epostsammanslaget namnutrymme beräknat med &#x200B;](/help/stitching/assets/cm-email-stitched-namespace.png)
 
 Om du lägger till det nya beräknade måttet **[!UICONTROL Email stitched namespace]** i frihandstabellen, ser du ökningen av antalet händelser som nu har en e-postadress efter sammanfogningsprocessen.
 
@@ -170,7 +170,7 @@ När du skapar en anslutning måste du definiera vilket fält eller vilken ident
 Du vill mäta identifieringsprestanda före och efter sammanfogning. Om du vill göra det skapar du ytterligare tre beräknade mått:
 
 1. Ett **[!UICONTROL Stitched authentication rate]** beräknat mått som beräknar antalet händelser där namnutrymmet som sammanfogats har angetts till önskad identitet över det totala antalet händelser. När du konfigurerade datavyn skapade du ett **[!UICONTROL Email stitched namespace]**-mått som innehöll ett filter som endast skulle räknas när en händelse har ett namnutrymme som är inställt på e-post. Det beräknade måttet använder det här **[!UICONTROL Email stitched namespace]**-måttet för att ge en indikation på vilken procentandel av data som har den önskade identiteten.
-   ![Beräknad autentiseringsfrekvens för titlar ](assets/calcmetric-stitchedauthenticationrate.png)
+   ![Beräknad autentiseringsfrekvens för titlar &#x200B;](assets/calcmetric-stitchedauthenticationrate.png)
 
 1. Ett **[!UICONTROL Percent increase]** beräknat mått som beräknar den råa procentuella ändringen mellan den aktuella identifieringsfrekvensen och den sammanslagna.
    ![Procentökning beräknat mätvärde](assets/calcmetric-percentincrease.png)
