@@ -33,7 +33,7 @@ Analysmetoderna innehåller [inställningar för datavykomponenten](/help/data-v
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching Enablement and validation](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching Enablement and validation](https://video.tv.adobe.com/v/3478124?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
