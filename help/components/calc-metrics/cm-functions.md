@@ -4,10 +4,10 @@ description: Lär dig mer om grundläggande funktioner för beräknade värden.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: e2e87bc3d9f26b01f250d88b924c730fe4edac7b
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 1%
+source-wordcount: '3541'
+ht-degree: 0%
 
 ---
 
@@ -58,6 +58,14 @@ Ett alternativt scenario är att du har två intressanta mätvärden och ett har
 |---|---|
 | mått | Det mått som du vill beräkna det absoluta värdet för. |
 
+**Använd skiftläge**: Kontrollera att alla resultat är positiva när du analyserar mätvärden som kan generera negativa värden, till exempel intäktsdeltas eller procentändringar. Detta bidrar till att fokusera på ändringens storlek utan hänsyn till riktning.
+
+**I beräkningsverktyget**: Radbryt måttet eller uttrycket i funktionen **Absolut värde**, till exempel: **Absolut värde**(Aktuell intäkt - Tidigare intäkt). Detta konverterar eventuella negativa skillnader till positiva värden.
+
+>[!TIP]
+>
+>Använd det här alternativet om du vill mäta absoluta skillnader mellan två tidsperioder eller segment, oavsett om prestanda ökade eller minskade.
+>
 
 ## Högsta kolumn {#column-maximum}
 
@@ -79,6 +87,14 @@ Returnerar det största värdet i en uppsättning dimensionselement för en måt
 | mått | Kräver minst ett mått men kan ta valfritt antal mått som parametrar. |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
+**Använd fall**: Identifiera det högsta värdet inom en uppdelning, till exempel den dag som har flest besök eller den produkt som har störst intäkt. Detta hjälper till att framhäva topprestanda i olika kategorier.
+
+**I beräkningsverktyget**: Använd **Kolumnmaximum** för ett mått som *Intäkt* eller *Besök* vid nedbrytning av *Dag* eller *Produkt*. Funktionen returnerar det största värdet i den kolumnen för varje rad.
+
+>[!TIP]
+>
+>Använd en [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-sats, till exempel **IF**(*Intäkter* = **Kolumngräns***(Inkomster*), 1, 0), för att markera det objekt som presterar bäst i din detaljnivå.
+>
 
 ## Minsta kolumn {#column-minimum}
 
@@ -101,6 +117,15 @@ Returnerar det minsta värdet i en uppsättning dimensionselement för en måttk
 | mått | Kräver minst ett mått men kan ta valfritt antal mått som parametrar. |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
+**Använd skiftläge**: Identifiera det lägsta värdet inom en nedbrytning, till exempel kampanjen med lägsta antal konverteringar eller dagen med lägsta intäkt. Detta gör att du snabbt kan identifiera segment som inte presterar så bra.
+
+**I beräkningsverktyget**: Tillämpa **Kolumnminimum** på ett mått som *Intäkter* eller *Konverteringsgrad* vid nedbrytning av *Kampanj* eller *Dag*. Funktionen returnerar det minsta värdet i den kolumnen för varje rad.
+
+>[!TIP]
+>
+>Använd en [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if)-sats, t.ex. **IF**(*Intäkter* = **Kolumnminimum***(Inkomster*), 1, 0), för att markera det objekt som har lägst prestanda i nedbrytningen.
+>
+
 
 ## Kolumnsumma {#column-sum}
 
@@ -121,6 +146,15 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 | Argument | Beskrivning |
 |---|---|
 | mått | Kräver minst ett mått men kan ta valfritt antal mått som parametrar. |
+
+**Använd fall**: Beräkna summan av alla värden inom en uppdelning, till exempel totala intäkter för alla produkter eller totala besök för alla dagar. Detta är praktiskt när du behöver en total summa som ska jämföras med enskilda radvärden.
+
+**I beräkningsverktyget**: Tillämpa **kolumnsumma** på ett mätresultat som *Intäkter* eller *Besök* vid nedbrytning av *Produkt* eller *Dag*. Funktionen returnerar summan av alla värden i den kolumnen för varje rad.
+
+>[!TIP]
+>
+>Använd när du behöver en referens till den totala summan för att beräkna aktier eller procent av det totala resultatet.
+>
 
 
 ## Antal {#count}
@@ -143,6 +177,14 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 |---|---|
 | mått | Det mätvärde som du vill räkna. |
 
+**Använd skiftläge**: Räkna antalet datapunkter som ingår i en beräkning, till exempel antalet dagar i ett datumintervall eller antalet produkter i en uppdelning. Detta är praktiskt när du behöver veta hur många objekt som bidrar till ett aggregerat värde.
+
+**I beräkningsverktyget**: Använd **Antal** på ett mätresultat som *Besök* eller *Intäkter* om du vill returnera det totala antalet rader (eller datapunkter) som ingår i den aktuella uppdelningen eller datumintervallet.
+
+>[!TIP]
+>
+>Använd tillsammans med **Kolumnsumma** för att beräkna medelvärden manuellt (till exempel **Kolumnsumma**(*Intäkter*) / **Antal**(Inkomster)).
+>
 
 ## Exponent {#exponent}
 
@@ -162,6 +204,15 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 | Argument | Beskrivning |
 |---|---|
 | mått | Exponenten som används på basen e. |
+
+**Använd skiftläge**: Höj ett tal eller ett mått till en angiven potens, till exempel dela ett värde eller tillämpa en exponentiell tillväxtfaktor. Detta är användbart när du modellerar tillväxttrender eller skalar ett mätresultat exponentiellt.
+
+**I beräkningsverktyget**: Använd **Exponent** med ett mätvärde och ett energivärde. Till exempel: **Exponent**(*Besök*, ) fyrkantiga måttet *Besök*.
+
+>[!TIP]
+>
+>Kombinera med **Logaritm** för avancerad modellering eller för att jämna ut mycket variabeldata när du jämför tillväxtmönster.
+>
 
 
 ## Medel {#mean}
@@ -185,6 +236,14 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 | mått | Det mätvärde som du vill beräkna genomsnittet för. |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
+**Använd fall**: Beräkna det aritmetiska medelvärdet för en uppsättning värden, till exempel den genomsnittliga dagliga intäkten eller det genomsnittliga antalet besök per kampanj. Detta hjälper till att upprätta en baslinje för att jämföra enskilda värden i en datauppsättning.
+
+**I beräkningsverktyget**: Använd **Medel** på ett mätresultat som *Intäkter* eller *Besök* om du vill returnera det genomsnittliga värdet för alla datapunkter i det valda nedbrytnings- eller datumintervallet.
+
+>[!TIP]
+>
+>Använd för att förstå övergripande prestandatender eller kombinera den med **standardavvikelse** för att mäta konsekvens runt genomsnittet.
+>
 
 ## Median {#median}
 
@@ -206,6 +265,15 @@ Lägger till alla numeriska värden för ett mått i en kolumn (över elementen 
 |---|---|
 | mått | Det mätvärde som du vill beräkna medianvärdet för. |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
+
+**Använd skiftläge**: Identifiera det mellersta värdet i en datauppsättning, till exempel dagliga medianintäkter eller mediansidvisningar per besök. Detta är användbart när du vill minska effekten av avvikelser och se datatrenden centralt.
+
+**I beräkningsverktyget**: Använd median för ett mätresultat som Intäkts- eller Sidvyer om du vill returnera mittpunktsvärdet för alla datapunkter i det valda uppdelnings- eller datumintervallet.
+
+>[!TIP]
+>
+>Använd i stället för **Medel** när dina data innehåller extrema högdagrar eller glöder som kan förvränga medelvärdet.
+>
 
 
 ## Modulo {#modulo}
@@ -229,7 +297,16 @@ Returnerar resten efter division av x med y med division Euclidean.
 | metric_X | Det första mätvärdet som du vill dela. |
 | metric_Y | Det andra mätvärdet som du vill dela. |
 
-### Exempel
+**Använd skiftläge**: Returnera resten när du har dividerat ett tal med ett annat. Detta kan vara användbart för cykliska eller upprepade mönster, som att identifiera varje dag eller kampanj i en sekvens.
+
+**I beräkningsverktyget**: Använd **modulo** med två numeriska indata. Till exempel: **Modulo**(*Dagnummer*, 7) returnerar resten efter att dagsnumret delats med sju, vilket kan hjälpa till att gruppera data efter vecka.
+
+>[!TIP]
+>
+>Kombinera med villkorlig logik för att markera återkommande intervall eller segmentera data baserat på upprepade cykler.
+>
+
+### Fler exempel
 
 Returvärdet har samma tecken som indata (eller är noll).
 
@@ -267,7 +344,14 @@ MODULO(MODULO(x,y)+y,y)
 | k | Den måttkolumn som definierar relativ position. |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
+**Använd skiftläge**: Identifiera det värde under vilket en viss procentandel av datapunkterna faller, till exempel den 90:e percentilen av dagliga intäkter eller sidvisningar. Detta hjälper till att mäta distribution och upptäcka högpresterande avvikelser.
 
+**I beräkningsverktyget**: Tillämpa **Percentile** på ett mått som *Intäkter* eller *Besök* och ange önskat percentilvärde (till exempel **Percentile**(*Inkomster*, 90)). Resultatet visar tröskelvärdet som 90 % av datapunkterna faller under.
+
+>[!TIP]
+>
+>Används för att ange prestandatester eller för att filtrera efter högpresterande dagar, kampanjer eller produkter.
+>
 
 ## Strömoperator {#power-operator}
 
@@ -289,6 +373,14 @@ Returnerar x upphöjt till y-potensen.
 | metric_X | Det mått som du vill upphöja till måttet metric_Y. |
 | metric_Y | Den kraft som du vill upphöja metric_X till. |
 
+**Använd skiftläge**: Höj ett tal eller ett mått så att det matchar kraften hos ett annat, till exempel dela ett värde eller tillämpa en exponentiell vikt. Detta är användbart när du modellerar tillväxt, skalförändringsvärden eller utför avancerade matematiska omformningar.
+
+**I beräkningsverktyget**: Använd **Strömoperator** mellan två numeriska värden eller mätvärden. Till exempel: *Intäkter* ^ 2 ökar värdet *Intäkter* till den andra potensen.
+
+>[!TIP]
+>
+>Liknar funktionen **Exponent** men uttrycks som en matematisk operator, vilket ger mer kompakta formler inom beräknade värden.
+>
 
 ## Quartile {#quartile}
 
@@ -312,6 +404,14 @@ Returnerar x upphöjt till y-potensen.
 | kvartil | Anger vilket kvartilvärde som ska returneras. |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
+**Använd fall**: Dela upp en datauppsättning i fyra lika stora delar för att förstå hur värden fördelas, till exempel identifiera de 25 % av de översta dagarna med intäkter eller besök. Detta hjälper till att segmentera resultatet i rankade grupper för en djupare jämförelse.
+
+**I beräkningsverktyget**: Tillämpa **kvartil** på ett mätresultat som *Intäkt* eller *Besök* och ange vilken kvartil som ska returneras (till exempel **kvartil**(*Intäkt*, 3) för att hitta tröskeln för den tredje kvartilen, eller 25 %).
+
+>[!TIP]
+>
+>Används för att gruppera värden i resultatnivåer som låga, medelhöga och högpresterande kampanjer eller produkter.
+>
 
 ## Ansökningstillfälle {#round}
 
@@ -333,7 +433,16 @@ Rund utan parametern *number* är samma som rund med parametern *number* på 0, 
 | mått | Det mätvärde som du vill runda av. |
 | tal | Hur många siffror till höger om decimaltecknet som ska returneras. (Om värdet är negativt returneras nollor till vänster om decimaltecknet). |
 
-### Exempel
+**Använd skiftläge**: Förenkla numeriska resultat genom att avrunda dem till ett angivet antal decimaler. Detta är praktiskt när du vill skapa tydligare visualiseringar eller göra beräknade mätvärden enklare att läsa i rapporter.
+
+**I beräkningsverktyget**: Tillämpa **Rund** på ett mått eller uttryck och ange antalet decimaler. Till exempel: **Rund**(*Konverteringsgrad*, 2) avrundar värdet till två decimaler.
+
+>[!TIP]
+>
+>Används för att standardisera måttformatering för alla rapporter, särskilt när procentsatser eller valutavärden visas.
+>
+
+### Fler exempel
 
 ```
 ROUND( 314.15, 0) = 314
@@ -357,6 +466,14 @@ ROUND( 314.15, -2) = 300
 
 Returnerar antalet rader för en given kolumn (antalet unika element som rapporteras inom en dimension). *Unique-värden som överstiger* räknas som 1.
 
+**Använd skiftläge**: Räkna det totala antalet rader som returneras i en uppdelning eller datauppsättning, till exempel antalet dagar, kampanjer eller produkter som ingår i en rapport. Detta hjälper er att förstå hur många objekt som bidrar till er analys.
+
+**I beräkningsverktyget**: Använd **Radantal** för att returnera det totala antalet rader i det aktuella uppdelnings- eller segmentet. Om du till exempel visar *Intäkter* av *Produkt* returnerar **Radantal** det antal produkter som visas.
+
+>[!TIP]
+>
+>Använd med andra funktioner som **Kolumnsumma** om du vill beräkna medelvärden manuellt (till exempel **Kolumnsumma**(*Intäkter*) / **Radantal**()).
+>
 
 ## Max rad {#row-max}
 
@@ -378,6 +495,14 @@ Maximalt antal kolumner för varje rad.
 | mått | Kräver minst ett mått men kan ta valfritt antal mått som parametrar. |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
+**Använd skiftläge**: Identifiera det högsta värdet i alla mätvärden på en enda rad, till exempel för att avgöra vilket mätvärde (till exempel *Intäkter*, *Beställningar* eller *Besök*) som har det största värdet för en viss dag eller ett visst segment. Detta hjälper till att framhäva vilka mätvärden som leder inom varje datarad.
+
+**I beräkningsverktyget**: Använd **Maximalt radvärde** när flera mått ingår i ett beräknat mått. Till exempel: **Maximalt radantal**(*Intäkter*, *Beställningar*, *Besök*) returnerar det största värdet för varje rad.
+
+>[!TIP]
+>
+>Används för att jämföra relaterade mätvärden sida vid sida och identifiera vilket som ger bäst prestanda inom varje rad.
+>
 
 ## Min rad {#row-min}
 
@@ -399,7 +524,14 @@ Minsta antal kolumner för varje rad.
 | mått | Kräver minst ett mått men kan ta valfritt antal mått som parametrar. |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
+**Använd skiftläge**: Identifiera det lägsta värdet i alla mätvärden på en enda rad, till exempel för att hitta vilket mätvärde (till exempel *Intäkter*, *Beställningar* eller *Besök*) som har det minsta värdet för en viss dag eller ett visst segment. Detta hjälper till att hitta de svagaste mätvärdena i varje datarad.
 
+**I beräkningsverktyget**: Använd **minsta raden** vid jämförelse av flera mått. Till exempel: **Minsta radantal**(*Inkomster*, *Beställningar*, *Besök*) returnerar det minsta värdet mellan dessa värden för varje rad.
+
+>[!TIP]
+>
+>Kombinera med Maximal rad för att beräkna prestandaintervall eller för att markera underpresterande mått sida vid sida.
+>
 
 ## Radsumma {#row-sum}
 
@@ -420,6 +552,14 @@ Summan av kolumnerna i varje rad.
 |---|---|
 | mått | Kräver minst ett mått men kan ta valfritt antal mått som parametrar. |
 
+**Använd skiftläge**: Lägg ihop värdena för flera mätvärden på en rad, till exempel summering av *intäkter* och *skatt*, för att beräkna totalt transaktionsvärde eller kombination av *besök* från olika källor. Detta bidrar till att sammanställa sammanhörande mätvärden till en enda summa.
+
+**I beräkningsverktyget**: Använd **radsumma** för att kombinera flera mått. Till exempel: **Radsumma**(*Intäkter*, *Moms*) lägger till dessa två mått för varje rad i din uppdelning.
+
+>[!TIP]
+>
+>Används för att skapa kombinerade summor eller för att gruppera relaterade resultatindikatorer till ett enda beräknat mått.
+>
 
 ## Kvadratrot {#square-root}
 
@@ -441,6 +581,14 @@ Summan av kolumnerna i varje rad.
 |---|---|
 | mått | Måttet som du vill beräkna kvadratroten för. |
 
+**Använd skiftläge**: Returnera kvadratroten av ett tal eller mätvärde, till exempel hitta variansroten vid beräkning av standardavvikelse eller normalisering av värden i en datamängd. Detta är användbart för avancerade beräkningar av statistik- eller dataomvandlingar.
+
+**I beräkningsverktyget**: Använd **kvadratroten** på ett mått eller ett uttryck. Till exempel: **Kvadratrot**(Varians(*Intäkter*)) returnerar standardavvikelsen för *Intäkter*.
+
+>[!TIP]
+>
+>Använd när du behöver skala mätvärden proportionellt eller om du vill ha stöd för andra statistiska funktioner som är beroende av rotvärden.
+>
 
 ## Standardavvikelse {#standard-deviation}
 
@@ -462,6 +610,14 @@ Summan av kolumnerna i varje rad.
 | | Det mått som du vill beräkna standardavvikelsen för. |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
+**Använd fall**: Mät hur mycket värden som skiljer sig från genomsnittet, till exempel hur konsekventa dagliga intäkter eller besök är över tid. Detta hjälper till att identifiera volatilitet, stabilitet eller ovanliga prestandaförändringar.
+
+**I beräkningsverktyget**: Använd **standardavvikelse** på ett mätresultat som *Intäkter* eller *Besök* för att beräkna värdespridningen inom det valda nedbrytnings- eller datumintervallet. Exempel: **Standardavvikelse**(*Intäkter*) visar hur mycket daglig intäkt som avviker från medelvärdet.
+
+>[!TIP]
+>
+>Använd med *Medel* för att upptäcka avvikelser eller jämföra prestandans enhetlighet mellan kampanjer, produkter eller segment.
+>
 
 ## Varians {#variance}
 
@@ -483,6 +639,14 @@ Summan av kolumnerna i varje rad.
 | mått | Det mått som du vill beräkna variansen för. |
 | include_zeros | Om nollvärden ska inkluderas eller inte i beräkningarna. |
 
+**Använd skiftläge**: Mät hur mycket värden i en datauppsättning spreds från medelvärdet, till exempel hur mycket daglig intäkt eller sessionslängd som varierar över tid. Detta hjälper till att kvantifiera graden av enhetlighet eller prestandfluktuationer.
+
+**I beräkningsverktyget**: Använd **avvikelse** på ett mätvärde som *Intäkt* eller *Använd tid per besök* för att beräkna den genomsnittliga kvadratavvikelsen från medelvärdet. Exempel: **Avvikelse**(*Intäkter*) visar hur mycket intäktsvärden som skiljer sig från genomsnittet i det valda intervallet.
+
+>[!TIP]
+>
+>Använd med **standardavvikelse** för att bättre förstå datavariabilitet och identifiera områden med oförutsägbara prestanda.
+>
 
 Ekvationen för VARIANS är:
 
@@ -607,7 +771,7 @@ MEAN(metric)
 
 ## Median (Table) 
 
-Returns the median for a metric in a column. The median is the number in the middle of a set of numbers—that is, half the numbers have values that are greater than or equal to the median, and half are less than or equal to the median.
+Returns the median for a metric in a column. The median is the number in the middle of a set of numbers-that is, half the numbers have values that are greater than or equal to the median, and half are less than or equal to the median.
 
 ```
 MEDIAN(metric)
