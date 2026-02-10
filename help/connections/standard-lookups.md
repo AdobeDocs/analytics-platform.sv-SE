@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Standardsökningar är bara tillgängliga för datakällor för Analytics-källkoppling i Customer Journey Analytics. Du kan använda dem med Adobe Analytics standardimplementeringar, [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) eller Experience Platform datainsamlings-API:er.
+>Standardsökningar är bara tillgängliga för datakällor för Analytics-källkoppling i Customer Journey Analytics. Du kan använda dem med Adobe Analytics standardimplementeringar, [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=sv-SE) eller Experience Platform datainsamlings-API:er.
 >
 
 Standarduppslag (även kallat uppslag som tillhandahålls av Adobe) förbättrar möjligheten för Customer Journey Analytics att rapportera vissa dimensioner/attribut som inte är användbara för sig själva, men som är användbara när de sammanfogas med andra data. Exemplen innehåller attribut för mobila enheter och attribut för OS- och webbläsardimensioner, till exempel versionsnummer för webbläsare. En &#39;standardsökning&#39; liknar en uppslagsdatauppsättning. Standardsökningar kan användas i olika Experience Cloud-organisationer. De tillämpas automatiskt på alla händelsedatamängder som innehåller vissa XDM-schemafält (se nedan för de specifika fälten). Det finns en standardsökdatamängd för varje schemaplats som Adobe klassificerar.
