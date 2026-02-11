@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c5cf15ab-3eb1-4e6b-93a3-3d89694ca0ea
-source-git-commit: c7cf7250f30e2f6023aa7690391aea149ba12eff
+source-git-commit: e65dd6f71c75c06aac078c22ea7d77eed75cd381
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Följande kolumner och ikoner är tillgängliga i tabellen:
 | **[!UICONTROL Owner]** | Datavyns ägare. |
 | **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | Anger om [Data Insights Agent](/help/data-analysis-ai.md) är **[!UICONTROL Enabled]** eller **[!UICONTROL Disabled]** för datavyn. <br/>Välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) om du vill visa ett popup-fönster med **[!UICONTROL Data Insights Agent Status]** över datavyer. <br/>![Användning i Data Insights Agent](/help/data-views/assets/data-views-dia-status.png) |
 | **[!UICONTROL Integrations]** | Lista integreringar med andra lösningar. Exempel: Adobe Audience Analysis, Content Analytics, Brand Concierge, Journey Optimizer, GenStudio och Usage Analytics. |
-| **[!UICONTROL Use in CJA]** | Ange om datavyn används i Customer Journey Analytics. Det här värdet är bara **[!UICONTROL Off]** för datavyer som automatiskt genereras som en del av Adobe Journey Optimizer-integreringen. |
+| **[!UICONTROL Use in CJA]** | Anger om datavyn används i Customer Journey Analytics. Det här värdet är bara **[!UICONTROL Off]** för datavyer som automatiskt genereras som en del av Adobe Journey Optimizer-integreringen. |
 | **[!UICONTROL Date created]** | Tidsstämpeln när datavyn skapades. |
 | **[!UICONTROL Last modified]** | Tidsstämpeln när datavyn senast ändrades. |
 
@@ -127,7 +127,7 @@ Du kan också:
 1. Markera en eller flera datavy-rader.
 1. Välj ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export to CSV]** i det blå åtgärdsfältet.
 
-Information om de markerade datavyerna exporteras till en CSV-fil med namnet `Data views List (x).csv` i mappen Hämtningar i webbläsaren.
+Information om de valda datavyerna exporteras till en CSV-fil med namnet `Data views List (x).csv` i webbläsarens mapp för hämtningar.
 
 
 ## Skapa projekt från datavyer
