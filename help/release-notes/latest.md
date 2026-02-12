@@ -3,16 +3,16 @@ title: Aktuella versionsinformation för Customer Journey Analytics
 description: Visa den senaste versionsinformationen om Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 7e98a1abbab4b954df5f7759879203c1d355fd50
+source-git-commit: 7260c9cadbd5b6e5e85f778547635330b8bfc49a
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1188'
 ht-degree: 1%
 
 ---
 
 # Aktuell versionsinformation för Customer Journey Analytics (februari 2026)
 
-**Senast uppdaterad**: 11 februari 2026
+**Senast uppdaterad**: 12 februari 2026
 
 Versionskommentarerna gäller versionsperioden från februari 2026. Adobe Customer Journey Analytics-releaser fungerar på en [kontinuerlig leveransmodell](releases.md), vilket ger en mer skalbar, fasad metod för driftsättning av funktioner. Därför uppdateras versionsinformationen flera gånger i månaden. Kontrollera dem regelbundet.
 
@@ -28,7 +28,8 @@ Versionskommentarerna gäller versionsperioden från februari 2026. Adobe Custom
 | **Content Analytics: Miniatyrbilder och förhandsgranskningar av stapelvisualisering** <p>När du visar en vågrät fältvisualisering i Content Analytics visas nu en miniatyrbild av resursen när du hovrar över ett fält i diagrammet. Med den här miniatyrbilden kan du snabbt och enkelt se vilket innehåll som visas i diagrammet.</p><p>(Dokumentationslänk som ska följas.)</p> | 23 februari 2026 | 9 mars 2026 |
 | **Uppdatera till funktionen Approximate Count Distinct**<p>Den HLL-algoritm som används i funktionen Approximate Count Distinct kommer snart att uppdateras. Resultatet för tal som använder den här funktionen kan ändras något från historiska tal enligt följande:<ul><li>När mycket små mängder unika värden räknas kommer resultatet att förbättras så att exakta räkningar används i stället för uppskattningar.</li><li>När du räknar med något större kommer antalet uppskattningar att behålla samma noggrannhet som före den här uppdateringen (uppskattningarna är exakta inom 5 procent av det exakta talet, 95 procent av tiden).</li></ul><p>Mer information om funktionen Approximate Count Distinct finns i [Distinkt antal](/help/components/calc-metrics/cm-adv-functions.md#approximate-count-distinct) i [Avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md)</p> |  | Mars 2026 |
 | **Stöd för dataspegling**  <p>Med stöd för modellbaserade scheman och CDC-funktionalitet (Change Data Capture) för specifika källanslutningar i Experience Platform kan Customer Journey Analytics stödja [dataspegling](/help/data-mirror/data-mirror.md) i datalagerlösningar som [!DNL Snowflake], [!DNL Azure Databricks] och [!DNL Google BigQuery].</p><p>Kontakta ditt Adobe-kontoteam för att få tillgång till betaversionen.</p> | Beta-version: 24 september 2025 | TBD |
-| **Direktuppspelande medietjänster: Supportschemadata** <p>Nu kan du överföra schemadata från tidigare direktuppspelat mediematerial för att enklare och exaktare kunna spåra tittandet.</p><p>Nedan följer exempel på live-innehåll som stöds vid schemalagd dataöverföring:</p><ul><li>FAST-plattformar (Free Ad Supported TV)</li><li>Lokala strömmar</li><li>Livesporter</li></ul><p>När du överför schemadata kan du spåra visningsdata för enskilda program som kördes under den tid du angav i överföringsfilen. Du kan till och med samla in visningsdata för specifika ämnen eller programsegment.</p><p>Dessa funktioner är tillgängliga oavsett hur du implementerade Streaming Media Collection.</p><p>Tidigare var det svårt att knyta en given session till specifika program när man analyserade direktinnehåll, och det var inte möjligt att knyta en given session till enskilda ämnen eller programsegment.</p><p>Mer information finns i [Överför schemadata för att spåra livematerial](https://experienceleague.adobe.com/sv/docs/media-analytics/using/media-use-cases/track-schedule-data)</p> | 29 oktober 2025 | Första halvåret 2026<p>(Ursprungligen planerat att släppas den 29 oktober 2025)</p> |
+| **Direktuppspelande medietjänster: Supportschemadata** <p>Nu kan du överföra schemadata från tidigare direktuppspelat mediematerial för att enklare och exaktare kunna spåra tittandet.</p><p>Nedan följer exempel på live-innehåll som stöds vid schemalagd dataöverföring:</p><ul><li>FAST-plattformar (Free Ad Supported TV)</li><li>Lokala strömmar</li><li>Livesporter</li></ul><p>När du överför schemadata kan du spåra visningsdata för enskilda program som kördes under den tid du angav i överföringsfilen. Du kan till och med samla in visningsdata för specifika ämnen eller programsegment.</p><p>Dessa funktioner är tillgängliga oavsett hur du implementerade Streaming Media Collection.</p><p>Tidigare var det svårt att knyta en given session till specifika program när man analyserade direktinnehåll, och det var inte möjligt att knyta en given session till enskilda ämnen eller programsegment.</p><p>Mer information finns i [Överför schemadata för att spåra livematerial](https://experienceleague.adobe.com/en/docs/media-analytics/using/media-use-cases/track-schedule-data)</p> | 29 oktober 2025 | Första halvåret 2026<p>(Ursprungligen planerat att släppas den 29 oktober 2025)</p> |
+| **Kombinera rapportsviter från flera IMS-organ**<p>Du kan använda Analytics Source Connector för att kombinera rapportsviter från flera IMS-organ. Med den här [funktionen för korsvis IMS-datamappning](/help/getting-started/aa-vs-cja/mapping-data-ims-orgs.md) kan organisationer få en kombinerad vy av sina kunddata, även när kunddata sprids över flera IMS-organisationer. <p>**Obs!** Den här konfigurationen är bara tillgänglig genom att skicka en begäran till Adobe kundtjänst.</p> |  | 12 februari 2026 |
 
 ## Korrigeringar i Customer Journey Analytics
 
@@ -56,7 +57,7 @@ Versionskommentarerna gäller versionsperioden från februari 2026. Adobe Custom
 ## Relaterade resurser
 
 * [Tidigare versionsinformation för Customer Journey Analytics 2025](/help/release-notes/2025.md)
-* [Versionsinformation för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=sv-SE)
-* [Versionsinformation för direktuppspelad mediainsamling](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=sv-SE)
-* [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=sv-SE)
+* [Versionsinformation för Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html)
+* [Versionsinformation för direktuppspelad mediainsamling](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html)
+* [Versionsinformation för Adobe Experience Cloud](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 * [Customer Journey Analytics dokumentationsuppdateringar](/help/release-notes/doc-changes.md)
