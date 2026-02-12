@@ -1,20 +1,22 @@
 ---
-title: Cross-IMS-datamappning
-description: Lär dig hur du kan begära att mappa data från rapportsviter från flera IMS-organisationer med olika källor till en IMS-målorganisation.
+title: Mappa analysdata från flera IMS-organisationer
+description: Lär dig hur du kan begära att mappa data från rapportsviter från flera IMS-organisationer för att rapportera programsviter och slutligen datauppsättningar i en IMS-målorganisation.
 role: Admin
 solution: Customer Journey Analytics
 feature: Adobe Analytics Integration,Administration
 exl-id: c109742b-c1c5-45b3-971f-f8dcf814ec37
-source-git-commit: 7260c9cadbd5b6e5e85f778547635330b8bfc49a
+source-git-commit: 888420e8cd11cd447fec99257b213669edd345c1
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
 
 # Datamappning mellan IMS
 
-Analysens källanslutning kan bara importera data från Adobe Analytics rapportsviter som tillhör samma organisation som du har rätt att använda Customer Journey Analytics för. Funktionen *Cross-IMS-datamappning* är en funktion för att mappa analysdata från flera IMS-organisationer och ger en lösning på den här begränsningen. Hur du aktiverar den här funktionen beskrivs i den här artikeln.
+I den här artikeln beskrivs hur du mappar data från rapportsviter i flera IMS-organisationer till rapportsviter, och i slutänden datauppsättningar, i en IMS-organisation.
+
+Källkopplingen för Analytics importerar data från Adobe Analytics rapportsviter inom en enda organisation som standard. *Cross-IMS-datamappning* är en funktion för att mappa Analytics-data från flera IMS-organisationer och erbjuder en lösning för den här begränsningen. Hur du aktiverar den här funktionen beskrivs i den här artikeln.
 
 
 ## Scenario
@@ -27,7 +29,7 @@ Ni har tillgång till flera IMS-organisationer och har Analytics-data i flera ra
 
 Körklar kan du inte rapportera om kombinationen av data från flera rapportsviter i flera IMS-organisationer i Customer Journey Analytics. Anledningen till denna begränsning är att datainmatning från Adobe Analytics till Experience Platform via källkopplingen för analys endast stöder inmatning av data som ägs av en enda IMS-organisation. Den IMS-organisation som du är etablerad för och som du använder för att logga in på Adobe Analytics, Experience Platform och Customer Journey Analytics.
 
-Med *Cross-IMS-datamappning* kan du begära att Adobe mappar data. Funktionen använder Analytics-källkopplingen för att mappa data från rapportsviter som finns i flera IMS-organisationer för *källa* för att rapportera sviter (och ultimata datauppsättningar) som ingår i en IMS-organisation för *mål*. Exempel:
+Med *Cross-IMS-datamappning* kan du begära att Adobe mappar data. Funktionen använder Analytics-källkopplingen för att mappa data från rapportsviter som finns i flera IMS-organisationer för *källa* för att rapportera programsviter (och i slutändan datauppsättningar) som ingår i en IMS-organisation för *mål*. Exempel:
 
 | Illustration | Förklaring |
 |---|---|
@@ -49,7 +51,7 @@ Om du vill konfigurera och aktivera datamappningen *Cross-IMS* måste du begära
 
 När Adobe Account Manager har fått e-postmeddelandet med en begäran om att mappa analysdata från flera organ, granskas begäran inom Adobe. Adobe Account Manager kontaktar dig om du har frågor, utbildning eller annan information.
 
-När mappningen har godkänts skapas den och du meddelas. Namnet på IMS-källorganisationen läggs till efter namnet på rapportsviten i listan [i Analytics-rapportsviterna](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) i Experience Platform.
+När mappningen har godkänts skapas den och du meddelas. Namnet på IMS-källorganisationen läggs till efter namnet på rapportsviten i listan [i Analytics-rapportsviterna](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) i Experience Platform.
 
 
 ## Begränsningar
@@ -67,14 +69,12 @@ Du kanske vill ta hänsyn till följande ämnen innan du begär datamappningen *
 
 ### Profiler
 
-När funktionen *Cross-IMS-datamappning* har godkänts kan du lägga till data i Experience Platform för en eller flera av rapportsviterna i mål-IMS-organisationen. Det gör du genom att konfigurera [Analytics-källkopplingen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Måldatauppsättningar skapas sedan i Experience Platform. Som en del av den här konfigurationen och processen kan du välja att skicka profildata från en eller flera rapportsviter till profiltjänsten.
+När funktionen *Cross-IMS-datamappning* har godkänts kan du lägga till data i Experience Platform för en eller flera av rapportsviterna i mål-IMS-organisationen. Det gör du genom att konfigurera [Analytics-källkopplingen](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Måldatauppsättningar skapas sedan i Experience Platform. Som en del av den här konfigurationen och processen kan du välja att skicka profildata från en eller flera rapportsviter till profiltjänsten.
 
-Uppskatta det totala antalet profiler som är resultatet av konfigurationen och processen enligt ovan. Se till att det totala antalet ligger inom det antal profiler som du enligt avtal har rätt till för målorganisationen. Använd [filtreringsregler och villkor](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} om du vill inkludera eller exkludera data selektivt från konsumtion till profiltjänsten. Eller inaktivera alternativet att skicka profildata till profiltjänsten för relevanta rapportsviter.
+Uppskatta det totala antalet profiler som är resultatet av konfigurationen och processen enligt ovan. Se till att det totala antalet ligger inom det antal profiler som du enligt avtal har rätt till för målorganisationen. Använd [filtreringsregler och villkor](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} om du vill inkludera eller exkludera data selektivt från konsumtion till profiltjänsten. Eller inaktivera alternativet att skicka profildata till profiltjänsten för relevanta rapportsviter.
 
 
-### Stitlar
-
-När funktionen *Cross-IMS-datamappning* har godkänts kan du lägga till data i Experience Platform för en eller flera av rapportsviterna i mål-IMS-organisationen. Det gör du genom att konfigurera [Analytics-källkopplingen](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Måldatamängder för de rapportsviter du konfigurerade i Analytics-källkopplingen skapas sedan i Experience Platform. Som en del av den här konfigurationen och processen kan du välja att skicka profildata från en eller flera rapportsviter till profiltjänsten.
+#### Stitlar
 
 Du kan använda både [fältbaserad](/help/stitching/fbs.md) och [diagrambaserad](/help/stitching/gbs.md) sammanfogning på måldatamängderna. När du använder diagrambaserad sammanfogning på en eller flera av dessa måldatamängder måste du se till att du håller dig inom dina avtalsenliga berättiganden för antalet profiler enligt beskrivningen i avsnittet [Profiler](#profiles).
 
