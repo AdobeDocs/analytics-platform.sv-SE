@@ -3,9 +3,10 @@ title: Inkludera flera dimensioner i en frihandstabell
 description: Lär dig hur du inkluderar flera dimensioner i en frihandstabell
 feature: Visualizations
 role: User
-source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
+exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
+source-git-commit: 14718476695dcf121c94ba4cb8b2c39e5874342d
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -109,11 +110,12 @@ När du skapar ett segment baserat på en dimensionspost som sträcker sig över
 
 Mer information om hur du skapar ett segment finns i [Skapa segment](/help/components/segments/seg-create.md).
 
-## Dimensioner som inte stöds {#unsupported}
+## Dimensioner och funktioner som inte stöds {#unsupported}
 
-Följande dimensionskombinationer stöds inte och Analysis Workspace tillåter inte att de läggs till eller visar ett felmeddelande när de har lagts till:
+Följande dimensionskombinationer och funktioner stöds inte när flera dimensionskolumner används, och Analysis Workspace tillåter inte att de används eller visar ett felmeddelande:
 
 * Flera dimensioner från fält som refererar till olika [arrayer av objekt](/help/use-cases/object-arrays.md) som används tillsammans i samma friformstabell.
 
   Flera dimensioner tillåts tillsammans i samma friformstabell om de refererar till samma objektmatris.
 
+* [Statiska dimensionsobjekt](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md#static-dimension-items).
