@@ -178,7 +178,7 @@ Med Adobe Experience Platform Agent Orchestrator får du tillgång till funktion
 
 Agent Orchestrator tolkar er begäran, avgör vilka specialistagenter som behövs och ordnar dem för att leverera rätt svar. Den håller reda på sammanhanget över interaktioner i flera omgångar, så att du kan bygga vidare på tidigare frågor på ett naturligt sätt.
 
-Mer information finns i [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/products/experience-platform/agent-orchestrator.html).
+Mer information finns i [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/se/products/experience-platform/agent-orchestrator.html).
 
 ## Exempel på visualiseringsmeddelanden för data
 
