@@ -14,7 +14,7 @@ ht-degree: 5%
 
 # Customer Journey Analytics Guardrails
 
-Det här dokumentet innehåller begränsningar för olika komponenter i Customer Journey Analytics. Information om säkerhetsutkast, omfångsparametrar och berättiganden finns i [produktbeskrivningen för Customer Journey Analytics](https://helpx.adobe.com/se/legal/product-descriptions/customer-journey-analytics.html), [produktbeskrivningen för Adobe Analytics-tillägget: Customer Journey Analytics](https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html) eller [produktbeskrivningen för Customer Journey Analytics B2B edition](https://helpx.adobe.com/se/legal/product-descriptions/customer-journey-analytics-b2b.html).
+Det här dokumentet innehåller begränsningar för olika komponenter i Customer Journey Analytics. Information om säkerhetsutkast, omfångsparametrar och berättiganden finns i [produktbeskrivningen för Customer Journey Analytics](https://helpx.adobe.com/se/legal/product-descriptions/customer-journey-analytics.html), [produktbeskrivningen för Adobe Analytics-tillägget: Customer Journey Analytics](https://helpx.adobe.com/se/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html) eller [produktbeskrivningen för Customer Journey Analytics B2B edition](https://helpx.adobe.com/se/legal/product-descriptions/customer-journey-analytics-b2b.html).
 
 ## Begränsningstyper
 
