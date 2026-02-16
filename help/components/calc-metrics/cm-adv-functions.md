@@ -4,9 +4,9 @@ description: Lär dig mer om avancerade beräkningsmätfunktioner.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: fa66083b922c903f6a7b0608d91f26e85bd8374f
 workflow-type: tm+mt
-source-wordcount: '4958'
+source-wordcount: '4989'
 ht-degree: 1%
 
 ---
@@ -1344,18 +1344,18 @@ Returnerar Pi: 3,14159...
 
 
 
-## Provvarians
+## Provvarians {#sample-variance}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
 >title="Provvarians"
->abstract="Beräknar en uppskattning av samplingsvariansen med hjälp av formeln (summa(metrisk^2) / (N - 1)) - (summa(metrisk))^2/(N*(N-1)). där N är antalet för den normaliserande behållaren. <br/>Detta används som en del av *valfri tid för giltiga* konfidensberäkningar. I allmänhet är den här funktionen inte användbar ensam, utan kan användas för att kontrollera beräkningar eller för att utföra konfidensberäkningar *manuellt*."
+>abstract="Beräknar en uppskattning av provavvikelsen med formeln `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`. där `N` är antalet för den normaliserande behållaren. <br/>Detta används som en del av *valfri tid för giltiga* konfidensberäkningar. I allmänhet är den här funktionen inte användbar ensam, utan kan användas för att kontrollera beräkningar eller för att utföra konfidensberäkningar *manuellt*."
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL SAMPLE VARIANCE(normalizing-container, success-metric)]**
 
-Beräknar en uppskattning av provavvikelsen.
+Beräknar en uppskattning av provavvikelsen med formeln `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`. där `N` är antalet för den normaliserande behållaren.<br/>Detta används som en del av *valfri tid för giltiga* konfidensberäkningar. I allmänhet är den här funktionen inte användbar ensam, utan kan användas för att kontrollera beräkningar eller för att utföra konfidensberäkningar *manuellt*.
 
 | Argument | Beskrivning |
 | --- | --- |
