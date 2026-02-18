@@ -27,9 +27,9 @@ ht-degree: 0%
 
 Du kan använda taggfunktionen i Adobe Experience Platform för att implementera kod på din webbplats för att samla in data. Med tagghanteringslösningen kan ni driftsätta kod tillsammans med andra taggningskrav. Taggar är smidiga att integrera med Adobe Experience Platform via Adobe Experience Platform Web SDK.
 
-Följande information beskriver hur du skapar en tagg för egenskapen. Ytterligare information finns i [Konfigurera SDK-taggtillägget för webben](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) i Experience Platform-dokumentationen. SDK-webben innehåller [!UICONTROL Adobe Experience Cloud ID Service] internt, så du behöver inte lägga till ID-tjänsttillägget till din tagg.
+Följande information beskriver hur du skapar en tagg för egenskapen. Ytterligare information finns i [Konfigurera SDK-taggtillägget för webben](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) i Experience Platform-dokumentationen. SDK-webben innehåller [!UICONTROL Adobe Experience Cloud ID Service] internt, så du behöver inte lägga till ID-tjänsttillägget till din tagg.
 
-En egenskap är i princip en behållare som du fyller med tillägg, regler, dataelement och bibliotek när du distribuerar taggar till webbplatsen. Många människor skapar en egenskap för varje webbplats (eller grupp med närbesläktade webbplatser) där de vill distribuera samma uppsättning taggar. Mer information om egenskaper finns i [Egenskaper](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/companies-and-properties) i dokumentationen för Experience Platform datainsamling.
+En egenskap är i princip en behållare som du fyller med tillägg, regler, dataelement och bibliotek när du distribuerar taggar till webbplatsen. Många människor skapar en egenskap för varje webbplats (eller grupp med närbesläktade webbplatser) där de vill distribuera samma uppsättning taggar. Mer information om egenskaper finns i [Egenskaper](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/admin/companies-and-properties) i dokumentationen för Experience Platform datainsamling.
 
 Så här skapar du en tagg för din egenskap:
 
