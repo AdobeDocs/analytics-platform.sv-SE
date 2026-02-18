@@ -51,7 +51,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras visualiseringen av arbetsytan på resan i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Det finns ingen motsvarande visualisering i **Adobe Analytics**._
+_I den här artikeln dokumenteras visualiseringen av arbetsytan på resan i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Det finns ingen motsvarande visualisering i **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -158,7 +158,7 @@ Använd [tabellen ovan](#understand-the-differences) för att förstå skillnade
 
 >[!NOTE]
 >
->Om din organisation inte har tillgång till Journey Optimizer kan du ändå [skapa analyser på arbetsytan ](#build-analyses-in-customer-journey-analytics).
+>Om din organisation inte har tillgång till Journey Optimizer kan du ändå [skapa analyser på arbetsytan &#x200B;](#build-analyses-in-customer-journey-analytics).
 
 Analyser av Journey Optimizer resor på arbetsytan i Journey ger djupgående, användbara insikter om hur människor interagerar med en resa.
 
@@ -200,7 +200,7 @@ Tänk på följande beteenden för att förstå synkroniseringen mellan Journey 
 
 * **Synkroniseringen avbryts när du ändrar en resa i en arbetsyta i resan**
 
-  Ändringar som görs i en resa i Journey Optimizer synkroniseras endast med arbetsytan [för en resa om resan inte har ändrats avsevärt på arbetsytan för en resa ](#differences-after-modifying-a-journey-in-journey-canvas). När du har ändrat en resa på en arbetsyta på en resa på en arbetsyta på en resa, återspeglas inte de ändringar du gör på resan i Journey Optimizer på arbetsytan på resan. Om du vill se ändringarna återspeglas i arbetsytan på resan kan du ta bort och [återskapa resan på arbetsytan på resan](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
+  Ändringar som görs i en resa i Journey Optimizer synkroniseras endast med arbetsytan [för en resa om resan inte har ändrats avsevärt på arbetsytan för en resa &#x200B;](#differences-after-modifying-a-journey-in-journey-canvas). När du har ändrat en resa på en arbetsyta på en resa på en arbetsyta på en resa, återspeglas inte de ändringar du gör på resan i Journey Optimizer på arbetsytan på resan. Om du vill se ändringarna återspeglas i arbetsytan på resan kan du ta bort och [återskapa resan på arbetsytan på resan](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md).
 
 * **Om du vill använda länken Dela med vem som helst måste projektet sparas i Customer Journey Analytics när ändringarna har gjorts i Journey Optimizer**
 

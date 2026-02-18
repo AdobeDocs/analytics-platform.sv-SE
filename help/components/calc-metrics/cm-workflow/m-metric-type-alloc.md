@@ -24,7 +24,7 @@ Du kan konfigurera måtttypen och [attribueringsmodellen](#attribution-models) f
      | Mätningstyp | Definition |
      |---|---|
      | **[!UICONTROL Standard]** | Om en formel består av ett enda standardmått visas identiska data som den icke-beräknade metriska motsvarigheten. Standardvärden är användbara för att skapa beräknade värden som är specifika för varje enskilt radobjekt. <p>Till exempel tar ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Orders]** ![Divide](/help/assets/icons/Divide.svg) ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Sessions]** order för det specifika radobjektet och dividerar den med antalet sessioner för det specifika radobjektet. |
-     | **[!UICONTROL Grand total]** | Använd **[!UICONTROL Grand total]** för rapporteringsperioden i alla radartiklar. Om en formel består av ett enda totalmått, visar det beräknade måttet samma totaltal för varje radartikel. Summavärden är användbara när du vill skapa beräknade värden som jämför med totaldata. <p>Till exempel visar ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Orders]** ![Divide](/help/assets/icons/Divide.svg) ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Total Sessions]** andelen order mot alla sessioner, inte bara sessionerna med det specifika radobjektet. I det här exemplet anger du **[!UICONTROL Grand Total]** för måttet ![ Event](/help/assets/icons/Event.svg) **[!UICONTROL Sessions]** i det beräknade måttet, som automatiskt förvandlar det till ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Total Sessions]**. |
+     | **[!UICONTROL Grand total]** | Använd **[!UICONTROL Grand total]** för rapporteringsperioden i alla radartiklar. Om en formel består av ett enda totalmått, visar det beräknade måttet samma totaltal för varje radartikel. Summavärden är användbara när du vill skapa beräknade värden som jämför med totaldata. <p>Till exempel visar ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Orders]** ![Divide](/help/assets/icons/Divide.svg) ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Total Sessions]** andelen order mot alla sessioner, inte bara sessionerna med det specifika radobjektet. I det här exemplet anger du **[!UICONTROL Grand Total]** för måttet ![&#x200B; Event](/help/assets/icons/Event.svg) **[!UICONTROL Sessions]** i det beräknade måttet, som automatiskt förvandlar det till ![Event](/help/assets/icons/Event.svg) **[!UICONTROL Total Sessions]**. |
 
    * Ange **[!UICONTROL Attribution]**.
 
@@ -163,6 +163,6 @@ Se [Exempel](#example) för ett exempel på hur du använder en attribueringsmod
 >[!MORELIKETHIS]
 >
 >[Inställningar för attribueringskomponent](/help/data-views/component-settings/attribution.md)
->[Deltagandemått ](participation-metric.md)
+>[Deltagandemått &#x200B;](participation-metric.md)
 >
 
