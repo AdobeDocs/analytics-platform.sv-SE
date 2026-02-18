@@ -35,7 +35,7 @@ För att kunna använda marknadsföringskanaler i Customer Journey Analytics nä
 
 1. Välj **[!UICONTROL Create derived field]** i den vänstra listen.
 
-1. Välj **[!UICONTROL Function templates]** i listrutan i dialogrutan **[!UICONTROL Create derived field]**.
+1. Välj **[!UICONTROL Create derived field]** i listrutan i dialogrutan **[!UICONTROL Function templates]**.
 
    ![Skapa härledda fältfunktionsmallar](assets/derived-field-create.png)
 

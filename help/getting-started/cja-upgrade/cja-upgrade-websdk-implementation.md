@@ -65,10 +65,10 @@ Den rekommenderade processen att uppgradera från Adobe Analytics till Customer 
 
 Det finns tre sätt att använda Adobe Experience Platform Web SDK:
 
-* [Webbtaggtillägg för SDK](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/install/extension): Adobe rekommenderar att du använder den här metoden. Installera en tagginläsare på webbplatsen och använd sedan användargränssnittet för Adobe Experience Platform Data Collection för att konfigurera implementeringen.
+* [Webbtaggtillägg för SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/extension): Adobe rekommenderar att du använder den här metoden. Installera en tagginläsare på webbplatsen och använd sedan användargränssnittet för Adobe Experience Platform Data Collection för att konfigurera implementeringen.
 
-* [Webbbibliotek för SDK JavaScript](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/install/library): Referera till en CDN-värdbiblioteksfil eller använd din egen infrastruktur som värd för biblioteksfilen. Ring till biblioteket i koden på din webbplats.
+* [Webbbibliotek för SDK JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library): Referera till en CDN-värdbiblioteksfil eller använd din egen infrastruktur som värd för biblioteksfilen. Ring till biblioteket i koden på din webbplats.
 
-* [NPM](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/install/npm): Installera Web SDK på din webbplats med NPM-pakethanteraren.
+* [NPM](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/npm): Installera Web SDK på din webbplats med NPM-pakethanteraren.
 
-Mer information finns i [Översikt över Web SDK-installationen](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/install/overview) i Experience Platform Web SDK Guide.
+Mer information finns i [Översikt över Web SDK-installationen](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) i Experience Platform Web SDK Guide.
