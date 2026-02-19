@@ -4,9 +4,9 @@ title: Använd mallar
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 9b941deb424d92744bea99f6ea01f6434d6bc19f
+source-git-commit: 02aa4b4c9b357efca3d620bb72d8a505153bc079
 workflow-type: tm+mt
-source-wordcount: '20891'
+source-wordcount: '20962'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 Mallar (eller företagsmallar) i Analysis Workspace ger snabba insikter i de vanligaste rapportscenarierna. Nedan följer några exempel på frågor som du kan besvara med mallar:
 
-* Hur många personer besöker er webbplats
-* Hur många av dessa besökare är unika besökare (räknas bara en gång)
-* Hur de kom till webbplatsen (t.ex. om de följde en länk eller kom dit direkt)
-* Vilka nyckelord besökarna använde för att söka efter webbplatsinnehåll
-* Hur länge besökarna var kvar på en viss sida eller på hela webbplatsen
-* Vilka länkar besökarna klickade på och när de lämnade webbplatsen
-* Vilka marknadsföringskanaler är mest effektiva för att generera intäkter eller konverteringshändelser?
-* Hur mycket tid de tillbringade med att titta på en video
-* Vilka webbläsare och enheter de använde för att besöka din webbplats
+* Hur många besökare som besöker er webbplats.
+* Hur många av dessa besökare är unika besökare (räknas bara en gång).
+* Hur de kom till webbplatsen (till exempel om de följde en länk eller kom dit direkt).
+* Vilka nyckelord besökarna använde för att söka efter webbplatsinnehåll.
+* Hur länge besökarna var kvar på en viss sida eller på hela webbplatsen.
+* Vilken länk besökarna klickade på och när de lämnade webbplatsen.
+* Vilka marknadsföringskanaler som är mest effektiva för att generera intäkter eller konverteringshändelser.
+* Hur mycket tid de tillbringade med att titta på en video.
+* Vilka webbläsare och enheter de använde för att besöka din webbplats.
 
 Följande information beskriver hur du får åtkomst till och använder mallar från fliken [!UICONTROL Templates] i Analysis Workspace.
 
@@ -383,7 +383,7 @@ Följande mallar är tillgängliga:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Lär dig vilka innehålls- och innehållsattribut som fungerar bäst."
->abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
+>abstract="**Detta kan hjälpa dig** att lära dig hur ditt innehåll fungerar på detaljnivå. Du kan titta på prestanda för enskilda resurser eller specifika attribut. Content Analytics använder AI för att automatiskt generera attribut och tagga ditt innehåll med dem. <a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Läs mer</a>.<br/>**Baserat på vad du lär dig kan du** göra något av följande, som att marknadsföra högpresterande resurser på din hemsida, anpassa innehåll för specifika segment så att de inkluderar högpresterande attribut eller rotera bort innehåll som har börjat bli inaktuellt."
 
 
 Följande mallar är tillgängliga:
@@ -1086,7 +1086,7 @@ Följande mallar är tillgängliga:
 
 ### B2B-mallar {#b2b-templates}
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 
 <!-- CJA B2B Edition only -->
@@ -1117,11 +1117,15 @@ Följande mallar är tillgängliga:
 
 ### Mix Modeler-mallar {#mix-modeler-templates}
 
+Följande mallar är tillgängliga:
+
+| Mallnamn | Varför använda den här mallen <!-- What do you do with it? What can it help you learn? and What are the potential actions? -->? |
+| --- | --- |
+| [!UICONTROL **Mix Modeler inkrementella modellinsikter**] | Visa insikter från utvalda modeller som genererats av Mix Modeler.<p>**Detta kan hjälpa dig** att bättre förstå de inkrementella insikterna från modeller som genererats i Mix Modeler. <p>**Baserat på dessa insikter** kan du:<ul><li>Visualisera och kvantifiera effekten av organisationens marknadsföringsaktiviteter.</li><li>Identifiera vilka kanaler som är högpresterande.</li><li>Identifiera vilka kanaler som kan behöva optimeras.</li></ul></p> |
+
 <!-- CJA only -->
 
 >[!CONTEXTUALHELP]
->id="template--mixModelerReport"
+>id="template--mixmodeler-incremental-models-insights"
 >title="Visa insikter från utvalda modeller som genererats av Mix Modeler."
 >abstract="**Detta kan hjälpa dig** att bättre förstå de inkrementella insikterna från modeller som genererats i Mix Modeler. <br/>**Baserat på dessa insikter** kan du:<ul><li>Visualisera och kvantifiera effekten av organisationens marknadsföringsaktiviteter.</li><li>Identifiera vilka kanaler som är högpresterande.</li><li>Identifiera vilka kanaler som kan behöva optimeras.</li></ul>"
-
-
