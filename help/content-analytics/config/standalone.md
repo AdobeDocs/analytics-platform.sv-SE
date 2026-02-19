@@ -82,7 +82,7 @@ Du behöver antingen en systemadministratör eller en produktadministratör för
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hantera användare för en produktprofil](https://video.tv.adobe.com/v/333860/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hantera användare för en produktprofil](https://video.tv.adobe.com/v/3475945/?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 
 >[!ENDSHADEBOX]
