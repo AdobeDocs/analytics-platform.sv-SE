@@ -20,7 +20,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | Funktion | Beskrivning |
 |---|---|
 | **Februari 2026** | |
-| Beräknade mätvärden, skyddsräcke | [-garderoben har uppdaterats för maximalt antal beräknade värden för en organisation ](/help/technotes/guardrails.md#segments-and-calculated-metrics). Det maximala antalet är nu 50 000. |
+| Beräknade mätvärden, skyddsräcke | [-garderoben har uppdaterats för maximalt antal beräknade värden för en organisation &#x200B;](/help/technotes/guardrails.md#segments-and-calculated-metrics). Det maximala antalet är nu 50 000. |
 | Fristående Content Analytics | Dokumentation för en fristående [konfiguration av Content Analytics](/help/content-analytics/config/standalone.md) har lagts till. |
 | **Januari 2026** | |
 | Arkitekt a schema | Lagt till omfattande information och kontext i [Skapa ditt schema för användning med Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
@@ -133,7 +133,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | Översiktsinformation om dimensioner | Lagt till information om [dimensioner](/help/components/dimensions/overview.md). |
 | Exempel på källkopplingar | Exempel på källanslutningar som är tillgängliga när du beskriver hur du [använder en källkoppling](/help/data-ingestion/sources.md#use-a-source-connector) för datainhämtning har lagts till. |
 | **April 2024** | |
-| Prognostiserade statistiska tekniker | Artikeln som beskriver de [statistiska tekniker som används i prognostjänsten ](../analysis-workspace/c-forecast/statistics-forecasting.md) har lagts till. |
+| Prognostiserade statistiska tekniker | Artikeln som beskriver de [statistiska tekniker som används i prognostjänsten &#x200B;](../analysis-workspace/c-forecast/statistics-forecasting.md) har lagts till. |
 | Tillagd information som rekommenderar fullständig tabellexport för höga kardinalitetsmått | Punkter har lagts till i [Bästa tillvägagångssätt för dimensioner med hög kardinalitet](/help/components/dimensions/high-cardinality.md) för att rekommendera att använda Full tabellexport för dimensioner med hög kardinalitet. |
 | Lagt till dokumentation om intelligenta bildtexter i mobilstyrkort | [Intelligenta bildtexter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions) kan hjälpa icke-analytiker att förstå sina data bättre utan hjälp av analytiker. |
 | Ny dokumentation om Adobe Product Analytics-funktioner | <ul><li>[Funktionsmatris](/help/guided-analysis/types/funnel.md)</li><li>Förbättrad [lagring](/help/guided-analysis/types/retention.md)</li><li>[Förbättrade insikter i tratt](/help/guided-analysis/types/funnel.md)</li><li>Jämför händelser i ett enda tratt-steg</li></ul> |
@@ -143,7 +143,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | **Februari 2024** | |
 | Uppdateringar av projektdelningsdokumentation | Lagt till information om hur du [visar projekt som delas med dig](/help/analysis-workspace/curate-share/share-projects.md#view-projects-shared-with-you).<p>Effektivare information om att [dela enskilda eller flera projekt](/help/analysis-workspace/curate-share/share-projects.md#share-a-specific-project-role).</p> |
 | Lagt till behörighetskrav för överföring av filer till Azure SAS och Azure RBAC när molnexportplatser konfigureras | Exakta behörighetskrav för överföring av filer till Azure SAS och Azure RBAC lades till när [molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [konfigurerade molnexportplatser](/help/components/exports/cloud-export-locations.md) konfigurerades. |
-| Lagt till behörighetskrav för att överföra filer till Amazon S3 Role ARN- och GCP-bucket när du konfigurerar molnexportplatser | Exakta behörighetskrav för överföring av filer till Amazon S3 Role ARN och Google Cloud Platform har lagts till när [molnexportplatser ](/help/components/exports/cloud-export-locations.md) konfigureras. |
+| Lagt till behörighetskrav för att överföra filer till Amazon S3 Role ARN- och GCP-bucket när du konfigurerar molnexportplatser | Exakta behörighetskrav för överföring av filer till Amazon S3 Role ARN och Google Cloud Platform har lagts till när [molnexportplatser &#x200B;](/help/components/exports/cloud-export-locations.md) konfigureras. |
 | Klarade att produktadministratörer alltid har tillgång till fullständiga tabeller för export | Gör följande ändringar för att förtydliga att användare som har tilldelats rollen Produktadministratör har åtkomst till att exportera fullständiga tabeller från Analysis Workspace som standard: <ul><li>En ny punkt har lagts till i [standardbehörigheten för produktadministratör](/help/technotes/access-control.md#product-admin-default-permissions).</li><li>En anteckning har lagts till under de [lägsta kraven för export av fullständiga tabeller till molnet](/help/analysis-workspace/export/export-cloud.md#minimum-requirements).</li></ul> |
 | Det klargörs att segment återskapas vid komponentmigrering från Adobe Analytics | I [användarhandboken för Adobe Analytics-användare](/help/getting-started/aa-to-cja-user.md) klargjordes att segment automatiskt återskapas i Adobe Analytics som en del av komponentmigreringsprocessen och att de inte behöver återskapas manuellt. |
 | Information om överhoppad post | Lagt till dokumentation om funktionen för överhoppad postinformation i Anslutningar. Mer information finns i [Anslutningsinformation](../connections/manage-connections.md#connection-details). |
@@ -266,7 +266,7 @@ Följande uppdateringar har gjorts i Customer Journey Analytics-dokumentationen 
 | Augusti 2022 | Ny artikel om att [jämföra terminologi för analysdata som skickas via Analytics-källkopplingen](/help/getting-started/aa-vs-cja/terminology.md). |
 | Augusti 2022 | Ny dokumentation om [målgruppspublicering till kundprofil för realtid](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html). |
 | **Juli 2022** | |
-| Juli 2022 | [Dokumentation om tidsåtgången för mediauppspelning i panelen ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html). |
+| Juli 2022 | [Dokumentation om tidsåtgången för mediauppspelning i panelen &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html). |
 | Juli 2022 | [Dokumentation för panelen för samtidiga visningsprogram för media](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html). |
 | Juli 2022 | [Rapportdokumentation för första sessionen](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat). |
 | **Juni 2022** | |
