@@ -35,7 +35,7 @@ Funktioner som pekar mot toppen av den här visualiseringen visar att de ofta an
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Förlovningsanalys](https://video.tv.adobe.com/v/3429489/&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Förlovningsanalys](https://video.tv.adobe.com/v/3447471?captions=swe){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

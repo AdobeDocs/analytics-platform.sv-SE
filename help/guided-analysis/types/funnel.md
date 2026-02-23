@@ -27,7 +27,7 @@ Analysen ![ConversionTrnel &#x200B;](/help/assets/icons/ConversionFunnel.svg)**[
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel-friktionsanalys](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Funnel-friktionsanalys](https://video.tv.adobe.com/v/3432443/?captions=swe&quality=12&learn=onn){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
