@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras utfallsvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Utfall](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras utfallsvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Utfall](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ Du kan till exempel spåra en persons bortfallspunkter under en inköpsprocess. 
 
 ## Välj mellan Utfall, Flöde och Visualiseringar av arbetsytan på resan
 
-Utfallsvisualiseringen har likheter med [Flödesvisualiseringen](/help/analysis-workspace/visualizations/c-flow/flow.md) och [arbetsytevisualiseringen ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
+Utfallsvisualiseringen har likheter med [Flödesvisualiseringen](/help/analysis-workspace/visualizations/c-flow/flow.md) och [arbetsytevisualiseringen &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
 
 ### Förstå skillnaderna
 

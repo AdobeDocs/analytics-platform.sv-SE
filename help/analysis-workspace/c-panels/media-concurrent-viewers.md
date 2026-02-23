@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Se [Panelen Medievisningsprogram för samtidiga ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
+_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Panelen Medievisningsprogram för samtidiga &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -130,6 +130,6 @@ Det finns ingen friformstabell i den här vyn.  Om du vill visa datakällan kan 
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[Medieuppspelningstid för panelen ](media-playback-time-spent.md)
+>[Medieuppspelningstid för panelen &#x200B;](media-playback-time-spent.md)
 >[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
 >

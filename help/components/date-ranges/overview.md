@@ -36,8 +36,8 @@ Du kan också använda ett datumintervall i en frihandstabell som ett mått elle
 Du använder ett datumintervall på samma sätt som du [använder valfri komponent](/help/components/overview.md#analysis-workspace-components). Du drar datumintervallet från komponentpanelen ![Kalender](/help/assets/icons/Calendar.svg) **[!UICONTROL Date ranges]** och släpper komponenten på:
 
 - **[!UICONTROL Calendar]**: Du ![Växlar](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** den aktuella kalenderkonfigurationen med datumintervallet.
-- **Kolumnrubrik för mått**: Du ![Växlar](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** måttet, ![Lägg till ](/help/assets/icons/Add.svg)**[!UICONTROL Add]**datumintervallet som ett mått eller ![Filter](/help/assets/icons/Filter.svg)**[!UICONTROL Filter]**måttet med datumintervallkomponenten.
-- **Dimension kolumnrubrik**: ![Byt](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** de aktuella dimensionerna. Den nya dimensionen är nu **[!UICONTROL Date ranges]**. När dimensionen är datumintervall kan du ![lägga till ](/help/assets/icons/Add.svg)**[!UICONTROL Add]**ytterligare datumintervall som dimensionsobjekt.
+- **Kolumnrubrik för mått**: Du ![Växlar](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** måttet, ![Lägg till &#x200B;](/help/assets/icons/Add.svg)**[!UICONTROL Add]**&#x200B;datumintervallet som ett mått eller ![Filter](/help/assets/icons/Filter.svg)**[!UICONTROL Filter]**&#x200B;måttet med datumintervallkomponenten.
+- **Dimension kolumnrubrik**: ![Byt](/help/assets/icons/Switch.svg) **[!UICONTROL Replace]** de aktuella dimensionerna. Den nya dimensionen är nu **[!UICONTROL Date ranges]**. När dimensionen är datumintervall kan du ![lägga till &#x200B;](/help/assets/icons/Add.svg)**[!UICONTROL Add]**&#x200B;ytterligare datumintervall som dimensionsobjekt.
 - **Dimension-objekt**: Du ![Bryter ned](/help/assets/icons/Breakdown.svg) **[!UICONTROL Breakdown]** det specifika dimensionsobjektet efter datumintervallet.
 
 Du kan också lägga till en datumintervallkolumn direkt i en visualisering av en frihandsfigur:

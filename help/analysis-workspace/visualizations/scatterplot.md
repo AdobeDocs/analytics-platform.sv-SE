@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras Spridningsvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Spridning](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras Spridningsvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Spridning](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -35,7 +35,7 @@ Visualiseringen ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTR
 
 
 
-![Exempel på punktdiagram som visar flera dimensionsobjekt ](assets/scatter.png)
+![Exempel på punktdiagram som visar flera dimensionsobjekt &#x200B;](assets/scatter.png)
 
 
 >[!BEGINSHADEBOX]
@@ -53,5 +53,5 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av 
 >
 >[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Snabbmenyn Visualisering &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

@@ -30,7 +30,7 @@ Se avsnitten nedan för att illustrera hur segmenterade mätvärden kan hjälpa 
 ## Populära sidor
 
 1. [Skapa ett beräknat mått](cm-workflow.md) från ett Workspace-projekt med namnet `German people`.
-1. I [kalkylerade måttbyggare](cm-build-metrics.md) [skapar du ett segment ](/help/components/segments/seg-builder.md) med namnet `Germany` som använder fältet CRM-land från dina CRM-data för att avgöra var en person kommer ifrån.
+1. I [kalkylerade måttbyggare](cm-build-metrics.md) [skapar du ett segment &#x200B;](/help/components/segments/seg-builder.md) med namnet `Germany` som använder fältet CRM-land från dina CRM-data för att avgöra var en person kommer ifrån.
 
    >[!TIP]
    >

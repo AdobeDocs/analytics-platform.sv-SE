@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln visas hur länge mediespelningen har pågått i panelen_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Mer information om [ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)-versionen av den här artikeln finns i _**Medieuppspelningstiden på den här panelen**._
+_I den här artikeln visas hur länge mediespelningen har pågått i panelen_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Mer information om [&#x200B; &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)-versionen av den här artikeln finns i _&#x200B;**Medieuppspelningstiden på den här panelen**._
 
 >[!ENDSHADEBOX]
 
@@ -100,7 +100,7 @@ Du kan konfigurera panelen Tid för uppspelning av media med följande indatains
 
 På panelen Medieuppspelningstid för spenderad tid returneras ett linjediagram och sammanfattningsnummer som innehåller information om den maximala, minimala och/eller sammanlagda uppspelningstiden. Längst upp på panelen finns en sammanfattningsrad som påminner om de panelinställningar du har valt.
 
-Du kan när som helst välja ![Redigera mediespelningstid på ](/help/assets/icons/Edit.svg) för att redigera och återskapa panelen.
+Du kan när som helst välja ![Redigera mediespelningstid på &#x200B;](/help/assets/icons/Edit.svg) för att redigera och återskapa panelen.
 
 Om du väljer seriebrytning visas en rad i linjediagrammet och ett sammanfattningsnummer för varje rad:
 
