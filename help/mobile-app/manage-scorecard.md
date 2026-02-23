@@ -42,7 +42,7 @@ Med skräddarsydda detaljbilder kan ni målinrikta er ännu mer om vilken inform
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Anpassade detaljvyer](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Anpassade detaljvyer](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -86,7 +86,7 @@ Titta på videon och lär dig mer om hur du skapar databerättelser i mobilstyrk
 
 >[!BEGINSHADEBOX]
 
-En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Databerättelser för Mobile Scorecard-projekt](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} .
+En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Databerättelser för Mobile Scorecard-projekt](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} .
 
 >[!ENDSHADEBOX]
 

@@ -27,7 +27,7 @@ Med anslutningar kan Customer Journey Analytics produktadministratörer definier
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ansluta till datakällor](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Ansluta till datakällor](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -39,7 +39,7 @@ På en hög nivå ger anslutningsarbetsflödet dig möjlighet att:
 | ➋ | [Granska informationen för en anslutning](manage-connections.md#connection-details), som datauppsättningsposter som har importerats, hoppats över eller tagits bort. |
 | ➌ | [Skapa eller redigera konfigurationen för en anslutning](create-connection.md#create-or-edit-a-connection), till exempel ett rullande datafönster, den sandlåda som ska användas, vilka datauppsättningar som är en del av anslutningen, med mera. |
 | ➍ | [Lägg till datauppsättningar i en anslutning](create-connection.md#add-datasets). Anslutningen bör ha minst en händelse- eller sammanfattningsdatauppsättning men kan innehålla en mängd olika datauppsättningar för händelse, profil, sökning och sammanfattning. |
-| ➎ | [Konfigurera inställningarna](create-connection.md#dataset-settings) för datauppsättningar som du lägger till. Du kan bestämma hur olika datauppsättningar ska länkas baserat på en vanlig personbaserad eller [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} kontobaserad identifierare. |
+| ➎ | [Konfigurera inställningarna](create-connection.md#dataset-settings) för datauppsättningar som du lägger till. Du kan bestämma hur olika datauppsättningar ska länkas baserat på en vanlig personbaserad eller [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} kontobaserad identifierare. |
 | ➏ | [Redigera inställningarna för en befintlig datamängd](create-connection.md#edit-a-dataset). Du kan alltid gå tillbaka till datauppsättningsinställningarna i ett senare skede. |
 
 

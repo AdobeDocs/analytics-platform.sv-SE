@@ -26,7 +26,7 @@ Den här funktionen är särskilt användbar när du skapar hyperlänkar för f�
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa hyperlänkar i en frihandstabell](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/tips-and-tricks/create-hyperlinks-in-freeform-tables){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa hyperlänkar i en frihandstabell](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/tips-and-tricks/create-hyperlinks-in-freeform-tables){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

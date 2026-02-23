@@ -18,7 +18,7 @@ Du skapar sekventiella segment med den logiska operatorn [!UICONTROL Then] mella
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sekventiell segmentering](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Sekventiell segmentering](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 

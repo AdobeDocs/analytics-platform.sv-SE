@@ -82,6 +82,6 @@ Du kan segmentera ett visst antal artiklar i en dimension. Exempel: *Besökare s
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Distinkt dimensionsantal](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Distinkt dimensionsantal](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]

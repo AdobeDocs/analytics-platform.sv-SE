@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rad- och kolumninställningar i en frihandstabell](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rad- och kolumninställningar i en frihandstabell](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -90,4 +90,4 @@ Följande alternativ på snabbmenyn är tillgängliga när du väljer en kolumnr
 
 ## Ändra radhöjd
 
-Du kan ange [vydensiteten](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**.
+Du kan ange [vydensiteten](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**.

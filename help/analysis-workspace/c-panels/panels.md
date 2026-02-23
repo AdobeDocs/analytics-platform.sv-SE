@@ -167,7 +167,7 @@ Mer information finns i [Snabbsegment](/help/components/segments/seg-quick.md).
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nedrullningsbara segment](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nedrullningsbara segment](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 

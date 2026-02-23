@@ -91,10 +91,10 @@ De tillgängliga förfalloinställningarna är:
 
 * **Session**: Upphör att gälla efter en given session. Förfallotid som standard.
 * **Personrapporteringsfönster**: Upphör att gälla i slutet av rapporteringsfönstret.
-* **Fönstret Rapportering för globalt konto** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Upphör att gälla i slutet av rapporteringsfönstret.
-* **Fönstret Kontorapportering** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Upphör att gälla i slutet av rapportfönstret.
-* **Fönstret för säljprojektsrapportering** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Upphör att gälla i slutet av rapportfönstret.
-* **Buying Group Reporting Window** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Upphör att gälla i slutet av rapporteringsfönstret.
+* **Fönstret Rapportering för globalt konto** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Upphör att gälla i slutet av rapporteringsfönstret.
+* **Fönstret Kontorapportering** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Upphör att gälla i slutet av rapportfönstret.
+* **Fönstret för säljprojektsrapportering** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Upphör att gälla i slutet av rapportfönstret.
+* **Buying Group Reporting Window** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}: Upphör att gälla i slutet av rapporteringsfönstret.
 * **Anpassad tid**: Förfaller efter en angiven tidsperiod (upp till 90 dagar). Det här förfalloalternativet är endast tillgängligt för allokeringsmodellerna Original och Senaste. När du använder tidsbaserad förfallotid beaktas värden som ligger före rapportfönstrets början (upp till 90 dagar).
 * **Mått**: När det här måttet visas i en händelse upphör det beständiga värdet i dimensionen omedelbart att gälla. Du kan använda valfritt mätvärde som förfallodatum för den här dimensionen. Det här förfalloalternativet är bara tillgängligt för allokeringsinställningarna Original och Senaste.
 
@@ -108,7 +108,7 @@ Se [Använda bindningsdimensioner och mätvärden i Customer Journey Analytics](
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindningsdimensioner](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Bindningsdimensioner](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

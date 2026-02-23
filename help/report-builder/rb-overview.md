@@ -48,7 +48,7 @@ Report Builder för Customer Journey Analytics är ett Microsoft Excel-tillägg.
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder för Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/report-builder-for-customer-journey-analytics){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder för Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/report-builder-for-customer-journey-analytics){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

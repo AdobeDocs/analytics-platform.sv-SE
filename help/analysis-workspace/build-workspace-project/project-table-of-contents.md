@@ -18,7 +18,7 @@ Du kan visa en innehållsförteckning för ett projekt i Analysis Workspace, vil
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa en innehållsförteckning](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa en innehållsförteckning](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -46,4 +46,4 @@ Så här visar du innehållsförteckningen i ett projekt:
 
 >[!MORELIKETHIS]
 >
->* [Förenkla instrumentpanelsnavigeringen med den nya funktionen för innehållsförteckning i Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284)
+>* [Förenkla instrumentpanelsnavigeringen med den nya funktionen för innehållsförteckning i Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284?profile.language=sv)

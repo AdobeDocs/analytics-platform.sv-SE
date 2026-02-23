@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Panelen Medievisningsprogram för samtidiga &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_Den här artikeln visar panelen Medievisningsprogram för samtidig användning i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Se [Panelen Medievisningsprogram för samtidiga &#x200B;](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ I Analysis Workspace är indikatorn för Concurrent viewers antalet unika person
 
 >[!BEGINSHADEBOX]
 
-En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panelen Medievisningsprogram för samtidig användning](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace){target="_blank"} .
+En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Panelen Medievisningsprogram för samtidig användning](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace){target="_blank"} .
 
 {{videoaa}}
 

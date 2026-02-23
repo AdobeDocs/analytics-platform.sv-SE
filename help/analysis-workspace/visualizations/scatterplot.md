@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras Spridningsvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Spridning](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras Spridningsvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Spridning](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +40,7 @@ Visualiseringen ![GraphScatter](/help/assets/icons/GraphScatter.svg) **[!UICONTR
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av platsyta](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/use-scatterplot-visualizations){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av platsyta](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/use-scatterplot-visualizations){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

@@ -18,7 +18,7 @@ I [!UICONTROL Column settings] kan du konfigurera kolumnformatering, varav vissa
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rad- och kolumninställningar i en frihandstabell](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rad- och kolumninställningar i en frihandstabell](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 

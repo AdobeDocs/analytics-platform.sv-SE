@@ -20,7 +20,7 @@ Beräknade mätvärden är anpassade mätvärden som du kan skapa utifrån befin
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduktion till beräknade värden](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/introduction-to-calculated-metrics-in-customer-journey-analytics){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduktion till beräknade värden](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/introduction-to-calculated-metrics-in-customer-journey-analytics){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

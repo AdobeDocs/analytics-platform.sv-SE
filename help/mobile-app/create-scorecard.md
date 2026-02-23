@@ -29,7 +29,7 @@ Följande information beskriver för chefer av Customer Journey Analytics-data h
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa ett mobilstyrkort](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa ett mobilstyrkort](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -96,7 +96,7 @@ Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Cha
 
 Om du vill använda segment på enskilda plattor drar du ett segment från den vänstra panelen och släpper det direkt ovanpå plattan.
 
-Om du vill använda segmentet på alla plattor i styrkortet, släpper du plattan ovanpå styrkortet. Du kan också tillämpa segment genom att markera dem på segmentmenyn under datumintervallen. Du [konfigurerar och tillämpar segment för dina styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Customer Journey Analytics Workspace.
+Om du vill använda segmentet på alla plattor i styrkortet, släpper du plattan ovanpå styrkortet. Du kan också tillämpa segment genom att markera dem på segmentmenyn under datumintervallen. Du [konfigurerar och tillämpar segment för dina styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=sv-SE) på samma sätt som i Customer Journey Analytics Workspace.
 
 ![Segmentlistruteväljare som markerar byggsegmenten](assets/segment_ui.png)
 
@@ -212,7 +212,7 @@ Med skräddarsydda detaljbilder kan ni målinrikta er ännu mer om vilken inform
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Anpassade detaljvyer](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Anpassade detaljvyer](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
@@ -257,7 +257,7 @@ Titta på videon och lär dig mer om hur du skapar databerättelser i mobilstyrk
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Databerättelser för ett Mobile-styrkortsprojekt](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Databerättelser för ett Mobile-styrkortsprojekt](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 

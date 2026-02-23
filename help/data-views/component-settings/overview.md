@@ -59,7 +59,7 @@ Följande information beskriver de inställningar som används av en datavykompo
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponenttypsinställningar](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponenttypsinställningar](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

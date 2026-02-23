@@ -18,7 +18,7 @@ Den algoritmiska [attribueringsmodellen](models.md) i Analysis Workspace skiljer
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Algoritmisk attribuering](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/algorithmic-model-in-attribution-iq){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Algoritmisk attribuering](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/algorithmic-model-in-attribution-iq){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

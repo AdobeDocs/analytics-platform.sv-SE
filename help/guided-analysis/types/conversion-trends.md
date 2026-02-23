@@ -27,7 +27,7 @@ ht-degree: 0%
 Analysen ![Konverteringstrender](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Conversion trends]** ger en visualisering av konverteringsgraden över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
 
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/conversion-trends)
+>[!VIDEO](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/guided-analysis/conversion-trends)
 
 
 ## Användningsexempel

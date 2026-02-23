@@ -90,7 +90,7 @@ Upprepa stegen ovan för den internationella versionen av det beräknade måttet
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använd ett segmenterat beräknat mätresultat som ett implementeringsfritt mätvärde](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använd ett segmenterat beräknat mätresultat som ett implementeringsfritt mätvärde](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 

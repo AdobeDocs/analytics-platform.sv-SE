@@ -30,7 +30,7 @@ Analysadministratörer ansvarar för att strukturera information om varje kompon
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataordlista för Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/data-dictionary/use-data-dictionary){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dataordlista för Analysis Workspace](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/components/data-dictionary/use-data-dictionary){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 

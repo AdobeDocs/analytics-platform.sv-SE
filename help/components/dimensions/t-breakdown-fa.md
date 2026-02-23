@@ -51,7 +51,7 @@ Detta är det förväntade beteendet när du tillämpar attribueringsmodeller p�
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension i Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/dimensions/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension i Analysis Workspace](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/dimensions/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
@@ -69,7 +69,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimension-uppdeln
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägga till mått och mätvärden](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/dimensions/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägga till mått och mätvärden](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/dimensions/adding-dimensions-and-metrics-to-your-project-in-analysis-workspace){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
@@ -78,7 +78,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Lägga till mått
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeta med dimensioner i en frihandstabell](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/working-with-dimensions-in-a-freeform-table){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeta med dimensioner i en frihandstabell](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/working-with-dimensions-in-a-freeform-table){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 

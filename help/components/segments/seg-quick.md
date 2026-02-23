@@ -19,7 +19,7 @@ Med snabbsegment kan du snabbt utforska data i ett Workspace-projekt, utan att b
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Snabbsegment i Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/filters/create-a-quick-filter){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Snabbsegment i Analysis Workspace](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/components/filters/create-a-quick-filter){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

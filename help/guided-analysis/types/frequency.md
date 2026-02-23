@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Analysen av ![frekvens](/help/assets/icons/Histogram.svg) **[!UICONTROL Frequency]** grupperar händelsedata efter hur ofta händelser inträffar i din produkt. Den lodräta axeln i den här analysen innehåller bucket som representerar händelsens frekvens. Den vågräta axeln mäter antalet användare eller sessioner för varje bucket.
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
+>[!VIDEO](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
 
 ## Användningsexempel
 

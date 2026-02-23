@@ -33,7 +33,7 @@ Analysmetoderna innehåller [inställningar för datavykomponenten](/help/data-v
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching Enablement and validation](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Stitching Enablement and validation](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

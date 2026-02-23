@@ -36,7 +36,7 @@ Ni har tillgång till betydligt fler flerkanalsdata som kan analyseras. Du kan t
 
 Customer Journey Analytics hämtar data från Adobe Experience Platform. Med Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och kanaler och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser.
 
-Kunddata i Experience Platform lagras som datauppsättningar, som består av ett [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) och datagrupper. Mer information om plattformen finns i [Översikt över Adobe Experience Platform-arkitekturen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html).
+Kunddata i Experience Platform lagras som datauppsättningar, som består av ett [schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=sv-SE) och datagrupper. Mer information om plattformen finns i [Översikt över Adobe Experience Platform-arkitekturen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=sv-SE).
 
 Din Customer Journey Analytics-administratör upprättar [anslutningar](/help/connections/create-connection.md) till datauppsättningar i Experience Platform. De skapar sedan [datavyer](/help/data-views/data-views.md) med dessa anslutningar. Datavyer liknar konceptuellt virtuella rapportsviter och är grunden för rapportering i Customer Journey Analytics. Eftersom Experience Platform hämtar alla data för rapportering finns inte längre rapportsviterna som databehållare.
 
@@ -76,7 +76,7 @@ Med den här flexibiliteten kan du råka ut för situationer där ett enda schem
 
 ## Förändringar av segmentkonceptet
 
-Även om segment inte är tekniskt migrerade från Adobe Analytics till Customer Journey Analytics kan du använda komponentmigreringsverktyget för att återskapa dina Adobe Analytics-segment i Customer Journey Analytics. Segmenten återskapas i Customer Journey Analytics baserat på de dimensioner och mätvärden som mappas. Mer information finns i [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html).
+Även om segment inte är tekniskt migrerade från Adobe Analytics till Customer Journey Analytics kan du använda komponentmigreringsverktyget för att återskapa dina Adobe Analytics-segment i Customer Journey Analytics. Segmenten återskapas i Customer Journey Analytics baserat på de dimensioner och mätvärden som mappas. Mer information finns i [Förbereda för att migrera komponenter och projekt från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=sv-SE).
 
 Även om du ännu inte kan dela eller publicera [!UICONTROL segments] ([!UICONTROL segments]) från [!DNL Customer Journey Analytics] till Experience Platform enhetliga profil är den här funktionen under utveckling.
 
@@ -93,7 +93,7 @@ Beräknade mätvärden namnges på liknande sätt mellan Adobe Analytics och Cus
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Flytta beräknade värden från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics){target="_blank"} för en demonstrationsvideo om hur du flyttar beräknade värden.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Flytta beräknade värden från Adobe Analytics till Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics){target="_blank"} för en demonstrationsvideo om hur du flyttar beräknade värden.
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ Customer Journey Analytics utvidgar begreppet identiteter utöver ECID:n till at
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använda identitet i Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använda identitet i Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
