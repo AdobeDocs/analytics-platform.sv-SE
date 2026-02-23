@@ -4,9 +4,9 @@ title: Intelligenta bildtexter
 feature: Visualizations
 exl-id: d32d3cda-ecbf-4ee7-a8b7-7c3c71b5df75
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '709'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Intelligenta bildtexter inriktas på följande:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligenta bildtexter](https://video.tv.adobe.com/v/3443142/?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligenta bildtexter](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/intelligent-captions){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -37,7 +37,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intelligenta bild
 
 Om du vill starta automatiskt genererade intelligenta bildtexter för en visualisering väljer du ![Intelligenta bildtexter](/help/assets/icons/AI.svg) längst upp till höger i visualiseringen. Det här valet genererar insikter om naturliga språk.
 
-![Startanalysfönstret som visar trenden för intelligenta bildtexter för produktvyer. &#x200B;](assets/intelligent-captions.gif)
+![Startanalysfönstret som visar trenden för intelligenta bildtexter för produktvyer. ](assets/intelligent-captions.gif)
 
 
 Kom ihåg att:
@@ -69,7 +69,7 @@ Here is an example of what intelligent captions could look like:
 ![Intelligent captions for Line visualization including Seasonality, Min, Max, Spike, and Decline.](assets/captions.png)
 -->
 
-## Åtgärder
+## Instruktioner
 
 Du kan utföra följande åtgärder på intelligenta bildtexter:
 
@@ -92,7 +92,7 @@ Du kan redigera visningen av bildtexter, till exempel dölja eller visa en viss 
 
 1. Välj ![Redigera synlighet för intelligenta bildtexter](/help/assets/icons/EditInLight.svg) i dialogrutan Intelligenta bildtexter.
 
-1. Växla mellan ![Växla synlighet](/help/assets/icons/Visibility.svg) om du vill visa en viss insikt (till exempel **[!UICONTROL Min]**) eller ![Växla synlighet &#x200B;](/help/assets/icons/VisibilityOff.svg) om du vill dölja en viss insikt (till exempel **[!UICONTROL Spike]**).
+1. Växla mellan ![Växla synlighet](/help/assets/icons/Visibility.svg) om du vill visa en viss insikt (till exempel **[!UICONTROL Min]**) eller ![Växla synlighet ](/help/assets/icons/VisibilityOff.svg) om du vill dölja en viss insikt (till exempel **[!UICONTROL Spike]**).
 
    ![Redigera intelligenta bildtexter](assets/edit-intelligent-captions.png)
 
@@ -127,7 +127,7 @@ Om du inte vill visa intelligenta bildtexter kan du inaktivera funktionen.
 
 ## Intelligenta bildtexter i Mobile Scorecards
 
-Intelligenta bildtexter finns också i Customer Journey Analytics [mobilstyrkort](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions).
+Intelligenta bildtexter finns också i Customer Journey Analytics [mobilstyrkort](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dashboards/manage-scorecard#captions).
 
 ## Funktionsåtkomst
 
@@ -137,7 +137,7 @@ Följande parametrar styr åtkomsten till intelligenta bildtexter:
 
 * **Kontraktsåtkomst**: Om du inte kan använda intelligenta bildtexter kontaktar du organisationens administratör eller kontorepresentant för Adobe (Admin). Innan du kan använda intelligenta bildtexter i din organisation måste du godkänna vissa allmänna AI-relaterade juridiska villkor.
 
-* **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Intelligent Captions]** åtkomsten. En [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console]:
+* **Behörigheter**: I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Intelligent Captions]** åtkomsten. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console]:
    1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**.
    1. Välj namnet på den produktprofil som du vill ge tillgång till intelligenta bildtexter för.
    1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.

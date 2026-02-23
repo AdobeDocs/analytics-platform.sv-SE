@@ -4,9 +4,9 @@ title: Radinställningar
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rad- och kolumninställningar i en frihandstabell](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rad- och kolumninställningar i en frihandstabell](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -90,4 +90,4 @@ Följande alternativ på snabbmenyn är tillgängliga när du väljer en kolumnr
 
 ## Ändra radhöjd
 
-Du kan ange [vydensiteten](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**.
+Du kan ange [vydensiteten](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**.

@@ -4,9 +4,10 @@ description: Stegvisa anvisningar för att konfigurera Adobe Content Analytics s
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: f95910d3bd6e9f0e7be7bf272e9c363b4a4a5429
+exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
+source-git-commit: 1930e9da5d1cc8b5fb7ddc592535f035e4842a7b
 workflow-type: tm+mt
-source-wordcount: '2447'
+source-wordcount: '2448'
 ht-degree: 1%
 
 ---
@@ -31,16 +32,16 @@ I den här guiden används flera tekniska termer, från Experience Platform och 
 
 | Term | Förklaring |
 |---|---|
-| **Schema** | Ett [schema](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/schema/composition) är en uppsättning regler som representerar och validerar datastrukturen och dataformatet. På en hög nivå ger scheman en abstrakt definition av ett objekt i verkligheten, till exempel en händelse som inträffar på en webbplats, som ett klick. Och ange vilka data som ska inkluderas i varje instans av objektet. |
-| **Datauppsättning** | En [datamängd](https://experienceleague.adobe.com/sv/docs/experience-platform/catalog/datasets/overview) är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell, som innehåller ett schema (kolumner) och fält (rader). En datauppsättning fungerar som en databastabell där varje rad är en händelse från webbplatsen. |
-| **Datastream** | En [datastream](https://experienceleague.adobe.com/sv/docs/experience-platform/datastreams/overview) representerar konfigurationen på serversidan som dirigerar data från din webbplats till rätt datauppsättning i Adobe Experience Platform. En datastream fungerar som en datastrålväg som ansluter platsen till ditt lagringsutrymme. |
-| **Taggar** | [Taggar](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/home) i Experience Platform är nästa generation av tagghanteringsfunktioner från Adobe. Taggar ger kunderna ett enkelt sätt att driftsätta och hantera de analyser, marknadsförings- och annonstaggar som behövs för att skapa relevanta kundupplevelser. I Content Analytics kan du med Adobe tagghanteringssystem distribuera spårningskod på din webbplats utan att du behöver redigera alla sidor på samma sätt. Funktionen Taggar liknar den funktion som du kan känna till från Google Tag Manager. |
-| **Sandbox** | Experience Platform tillhandahåller [sandlådor](https://experienceleague.adobe.com/sv/docs/experience-platform/sandbox/home) som partitionerar en enda Experience Platform-instans till separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Content Analytics använder vanligtvis sandlådan *Produktion*. |
-| **Anslutning** | [Anslutningar](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-connections/overview) definierar vilka Experience Platform-datauppsättningar som importeras. En anslutning definierar länken mellan datauppsättningen (där data lagras i AEP) och Customer Journey Analytics (där du analyserar den). En anslutning gör dina insamlade data tillgängliga för rapportering. |
-| **Datavy** | En [datavy](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-dataviews/data-views) är en behållare som gör att du kan avgöra hur data från en anslutning ska tolkas. En datavy anger alla mått och mätvärden som är tillgängliga för dig att rapportera om. En datavy är som en konfiguration som avgör vilka rader och kolumner som du kan använda i analysen. |
-| **Analysis Workspace** | [Analysis Workspace](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/home) är ett dra och släpp-gränssnitt som du använder för att skapa rapporter och analyser från Content Analytics. |
-| **Upplevelse** | I Content Analytics avser en [upplevelse](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics#terminology) allt textinnehåll på en webbsida som kan hämtas och analyseras baserat på sidans URL. |
-| **Resurs** | I Content Analytics är en [resurs](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/content-analytics/content-analytics#terminology) en enskild och unik del av innehållet, som en bild. |
+| **Schema** | Ett [schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) är en uppsättning regler som representerar och validerar datastrukturen och dataformatet. På en hög nivå ger scheman en abstrakt definition av ett objekt i verkligheten, till exempel en händelse som inträffar på en webbplats, som ett klick. Och ange vilka data som ska inkluderas i varje instans av objektet. |
+| **Datauppsättning** | En [datamängd](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) är en lagrings- och hanteringskonstruktion för en datamängd, vanligtvis en tabell, som innehåller ett schema (kolumner) och fält (rader). En datauppsättning fungerar som en databastabell där varje rad är en händelse från webbplatsen. |
+| **Datastream** | En [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) representerar konfigurationen på serversidan som dirigerar data från din webbplats till rätt datauppsättning i Adobe Experience Platform. En datastream fungerar som en datastrålväg som ansluter platsen till ditt lagringsutrymme. |
+| **Taggar** | [Taggar](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) i Experience Platform är nästa generation av tagghanteringsfunktioner från Adobe. Taggar ger kunderna ett enkelt sätt att driftsätta och hantera de analyser, marknadsförings- och annonstaggar som behövs för att skapa relevanta kundupplevelser. I Content Analytics kan du med Adobe tagghanteringssystem distribuera spårningskod på din webbplats utan att du behöver redigera alla sidor på samma sätt. Funktionen Taggar liknar den funktion som du kan känna till från Google Tag Manager. |
+| **Sandbox** | Experience Platform tillhandahåller [sandlådor](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/home) som partitionerar en enda Experience Platform-instans till separata virtuella miljöer för att utveckla och utveckla program för digitala upplevelser. Content Analytics använder vanligtvis sandlådan *Produktion*. |
+| **Anslutning** | [Anslutningar](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview) definierar vilka Experience Platform-datauppsättningar som importeras. En anslutning definierar länken mellan datauppsättningen (där data lagras i AEP) och Customer Journey Analytics (där du analyserar den). En anslutning gör dina insamlade data tillgängliga för rapportering. |
+| **Datavy** | En [datavy](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) är en behållare som gör att du kan avgöra hur data från en anslutning ska tolkas. En datavy anger alla mått och mätvärden som är tillgängliga för dig att rapportera om. En datavy är som en konfiguration som avgör vilka rader och kolumner som du kan använda i analysen. |
+| **Analysis Workspace** | [Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home) är ett dra och släpp-gränssnitt som du använder för att skapa rapporter och analyser från Content Analytics. |
+| **Upplevelse** | I Content Analytics avser en [upplevelse](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) allt textinnehåll på en webbsida som kan hämtas och analyseras baserat på sidans URL. |
+| **Resurs** | I Content Analytics är en [resurs](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) en enskild och unik del av innehållet, som en bild. |
 
 
 ## Installationsöversikt
@@ -82,7 +83,7 @@ Du behöver antingen en systemadministratör eller en produktadministratör för
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hantera användare för en produktprofil](https://video.tv.adobe.com/v/3475945/?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hantera användare för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/users){target="_blank"} för en demonstrationsvideo.
 
 
 >[!ENDSHADEBOX]

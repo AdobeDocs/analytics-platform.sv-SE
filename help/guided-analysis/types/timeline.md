@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ Med analysen ![Tidslinje](/help/assets/icons/Timeline.svg) **[!UICONTROL Timelin
 
 >[!NOTE]
 >
->Analysen av [!UICONTROL Timeline] kräver att standardkomponenten **[!UICONTROL Person ID]** är tillgänglig i [datavyn](/help/data-views/component-reference.md#optional). Inkluderingen av person-ID i en datavy hanteras av din Customer Journey Analytics-administratör, vilket ger din organisation fullständig sekretesskontroll över vem som har åtkomst till dessa data.
+>Analysen av [!UICONTROL Timeline] kräver att standardkomponenten **[!UICONTROL Person ID]** är tillgänglig i [datavyn](/help/data-views/component-reference.md#optional). Inkluderingen av person-ID i en datavy hanteras av Customer Journey Analytics-administratören, vilket ger din organisation fullständig sekretesskontroll över vem som har åtkomst till dessa data.
 ><br/>Om en datavy inte har komponenten [!UICONTROL Person ID] tillagd visas följande meddelande:
 >
 >* **Administratörer**: *Egenskapen PersonID krävs för den här analysen. Lägg till person-ID i datavyn.*
->* **Icke-administratörer**: *Egenskapen PersonID krävs för den här analysen. Samarbeta med Customer Journey Analytics-administratören för att lägga till person-ID i datavyn.*
+>* **Icke-administratörer**: *Egenskapen PersonID krävs för den här analysen. Samarbeta med din Customer Journey Analytics-administratör för att lägga till person-ID i datavyn.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3435771/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/timeline)
 
 
 
@@ -42,7 +42,7 @@ Med analysen ![Tidslinje](/help/assets/icons/Timeline.svg) **[!UICONTROL Timelin
 
 Användningsexempel för den här analysen är:
 
-* **Friktionsprospektering**: Om du hittar en brant nedgång i [Trattanalysen](funnel.md) kan du skapa ett segment för dessa användare och tillämpa segmentet i den här analysen för att undersöka möjliga orsaker.
+* **Friktionsprospektering**: Om du hittar en brant nedgång i [Funnel-analysen](funnel.md) kan du skapa ett segment för dessa användare och tillämpa segmentet i den här analysen för att undersöka möjliga orsaker.
 * **Felbeteende**: Om användarna råkar ut för ett produktfel kan du utforska vad användarna gjorde före eller efter att felet visades.
 * **Datainsamlingsvalidering**: Dataadministratörer kan filtrera den här analysen till sitt eget person-ID för att verifiera att implementeringen i organisationen fungerar som förväntat.
 

@@ -4,7 +4,7 @@ title: Filtrera och ordna
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -15,9 +15,6 @@ ht-degree: 0%
 
 Frihandstabeller i Analysis Workspace är grunden för interaktiv dataanalys. De kan därför innehålla tusentals rader med information. Filtrering och sortering av data kan vara en viktig del av att effektivt kunna hitta den viktigaste informationen.
 
-<!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
-
->[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtrera tabeller
 

@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '2624'
+source-wordcount: '2627'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Följande information beskriver för chefer av Customer Journey Analytics-data h
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa ett mobilstyrkort](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa ett mobilstyrkort](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -44,7 +44,7 @@ Ett analysstyrkort visar viktiga datavisualiseringar för chefsanvändare i en s
 
 Som kurator för det här styrkortet kan du använda styrkortsverktyget för att konfigurera vilka rutor som ska visas på styrkortet för den verkställande konsumenten. Du kan också konfigurera hur detaljerade vyer, eller delningarna, kan justeras när användaren trycker på plattorna. Styrkortbyggargränssnittet visas nedan:
 
-![Styrkortverktyget visar det nya fönstret för mobilstyrkort. &#x200B;](assets/scorecard_builder.png)
+![Styrkortverktyget visar det nya fönstret för mobilstyrkort. ](assets/scorecard_builder.png)
 
 Om du vill skapa styrkortet måste du göra följande:
 
@@ -66,7 +66,7 @@ Du kan komma åt mallen [!UICONTROL Blank Mobile Scorecard] antingen genom att s
 
 ### Verktyg-menyn
 
-1. Välj **[!UICONTROL Analytics dashboards (Mobile App)]** på menyn **[!UICONTROL Tools]**.
+1. Välj **[!UICONTROL Tools]** på menyn **[!UICONTROL Analytics dashboards (Mobile App)]**.
 1. Klicka på **[!UICONTROL Create new scorecard]** på den följande skärmen.
 
 ## Konfigurera styrkortet med data och spara det {#configure}
@@ -79,7 +79,7 @@ Så här implementerar du styrkortsmallen:
 
 1. Om du vill lägga till en ny platta i styrkortet drar du en måttenhet från den vänstra panelen och släpper den i zonen **[!UICONTROL Drag and Drop Metrics Here]**. Du kan också infoga ett mätvärde mellan två rutor med ett liknande arbetsflöde.
 
-   ![Nytt mobilstyrkortsfönster med en pil som pekar på ett mätvärde (New KPI) som tagits bort från styrkortet. &#x200B;](assets/build_list.png)
+   ![Nytt mobilstyrkortsfönster med en pil som pekar på ett mätvärde (New KPI) som tagits bort från styrkortet. ](assets/build_list.png)
 
 
 1. Från varje ruta kan du visa en detaljerad vy som visar ytterligare information om måttet, till exempel de översta objekten för en lista med relaterade dimensioner.
@@ -96,7 +96,7 @@ Du kan till exempel lägga till lämpliga dimensioner (som **[!DNL Marketing Cha
 
 Om du vill använda segment på enskilda plattor drar du ett segment från den vänstra panelen och släpper det direkt ovanpå plattan.
 
-Om du vill använda segmentet på alla plattor i styrkortet, släpper du plattan ovanpå styrkortet. Du kan också tillämpa segment genom att markera dem på segmentmenyn under datumintervallen. Du [konfigurerar och tillämpar segment för dina styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=sv-SE) på samma sätt som i Customer Journey Analytics Workspace.
+Om du vill använda segmentet på alla plattor i styrkortet, släpper du plattan ovanpå styrkortet. Du kan också tillämpa segment genom att markera dem på segmentmenyn under datumintervallen. Du [konfigurerar och tillämpar segment för dina styrkort](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) på samma sätt som i Customer Journey Analytics Workspace.
 
 ![Segmentlistruteväljare som markerar byggsegmenten](assets/segment_ui.png)
 
@@ -212,7 +212,7 @@ Med skräddarsydda detaljbilder kan ni målinrikta er ännu mer om vilken inform
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Anpassade detaljvyer](https://video.tv.adobe.com/v/3428930?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Anpassade detaljvyer](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
@@ -257,7 +257,7 @@ Titta på videon och lär dig mer om hur du skapar databerättelser i mobilstyrk
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Databerättelser för ett Mobile-styrkortsprojekt](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Databerättelser för ett Mobile-styrkortsprojekt](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
@@ -311,7 +311,7 @@ I navigeringsfältet visas ikoner som representerar vad som finns på varje bild
 
 Om du vill flytta mellan plattan och bildrutorna trycker du på navigeringsfältet.
 ![Skapa en dataartikel](assets/data-story5.png)
-![Skapa en dataartikel &#x200B;](assets/data-story-nav.png){width="45%"}
+![Skapa en dataartikel ](assets/data-story-nav.png){width="45%"}
 
 Du kan också navigera fram och tillbaka genom att använda pilarna på tangentbordet eller genom att markera en komponent och hålla den till vänster eller höger på skärmen för att rulla.
 

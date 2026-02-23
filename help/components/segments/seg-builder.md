@@ -4,9 +4,9 @@ title: Skapa segment
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 >title="Förhandsgranska data"
 >abstract="Jämför data i det här segmentet med data i datavyn. Procentandelen för förhandsgranskning baseras på det totala antalet i datavyn från de **senaste 90 dagarna**.<br><br/>Om förhandsgranskningen inte läses in kan anslutningen fortfarande återfyllas."
 
-Dialogrutan **[!UICONTROL Segment builder]** används för att skapa nya eller redigera befintliga segment. Dialogrutan heter **[!UICONTROL New segment]** eller **[!UICONTROL Edit segment]** för segment som du skapar eller hanterar från [[!UICONTROL Segment]-hanteraren &#x200B;](/help/components/segments/seg-manage.md).
+Dialogrutan **[!UICONTROL Segment builder]** används för att skapa nya eller redigera befintliga segment. Dialogrutan heter **[!UICONTROL New segment]** eller **[!UICONTROL Edit segment]** för segment som du skapar eller hanterar från [[!UICONTROL Segment]-hanteraren ](/help/components/segments/seg-manage.md).
 
 >[!BEGINTABS]
 
@@ -66,7 +66,7 @@ Du använder Definitionsverktyget för att skapa segmentdefinitionen. I den kons
 Du kan konfigurera typen och omfattningen av din definition:
 
 1. Om du vill ange typen av definition anger du om du vill att definitionen ska vara inkluderad eller exkluderad. Välj ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Options]** och i listrutan **[!UICONTROL Include]** eller **[!UICONTROL Exclude]**.
-1. Om du vill ange definitionens omfattning väljer du i listrutan **[!UICONTROL Include]** eller **[!UICONTROL Exclude]** om du vill att definitionens omfång ska vara **[!UICONTROL Event]**, **[!UICONTROL Session]**, **[!UICONTROL Person]**, **[!UICONTROL Global Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} eller **[!UICONTROL Buying Group]** [!BADGE B2B edition{11 6}]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
+1. Om du vill ange definitionens omfattning väljer du i listrutan **[!UICONTROL Include]** eller **[!UICONTROL Exclude]** om du vill att definitionens omfång ska vara **[!UICONTROL Event]**, **[!UICONTROL Session]**, **[!UICONTROL Person]**, **[!UICONTROL Global Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} eller **[!UICONTROL Buying Group]** [!BADGE B2B edition{11 6}]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}
 
 Du kan alltid ändra de här inställningarna senare.
 
@@ -103,7 +103,7 @@ Du kan gruppera flera komponenter i en eller flera behållare och definiera logi
 * Om du vill lägga till en annan komponent i behållaren drar och släpper du en komponent från komponentpanelen i behållaren. Använd den blå infogningslinjen som stödlinje.
 * Om du vill lägga till en annan komponent utanför behållaren drar och släpper du en komponent från komponentpanelen utanför behållaren, men inuti huvuddefinitionsbehållaren. Använd den blå infogningslinjen som stödlinje.
 * Om du vill ändra logiken mellan komponenterna i en behållare, mellan behållare eller mellan en behållare och en komponent, väljer du lämplig **[!UICONTROL And]**, **[!UICONTROL Or]**, **[!UICONTROL Then]**. När du sedan markerar Omvandla du segmentet till ett sekventiellt segment. Mer information finns i [Skapa sekventiellt segment](seg-sequential-build.md).
-* Om du vill ändra behållarnivån väljer du ![Global](/help/assets/icons/Globe.svg) **[!UICONTROL Global Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Konto](/help/assets/icons/Account.svg) **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Möjlighet](/help/assets/icons/Opportunity.svg) **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![BuyingGroup](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL Buying Group]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} 19&rbrace;, ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Event]**, ![Besök](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** eller ![Användare](/help/assets/icons/User.svg) **[!UICONTROL Person]**.
+* Om du vill ändra behållarnivån väljer du ![Global](/help/assets/icons/Globe.svg) **[!UICONTROL Global Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Konto](/help/assets/icons/Account.svg) **[!UICONTROL Account]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![Möjlighet](/help/assets/icons/Opportunity.svg) **[!UICONTROL Opportunity]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, ![BuyingGroup](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL Buying Group]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} 19}, ![WebPage](/help/assets/icons/WebPage.svg) **[!UICONTROL Event]**, ![Besök](/help/assets/icons/Visit.svg) **[!UICONTROL Session]** eller ![Användare](/help/assets/icons/User.svg) **[!UICONTROL Person]**.
 
 Du kan använda ![Setting](/help/assets/icons/Setting.svg) i en behållare för följande åtgärder:
 
@@ -125,7 +125,7 @@ Du kan skapa segment som innehåller rullande datumintervall. På så sätt kan 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rullande datumintervall i segment](https://video.tv.adobe.com/v/25403/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rullande datumintervall i segment](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -153,7 +153,7 @@ Eller så kan du definiera 52 segment: 50 segment för USA, en för mobiltelefon
 
 >[!CONTEXTUALHELP]
 >id="components_filters_attribution_instance"
->title="Instance"
+>title="Instans"
 >abstract="Inkluderar instanser för dimensionen."
 
 
@@ -193,7 +193,7 @@ Tabellen nedan förklarar, för varje attribueringsmodell, vilka inkommande hän
 | Kvinnssida - Attribution - <br/>*attribueringsmodell* | Händelse 1:<br/>Sidnamnet är lika med<br/>Kvinnor | Händelse 2:<br/>Sidnamnet är lika med<br/>Män | Händelse 3:<br/>Sidnamnet är lika med<br/>Kvinnor | Händelse 4:<br/>Sidnamnet är lika med<br/>Kvinnor<br/>(beständigt) | Händelse 5:<br/>Sidnamnet är lika med<br/>Utcheckning | Händelse 6:<br/>Sidnamnet är lika med<br/>Kvinnor | Händelse 7:<br/>Sidnamnet är lika med<br/>Hem |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:--:|
 | Upprepande (standard) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) |
-| Instance | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) |
+| Instans | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) |
 | Icke upprepande instans | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![Ta bort](/help/assets/icons/Remove.svg) | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | ![Ta bort](/help/assets/icons/Remove.svg) |
 
 En exempelrapport om händelser som använder de tre segmenten ser ut så här:

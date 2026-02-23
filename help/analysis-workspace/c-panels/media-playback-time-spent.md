@@ -4,9 +4,9 @@ description: Lär dig hur du använder och tolkar panelen Medieuppspelningstid f
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln visas hur länge mediespelningen har pågått i panelen_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Mer information om [&#128279;](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)-versionen av den här artikeln finns i _&#x200B;**Medieuppspelningstiden på den här panelen**._
+_I den här artikeln visas hur länge mediespelningen har pågått i panelen_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Mer information om [ ](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)AdobeAnalytics_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg)-versionen av den här artikeln finns i _**Medieuppspelningstiden på den här panelen**._
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ _I den här artikeln visas hur länge mediespelningen har pågått i panelen_ ![
 >[!NOTE]
 >
 >Den genomsnittliga minuten-panelen för media är endast tillgänglig för kunder som har köpt tillägget Streaming Media Collection för Customer Journey Analytics.
->&#x200B;>Kontakta din Adobe-säljare eller Adobe-kontogrupp om du vill ha mer information.
+>Kontakta din Adobe-säljare eller Adobe-kontogrupp om du vill ha mer information.
 >
 
 Panelen **[!UICONTROL Media playback time spent]** gör det möjligt att analysera uppspelningen över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra.
@@ -60,7 +60,7 @@ Den uppspelningstid som spenderas kan hjälpa dig att förstå:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Medieuppspelningstid som använts](https://video.tv.adobe.com/v/3446704?captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Medieuppspelningstid som använts](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
@@ -91,7 +91,7 @@ Du kan konfigurera panelen Tid för uppspelning av media med följande indatains
 | Sammanfattningsnummer för panel | Om du vill visa datum- eller tidsinformation för uppspelningstid finns ett sammanfattningsnummer. Maximal visar detaljer för maximal samtidighet. Minimivärdet visar information om dalvärdet. Summan lägger ihop den totala uppspelningstiden för markeringen. Panelens standardinställning visar bara Maximum, men du kan ändra den till Minimal, Summa eller valfri kombination av de tre.<br>Om du använder uppdelningar visas ett summeringsnummer för varje. |
 | Uppdelning efter serie | Du kan även dela upp visualiseringen efter segment, dimensioner, dimensionsobjekt eller datumintervall.<p>- Du kan visa upp till 10 rader i taget. Uppdelningarna begränsas till en enda nivå.</p><p>- När du drar en dimension markeras de översta dimensionsobjekten automatiskt baserat på det valda panelens datumintervall.</p>- Om du vill jämföra datumintervall drar du 2 eller fler datumintervall till serieuppdelningssegmentet. |
 | Tidsformat | Du kan visa uppspelningstiden i antingen `Hours:Minutes:Seconds` (standard) eller `Minutes` (som visas i heltal, avrundat uppåt till 0,5). |
-| Visning av datumsekvens | Om du har placerat minst två datumintervallsegment som serieuppdelningar visas alternativet att välja antingen övertäckning (standard) eller sekventiell. Med Övertäckning visas raderna med en vanlig x-axelstart så att de körs parallellt, medan linjerna visas sekventiellt med den specifika x-axelstarten. Om dataraderna är i linje (t.ex. segment 1 slutar vid 20:44 och segment 2 börjar vid 20:45) visas raderna i följd. |
+| Visning av datumsekvens | Om du har placerat minst två datumintervallsegment som serieuppdelningar visas alternativet att välja antingen övertäckning (standard) eller sekventiell. Med Övertäckning visas raderna med en vanlig x-axelstart så att de körs parallellt, medan linjerna visas sekventiellt med den specifika x-axelstarten. Om dataraderna är uppe (till exempel segment 1 slutar vid 8:44 pm och segment 2 börjar vid 8:45 pm) visas raderna i sekvens. |
 
 
 ![Mediespelbokens tid har använts i standardvyn.](assets/mpts_default_view.png)
@@ -100,7 +100,7 @@ Du kan konfigurera panelen Tid för uppspelning av media med följande indatains
 
 På panelen Medieuppspelningstid för spenderad tid returneras ett linjediagram och sammanfattningsnummer som innehåller information om den maximala, minimala och/eller sammanlagda uppspelningstiden. Längst upp på panelen finns en sammanfattningsrad som påminner om de panelinställningar du har valt.
 
-Du kan när som helst välja ![Redigera mediespelningstid på &#x200B;](/help/assets/icons/Edit.svg) för att redigera och återskapa panelen.
+Du kan när som helst välja ![Redigera mediespelningstid på ](/help/assets/icons/Edit.svg) för att redigera och återskapa panelen.
 
 Om du väljer seriebrytning visas en rad i linjediagrammet och ett sammanfattningsnummer för varje rad:
 
@@ -129,6 +129,6 @@ Det enda mätvärdet som kan användas i den här panelen är Använd uppspelnin
 >[!MORELIKETHIS]
 >
 >[Skapa en panel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
->&#x200B;>[Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
+>[Medie - genomsnittlig minutmålspanel](average-minute-audience-panel.md)
+>[Panelen för samtidiga visningsprogram för media](media-concurrent-viewers.md)
 >

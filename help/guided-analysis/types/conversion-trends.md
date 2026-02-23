@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
-source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,15 @@ ht-degree: 0%
 Analysen ![Konverteringstrender](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Conversion trends]** ger en visualisering av konverteringsgraden över tid. Den vågräta axeln är ett tidsintervall, medan den lodräta axeln representerar konverteringsgraden.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3432445/?quality=12&learn=on&captions=swe)
+>[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/conversion-trends)
 
 
 ## Användningsexempel
 
 Användningsexempel för den här analysen är:
 
-* **Spåra optimeringsaktiviteter**: När du har identifierat viktiga flaskhalsar som du vill förbättra med [tratt](funnel.md)-analysen kan du använda den här analysen för att spåra hur dessa optimeringar påverkar konverteringsgraden över tid.
-* **Utvärdering av A/B-tester**: Utvärdera effektiviteten hos A/B-tester eller experiment som utförs i ett trattsammanhang. Genom att jämföra konverteringsgraden mellan olika variationer kan ni enkelt avgöra vilka tester som ger högre konverteringsgrader, vilket leder till datadrivna beslut om vilka variationer som ska implementeras permanent.
+* **Spåra optimeringsaktiviteter**: När du har identifierat viktiga flaskhalsar som du vill förbättra med [Funnel](funnel.md) -analysen kan du använda den här analysen för att spåra hur dessa optimeringar påverkar konverteringsgraden över tid.
+* **Utvärdering av A/B-tester**: Utvärdera effektiviteten hos A/B-tester eller -experiment som utförs i samband med en funnel. Genom att jämföra konverteringsgraden mellan olika variationer kan ni enkelt avgöra vilka tester som ger högre konverteringsgrader, vilket leder till datadrivna beslut om vilka variationer som ska implementeras permanent.
 * **Kampanjutvärdering över tid**: Mät effekten av marknadsföringskampanjer över tid. Ni kan skapa ett segment som fokuserar på användare som rör en viss kampanj och jämföra deras konverteringsgrad med andra kampanjer. Ni kan också jämföra aktuella konverteringsgrader med liknande kampanjer som körts tidigare.
 
 ## Gränssnitt
@@ -46,10 +46,10 @@ I [Gränssnitt](../overview.md#interface) finns en översikt över gränssnittet
 
 Med frågerefältet kan du konfigurera följande komponenter:
 
-* **[!UICONTROL View]**: Växla mellan den här analysen och [tratt](funnel.md).
+* **[!UICONTROL View]**: Växla mellan den här analysen och [Funnel](funnel.md).
 * **[!UICONTROL Steps]**: De kontaktytor för händelsen som du vill spåra. Varje stapel i diagrammet representerar ett steg. Du kan ta med upp till tio steg.
 * **[!UICONTROL Counted as]**: Den beräkningsmetod som du vill använda för de markerade händelserna. Alternativen är [!UICONTROL Users] och [!UICONTROL Sessions].
-* **[!UICONTROL Segments]**: Segmenten som du vill jämföra tratten med. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
+* **[!UICONTROL Segments]**: Segmenten som du vill jämföra funnel med. Varje markerat segment delar upp varje steg i flera staplar. Varje färg representerar ett eget segment. Du kan inkludera upp till tre segment.
 
 ### Diagraminställningar
 
@@ -60,7 +60,7 @@ Analysen av [!UICONTROL Conversion trends] innehåller följande diagraminställ
 
 >[!NOTE]
 >
->Kolumnen **Genomsnitt** i tabellen för analys av konverteringstrender skiljer sig från kolumnen **Totalt** i tabellen [Trattanalys](funnel.md). Den första är ett medelvärde av intervallkolumnerna (till exempel medelvärdet av den dagliga konverteringsgraden), medan den andra är en aggregerad beräkning över hela datumintervallet.
+>Kolumnen **Genomsnitt** i analystabellen för konverteringstrender skiljer sig från kolumnen **Totalt** i tabellen [Funnel analysis](funnel.md). Den första är ett medelvärde av intervallkolumnerna (till exempel medelvärdet av den dagliga konverteringsgraden), medan den andra är en aggregerad beräkning över hela datumintervallet.
 
 ### Tidsjämförelse
 

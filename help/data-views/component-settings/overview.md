@@ -5,9 +5,9 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: aa635d52007a3032d8c3f90a779d1b70213dee9e
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '3701'
+source-wordcount: '3702'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Följande information beskriver de inställningar som används av en datavykompo
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponenttypsinställningar](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Komponenttypsinställningar](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -211,7 +211,7 @@ Följande grupper med sammanhangsetiketter är tillgängliga, var och en med en 
 | Namn | Beskrivning |
 |------|-------------|
 | Åtgärdsnamn | Åtgärdsnamn. |
-| Åtgärder | Åtgärder. |
+| Instruktioner | Åtgärder. |
 | Interaktionskanal | Interaktionskanal. |
 
 +++

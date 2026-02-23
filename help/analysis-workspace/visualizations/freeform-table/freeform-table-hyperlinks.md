@@ -4,9 +4,9 @@ description: Lär dig hur du skapar hyperlänkar för dimensionsobjekt i en frih
 feature: Visualizations
 role: User
 exl-id: 24fc2d24-b8c2-4664-8b9c-beda284f9033
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1591'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Den här funktionen är särskilt användbar när du skapar hyperlänkar för f�
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa hyperlänkar i en frihandstabell](https://video.tv.adobe.com/v/3445786/?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa hyperlänkar i en frihandstabell](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/tips-and-tricks/create-hyperlinks-in-freeform-tables){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

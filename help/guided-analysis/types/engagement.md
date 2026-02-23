@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: produktanalys
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,11 @@ Funktioner som pekar mot toppen av den här visualiseringen visar att de ofta an
 * Funktionerna längst ned till vänster i matrisen har **låg effekt** och används inte särskilt mycket.
 * Funktionerna längst ned till höger i matrisen är dina **engångs**-funktioner. De används ofta, men inte ofta.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447471?captions=swe)
+>[!BEGINSHADEBOX]
 
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Förlovningsanalys](https://video.tv.adobe.com/v/3429489/&learn=on){target="_blank"} för en demonstrationsvideo.
+
+>[!ENDSHADEBOX]
 
 ## Användningsexempel
 

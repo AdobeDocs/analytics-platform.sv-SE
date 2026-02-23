@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User
 exl-id: 12901a76-cb88-45a5-81e9-59fb310328be
 solution: Customer Journey Analytics
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Följande information ger chefsanvändare information om de effektivaste strateg
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hjälpa chefer att komma åt mobilstyrkort](https://video.tv.adobe.com/v/3444840?captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hjälpa chefer att komma åt mobilstyrkort](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ Så här använder du kontrollpaneler:
 
    * Beroende på vilket intervall du knackar på (**Dag**, **Vecka**, **Månad** eller **År**) visas två alternativ för datumintervall, antingen det aktuella tidsintervallet eller det närmast föregående. Tryck på något av dessa två alternativ för att markera det första intervallet. I listan **[!UICONTROL COMPARE TO]**: tryck på ett av alternativen för att jämföra data för den här tidsperioden med det första datumintervallet du valde. Tryck på **[!UICONTROL Done]** i skärmens övre högra hörn. Fälten **[!UICONTROL Date Ranges]** och styrkortets paneler uppdateras med nya jämförelsedata från de nya intervallen som du har valt.
 
-1. Om du vill använda ett segment i styrkortet trycker du på den nedrullningsbara menyn för segment och väljer ett segment som har konfigurerats av markören. [Segment](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html?lang=sv-SE) i appen fungerar på samma sätt som i Workspace.
+1. Om du vill använda ett segment i styrkortet trycker du på den nedrullningsbara menyn för segment och väljer ett segment som har konfigurerats av markören. [Segment](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters.html) i appen fungerar på samma sätt som i Workspace.
 
    ![Segment](assets/segment_filter.png)
 
@@ -129,7 +129,7 @@ Så här använder du kontrollpaneler:
 1. Lämna feedback om den här appen:
 
    1. Tryck på inställningsikonen i appskärmens övre högra hörn.
-   2. Tryck på alternativet **[!UICONTROL Feedback]** på skärmen **[!UICONTROL Settings]**.
+   2. Tryck på alternativet **[!UICONTROL Settings]** på skärmen **[!UICONTROL Feedback]**.
    3. Tryck för att visa alternativen för att lämna feedback.
 
       ![Inställningsskärmen](assets/settings.png)

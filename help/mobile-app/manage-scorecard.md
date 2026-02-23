@@ -5,9 +5,9 @@ feature: Analytics Dashboards
 role: User, Admin
 solution: Customer Journey Analytics
 exl-id: 6a0de7db-689d-448d-b8e0-90af4a5ee325
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1784'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Med skräddarsydda detaljbilder kan ni målinrikta er ännu mer om vilken inform
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Anpassade detaljvyer](https://video.tv.adobe.com/v/3428930?quality=12&learn=on&captions=swe){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Anpassade detaljvyer](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/stitching-enablement-and-validation){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -86,7 +86,7 @@ Titta på videon och lär dig mer om hur du skapar databerättelser i mobilstyrk
 
 >[!BEGINSHADEBOX]
 
-En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Databerättelser för Mobile Scorecard-projekt](https://video.tv.adobe.com/v/3416392/?quality=12&learn=on){target="_blank"} .
+En demonstrationsvideo finns i ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Databerättelser för Mobile Scorecard-projekt](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} .
 
 >[!ENDSHADEBOX]
 
@@ -138,7 +138,7 @@ I navigeringsfältet visas ikoner som representerar vad som finns på varje bild
 
 Om du vill flytta mellan plattan och bildrutorna trycker du på navigeringsfältet.
 ![Skapa en dataartikel](assets/data-story5.png)
-![Skapa en dataartikel &#x200B;](assets/data-story-nav.png){width="45%"}
+![Skapa en dataartikel ](assets/data-story-nav.png){width="45%"}
 
 Du kan också navigera fram och tillbaka genom att använda pilarna på tangentbordet eller genom att markera en komponent och hålla den till vänster eller höger på skärmen för att rulla.
 

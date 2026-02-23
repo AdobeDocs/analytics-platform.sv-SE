@@ -5,9 +5,9 @@ exl-id: f4f692c9-5951-4fa2-8e9f-5eeff0f79d10
 solution: Customer Journey Analytics
 feature: Basics
 role: User, Admin
-source-git-commit: 0f445d409d276072ac649b94c12b94d3a59e7925
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1049'
 ht-degree: 2%
 
 ---
@@ -29,7 +29,7 @@ Arkitekturen illustrerar hur kundreseanalys gör att ni kan:
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [kundreseanalys: Analytics for the Experience Business](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} för en introduktionsvideo till Customer Journey Analytics.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [kundreseanalys: Analytics for the Experience Business](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics){target="_blank"} för en introduktionsvideo till Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
@@ -87,7 +87,7 @@ Flera funktioner i Customer Journey Analytics har bytt namn, jämfört med tradi
 
 Customer Journey Analytics är en av många funktioner som är beroende av Adobe Experience Platform. Flera andra funktioner, som också bygger på Experience Platform, gör att du får ut det mesta av dina data.
 
-Med Adobe Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser. Kunddata på plattformen lagras som datauppsättningar, som består av ett schema och grupper med data. Mer information om plattformen finns i [Översikt över Adobe Experience Platform-arkitekturen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html?lang=sv-SE).
+Med Adobe Experience Platform kan ni centralisera och standardisera kunddata och innehåll från alla system och använda datavetenskap och maskininlärning för att förbättra utformningen och leveransen av personaliserade upplevelser. Kunddata på plattformen lagras som datauppsättningar, som består av ett schema och grupper med data. Mer information om plattformen finns i [Översikt över Adobe Experience Platform-arkitekturen](https://experienceleague.adobe.com/docs/platform-learn/tutorials/intro-to-platform/basic-architecture.html).
 
 Från datainmatning till direkt SQL-åtkomst - flera komponenter i Experience Platform är centrala för Customer Journey Analytics och kompletterar dem:
 
@@ -99,18 +99,18 @@ Från datainmatning till direkt SQL-åtkomst - flera komponenter i Experience Pl
 
 >[!BEGINSHADEBOX]
 
-I ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeta med data i Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} finns en introduktionsvideo om hur du arbetar med data i Customer Journey Analytics.
+I ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arbeta med data i Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-prep/working-with-data-in-cja){target="_blank"} finns en introduktionsvideo om hur du arbetar med data i Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arkitektur och integration](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} för en introduktionsvideo om arkitekturen och integreringen av Customer Journey Analytics.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arkitektur och integration](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/architecture/architecture-and-integrations-of-cja){target="_blank"} för en introduktionsvideo om arkitekturen och integreringen av Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
 >[!MORELIKETHIS]
 >
->* [Adobe Customer Journey Analytics Crash Course for Analysts](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261?profile.language=sv)
->* [Optimera din minuppsättning och ditt Adobe Customer Journey Analytics-arbetsflöde: Teammodeller för organisationer av alla storlekar](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456?profile.language=sv)
->* [Beredskap för att bygga upp organisationen: Handbok för att skapa en&quot;People-First Guide&quot; för att skala Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273?profile.language=sv)
+>* [Adobe Customer Journey Analytics Crash Course for Analysts](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-crash-course-for-analysts/ba-p/719261)
+>* [Optimera din minuppsättning och ditt Adobe Customer Journey Analytics-arbetsflöde: Teammodeller för organisationer av alla storlekar](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/optimizing-your-mindset-and-adobe-customer-journey-analytics/ba-p/721456)
+>* [Beredskap för att bygga upp organisationen: Handbok för att skapa en&quot;People-First Guide&quot; för att skala Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/building-organizational-readiness-a-people-first-guide-to/ba-p/723273)

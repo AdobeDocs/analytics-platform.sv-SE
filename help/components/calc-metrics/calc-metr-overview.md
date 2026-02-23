@@ -5,9 +5,9 @@ title: Översikt över beräknade mätvärden
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '215'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Beräknade mätvärden är anpassade mätvärden som du kan skapa utifrån befin
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduktion till beräknade värden](https://video.tv.adobe.com/v/31787/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introduktion till beräknade värden](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/introduction-to-calculated-metrics-in-customer-journey-analytics){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 

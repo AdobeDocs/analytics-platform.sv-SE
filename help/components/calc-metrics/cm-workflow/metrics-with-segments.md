@@ -3,9 +3,9 @@ description: Lär dig segmentera på enskilda mätvärden, vilket gör att du ka
 title: Segmenterade mått
 feature: Calculated Metrics
 exl-id: 37cc93df-9f51-42b3-918f-ed5864991621
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Se avsnitten nedan för att illustrera hur segmenterade mätvärden kan hjälpa 
 ## Populära sidor
 
 1. [Skapa ett beräknat mått](cm-workflow.md) från ett Workspace-projekt med namnet `German people`.
-1. I [kalkylerade måttbyggare](cm-build-metrics.md) [skapar du ett segment &#x200B;](/help/components/segments/seg-builder.md) med namnet `Germany` som använder fältet CRM-land från dina CRM-data för att avgöra var en person kommer ifrån.
+1. I [kalkylerade måttbyggare](cm-build-metrics.md) [skapar du ett segment ](/help/components/segments/seg-builder.md) med namnet `Germany` som använder fältet CRM-land från dina CRM-data för att avgöra var en person kommer ifrån.
 
    >[!TIP]
    >
@@ -90,7 +90,7 @@ Upprepa stegen ovan för den internationella versionen av det beräknade måttet
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använd ett segmenterat beräknat mätresultat som ett implementeringsfritt mätvärde](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använd ett segmenterat beräknat mätresultat som ett implementeringsfritt mätvärde](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/calculated-metrics-segmented-metrics){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 

@@ -4,9 +4,9 @@ title: Utfallsöversikt
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '358'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras utfallsvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Utfall](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras utfallsvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Utfall](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -34,7 +34,7 @@ En ![ConversionTrnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fal
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa en utfallsvisualiseringsrapport](https://video.tv.adobe.com/v/345883/?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa en utfallsvisualiseringsrapport](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
@@ -44,7 +44,7 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Skapa en utfallsv
 Med hjälp av bortfallsvisualiseringar kan du:
 
 * Jämför två olika segment sida vid sida i samma rapport.
-* Dra och släpp (och ordna om) steg i tratten (kontaktytor).
+* Dra och släpp (och ordna om) funnel-steg (kontaktytor).
 * Blanda och matcha värden från olika dimensioner och mätvärden.
 * Skapa en flerdimensionell utfallsrapport.
 * Identifiera var kunderna hamnar direkt efter att de faller bort.
@@ -55,7 +55,7 @@ Du kan till exempel spåra en persons bortfallspunkter under en inköpsprocess. 
 
 ## Välj mellan Utfall, Flöde och Visualiseringar av arbetsytan på resan
 
-Utfallsvisualiseringen har likheter med [Flödesvisualiseringen](/help/analysis-workspace/visualizations/c-flow/flow.md) och [arbetsytevisualiseringen &#x200B;](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
+Utfallsvisualiseringen har likheter med [Flödesvisualiseringen](/help/analysis-workspace/visualizations/c-flow/flow.md) och [arbetsytevisualiseringen ](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).
 
 ### Förstå skillnaderna
 
