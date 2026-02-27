@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 153828839bbed493ae12c4969c69195b4beeaab1
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -36,8 +36,8 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
->title="Kontakta Adobe kundtjänst om du vill generera en sammansatt datauppsättning"
->abstract="Om du har ett fält som innehåller en identifierare som finns i flera datauppsättningar men inte är den primära identifieraren, kan du använda det för att generera en ny datauppsättning med en konsekvent identifierare."
+>title="Aktivera sammanfogning för en eller flera datauppsättningar"
+>abstract="Om du har ett fält som innehåller en identifierare som finns i flera datauppsättningar men inte är den primära identifieraren, kan du använda sammanfogning för att höja data till en eller flera av dessa datauppsättningar."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -85,9 +85,9 @@ Ta en titt på vilka av följande Customer Journey Analytics-funktioner du vill 
 
 | Funktionen Customer Journey Analytics | Funktion |
 |---------|----------|
-| [Koppla webbdata med data från andra kanaler, till exempel callcenter-data](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) | Customer Journey Analytics kombineras med Experience Platform förmåga att lagra alla typer av datarotor och datatyper. Med [Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) kan data representeras och struktureras på ett enhetligt sätt, vara klara för kombination och utforskande. Adobe Analytics fokuserar främst på webb- och mobilanalysdata med vissa funktioner för att [importera data](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=sv-SE). |
-| [Häfta träffar från andra datauppsättningar med en anpassad dimension](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/stitching/overview) | Med Customer Journey Analytics kan du [kombinera data](/help/connections/combined-dataset.md) från flera rapportsviter som om de vore en enda rapportserie i Adobe Analytics. |
+| [Koppla webbdata med data från andra kanaler, till exempel callcenter-data](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) | Customer Journey Analytics kombineras med Experience Platform förmåga att lagra alla typer av datarotor och datatyper. Med [Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=sv) kan data representeras och struktureras på ett enhetligt sätt, vara klara för kombination och utforskande. Adobe Analytics fokuserar främst på webb- och mobilanalysdata med vissa funktioner för att [importera data](https://experienceleague.adobe.com/docs/analytics/import/home.html). |
+| [Häfta träffar från andra datauppsättningar med en anpassad dimension](https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/overview) | Med Customer Journey Analytics kan du [kombinera data](/help/connections/combined-dataset.md) från flera rapportsviter som om de vore en enda rapportserie i Adobe Analytics. |
 | [Integrera med Adobe CDP i realtid](/help/components/audiences/audiences-overview.md) | Du kan [skapa och publicera målgrupper](/help/components/audiences/audiences-overview.md) som identifieras i Customer Journey Analytics till kundprofilen i realtid i Adobe Experience Platform för kundanpassning och personalisering. |
 | [Integrera med Adobe Target (A4T)](/help/integrations/at.md) | Med Target Reporting i Customer Journey Analytics kan du [mäta och rapportera Adobe Target-aktiviteter](/help/integrations/at.md) direkt i Customer Journey Analytics. Adobe rekommenderar dock att man integrerar med Adobe Journey Optimizer för personalisering. |
 | [Integrera med Adobe Journey Optimizer](/help/integrations/ajo.md) | Du kan konfigurera data som genererats av Journey Optimizer så att [utför avancerad analys i Customer Journey Analytics](/help/integrations/ajo.md). |
-| [Integrera med Adobe Audience Manager](https://experienceleague.adobe.com/sv/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing) | Du kan [dela Audience Manager-egenskaper och segment till Adobe Experience Platform](https://experienceleague.adobe.com/sv/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing). Adobe rekommenderar dock att man integrerar med Adobe CDP i realtid för målgruppsbaserade användningsfall. |
+| [Integrera med Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing) | Du kan [dela Audience Manager-egenskaper och segment till Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/implementation-integration-guides/integration-experience-platform/aam-aep-audience-sharing). Adobe rekommenderar dock att man integrerar med Adobe CDP i realtid för målgruppsbaserade användningsfall. |
