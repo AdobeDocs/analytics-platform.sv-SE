@@ -89,7 +89,7 @@ Du kan hantera en panel på följande sätt:
 
 ## Datavy
 
-Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**i listrutan längst upp till höger på panelen.
+Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**&#x200B;i listrutan längst upp till höger på panelen.
 
 När du skapar ett tomt Workspace-projekt är standarddatavyn för den första panelen datavyn som du senast arbetade med i Customer Journey Analytics.
 
@@ -180,7 +180,7 @@ Med statiska rullgardinssegment kan du interagera med data på ett kontrollerat 
 
 Statiska rullgardinssegment kan också användas för att konsolidera många projekt till ett. Om du till exempel har många versioner av samma projekt med olika landssegment tillämpade, kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landssegment.
 
-![Statiska nedrullningsbara segment med markerat segment för marknadskanalen &quot;Direkt&quot;. ](assets/dropdown-filter-intro.png)
+![Statiska nedrullningsbara segment med markerat segment för marknadskanalen &quot;Direkt&quot;. &#x200B;](assets/dropdown-filter-intro.png)
 
 ##### Skapa statiska rullgardinssegment
 
