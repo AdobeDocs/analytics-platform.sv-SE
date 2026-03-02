@@ -30,7 +30,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera exportlist
 
    ![Hantera exportsida](assets/exports-manage.png)
 
-1. Välj ikonen **Filter** ![Filter ](/help/assets/icons/Filter.svg) .
+1. Välj ikonen **Filter** ![Filter &#x200B;](/help/assets/icons/Filter.svg) .
 
    Du kan filtrera efter följande kriterier:
 
@@ -95,7 +95,7 @@ Du kan duplicera en befintlig export.
 
 1. Välj [!UICONTROL **Duplicera**].
 
-   En dubblett av exporten skapas. Namnet på den nya exporten matchar namnet på den ursprungliga exporten, med _[!UICONTROL - Copy]_som tillägg till filnamnet.
+   En dubblett av exporten skapas. Namnet på den nya exporten matchar namnet på den ursprungliga exporten, med _[!UICONTROL - Copy]_&#x200B;som tillägg till filnamnet.
 
 1. (Valfritt) [Redigera den nya exporten](#edit-an-export), inklusive filnamnet och andra egenskaper som du vill ändra.
 

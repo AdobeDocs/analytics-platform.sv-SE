@@ -122,7 +122,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
          >
          >Du måste utföra den här åtgärden var 7:e dag eftersom SAS-URI:n går ut 7 dagar efter att den har skapats. Du kan skapa ett skript för att automatisera den här processen.
 
-         ![Fönstret Ange anslutningsinformation med fältet SAS-URL ](assets/blob-container-sas-uri.png)
+         ![Fönstret Ange anslutningsinformation med fältet SAS-URL &#x200B;](assets/blob-container-sas-uri.png)
 
    1. Välj [!UICONTROL **Nästa**] > [!UICONTROL **Anslut**].
 
