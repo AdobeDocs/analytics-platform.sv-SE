@@ -4,7 +4,7 @@ title: Radinställningar
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -12,13 +12,6 @@ ht-degree: 0%
 ---
 
 # Radinställningar
-
-
->[!BEGINSHADEBOX]
-
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rad- och kolumninställningar i en frihandstabell](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} för en demonstrationsvideo.
-
->[!ENDSHADEBOX]
 
 Radinställningarna varierar beroende på vilken komponent du har dragit till tabellen. Om du vill komma åt tabellradsinställningar väljer du ![Inställning](/help/assets/icons/Setting.svg) **[!UICONTROL Settings]** bredvid en dimension, ett segment, ett mått, en tidsperiod eller en uppdelning inom vart och ett av dessa objekt.
 
@@ -29,6 +22,14 @@ Radinställningarna varierar beroende på vilken komponent du har dragit till ta
 | **[!UICONTROL Breakdown by position]** | Som standard är den här inställningen inaktiverad och uppdelningar är fasta på statiska radobjekt. Tänk dig att du har delat upp de tre viktigaste sidobjekten (startsida, sökresultat, utcheckning) efter marknadsföringskanal. Sedan lämnar du projektet och återvänder två veckor senare. När du öppnar projektet igen har de tre översta sidorna ändrats, och nu är startsidan, sökresultaten och utcheckningen de 4-6 översta sidorna istället. Som standard visas dina Marketing Channel-indelningar fortfarande under Hemsida, Sökresultat och Utcheckning, även om de nu finns på raderna 4-6. <br> Däremot delas **Uppdelning efter position** alltid upp i de tre översta objekten, oavsett vad de är. När du öppnar ditt projekt på nytt är Marketing Channel-uppdelningarna kopplade till de tre översta sidorna i tabellen. Och inte till startsidan, sökresultat och utcheckning, som nu finns på raderna 4-6. |
 | **[!UICONTROL Percentages]** | **Beräkna procentsatser efter kolumn** (standard): de procentandelar som visas i celler beräknas baserat på kolumnsumman. <br>**Beräkna procentsatser efter rad**: procentsatserna i celler beräknas över raden, till skillnad från nedåt i kolumnen, med totalsumman som nämnare. Den här beräkningen är användbar för att hantera procentsatser. |
 | **[!UICONTROL Column totals]** | De här inställningarna är bara tillgängliga för [statiska rader](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md). <br> **Visa som summan av de aktuella raderna** visar en summa av raderna på klientsidan i tabellen, vilket innebär att summan *inte* avduplicerar mått som besök eller personer. <br> **Visa totalsumman** visar en serversidessumma, vilket innebär summan av avduplicerade mått. |
+
+>[!BEGINSHADEBOX]
+
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Rad- och kolumninställningar i en frihandstabell](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} för en demonstrationsvideo.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 ## Ändra radantal
 
@@ -90,4 +91,4 @@ Följande alternativ på snabbmenyn är tillgängliga när du väljer en kolumnr
 
 ## Ändra radhöjd
 
-Du kan ange [vydensiteten](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**.
+Du kan ange [vydensiteten](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) för ett projekt till **[!UICONTROL Compact]**, **[!UICONTROL Comfortable]** och **[!UICONTROL Expanded]**.

@@ -4,7 +4,7 @@ title: Punkt
 feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln beskrivs punktvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Bullet](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln beskrivs punktvisualiseringen i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Bullet](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -45,9 +45,7 @@ Punktdiagrammet har ett enda primärt mått (till exempel nuvarande intäkter fr
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av punktdiagram](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/visualizations/bullet-graph-visualization){target="_blank"} för en demonstrationsvideo.
-
-{{videoaa}}
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualisering av punktdiagram](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bullet-graph-visualizations){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -58,12 +56,12 @@ Du kan definiera specifika inställningar för en [!UICONTROL Bullet]-visualiser
 
 | Inställning | Beskrivning |
 |---|---|
-| **[!UICONTROL Bullet options]** | Ange värden för **[!UICONTROL High goal]**, **[!UICONTROL Mid goal]** och **[!UICONTROL Low goal]** i [!UICONTROL Bullet]-visualiseringen. <br/>**[!UICONTROL High goal]**&#x200B;är det främsta målet du siktar på.**[!UICONTROL Low goal]**&#x200B;och **[!UICONTROL Mid goal]**&#x200B;skapar intervall under Hög mål. Obs! Ange mål som heltal när alternativet **[!UICONTROL Percentages]**&#x200B;är markerat. Exempel: `20` om ditt mål är tjugo procent. |
+| **[!UICONTROL Bullet options]** | Ange värden för **[!UICONTROL High goal]**, **[!UICONTROL Mid goal]** och **[!UICONTROL Low goal]** i [!UICONTROL Bullet]-visualiseringen. <br/>**[!UICONTROL High goal]**är det främsta målet du siktar på.**[!UICONTROL Low goal]**och **[!UICONTROL Mid goal]**skapar intervall under Hög mål. Obs! Ange mål som heltal när alternativet **[!UICONTROL Percentages]**är markerat. Exempel: `20` om ditt mål är tjugo procent. |
 
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Snabbmenyn Visualisering &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
