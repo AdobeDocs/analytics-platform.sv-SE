@@ -3,9 +3,9 @@ description: Lär dig mer om det beräknade mätverktyget som ger en arbetsyta d
 title: Bygg mått
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: fa6654e85fd4055d41f42145fa5a4f917a8875c4
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1515'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >id="components_calculatedmetrics_productcompatibility"
 >title="Produktkompatibilitet"
 >abstract="Anger var i Customer Journey Analytics det här beräknade måttet kan användas, t.ex. i Analysis Workspace, Report Builder o.s.v. Vissa beräknade värden kan inte användas med experimenterande."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/experimentation#use-in-experimentation" text="Använd beräknade mätvärden i experimenterande"
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_externalid"
@@ -31,7 +31,7 @@ Du kan använda verktyget för beräknade mätvärden för att skapa eller redig
 
 ## Områden för verktyget för beräknade mätvärden
 
-Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa nya eller redigera befintliga beräknade värden. Dialogrutan heter **[!UICONTROL New calculated metric]** eller **[!UICONTROL Edit calculated metric]** för mått som du skapar eller hanterar från [[!UICONTROL Calculated metrics]-hanteraren &#x200B;](/help/components/calc-metrics/cm-workflow/cm-manager.md).
+Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa nya eller redigera befintliga beräknade värden. Dialogrutan heter **[!UICONTROL New calculated metric]** eller **[!UICONTROL Edit calculated metric]** för mått som du skapar eller hanterar från [[!UICONTROL Calculated metrics]-hanteraren ](/help/components/calc-metrics/cm-workflow/cm-manager.md).
 
 >[!BEGINTABS]
 
@@ -65,9 +65,11 @@ Dialogrutan **[!UICONTROL Calculated metric builder]** används för att skapa n
 
 1. Om du vill verifiera om den beräknade måttdefinitionen är korrekt använder du den ständigt uppdaterade **[!UICONTROL Preview]** av resultaten för det beräknade måttet. **[!UICONTROL Preview]** täcker de senaste 90 dagarna och utvärderar definitionen av ditt beräknade mått kontinuerligt.
 
-   **[!UICONTROL Product compatibility]** anger om det beräknade måttet kan användas i försök. Möjliga värden är:
+   **[!UICONTROL Product compatibility]** anger om det beräknade måttet kan användas i försök och vid fullständig tabellexport. Möjliga värden är:
    * **[!UICONTROL Everywhere in Customer Journey Analytics]**: Det beräknade måttet kan användas i hela Customer Journey Analytics.
-   * **[!UICONTROL Everywhere in Customer Journey Analytics (excluding experimentation)]**: Det beräknade måttet kan användas i hela Customer Journey Analytics, förutom på panelen Experimentation.
+   * **[!UICONTROL Not compatible in:]**
+      * **[!UICONTROL Experimentation]**: Det beräknade måttet kan användas i hela Customer Journey Analytics, förutom på panelen Experimentation.
+      * **[!UICONTROL Full table export]**: Det beräknade måttet kan användas i hela Customer Journey Analytics, utom när fullständiga tabeller exporteras från Workspace. Alla funktioner stöds inte vid export av fullständiga tabeller. Om du vill att det beräknade måttet ska inkluderas när du exporterar fullständiga tabeller använder du en funktion som stöds. Mer information finns i [Beräknade måttfunktioner som inte stöds](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions) i [Exportera fullständiga tabeller till molnet](/help/analysis-workspace/export/export-cloud.md).
 
 1. Välj:
    * **[!UICONTROL Save]** om du vill spara det beräknade måttet.

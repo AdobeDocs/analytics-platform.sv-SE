@@ -5,16 +5,16 @@ title: Hantera platser och konton för molnexport
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 25a5c42153e28493321d87fa5227fcf44c244bb6
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1386'
 ht-degree: 0%
 
 ---
 
 # Hantera platser och konton för molnexport
 
-Du kan visa, redigera och ta bort platser för molnexport.
+Du kan visa, redigera och ta bort platser och konton för molnexport.
 
 Mer information om hur du skapar en ny plats finns i [Konfigurera molnexportplatser](/help/components/exports/cloud-export-locations.md).
 
@@ -30,7 +30,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera listan öv
 
 1. Välj ikonen **Filter** .
 
-   <!-- add screenshot -->
+   ![Filterikon på platssida](assets/locations-filter-icon.png)
 
    Du kan filtrera efter följande kriterier:
 
@@ -48,6 +48,8 @@ Om du vill hitta den information du behöver kan du antingen filtrera listan öv
 
 1. Välj fliken [!UICONTROL **Platser**].
 
+   ![Platssida](assets/locations-manager.png)
+
 1. (Villkorligt) Om du är systemadministratör kan du aktivera alternativet [!UICONTROL **Visa platser för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
 
 1. I sökfältet börjar du skriva in information som är associerad med den plats du söker efter. Du kan söka efter data från alla kolumner som är tillgängliga i tabellen.
@@ -62,13 +64,13 @@ Så här redigerar du en plats:
 
 1. Välj fliken [!UICONTROL **Platser**].
 
+   ![Fönstret Exporterar med fliken Platser och en lista över platser.](assets/locations-manager.png)
+
 1. (Villkorligt) Om du är systemadministratör kan du aktivera alternativet [!UICONTROL **Visa platser för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
 
 1. Välj den plats som du vill redigera.
 
-   ![Fönstret Exporterar med fliken Platser och en lista över platser.](assets/locations-edit.png)
-
-1. Välj [!UICONTROL **Redigera**].
+1. Välj [!UICONTROL **Redigera**] längst ned på skärmen.
 
 1. Gör önskade ändringar och välj sedan [!UICONTROL **Spara**].
 
@@ -82,13 +84,13 @@ Så här tar du bort en plats:
 
 1. Välj fliken [!UICONTROL **Platser**].
 
+   ![Fönstret Exporterar med fliken Platser och en lista över platser.](assets/locations-manager.png)
+
 1. (Villkorligt) Om du är systemadministratör kan du aktivera alternativet [!UICONTROL **Visa platser för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
 
 1. Markera en eller flera platser som du vill ta bort.
 
-   ![Fönstret Exporterar med fliken Platser och en lista över platser](assets/locations-edit.png)
-
-1. Välj [!UICONTROL **Ta bort**].
+1. Välj [!UICONTROL **Ta bort**] längst ned på skärmen.
 
    Dialogrutan Ta bort plats visas.
 
@@ -110,9 +112,9 @@ Redigera ett konto:
 
    ![Fönstret Exporterar med fliken Platskonton](assets/account-add.png)
 
-1. (Villkorligt) Om du är systemadministratör kan du aktivera alternativet [!UICONTROL **Visa konton för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
+1. (Villkorligt) Om du är systemadministratör kan du aktivera alternativet [!UICONTROL **Visa konton för alla användare**] om du vill visa konton som skapats av alla användare i organisationen.
 
-1. Välj [!UICONTROL **Visa information**] för kontot som du vill redigera.
+1. Välj [!UICONTROL **Redigera information**] på kontot som du vill redigera.
 
 1. Gör önskade ändringar och välj sedan [!UICONTROL **Spara**].
 
@@ -128,9 +130,9 @@ Så här visar du nycklar som är kopplade till ett exportkonto:
 
    ![Fönstret Exporterar med fliken Platskonton](assets/account-add.png)
 
-1. (Villkorligt) Om du är systemadministratör kan du aktivera alternativet [!UICONTROL **Visa konton för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
+1. (Villkorligt) Om du är systemadministratör kan du aktivera alternativet [!UICONTROL **Visa konton för alla användare**] om du vill visa konton som skapats av alla användare i organisationen.
 
-1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Kontonycklar**].
+1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Visa nycklar**].
 
 ## Ta bort konton
 
@@ -140,9 +142,9 @@ Så här visar du nycklar som är kopplade till ett exportkonto:
 
    ![Fönstret Exporterar med fliken Platskonton](assets/account-add.png)
 
-1. (Villkorligt) Om du är systemadministratör kan du aktivera alternativet [!UICONTROL **Visa konton för alla användare**] om du vill visa platser som har skapats av alla användare i organisationen.
+1. (Villkorligt) Om du är systemadministratör kan du aktivera alternativet [!UICONTROL **Visa konton för alla användare**] om du vill visa konton som skapats av alla användare i organisationen.
 
-1. Markera ikonen med tre punkter på det konto som du vill redigera och välj sedan [!UICONTROL **Ta bort konto**].
+1. Markera ikonen med tre punkter på det konto som du vill ta bort och välj sedan [!UICONTROL **Ta bort konto**].
 
 1. Välj [!UICONTROL **Ta bort**] igen i bekräftelsedialogrutan.
 
@@ -156,7 +158,7 @@ Systemadministratörer kan hindra användare från att skapa konton och platser 
 
 Som standard kan alla användare i organisationen skapa konton och redigera konton som de skapar i din Customer Journey Analytics-miljö, enligt beskrivningen i [konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md).
 
-Du kan hindra användare från att skapa konton. När du gör det kan användare fortfarande använda konton som de redan har skapat, men de kan inte längre redigera dem. Du kan ta bort konton som användare har skapat enligt beskrivningen i [Ta bort ett konto](#delete-an-account).
+Du kan hindra användare från att skapa konton. När du gör det kan användare fortfarande använda konton som de redan har skapat, men de kan inte längre redigera dem. Du kan ta bort konton som användare har skapat enligt beskrivningen i [Ta bort ett konto](#delete-accounts).
 
 Så här begränsar du alla användare från att skapa och redigera konton:
 
@@ -166,23 +168,23 @@ Så här begränsar du alla användare från att skapa och redigera konton:
 
 1. Välj [!UICONTROL **Spara**].
 
-1. (Valfritt) Ta bort konton som användare har skapat och som du inte längre vill att de ska använda, enligt beskrivningen i [Ta bort ett konto](#delete-an-account).
+1. (Valfritt) Ta bort konton som användare har skapat och som du inte längre vill att de ska använda, enligt beskrivningen i [Ta bort ett konto](#delete-accounts).
 
 ### Konfigurera om användare kan skapa och redigera platser
 
 Som standard kan alla användare i organisationen skapa platser och redigera platser som de skapar i din Customer Journey Analytics-miljö, enligt beskrivningen i [konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md).
 
-Du kan hindra användare från att skapa platser. När du gör det kan användare fortfarande använda platser som de redan har skapat, men de kan inte längre redigera dem. Du kan ta bort platser som användare har skapat enligt beskrivningen i [Ta bort platser](#delete-a-location).
+Du kan hindra användare från att skapa platser. När du gör det kan användare fortfarande använda platser som de redan har skapat, men de kan inte längre redigera dem. Du kan ta bort platser som användare har skapat enligt beskrivningen i [Ta bort platser](#delete-locations).
 
 Så här begränsar du alla användare från att skapa och redigera platser:
 
-1. I Customer Journey Analytics väljer du **[!UICONTROL Components]** > **[!UICONTROL Eports]** och sedan fliken [!UICONTROL **Administratörsinställningar**] .
+1. I Customer Journey Analytics väljer du **[!UICONTROL Components]** > **[!UICONTROL Exports]** och sedan fliken [!UICONTROL **Administratörsinställningar**] .
 
 1. I avsnittet [!UICONTROL **Platser**] avmarkerar du alternativet [!UICONTROL **Tillåt användare att skapa och hantera platser**].
 
 1. Välj [!UICONTROL **Spara**].
 
-1. (Valfritt) Ta bort alla platser som användare har skapat och som du inte längre vill att de ska använda, enligt beskrivningen i [Ta bort en plats](#delete-a-location).
+1. (Valfritt) Ta bort alla platser som användare har skapat och som du inte längre vill att de ska använda, enligt beskrivningen i [Ta bort en plats](#delete-locations).
 
 ### Begränsa vilka kontotyper som användare kan skapa och använda
 
@@ -207,7 +209,7 @@ Så här tar du bort konton:
 
 1. Leta reda på kontona för den kontotyp som du vill begränsa och som används för schemalagd export.
 
-1. Ta bort kontona enligt beskrivningen i [Ta bort ett konto](#delete-an-account).
+1. Ta bort kontona enligt beskrivningen i [Ta bort ett konto](#delete-accounts).
 
 1. Fortsätt med följande avsnitt: [Begränsa de kontotyper som är tillgängliga för användare](#limit-the-account-types-that-are-available-to-users).
 

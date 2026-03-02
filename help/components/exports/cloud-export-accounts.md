@@ -5,9 +5,9 @@ title: Konfigurera molnexportkonton
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 25f46c50b6578026ff3aaae5019306bdcf82f211
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2226'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 1. I Customer Journey Analytics väljer du [!UICONTROL **Komponenter**] > [!UICONTROL **Exportera**].
 1. På sidan [!UICONTROL Exports] väljer du fliken [!UICONTROL **Platskonton**].
 
-   ![Exporterar sidalternativ som visar Lägg till ett annat konto](assets/account-add.png)
+   ![Exporterar sidalternativ som visar Lägg till konto](assets/account-add.png)
 
 1. Välj [!UICONTROL **Lägg till konto**].
 
@@ -69,14 +69,14 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 >Tänk på följande när du använder AEP Data Landing Zone för ditt exportkonto:
 >
 > * När du exporterar Customer Journey Analytics-rapporter till Adobe Experience Platform Data Landing Zone måste du hämta data inom 7 dagar och sedan ta bort dem från AEP Data Landing Zone. Efter 7 dagar tas data automatiskt bort från AEP Data Landing Zone.
-> * AEP Data Landing Zone använder antingen Azure eller AWS-lagring. Om din organisation använder ett inloggningsföretag som är konfigurerat att använda Azure, använder AEP Data Landing Zone Azure. Om inloggningsföretaget är konfigurerat att använda AWS använder AEP Data Landing Zone AWS.
+> * AEP Data Landing Zone använder antingen Azure- eller AWS-lagring. Om din organisation använder en IMS-organisation som är konfigurerad att använda Azure, använder AEP Data Landing Zone Azure. Om inloggningsföretaget är konfigurerat att använda AWS använder AEP Data Landing Zone AWS.
 >
 
 1. Börja skapa ett molnexportkonto på något av följande sätt:
 
    * Från exportsidan enligt beskrivningen ovan, i [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account)
 
-   * När [fullständiga tabeller exporteras från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * När [fullständiga tabeller exporteras från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. När du har valt **[!UICONTROL AEP Data Landing Zone]** i fältet **[!UICONTROL Account type]** väljer du [!UICONTROL **Spara**].
 
@@ -92,7 +92,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
      >[!AVAILABILITY]
      >
-     >Detta avsnitt gäller implementeringar av Experience Platform som körs på Amazon Web Services (AWS). Experience Platform som körs på AWS är för närvarande tillgängligt för ett begränsat antal kunder. Mer information om den Experience Platform-infrastruktur som stöds finns i [Experience Platform översikt över flera moln](https://experienceleague.adobe.com/sv/docs/experience-platform/landing/multi-cloud).
+     >Detta avsnitt gäller implementeringar av Experience Platform som körs på Amazon Web Services (AWS). Experience Platform som körs på AWS är för närvarande tillgängligt för ett begränsat antal kunder. Mer information om den Experience Platform-infrastruktur som stöds finns i [Experience Platform översikt över flera moln](https://experienceleague.adobe.com/en/docs/experience-platform/landing/multi-cloud).
 
      Dialogrutan [!UICONTROL **Konto skapat**] visas.
 
@@ -100,7 +100,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
 1. (Villkorligt) Om du använder Azure-lagring:
 
-   1. Kopiera innehållet i fältet [!UICONTROL **SAS URI**] till Urklipp. Du använder den här SAS-URI:n för att komma åt data som exporteras från Analysis Workspace från AEP Data Landing Zone.
+   1. Kopiera innehållet i fältet [!UICONTROL **SAS URI**] till Urklipp. Du använder den här SAS-URI:n för att komma åt exporterade Analysis Workspace-data från AEP Data Landing Zone.
 
       Om det här fältet är tomt måste du ha behörighet att komma åt Adobe Experience Platform.
 
@@ -112,17 +112,17 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
       1. Om du inte redan har det hämtar du [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-      1. Följ stegen som beskrivs i [Ansluta din Data Landing Zone-behållare till Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=sv-SE#connect-your-data-landing-zone-container-to-azure-storage-explorer) i Adobe Experience Platform-dokumentationen.
+      1. Följ stegen som beskrivs i [Ansluta din Data Landing Zone-behållare till Azure Storage Explorer](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#connect-your-data-landing-zone-container-to-azure-storage-explorer) i Adobe Experience Platform-dokumentationen.
 
-         Du kan hoppa över de uppgifter som beskrivs i avsnitten [Hämta autentiseringsuppgifterna för din Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=sv-SE#retrieve-dlz-credentials) och [Uppdatera autentiseringsuppgifter för Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html?lang=sv-SE#update-dlz-credentials) eftersom den URI som du kopierade innehåller dessa autentiseringsuppgifter.
+         Du kan hoppa över de uppgifter som beskrivs i avsnitten [Hämta autentiseringsuppgifterna för din Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#retrieve-dlz-credentials) och [Uppdatera autentiseringsuppgifter för Data Landing Zone](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone.html#update-dlz-credentials) eftersom den URI som du kopierade innehåller dessa autentiseringsuppgifter.
 
-      1. När du följer Adobe Experience Platform-dokumentationen och kommer till fältet [!UICONTROL **Plumbibehållare-SAS-URL**] klistrar du in den SAS-URI som du kopierade i steg 3.
+      1. När du följer Adobe Experience Platform-dokumentationen och kommer till fältet [!UICONTROL **Plumbibehållare-SAS-URL**] klistrar du in den SAS-URI som du kopierade i ett tidigare steg.
 
          >[!NOTE]
          >
          >Du måste utföra den här åtgärden var 7:e dag eftersom SAS-URI:n går ut 7 dagar efter att den har skapats. Du kan skapa ett skript för att automatisera den här processen.
 
-         ![Fönstret Ange anslutningsinformation med fältet SAS-URL &#x200B;](assets/blob-container-sas-uri.png)
+         ![Fönstret Ange anslutningsinformation med fältet SAS-URL ](assets/blob-container-sas-uri.png)
 
    1. Välj [!UICONTROL **Nästa**] > [!UICONTROL **Anslut**].
 
@@ -156,7 +156,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    * Från exportsidan enligt beskrivningen ovan, i [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account)
 
-   * När [fullständiga tabeller exporteras från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * När [fullständiga tabeller exporteras från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Ange följande information i avsnittet [!UICONTROL **Kontoegenskaper**] i dialogrutan [!UICONTROL **Lägg till konto**]:
 
@@ -184,7 +184,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    * Från exportsidan enligt beskrivningen ovan, i [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account)
 
-   * När [fullständiga tabeller exporteras från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * När [fullständiga tabeller exporteras från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Ange följande information i avsnittet [!UICONTROL **Kontoegenskaper**] i dialogrutan [!UICONTROL **Lägg till konto**]:
 
@@ -212,7 +212,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    * Från exportsidan enligt beskrivningen ovan, i [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account)
 
-   * När [fullständiga tabeller exporteras från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * När [fullständiga tabeller exporteras från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Ange följande information i avsnittet [!UICONTROL **Kontoegenskaper**] i dialogrutan [!UICONTROL **Lägg till konto**]:
 
@@ -220,7 +220,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
    |---------|----------|
    | [!UICONTROL **Program-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på fliken **Översikt** i ditt program. Mer information finns i [Microsoft Azure-dokumentationen om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
    | [!UICONTROL **Klient-ID**] | Kopiera det här ID:t från det Azure-program som du skapade. I Microsoft Azure finns den här informationen på fliken **Översikt** i ditt program. Mer information finns i [Microsoft Azure-dokumentationen om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-   | [!UICONTROL **Nyckelvalvs-URI**] | <p>Sökvägen till SAS URI i Azure Key Vault.  Om du vill konfigurera Azure SAS måste du lagra en SAS URI som en hemlighet med Azure Key Vault. Mer information finns i [Microsoft Azure-dokumentationen om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>När nyckelvalvs-URI har skapats:<ul><li>Lägg till en åtkomstprincip på nyckelvalvet för att ge behörighet till det Azure-program som du skapade.<p><p>Mer information finns i [Microsoft Azure-dokumentationen om hur du tilldelar en åtkomstprincip för nyckelvalv](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p>eller</p><p>Om du vill tilldela en åtkomstroll direkt utan att skapa en åtkomstprincip läser du [Microsoft Azure-dokumentationen om hur du tilldelar Azure-roller med Azure-portalen](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal). Detta lägger till rolltilldelningen för program-ID:t för åtkomst till nyckelvalvs-URI:n. </p></li><li>Kontrollera att program-ID har tilldelats den inbyggda rollen `Key Vault Certificate User` för att komma åt nyckelvalvs-URI.</br><p>Mer information finns i [Inbyggda Azure-roller](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p></li></ul> |
+   | [!UICONTROL **Nyckelvalvs-URI**] | <p>Sökvägen till SAS URI i Azure Key Vault.  Om du vill konfigurera Azure SAS måste du lagra en SAS URI som en hemlighet med Azure Key Vault. Mer information finns i [Microsoft Azure-dokumentationen om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>När nyckelvalvs-URI har skapats:<ul><li>Lägg till en åtkomstprincip på nyckelvalvet för att ge behörighet till det Azure-program som du skapade.<p>Mer information finns i [Microsoft Azure-dokumentationen om hur du tilldelar en åtkomstprincip för nyckelvalv](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p><p>eller</p><p>Om du vill tilldela en åtkomstroll direkt utan att skapa en åtkomstprincip läser du [Microsoft Azure-dokumentationen om hur du tilldelar Azure-roller med Azure-portalen](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal). Detta lägger till rolltilldelningen för program-ID:t för åtkomst till nyckelvalvs-URI:n. </p></li><li>Kontrollera att program-ID har tilldelats den inbyggda rollen `Key Vault Certificate User` för att komma åt nyckelvalvs-URI.<p>Mer information finns i [Inbyggda Azure-roller](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p></li></ul> |
    | [!UICONTROL **Nyckelvalvets hemliga namn**] | Det hemliga namn du skapade när du lade till hemligheten i Azure Key Vault. I Microsoft Azure finns den här informationen i nyckelvalvet som du skapade på inställningssidorna för **nyckelvalv**. Mer information finns i [Microsoft Azure-dokumentationen om hur du ställer in och hämtar en hemlighet från Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
    | [!UICONTROL **Platskontohemlighet**] | Kopiera hemligheten från Azure-programmet som du skapade. I Microsoft Azure finns den här informationen på fliken **Certifikat och hemligheter** i ditt program. Mer information finns i [Microsoft Azure-dokumentationen om hur du registrerar ett program med Microsoft identitetsplattform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). <!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
 
@@ -244,7 +244,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    * Från exportsidan enligt beskrivningen ovan, i [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account)
 
-   * När [fullständiga tabeller exporteras från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * När [fullständiga tabeller exporteras från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Ange följande information i avsnittet [!UICONTROL **Kontoegenskaper**] i dialogrutan [!UICONTROL **Lägg till konto**]:
 
@@ -262,7 +262,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    ![Dialogrutan Exportera konto som skapats](assets/export-account-azure.png)
 
-1. Om du inte redan har det måste du se till att du ger behörighet till bucket i Azure RBAC. <!-- add link to Google Cloud docs on how to do this -->
+1. Om du inte redan gjort det kontrollerar du att du har behörighet för behållaren i Azure RBAC.
 
 1. Välj [!UICONTROL **OK**].
 
@@ -274,7 +274,7 @@ Mer information om hur du hanterar befintliga konton, inklusive visning, rediger
 
    * Från exportsidan enligt beskrivningen ovan, i [Börja skapa ett molnexportkonto](#begin-creating-a-cloud-export-account)
 
-   * När [fullständiga tabeller exporteras från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * När [fullständiga tabeller exporteras från Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Ange följande information i avsnittet [!UICONTROL **Kontoegenskaper**] i dialogrutan [!UICONTROL **Lägg till konto**]:
 

@@ -5,9 +5,9 @@ title: Hantera exportloggar
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: bf76b8688dc0c463c032dd94e88450fed5488949
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,13 @@ Vid schemalagd export återspeglar loggarna exportinställningarna som de var n�
 
 1. Gör något av följande:
 
+   * Systemadministratörer kan aktivera alternativet **[!UICONTROL View logs for all users]**. När det här alternativet är aktiverat visas alla loggar, oavsett vilken användare som skapade exporten.
+
    * [Anpassa de kolumner](#configure-columns) som visas.
 
    * Välj **Informationsikonen** ![Informationsikonen](assets/information-icon.png) bredvid loggnamnet för att visa den export som är associerad med loggen.
 
-   * Välj ikonen **Redigera export** ![Informationsikonen](assets/edit-export-icon.png) bredvid loggnamnet för att redigera exporten som är kopplad till loggen.
+   * Välj ikonen **Redigera export** ![Redigera export](/help/assets/icons/Edit.svg) bredvid loggnamnet för att redigera exporten som är kopplad till loggen.  Redigera export-ikonen.
 
      Mer information om hur du redigerar och exporterar finns i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md).
 
@@ -58,7 +60,7 @@ Om du vill hitta den information du behöver kan du antingen filtrera listan med
    |---------|----------|
    | [!UICONTROL **Exportera-ID**] | Ange export-ID för den exportlogg som du vill visa. |
    | [!UICONTROL **Kontotyp**] | Kontotypen som loggen är associerad med. Följande kontotyper är tillgängliga: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3-roll ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud-plattform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Status**] | Exportstatus. Följande statusar är tillgängliga: <ul><li>[!UICONTROL **Väntande**]: En specifik instans av en export har startats men har inte slutförts än.<p>Om du kör om en export som har statusen Väntande fördröjs exportprocessen.</p></li><li>[!UICONTROL **Slutförd**]: En specifik instans av en export har bearbetats och är tillgänglig i exportkontot.</li><li>[!UICONTROL **Misslyckades**]<p>Olika situationer kan leda till en misslyckad export. Håll muspekaren över statusen Misslyckades för att se information om felet.<p>Mer information om möjliga orsaker till ett fel finns i [Felsökning av misslyckade exporter](/help/components/exports/troubleshoot-exports.md).</p> |
+   | [!UICONTROL **Status**] | Exportstatus. Följande statusar är tillgängliga: <ul><li>[!UICONTROL **Väntande**]: En specifik instans av en export har startats men har inte slutförts än.<p>Om du kör en export som har statusen Väntande fördröjs exportprocessen.</p></li><li>[!UICONTROL **Slutförd**]: En specifik instans av en export har bearbetats och är tillgänglig i exportkontot.</li><li>[!UICONTROL **Misslyckades**]<p>Olika situationer kan leda till en misslyckad export. Håll muspekaren över statusen Misslyckades för att se information om felet.</p><p>Mer information om möjliga orsaker till ett fel finns i [Felsökning av misslyckade exporter](/help/components/exports/troubleshoot-exports.md).</p></li></ul> |
 
    {style="table-layout:auto"}
 
@@ -94,11 +96,19 @@ Det här alternativet är inte tillgängligt när du markerar flera loggar.
 
 1. Leta reda på loggen som är associerad med den export som du vill redigera.
 
-1. Välj ikonen **Redigera export** ![ikon för exportlogg](assets/export-icon.png) bredvid loggnamnet.
+1. Välj ikonen **Redigera export** ![Redigera exportloggikon](/help/assets/icons/Edit.svg) bredvid loggnamnet.
 
    eller
 
    Markera kryssrutan bredvid loggen och välj sedan [!UICONTROL **Redigera export**].
+
+## Kör om en slutförd eller misslyckad export
+
+Du kan köra en eller flera exporter som är kopplade till specifika exportloggar igen. Om du vill köra en export igen måste exportloggen ha statusen Slutförd eller Misslyckad och vara högst 7 dagar gammal.
+
+1. Markera kryssrutan bredvid ett eller flera exportjobb som du vill köra igen.
+
+1. Välj **[!UICONTROL Rerun]**.
 
 ## Konfigurera kolumner
 
@@ -123,12 +133,13 @@ Konfigurera kolumner på fliken [!UICONTROL Logs]:
    | Instans-ID | ID för Customer Journey Analytics-instansen. <!-- True? --> |
    | Datavy name | Namnet på datavyn som är associerad med exporten. Användare kan välja datavyn när de skapar exporten, vilket beskrivs i [Exportera Customer Journey Analytics-rapporter till molnet](/help/analysis-workspace/export/export-cloud.md). |
    | Antal filer | Antalet filer som ingår i exporten. |
-   | Storlek | Storleken på exporten.<p>Filstorleken beräknas med basen 1024, som ibland representeras som KIB och MIB. Om din molnleverantör beräknar storleken med basen 1000 kan det leda till att storleken som visas i din molnleverantör skiljer sig något från storleken som visas här.</p> |
+   | Storlek | Storleken på exporten.<p>Filstorleken beräknas med basen 1024, som ibland representeras som KiB och MiB. Om din molnleverantör beräknar storleken med basen 1000 kan det leda till att storleken som visas i din molnleverantör skiljer sig något från storleken som visas här.</p> |
    | Plats | Platsen på kontot där data exporterades. |
    | Konto | Kontot där data exporterades. |
-   | Status | Exportstatus. Tillgängliga statusvärden är [!UICONTROL Pending], [!UICONTROL Delivered] och [!UICONTROL Failed]. |
+   | Status | Exportstatus. Tillgängliga statusvärden är [!UICONTROL Pending], [!UICONTROL Completed] och [!UICONTROL Failed]. |
    | Leveransdatum | Datumet då exporten ägde rum. |
-   | Kontotyp | Typen av molnkonto där data exporterades. De tillgängliga kontotyperna är [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] och [!UICONTROL Adobe Experience Platform]. |
+   | Startdatum | Det datum då exporten startades. |
+   | Kontotyp | Typen av molnkonto där data exporterades. De tillgängliga kontotyperna är [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] och [!UICONTROL AEP Data Landing Zone]. |
    | Antal rader | Antalet rader som ingår i den exporterade tabellen. |
 
    {style="table-layout:auto"}

@@ -5,9 +5,9 @@ title: Exportera hela tabeller till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: c4a7884ae05d9290b2974483474ba8326492d014
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '3159'
 ht-degree: 1%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-full-table-export"
 >title="Skapa fullregisterexporter som liknar Data Warehouse"
->abstract="Fullständig tabellexport är tillgänglig så snart du ser data i Analysis Workspace. Du kan skapa eller schemalägga fullständig tabellexport efter behov.<br><br>Det tar bara några minuter att slutföra skapandet av fullständig tabellexport om du redan vet vilka data som ska inkluderas i exporten."
+>abstract="Fullständig tabellexport är tillgänglig så snart du ser data i Analysis Workspace. Du kan skapa eller schemalägga fullständiga tabellexporter efter behov.<br><br>Du kan skapa fullständig tabellexport på bara några minuter om du redan vet vilka data som ska inkluderas i exporten."
 
 <!-- markdownlint-enable MD034 -->
 
-Du kan exportera Analysis Workspace fullständiga tabeller från Customer Journey Analytics och skicka exporter till angivna molnmål.
+I Customer Journey Analytics kan du exportera hela tabeller från Analysis Workspace till angivna molnmål.
 
 Det finns även andra metoder för att exportera Customer Journey Analytics-rapporter, vilket beskrivs i [Översikt över export](/help/analysis-workspace/export/export-project-overview.md).
 
@@ -31,11 +31,11 @@ Det finns även andra metoder för att exportera Customer Journey Analytics-rapp
 
 Du kan exportera fullständiga tabeller från Analysis Workspace till molnleverantörer som Google, Azure, Amazon och Adobe.
 
-[Fördelarna med att exportera fullständiga tabeller till molnet](#advantages-of-exporting-to-the-cloud) är bland annat möjligheten att exportera miljontals rader, inkludera beräknade värden, strukturera data i sammanfogade värden och mycket annat.
+[Fördelarna med fullständig tabellexport](#advantages-of-full-table-export) är bland annat möjligheten att exportera miljontals rader, inkludera beräknade värden, strukturera data i sammanfogade värden och mycket annat.
 
 Tänk på följande när du exporterar fullständiga tabeller:
 
-* Innan du exporterar till molnet måste du kontrollera att tabellerna, miljön och dina behörigheter uppfyller [exportkraven](#export-requirements).
+* Innan du exporterar till molnet måste du kontrollera att tabellerna, miljön och dina behörigheter uppfyller [minimikraven för export](#minimum-requirements).
 
 * Vissa [funktioner](#unsupported-features) och [komponenter](#unsupported-components) stöds inte vid export av fullständiga tabeller till molnet.
 
@@ -45,9 +45,9 @@ Använd följande process när du exporterar fullständiga tabeller till molnet:
 
 1. [Konfigurera en plats på kontot](/help/components/exports/cloud-export-locations.md)
 
-1. [Exportera en fullständig tabell från Workspace](#export-full-tables-from-analysis-workspace)
+1. [Exportera en fullständig tabell från Workspace](#export-full-tables)
 
-1. [Få åtkomst till data i molnet](#view-exported-data-and-manifest-file) och [Hantera exporter i Adobe](/help/components/exports/manage-exports.md)
+1. Få åtkomst till data i molnet i ditt molnkonto och [Hantera exporter i Adobe](/help/components/exports/manage-exports.md)
 
 ![Hela tabellexportprocessen som beskrivs i steg 1 till 4.](assets/export-full-table-process.png)
 
@@ -75,7 +75,7 @@ Använd följande process när du exporterar fullständiga tabeller till molnet:
 
 >[!CONTEXTUALHELP]
 >id="export-manifest"
->title="Manifest-fil"
+>title="Inkludera manifestfil"
 >abstract="När du väljer det här alternativet inkluderas en manifestfil i alla slutförda exportleveranser. Manifestfilen gör att du kan bekräfta att alla filer har levererats."
 
 <!-- markdownlint-enable MD034 -->
@@ -85,7 +85,7 @@ Använd följande process när du exporterar fullständiga tabeller till molnet:
 >[!CONTEXTUALHELP]
 >id="cja-export-schedule"
 >title="Schema"
->abstract="Välj hur ofta exporten ska ske. Välj Skicka nu (en gång) om du vill starta exporten direkt. Schemalagda exporter initieras vid det datum och den tidpunkt som du anger. "
+>abstract="Välj hur ofta exporten ska ske. Välj Skicka nu (en gång) om du vill starta exporten direkt. Schemalagda exporter initieras vid det datum och den tidpunkt som du anger."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -108,36 +108,47 @@ Använd följande process när du exporterar fullständiga tabeller till molnet:
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-notifications"
+>title="Meddelanden"
+>abstract="Lägg till användare och grupper som du vill ska få meddelanden när exporten misslyckas eller snart upphör att gälla."
+
+<!-- markdownlint-enable MD034 -->
+
 >[!NOTE]
 >
 >Läs mer om fullständig tabellexport i avsnittet [Förstå fullständig tabellexport](#understand-full-table-export) innan du exporterar data enligt beskrivningen i det här avsnittet.
 
 Så här exporterar du fullständiga tabeller från Analysis Workspace:
 
-1. Om du inte redan har det konfigurerar du ett exportkonto och en plats enligt beskrivningen i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md).
+1. Om du inte redan har det konfigurerar du ett exportkonto och en plats enligt beskrivningen i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [Konfigurera exportplatser](/help/components/exports/cloud-export-locations.md).
 
-1. I Analysis Workspace väljer du [!UICONTROL **Exportera fullständig tabell**] på snabbmenyn för en friformstabell.
+1. Högerklicka på rubriken för en frihandstabell i Analysis Workspace för att visa snabbmenyn och välj sedan [!UICONTROL **Exportera fullständig tabell**].
 
-   ![Listrutan Frihandstabell med Exportera fullständig tabell markerad.](assets/export-full-table.png)
+   ![Snabbmenyn för friformstabellen med Exportera fullständig tabell markerad.](assets/export-full-table.png)
 
 1. Ange följande information i dialogrutan [!UICONTROL **Ny fullständig tabellexport**]:
 
    | Fältnamn | Funktion |
    |---------|----------|
    | Namn | Ange ett namn för exporten. Det här namnet visas i listan över exporter. |
-   | Taggar | Du kan lägga till en befintlig tagg i exporten eller skapa en ny tagg och använda den. <p>Om du vill använda en befintlig tagg på exporten markerar du eventuella taggar i listrutan. Alla taggar i ditt företag är tillgängliga för att tillämpa <!-- double-check this -->.</p> <p>Om du vill skapa en ny tagg skriver du namnet på den nya taggen och trycker sedan på Retur.</p><p>Tänk på följande när du lägger till märkord i en export: <ul><li>Taggar som du använder kan filtreras eller sökas efter i exporttabellen.</li> <li>Taggar som används i ett projekt används inte automatiskt vid export av en fullständig tabell, vilket beskrivs i Konfigurera kolumner på exportsidan i [Hantera exporter](/help/components/exports/manage-exports.md). (När [schemalägger ett helt projekt för export](/help/analysis-workspace/export/t-schedule-report.md) används automatiskt alla taggar som används i projektet på exporten.) <!-- Right now we don't have a column for them on the exports table, so this isn't true. Jaden is adding the column. --></li></ul> |
+   | Taggar | Du kan lägga till en befintlig tagg i exporten eller skapa en ny tagg och använda den. <p>Om du vill använda en befintlig tagg på exporten markerar du eventuella taggar i listrutan. Alla taggar i företaget kan användas.</p> <p>Om du vill skapa en ny tagg skriver du namnet på den nya taggen och trycker sedan på Retur.</p><p>Tänk på följande när du lägger till märkord i en export: <ul><li>Taggar som du använder kan filtreras eller sökas efter i exporttabellen.</li> <li>Taggar som används i ett projekt används inte automatiskt vid export av en fullständig tabell, vilket beskrivs i Konfigurera kolumner på exportsidan i [Hantera exporter](/help/components/exports/manage-exports.md). (När [schemalägger ett helt projekt för export](/help/analysis-workspace/export/t-schedule-report.md) används automatiskt alla taggar som används i projektet på exporten.) </li></ul> |
    | Beskrivning | Lägg till en beskrivning till exporten. Du kan välja att visa beskrivningar som en kolumn på [exportsidan](/help/components/exports/manage-exports.md) när du visar exporter. |
    | Datavy | Markera datavyn som innehåller de komponenter som du vill inkludera i exporten. Listrutan ![Datavy](/help/assets/icons/Data.svg) finns i dialogrutans övre vänstra hörn.  <p>**Obs!** Om du väljer en datavy som saknar komponenter som redan ingår i datatabellen, uppmanas du att rensa och återskapa panelen med komponenter som ingår i den valda datavyn. </p> |
-   | Fönstret Lookback | Välj den tidsram för rapportering som ska inkluderas i varje exportfil. Du kan välja mellan [!UICONTROL **Idag**], **[!UICONTROL Yesterday]**, **[!UICONTROL Last 7 days]**, **[!UICONTROL Last 30 days]**, **[!UICONTROL This week]** och **[!UICONTROL This month]**. <p>Det här alternativet visas inte när **[!UICONTROL Export frequency]** är inställd på **[!UICONTROL Send now (one-time)]**. |
-   | Datatabell | Visar friformstabellen som du exporterar. Du kan ändra datatabellen genom att dra komponenter från den vänstra panelen till tabellen. Tabellen uppdateras dynamiskt när du lägger till komponenter på arbetsytan.  <p>Alla segment som har tillämpats på den fullständiga tabellen i projektet visas högst upp i varje enskild kolumn i tabellen.</p> |
-   | Rensa | Raderar innehållet i datatabellen. På så sätt kan du börja skapa en ny tabell direkt i dialogrutan Ny fullständig tabellexport. |
-   | Exportfrekvens | Ange schemat för hur ofta exporten ska ske. <p>Du kan välja [!UICONTROL **Skicka nu (en gång)**] om du bara vill skicka exporten en gång. När du väljer det här alternativet påbörjas exporten omedelbart.<p>Du kan också välja att skicka exporten enligt ett angivet schema. När du skickar ett schema kan du välja mellan alternativen **[!UICONTROL Daily]**, **[!UICONTROL Weekly]**, **[!UICONTROL Monthly by day of the week]**, **[!UICONTROL Monthly by day of the month]**, **[!UICONTROL Yearly by day of the month]** och **[!UICONTROL Yearly by specific date]**. </p><p>Tänk på följande när du väljer en exportfrekvens:</p><ul><li>Alternativen i fältet **[!UICONTROL Lookback window]** ändras beroende på vad du väljer här.<!-- if they're doing Daily, then we might not let them look back to the last year... --></li><li>Ytterligare konfigurationsfält visas beroende på vilket alternativ du väljer.</li></ul> |
+   | Datastruktur | Visar friformstabellen som du exporterar. Du kan ändra datastrukturen genom att dra komponenter från den vänstra panelen till tabellen. Du kan använda ett filter genom att dra en komponent till filterområdet. Tabellen uppdateras dynamiskt när du lägger till komponenter på arbetsytan. Du kan ta med upp till 10 kolumner.<p>Alla segment som tillämpades på hela tabellen i projektet visas ovanför tabellen. Du kan använda ett segment eller en grupp av segment i en export.</p> |
+   | Rapportfönster | Välj den tidsram för rapportering som ska inkluderas i varje exportfil. Du kan välja mellan [!UICONTROL **Idag**], **[!UICONTROL Yesterday]**, **[!UICONTROL Last 7 days]**, **[!UICONTROL Last 30 days]**, **[!UICONTROL This week]** och **[!UICONTROL This month]**. <p>Det här alternativet visas inte när **[!UICONTROL Export frequency]** är inställd på **[!UICONTROL Send now (one-time)]**.</p> |
+   | Rensa alla | Raderar innehållet i datatabellen. På så sätt kan du börja skapa en ny tabell direkt i dialogrutan Ny fullständig tabellexport. |
+   | Filformat | Välj om exporterade data ska vara i CSV-, JSON- eller Parquet-format. <p>När du väljer filformatet Parquet ersätts något av följande tecken i komponentnamnen med ett understreck (_): <ul><li>&#39; &#39; - ASCII-blanksteg</li><li>&#39;,&#39; - ASCII-komma</li><li>&#39;;&#39; - ASCII-kolon</li><li>&#39;{&#39; eller &#39;}&#39; - inledande/avslutande ASCII-parentes</li><li>&#39;(&#39; eller &#39;)&#39; - ASCII-parentes, öppen/avslutande</li><li>&#39;\n&#39; - ASCII newline</li><li>&#39;\t&#39; - fliken ASCII</li><li>&#39;=&#39; - ASCII motsvarar</li></ul></p> |
+   | Inkludera manifestfil | När det här alternativet är aktiverat inkluderas en manifestfil i alla slutförda exportleveranser. <p>Manifestfilen gör att du kan bekräfta att alla filer har levererats. Den innehåller följande information:</p> <ul><li>En lista över alla filer som levererats</li><li>MD5-kontrollsumman för varje fil</li></ul><p>Exporterade data är tillgängliga som en komprimerad fil i molndestinationen som du konfigurerade, enligt beskrivningen i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [Konfigurera molnexportplatser](/help/components/exports/cloud-export-locations.md).</p><p>Filnamnet för den komprimerade filen är följande, beroende på om du väljer **[!UICONTROL csv]**, **[!UICONTROL json]** eller **[!UICONTROL parquet]** som filformat:</p><ul> <li>`cja-export-{reportInstanceId}-{idx}.csv.gz`</li><li>`cja-export-{reportInstanceId}-{idx}.json.gz`</li><li>`cja-export-<instanceId>-<idx>.snappy.parquet`<p>Varje kolumn i parquet-filen komprimeras.</p></li></ul><p>Välj filformatet i fältet **[!UICONTROL File format]** ovan.</p> |
+   | Frekvens | Ange schemat för hur ofta exporten ska ske. <p>Du kan välja [!UICONTROL **Skicka nu (en gång)**] om du bara vill skicka exporten en gång. När du väljer det här alternativet påbörjas exporten omedelbart.</p><p>Du kan också välja att skicka exporten enligt ett angivet schema. När du skickar ett schema kan du välja mellan alternativen **[!UICONTROL Daily]**, **[!UICONTROL Weekly]**, **[!UICONTROL Monthly by day of the week]**, **[!UICONTROL Monthly by day of the month]**, **[!UICONTROL Yearly by day of the month]** och **[!UICONTROL Yearly by specific date]**. </p> <p>Tänk på följande när du väljer en exportfrekvens:</p><ul><li>Alternativen i fältet **[!UICONTROL Lookback window]** ändras beroende på vad du väljer här.</li><li>Ytterligare konfigurationsfält visas beroende på vilket alternativ du väljer.</li></ul> |
    | Startar | Den dag och tid då den schemalagda exporten ska börja. <p>Det här alternativet är bara tillgängligt när du väljer en schemalagd exportfrekvens.</p> |
    | Slutar på | Den dag och tid då den schemalagda exporten upphör. Den schemalagda exporten körs inte längre efter det datum och den tidpunkt som du angav. <p>Det här alternativet är bara tillgängligt när du väljer en schemalagd exportfrekvens.</p> |
-   | Filformat | Välj om exporterade data ska vara i CSV- eller JSON-format. |
-   | Inkludera manifestfil | När det här alternativet är aktiverat inkluderas en manifestfil i alla slutförda exportleveranser. Manifestfilen gör att du kan bekräfta att alla filer har levererats. Den innehåller följande information:<ul><li>En lista över alla filer som levererats</li><li>MD5-kontrollsumman för varje fil</li></ul><p>Exporterade data är tillgängliga som en komprimerad fil i molndestinationen som du konfigurerade, enligt beskrivningen i [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md) och [Konfigurera molnexportplatser](/help/components/exports/cloud-export-locations.md).</p><p>Filnamnet för den komprimerade filen är följande, beroende på om du väljer CSV eller JSON som filformat:</p><ul><li>`cja-export-{reportInstanceId}-{idx}.csv.gz`</li><li>`cja-export-{reportInstanceId}-{idx}.json.gz`</li></ul><p>Du väljer filformatet i fältet **[!UICONTROL *Filformat**] ovan.</p> |
-   | Konto | Välj det exportkonto i molnet där du vill att data ska skickas. <p>Om du inte redan har konfigurerat ett molnkonto som du vill använda kan du konfigurera ett nytt konto:<ol><li>Välj **[!UICONTROL Add account]** och ange sedan följande information:<ul><li>**[!UICONTROL Location account name]**: Ange ett namn för platskontot. Det här namnet visas när du skapar en plats </li><li>**[!UICONTROL *ocation account description]**: Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp.</li><li>**[!UICONTROL Account type]**: Välj den typ av molnkonto som du exporterar till. De tillgängliga kontotyperna är Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake och AEP Data Landing Zone.</li></ul><li>Om du vill slutföra konfigurationen av ditt konto fortsätter du med länken nedan som motsvarar **[!UICONTROL Account type]** som du har valt:<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3-roll ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud-plattform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
-   | Plats | Välj den plats på kontot där du vill att exportdata ska skickas.<p>Om du inte redan har konfigurerat platsen som du vill använda på kontot som du har valt kan du konfigurera en ny plats:<ol><li>Välj **[!UICONTROL *dd location]** och ange sedan följande information: <ul><li>**[!UICONTROL Name]**: Platsens namn.</li><li>**[!UICONTROL Description]**: Ange en kort beskrivning av platsen för att hjälpa till att skilja den från andra platser på kontot.</li><li>**[!UICONTROL Location account]**: Välj det konto där du vill skapa platsen.</li></ul><li>Om du vill slutföra konfigurationen av din plats fortsätter du med länken nedan som motsvarar kontotypen som du valde i fältet **[!UICONTROL Location account]**:<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone).</li><li>[Amazon S3-roll ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud-plattform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
+   | Visa mål för alla användare | Systemadministratörer kan välja det här alternativet om du vill visa alla konton och platser, oavsett vem som skapade dem. |
+   | Konto | Välj det exportkonto i molnet där du vill att data ska skickas. <p>Om du inte redan har konfigurerat ett molnkonto som du vill använda kan du konfigurera ett nytt konto:<ol><li>I listrutan **[!UICONTROL Account]** väljer du **[!UICONTROL Add account]** och anger sedan följande information:<ul><li>**[!UICONTROL Location account name]**: Ange ett namn för platskontot. Det här namnet visas när du skapar en plats </li><li>**[!UICONTROL Location account description]**: Ange en kort beskrivning av kontot för att hjälpa till att skilja det från andra konton av samma kontotyp.</li><li>**Gör kontot tillgängligt för alla användare i organisationen**: Välj det här alternativet om du vill tillåta att andra användare i organisationen använder kontot.</li><li>**[!UICONTROL Account type]**: Välj den typ av molnkonto som du exporterar till. De tillgängliga kontotyperna är Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake och AEP Data Landing Zone.</li></ul><li>Om du vill slutföra konfigurationen av ditt konto fortsätter du med länken nedan som motsvarar **[!UICONTROL Account type]** som du har valt:<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3-roll ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud-plattform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
+   | Plats | Välj den plats på kontot där du vill att exportdata ska skickas.<p>Om du inte redan har konfigurerat ett molnkonto som du vill använda kan du konfigurera ett nytt konto:<ol><li>I listrutan **[!UICONTROL Location]** väljer du **[!UICONTROL Add location]** och anger sedan följande information:<ul><li>**[!UICONTROL Name]**: Platsens namn.</li><li>**[!UICONTROL Description]**: Ange en kort beskrivning av platsen för att hjälpa till att skilja den från andra platser på kontot.</li><li>**Gör platsen tillgänglig för alla användare i din organisation**: Välj det här alternativet om du vill tillåta att andra användare i din organisation använder platsen.</li><li>**[!UICONTROL Location account]**: Välj det konto där du vill skapa platsen.</li></ul><li>Om du vill slutföra konfigurationen av din plats fortsätter du med länken nedan som motsvarar kontotypen som du valde i fältet **[!UICONTROL Location account]**:<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone).</li><li>[Amazon S3-roll ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud-plattform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
+   | Meddelanden | Lägg till användare och grupper som du vill ska få meddelanden när exporten misslyckas eller snart upphör att gälla. Börja skriva namnet eller e-postadressen för en användare, eller börja skriva namnet på en grupp och markera den när den visas i listrutan. |
 
    {style="table-layout:auto"}
 
@@ -145,7 +156,7 @@ Så här exporterar du fullständiga tabeller från Analysis Workspace:
 
    Data skickas till molnkontot som du angav med den frekvens som du angav.
 
-1. (Valfritt) När du har skapat exporten, oavsett om du valde att skicka den nu eller enligt ett definierat schema, kan du visa och hantera den på [exportsidan](/help/components/exports/manage-exports.md) och visa den i [exportloggarna](/help/components/exports/manage-export-logs.md).</p>
+1. (Valfritt) När du har skapat exporten, oavsett om du valde att skicka den nu eller enligt ett definierat schema, kan du visa och hantera den på [exportsidan](/help/components/exports/manage-exports.md) och visa den i [exportloggarna](/help/components/exports/manage-export-logs.md).
 
 ## Hantera exporter
 
@@ -169,7 +180,7 @@ Genom att exportera Customer Journey Analytics-data till molnet kan du:
 
 * Exportera en gång eller enligt ett schema. (Även tillgängligt med [andra exportalternativ](/help/analysis-workspace/export/export-project-overview.md).)
 
-* Exportera filer i CSV- eller JSON-format. (Även tillgängligt med [andra exportalternativ](/help/analysis-workspace/export/export-project-overview.md).)
+* Exportera filer i formaten CSV, JSON eller Parquet. (Även tillgängligt med [andra exportalternativ](/help/analysis-workspace/export/export-project-overview.md).)
 
 * Exportera tabeller som innehåller flera dimensioner.
 
@@ -208,7 +219,7 @@ Följande funktioner stöds inte och tas automatiskt bort från export i fulltab
 
 Följande komponenter stöds inte och Analysis Workspace uppmanar dig att ta bort dem från tabellen när du exporterar hela tabeller:
 
-* Beräknade mått som använder grundläggande eller avancerade funktioner i metrisk definition (mer information finns i [Grundfunktioner](/help/components/calc-metrics/cm-functions.md) och [Avancerade funktioner](/help/components/calc-metrics/cm-adv-functions.md))
+* Beräknade mått som använder funktioner som inte stöds i måttdefinitionen (mer information finns i [Beräknade måttfunktioner som inte stöds](#unsupported-calculated-metric-functions))
 * Komponenter som har begränsats av en administratör från att exporteras (mer information finns i avsnittet *Segment om datastyrningsprinciper i datavyer* i [Etiketter och profiler](/help/data-views/data-governance.md) )
 * Alla dimensioner som uppfyller alla följande kriterier:
    * Skapas från ett fält som är en del av en [objektmatris](/help/use-cases/object-arrays.md) (liknar flervärdesvariabler i Adobe Analytics).
@@ -224,6 +235,151 @@ Följande komponenter stöds inte och Analysis Workspace uppmanar dig att ta bor
    * Mätvärden
    * Datumintervall
    * Segment
+
+## Stöd för beräkningsmätningsfunktioner
+
+Följande grundläggande och avancerade avsnitt visar vilka beräknade måttfunktioner som stöds vid export av fullständiga tabeller:
+
+### Stöd för grundläggande funktioner
+
+
+| Grundläggande funktion | Supportstatus |
+|---------|----------|
+| Absolut värde | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Högsta kolumn | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Minsta kolumn | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Kolumnsumma | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Antal | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Exponent | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Medel | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Median | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Modulo | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Procent | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Strömoperator | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Quartile | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Antal rader | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Max rad | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Min rad | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Radsumma | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Ansökningstillfälle | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Kvadratrot | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Standardavvikelse | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Varians | ![StatusBlue](/help/assets/icons/StatusBlue.svg) planerad |
+
+### Stöd för avancerade funktioner
+
+#### Algebra-funktioner
+
+| Avancerad funktion | Supportstatus |
+|---------|----------|
+| Log Base 10 (Exponential Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Kubrot (exponentiell algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Naturlig logg (Exponential Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Floor (Numeric Adjustment Algebra) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+
+#### Logikfunktioner
+
+| Avancerad funktion | Supportstatus |
+|---------|----------|
+| If (Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+
+#### Booleska funktioner
+
+| Avancerad funktion | Supportstatus |
+|---------|----------|
+| Not (boolesk operatorlogik) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Eller (boolesk operatorlogik) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| And (Boolean Operator Logic) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+
+#### Jämförelsefunktioner
+
+| Avancerad funktion | Supportstatus |
+|---------|----------|
+| Mindre än (jämförelselogik) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Mindre än eller lika med (jämförelselogik) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Likvärdigt (jämförelselogik) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Större än eller lika med (jämförelselogik) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Större än (jämförelselogik) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Inte lika med (jämförelselogik) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+
+
+#### Trigonometriska funktioner
+
+| Avancerad funktion | Supportstatus |
+|---------|----------|
+| Pi | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Sinus (standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Cosine (standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Tangent (standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Båge sinus (standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Arc Cosine (standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Bågtangent (standard) | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+
+#### Hyperboliska funktioner
+
+| Avancerad funktion | Supportstatus |
+|---------|----------|
+| Hyperbolisk cosinus | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Hyperbolisk sinus | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+| Hyperbolisk tangens | ![StatusGreen](/help/assets/icons/StatusGreen.svg) stöds |
+
+#### WASKR-funktioner
+
+| Avancerad funktion | Supportstatus |
+|---------|----------|
+| Förtroende (WASKR) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Förtroende (lägre) (WASKR) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Förtroende (övre) (WASKR) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+
+#### Distributionsfunktioner
+
+| Avancerad funktion | Supportstatus |
+|---------|----------|
+| T-Score (Student T-Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| T-test (Student T-Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| CDF-T (Student T-Distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Z-poäng (normal distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Z-test (normal distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| CDF-Z (normal distribution) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+
+#### Regressionsfunktioner
+
+| Avancerad funktion | Supportstatus |
+|---------|----------|
+| Korrelationskoefficient (exponentiell regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Intercept (exponentiell regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Förutsedd Y (exponentiell regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Lutning (exponentiell regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Korrelationskoefficient (linjär regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Intercept (linjär regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Förutsedd Y (linjär regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Lutning (linjär regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Korrelationskoefficient (loggregression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Intercept (loggregression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Förutsedd Y (loggregression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Lutning (loggregression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Korrelationskoefficient (effektregression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Intercept (effektregression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Förutsedd Y (effektregression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Lutning (effektregression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Korrelationskoefficient (kvadratisk regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Intercept (kvadratisk regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Förutsedd Y (kvadratisk regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Långsam (kvadratisk regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Korrelationskoefficient (Ömsesidig regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Intercept (Ömsesidig regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Förutsedd Y (Rectangal Regression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+| Lutning (återfallsregression) | ![StatusRed](/help/assets/icons/StatusRed.svg) stöds inte |
+
+#### Andra avancerade funktioner
+
+| Avancerad funktion | Supportstatus |
+|---------|----------|
+| Distinkt antal | ![StatusBlue](/help/assets/icons/StatusBlue.svg) planerad |
+| Kumulativ | ![StatusBlue](/help/assets/icons/StatusBlue.svg) planerad |
+| Kumulativt genomsnitt | ![StatusBlue](/help/assets/icons/StatusBlue.svg) planerad |
+| Lyft | ![StatusBlue](/help/assets/icons/StatusBlue.svg) planerad |
+| Provvarians | ![StatusBlue](/help/assets/icons/StatusBlue.svg) planerad |
 
 ## Attributionsbeteende
 
@@ -246,7 +402,6 @@ Om en attribueringsmodell som inte är standard används i en rapport ignoreras 
 ## Jämförelse med Data Warehouse
 
 Om du tidigare använde Data Warehouse för att exportera Adobe Analytics-data kan följande tabell hjälpa dig att förstå skillnaden mellan att exportera fullständiga tabeller i Customer Journey Analytics och att exportera data med Data Warehouse i Adobe Analytics.
-
 
 | Funktion | Fullständig tabellexport i Customer Journey Analytics | DATA WAREHOUSE i ADOBE ANALYTICS |
 |---------|----------|---------|
