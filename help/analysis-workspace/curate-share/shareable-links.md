@@ -37,7 +37,7 @@ Du kan också dela en länk till en viss del av ett projekt, till exempel en pan
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Länka innanför eller utanför projektet](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Länka innanför eller utanför projektet](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=sv-SE){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
