@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 58d423e2d7d064bcc7d8011a5ecda236ef9b0677
+source-git-commit: 974d8a269be15d3ea6fbbcf96f2ab5457d9c9554
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1369'
 ht-degree: 10%
 
 ---
@@ -145,6 +145,7 @@ ht-degree: 10%
       + [Konfigurera](/help/connections/audience-analysis/audience-analysis-configure.md)
       + [Hantera](/help/connections/audience-analysis/audience-analysis-manage.md)
       + [Analysera](/help/connections/audience-analysis/analyze-audiences.md)
+      + [Användningsexempel](/help/connections/audience-analysis/audience-analysis-use-cases.md)
 + Datavyer {#cja-dataviews}
    + [Översikt över datavyer](../data-views/data-views.md)
    + [Skapa eller redigera en datavy](../data-views/create-dataview.md)
@@ -549,7 +550,7 @@ ht-degree: 10%
    + [Borttagningskonsekvenser](../technotes/deletion.md)
    + [Domäner](../technotes/domains.md)
    + [Ordlista](../technotes/glossary.md)
-   + [Guardrails](../technotes/guardrails.md)
+   + [Skyddsräcken](../technotes/guardrails.md)
    + [IP-adresser](../technotes/ip-addresses.md)
    + [Optimera prestanda](../technotes/optimizing-performance.md)
    + [Hantera användning](../technotes/estimate-usage.md)

@@ -4,7 +4,7 @@ description: Lär dig hur du inkluderar flera dimensioner i en frihandstabell
 feature: Visualizations
 role: User
 exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
-source-git-commit: 14718476695dcf121c94ba4cb8b2c39e5874342d
+source-git-commit: 39af20da14a5fb96fe01db31af5fc37b7e4aee16
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -12,8 +12,6 @@ ht-degree: 0%
 ---
 
 # Inkludera flera dimensionskolumner i en frihandstabell
-
-{{release-limited-testing}}
 
 Du kan inkludera upp till 5 dimensionskolumner i en frihandstabell, så att du kan visa flera dimensionsobjekt sida vid sida. Varje rad med dimensionsobjekt fungerar som en enda sammanfogad dimensionspost.
 

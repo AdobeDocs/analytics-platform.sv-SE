@@ -4,7 +4,7 @@ title: Filtrera och ordna
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 39af20da14a5fb96fe01db31af5fc37b7e4aee16
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -148,8 +148,6 @@ Så här sorterar du data i tabeller efter en kolumn:
    Sorteringsikonen är fortfarande synlig när sortering används på kolumnen. En pil anger hur data sorteras (![Sortera](/help/assets/icons/SortOrderUp.svg) för stigande eller ![Sortera](/help/assets/icons/SortOrderDown.svg) för fallande).
 
 ### Sortera tabeller efter flera kolumner (avancerad sortering)
-
-{{release-limited-testing-section}}
 
 #### Använda sortering på flera kolumner
 
