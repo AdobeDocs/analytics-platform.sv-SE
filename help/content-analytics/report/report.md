@@ -94,7 +94,7 @@ Så här använder du mallen:
 
 1. Välj **[!UICONTROL Workspace]** på huvudmenyn.
 1. Kontrollera att du har valt en datavy som är konfigurerad för Content Analytics.
-1. Sök efter eller använd segment (**[!UICONTROL Web]** för **[!UICONTROL Channel]** och **[!UICONTROL Engagement]** för **[!UICONTROL Use Case]**s) för att hitta och välja mallen **[!UICONTROL Content Analytics]**.
+1. Sök efter eller använd segment (**[!UICONTROL Web]** för **[!UICONTROL Channel]** och **[!UICONTROL Engagement]** för **[!UICONTROL Use Case]**&#x200B;s) för att hitta och välja mallen **[!UICONTROL Content Analytics]**.
 1. Välj **[!UICONTROL Use template]**.
 1. I dialogrutan **[!UICONTROL Set up your template]** väljer du ett mått i dialogrutan **[!UICONTROL Select a conversion metric]**. Exempel: **[!UICONTROL Asset CTR]**.
 1. Välj **[!UICONTROL Continue]**.
@@ -122,27 +122,27 @@ Panelen hjälper er att förstå vilka upplevelser och vilka resurser i upplevel
       * **Resurs-CTR**
 En [sammanfattningsändring](/help/analysis-workspace/visualizations/summary-number-change.md) som visar CTR för resurs.
       * **De viktigaste konverteringsresurserna**
-En [ vågrät fältvisualisering ](/help/analysis-workspace/visualizations/horizontal-bar.md) som visar de översta konverteringsresurserna baserat på det valda konverteringsmåttet.
+En [&#x200B; vågrät fältvisualisering &#x200B;](/help/analysis-workspace/visualizations/horizontal-bar.md) som visar de översta konverteringsresurserna baserat på det valda konverteringsmåttet.
       * **Resurser som presterar bäst**
-En [ friformstabell ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (inklusive [ miniatyrbilder ](#thumbnails) och [ förhandsvisningar ](#previews) ) för de resurser som presterar bäst.
+En [&#x200B; friformstabell &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (inklusive [&#x200B; miniatyrbilder &#x200B;](#thumbnails) och [&#x200B; förhandsvisningar &#x200B;](#previews) ) för de resurser som presterar bäst.
       * **Assets - vyer jämfört med konvertering.**
-En [ punktritningsvisualisering ](/help/analysis-workspace/visualizations/scatterplot.md) som visar en punktdiagram över tillgångsvyer jämfört med tillgångskonverteringar.
+En [&#x200B; punktritningsvisualisering &#x200B;](/help/analysis-workspace/visualizations/scatterplot.md) som visar en punktdiagram över tillgångsvyer jämfört med tillgångskonverteringar.
 
 * **Vilka resursattribut bidrar till konverteringar?**
-Content Analytics använder AI och GenAI för att tilldela varje resurs [ metadata ](/help/content-analytics/report/components.md#asset-metadata) och [ attribut ](/help/content-analytics/report/components.md#asset-attributes) automatiskt, som motiv, scener, förgrundsfärger med mera. Ett attribut är en AI-tilldelad metadatatagg som beskriver vad som finns i en resurs eller upplevelse. Till exempel: <code>förgrundsfärg: röd</code> är ett automatiskt tilldelat attribut. Med visualiseringarna kan du identifiera vilka attribut i dina resurser som bidrar mest till konverteringen.
+Content Analytics använder AI och GenAI för att tilldela varje resurs [&#x200B; metadata &#x200B;](/help/content-analytics/report/components.md#asset-metadata) och [&#x200B; attribut &#x200B;](/help/content-analytics/report/components.md#asset-attributes) automatiskt, som motiv, scener, förgrundsfärger med mera. Ett attribut är en AI-tilldelad metadatatagg som beskriver vad som finns i en resurs eller upplevelse. Till exempel: <code>förgrundsfärg: röd</code> är ett automatiskt tilldelat attribut. Med visualiseringarna kan du identifiera vilka attribut i dina resurser som bidrar mest till konverteringen.
 
   Panelen består av följande visualiseringar:
 
    * **De viktigaste konverteringsattributen för resurser**
-Ett [ vågrätt fält ](/help/analysis-workspace/visualizations/horizontal-bar.md) som visar de översta konverteringsattributen baserat på det valda konverteringsmåttet.
+Ett [&#x200B; vågrätt fält &#x200B;](/help/analysis-workspace/visualizations/horizontal-bar.md) som visar de översta konverteringsattributen baserat på det valda konverteringsmåttet.
    * **De viktigaste attributen för att konvertera resurser jämfört med tidigare 30 dagar**
-En [ vågrät fältvisualisering ](/help/analysis-workspace/visualizations/horizontal-bar.md) som visar de översta konverteringsattributen, jämfört med de föregående 30 dagarna, baserat på det valda konverteringsmåttet.
+En [&#x200B; vågrät fältvisualisering &#x200B;](/help/analysis-workspace/visualizations/horizontal-bar.md) som visar de översta konverteringsattributen, jämfört med de föregående 30 dagarna, baserat på det valda konverteringsmåttet.
    * **De viktigaste konverteringarna av resursattributdata**
-En [ friformstabell ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar de översta konverteringsattributen baserat på det valda konverteringsmåttet. Markera en rad i tabellen om du vill uppdatera attributtrendvisualiseringen.
+En [&#x200B; friformstabell &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar de översta konverteringsattributen baserat på det valda konverteringsmåttet. Markera en rad i tabellen om du vill uppdatera attributtrendvisualiseringen.
    * **Attributtrend**
-En [ rad ](/help/analysis-workspace/visualizations/line.md) -visualisering som visar attributtrenden för det markerade översta konverteringstillgångsattributet.
+En [&#x200B; rad &#x200B;](/help/analysis-workspace/visualizations/line.md) -visualisering som visar attributtrenden för det markerade översta konverteringstillgångsattributet.
    * **Resursens förgrundsfärg**
-Ett exempel på en [ frihandstabell ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) som jämför prestanda för objekt i en attributkategori för en resurs: Förgrundsfärger. Du kan ersätta det här resursattributet med andra dimensioner för tillgångsattributkategorier.
+Ett exempel på en [&#x200B; frihandstabell &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) som jämför prestanda för objekt i en attributkategori för en resurs: Förgrundsfärger. Du kan ersätta det här resursattributet med andra dimensioner för tillgångsattributkategorier.
 
 * **Vilka upplevelseattribut bidrar till konverteringarna?**
 
@@ -156,15 +156,15 @@ Ett exempel på en [ frihandstabell ](/help/analysis-workspace/visualizations/fr
   Panelen består av följande visualiseringar:
 
    * **De viktigaste attributen för konvertering av upplevelser**
-En [ vågrät fältvisualisering ](/help/analysis-workspace/visualizations/horizontal-bar.md) som visar de viktigaste konverteringsattributen baserat på det valda konverteringsmåttet.
+En [&#x200B; vågrät fältvisualisering &#x200B;](/help/analysis-workspace/visualizations/horizontal-bar.md) som visar de viktigaste konverteringsattributen baserat på det valda konverteringsmåttet.
    * **De viktigaste attributen för konvertering jämfört med tidigare 30 dagar**
-En [ vågrät fältvisualisering ](/help/analysis-workspace/visualizations/horizontal-bar.md) som visar de viktigaste konverteringsattributen, jämfört med de föregående 30 dagarna, baserat på det valda konverteringsmåttet.
+En [&#x200B; vågrät fältvisualisering &#x200B;](/help/analysis-workspace/visualizations/horizontal-bar.md) som visar de viktigaste konverteringsattributen, jämfört med de föregående 30 dagarna, baserat på det valda konverteringsmåttet.
    * **De viktigaste konverteringsattributsdata**
-En [ friformstabell ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar de mest konverterade upplevelserna baserat på det valda konverteringsmåttet. Markera en rad i tabellen för att uppdatera radinvisualiseringen.
+En [&#x200B; friformstabell &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar de mest konverterade upplevelserna baserat på det valda konverteringsmåttet. Markera en rad i tabellen för att uppdatera radinvisualiseringen.
    * **Rad**
-En [ linje ](/help/analysis-workspace/visualizations/line.md) -visualisering som visar trenden för det valda toppattributet för konvertering.
+En [&#x200B; linje &#x200B;](/help/analysis-workspace/visualizations/line.md) -visualisering som visar trenden för det valda toppattributet för konvertering.
    * **Upplev nyckelord**
-En [ friformstabell ](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar nyckelorden för de översta upplevelserna baserat på det valda konverteringsmåttet.
+En [&#x200B; friformstabell &#x200B;](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) som visar nyckelorden för de översta upplevelserna baserat på det valda konverteringsmåttet.
 
 * **Var visas resurser på min webbplats?**
 En panel som består av en frihandstabell som innehåller information om var de mest visade resurserna visas på webbplatsen. Denna analys hjälper er att förstå vilka sidor eller avsnitt som drar störst nytta av era topppresterande resurser och var placeringen ska optimeras.
