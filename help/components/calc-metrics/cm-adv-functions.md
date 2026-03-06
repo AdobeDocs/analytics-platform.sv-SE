@@ -4,9 +4,9 @@ description: Lär dig mer om avancerade beräkningsmätfunktioner.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: a5e07891b23184dfe5d4c3f1b2c4b36b6884fb72
+source-git-commit: 76b4ac60c8e3ae2dd62f86a35bdf1c582f60b10f
 workflow-type: tm+mt
-source-wordcount: '5011'
+source-wordcount: '5003'
 ht-degree: 1%
 
 ---
@@ -433,14 +433,14 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-exp"
 >title="Exponentiell regression: Korrelationskoefficient"
->abstract="Exponentiell regression: Y = en exp(X) + b. Returnerar korrelationskoefficienten."
+>abstract="Exponentiell regression: Y = b * exp(aX). Returnerar korrelationskoefficienten."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabell]{type="Neutral"} Exponentiell regression: Y = en exp(X) + b. Returnerar korrelationskoefficienten.
+[!BADGE Tabell]{type="Neutral"} Exponentiell regression: Y = b * exp(aX). Returnerar korrelationskoefficienten.
 
 
 | Argument | Beskrivning |
@@ -456,14 +456,14 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-ls-pred-exp"
 >title="Exponentiell regression: Förväntat Y"
->abstract="Exponentiell regression: Y = en exp(X) + b. Returnerar Y."
+>abstract="Exponentiell regression: Y = b * exp(aX). Returnerar Y."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Rad]{type="Neutral"} Exponentiell regression: Y = en exp(X) + b. Returnerar Y.
+[!BADGE Rad]{type="Neutral"} Exponentiell regression: Y = b * exp(aX). Returnerar Y.
 
 
 | Argument | Beskrivning |
@@ -480,14 +480,14 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-ls-intercept-exp"
 >title="Exponentiell regression: Intercept"
->abstract="Exponentiell regression: Y = a exp(X) + b. Returnerar b."
+>abstract="Exponentiell regression: Y = b * exp(aX). Returnerar b."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabell]{type="Neutral"} Exponentiell regression: Y = ett exp(X) + b. Returnerar b.
+[!BADGE Tabell]{type="Neutral"} Exponentiell regression: Y = b * exp(aX). Returnerar b.
 
 | Argument | Beskrivning |
 |---|---|
@@ -503,14 +503,14 @@ Lika. Utdata är antingen 0 (false) eller 1 (true).
 >[!CONTEXTUALHELP]
 >id="functions-ls-slope-exp"
 >title="Exponentiell regression: Lutning"
->abstract="Exponentiell regression: Y = a exp(X) + b. Returnerar a."
+>abstract="Exponentiell regression: Y = b * exp(aX). Returnerar a."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effekt](/help/assets/icons/Effect.svg) **[!UICONTROL EXPONENTIAL REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabell]{type="Neutral"} Exponentiell regression: Y = a exp(X) + b. Returnerar a.
+[!BADGE Tabell]{type="Neutral"} Exponentiell regression: Y = b * exp(aX). Returnerar a.
 
 
 | Argument | Beskrivning |
