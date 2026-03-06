@@ -9,10 +9,10 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 974d8a269be15d3ea6fbbcf96f2ab5457d9c9554
+source-git-commit: e81d2f973a39df580453eca1ff4d5c074a3830aa
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 10%
+source-wordcount: '1371'
+ht-degree: 11%
 
 ---
 
@@ -145,7 +145,7 @@ ht-degree: 10%
       + [Konfigurera](/help/connections/audience-analysis/audience-analysis-configure.md)
       + [Hantera](/help/connections/audience-analysis/audience-analysis-manage.md)
       + [Analysera](/help/connections/audience-analysis/analyze-audiences.md)
-      + [Användningsexempel](/help/connections/audience-analysis/audience-analysis-use-cases.md)
+      + [Användningsfall](/help/connections/audience-analysis/audience-analysis-use-cases.md)
 + Datavyer {#cja-dataviews}
    + [Översikt över datavyer](../data-views/data-views.md)
    + [Skapa eller redigera en datavy](../data-views/create-dataview.md)
@@ -221,7 +221,7 @@ ht-degree: 10%
       + Kohortabell {#cohort-table}
          + [Översikt](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Konfigurera](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
-         + [Användningsexempel](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
+         + [Användningsfall](../analysis-workspace/visualizations/cohort-table/cohort-use-cases.md)
       + Utfall {#fallout}
          + [Översikt](../analysis-workspace/visualizations/fallout/fallout-flow.md)
          + [Konfigurera](../analysis-workspace/visualizations/fallout/configuring-fallout.md)
@@ -404,7 +404,7 @@ ht-degree: 10%
       + [Skapa aviseringar](/help/components/c-intelligent-alerts/alert-builder.md)
       + [Hantera aviseringar](/help/components/c-intelligent-alerts/alert-manager.md)
       + [Jämförelse av funktioner](/help/components/c-intelligent-alerts/alerts-feature-comparison.md)
-      + [Användningsexempel](/help/components/c-intelligent-alerts/alerts-use-cases.md)
+      + [Användningsfall](/help/components/c-intelligent-alerts/alerts-use-cases.md)
    + Export {#exports}
       + [Konfigurera molnexportkonton](/help/components/exports/cloud-export-accounts.md)
       + [Konfigurera platser för molnexport](/help/components/exports/cloud-export-locations.md)
@@ -466,7 +466,7 @@ ht-degree: 10%
    + [Granskningslogg](../privacy/audit-log.md)
    + [Kundhanterade nycklar](../privacy/cmk.md)
 
-+ Användningsexempel {#cja-usecases}
++ Användningsfall {#cja-usecases}
    + [Användningsexempel för Customer Journey Analytics](../use-cases/cja-usecases.md)
    + Adobe Analytics data {#aa-data}
       + [Använd mått för marknadsföringskanal](../use-cases/aa-data/marketing-channels.md)
@@ -498,7 +498,7 @@ ht-degree: 10%
       + [Använd bindningsdimensioner och mätvärden](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [Använd sammanfattningsdata](/help/use-cases/data-views/summary-data.md)
       + BI-tillägg {#bi-extension}
-         + [Användningsexempel](/help/use-cases/data-views/bi-extension-usecases.md)
+         + [Användningsfall](/help/use-cases/data-views/bi-extension-usecases.md)
          + [Visa och koppla data](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
          + [Daglig trend](/help/use-cases/data-views/bi-extension/daily-trend.md)
          + [Trend varje timme](/help/use-cases/data-views/bi-extension/hourly-trend.md)
@@ -546,6 +546,7 @@ ht-degree: 10%
 
 + Tekniska anteckningar {#technotes}
    + [Åtkomstkontroll](../technotes/access-control.md)
+   + [Felaktiga ID:n](/help/technotes/badids.md)
    + [Datacenter](../technotes/data-centers.md)
    + [Borttagningskonsekvenser](../technotes/deletion.md)
    + [Domäner](../technotes/domains.md)
