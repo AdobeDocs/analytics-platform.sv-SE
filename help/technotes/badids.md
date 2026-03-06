@@ -19,7 +19,7 @@ Den här artikeln innehåller kontext om felaktiga ID:n och hur du identifierar 
 
 >[!INFO]
 >
->Felaktiga ID:n kallas även BAVID:n i Customer Journey Analytics-gränssnittet (kommer från [Analytics BAVID](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444)).
+>Felaktiga ID:n kallas även BAVID:n i Customer Journey Analytics-gränssnittet (kommer från [Analytics BAVID](https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-16444)).
 >
 
 ## Definition
