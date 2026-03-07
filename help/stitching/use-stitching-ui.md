@@ -27,7 +27,7 @@ Du måste kontrollera och uppfylla kraven för sammanfogningsmetoden som du ange
 
 Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
 
-* Om du ska använda XDM-schemafält för beständigt ID eller person-ID kontrollerar du att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
+* Om du ska använda XDM-schemafält för beständigt ID eller person-ID kontrollerar du att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
 * Verifiera identitetstäckning för både beständigt ID och person-ID:
 
    * **Beständigt ID**
@@ -58,7 +58,7 @@ Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händ
 
 
    * **Person-ID**
-      * För diagrambaserade sammanfogningar måste identitetsdiagrammet innehålla fragment som länkar ID-värden från det valda beständiga ID-namnutrymmet och ID-namnutrymmet. Du kan köra ett test genom att gå till [Experience Platform Identity Graphics Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} och fråga diagrammet efter några beständiga ID-värden. Kontrollera om dessa beständiga ID-värden är länkade till värden för person-ID i diagrammet.
+      * För diagrambaserade sammanfogningar måste identitetsdiagrammet innehålla fragment som länkar ID-värden från det valda beständiga ID-namnutrymmet och ID-namnutrymmet. Du kan köra ett test genom att gå till [Experience Platform Identity Graphics Viewer](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} och fråga diagrammet efter några beständiga ID-värden. Kontrollera om dessa beständiga ID-värden är länkade till värden för person-ID i diagrammet.
       * För fältbaserad sammanfogning frågar du 7 dagar med data där ditt person-ID-fält inte är null och dividerar med en fråga på 7 dagar med data för alla händelser i din datamängd. Den här procentandelen bör helst vara över 5 procent.
 
         Exempel på en fråga som du kan använda för verifiering:
@@ -93,7 +93,7 @@ Du kan aktivera identitetssammanfogning när du [lägger till](/help/connections
 >id="connection_changeto_identitygraph"
 >title="Ändra till identitetsdiagram"
 >abstract="Kontrollera att du har avslutat konfigurationen av identitetsdiagrammet innan du använder identitetsdiagrammet för sammanfogning."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Diagrambaserad utjämning"
+>additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/stitching/gbs" text="Diagrambaserad utjämning"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -125,7 +125,7 @@ Du kan aktivera identitetssammanfogning när du [lägger till](/help/connections
 >id="connection_stitchingmetrics_badids"
 >title="Felaktiga ID:n"
 >abstract="Felaktiga ID:n är ID-värden som allvarligt påverkar rapporteringsdata."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Felaktiga ID:n"
+>additional-url="https://experienceleague.adobe.com/sv/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Felaktiga ID:n"
 
 
 ### Inställningar för datauppsättning
