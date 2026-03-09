@@ -6,9 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 974d8a269be15d3ea6fbbcf96f2ab5457d9c9554
+exl-id: 4f465e71-f1b5-4f38-a1db-645550856849
+source-git-commit: d14163794fd4d31b29bfc6f55622d839b67ab3d7
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1486'
 ht-degree: 0%
 
 ---
@@ -61,7 +62,7 @@ Förstå hur en viss målgrupp beter sig i en viss kanal (t.ex. på webben eller
 
    * Jämför målgrupper med icke-målgrupper (eller mot en annan målgrupp) om mätvärden som sessioner, konverteringsgrad, intäkter per person.
 
-1. Få insikt i kanaloptimeringsstrategier (t.ex. målgruppsregler, innehåll eller erbjudandejustering).
+1. Använd de genererade insikterna för att finjustera kanaloptimeringsstrategier (t.ex. målinriktningsregler, innehåll eller erbjudandejustering).
 
 #### Överväganden om identitetsupplösning
 
@@ -142,4 +143,3 @@ Förstå beteendet hos kunder som nyligen lämnat en viktig målgrupp och vad de
 | Använd skiftläge | Kärnfrågan | Identitetsupplösning | High-auth/single-namespace orgs (händelser som redan finns under 1 person-ID, t.ex. login/CRM) | Fragmenterade/flernamnsorgan (händelser under ECID + CRM + andra) |
 |---------|----------|---------|---------|---------|
 | Utgångna målgrupper - bortfallsanalys | _&quot;Vem har just lämnat en nyckelpublik?&quot;_ <p>_&quot;Vad gjorde de runt att avsluta?&quot;_</p> | Målgruppsavslutning spåras med samma person-ID som används för anslutningen och målgruppskonfigurationen. | Utträden som mäts på ett stabilt inloggnings-/CRM-ID tenderar att reflektera beteendeförändringar. <p>När någon lämnar en målgrupp på detta ID betyder det vanligtvis en verklig förändring (bortfall, nedgradering, inaktivitet).</p><p>Ni kan analysera deras senaste beteenden för att finjustera resorna och vinna tillbaka erbjudanden med tillförsikt.</p> | Utträden är bara synliga där profiler och händelser delar det konfigurerade ID:t och därför krävs noggrann tolkning.<p>Använd utgångna kohorter som ett starkt tips eller en stark signal, men vi rekommenderar att du dubbelkontrollerar med andra datapunkter före kritiska beslut.</p> |
-
