@@ -25,7 +25,7 @@ Genom att lägga till datauppsättningen för sökning efter målklassificering 
 
 ## Anteckningar och överväganden
 
-Din Target-aktivitet måste [använda Customer Journey Analytics som rapportkälla](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja).
+Din Target-aktivitet måste [använda Customer Journey Analytics som rapportkälla](https://experienceleague.adobe.com/sv/docs/target/using/integrate/cja/target-reporting-in-cja).
 
 När data för målklassificeringshändelsen har lagts till i en anslutning finns det några mindre justeringar som behöver göras i datavyn när dessa komponenter har lagts till som dimensioner, bland annat:
 
@@ -35,6 +35,6 @@ När data för målklassificeringshändelsen har lagts till i en anslutning finn
 
 ## Mer detaljerad information
 
-Mer information finns i [Målrapportering i Adobe Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) i Target-dokumentationen.
+Mer information finns i [Målrapportering i Adobe Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/target/using/integrate/cja/target-reporting-in-cja) i Target-dokumentationen.
 
 Se [Experimentationspanelen](../analysis-workspace/c-panels/experimentation.md) för mer information om hur analytiker kan jämföra olika användarupplevelser, marknadsförings- och meddelandevariationer för att avgöra vilka som är bäst för att uppnå ett visst resultat. Ni kan utvärdera lyften och förtroendet för alla A/B-experiment från vilken experimentplattform som helst - online, offline, från Adobe lösningar som Target eller Journey Optimizer, och till och med från BYO (ta fram egna) data.
