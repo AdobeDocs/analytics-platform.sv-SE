@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
+source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Utöver att läggas till som produktadministratör i **Customer Journey Analytic
   | [!UICONTROL Data Management] | [!UICONTROL View Datasets] | Skrivskyddad åtkomst för datauppsättningar och scheman. |
   | [!UICONTROL Identity Management] | [!UICONTROL View Identity Namespaces] | Skrivskyddad åtkomst för identitetsnamnutrymmen. |
 
-  Mer information om Experience Platform-behörigheter finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/permissions).
+  Mer information om Experience Platform-behörigheter finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 
 * Om Journey Optimizer är integrerat med Customer Journey Analytics där Journey Optimizer Connections finns, måste även behörigheterna Journeys läggas till för att få åtkomst till Connections:
@@ -75,7 +75,7 @@ Utöver att läggas till som produktadministratör i **Customer Journey Analytic
   | [!UICONTROL Journeys] | [!UICONTROL View Journeys] | Skrivskyddad åtkomst till resor. |
   | [!UICONTROL Journeys] | [!UICONTROL Manage Journeys] | Läs, skapa, redigera och ta bort resor. |
 
-* Exportera datauppsättningar till [mål](https://experienceleague.adobe.com/sv/docs/experience-platform/destinations/ui/activate/export-datasets)
+* Exportera datauppsättningar till [mål](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)
 
   För att kunna utföra den här åtgärden måste användarna ingå i en **Experience Platform-produktprofil** som ger följande behörigheter:
 
@@ -84,13 +84,13 @@ Utöver att läggas till som produktadministratör i **Customer Journey Analytic
   | [!UICONTROL Destinations] | [!UICONTROL Manage Destinations] | Åtkomst för att läsa, skapa och ta bort målanslutningar och målkonton. |
   | [!UICONTROL Destinations] | [!UICONTROL Activate Destinations] | Tillåt användare att aktivera segment till befintliga mål. Aktiverar mappningssteget i aktiveringsarbetsflödet. Den här behörigheten kräver även att behörigheten Visa mål beviljas den användare som vill aktivera data till mål. |
 
-  Mer information om Experience Platform-behörigheter finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/permissions).
+  Mer information om Experience Platform-behörigheter finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 * Använd [BI-tillägget](../data-views/bi-extension.md)
 
   För användare att använda BI-tillägget, en produktadministratör
 
-   * måste se till att Experience Platform-behörigheterna för användaren innehåller en roll som har frågetjänstresursen med alternativen Hantera frågor och Hantera frågetjänstintegrering. Mer information om Experience Platform-behörigheter finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/ui/permissions).
+   * måste se till att Experience Platform-behörigheterna för användaren innehåller en roll som har frågetjänstresursen med alternativen Hantera frågor och Hantera frågetjänstintegrering. Mer information om Experience Platform-behörigheter finns i [Hantera behörigheter för en produktprofil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
      | Kategori | Behörighet | Beskrivning |
      |---|---|---|
@@ -120,19 +120,19 @@ Fliken **[!UICONTROL Permissions]** ingår i varje produktprofil i [Admin Consol
 | Kategori | Behörighet | Beskrivning |
 | --- | --- | ---|
 | [!UICONTROL Data Views] | *datavyns namn* | Om du växlar **[!UICONTROL Auto-Include]** till **[!UICONTROL On]** kan användare som är en del av den här produktprofilen visa alla befintliga och nyligen skapade datavyer. Om den här inställningen är **[!UICONTROL Off]** kan du välja särskilda datavyer som användarna har åtkomst till. |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Analysis Workspace Access] | Låt användare få åtkomst till [Analysis Workspace](/help/analysis-workspace/home.md). |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Guided Analysis Access] | Låt användarna komma åt [Guidad analys](/help/guided-analysis/overview.md). |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Calculated Metrics Creation] | Låt användarna skapa [beräknade värden](/help/components/calc-metrics/calc-metr-overview.md). Användarna kan tagga, dela, ta bort, byta namn på, godkänna, avgodkänna endast de beräknade mätvärden de skapar eller de beräknade mätvärden som delas med dem. |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Segment Creation] | Låt användare skapa [segment](/help/components/segments/seg-overview.md). Användare kan tagga, dela, ta bort, byta namn på, godkänna, inte godkänna enbart de segment som de skapar eller de segment som delas med dem. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Calculated Metrics Creation] | Låt användarna skapa [beräknade värden](/help/components/calc-metrics/calc-metr-overview.md). Användarna kan tagga, dela, ta bort och byta namn på endast de beräknade mätvärden de skapar eller de beräknade mätvärden som delas med dem. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Segment Creation] | Låt användare skapa [segment](/help/components/segments/seg-overview.md). Användare kan tagga, dela, ta bort, byta namn på endast de segment de skapar eller de segment som delas med dem. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Labs Access] | Ge användarna åtkomst till fliken [Labs](/help/labs/labs.md) i Customer Journey Analytics. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Annotation Creation] | Låt användarna skapa [anteckningar](/help/components/annotations/overview.md). Användare kan endast tagga, dela, ta bort och byta namn på de anteckningar de skapar eller anteckningar som delas med dem. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audience View] | Låt användarna visa [målgrupper](/help/components/audiences/audiences-overview.md). |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Audience Creation] | Låt användare skapa [målgrupper](/help/components/audiences/audiences-overview.md). Kräver [Hantera segment](https://experienceleague.adobe.com/sv/docs/experience-platform/access-control/home) i Adobe Experience Platform. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Audience Creation] | Låt användare skapa [målgrupper](/help/components/audiences/audiences-overview.md). Kräver [Hantera segment](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home) i Adobe Experience Platform. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Data storytelling] | Låt användare [generera bildpresentationer baserat på Workspace-projekt.](/help/analysis-workspace/curate-share/generate-slides.md) |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Audit Logs Access] | Tvinga behörighetskontrollen för användargränssnittet för [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) och granskningsloggarna. |
-| [!UICONTROL Reporting Tools] | [!UICONTROL Share Project Links With Anyone] | Låt användare [dela projekt med vem som helst.](https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Share Project Links With Anyone] | Låt användare [dela projekt med vem som helst.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Forecasting] | Ge användarna tillgång till funktionen [Prognoser](../analysis-workspace/c-forecast/forecasting.md) i Analysis Workspace |
 | [!UICONTROL Reporting Tools] | [!UICONTROL AI Assistant: Product Knowledge] | Ge användarna tillgång till [AI-assistenten](../ai-assistant.md) för produktinformation. |
+| [!UICONTROL Reporting Tools] | [!UICONTROL Data Insights Agent] | Ge användare tillgång till [Data Insights Agent](../data-analysis-ai.md) för AI-baserade datainsikter. |
 | [!UICONTROL Reporting Tools] | [!UICONTROL Intelligent Captions] | Låt användarna komma åt [Intelligenta bildtexter](/help/analysis-workspace/visualizations/intelligent-captions.md). |
 | [!UICONTROL Data View Tools] | [!UICONTROL Full Table Export] | Låt användare [exportera fullständiga tabeller till molnet](/help/analysis-workspace/export/export-cloud.md). |
 | [!UICONTROL Data View Tools] | [!UICONTROL CJA BI Extension] | Låt användare använda [BI-tillägget](../data-views/bi-extension.md). |
@@ -147,7 +147,7 @@ En annan åtkomstkontrollnivå kan användas på rapportnivå i Workspace. Du ka
 
 Du kan inte bevilja eller neka tillstånd för enskilda mått eller mått i Customer Journey Analytics på samma sätt som i traditionella Adobe Analytics. Mätvärden och dimensioner kan ändras i [datavyer](/help/data-views/data-views.md) och kan ändras i Customer Journey Analytics. Om du ändrar dem ändras även rapporteringen retroaktivt.
 
-## Användningsexempel
+## Användningsfall
 
 Här följer några exempel som visar hur åtkomstkontroll kan användas i realtidsscenarier.
 

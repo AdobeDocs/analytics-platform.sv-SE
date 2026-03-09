@@ -4,9 +4,9 @@ title: Dela segment
 feature: Filters, Segments
 exl-id: c8559c7b-f886-4046-9bd6-80778882afcc
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 I [segmenthanteraren](seg-manage.md) kan du dela segment. Beroende på dina behörigheter kan du dela segment med hela organisationen, grupper eller enskilda användare:
 
-* **Administratörer**: Administratörer kan dela segment med hela organisationen, med grupper inom en organisation och med enskilda användare. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/se/enterprise/using/manage-products.html).
+* **Administratörer**: Administratörer kan dela segment med hela organisationen, med grupper inom en organisation och med enskilda användare. Mer information finns i [Admin Console-dokumentationen](https://helpx.adobe.com/enterprise/using/manage-products.html).
 * **Icke-administratörer**: Icke-administratörer kan bara dela de segment som de har skapat och endast med enskilda användare. |
 
 Dela ett eller flera segment:
@@ -32,7 +32,9 @@ Dela ett eller flera segment:
 
    1. Välj **[!UICONTROL Save]** om du vill dela segmenten. Välj **[!UICONTROL Cancel]** om du vill avbryta.
 
-## God praxis
+Om du har åtkomst till delade segment kan du använda dessa i projekt eller som en del av [inställningarna för en datavy](/help/data-views/session-settings.md).
+
+## Bästa praxis
 
 Nedan följer några tips om hur du bör dela segment och med vilka du bör dela segment.
 

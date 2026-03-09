@@ -4,28 +4,30 @@ description: Integrera Adobe Target med Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
 exl-id: 0b52af5b-b65c-4929-9ca3-547a640936f3
-source-git-commit: 979564d0249abadd454ce43aba9aeae2c78a44f0
+source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
 
 # Målrapportering
 
-Med Target Reporting i Customer Journey Analytics kan ni mäta och rapportera om Adobe Target-aktiviteter direkt i Customer Journey Analytics. Den här funktionen är jämförbar med vad som utförs i Adobe Analytics (AA) via Analytics for Target (A4T), men med anslutningen till Adobe Experience Platform (AEP).
+Med Target Reporting i Customer Journey Analytics kan ni mäta och rapportera Adobe Target-aktiviteter direkt i Customer Journey Analytics. Den här funktionen är jämförbar med vad som utförs i Adobe Analytics (AA) via Analytics for Target (A4T), men med anslutningen till Adobe Experience Platform (AEP).
 
-Genom att lägga till datauppsättningen för sökning efter målklassificering (som är tillgänglig som standard i Experience Platform) i en Customer Journey Analytics Connection, kan användare nu exponeras korrekt för rapportverktyg för mål, attribuering av målorder och andra funktioner. Med endast vissa mindre förberedelser och justeringar i datavyn i Customer Journey Analytics kan dessa aktiviteter göras omedelbart tillgängliga för alla användare som vill skicka Target-data direkt till CJA.
+Genom att lägga till datauppsättningen för sökning efter målklassificering (som är tillgänglig som standard i Experience Platform) i en Customer Journey Analytics Connection har användarna nu korrekt exponering för rapportverktyg för mål, attribuering av målorder och andra funktioner. Med endast vissa små förberedelser och justeringar i Customer Journey Analytics datavy kan dessa aktiviteter göras tillgängliga omedelbart för alla användare som vill skicka Target-data direkt till CJA.
 
 ## Fördelar
 
 * Marknadsförarna kan när som helst dynamiskt tillämpa Customer Journey Analytics-framgångsmått på Target-aktivitetsrapporter. Du behöver inte ange allt innan du kör aktiviteten.
-* Marknadsförarna kan utnyttja Customer Journey Analytics funktioner, som Experimentation Panel, för att analysera webbplatspersonaliseringen ytterligare.
-* Marknadsförarna kan ha en enda rapportkälla för Adobe Journey Optimizer och Target. Båda personaliseringsprodukterna kan kopplas till Customer Journey Analytics för att ge en mer helhetsbild av din webbpersonalisering.
+* Marknadsförarna kan utnyttja Customer Journey Analytics funktioner, t.ex. Experimentation Panel, för att analysera webbplatspersonaliseringen ytterligare.
+* Marknadsförarna kan ha en enda rapportkälla för Adobe Journey Optimizer och Target. Båda personaliseringsprodukterna kan anslutas till Customer Journey Analytics för en mer helhetsbild av er webbpersonalisering.
 
 ## Anteckningar och överväganden
 
-När data för målklassificeringshändelsen har lagts till i en CJA-anslutning finns det några mindre justeringar att göra i CJA-datavyn när dessa komponenter har lagts till som dimensioner, bland annat:
+Din Target-aktivitet måste [använda Customer Journey Analytics som rapportkälla](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja).
+
+När data för målklassificeringshändelsen har lagts till i en anslutning finns det några mindre justeringar som behöver göras i datavyn när dessa komponenter har lagts till som dimensioner, bland annat:
 
 * Att ange beständighet som liknar hur den spåras i Target (kontrollera med en Target-konsult eller kunden för att se till att inställningarna är korrekta).
 
@@ -33,6 +35,6 @@ När data för målklassificeringshändelsen har lagts till i en CJA-anslutning 
 
 ## Mer detaljerad information
 
-Mer information finns i [Målrapportering i Adobe Customer Journey Analytics](https://experienceleague.adobe.com/sv/docs/target/using/integrate/cja/target-reporting-in-cja) i Target-dokumentationen.
+Mer information finns i [Målrapportering i Adobe Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/target/using/integrate/cja/target-reporting-in-cja) i Target-dokumentationen.
 
-Se [Experimentationspanelen](../analysis-workspace/c-panels/experimentation.md) för mer information om hur analytiker kan jämföra olika användarupplevelser, marknadsförings- och meddelandevariationer för att avgöra vilka som är bäst för att uppnå ett visst resultat. Ni kan utvärdera lyften och förtroendet för alla A/B-experiment från vilken experimentplattform som helst - online, offline, från Adobe-lösningar som Target eller Journey Optimizer, och till och med från BYO (hämta in dina egna) data.
+Se [Experimentationspanelen](../analysis-workspace/c-panels/experimentation.md) för mer information om hur analytiker kan jämföra olika användarupplevelser, marknadsförings- och meddelandevariationer för att avgöra vilka som är bäst för att uppnå ett visst resultat. Ni kan utvärdera lyften och förtroendet för alla A/B-experiment från vilken experimentplattform som helst - online, offline, från Adobe lösningar som Target eller Journey Optimizer, och till och med från BYO (ta fram egna) data.
