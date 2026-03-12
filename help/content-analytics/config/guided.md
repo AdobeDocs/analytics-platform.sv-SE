@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6e7776cbaf99d5b2031b0fb3872c331852443b74
+source-git-commit: 359b0364b1de82d6e49c6ba8e7222d459c9825b8
 workflow-type: tm+mt
-source-wordcount: '3288'
+source-wordcount: '3301'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,15 @@ Guiden för guidad konfiguration består av fyra avsnitt ([Detaljer](#details), 
 >title="Information"
 >abstract="I den här guiden anges de krav som krävs för att konfigurera Content Analytics. Ange ett namn för konfigurationen"
 
-<!-- markdownlint-enable MD034 -->
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_connection_boldheader"
+>title="Anslutning"
+>abstract="**Anslutning**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_connection_header"
+>title="Anslutning"
+>abstract="Välj en befintlig anslutning från Customer Journey Analytics som du vill sammanfoga dina Content Analytics-data med."
 
 Varje konfiguration kräver ett unikt namn. Exempel: `Example Content Analytics configuration`. Namnet krävs för att spara eller implementera en konfiguration.
 
@@ -276,7 +284,7 @@ Så här redigerar du befintliga eller inkluderar nya upplevelser i en implement
    * Processen som genererar upplevelseattribut från Content Analytics händelsedata
    * Rapporteringsmallen i Customer Journey Analytics.
 
-* Välj ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** om du vill redigera konfigurationen för datainsamling ytterligare för upplevelser i Content Analytics. Du omdirigeras till [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) i taggegenskapen som är associerad med den aktuella konfigurationen.
+* Välj ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** om du vill redigera konfigurationen för datainsamling ytterligare för upplevelser i Content Analytics. Du omdirigeras till [Adobe Content Analytics-tillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) i taggegenskapen som är associerad med den aktuella konfigurationen.
 
 
 ### Datainsamling {#onboarding-data-collection}
@@ -356,32 +364,32 @@ I det här avsnittet konfigurerar du hur du samlar in dina Content Analytics-dat
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
 >title="Datainsamling för platser för mobila upplevelser"
->abstract="**Upplevelseplatser att inkludera/exkludera**"
+>abstract="**Upplevelseplatser som ska uteslutas**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="Datainsamling för platser för mobila upplevelser"
->abstract="Ange vilka upplevelseplatser som ska **inkluderas** eller **exkluderas** vid datainsamling för Content Analytics."
+>abstract="Ange vilka upplevelseplatser som ska **exkluderas** när data samlas in för Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
 >title="Datainsamling för platser för mobila tillgångar"
->abstract="**Resursplatser som ska inkluderas/exkluderas**"
+>abstract="**Resursplatser som ska exkluderas**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
 >title="Datainsamling för platser för mobila tillgångar"
->abstract="Ange vilka resursplatser som ska **inkluderas** eller **exkluderas** vid datainsamling för Content Analytics."
+>abstract="Ange vilka resursplatser som ska **exkluderas** när du samlar in data för Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
 >title="Datainsamling för URL:er för mobila resurser"
->abstract="**Resurs-URL:er som ska inkluderas/exkluderas**"
+>abstract="**Resurs-URL:er som ska exkluderas**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
 >title="Datainsamling för URL:er för mobila resurser"
->abstract="Ange vilka resurs-URL:er som ska vara **inkluderade** eller **exkluderade** vid datainsamling för Content Analytics."
+>abstract="Ange vilka resurs-URL:er som ska vara **exkluderade** vid datainsamling för Content Analytics."
 
 
 #### Ny konfiguration {#new-configuration}
@@ -414,20 +422,20 @@ I en ny konfiguration måste du definiera om du vill använda en befintlig tagge
 
 >[!IMPORTANT]
 >
->Ta manuellt bort det automatiska inkluderade Web SDK-tillägget från den nyligen skapade Tags-egenskapen om du har en befintlig Web SDK-implementering som använder [JavaScript-biblioteket](https://experienceleague.adobe.com/sv/docs/experience-platform/web-sdk/install/library) i stället för [taggtillägget](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+>Ta manuellt bort det automatiska inkluderade Web SDK-tillägget från den nyligen skapade Tags-egenskapen om du har en befintlig Web SDK-implementering som använder [JavaScript-biblioteket](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library) i stället för [taggtillägget](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 >
 
 
 
 #### Befintlig konfiguration {#existing-configuration}
 
-För en befintlig konfiguration kan du inte redigera taggegenskapen. Om du vill uppdatera en taggegenskap som är kopplad till en befintlig konfiguration använder du [Content Analytics Tag-tilläggskonfigurationen](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview).
+För en befintlig konfiguration kan du inte redigera taggegenskapen. Om du vill uppdatera en taggegenskap som är kopplad till en befintlig konfiguration använder du [Content Analytics Tag-tilläggskonfigurationen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview).
 
 Du kan dock redigera sidor och resurser som ska inkluderas eller exkluderas.
 
-* Om du vill redigera vilka sidor som ska inkluderas eller exkluderas när du samlar in data för Content Analytics väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Experience]**. Du omdirigeras till det [Adobe Content Analytics-tillägg](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) som är associerat med taggegenskapen för den aktuella Content Analytics-konfigurationen. Du kan redigera det reguljära uttrycket så att sidor tas med eller utesluts. Kontrollera att du [publicerar](#publish) dina ändringar.
+* Om du vill redigera vilka sidor som ska inkluderas eller exkluderas när du samlar in data för Content Analytics väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Experience]**. Du omdirigeras till det [Adobe Content Analytics-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) som är associerat med taggegenskapen för den aktuella Content Analytics-konfigurationen. Du kan redigera det reguljära uttrycket så att sidor tas med eller utesluts. Kontrollera att du [publicerar](#publish) dina ändringar.
 
-* Om du vill redigera vilka resurser som ska inkluderas eller exkluderas när du samlar in data för Content Analytics väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Asset]**. Du omdirigeras till det [Adobe Content Analytics-tillägg](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) som är associerat med taggegenskapen för den aktuella Content Analytics-konfigurationen. Du kan redigera det reguljära uttrycket för att inkludera eller exkludera resurser. Kontrollera att du [publicerar](#publish) dina ändringar.
+* Om du vill redigera vilka resurser som ska inkluderas eller exkluderas när du samlar in data för Content Analytics väljer du ![Redigera](/help/assets/icons/Edit.svg) **[!UICONTROL Edit]** under **[!UICONTROL Asset]**. Du omdirigeras till det [Adobe Content Analytics-tillägg](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) som är associerat med taggegenskapen för den aktuella Content Analytics-konfigurationen. Du kan redigera det reguljära uttrycket för att inkludera eller exkludera resurser. Kontrollera att du [publicerar](#publish) dina ändringar.
 
 
 ### Åsidosättningar av sidhuvud
@@ -455,7 +463,7 @@ Du kan också ange ett rubriknamn och ett hemligt rubrikvärde i avsnittet **[!U
 
 När du har angett all nödvändig information visas en sammanfattning med information om de artefakter som skapas eller ändras.
 
-* En sammanfattning av **[!UICONTROL You're almost ready to implement _konfigurationsnamnet _för Content Analytics]**&#x200B;visas när du implementerar en ny konfiguration.
+* En sammanfattning av **[!UICONTROL You're almost ready to implement _konfigurationsnamnet _för Content Analytics]**visas när du implementerar en ny konfiguration.
 
 * För befintliga implementerade konfigurationer visas en sammanfattning av **[!UICONTROL You have implemented _konfigurationsnamn _för Content Analytics]**.
 
