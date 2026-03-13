@@ -6,9 +6,9 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
-source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
+source-git-commit: 9d5c895672e422a82ef68b0af6cd85359c9b11ea
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
@@ -29,14 +29,19 @@ Du kan visa och hantera alla schemalagda arbetsböcker på fliken **[!UICONTROL 
 
 1. Välj **[!UICONTROL Schedule]** i Report Builder-hubben
 
-1. Välj fliken **[!UICONTROL Workbooks]**. Du ser en lista över alla schemalagda arbetsböcker.
+1. Välj fliken **[!UICONTROL Workbooks]**. Du ser en lista över alla schemalagda arbetsböcker. (Du kan också välja fliken **[!UICONTROL Legacy]** om du vill visa en lista över äldre arbetsböcker som behöver migreras till den nya Report Builder.)
 
    ![Schemalagd arbetsbok](assets/scheduled-workbooks.png){zoomable="yes"}
 
-   Du kan hålla muspekaren över ikonen om du vill visa statusen för en schemalagd arbetsbok.
+1. Gör något av följande:
 
-   Använd ![Sök](/help/assets/icons/Search.svg) om du vill söka efter specifika schemalagda arbetsböcker.
-Använd ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att definiera vilka kolumner som ska visas.
+   * Håll muspekaren över ikonen om du vill visa statusen för en schemalagd arbetsbok.
+
+   * Sök efter specifika schemalagda arbetsböcker i sökfältet ![Sök](/help/assets/icons/Search.svg).
+
+   * Välj kolumnikonen ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) för att definiera vilka kolumner som ska visas.
+
+   * Markera filterikonen ![Filterikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) och välj sedan [!UICONTROL **Visa alla**] för att visa alla schemalagda arbetsböcker för en viss organisation.
 
 1. Markera en eller flera arbetsböcker.
 
