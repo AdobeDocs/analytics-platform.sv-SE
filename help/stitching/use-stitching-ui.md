@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: c1acbea7e22e42a2f64f71af054abe2dd6082130
+source-git-commit: 1e0d028db957743416bc7840f5a3682206a3edf3
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1736'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Du måste kontrollera och uppfylla kraven för sammanfogningsmetoden som du ange
 
 Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
 
-* Om du ska använda XDM-schemafält för beständigt ID eller person-ID kontrollerar du att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
+* Om du ska använda XDM-schemafält för beständigt ID eller person-ID kontrollerar du att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verifiera identitetstäckning för både beständigt ID och person-ID:
 
    * **Beständigt ID**
@@ -58,7 +58,7 @@ Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händ
 
 
    * **Person-ID**
-      * För diagrambaserade sammanfogningar måste identitetsdiagrammet innehålla fragment som länkar ID-värden från det valda beständiga ID-namnutrymmet och ID-namnutrymmet. Du kan köra ett test genom att gå till [Experience Platform Identity Graphics Viewer](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} och fråga diagrammet efter några beständiga ID-värden. Kontrollera om dessa beständiga ID-värden är länkade till värden för person-ID i diagrammet.
+      * För diagrambaserade sammanfogningar måste identitetsdiagrammet innehålla fragment som länkar ID-värden från det valda beständiga ID-namnutrymmet och ID-namnutrymmet. Du kan köra ett test genom att gå till [Experience Platform Identity Graphics Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} och fråga diagrammet efter några beständiga ID-värden. Kontrollera om dessa beständiga ID-värden är länkade till värden för person-ID i diagrammet.
       * För fältbaserad sammanfogning frågar du 7 dagar med data där ditt person-ID-fält inte är null och dividerar med en fråga på 7 dagar med data för alla händelser i din datamängd. Den här procentandelen bör helst vara över 5 procent.
 
         Exempel på en fråga som du kan använda för verifiering:
@@ -93,7 +93,7 @@ Du kan aktivera identitetssammanfogning när du [lägger till](/help/connections
 >id="connection_changeto_identitygraph"
 >title="Ändra till identitetsdiagram"
 >abstract="Kontrollera att du har avslutat konfigurationen av identitetsdiagrammet innan du använder identitetsdiagrammet för sammanfogning."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/stitching/gbs" text="Diagrambaserad utjämning"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Diagrambaserad utjämning"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -103,7 +103,7 @@ Du kan aktivera identitetssammanfogning när du [lägger till](/help/connections
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Värden för textning"
->abstract="Stitching-mått beräknas med en exempeluppsättning data från alla data som har importerats under de senaste 7 dagarna.<br>Den här exempeluppsättningen data skiljer sig vanligtvis från exempeldata som används i tabellen **[!UICONTROL Preview]**."
+>abstract="Stitching-mått beräknas med en exempeluppsättning data som har en tidsstämpel för händelser under de senaste 7 dagarna.<br>Den här exempeluppsättningen data skiljer sig vanligtvis från exempeldata som används i tabellen **[!UICONTROL Preview]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -125,7 +125,7 @@ Du kan aktivera identitetssammanfogning när du [lägger till](/help/connections
 >id="connection_stitchingmetrics_badids"
 >title="Felaktiga ID:n"
 >abstract="Felaktiga ID:n är ID-värden som allvarligt påverkar rapporteringsdata."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/technotes/badids" text="Felaktiga ID:n"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="Felaktiga ID:n"
 
 
 ### Inställningar för datauppsättning
@@ -188,9 +188,7 @@ Utöver det vanliga **[!UICONTROL Datasets preview]**-gränssnittet finns två y
 
 #### Värden för textning
 
-
-
-**[!UICONTROL Stitching metrics]** beräknas med hjälp av en exempeluppsättning data, från alla data som har importerats under de senaste 7 dagarna. Den här exempeluppsättningen med data skiljer sig vanligtvis från exempeldata som används i tabellen **[!UICONTROL Preview]**. Stitching metrics are details for:
+**[!UICONTROL Stitching metrics]** beräknas med en exempeluppsättning data som har en tidsstämpel med händelser under de senaste 7 dagarna. Den här exempeluppsättningen med data skiljer sig vanligtvis från exempeldata som används i tabellen **[!UICONTROL Preview]**. Stitching metrics are details for:
 
 * **[!UICONTROL Person ID coverage]**: Täckningen för det valda person-ID som används för identifiering under sammanslagningsprocessen (live och replay).
    * För bästa fältbaserade sammanfogningsresultat bör ett person-ID (användarinformation) skickas på minst en händelse för varje beständigt ID (enhetsinformation).
@@ -234,7 +232,7 @@ När du har sparat en anslutning startas sammanfogningsprocessen för sammanfogn
 
 >[!CAUTION]
 >
->För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**&#x200B;för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
+>För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
 >
 
 
