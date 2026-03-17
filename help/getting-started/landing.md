@@ -4,58 +4,68 @@ title: Customer Journey Analytics landningssida
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 1741b2f3fc0588aaf0f403c6f3863ce837e376e9
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
 
 # Customer Journey Analytics landningssida
 
-Startsidan för Customer Journey Analytics markerar [!DNL Analysis Workspace] och innehåller en startsida för projektledaren och en utbildningssektion som hjälper dig att hantera kundresedata mer effektivt.
+Customer Journey Analytics landningssida innehåller följande underflikar:
+
+**[!UICONTROL Projects]**: Anpassad design som kombinerar datakomponenter, tabeller och visualiseringar som du har skapat eller som någon annan har skapat och delat med dig. [!UICONTROL Projects] refererar också till tomma projekt och tomma mobilstyrkort.
+
+**[!UICONTROL Templates]**: Innehåller mallar från Adobe och eventuella mallar som är specifika för din organisation.
+
+**[!UICONTROL Learning]**: Innehåller praktiska videoutgångar, självstudiekurser och länkar till dokumentation. Det innehåller även information om uppgradering från Adobe Analytics till Customer Journey Analytics, tillsammans med ett verktyg för att dynamiskt generera uppgraderingssteg som är specifika för din organisation.
+
+![CJA landningssida, vänster räl](assets/cja-landing-page-left-rail.png)
 
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Startsida i Analysis Workspace](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/cja-basics/customer-journey-analytics-landing-page){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Startsida i Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/customer-journey-analytics-landing-page){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
 
-Customer Journey Analytics landningssida består av följande underflikar: Projekt och utbildningsmaterial.
-
-**[!UICONTROL Projects]** är anpassade designer som kombinerar datakomponenter, tabeller och visualiseringar som du har skapat eller som någon annan har skapat och delat med dig. [!UICONTROL Projects] refererar också till tomma projekt och tomma mobilstyrkort.
-
-Fliken **[!UICONTROL Learning]** innehåller praktiska videoutgångar, självstudiekurser och länkar till dokumentation.
-
->[!BEGINTABS]
-
->[!TAB Projekt]
-
-![Startsida för projekt](assets/landing-projects.png)
-
->[!TAB Om]
-
-![Lär dig landningssida](assets/landing-learning.png)
-
-
->[!ENDTABS]
-
 ## Projekt
 
-[!UICONTROL Projects] fungerar som startsida för [!UICONTROL Workspace]. Fliken **[!UICONTROL Projects]** visar företagsmappen, eventuella personliga mappar som du har skapat, dina Workspace-projekt och Mobile Scorecards. Använd den här sidan om du vill visa, skapa och ändra mappar, projekt och mobila styrkort. Mer information finns i [Projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
+Avsnittet **[!UICONTROL Projects]** i den vänstra listen fungerar som startsida för fliken [!UICONTROL **Workspace**].
 
+Så här kommer du åt projekt i Customer Journey Analytics:
+
+1. Klicka på fliken [!UICONTROL **Workspace**].
+
+1. Välj [!UICONTROL **Projekt**] i den vänstra listen.
+
+I avsnittet Projekt visas företagsmappen, eventuella personliga mappar som du har skapat, dina Workspace-projekt och Mobile Scorecards. Använd den här sidan om du vill visa, skapa och ändra mappar, projekt och mobila styrkort. Mer information finns i [Projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
 **[!UICONTROL Projects]** är anpassade designer som kombinerar datakomponenter, tabeller och visualiseringar som du har skapat eller som någon annan har skapat och delat med dig. [!UICONTROL Projects] refererar också till tomma projekt och tomma mobilstyrkort.
 
 >[!NOTE]
 >
->Flera av följande inställningar finns kvar under sessionen och mellan sessionerna. Till exempel den flik du har markerat, de markerade segmenten, de markerade kolumnerna och kolumnsorteringsriktningen. Sökresultaten är inte beständiga.
+>Flera av följande inställningar finns kvar mellan sessionerna. Till exempel den flik du har markerat, de markerade segmenten, de markerade kolumnerna och kolumnsorteringsriktningen. Sökresultaten kvarstår inte.
 
 Mer information finns i [Projekt](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
+
+## Mallar
+
+Så här kommer du åt mallar i Customer Journey Analytics:
+
+1. Klicka på fliken [!UICONTROL **Workspace**].
+
+1. I avsnittet [!UICONTROL **Mallar**] till vänster kan du välja antingen Adobe-mallar eller företagsmallar.
+
+Mer information om hur du använder mallar finns i följande resurser:
+
+* [Använd mallar](/help/analysis-workspace/templates/use-templates.md)
+
+* [Skapa och hantera mallar](/help/analysis-workspace/templates/create-templates.md)
 
 <!--
 
@@ -93,7 +103,7 @@ The available columns are:
 | [!UICONTROL Create new] | Opens the project modal where you can create a Workspace project or a Mobile scorecard or open a company template.  |
 | [!UICONTROL Show less<br> Show more] | Toggles between not showing and showing the banner: ![Top banner](assets/top-banner.png) |
 | [!UICONTROL Workspace project] | Creates a blank [Workspace project](/help/analysis-workspace/home.md) for you to  design and build. |
-| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=sv-SE) for you to design and build. |
+| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) for you to design and build. |
 | [!UICONTROL Open Training Tutorial] | Opens the Workspace training tutorial that guides you through the process of building a new starter project in a step-by-step tutorial.|
 | [!UICONTROL Open release notes] | Opens the Adobe Analytics section of the latest Adobe Experience Cloud release notes. |
 | Filter icon | Filters by tags, report suites, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |
@@ -111,20 +121,20 @@ The available columns are:
 
 ## Utbildning
 
-Utbildningssidan innehåller praktiska videoutgångar, självstudiekurser och länkar till dokumentation.
+Avsnittet **[!UICONTROL Learning]** på fliken [!UICONTROL **Workspace**] innehåller information om nybörjare, mellanliggande eller avancerade funktioner och användningsfall i Customer Journey Analytics. Här finns även information om hur du uppgraderar från Adobe Analytics till Customer Journey Analytics.
 
-Lär dig mer med utbildningssidan i Customer Journey Analytics:
+### Utbildningsvägar
 
-* Nybörjare, mellanliggande eller avancerade funktioner och användningsområden i Customer Journey Analytics
-* Gå smidigare från Adobe Analytics till Customer Journey Analytics
+Så här får du information om utbildningsvägar i Customer Journey Analytics:
 
-Så här kommer du åt utbildningsinnehållet:
+1. Klicka på fliken [!UICONTROL **Workspace**].
 
-* I Customer Journey Analytics väljer du [!UICONTROL **Workspace**] på den översta menyn och sedan [!UICONTROL **Om**] på den vänstra panelen.
+1. Välj [!UICONTROL **Utbildningsvägar**] i avsnittet [!UICONTROL **Om**] i den vänstra listen.
 
-### Funktioner
+   Den här sidan innehåller praktiska videoutgångar, självstudiekurser och länkar till dokumentation.
 
-Utbildningssidan har följande funktioner
+
+Sidan [!UICONTROL **Utbildningsvägar**] innehåller följande funktioner:
 
 * **Filtrera innehåll:** Använd ![Filter](/help/assets/icons/Filter.svg) för att filtrera utbildningsinnehåll efter **[!UICONTROL Type]** (**[!UICONTROL Document]**, **[!UICONTROL Video]** och **[!UICONTROL Tours & tutorials]**) och **[!UICONTROL Experience Level]** (**[!UICONTROL Beginner]**, **[!UICONTROL Intermediate]** eller **[!UICONTROL Advanced]**).
 * **Spåra förlopp:** När du har markerat en del av innehållet visas en ![CheckCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** -tagg. Den här taggen hjälper dig att spåra dina framsteg med utbildningsinnehållet. Du kan markera taggen ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL Viewed]** om du vill ta bort den från ett visst innehåll.
@@ -132,6 +142,18 @@ Utbildningssidan har följande funktioner
    * **[!UICONTROL Visit YouTube]:** Visa hela spelningslistan för Analysis Workspace YouTube.
    * [!UICONTROL **Besök Experience League**]: Se hela uppsättningen Customer Journey Analytics-dokumentation för Experience League.
 * **Grundläggande om nya användare:** Demonstrationen [!UICONTROL Learning Workspace Fundamentals] rekommenderas för nya användare. Demonstrationen tar dig direkt till Workspace och leder dig igenom de vanligaste åtgärderna. Demonstrationen kan också startas om när som helst i Workspace via verktygstipset i sidhuvudet [Frihandspanelen](/help/analysis-workspace/c-panels/freeform-panel.md) eller [Tom panel](/help/analysis-workspace/c-panels/blank-panel.md).
+
+### Uppgradera till Customer Journey Analytics
+
+Så här får du information om uppgradering till Customer Journey Analytics:
+
+1. Klicka på fliken [!UICONTROL **Workspace**].
+
+1. Välj [!UICONTROL **Uppgradera till Customer Journey Analytics**] i avsnittet [!UICONTROL **Om**] i den vänstra listen.
+
+Den här sidan är avsedd för kunder som ännu inte har uppgraderat från Adobe Analytics till Customer Journey Analytics. Där finns ett frågeformulär som ger dynamiskt genererade uppgraderingssteg för organisationens unika omständigheter.
+
+Mer information finns i [Generera uppgraderingssteg dynamiskt för din organisation](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#dynamically-generate-upgrade-steps-for-your-organization) i [Uppgradera från Adobe Analytics till Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md).
 
 ## Önskad startsida
 
