@@ -42,7 +42,7 @@ Följande resurser hjälper dig att förstå det grundläggande arbetsflödet f�
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigera i dataflödesgränssnittet](https://video.tv.adobe.com/v/25452?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigera i dataflödesgränssnittet](https://video.tv.adobe.com/v/3428568?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -50,6 +50,6 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigera i datafl
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hitta ditt datafeed-id](https://video.tv.adobe.com/v/335747?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hitta ditt datafeed-id](https://video.tv.adobe.com/v/3480886?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
