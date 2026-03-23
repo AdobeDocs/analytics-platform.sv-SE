@@ -9,9 +9,9 @@ index: true
 user-guide-title: Användarhandbok om Customer Journey Analytics
 user-guide-description: Läs mer om Adobe Customer Journey Analytics och hur du använder Analysis Workspace med data från Experience Platform.
 breadcrumb-title: Användarhandbok om Customer Journey Analytics
-source-git-commit: 82fe9ca3b702f9213e2eb1e4ab0260500be0f731
+source-git-commit: ee7989a36c9d25468dee5b1b2902ed2757e3a4b7
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1390'
 ht-degree: 11%
 
 ---
@@ -324,7 +324,7 @@ ht-degree: 11%
    + [Engagemang](../guided-analysis/types/engagement.md)
    + [Effekt för första användningen](../guided-analysis/types/first-use-impact.md)
    + [Frekvens](../guided-analysis/types/frequency.md)
-   + [Tratt](../guided-analysis/types/funnel.md)
+   + [Funnel](../guided-analysis/types/funnel.md)
    + [Nettotillväxt](../guided-analysis/types/net-growth.md)
    + [Frisläpp påverkan](../guided-analysis/types/release-impact.md)
    + [Kvarhållning](../guided-analysis/types/retention.md)
@@ -412,6 +412,11 @@ ht-degree: 11%
       + [Hantera exporter](/help/components/exports/manage-exports.md)
       + [Hantera exportloggar](/help/components/exports/manage-export-logs.md)
       + [Felsöka exporter](/help/components/exports/troubleshoot-exports.md)
+      + Dataflöden {#cja-data-feeds}
+         + [Översikt över dataflöden](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+         + [Jämför Adobe Analytics dataflöden](/help/components/exports/cja-data-feeds/df-comparison.md)
+         + [Förbereda för att mappa kolumner](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
+         + [Mappa kolumner](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
    + Dataordlista {#data-dictionary}
       + [Översikt](../components/data-dictionary/data-dictionary-overview.md)
       + [Visa komponentinformation i Data Dictionary](../components/data-dictionary/view-data-dictionary.md)
@@ -547,7 +552,7 @@ ht-degree: 11%
 + Tekniska anteckningar {#technotes}
    + [Åtkomstkontroll](../technotes/access-control.md)
    + [Felaktiga ID:n](/help/technotes/badids.md)
-   + [Browser and language](/help/technotes/browser-language.md)
+   + [Webbläsare och språk](/help/technotes/browser-language.md)
    + [Datacenter](../technotes/data-centers.md)
    + [Borttagningskonsekvenser](../technotes/deletion.md)
    + [Domäner](../technotes/domains.md)
