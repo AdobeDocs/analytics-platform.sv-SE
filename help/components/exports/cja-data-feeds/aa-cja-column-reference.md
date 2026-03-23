@@ -4,22 +4,23 @@ description: Bestäm hur du tar en viss dataflödeskolumn från Adobe Analytics 
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: fbd48b74505e18c24260b87b715ad036a6a60020
+exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
+source-git-commit: af5b30cd71ebe46e2af584ee502ef631c829f5ea
 workflow-type: tm+mt
-source-wordcount: '3236'
+source-wordcount: '3350'
 ht-degree: 0%
 
 ---
 
 # Mappa Adobe Analytics dataflödeskolumner till Customer Journey Analytics
 
-Eftersom Adobe Analytics och Customer Journey Analytics fungerar på ett helt annat sätt går det inte att mappa :1-kolumner. Skillnaderna förvärras ytterligare av att alla implementeringar av Adobe Analytics och Customer Journey Analytics skiljer sig åt.
+Det går inte att mappa :1 till true mellan dataflödeskolumner från Adobe Analytics och Customer Journey Analytics. De två produkterna skiljer sig avsevärt åt, och implementeringen i respektive organisation kan variera avsevärt.
 
-Referensen är avsedd att hjälpa datatekniker att anpassa sina Adobe Analytics-fokuserade arbetsflöden för dataflöden kolumn för kolumn till ett arbetsflöde som baseras på Customer Journey Analytics dataflöden.
+Denna referens hjälper datatekniker att utvärdera Adobe Analytics-kolumner för dataflöden och identifiera de närmaste Customer Journey Analytics-motsvarigheterna för sina arbetsflöden.
 
 >[!NOTE]
 >
->Den här referensen innehåller bara kolumner som anses vara aktuella av Adobe, baserat på [kolumnreferensen för analysdataflöde](https://experienceleague.adobe.com/sv/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Om du har en Analytics-dataflödeskolumn som inte finns med i den här tabellen som du aktivt använder, bör du läsa organisationens designdokument för att ta reda på vilken som är den bästa motsvarigheten i Customer Journey Analytics.
+>Den här referensen innehåller bara kolumner som anses vara aktuella av Adobe, baserat på [kolumnreferensen för analysdataflöde](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Om du har en Analytics-dataflödeskolumn som inte finns med i den här tabellen som du aktivt använder, bör du läsa organisationens designdokument för att ta reda på vilken som är den bästa motsvarigheten i Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -76,7 +77,9 @@ Dimensionen för AMO EF ID, som används i Adobe Advertising-integreringar.
 
 +++**`browser`**
 
-Ett numeriskt ID som representerar webbläsaren. Refererar till `browser.tsv`-söktabellen.
+Ett numeriskt ID som representerar webbläsaren.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -106,7 +109,9 @@ Dimensionen Spårningskod.
 
 +++**`carrier`**
 
-Adobe Advertising integrationsvariabel. Anger mobiloperatör. Nyckelvärdet för `carrier.tsv` dynamisk sökning.
+Adobe Advertising integrationsvariabel. Anger mobiloperatör.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -136,6 +141,10 @@ Activity Map länkdimension.
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+Den här kolumnen gäller inte eftersom Customer Journey Analytics ännu inte stöder Activity Map.
+
 +++
 
 +++**`clickmaplinkbyregion`**
@@ -143,6 +152,10 @@ Activity Map länkdimension.
 Activity Map länk per region.
 
 {{cja-df-post}}
+
+{{cja-df-na}}
+
+Den här kolumnen gäller inte eftersom Customer Journey Analytics ännu inte stöder Activity Map.
 
 +++
 
@@ -152,6 +165,10 @@ Activity Map siddimension.
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+Den här kolumnen gäller inte eftersom Customer Journey Analytics ännu inte stöder Activity Map.
+
 +++
 
 +++**`clickmapregion`**
@@ -159,6 +176,10 @@ Activity Map siddimension.
 Activity Map regiondimension.
 
 {{cja-df-post}}
+
+{{cja-df-na}}
+
+Den här kolumnen gäller inte eftersom Customer Journey Analytics ännu inte stöder Activity Map.
 
 +++
 
@@ -170,13 +191,17 @@ API- eller klient-SDK-version som används för att kompilera och skicka bildbeg
 
 +++**`color`**
 
-Färgdjup-ID baserat på värdet för kolumnen `c_color`. Refererar till `color_depth.tsv`-söktabellen.
+Färgdjup-ID baserat på värdet för kolumnen `c_color`.
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`connection_type`**
 
-Numeriskt ID som representerar dimensionen för anslutningstypen. Refererar till `connection_type.tsv`-söktabellen.
+Numeriskt ID som representerar dimensionen för anslutningstypen.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -191,6 +216,8 @@ Cookie-supportdimensionen.<br>Y: Aktiverad<br>N: Inaktiverad<br>U: Okänd
 +++**`country`**
 
 Ett numeriskt ID som representerar besökarens land. Refererar till `country.tsv`-söktabellen.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -262,6 +289,10 @@ En flagga som avgör om träffen är en ny daglig besökare.
 
 Tillvalsdimensionen för hantering av samtycke. Flera värden kan finnas per träff, avgränsade med ett rör (`\|`). Giltiga värden är `DMP` och `SELL`.
 
+{{cja-df-na}}
+
+Den här kolumnen gäller inte eftersom Customer Journey Analytics inte ?????
+
 +++
 
 +++**`dataprivacyconsentoptout`**
@@ -329,6 +360,29 @@ Den här kolumnen mappar troligtvis till dussintals olika mätvärden, beroende 
 
 {{cja-df-post}}
 
+Om ditt schema använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) kan vissa mått mappas direkt till följande XDM-fält:
+
+* **Utcheckningar**: `xdm.commerce.checkouts.value`
+* **Kundvagnen lägger till**: `xdm.commerce.productListAdds.value`
+* **Kundvagnen öppnas**: `xdm.commerce.productListOpens.value`
+* **Ta bort kundvagn**: `xdm.commerce.productListRemovals.value`
+* **Vyer för kundvagn**: `xdm.commerce.productListViews.value`
+* **Produktvyer**: `xdm.commerce.productViews.value`
+* **Beställningar**: `xdm.commerce.purchases.value`
+
+Vissa mätvärden kan använda händelseserialisering, vilket är hur Adobe Analytics ger fullständig kontroll över deduplicering. Du kan använda komponentinställningen [Metrisk deduplicering](/help/data-views/component-settings/metric-deduplication.md) för att uppnå paritet för deduplicering.
+
+* Om mätvärdena dedupliceras genom att gå till Adobe Analytics kan du ställa in dedupliceringsomfånget till session i den metrisk metodens komponentinställningar.
+* Om mätvärdena dedupliceras av händelse-ID i Adobe Analytics är det troligt att XDM-objektet för mätvärdet innehåller både ett `value`- och ett `id`-fält. Om ditt schema använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) finns dessa mått troligen i dessa XDM-fält, som du kan ställa in fältet **[!UICONTROL Deduplication ID]** i måttets komponentinställningar:
+
+   * **Utcheckningar**: `xdm.commerce.checkouts.id`
+   * **Kundvagnen lägger till**: `xdm.commerce.productListAdds.id`
+   * **Kundvagnen öppnas**: `xdm.commerce.productListOpens.id`
+   * **Ta bort kundvagn**: `xdm.commerce.productListRemovals.id`
+   * **Vyer för kundvagn**: `xdm.commerce.productListViews.id`
+   * **Produktvyer**: `xdm.commerce.productViews.id`
+   * **Beställningar**: `xdm.commerce.purchases.id`
+
 +++
 
 +++**`exclude_hit`**
@@ -363,7 +417,9 @@ Den ursprungliga refererande domändimensionen. Baserat på `first_hit_referrer`
 
 +++**`first_hit_ref_type`**
 
-Ett numeriskt ID som representerar referenstypen för besökarens första referent. Refererar till `referrer_type.tsv`-söktabellen.
+Ett numeriskt ID som representerar referenstypen för besökarens första referent.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -417,7 +473,7 @@ Används med `hitid_high` för att identifiera en träff.
 
 +++**`hit_source`**
 
-Källan som träffen kom från. Träffkällor 1 och 2 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br> 3: Överföring av Live-datakälla med tidsstämplar <br> <br>: Används inte <br>6: Överföring av allmän datakälla 6: Används inte längre; överföring av datakälla med fullständig bearbetning <br>7: Överföring av TransactionID-datakälla <br>8: Används inte längre; Tidigare versioner av Adobe Advertising-datakällor <br> 8&rbrace;9: Används inte längre, Adobe Social-sammanfattningsmått <br> : Audience Manager serversidans vidarebefordran används
+Källan som träffen kom från. Träffkällor 1 och 2 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br> 3: Överföring av Live-datakälla med tidsstämplar <br> <br>: Används inte <br>6: Överföring av allmän datakälla 6: Används inte längre; överföring av datakälla med fullständig bearbetning <br>7: Överföring av TransactionID-datakälla <br>8: Används inte längre; Tidigare versioner av Adobe Advertising-datakällor <br> 8}9: Används inte längre, Adobe Social-sammanfattningsmått <br> : Audience Manager serversidans vidarebefordran används
 
 +++
 
@@ -447,7 +503,9 @@ Den komprimerade IPv6-adressen, om den är tillgänglig. Mutuellt exklusiv för 
 
 +++**`javascript`**
 
-Ett söknings-ID för JavaScript-version, baserat på `j_jscript`. Refererar till `javascript_version`-söktabellen.
+Ett söknings-ID för JavaScript-version, baserat på `j_jscript`.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -467,7 +525,9 @@ Den version av JavaScript som stöds av webbläsaren.
 
 +++**`language`**
 
-Ett numeriskt ID som representerar besökarens språk. Refererar till `languages.tsv`-söktabellen.
+Ett numeriskt ID som representerar besökarens språk.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -808,7 +868,9 @@ Den mobila enhetens upplösning. `[Width] x [Height]` i pixlar.
 +++
 
 +++**`mobile_id`**
-Om användaren använder en mobil enhet anger du enhetens numeriska ID. Nyckelvärdet för `mobile_attributes.tsv` dynamisk sökning.
+Om användaren använder en mobil enhet anger du enhetens numeriska ID.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -842,7 +904,9 @@ En flagga som avgör om den aktuella träffen är ett nytt besök. Anges av Adob
 
 +++**`os`**
 
-Ett numeriskt ID som representerar besökarens operativsystem. Baserat på kolumnen `user_agent`. Nyckelvärdet för `operating_system.tsv` standardsökning och `operating_system_type.tsv` dynamisk sökning.
+Ett numeriskt ID som representerar besökarens operativsystem. Baserat på kolumnen `user_agent`.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -864,9 +928,11 @@ Liknar `pagename`, förutom att den inte faller tillbaka till `page_url`. Endast
 
 +++**`page_event`**
 
-Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, anpassad länk, slutlänk). Se Sökning efter sidhändelser.
+Den typ av träff som skickas i bildbegäran (standardträff, nedladdningslänk, anpassad länk, slutlänk).
 
 {{cja-df-post}}
+
+{{cja-df-lookup}}
 
 +++
 
@@ -987,15 +1053,19 @@ Ett numeriskt ID som representerar typen av hänvisning för träffen. Används 
 
 +++**`resolution`**
 
-Ett numeriskt ID som representerar bildskärmens upplösning. Används i skärmupplösningsdimensionen. Använder `resolution.tsv`-uppslagstabell.
+Ett numeriskt ID som representerar bildskärmens upplösning. Används i skärmupplösningsdimensionen.
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`search_engine`**
 
-Ett numeriskt ID som representerar sökmotorn som refererade besökaren till din webbplats. Används i dimensioner för sökmotor. Refererar till `search_engines.tsv`-söktabellen.
+Ett numeriskt ID som representerar sökmotorn som refererade besökaren till din webbplats. Används i dimensioner för sökmotor.
 
 {{cja-df-post}}
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1123,7 +1193,9 @@ Senaste beröringsdetaljdimension.
 
 +++**`va_closer_id`**
 
-Ett numeriskt ID som identifierar dimensionen för den sista beröringskanalen. Sökningen efter detta ID finns i Marketing Channel Manager.
+Ett numeriskt ID som identifierar dimensionen för den sista beröringskanalen.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1135,7 +1207,9 @@ Den första touch-detaljdimensionen.
 
 +++**`va_finder_id`**
 
-Ett numeriskt ID som identifierar dimensionen för den första beröringskanalen. Sökningen efter detta ID finns i Marketing Channel Manager.
+Ett numeriskt ID som identifierar dimensionen för den första beröringskanalen.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1549,13 +1623,17 @@ Baserat på kolumnen `visit_referrer`. Den första refererande domänen för bes
 
 +++**`visit_ref_type`**
 
-Ett numeriskt ID som representerar referenstypen för besökets första referent. Refererar till `referrer_type.tsv`-söktabellen.
+Ett numeriskt ID som representerar referenstypen för besökets första referent.
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`visit_search_engine`**
 
-Ett numeriskt ID som representerar besökets första sökmotor. Refererar till `search_engines.tsv`-söktabellen.
+Ett numeriskt ID som representerar besökets första sökmotor.
+
+{{cja-df-lookup}}
 
 +++
 
