@@ -20,7 +20,7 @@ Denna referens hjälper datatekniker att utvärdera Adobe Analytics-kolumner fö
 
 >[!NOTE]
 >
->Den här referensen innehåller bara kolumner som anses vara aktuella av Adobe, baserat på [kolumnreferensen för analysdataflöde](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Om du har en Analytics-dataflödeskolumn som inte finns med i den här tabellen som du aktivt använder, bör du läsa organisationens designdokument för att ta reda på vilken som är den bästa motsvarigheten i Customer Journey Analytics.
+>Den här referensen innehåller bara kolumner som anses vara aktuella av Adobe, baserat på [kolumnreferensen för analysdataflöde](https://experienceleague.adobe.com/sv/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Om du har en Analytics-dataflödeskolumn som inte finns med i den här tabellen som du aktivt använder, bör du läsa organisationens designdokument för att ta reda på vilken som är den bästa motsvarigheten i Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -360,7 +360,7 @@ Den här kolumnen mappar troligtvis till dussintals olika mätvärden, beroende 
 
 {{cja-df-post}}
 
-Om ditt schema använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) kan vissa mått mappas direkt till följande XDM-fält:
+Om ditt schema använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/event/commerce-details) kan vissa mått mappas direkt till följande XDM-fält:
 
 * **Utcheckningar**: `xdm.commerce.checkouts.value`
 * **Kundvagnen lägger till**: `xdm.commerce.productListAdds.value`
@@ -373,7 +373,7 @@ Om ditt schema använder fältgruppen [[!UICONTROL Commerce Details]](https://ex
 Vissa mätvärden kan använda händelseserialisering, vilket är hur Adobe Analytics ger fullständig kontroll över deduplicering. Du kan använda komponentinställningen [Metrisk deduplicering](/help/data-views/component-settings/metric-deduplication.md) för att uppnå paritet för deduplicering.
 
 * Om mätvärdena dedupliceras genom att gå till Adobe Analytics kan du ställa in dedupliceringsomfånget till session i den metrisk metodens komponentinställningar.
-* Om mätvärdena dedupliceras av händelse-ID i Adobe Analytics är det troligt att XDM-objektet för mätvärdet innehåller både ett `value`- och ett `id`-fält. Om ditt schema använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) finns dessa mått troligen i dessa XDM-fält, som du kan ställa in fältet **[!UICONTROL Deduplication ID]** i måttets komponentinställningar:
+* Om mätvärdena dedupliceras av händelse-ID i Adobe Analytics är det troligt att XDM-objektet för mätvärdet innehåller både ett `value`- och ett `id`-fält. Om ditt schema använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/event/commerce-details) finns dessa mått troligen i dessa XDM-fält, som du kan ställa in fältet **[!UICONTROL Deduplication ID]** i måttets komponentinställningar:
 
    * **Utcheckningar**: `xdm.commerce.checkouts.id`
    * **Kundvagnen lägger till**: `xdm.commerce.productListAdds.id`
