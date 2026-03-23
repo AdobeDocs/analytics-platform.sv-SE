@@ -19,7 +19,7 @@ Referensen är avsedd att hjälpa datatekniker att anpassa sina Adobe Analytics-
 
 >[!NOTE]
 >
->Den här referensen innehåller bara kolumner som anses vara aktuella av Adobe, baserat på [kolumnreferensen för analysdataflöde](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Om du har en Analytics-dataflödeskolumn som inte finns med i den här tabellen som du aktivt använder, bör du läsa organisationens designdokument för att ta reda på vilken som är den bästa motsvarigheten i Customer Journey Analytics.
+>Den här referensen innehåller bara kolumner som anses vara aktuella av Adobe, baserat på [kolumnreferensen för analysdataflöde](https://experienceleague.adobe.com/sv/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Om du har en Analytics-dataflödeskolumn som inte finns med i den här tabellen som du aktivt använder, bör du läsa organisationens designdokument för att ta reda på vilken som är den bästa motsvarigheten i Customer Journey Analytics.
 
 +++**`accept_language`**
 

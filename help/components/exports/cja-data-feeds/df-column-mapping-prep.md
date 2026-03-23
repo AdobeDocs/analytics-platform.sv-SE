@@ -56,7 +56,7 @@ Antalet fält som är tillgängliga att mappa till i ditt Customer Journey Analy
 
 * **Nya SDK-implementeringar för webben**: Om din Customer Journey Analytics-implementering använder ett anpassat schema finns förmodligen inte många kolumner i Adobe Analytics dataflöden i Customer Journey Analytics. På samma sätt kan Customer Journey Analytics innehålla fält som inte finns i Adobe Analytics dataflöden.
 
-* **Analyserar Source Connector-implementeringar**: Det finns 1:1-fältmappningar som standard för många dataflödeskolumner eftersom Analytics Source Connector använder fältgruppen Analytics Experience Event i XDM-schemat. Information om vilka Adobe Analytics-fält som mappas till fält i den här fältgruppen finns i [Mappningar av analysfält](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) i dokumentationen för Experience Platform.
+* **Analyserar Source Connector-implementeringar**: Det finns 1:1-fältmappningar som standard för många dataflödeskolumner eftersom Analytics Source Connector använder fältgruppen Analytics Experience Event i XDM-schemat. Information om vilka Adobe Analytics-fält som mappas till fält i den här fältgruppen finns i [Mappningar av analysfält](https://experienceleague.adobe.com/sv/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) i dokumentationen för Experience Platform.
 
 <!-- **Data layer**: ??? -->
 
