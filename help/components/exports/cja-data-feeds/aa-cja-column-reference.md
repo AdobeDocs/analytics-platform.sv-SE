@@ -371,7 +371,7 @@ Customer Journey Analytics har inget enskilt fält som fungerar som en deduplice
 
 En flagga som avgör om köphändelsen för den här träffen ignoreras eftersom den är en dubblett.
 
-Även om det inte finns någon direkt översättning till den här dataflödeskolumnen i Analytics finns det fortfarande funktioner för att deduplicera inköp. Om du använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) kan du ange [komponentinställningar för metrisk borttagning av dubbletter ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) där **[!UICONTROL Deduplication ID]** är `xdm.commerce.purchases.id`.
+Även om det inte finns någon direkt översättning till den här dataflödeskolumnen i Analytics finns det fortfarande funktioner för att deduplicera inköp. Om du använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) kan du ange [komponentinställningar för metrisk borttagning av dubbletter &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) där **[!UICONTROL Deduplication ID]** är `xdm.commerce.purchases.id`.
 
 Om en direkt översättning krävs där du vill ha en flagga för dubblettinköp kan du använda ett [härlett fält](/help/data-views/derived-fields/derived-fields.md) med funktionen **Deduplicera** i regeluppsättningen.
 
@@ -529,7 +529,7 @@ Används med `hitid_high` för att identifiera en träff.
 
 +++**`hit_source`**
 
-Källan som träffen kom från. Träffkällor 1 och 2 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br> 3: Överföring av Live-datakälla med tidsstämplar <br> <br>: Används inte <br>6: Överföring av allmän datakälla 6: Används inte längre; överföring av datakälla med fullständig bearbetning <br>7: Överföring av TransactionID-datakälla <br>8: Används inte längre; Tidigare versioner av Adobe Advertising-datakällor <br> 8}9: Används inte längre, Adobe Social-sammanfattningsmått <br> : Audience Manager serversidans vidarebefordran används
+Källan som träffen kom från. Träffkällor 1 och 2 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br> 3: Överföring av Live-datakälla med tidsstämplar <br> <br>: Används inte <br>6: Överföring av allmän datakälla 6: Används inte längre; överföring av datakälla med fullständig bearbetning <br>7: Överföring av TransactionID-datakälla <br>8: Används inte längre; Tidigare versioner av Adobe Advertising-datakällor <br> 8&rbrace;9: Används inte längre, Adobe Social-sammanfattningsmått <br> : Audience Manager serversidans vidarebefordran används
 
 +++
 
