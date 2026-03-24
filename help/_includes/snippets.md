@@ -1,7 +1,7 @@
 ---
-source-git-commit: 62b3ad7d3f458eb1edd6906c26a3b8c0c053d64b
+source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
 workflow-type: tm+mt
-source-wordcount: '5182'
+source-wordcount: '5230'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ I den här videon demonstreras funktionaliteten med Adobe Analytics. Funktionen 
 
 | Taggar | Beskrivning |
 |---|---|
-| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter &#x200B;](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
+| ![Taggar](/help/assets/filter-tag.png){width="300"} | I avsnittet **[!UICONTROL Tags]** kan du filtrera efter taggar. <ul><li>Du kan ![söka efter ](/help/assets/icons/Search.svg) *söktaggar* om du vill söka efter taggar som du kan använda för att filtrera.</li><li>Du kan markera flera taggar. Vilka märkord som är tillgängliga beror på vilka markeringar du har gjort i andra avsnitt på filterpanelen.</li><li>Siffrorna anger:<ul><li>**(1)**: Antalet markerade taggar (om en eller flera taggar har valts).</li><li>**2︎⃣**: Antalet tillgängliga taggar för objekten som är resultatet av det aktuella filtret.</li><li>7︎⃣: Antalet objekt som är associerade med den specifika taggen.</li></ul></li></ul> |
 
 
 ## Filteravsnitt för datavy {#dataviewfiltersection}
@@ -128,7 +128,7 @@ En attribueringsmodell avgör vilka dimensionsobjekt som får kredit för ett m�
 
 En attribueringsbehållare definierar det önskade omfånget för attribueringen. Möjliga alternativ är:
 
-* **Session**: Går tillbaka till början av sessionen där en konvertering inträffade. Sessionssökningsfönster respekterar den ändrade [Sessionstimeout](/help/data-views/create-dataview.md#session-settings) i en datavy. När **[!UICONTROL Session]** har valts ställs fönstret [Attribution Lookback &#x200B;](#atribution-lookback-window) automatiskt in på **[!UICONTROL Reporting window]** och kan inte ändras.
+* **Session**: Går tillbaka till början av sessionen där en konvertering inträffade. Sessionssökningsfönster respekterar den ändrade [Sessionstimeout](/help/data-views/create-dataview.md#session-settings) i en datavy. När **[!UICONTROL Session]** har valts ställs fönstret [Attribution Lookback ](#atribution-lookback-window) automatiskt in på **[!UICONTROL Reporting window]** och kan inte ändras.
 * **Person**: Kontrollerar konverteringar från omfånget för personbehållaren.
 * **Global Account** [!BADGE B2B edition]{type=Informative}: Söker efter konverteringar från omfånget för den globala kontobehållaren.
 * **Konton** [!BADGE B2B edition]{type=Informative}: Söker efter konverteringar från omfånget för personbehållaren.
@@ -168,7 +168,7 @@ Beroende på vilket rapporteringsfönster du har (till exempel 10 september till
 
 Konverteringshändelser som vanligtvis har ett heltal delas om kredit tillhör fler än en kanal. Om till exempel två kanaler bidrar till en order med en linjär attribueringsmodell får båda kanalerna 0,5 av den ordningen. Dessa partiella mätvärden summeras för alla personer och avrundas sedan till närmaste heltal för rapportering.
 
-[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Använd specifika B2B-behållare, som konton, eller säljprojekt, och mer lämpliga bakåtsökningsfönster (upp till 13 månader) för att tillämpa ovanstående attribueringsmodeller i vanliga B2B-scenarier.
+[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Använd specifika B2B-behållare, som konton, eller säljprojekt, och mer lämpliga bakåtsökningsfönster (upp till 13 månader) för att tillämpa ovanstående attribueringsmodeller i vanliga B2B-scenarier.
 
 ## Jämförelser av resevisualisering {#journey-visualization-comparisons}
 
@@ -276,11 +276,11 @@ Använd följande information för att välja den visualisering som bäst passar
 
 | Komponentnamn | Anteckningar |
 | --- | --- |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Accounts] | Baserat på det konto-ID som anges i en [!UICONTROL Connection]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Buying Group] | Köpgrupperna, baserat på det inköpsgrupp-ID som anges i [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Accounts] | Baserat på det konto-ID som anges i en [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Buying Group] | Köpgrupperna, baserat på det inköpsgrupp-ID som anges i [!UICONTROL Connection]. |
 | [!UICONTROL Events] | Antalet rader från alla händelsedatamängder i en [!UICONTROL Connection]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Global Accounts] | Baserat på det globala konto-ID som anges i [!UICONTROL Connection]. |
-| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Opportunities] | Affärsmöjligheterna, baserat på det säljprojekt-ID som anges i [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Global Accounts] | Baserat på det globala konto-ID som anges i [!UICONTROL Connection]. |
+| [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL Opportunities] | Affärsmöjligheterna, baserat på det säljprojekt-ID som anges i [!UICONTROL Connection]. |
 | [!UICONTROL People] | Baserat på det person-ID som anges i en [!UICONTROL Connection]. |
 | [!UICONTROL Session Ends] | Antalet händelser som var den sista händelsen i en session. På liknande sätt som [!UICONTROL Session Starts] kan den även användas i en segmentdefinition för att segmentera saker ned till den sista händelsen i varje session.<p>Den här komponenten måste inkluderas i datavyn för att följande [beräknade mått](/help/components/calc-metrics/default-calcmetrics.md) ska vara tillgängliga i Workspace: <ul><li>Sessionens sluthastighet</li></p> |
 | [!UICONTROL Session Starts] | Antalet händelser som var den första händelsen i en session. När den används i en segmentdefinition (t.ex. [!UICONTROL Session Starts] finns) segmenteras den bara till den första händelsen i varje session.<p>Den här komponenten måste inkluderas i datavyn för att följande [beräknade mått](/help/components/calc-metrics/default-calcmetrics.md) ska vara tillgängliga i Workspace: <ul><li>Starthastighet för session</li></p> |
@@ -322,3 +322,7 @@ Den här kolumnen för analysdatafeed använder en uppslagstabell för att ident
 ## Kolumner som inte gäller för CJA-datafeed {#cja-df-na}
 
 Den här kolumnen för datafeed i Analytics innehåller data som inte kan översättas till en Customer Journey Analytics-motsvarighet på grund av skillnader i dataarkitekturen.
+
+## Användaragent för datafeed {#cja-df-ua}
+
+Du kan inte samla in information om både användaragent och enhetssökning samtidigt. Populationen av dessa dimensioner utesluter varandra. Du måste välja om du vill samla in information om användaragent direkt eller enhetssökning (baserat på användaragent) när [Konfigurera ett datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup).

@@ -5,9 +5,9 @@ feature: Components
 hide: true
 hidefromtoc: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
-source-git-commit: af5b30cd71ebe46e2af584ee502ef631c829f5ea
+source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
 workflow-type: tm+mt
-source-wordcount: '3350'
+source-wordcount: '3745'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Denna referens hjälper datatekniker att utvärdera Adobe Analytics-kolumner fö
 
 >[!NOTE]
 >
->Den här referensen innehåller bara kolumner som anses vara aktuella av Adobe, baserat på [kolumnreferensen för analysdataflöde](https://experienceleague.adobe.com/sv/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Om du har en Analytics-dataflödeskolumn som inte finns med i den här tabellen som du aktivt använder, bör du läsa organisationens designdokument för att ta reda på vilken som är den bästa motsvarigheten i Customer Journey Analytics.
+>Den här referensen innehåller bara kolumner som anses vara aktuella av Adobe, baserat på [kolumnreferensen för analysdataflöde](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Om du har en Analytics-dataflödeskolumn som inte finns med i den här tabellen som du aktivt använder, bör du läsa organisationens designdokument för att ta reda på vilken som är den bästa motsvarigheten i Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -109,9 +109,11 @@ Dimensionen Spårningskod.
 
 +++**`carrier`**
 
-Adobe Advertising integrationsvariabel. Anger mobiloperatör.
+Anger mobiloperatör.
 
 {{cja-df-lookup}}
+
+{{cja-df-ua}}
 
 +++
 
@@ -127,11 +129,31 @@ Dimensionen Platsavsnitt.
 
 Klienttips som samlats in via HTTP-begärandehuvudet.
 
+I Adobe Analytics inkluderades klienttips som en sammanfogad sträng i den här kolumnen. Det anses vara ett modernare tillvägagångssätt än kolumnen `user_agent`.
+
+{{cja-df-ua}}
+
 +++
 
 +++**`ch_js`**
 
 Klienttips som samlats in via JavaScript-API:t för användaragenttips för klienttips.
+
+I Adobe Analytics inkluderades klienttips som en sammanfogad sträng i den här kolumnen. Det anses vara ett modernare tillvägagångssätt än kolumnen `user_agent`.
+
+Du kan samla in dessa data med kontextsträngen [`highEntropyUserAgentHints`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/context) när du konfigurerar Web SDK. Flera XDM-fält fylls i i stället för en lång sammanfogad sträng:
+
+* **Operativsystemversion**: `xdm.environment.browserDetails.userAgentClientHints.platformVersion`
+* **Arkitektur**: `xdm.environment.browserDetails.userAgentClientHints.architecture`
+* **Enhetsmodell**: `xdm.environment.browserDetails.userAgentClientHints.model`
+* **Bithet**: `xdm.environment.browserDetails.userAgentClientHints.bitness`
+* **Webbläsarleverantör**: `xdm.environment.browserDetails.userAgentClientHints.vendor`
+* **Webbläsarnamn**: `xdm.environment.browserDetails.userAgentClientHints.brand`
+* **Webbläsarversion**: `xdm.environment.browserDetails.userAgentClientHints.version`
+
+Mer information finns i [Klienttips för användaragent](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints).
+
+{{cja-df-ua}}
 
 +++
 
@@ -255,11 +277,17 @@ Avgör om träffen är en mobilbakgrundträff.
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+Customer Journey Analytics har inget systemspecifikt händelsetyp där träffar automatiskt inkluderas eller utesluts baserat på träffens kontext. Du kan använda `xdm.eventType` för att avgöra vilka händelser som ska inkluderas och exkluderas i de flesta rapporter.
+
 +++
 
 +++**`cust_hit_time_gmt`**
 
 Endast tidsstämpelaktiverade rapportsviter. Tidsstämpeln som skickades med träffen, baserat på UNIX®-tid.
+
+Customer Journey Analytics har inte något koncept för tidsstämplar jämfört med rapportsviter som inte är tidsstämplar. Använd `xdm.timestamp` i stället och justera komponentinställningarna efter behov.
 
 {{cja-df-post}}
 
@@ -268,6 +296,8 @@ Endast tidsstämpelaktiverade rapportsviter. Tidsstämpeln som skickades med tr�
 +++**`cust_visid`**
 
 Det anpassade besökar-ID:t, om `visitorID` används.
+
+Customer Journey Analytics stöder valfritt antal identiteter som använder [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap). Om din organisation använder anpassade identiteter är det sannolikt inom identitetskartan.
 
 {{cja-df-post}}
 
@@ -289,9 +319,7 @@ En flagga som avgör om träffen är en ny daglig besökare.
 
 Tillvalsdimensionen för hantering av samtycke. Flera värden kan finnas per träff, avgränsade med ett rör (`\|`). Giltiga värden är `DMP` och `SELL`.
 
-{{cja-df-na}}
-
-Den här kolumnen gäller inte eftersom Customer Journey Analytics inte ?????
+Om din organisation har en datahanteringsplattform fyller den troligen i de önskade XDM-fälten för den här dimensionen.
 
 +++
 
@@ -299,11 +327,15 @@ Den här kolumnen gäller inte eftersom Customer Journey Analytics inte ?????
 
 Avanmälningsdimensionen för hantering av samtycke. Flera värden kan finnas per träff, avgränsade med ett rör (`\|`). Giltiga värden är `SSF`, `DMP` och `SELL`.
 
+Om din organisation har en datahanteringsplattform fyller den troligen i de önskade XDM-fälten för den här dimensionen.
+
 +++
 
 +++**`date_time`**
 
 Tidpunkten för träffen i läsbart format, baserat på rapportsvitens tidszon.
+
+Du kan använda `xdm.timestamp` och använda komponentinställningen **[!UICONTROL Date]** eller **[!UICONTROL Date-time]** [Format](/help/data-views/component-settings/format.md).
 
 +++
 
@@ -311,11 +343,17 @@ Tidpunkten för träffen i läsbart format, baserat på rapportsvitens tidszon.
 
 Domändimensionen. Baserat på besökarens Internetanslutningspunkt.
 
+Aktivera **[!UICONTROL Network lookup]** när [Konfigurerar ett datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure). XDM-fältet är `xdm.environment.domain` om det ingår i ditt schema.
+
 +++
 
 +++**`duplicated_from`**
 
 Används endast i rapportsviter som innehåller VISTA-regler för träffkopior. Anger vilken rapportsvit som träffen kopierades från.
+
+{{cja-df-na}}
+
+Den här kolumnen gäller inte eftersom Customer Journey Analytics inte har något koncept för VISTA-regler.
 
 +++
 
@@ -323,11 +361,19 @@ Används endast i rapportsviter som innehåller VISTA-regler för träffkopior. 
 
 Listar varje händelse som räknats som en dubblett.
 
+{{cja-df-na}}
+
+Customer Journey Analytics har inget enskilt fält som fungerar som en dedupliceringsflagga för alla mått. I stället innehåller varje mätvärde sina egna [komponentinställningar för metrisk borttagning av dubbletter](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication). Därför finns det inget motsvarande fält i Customer Journey Analytics för denna Adobe Analytics-dataflödeskolumn.
+
 +++
 
 +++**`duplicate_purchase`**
 
 En flagga som avgör om köphändelsen för den här träffen ignoreras eftersom den är en dubblett.
+
+Även om det inte finns någon direkt översättning till den här dataflödeskolumnen i Analytics finns det fortfarande funktioner för att deduplicera inköp. Om du använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) kan du ange [komponentinställningar för metrisk borttagning av dubbletter ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication) där **[!UICONTROL Deduplication ID]** är `xdm.commerce.purchases.id`.
+
+Om en direkt översättning krävs där du vill ha en flagga för dubblettinköp kan du använda ett [härlett fält](/help/data-views/derived-fields/derived-fields.md) med funktionen **Deduplicera** i regeluppsättningen.
 
 +++
 
@@ -360,7 +406,7 @@ Den här kolumnen mappar troligtvis till dussintals olika mätvärden, beroende 
 
 {{cja-df-post}}
 
-Om ditt schema använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/event/commerce-details) kan vissa mått mappas direkt till följande XDM-fält:
+Om ditt schema använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) kan vissa mått mappas direkt till följande XDM-fält:
 
 * **Utcheckningar**: `xdm.commerce.checkouts.value`
 * **Kundvagnen lägger till**: `xdm.commerce.productListAdds.value`
@@ -373,7 +419,7 @@ Om ditt schema använder fältgruppen [[!UICONTROL Commerce Details]](https://ex
 Vissa mätvärden kan använda händelseserialisering, vilket är hur Adobe Analytics ger fullständig kontroll över deduplicering. Du kan använda komponentinställningen [Metrisk deduplicering](/help/data-views/component-settings/metric-deduplication.md) för att uppnå paritet för deduplicering.
 
 * Om mätvärdena dedupliceras genom att gå till Adobe Analytics kan du ställa in dedupliceringsomfånget till session i den metrisk metodens komponentinställningar.
-* Om mätvärdena dedupliceras av händelse-ID i Adobe Analytics är det troligt att XDM-objektet för mätvärdet innehåller både ett `value`- och ett `id`-fält. Om ditt schema använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/sv/docs/experience-platform/xdm/field-groups/event/commerce-details) finns dessa mått troligen i dessa XDM-fält, som du kan ställa in fältet **[!UICONTROL Deduplication ID]** i måttets komponentinställningar:
+* Om mätvärdena dedupliceras av händelse-ID i Adobe Analytics är det troligt att XDM-objektet för mätvärdet innehåller både ett `value`- och ett `id`-fält. Om ditt schema använder fältgruppen [[!UICONTROL Commerce Details]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details) finns dessa mått troligen i dessa XDM-fält, som du kan ställa in fältet **[!UICONTROL Deduplication ID]** i måttets komponentinställningar:
 
    * **Utcheckningar**: `xdm.commerce.checkouts.id`
    * **Kundvagnen lägger till**: `xdm.commerce.productListAdds.id`
@@ -381,13 +427,23 @@ Vissa mätvärden kan använda händelseserialisering, vilket är hur Adobe Anal
    * **Ta bort kundvagn**: `xdm.commerce.productListRemovals.id`
    * **Vyer för kundvagn**: `xdm.commerce.productListViews.id`
    * **Produktvyer**: `xdm.commerce.productViews.id`
-   * **Beställningar**: `xdm.commerce.purchases.id`
+
+Om du vill ta bort dubbletten för Orders-måttet läser du `duplicate_purchase`.
 
 +++
 
 +++**`exclude_hit`**
 
-En flagga som avgör om träffen utesluts från rapportering. Kolumnen `visit_num` ökas inte för uteslutna träffar.<br>1: Används inte. En del av en skrapad funktion.<br>2: Används inte. En del av en skrapad funktion.<br>3: Används inte längre. Undantag för användaragent<br>4: Undantag baserat på IP-adress<br>5: Information om träffar saknas, t.ex. `page_url`, `pagename`, `page_event` eller `event_list`<br>6: JavaScript bearbetade inte korrekt träffen<br>7: Kontospecifikt undantag, t.ex. i VISTA-regler<br>8: Används inte. Alternativt kontospecifikt undantag.<br>9: Används inte. En del av en skrapad funktion.<br>10: Ogiltig valutakod<br>11: Träff saknar en tidsstämpel i en rapportsvit som bara innehåller tidsstämplar, eller en träff innehöll en tidsstämpel i en rapportsvit som inte är en tidsstämpel.<br>12: Används inte. En del av en skrapad funktion.<br>13: Används inte. En del av en skrapad funktion.<br>14: Målträff som inte matchar en Analytics-träff<br>15: Används inte just nu.<br>16: Advertising Cloud-träff som inte matchar en Analytics-träff
+En flagga som avgör om träffen utesluts från rapportering. Kolumnen `visit_num` ökas inte för uteslutna träffar.
+
+Customer Journey Analytics följer inte med &quot;uteslöt träffar&quot;. Du kan dock återskapa den här funktionen om du har ett XDM-fält som flaggar vissa träffar som ska uteslutas:
+
+1. Kontrollera att XDM-fältet som flaggar uteslutna träffar inkluderas som en komponent (dimension eller mått, beroende på hur du har konfigurerat den här flaggan). Att välja [Dölj komponent i rapportering](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) är troligtvis fördelaktigt för det här fältet.
+1. I [Datavy settings](/help/data-views/session-settings.md) väljer du listrutan **[!UICONTROL Add segment]** och väljer **[!UICONTROL Create segment]**.
+1. Skapa ett segment som utesluter alla händelser där det finns en exkluderande träffkomponent eller som innehåller värden som du vill utesluta.
+1. Välj **[!UICONTROL Save]** både i segmentet och i datavyn.
+
+Uteslutna träffar finns nu inte i Customer Journey Analytics-rapporter, men de är fortfarande tillgängliga vid export av dataflöden.
 
 +++
 
@@ -473,7 +529,7 @@ Används med `hitid_high` för att identifiera en träff.
 
 +++**`hit_source`**
 
-Källan som träffen kom från. Träffkällor 1 och 2 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br> 3: Överföring av Live-datakälla med tidsstämplar <br> <br>: Används inte <br>6: Överföring av allmän datakälla 6: Används inte längre; överföring av datakälla med fullständig bearbetning <br>7: Överföring av TransactionID-datakälla <br>8: Används inte längre; Tidigare versioner av Adobe Advertising-datakällor <br> 8&rbrace;9: Används inte längre, Adobe Social-sammanfattningsmått <br> : Audience Manager serversidans vidarebefordran används
+Källan som träffen kom från. Träffkällor 1 och 2 faktureras. <br>1: Standardbildbegäran utan tidsstämpel <br>2: Standardbildbegäran med tidsstämpel <br> 3: Överföring av Live-datakälla med tidsstämplar <br> <br>: Används inte <br>6: Överföring av allmän datakälla 6: Används inte längre; överföring av datakälla med fullständig bearbetning <br>7: Överföring av TransactionID-datakälla <br>8: Används inte längre; Tidigare versioner av Adobe Advertising-datakällor <br> 8}9: Används inte längre, Adobe Social-sammanfattningsmått <br> : Audience Manager serversidans vidarebefordran används
 
 +++
 
@@ -907,6 +963,14 @@ En flagga som avgör om den aktuella träffen är ett nytt besök. Anges av Adob
 Ett numeriskt ID som representerar besökarens operativsystem. Baserat på kolumnen `user_agent`.
 
 {{cja-df-lookup}}
+
+När [konfigurerar ett datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) kan du aktivera **[!UICONTROL Device lookup]**. Markera kryssrutan **[!UICONTROL Operating system]** om den är aktiverad. Om du gör det fylls följande XDM-fält i automatiskt om du har inkluderat dessa fält i ditt schema:
+
+* **Operativsystemsleverantör**: `xdm.environment.operatingSystemVendor`
+* **OS-namn**: `xdm.environment.operatingSystem`
+* **OS-version**: `xdm.environment.operatingSystemVersion`
+
+{{cja-df-ua}}
 
 +++
 
