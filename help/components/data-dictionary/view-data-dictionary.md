@@ -4,26 +4,26 @@ title: Visa komponentinformation
 feature: Components
 role: User, Admin
 exl-id: 1e538679-12e0-487c-917f-2ff2f1cc8436
-source-git-commit: f0786cfa74453693078c7d30d647a96bf1d98d07
+source-git-commit: 5319c0aafa5c92215176044a35953ac1e183eb53
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
 
 # Visa komponentinformation
 
-Med Data Dictionary kan du visa information om en komponent, inklusive komponentbeskrivningen, liknande komponenter, andra komponenter som en komponent ofta används med, med mera.
+Med Data Dictionary kan du visa information om en komponent, inklusive dess beskrivning, liknande komponenter, andra komponenter som en komponent ofta används med, med mera.
 
 Så här visar du information om en komponent i Data Dictionary:
 
 1. Gå till det Analysis Workspace-projekt som innehåller komponenten som du vill visa.
 
-1. Markera ikonen [!UICONTROL **Dataordlista**] i den vänstra panelen i Analysis Workspace. (Alternativa sätt att komma åt dataordlistan beskrivs i Åtkomst till dataordlistan i [Översikt över dataordlistan](/help/components/data-dictionary/data-dictionary-overview.md).)
+1. Markera ikonen [!UICONTROL **Dataordlista**] i den vänstra panelen i Analysis Workspace. (Alternativa sätt att komma åt dataordlistan beskrivs i [Öppna dataordlistan](/help/components/data-dictionary/data-dictionary-overview.md#access-the-data-dictionary) i [Översikt över dataordlistan](/help/components/data-dictionary/data-dictionary-overview.md).)
 
    Fönstret Data Dictionary visas.
 
-   ![Fönstret Dataordlista med snabbsegment för dimensioner, mått, segment och datumintervall &#x200B;](assets/data-dictionary.png)
+   ![Fönstret Dataordlista med snabbsegment för dimensioner, mått, segment och datumintervall ](assets/data-dictionary.png)
 
    <!--double-check this screenshot. I mocked the admin view up a bit to get rid of the Dictionary health tab.-->
 
@@ -31,9 +31,21 @@ Så här visar du information om en komponent i Data Dictionary:
 
 1. (Valfritt) I sökfältet börjar du med att skriva namnet på komponenten som du vill visa.
 
-   Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension-ikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange, **Segment** ![Segmentikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå, **Datumintervall** ![Datumintervallikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila och **Mätvärden** ![Mätningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är gröna. Adobe-ikonen ![Adobe-ikonen](assets/default-calc-metric-icon.png) indikerar antingen en beräknad mätmall eller en segmentmall, och räknikonen ![Beräkningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indikerar ett beräknat mätresultat som har skapats av en Analytics-administratör i din organisation.
+   Komponenttypen kan identifieras med både färg och ikon.
 
-1. (Valfritt) Markera ikonen **Filter** ![Datamordlistefilter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) och välj sedan något av följande segmentalternativ för att filtrera komponentlistan:
+   * **Dimensioner** ![Dimension-ikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange
+
+   * **Segment** ![Segmentikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå
+
+   * **Datumintervall** ![Ikonen för datumintervall](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila
+
+   * **Mätvärden** ![Mätningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är grön
+
+   * **Adobe-ikon** ![Adobe-ikon](assets/default-calc-metric-icon.png) anger antingen en mall för beräknade mått eller en segmentmall
+
+   * **Ikonen för kalkylatorn** ![Ikonen för kalkylatorn](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) anger ett beräknat mått som har skapats av en Analytics-administratör i organisationen
+
+1. (Valfritt) Markera ikonen **Filter** ![Datamordlistefilter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) och välj sedan något av följande filteralternativ för att filtrera komponentlistan:
 
    | Alternativ | Funktion |
    |---------|----------|
@@ -52,9 +64,16 @@ Så här visar du information om en komponent i Data Dictionary:
 
    {style="table-layout:auto"}
 
-1. (Valfritt) Välj ikonen **Sortera** ![Sortera komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) och välj sedan något av följande segmentalternativ för att sortera komponentlistan:
+1. (Valfritt) Välj ikonen **Sortera** ![Sortera komponenter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) och välj sedan något av följande filteralternativ för att sortera komponentlistan:
 
-   {{components-sort-options}}
+   | Alternativ | Funktion |
+   |---------|----------|
+   | **[!UICONTROL Recommended]** | Sortera komponenter för varje typ (mått, mått, segment och datumintervall) baserat på deras rekommendation. Komponenter som du eller andra i organisationen använder oftast och senast visas högst upp i varje lista. |
+   | **[!UICONTROL Last modified]** | Sortera komponenter för varje typ (dimension, mått, segment och datumintervall) baserat på deras senaste ändringsdatum. De senast ändrade komponenterna visas högre upp i varje lista. |
+   | **[!UICONTROL Alphabetical]** | Sortera komponenterna för varje typ (mått, mått, segment och datumintervall) i stigande alfabetisk ordning. |
+   | **[!UICONTROL Categorical]** | Sortera komponenterna för varje typ (dimension, mått, segment och datumintervall) baserat på deras kategori. Exempel: Kuraterade jämfört med icke-kuraterade datavykomponenter. |
+
+   {style="table-layout:auto"}
 
 1. Välj den komponent du vill visa i listan med komponenter.
 

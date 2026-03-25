@@ -4,9 +4,9 @@ title: Redigera komponentposter
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
-source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
+source-git-commit: 8e4808f99e0610a450e0a29fb218ae4c7d77052b
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1180'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,19 @@ Så här redigerar du en komponent i Data Dictionary:
 
 1. (Valfritt) I sökfältet börjar du skriva namnet på komponenten som du vill redigera.
 
-   Komponenttypen kan identifieras med både färg och ikon. **Dimensioner** ![Dimension-ikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange, **Segment** ![Segmentikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå, **Datumintervall** ![Datumintervallikon](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila och **Mätvärden** ![Mätningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är gröna. Adobe-ikonen indikerar antingen en beräknad mätmall eller en segmentmall, och räkningsikonen ![Beräkningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indikerar ett beräknat mätresultat som har skapats av en Analysadministratör i din organisation.
+   Komponenttypen kan identifieras med både färg och ikon.
+
+   * **Dimensioner** ![Dimension-ikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) är orange
+
+   * **Segment** ![Segmentikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) är blå
+
+   * **Datumintervall** ![Ikonen för datumintervall](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) är lila
+
+   * **Mätvärden** ![Mätningsikonen](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) är grön
+
+   * **Adobe-ikon** ![Adobe-ikon](assets/default-calc-metric-icon.png) anger antingen en mall för beräknade mått eller en segmentmall
+
+   * **Ikonen för kalkylatorn** ![Ikonen för kalkylatorn](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) anger ett beräknat mått som har skapats av en Analytics-administratör i organisationen
 
 1. (Valfritt) Markera ikonen **Filter** ![Datamordlistefilter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) och välj sedan något av följande filteralternativ för att filtrera komponentlistan:
 
