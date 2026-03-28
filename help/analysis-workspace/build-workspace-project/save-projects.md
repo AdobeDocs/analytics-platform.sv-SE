@@ -4,7 +4,7 @@ title: Spara projekt
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 0%
@@ -87,8 +87,9 @@ Om du vill spara ett projekt manuellt när projektet är öppet i Analysis Works
   Du kan spara projektet i en annan mapp. Det ursprungliga projektet påverkas inte.
 
 
-<!-- Cannot find this option in CJA 
-| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=sv-SE) that becomes available to your organization under **[!UICONTROL Project > New]** |
+<!-- 
+Cannot find this option in CJA 
+| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** |
 -->
 
 ## Spara automatiskt
@@ -157,7 +158,8 @@ Om webbläsaren kraschar eller om sessionen avbryts uppmanas du att återställa
 För **nya**-projekt som aldrig har sparats går det inte att återställa ändringar som inte har sparats.
 
 
-<!-- Shouldn't this belong to another page?  Moved it to a new open projects page
+<!--
+Shouldn't this belong to another page?  Moved it to a new open projects page
 
 
 ## Open previously saved version

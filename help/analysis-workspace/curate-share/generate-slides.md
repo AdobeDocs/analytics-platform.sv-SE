@@ -5,7 +5,7 @@ title: Generera presentationer från Workspace-rapporter
 feature: Curate and Share
 role: User
 exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
-source-git-commit: d14163794fd4d31b29bfc6f55622d839b67ab3d7
+source-git-commit: b9efb621523f8bbfbb3afe7db4db2e60fcddd34c
 workflow-type: tm+mt
 source-wordcount: '1636'
 ht-degree: 0%
@@ -110,8 +110,10 @@ Dataartiklar består av en rubrikbild, sammanfattningsbild, detaljbilder och avs
    | **[!UICONTROL Included panels and visualizations]** | Välj paneler och visualisering som du vill ta med i presentationen. Du kan inkludera upp till 50 visualiseringar.<p>Om en visualisering är nedtonad följs den antingen av texten **[!UICONTROL (unsupported)]** eller **[!UICONTROL (restricted data)]**.</p><ul><li>**Stöds inte**: De flesta paneler och visualiseringar stöds. Mer information om paneler och visualisering som inte stöds finns i [Projektelement och funktioner som inte stöds](#unsupported-project-elements-and-features).</li><li>**Begränsade data**: Visualiseringen innehåller en komponent som är begränsad från att exporteras av en datastyrningsprincip som används av din organisation. Kontakta systemadministratören för att se vilka komponenter som är begränsade från att exporteras och ta sedan bort de begränsade komponenterna innan du genererar bildrutor.</li></ul> |
    | **[!UICONTROL Emphasize components]** | Välj mått och mått från dina visualiseringar som du vill framhäva i presentationen. De komponenter du väljer rangordnas högre och ges större vikt när du skapar teman och en övergripande berättarröst för dataartikeln. <p>När ingen betoning används visas komponenterna i presentationer enligt följande:<ul><li>**Mätvärden och dimensioner:** Kursiv</li><li>**Dimension-objekt:** Citattecken</li></ul></p><p>När betoning används visas komponenterna i presentationer enligt följande:</p><ul><li>**Mätvärden och dimensioner:** Kursiv och fet</li><li>**Dimension-objekt:** Fet när motsvarande dimension framhävs<p>En färg används också på dimensionsobjektet när dimensionsobjektet är markerat i diagrammet.</p></li></ul> |
 
-   <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
-   - **[!UICONTROL Annotations]** - Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  -  -->
+   <!-- 
+   add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
+   - **[!UICONTROL Annotations]** - Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  -  
+   -->
 
 1. (Villkorligt) Välj **[!UICONTROL Default theme]** om du vill generera bilder i färre steg och om ett företagstema inte krävs för bildpresentationen.
 
@@ -191,7 +193,7 @@ Möjligheten att generera bilder är aktiverad som standard för alla användare
 
 Administratörer av produktprofiler vars organisationer har licens att generera bilder kan vid behov inaktivera åtkomsten.
 
-I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** åtkomsten till den här funktionen. En [produktprofiladministratör](https://helpx.adobe.com/se/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console] om de vill inaktivera åtkomst:
+I [!UICONTROL Adobe Admin Console] avgör behörigheten [!UICONTROL Reporting Tools] **[!UICONTROL Data storytelling]** åtkomsten till den här funktionen. En [produktprofiladministratör](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) måste följa de här stegen i [!UICONTROL Admin Console] om de vill inaktivera åtkomst:
 1. Navigera till **[!UICONTROL Admin Console]** > **[!UICONTROL Products and services]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Product Profiles]**
 1. Välj titeln för den produktprofil som du vill ge åtkomst till [!UICONTROL Data storytelling].
 1. Välj **[!UICONTROL Permissions]** i den specifika produktprofilen.

@@ -3,7 +3,7 @@ description: Lär dig hur du kan använda funktioner för att filtrera och sorte
 title: Använd funktioner
 feature: Calculated Metrics
 exl-id: 7a41aa4e-90c6-4242-a801-2eef6b524cfe
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: a85cc758f414c8c9f702ed83d1dd2675bf29a30f
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 0%
@@ -25,7 +25,8 @@ En lista över alla funktioner finns i [Grundfunktioner](/help/components/calc-m
 
 
 
-<!-- This video is way too outdated and too much AA oriented to comfortably show as part of CJA functionality 
+<!-- 
+This video is way too outdated and too much AA oriented to comfortably show as part of CJA functionality 
 
 Watch this [video](https://youtu.be/SSyWvomnewI) to understand the use of functions.
 

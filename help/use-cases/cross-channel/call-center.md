@@ -5,7 +5,7 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Customer Journey Analytics har den värdefulla och robusta möjligheten att komb
 
 ## Importera webb- och callcenterdata till plattformen
 
-Importera data till Adobe Experience Platform. Se [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=sv-SE) och [Infoga data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=sv-SE) i Adobe Experience Platform-dokumentationen.
+Importera data till Adobe Experience Platform. Se [Skapa ett schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html) och [Infoga data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html) i Adobe Experience Platform-dokumentationen.
 
 När du importerar data till plattformen kan följande tips hjälpa dig att få bättre insikter i de resulterande rapporterna:
 
@@ -145,4 +145,5 @@ wanted to understand when someone interacts with a facet, whats the highest perc
 
 use sequential segments, but you lose the ability to use attribution IQ
 
-## What to do when you've found insight -->
+## What to do when you've found insight 
+-->

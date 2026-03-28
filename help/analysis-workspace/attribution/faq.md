@@ -4,7 +4,7 @@ description: Få svar på vanliga frågor om attribuering.
 feature: Attribution
 role: User, Admin
 exl-id: 8e05957a-f954-4e61-aeed-cd2bd2fe11f8
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Här är svar på vanliga frågor om attribuering.
 
-+++## Vad är radobjektet *Inget* när du använder attribuering?
++++## Vad är radobjektet *Inget* när attribuering används?
 
 Radobjektet *Ingen* är ett objekt som fångar upp alla konverteringar som har gjorts utan några beröringspunkter i uppslagsfönstret. Om du vill minska antalet konverteringar som tilldelats radobjektet *Ingen* kan du försöka med att använda ett längre uppslagsfönster.
 
@@ -45,7 +45,8 @@ In this example, Entries and Bounce rate would not show data from August 31. The
 +++
 -->
 
-<!-- not relevant anymore due to introduction of separation of container and lookback window 
+<!--
+not relevant anymore due to introduction of separation of container and lookback window 
 +++## When should I use a visit, visitor, or custom attribution lookback?
 
 The choice of attribution lookback depends on your use case. If conversions typically take longer than a single visit, a visitor or custom lookback is recommended. For longer conversion cycles, custom lookback windows are best as they are the only type that can pull in data from prior to the reporting window.
@@ -62,7 +63,7 @@ Attribution is recalculated at report runtime, so there is no difference between
 -->
 
 
-++## Finns det attribueringsmodeller i andra analysfunktioner?
++++## Finns det attribueringsmodeller i andra analysfunktioner?
 
 Ja. Attributionsmodeller är också tillgängliga som en del av komponentinställningarna för en måttkomponent i en datavy. Se [Inställningar för attribueringskomponent](/help/data-views/component-settings/attribution.md). För dimensionskomponenter kan du använda beständighet. Persistence är möjligheten för ett givet dimensionsvärde att attribut till ett mätvärde efter händelsen det är inställt på. Den använder en kombination av allokering och förfallodatum. Mer information finns i [Inställningar för Persistence-komponent](/help/data-views/component-settings/persistence.md)
 
@@ -78,7 +79,7 @@ Attribution models are available outside of virtual report suites. While they us
 -->
 
 
-++## Vilka mått och mått stöds?
++++## Vilka mått och mätvärden stöds?
 
 Attribution is supported on all non-standard metrics that you have defined in your data view.
 

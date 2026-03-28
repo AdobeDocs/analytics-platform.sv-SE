@@ -5,7 +5,7 @@ title: Hantera exportloggar
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
-source-git-commit: bf76b8688dc0c463c032dd94e88450fed5488949
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -72,17 +72,21 @@ Om du vill hitta den information du behöver kan du antingen filtrera listan med
 
 1. I sökfältet börjar du skriva in information som är kopplad till loggen som du söker efter. Du kan söka efter data från alla kolumner som är tillgängliga i tabellen.
 
-<!-- removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
+<!-- 
+removed for MVP: Retry an export You can re-run the export associated with the selected log, using the data as it was on the day the log was originally exported. This is useful when selecting a log that show a failed export or when selecting a log that was accidentally deleted. 
 
 Retrying an export that has a status of Pending will delay the export process.
 
-This option is not available when selecting multiple logs. -->
+This option is not available when selecting multiple logs. 
+-->
 
-<!-- 1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
+<!-- 
+1. In Customer Journey Analytics, select [!UICONTROL **Components**] > [!UICONTROL **Exports**].
 
 1. Select the [!UICONTROL **Logs**] tab, then select a log.
 
-1. Select [!UICONTROL **Retry**]. -->
+1. Select [!UICONTROL **Retry**]. 
+-->
 
 ## Redigera och exportera
 

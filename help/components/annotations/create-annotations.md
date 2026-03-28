@@ -4,7 +4,7 @@ description: Lär dig skapa anteckningar i Analysis Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 0%
@@ -29,7 +29,8 @@ Du kan skapa en anteckning på följande sätt:
 
 Om du vill definiera anteckningen använder du [[!UICONTROL Annotation builder]](#annotation-builder).
 
-<!-- Should we really mention API here. If so, we can do it all over the place in the docs...
+<!-- 
+Should we really mention API here. If so, we can do it all over the place in the docs...
 | **Use the [Customer Journey Analytics Annotations API](https://developer.adobe.com/cja-apis/docs/endpoints/annotations/)** | The Customer Journey Analytics Annotations APIs allow you to create, update, or retrieve annotations programmatically through Adobe Developer. These APIs use the same data and methods that Adobe uses inside the product UI. |
 -->
 
@@ -55,7 +56,7 @@ Om du vill definiera anteckningen använder du [[!UICONTROL Annotation builder]]
 <!-- markdownlint-enable MD034 -->
 
 
-Dialogrutan **[!UICONTROL Annotations builder]** används för att skapa nya eller redigera befintliga anteckningar. Dialogrutan heter **[!UICONTROL New annotation]** eller **[!UICONTROL Edit annotation]** för anteckningar som du skapar eller hanterar från [[!UICONTROL Annotations]-hanteraren &#x200B;](/help/components/annotations/manage-annotations.md).
+Dialogrutan **[!UICONTROL Annotations builder]** används för att skapa nya eller redigera befintliga anteckningar. Dialogrutan heter **[!UICONTROL New annotation]** eller **[!UICONTROL Edit annotation]** för anteckningar som du skapar eller hanterar från [[!UICONTROL Annotations]-hanteraren ](/help/components/annotations/manage-annotations.md).
 
 
 >[!BEGINTABS]

@@ -5,7 +5,7 @@ title: Exportera hela tabeller till molnet
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: c4a7884ae05d9290b2974483474ba8326492d014
+source-git-commit: b9efb621523f8bbfbb3afe7db4db2e60fcddd34c
 workflow-type: tm+mt
 source-wordcount: '3159'
 ht-degree: 1%

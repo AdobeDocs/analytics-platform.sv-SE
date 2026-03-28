@@ -4,7 +4,7 @@ title: Filtrera och ordna
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 39af20da14a5fb96fe01db31af5fc37b7e4aee16
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -46,14 +46,17 @@ Så här exkluderar du vissa rader från en frihandstabell:
 
    Håll ned tangenten ***Skift*** om du vill markera flera rader, eller håll ned tangenten ***Kommando*** (i Mac) eller tangenten ***Ctrl*** (i Windows) om du vill markera flera rader.
 
-<!--### Right-click > Delete selected rows
+<!--
+### Right-click > Delete selected rows
 
 Note: this option does not seem to work. AN-338422
 
 1. Select 1 or more rows. 
 1. Right-click and select **[!UICONTROL Delete Selected Rows]**. 
 
-   This action will remove the rows from the table and apply a table filter.-->
+   This action will remove the rows from the table and apply a table filter
+ 
+-->
 
 
 ### Använda enkel eller avancerad filtrering i en tabell

@@ -5,7 +5,8 @@ title: Översikt över Analytics-dataflöden
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: b0b86424399ea79deca8f1d522d52354dfaaa8c7
+exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -37,12 +38,14 @@ Följande resurser hjälper dig att förstå det grundläggande arbetsflödet f�
 * Bästa praxis för dataflöden<!--add link-->: Bästa tillvägagångssätt för att skapa och hantera dataflöden.
 * Skapa en datafeed<!--add link-->: Teknisk information för att skapa en datafeed, som förklarar enskilda fält mer i detalj
 * Hantera datafeeds<!--add link-->: Läs mer om hur du navigerar i gränssnittet för datafeeds
-* Innehåll i datafeed <!--add link-->: Förstå vad som finns i den komprimerade filen <!-- Is this still the output users can download from the destination? I aske Jun. -->
+* Innehåll i datafeed <!--add link-->: Förstå vad som finns i den komprimerade filen
 * Datakolumndefinitioner <!--add link-->: En omfattande lista över alla tillgängliga kolumner.
+
+<!-- Is this still the output users can download from the destination? I aske Jun. -->
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigera i dataflödesgränssnittet](https://video.tv.adobe.com/v/3428568?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigera i dataflödesgränssnittet](https://video.tv.adobe.com/v/25452?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -50,6 +53,6 @@ Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navigera i datafl
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hitta ditt datafeed-id](https://video.tv.adobe.com/v/3480886?captions=swe&quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Hitta ditt datafeed-id](https://video.tv.adobe.com/v/335747?quality=12&learn=on){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]

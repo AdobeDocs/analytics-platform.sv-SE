@@ -4,7 +4,7 @@ title: Sammanfattning av nyckelmått
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: a85cc758f414c8c9f702ed83d1dd2675bf29a30f
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-_I den här artikeln dokumenteras visualiseringen av nyckelmätvärden i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Se [Sammanfattning av nyckeltal](https://experienceleague.adobe.com/sv/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**-versionen av den här artikeln._
+_I den här artikeln dokumenteras visualiseringen av nyckelmätvärden i_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Se [Sammanfattning av nyckeltal](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) för_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**-versionen av den här artikeln._
 
 >[!ENDSHADEBOX]
 
@@ -34,7 +34,7 @@ Med visualiseringen ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) **[!UICONTR
 
 * Aktuellt totalt värde ([!UICONTROL **sammanfattningsnummer**]) för måttet
 
-## Användningsexempel
+## Användningsfall
 
 Den här visualiseringen åtgärdar flera vanliga användningsfall, bland annat:
 
@@ -70,7 +70,8 @@ Den här visualiseringen åtgärdar flera vanliga användningsfall, bland annat:
 
 1. Välj **[!UICONTROL Build]**.
 
-<!--## How the Key Metric Summary visualization handles the comparison date range
+<!--
+## How the Key Metric Summary visualization handles the comparison date range
 
 (This will probably release in January. Per Jaden Howell)
 
@@ -95,7 +96,8 @@ Comparison date range is set to a non-relative date range, such as 'Feb 2nd, 202
 >
 >Last week is relative to the day the project is opened on, but it is not based on the panel's date range of 'Yesterday'. In other cases, such as if the panel's date range was 'This week', it may be relative.
 
-When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. -->
+When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. 
+-->
 
 Resultatet av sammanfattningen av nyckeltal ser ut så här:
 
@@ -152,5 +154,5 @@ När du har skapat visualiseringen kan du redigera den ursprungliga konfiguratio
 >[!MORELIKETHIS]
 >
 >[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Snabbmenyn Visualisering &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)

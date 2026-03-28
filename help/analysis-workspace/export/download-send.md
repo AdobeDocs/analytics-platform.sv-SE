@@ -4,7 +4,7 @@ title: Hämta projekt och data
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 1cb9e18f79e8ca49b63aa7d8117ce6c61a020454
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Med alternativet **[!UICONTROL Copy to clipboard]** på snabbmenyn kan du snabbt
 >Du kan använda snabbtangenten **_cmd + c_** (macOS) eller **_ctrl + c_** (Windows) för att kopiera ditt val till Urklipp. Använd sedan **_cmd + v_** (macOS) eller **_ctrl + v_** (Windows) för att klistra in data.
 
 
-![Alternativet Kopiera markering till Urklipp. &#x200B;](assets/copy-clipboard.png){zoomable="yes"}
+![Alternativet Kopiera markering till Urklipp. ](assets/copy-clipboard.png){zoomable="yes"}
 
 ## Hämta data i en visualisering som en CSV-fil {#download-data}
 
@@ -77,7 +77,8 @@ Så här gör du:
 
 * Välj **[!UICONTROL Download data as CSV]** på snabbmenyn i en tabell eller visualisering. Detta hämtar visade data i tabellen eller den underliggande datakällan för en visualisering som en CSV-fil.
 
-<!-- Only relevant as soon as CJA supports Map visualization 
+<!-- 
+Only relevant as soon as CJA supports Map visualization 
   >[!NOTE]
   >
   >  Note: the Map visualization does not support this option.
@@ -116,8 +117,8 @@ Följande funktioner i en frihandstabell används i den hämtade filen:
 
 När filen laddas ned visas följande meddelanden:
 
-* Ett blått **[!UICONTROL _tabellnamn _-_Dimension _.csv har begärts._x _% slutfört]**&#x200B;anger förloppet. Om du vill avbryta hämtningen väljer du **[!UICONTROL Cancel download]**. Välj ![CrossSize100](/help/assets/icons/CrossSize100.svg) om du vill stänga meddelandet, som inte avbryter hämtningen.
-* Ett grönt **[!UICONTROL _tabellnamn _-_Dimension _.csv har hämtats]**&#x200B;meddelande om slutförd filhämtning. Filen hämtas till den nedladdningsmapp som är konfigurerad för webbläsaren.
+* Ett blått **[!UICONTROL _tabellnamn _-_Dimension _.csv har begärts._x _% slutfört]**anger förloppet. Om du vill avbryta hämtningen väljer du **[!UICONTROL Cancel download]**. Välj ![CrossSize100](/help/assets/icons/CrossSize100.svg) om du vill stänga meddelandet, som inte avbryter hämtningen.
+* Ett grönt **[!UICONTROL _tabellnamn _-_Dimension _.csv har hämtats]**meddelande om slutförd filhämtning. Filen hämtas till den nedladdningsmapp som är konfigurerad för webbläsaren.
 
 Om du begär mer än en nedladdning åt gången får du ett meddelande om att varje ytterligare nedladdning är i kö tills den tidigare nedladdningen är klar.
 

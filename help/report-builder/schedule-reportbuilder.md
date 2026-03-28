@@ -6,7 +6,7 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Med schemafunktionen kan du också ange lösenordsskydd för en arbetsbok och re
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schemalägg arbetsböcker](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/schedule-cja-workbooks-using-report-builder){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Schemalägg arbetsböcker](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/schedule-cja-workbooks-using-report-builder){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
@@ -70,7 +70,8 @@ I avsnittet **[!UICONTROL File]** anger du information om filtyp, namn och löse
    * **[!UICONTROL ISO Date format]**, vilket resulterar i att `YYYY-MM-DD` läggs till i filnamnet.
    * **[!UICONTROL ISO Date format + time stamp]**, vilket resulterar i att `YYYY-MM-DD_HH-MM-SS` läggs till i filnamnet.
 
-<!-- Does no longer seem to be an option? 
+<!-- 
+Does no longer seem to be an option? 
 1. (Optional) Select **.zip compression** to compress the file and set up password protection on the file.
 
     When you make this selection, you're prompted to enter a password to open the file. This is helpful if you have concerns about data security and you want to password protect the workbook. Protecting the file with a password requires you to select **.zip compression**. The password must be at least 8 characters and contain a number and a special character.

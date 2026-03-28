@@ -5,7 +5,7 @@ title: Ta bort projekt
 feature: Workspace Basics
 exl-id: 9c3523b1-afa2-4a68-a432-972032680fc7
 role: User
-source-git-commit: 9506cc42e80f25f68a891f21f38d60fb4d364588
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '27'
 ht-degree: 7%
@@ -18,7 +18,8 @@ ht-degree: 7%
 Se [Åtgärder i Hantera projekt](../freeform-overview.md#actions) om hur du tar bort projekt från Analysis Workspace.
 
 
-<!-- Is this article still needed; not in the TOC anymore
+<!--
+Is this article still needed; not in the TOC anymore
 
 
 ## Move a project {#move-project-in-folder}
