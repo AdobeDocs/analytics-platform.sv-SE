@@ -1,13 +1,13 @@
 ---
-description: Förstå paneler och hur du använder paneler i Analysis Workspace.
-title: Paneler - översikt
+description: Lär dig hur du använder paneler i Analysis Workspace för att ordna rapporter, filtrera eller dela upp data och för att definiera dataintervallet.
+title: Översikt över paneler i Analysis Workspace
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: d89c9dd2ab42ada9d0af259c21a77f183384b680
 workflow-type: tm+mt
-source-wordcount: '2077'
-ht-degree: 1%
+source-wordcount: '2518'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Följande paneltyper är tillgängliga i Analysis Workspace för [!UICONTROL Cus
 | [Frihand](freeform-panel.md) | Utför obegränsade jämförelser och uppdelningar och lägg sedan till visualiseringar för att berätta en utförlig databerättelse. |
 | [Medel - genomsnittlig minutpublik](average-minute-audience-panel.md) | Analysera den genomsnittliga minuten-publiken för ett visst innehåll eller under en anpassad tidsperiod. |
 | [Medievisningsprogram för samtidig användning](media-concurrent-viewers.md) | Analysera samtidiga tittare över tid, med information om maximal samtidighet och möjlighet att dela upp och jämföra. |
-| [Tidsåtgång för uppspelning av media](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analysera den uppspelningstid som används för att förstå var högfrekvenser förekommer eller var bortfall inträffar. |
+| [Tidsåtgång för uppspelning av media](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analysera den uppspelningstid som används för att förstå var maximal samtidighet inträffar eller var bortfall inträffar. |
 | [Nästa eller föregående objekt](next-previous.md) | Visa nästa eller föregående sidor som andra går till. |
 | [Snabba insikter](quickinsight.md) | Bygg snabbt ett frihandsbord och en medföljande visualisering för att analysera och hitta insikter snabbare. |
 
@@ -53,7 +53,7 @@ Ni kan:
 
   ![Popup som visar möjliga visualiseringar](assets/blank-panel.png)
 
-  | Välj.. | Skapa en.. |
+  | Välj... | Skapa en.. |
   |---|---|
   | ![Tabell](/help/assets/icons/Table.svg) | [Frihandstabell](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) |
   | ![Linjediagram](/help/assets/icons/GraphTrend.svg) | [Linjediagram](/help/analysis-workspace/visualizations/line.md) |
@@ -83,13 +83,13 @@ Du kan hantera en panel på följande sätt:
 
 * Om du vill komprimera en panel väljer du ![SparrrNed](/help/assets/icons/ChevronDown.svg).
 * Om du vill visa en komprimerad panel väljer du ![SparrVänster](/help/assets/icons/ChevronLeft.svg).
-* Om du vill ta bort en panel väljer du ![CrossSize400](/help/assets/icons/CrossSize200.svg). Ångra genom att välja **[!UICONTROL Edit]** > **[!UICONTROL Undo]** (**[!UICONTROL *cmd+z *]**) |**[!UICONTROL * Ctrl+z *]**).
+* Om du vill ta bort en panel väljer du ![CrossSize400](/help/assets/icons/CrossSize200.svg). Ångra genom att välja **[!UICONTROL Edit]** > **[!UICONTROL Undo]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
 * Om du vill flytta en panel drar och släpper du panelen när en ![Flytta](/help/assets/icons/Move.svg) är synlig (vanligtvis när du för muspekaren över rubriken).
 
 
 ## Datavy
 
-Varje panel är associerad med en [datavy](/help/data-views/data-views.md) som identifieras av ![Data](/help/assets/icons/Data.svg) **[!UICONTROL *namnet på datavyn *]**&#x200B;i listrutan längst upp till höger på panelen.
+Varje panel är associerad med en [datavy](/help/data-views/data-views.md). Du kan identifiera ![datavyns ](/help/assets/icons/Data.svg) **[!UICONTROL *namn *]**i den nedrullningsbara menyn längst upp till höger på panelen.
 
 När du skapar ett tomt Workspace-projekt är standarddatavyn för den första panelen datavyn som du senast arbetade med i Customer Journey Analytics.
 
@@ -124,7 +124,7 @@ Du kan också välja en **[!UICONTROL Preset]** i listrutan [!UICONTROL *Välj e
 1. Du kan också välja **[!UICONTROL Show advanced settings]** för att:
 
    * Ange **[!UICONTROL Start time]** och **[!UICONTROL End time]** förutom standardvärdena `12:00 AM` (`0:00`) och `11:59 PM` (`23:59`). Sluttider omfattar alltid 59 sekunder. För ett datumintervall som sträcker sig över många dagar gäller starttiden den första dagen i datumintervallet och sluttiden gäller den sista dagen i datumintervallet. Använd **[!UICONTROL (Reset time values)]** om du vill återställa start- och sluttiden till standardvärdena.
-   * **[!UICONTROL Make date range components relative to panel calendar]**. Om det är inaktiverat är de datumintervallkomponenter som används på panelen relativa till den aktuella tiden. Om det här alternativet är aktiverat är de datumintervallskomponenter som används på panelen relaterade till panelkalendern.
+   * **[!UICONTROL Make date range components relative to panel calendar]**. Om det är inaktiverat är datumintervallets komponenter som används på panelen relativa till den aktuella tiden. Om det här alternativet är aktiverat är datumintervallets komponenter som används på panelen relativa till panelkalendern.
    * **[!UICONTROL Use rolling dates]**. Om det här alternativet är aktiverat uppdateras förinställda datumintervall som **[!UICONTROL Last 7 full days]** dynamiskt som aktuellt datum- och tidsförlopp. Om du avaktiverar det uppdateras inte dessa förinställningar när de har använts.
 
      ![Rullande datum](assets/calendar-rolling.png)
@@ -133,10 +133,10 @@ Du kan också välja en **[!UICONTROL Preset]** i listrutan [!UICONTROL *Välj e
 
       1. Välj **[!UICONTROL Start of]**, **[!UICONTROL End of]** eller **[!UICONTROL Fixed day]**.
       1. När du har valt **[!UICONTROL Start of]** eller **[!UICONTROL End of]** kan du skapa ett fullständigt uttryck. Till exempel: **[!UICONTROL End of]** **[!UICONTROL current year]** **[!UICONTROL plus]** `1` **[!UICONTROL day]**. Välj lämpligt värde för varje enskild del av uttrycket.
-         * Välj ett värde för aktuell. Till exempel **[!UICONTROL current year]**.
+         * Välj ett värde för aktuell. Exempel: **[!UICONTROL current year]**.
          * Välj ett värde för ytterligare beräkning. Exempel: **[!UICONTROL plus]**.
-         * När du har angett ytterligare beräkning anger du ett värde. Till exempel `1`.
-         * När du har angett ytterligare beräkning väljer du den tidsperiod som ska användas för beräkningen. Till exempel **[!UICONTROL day]**.
+         * När du har angett ytterligare en beräkning anger du ett värde. Exempel: `1`.
+         * När du har angett ytterligare en beräkning väljer du den tidsperiod som ska användas för beräkningen. Exempel: **[!UICONTROL day]**.
 
      Välj **[!UICONTROL Hide details]** om du vill dölja informationen för beräkning av rullande datum.
 
@@ -146,89 +146,145 @@ Välj **[!UICONTROL Apply to all panels]** om du vill använda datumintervallet 
 
 ## Släppzon {#dropzone}
 
-Med panelens släppzon kan du tillämpa segment och listrutesegment på alla tabeller och visualiseringar i en panel. Du kan använda ett eller flera segment på en panel.
+Med panelens släppzon, som heter **[!UICONTROL _Släpp en komponent för att filtrera eller dela upp data_]**, kan du filtrera eller dela upp data för panelen. De segment eller uppdelningar som du använder för att filtrera eller dela upp data gäller för alla frihandstabeller och visualiseringar i panelen.
+
+Med segment och uppdelningar kan du interagera med data på ett kontrollerat sätt. Du kan till exempel lägga till en segmentlistruta för mobila enhetstyper så att du kan filtrera panelen genom att välja Tablet, Mobiltelefon eller Skrivbord.
+
+Segment kan också användas för att konsolidera många projekt till ett. Om du till exempel har olika versioner av samma projekt med olika landssegment kan du konsolidera alla versioner till ett enda projekt och lägga till en meny för landssegment.
+
+Bilden nedan visar de olika variationerna av (snabba) segment eller uppdelningar som uppstår när du lägger till komponenter i släppzonen.
+
+![Släpp zon för en panel](assets/panel-drop-zone.png)
+
+### Lägg till eller ersätt
+
+Så här lägger du till eller ersätter (snabba) segment eller uppdelningar:
+
+1. Välj en eller flera komponenter från komponentspåret. Använd ⇧+![Markera](/help/assets/icons/Select.svg) eller ^+![Markera](/help/assets/icons/Select.svg) om du vill markera flera komponenter.
+1. Dra markeringen till släppzonen med etiketten **[!UICONTROL _Släpp en komponent om du vill filtrera eller dela upp data_]** ❶ eller över en befintlig komponent som redan är placerad i närheten av släppzonen.
+1. Du har två alternativ när du ser ![Lägg till](/help/assets/icons/Add.svg) **[!UICONTROL Add (press "shift" to create dropdown)]** eller ![Byt](/help/assets/icons/Switch.svg) **[!UICONTROL Replace (press "shift" to add to dropdown)]**:
+
+   ![Lägg till eller ersätt i släppzon](assets/add-or-replace-to-drop-zone.png)
+
+   * Släpp markeringen för att skapa följande komponenter:
+      * [Segment](#segment) för alla segmentkomponenter som du släpper ❷.
+      * [Snabbsegment](#quick-segment) för alla komponenter som inte är segmentkomponenter (datumintervall, mått, dimensioner, dimensionsobjekt) som du släpper ❸.
+   * Släpp markeringen **medan du håller** ⇧ (Skift) för att skapa följande komponenter:
+      * Statiskt segment [nedrullningsbar meny](#drop-down-menu) med alternativ att filtrera på för de markerade segment som du släpper ❹.
+      * Statiskt segment [nedrullningsbar meny](#drop-down-menu) med alternativ att filtrera på för de valda datumintervallen som du släpper ❺.
+      * Statiskt segment [nedrullningsbar meny](#drop-down-menu) med alternativ att filtrera på för de valda mätvärden som du släpper ❻.
+      * Statiskt segment [nedrullningsbar meny](#drop-down-menu) eller nedbrytning [nedrullningsbar meny](#drop-down-menu) med alternativ att filtrera på eller dela upp för den valda dimensionen *objekt* som du släpper ❼.
+      * Dynamiskt segment [nedrullningsbar meny](#drop-down-menu) eller nedbrytning [nedrullningsbar meny](#drop-down-menu) med alternativ som du kan filtrera på eller dela upp för de valda dimensionerna som du släpper ❽.
+
 
 ### Segment
 
-Dra och släpp segment från den vänstra panelen i panelens släppzon för att börja segmentera panelen. Upprepa den här processen om du vill lägga till fler segment på panelen. Segmenten visas sida vid sida högst upp på panelen.
+Alla segmentkomponenter som du släpper används för att segmentera panelen. Använd segment för att få segmenterade insikter i panelens data och visualiseringar.
 
-![Den vänstra panelen visar tillgängliga mått och det mobila kundmåttet som dras till panelens släppzon.](assets/segment-filter.png)
+### Snabbsegment
 
-#### Snabbsegment
+Alla icke-segmentkomponenter (dimension, dimensionsobjekt, mått, datumintervall) som tas bort definierar ett [snabbsegment](#quick-segment) för att segmentera panelen. Använd valfri icke-segmentkomponent för att skapa ett snabbsegment utan att använda [segmentverktyget](/help/components/segments/seg-builder.md). Ett segment som skapas på det här sättet definieras automatiskt som ett händelsenivåsegment och får etiketten **[!UICONTROL Quick segment]** som standard.
 
-Komponenter som inte tillhör segment kan också dras direkt till släppzonen för att skapa snabbsegment, vilket sparar tid och arbete med att gå till [segmentbyggaren](/help/components/segments/seg-builder.md). Segment som skapas på det här sättet definieras automatiskt som händelsenivåsegment. Du kan snabbt ändra den här definitionen genom att välja ![Redigera](/help/assets/icons/Edit.svg) bredvid segmentnamnet.
+Du kan också använda ![FilterAdd](/help/assets/icons/FilterAdd.svg) för att skapa ett snabbsegment.
+
+Se [Snabbsegment](/help/components/segments/seg-quick.md) för mer information om hur du skapar och hanterar snabbsegment.
 
 
-Mer information finns i [Snabbsegment](/help/components/segments/seg-quick.md).
+### Listruta
 
-![Ad hoc-segment som är offentliga och släpps i släppzonen](assets/adhoc-segment-filter.png)
+En rullgardinsmeny som skapas medan du håller ⇧ kan:
 
-### Nedrullningsbara segment
+* innehåller en [statisk](#static)- eller [dynamisk](#dynamic)-lista med objekt.
+* [filtrera en panel](#filter) eller [bryta ned en panel](#breakdown).
+
+
+#### Statisk
+
+Statiska rullgardinsmenyer skapas för den valda dimensionen *objekt*, mått, segment och datumintervall. Alternativen i en statisk listruta baseras på de valda komponenter som du släpper och alternativen ändras inte när du lägger till eller ersätter komponenter.
+
+
+#### Dynamisk
+
+Dynamiska listrutor skapas bara när du släpper dimensionskomponenter. Dynamiska listrutor är markerade med ![FilterRefresh](/help/assets/icons/FilterRefresh.svg) som en del av etiketten.
+
+De tillgängliga alternativen i en dynamisk listruta är baserade på:
+
+* data som är resultatet av valda objekt i andra nedrullningsbara menyer, segment och snabbsegment i panelens släppzon, och
+* de data som är tillgängliga inom panelens rapporteringsintervall.
+
+Du kan till exempel lägga till två dynamiska listrutor med en landsdimension och en stadsdimension. När du väljer ett land i listrutan **[!UICONTROL Countries]** justeras listrutan **[!UICONTROL Cities]** dynamiskt så att den bara visar städer i det valda landet. När du har ytterligare statiska rullgardinsmenyer påverkar objekt som är markerade på dessa rullgardinsmenyer även de tillgängliga objekten på de dynamiska listrutorna. Objekt som är markerade i dynamiska listrutor påverkar inte tillgängliga objekt i statiska listrutor.
+
+
+#### Filtrera en panel
+
+En listruta skapas för alla mått-, segment- eller datumintervallkomponenter som du släpper **när du håller ned** ⇧. Med den nedrullningsbara menyn kan du filtrera panelen baserat på de alternativ som är tillgängliga för den släppta komponenten.
+
+För alla *dimension*-komponenter som du släpper **när du håller ned** ⇧ skapas en segmentlistruta. Med den nedrullningsbara menyn kan du filtrera panelen baserat på de alternativ som är tillgängliga för de släppta dimensionsobjekten ([statisk](#static) segmentmeny) eller dimensionskomponenten ([dynamisk](#dynamic) segmentmeny). Så här konfigurerar du listrutan explicit för att filtrera med segment:
+
+* Välj ![Uppdelning](/help/assets/icons/Breakdown.svg) och välj ![Filter](/help/assets/icons/Filter.svg) på snabbmenyn för komponenten ❾.
+
+
+#### Dela upp en panel
+
+För alla *dimension*-komponenter som du släpper **när du håller ned** ⇧ skapas en segmentlistruta. Du kan konfigurera listrutan så att den bryts ned i stället. Så här konfigurerar du den nedrullningsbara menyn explicit för att dela upp med hjälp av uppdelningar:
+
+* Välj ![Filter](/help/assets/icons/Filter.svg) och välj ![Uppdelning](/help/assets/icons/Breakdown.svg) på snabbmenyn för komponenten ❾.
+
+>[!IMPORTANT]
+>
+>Uppdelningar är bara tillgängliga för dimensioner och dimensionsobjekt, inte för segment, datumintervall eller mått.
+>
+
+
+
+#### Segment kontra uppdelning
+
+Överväg att dela upp en panel i stället för att filtrera en panel (med segment) i följande scenarier:
+
+* Om du använder attribueringsaktiverade mätvärden på panelen tar segment ofta bort dina attribueringsaktiverade mätvärden. Uppdelningar tillämpas vid en annan punkt i frågan som körs för att hämta data för panelen. Därför rensas inte dessa attributaktiverade värden bort vid uppdelningar.
+
+  Se t.ex. skillnaden mellan attributbaserade **[!UICONTROL Online Revenue]**-mått när du använder ett **[!UICONTROL Luma: Product Category]** ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Women]** -segment och ett **[!UICONTROL Luma: Product Category]** ![Brytning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Women]** -beteende.
+
+  ![Attributbaserade mått: filter kontra uppdelning](assets/attribute-filter-breakdown.png)
+
+* Om du använder en underhändelsenivådimension i en listruta för uppdelning, körs delhändelserna på den nivån. I stället körs segment i en segmentlistruta på händelsenivån.
+
+  Se till exempel skillnaden mellan **[!UICONTROL Online Revenue]**-måttet när du använder ett **[!UICONTROL Luma: Product Subcategory]** ![Filter](/help/assets/icons/Filter.svg) **[!UICONTROL Tops]** -segment jämfört med ett **[!UICONTROL Luma: Product Subcategory]** ![Brytning](/help/assets/icons/Breakdown.svg) **[!UICONTROL Tops]** -nedbrytning. Nedbrytningen kör frågan explicit på underhändelsenivå, medan segmentet kör frågan på händelsenivå.
+
+  ![Delhändelsebaserade mått: filter kontra uppdelning](assets/sub-event-filter-breakdown.png)
+
+### Hantera
+
+Du kan hantera komponenterna i släppzonen på följande sätt:
+
+| Vad du ska göra i panelens släppzon.. | Så här gör du ... |
+|---|---|
+| Ta bort ett segment eller snabbsegment. | Välj ![CrossSize300](/help/assets/icons/CrossSize300.svg) i komponenten. |
+| Ta bort ett markerat objekt från en nedrullningsbar meny. | Välj ![CrossSize100](/help/assets/icons/CrossSize100.svg) i objektet. |
+| Om du vill ta bort alla markerade objekt från en listruta. | Välj ![CrossSize200](/help/assets/icons/CrossSize200.svg) i listrutan. |
+| Så här redigerar du en komponents etikett. | Håll markören över komponentens etikett och välj ![Redigera](/help/assets/icons/Edit.svg). |
+| Om du vill ta bort en komponents etikett. | Håll pekaren över komponentens etikett och välj **[!UICONTROL Delete label]** på komponentens snabbmeny. |
+| Om du vill ta bort komponenten från släppzonen. | Välj **[!UICONTROL Delete drop-down]** på snabbmenyn för komponenten. |
+| Om du vill ha information om ett segment eller snabbsegment. | Hovra inuti komponenten och välj ![Info](/help/assets/icons/Info.svg) för att öppna Data Dictionary med information om komponenten. |
+| Om du vill ha information om komponenten som definierar en nedrullningsbar meny. | Hovra i listrutan och välj ![InfoOutline](/help/assets/icons/InfoOutline.svg) för att öppna Data Dictionary med information om komponenten. |
+| Om du vill redigera ett snabbsegment. | Hovra i snabbsegmentet och välj ![Redigera](/help/assets/icons/Edit.svg). Mer information finns i [Snabbsegment](/help/components/segments/seg-quick.md). |
+| Om du vill att en meny ska vara markerad. | Välj **[!UICONTROL Require selection]** på snabbmenyn för komponenten. |
+| Tillåt inget filter för en nedrullningsbar meny. | Välj **[!UICONTROL Allow no filter]** på snabbmenyn för komponenten. |
+| Om du vill återställa alla komponenter och rensa alla markeringar för nedrullningsbara menyer. | Välj **[!UICONTROL Reset all]**. |
+
+
 
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Nedrullningsbara segment](https://experienceleague.adobe.com/sv/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Använda filter i Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} för en demonstrationsvideo.
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
-
-#### Statiska rullgardinssegment
-
-Med statiska rullgardinssegment kan du interagera med data på ett kontrollerat sätt. Du kan till exempel lägga till ett nedrullningsbart segment för mobila enhetstyper så att du kan segmentera panelen via Surfplatta, Mobiltelefon eller Skrivbord.
-
-Statiska rullgardinssegment kan också användas för att konsolidera många projekt till ett. Om du till exempel har många versioner av samma projekt med olika landssegment tillämpade, kan du konsolidera alla versioner till ett enda projekt och lägga till ett nedrullningsbart landssegment.
-
-![Statiska nedrullningsbara segment med markerat segment för marknadskanalen &quot;Direkt&quot;. &#x200B;](assets/dropdown-filter-intro.png)
-
-##### Skapa statiska rullgardinssegment
-
-* För rullgardinsmenyer som använder dimensionsobjekt väljer du en dimension från den vänstra panelen och släpper dimensionen i panelens släppzon samtidigt som du håller ned ⇧ (*shift*). Den här åtgärden skapar ett nedrullningsbart segment med alla dimensionsobjekt som är associerade med den dimensionen.
-
-  Om du vill att listrutesegmentet endast ska innehålla specifika dimensionsobjekt som är kopplade till en dimension, väljer du högerpilsikonen bredvid önskad dimension på den vänstra panelen. Den här åtgärden visar alla tillgängliga dimensionsobjekt. Markera flera dimensionsobjekt i den här listan med ⇧+![Markera](/help/assets/icons/Select.svg) (*Skift* + *välj*) eller ^+![Markera](/help/assets/icons/Select.svg) (*kontroll* + *markera*) och släpp dem sedan i panelens släppzon **samtidigt som du håller ned** ⇧.
-
-* För rullgardinsmenyer som använder en enda komponenttyp (t.ex. bara dimensioner, eller bara segment, eller endast mått) väljer du flera objekt av samma typ på den vänstra panelen med ⇧+![Markera](/help/assets/icons/Select.svg) eller ^+![Markera](/help/assets/icons/Select.svg). Släpp sedan objekten i panelens släppzon **samtidigt som du håller ned** ⇧.
-
-  Ett enskilt nedrullningsbart segment skapas med de komponenter som du har valt.
-
-* För rullgardinsmenyer som använder en blandning av komponenttyper (till exempel 2 mätvärden och 3 segment) väljer du flera komponenter med ⇧+![Markera](/help/assets/icons/Select.svg) eller ^+![Markera](/help/assets/icons/Select.svg). Släpp markeringen i panelens släppzon **medan du håller ned** ⇧. I det här sammanhanget behandlas alla komponenttyper som separata nedrullningsbara segment. Om du till exempel inkluderar både mått och dimensionsobjekt i markeringen skapas två separata nedrullningsbara segment: ett nedrullningsbart segment innehåller dimensionsobjekt och det andra innehåller mått.
-
-Ett nedrullningsbart segment innehåller följande alternativ för snabbmenyer:
-
-* **[!UICONTROL Delete drop-down]**: Tar bort det nedrullningsbara segmentet från panelen.
-* **[!UICONTROL Delete label]**: Ta bort texten som visas ovanför ett nedrullningsbart segment. Om du vill ändra etiketten håller du pekaren över etiketten och väljer ![Redigera etikett för det nedrullningsbara segmentet](/help/assets/icons/Edit.svg).
-* **[!UICONTROL Add label]**: När du lägger till ett nedrullningsbart segment i ett projekt ställs en etikett automatiskt in på komponentnamnet. Om du tar bort etiketten kan du lägga till den igen med det här alternativet.
-* **[!UICONTROL Require selection]**: Kräver att ett segment är inställt på panelen.
-
-##### Använda statiska rullgardinssegment
-
-Användare kan använda den nedrullningsbara segmentmenyn på något av följande sätt för att segmentera panelen:
-
-* Använd ett segment på panelen genom att markera segmentet i det nedrullningsbara segmentet.
-
-* Använd flera segment på panelen genom att markera mer än ett segment i listrutan. Panelen segmenteras för att inkludera något av de valda segmenten.
-
-
-#### Dynamiska rullgardinsmenyer
-
-Med dynamiska listrutesegment kan du fastställa tillgängliga värden baserat på data i panelens rapporteringsintervall och värden i andra nedrullningsbara segment. Du kan till exempel skapa två dynamiska listrutor med en landsdimension och en stadsdimension. När du väljer ett land i listrutan **[!UICONTROL Countries]** justeras listrutan **[!UICONTROL Cities]** dynamiskt så att den bara visar städer i det landet.
-
-Samma koncept gäller för alla dimensioner. Endast dimensionsobjekt som visas inom panelens datumintervall och markerade segment visas. Dimension-objekt som markeras i statiska rullgardinssegment påverkar tillgängliga värden i dynamiska rullgardinssegment. Inverteringen är emellertid inte true. Dimension-objekt som är markerade i dynamiska rullgardinssegment påverkar inte tillgängliga värden i statiska rullgardinssegment.
-
-Manuellt urval av dimensionsobjekt är tillgängligt om du förväntar dig att en viss dimensionsobjekt ska samlas in i framtiden. Du kan även rensa ett dynamiskt nedrullningsbart segment så att det inte innehåller något värde, vilket innebär att andra dynamiska nedrullningsbara segment kan innehålla fler värden. Välj **[!UICONTROL Reset all]** om du vill ta bort markeringen från alla nedrullningsbara segment för den panelen.
-
-Så här skapar du ett dynamiskt nedrullningsbart segment:
-
-* Dra och släpp en dimension i panelens släppzon **samtidigt som du håller ned** ⇧.
-
-Observera att dynamiska rullgardinsmenyer inte är tillgängliga för mått, segment eller datumintervall.
-
-Ett dynamiskt nedrullningsbart segment har samma alternativ för snabbmenyer som statiska nedrullningsbara segment.
-
 >[!BEGINSHADEBOX]
 
-Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dynamiska listrutesegment](https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} för en demonstrationsvideo.
+Se ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dynamiska listrutefilter](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} för en demonstrationsvideo.
 
 >[!ENDSHADEBOX]
 
