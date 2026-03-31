@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 exl-id: 1e962f52-6b56-4671-afea-d58dae67e8a8
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: ac86664e0136563d904021c72347fb544cda4a6d
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '749'
 ht-degree: 1%
 
 ---
@@ -78,6 +78,10 @@ Följande Customer Journey Analytics-roller och Experience Platform-behörighete
 | [Skapa konfigurationer för målgruppsanalys](/help/connections/audience-analysis/audience-analysis-configure.md) | Systemadministratör | <ul><li>Datauppsättningar: Läsbehörigheter</li><li>Scheman: Läs, Skriv</li><li>Identitetsnamnutrymmen: Läs</li></ul> |
 | [Visa målgruppsanalysdimensioner i datavyn](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Produktprofiladministratör för den produktprofil som datavyn har tilldelats <p>Mer information finns i [Åtkomstkontroll](/help/technotes/access-control.md).</p> | Ej tillämpligt |
 | Använd målgruppsanalysdimensioner i Analysis Workspace | Åtkomst till en datavy där målgruppsanalysdimensionerna lades till | Ej tillämpligt |
+
+## Användningsexempel för målgruppsanalys
+
+Exempel på användningsområden som framhäver värdet som finns i Målgruppsanalys finns i [Användningsexempel för målgruppsanalys](/help/connections/audience-analysis/audience-analysis-use-cases.md).
 
 ## Gränser för målgruppsanalys
 
