@@ -1,13 +1,13 @@
 ---
 title: Aktivera textning
-description: Aktivera identitetssammanfogning för händelsedatamängder i Customer Journey Analytics. Lär dig hur du konfigurerar beständiga ID:n, person-ID:n och spelar om fönster i gränssnittet för anslutningar för att sammanfoga data.
+description: Aktivera sammanfogning för händelsedatamängder i Customer Journey Analytics. Konfigurera beständiga ID:n, person-ID:n och uppspelningsfönster i anslutningsgränssnittet.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: f9c2f9cef97e00eb491b815ab8e83820b2dfc032
+source-git-commit: d42f0eb658f26d16bd21bb6ca47d5dd7c228e614
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1649'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,14 @@ Du aktiverar sammanfogning som en del av [datauppsättningsinställningarna](/he
 
 Du måste kontrollera och uppfylla kraven för sammanfogningsmetoden som du anger: [fältbaserad sammanfogning](fbs.md#prerequisites) eller [diagrambaserad sammanfogning](gbs.md#prerequisites).
 
-
 ## Preflight-kontroller
 
 Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
 
-* Om du ska använda XDM-schemafält för beständigt ID eller person-ID kontrollerar du att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
+* Om du ska använda [XDM-schemafält (Experience Data Model)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home) för beständigt ID eller person-ID kontrollerar du att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verifiera identitetstäckning för både beständigt ID och person-ID:
 
-   * **Beständigt ID**
+   * **[!UICONTROL Persistent ID]**
 
      Fråga 7 dagar efter data där det beständiga ID-fältet inte är null och dividera med en fråga på 7 dagar med data för alla händelser i datauppsättningen. Procentandelen bör vara över 95 %.
 
@@ -53,12 +52,12 @@ Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händ
       * `{PERSISTENT_ID_FIELD}` är fältet för det beständiga ID:t. Till exempel: `identityMap.ecid[0]`.
       * `{DATASET_TABLE_NAME}` är tabellnamnet för händelsedatamängden.
       * `{FORMAT_STRING}` är formatsträngen för tidsstämpelfältet. Till exempel: `MM/DD/YY HH12:MI AM`.
-      * `{START_DATE} ` är startdatum. Till exempel: `2024-01-01 00:00:00`.
+      * `{START_DATE}` är startdatum. Till exempel: `2024-01-01 00:00:00`.
       * `{END_DATE}` är slutdatumet i standardformat. Till exempel: `2024-01-08 00:00:00`.
 
 
-   * **Person-ID**
-      * För diagrambaserade sammanfogningar måste identitetsdiagrammet innehålla fragment som länkar ID-värden från det valda beständiga ID-namnutrymmet och ID-namnutrymmet. Du kan köra ett test genom att gå till [Experience Platform Identity Graphics Viewer](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} och fråga diagrammet efter några beständiga ID-värden. Kontrollera om dessa beständiga ID-värden är länkade till värden för person-ID i diagrammet.
+   * **[!UICONTROL Person ID]**
+      * För diagrambaserade sammanfogningar måste identitetsdiagrammet innehålla fragment som länkar ID-värden från det valda beständiga ID-namnutrymmet och ID-namnutrymmet. Du kan köra ett test genom att gå till [Experience Platform Identity Graphics Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} och fråga diagrammet efter några beständiga ID-värden. Kontrollera om dessa beständiga ID-värden är länkade till värden för person-ID i diagrammet.
       * För fältbaserad sammanfogning frågar du 7 dagar med data där ditt person-ID-fält inte är null och dividerar med en fråga på 7 dagar med data för alla händelser i din datamängd. Den här procentandelen bör helst vara över 5 procent.
 
         Exempel på en fråga som du kan använda för verifiering:
@@ -93,7 +92,7 @@ Du kan aktivera identitetssammanfogning när du [lägger till](/help/connections
 >id="connection_changeto_identitygraph"
 >title="Ändra till identitetsdiagram"
 >abstract="Kontrollera att du har avslutat konfigurationen av identitetsdiagrammet innan du använder identitetsdiagrammet för sammanfogning."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/stitching/gbs" text="Diagrambaserad utjämning"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Diagrambaserad utjämning"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -125,14 +124,14 @@ Du kan aktivera identitetssammanfogning när du [lägger till](/help/connections
 >id="connection_stitchingmetrics_badids"
 >title="Felaktiga ID:n"
 >abstract="Felaktiga ID:n är ID-värden som allvarligt påverkar rapporteringsdata."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/technotes/badids" text="Felaktiga ID:n"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="Felaktiga ID:n"
 
 
 ### Inställningar för datauppsättning
 
-Om du vill aktivera sammanfogning går du till händelsedatamängden **[!UICONTROL Datasets settings]** i dialogrutan **[!UICONTROL Add datasets]** eller **[!UICONTROL Edit dataset]**:
+Om du vill aktivera sammanfogning går du till händelsedatamängden **[!UICONTROL Datasets settings]** i dialogrutan **[!UICONTROL Add datasets]** eller **[!UICONTROL Edit dataset]**.
 
-![Alternativ för identitetssammanfogning när du aktiverar identitetssammanfogning](assets/identity-stitching-ui.png)
+![Alternativ för identitetsmatchning när du aktiverar funktionen](assets/identity-stitching-ui.png)
 
 1. Välj **[!UICONTROL Enable identity stitching]**.
 
@@ -142,18 +141,17 @@ Om du vill aktivera sammanfogning går du till händelsedatamängden **[!UICONTR
 
 1. Välj ett beständigt ID i listrutan **[!UICONTROL Persistent ID]**.
 
-   Om du väljer **[!UICONTROL Identity Map]** som beständigt ID måste du välja ett namnutrymme. Du har två alternativ:
+   Om du väljer **[!UICONTROL Identity Map]** som beständigt ID väljer du ett namnområde. Du har två alternativ:
 
    * Välj **[!UICONTROL Use primary identity namespace]** om du vill använda det primära identitetsnamnområdet.
    * Välj ett namnutrymme i listrutan **[!UICONTROL Namespace]**.
 
 1. Välj ett person-ID i listrutan **[!UICONTROL Person ID]**.
 
-   Om du väljer **[!UICONTROL Identity Map]** som person-ID måste du välja ett namnutrymme. Du har två alternativ:
+   Om du väljer **[!UICONTROL Identity Map]** som person-ID markerar du ett namnområde. Du har två alternativ:
 
    * Välj **[!UICONTROL Use primary identity namespace]** om du vill använda det primära identitetsnamnområdet.
    * Välj ett namnutrymme i listrutan **[!UICONTROL Namespace]**.
-
 
    Om du väljer **[!UICONTROL Identity Graph]** som person-ID (om du vill använda [diagrambaserad sammanfogning](/help/stitching/gbs.md)) måste du välja ett namnutrymme.
 
@@ -175,9 +173,14 @@ Om du vill aktivera sammanfogning går du till händelsedatamängden **[!UICONTR
 
 Utöver det vanliga **[!UICONTROL Datasets preview]**-gränssnittet finns två ytterligare informationspaneler tillgängliga när [du lägger till](/help/connections/create-connection.md#add-datasets)- eller [redigerar](/help/connections/create-connection.md#edit-a-dataset)-datauppsättningar i en personbaserad anslutning.
 
-![Alternativ för identitetssammanfogning när du aktiverar identitetssammanfogning](assets/identity-stitching-ui-preview.png)
+![Alternativ för identitetsmatchning när du aktiverar funktionen](assets/identity-stitching-ui-preview.png)
 
 #### Värden för textning
+
+>[!AVAILABILITY]
+>
+>Det går inte att använda kantlinjer för diagrambaserade sammanfogningar.
+>
 
 **[!UICONTROL Stitching metrics]** beräknas med en exempeluppsättning data med händelsetidsstämplar från de senaste 7 dagarna. Den här exempeluppsättningen med data skiljer sig vanligtvis från exempeldata som används i tabellen **[!UICONTROL Preview]**. Stitching metrics are details for:
 
@@ -191,8 +194,12 @@ Utöver det vanliga **[!UICONTROL Datasets preview]**-gränssnittet finns två y
 
   Beständig ID-täckning visas som en procentandel och jämförs med vad som är det minsta rekommenderade för en stabil utveckling eller en produktionskonfiguration.
 
-
 #### Felaktiga ID:n
+
+>[!AVAILABILITY]
+>
+>Dåliga ID:n är inte tillgängliga för diagrambaserad sammanfogning.
+>
 
 >[!INFO]
 >
@@ -223,7 +230,7 @@ När du har sparat en anslutning startas sammanfogningsprocessen för sammanfogn
 
 >[!CAUTION]
 >
->För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**&#x200B;för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
+>För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
 >
 
 
@@ -240,4 +247,4 @@ Stitching som är aktiverat i gränssnittet Connections kan användas samtidigt 
 
 Du har t.ex. webbaserade sammanslagna datauppsättningar i datasjön som ett resultat av tidigare eller nuvarande begäran om sammanfogning. Du kan lägga till sammanfogade data från en call-center-datauppsättning med hjälp av gränssnittet Anslutningar för att kombinera dessa data med de webbaserade data.
 
-Så småningom kommer Adobe att migrera dina begärandatabaserade dataset till den nya sammanfogningen av anslutningar.
+Så småningom kommer Adobe att migrera dina begärandebaserade sammanfogade datauppsättningar till den nya sammanfogningsfunktionen.
