@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 3524a7f62fa509c477e60d4d586ed2de52191b73
+source-git-commit: f9c2f9cef97e00eb491b815ab8e83820b2dfc032
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1648'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Du måste kontrollera och uppfylla kraven för sammanfogningsmetoden som du ange
 
 Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händelsedatauppsättningen innan du aktiverar identitetssammanfogning:
 
-* Om du ska använda XDM-schemafält för beständigt ID eller person-ID kontrollerar du att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces).
+* Om du ska använda XDM-schemafält för beständigt ID eller person-ID kontrollerar du att identiteterna är korrekt markerade i schemat för händelsedatamängden. [Se Översikt över namnområde för identitet](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces).
 * Verifiera identitetstäckning för både beständigt ID och person-ID:
 
    * **Beständigt ID**
@@ -58,7 +58,7 @@ Om du uppfyller kraven kan du utföra vissa preflight-kontroller av data i händ
 
 
    * **Person-ID**
-      * För diagrambaserade sammanfogningar måste identitetsdiagrammet innehålla fragment som länkar ID-värden från det valda beständiga ID-namnutrymmet och ID-namnutrymmet. Du kan köra ett test genom att gå till [Experience Platform Identity Graphics Viewer](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} och fråga diagrammet efter några beständiga ID-värden. Kontrollera om dessa beständiga ID-värden är länkade till värden för person-ID i diagrammet.
+      * För diagrambaserade sammanfogningar måste identitetsdiagrammet innehålla fragment som länkar ID-värden från det valda beständiga ID-namnutrymmet och ID-namnutrymmet. Du kan köra ett test genom att gå till [Experience Platform Identity Graphics Viewer](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} och fråga diagrammet efter några beständiga ID-värden. Kontrollera om dessa beständiga ID-värden är länkade till värden för person-ID i diagrammet.
       * För fältbaserad sammanfogning frågar du 7 dagar med data där ditt person-ID-fält inte är null och dividerar med en fråga på 7 dagar med data för alla händelser i din datamängd. Den här procentandelen bör helst vara över 5 procent.
 
         Exempel på en fråga som du kan använda för verifiering:
@@ -93,7 +93,7 @@ Du kan aktivera identitetssammanfogning när du [lägger till](/help/connections
 >id="connection_changeto_identitygraph"
 >title="Ändra till identitetsdiagram"
 >abstract="Kontrollera att du har avslutat konfigurationen av identitetsdiagrammet innan du använder identitetsdiagrammet för sammanfogning."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/stitching/gbs" text="Diagrambaserad utjämning"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Diagrambaserad utjämning"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -125,7 +125,7 @@ Du kan aktivera identitetssammanfogning när du [lägger till](/help/connections
 >id="connection_stitchingmetrics_badids"
 >title="Felaktiga ID:n"
 >abstract="Felaktiga ID:n är ID-värden som allvarligt påverkar rapporteringsdata."
->additional-url="https://experienceleague.adobe.com/sv/docs/analytics-platform/using/technotes/badids" text="Felaktiga ID:n"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="Felaktiga ID:n"
 
 
 ### Inställningar för datauppsättning
@@ -175,10 +175,6 @@ Om du vill aktivera sammanfogning går du till händelsedatamängden **[!UICONTR
 
 Utöver det vanliga **[!UICONTROL Datasets preview]**-gränssnittet finns två ytterligare informationspaneler tillgängliga när [du lägger till](/help/connections/create-connection.md#add-datasets)- eller [redigerar](/help/connections/create-connection.md#edit-a-dataset)-datauppsättningar i en personbaserad anslutning.
 
->[!NOTE]
->För kunder som har Customer Journey Analytics i AWS väntar den här funktionen på att släppas.
->
-
 ![Alternativ för identitetssammanfogning när du aktiverar identitetssammanfogning](assets/identity-stitching-ui-preview.png)
 
 #### Värden för textning
@@ -227,7 +223,7 @@ När du har sparat en anslutning startas sammanfogningsprocessen för sammanfogn
 
 >[!CAUTION]
 >
->För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**&#x200B;för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
+>För datauppsättningar som har aktiverats för sammanfogning i gränssnittet Anslutningar rapporteras status för bakåtfyllning omedelbart och felaktigt som ![status grön](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _-efterfyllningar slutförd]**för antalet slutförda efterfyllningar. Använd andra sätt för att kontrollera om data från den sammanslagna datauppsättningen är efterfyllda.
 >
 
 
