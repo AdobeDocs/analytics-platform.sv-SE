@@ -55,7 +55,7 @@ Content Analytics använder webbbildvisningsdata i händelsedatamängder i Exper
 >
 >Content Analytics utnyttjar AI/ML-tjänster som kan ge felaktiga eller vilseledande resultat. Använd därför ditt omdöme för att granska och validera AI/ML-genererade utdata.
 >
->Du kan använda fliken **[!UICONTROL Feedback]**, som är tillgänglig från ![ InfoOutline](/help/assets/icons/InfoOutline.svg) i huvudgränssnittet, för att ge feedback om AI/ML-genererade utdata.
+>Du kan använda fliken **[!UICONTROL Feedback]**, som är tillgänglig från ![&#x200B; InfoOutline](/help/assets/icons/InfoOutline.svg) i huvudgränssnittet, för att ge feedback om AI/ML-genererade utdata.
 >
 
 >[!NOTE]
