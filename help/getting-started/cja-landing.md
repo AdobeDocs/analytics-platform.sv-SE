@@ -4,9 +4,9 @@ description: Customer Journey Analytics landningssida.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 3afb60a60b7fd1acb414244dffdb6a6493792f9c
+source-git-commit: efdb05a28813b774ae276de4d9c59656e78618ba
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '701'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,23 @@ Den här tekniska handboken ger självhjälp för Customer Journey Analytics. Me
 
 Med Customer Journey Analytics kan ni styra hur ni kopplar samman online- och offlinedata i Analysis Workspace med vilket kund-ID som helst, så att ni kan utföra attribuering, segment, flöde, utfall osv. i alla era kunddata.
 
-## Vad är nytt?
+## Nyheter?
 
 Få en glimt av de senaste förbättringarna i Customer Journey Analytics-produkten och -dokumentationen! En omfattande lista över funktioner, förbättringar och korrigeringar finns i den detaljerade [versionsinformationen](../release-notes/latest.md). Besök sidan [dokumentationsuppdateringar](../release-notes/doc-changes.md) om du vill hålla dig uppdaterad med de senaste dokumentationsuppdateringarna.
 
 >[!BEGINTABS]
+
+>[!TAB Dela upp paneler]
+
+Nu kan du bryta ned en panel i Analysis Workspace. Det finns scenarier där en uppdelning av data och visualiseringar i en panel är att föredra framför att tillämpa segment på en panel.
+
+[![bild](assets/learn-more-button.svg)](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)
+
+>[!TAB Flera dimensionskolumner]
+
+Du kan inkludera upp till 5 dimensionskolumner i en frihandstabell, så att du kan visa flera dimensionsobjekt sida vid sida. Varje rad med dimensionsobjekt fungerar som en enda sammanfogad dimensionspost.
+
+[![bild](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)
 
 >[!TAB Häftning i anslutningar]
 
@@ -142,7 +154,7 @@ Jämför Customer Journey Analytics med Adobe Analytics. Och hur ni får in era 
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/sv/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Självstudiekurser</a> - <a href="https://helpx.adobe.com/se/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics produktbeskrivning</a> - <a href="https://helpx.adobe.com/se/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics-tillägg) produktbeskrivning</a> - <a href="https://helpx.adobe.com/se/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Customer Journey Analytics B2B edition produktbeskrivning</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics API:er</a> - <a href="/help/ai-assistant.md">AI Assistant</a>
+<a href="https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Självstudiekurser</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Customer Journey Analytics produktbeskrivning</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Adobe Analytics (Customer Journey Analytics-tillägg) produktbeskrivning</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Customer Journey Analytics B2B edition produktbeskrivning</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">Customer Journey Analytics API:er</a> - <a href="/help/ai-assistant.md">AI Assistant</a>
 </td>
 <td><strong>Datainmatning</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Översikt</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">Web SDK</a> - <a href="/help/data-ingestion/aepmobilesdk.md">Mobile SDK</a> - <a href="/help/data-ingestion/batch.md">Batch</a> - <a href="/help/data-ingestion/streaming.md">Streaming</a> - <a href="/help/data-ingestion/sources.md">Källor</a> - <a href="/help/data-ingestion/serverapi.md">Server-API</a>
 </td>
@@ -151,4 +163,4 @@ Jämför Customer Journey Analytics med Adobe Analytics. Och hur ni får in era 
 
 
 <table style="table-layout:auto" class="tablelayout-is-fixed"><tbody><tr style="border: 0;"><td><img src="./assets/newsletter.png"></td><td>
-<b>Håll dig informerad, delta i communityn och höj din Customer Journey Analytics-upplevelse!</b><br>Besök Adobe Analytics community och diskutera funktionaliteten med andra verksamma. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community?profile.language=sv">Gå med i communityn idag!</a></td></tr></tbody></table>
+<b>Håll dig informerad, delta i communityn och höj din Customer Journey Analytics-upplevelse!</b><br>Besök Adobe Analytics community och diskutera funktionaliteten med andra verksamma. <a href="https://experienceleaguecommunities.adobe.com/t5/adobe-analytics/ct-p/adobe-analytics-community">Gå med i communityn idag!</a></td></tr></tbody></table>
