@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 58254cab90d907ad9675c30dfc1b835910214b3a
+source-git-commit: b85f6cd32fc5e097dc2ec5604fca18f50bfcf288
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Content Analytics använder webbbildvisningsdata i händelsedatamängder i Exper
 >
 >Content Analytics utnyttjar AI/ML-tjänster som kan ge felaktiga eller vilseledande resultat. Använd därför ditt omdöme för att granska och validera AI/ML-genererade utdata.
 >
->Du kan använda fliken **[!UICONTROL Feedback]**, som är tillgänglig från ![&#x200B; InfoOutline](/help/assets/icons/InfoOutline.svg) i huvudgränssnittet, för att ge feedback om AI/ML-genererade utdata.
+>Du kan använda fliken **[!UICONTROL Feedback]**, som är tillgänglig från ![ InfoOutline](/help/assets/icons/InfoOutline.svg) i huvudgränssnittet, för att ge feedback om AI/ML-genererade utdata.
 >
 
 >[!NOTE]
@@ -63,11 +63,16 @@ Content Analytics använder webbbildvisningsdata i händelsedatamängder i Exper
 >Om du har licensierat tillägget Sekretess och säkerhetssköld ska du vara medveten om att (alla data som genereras av) upplevelser och resurser, som är föremål för Content Analytics, inte omfattas av DULE-märkning eller Kundhanterade nycklar. Dessutom är Content Analytics inte en HIPAA-Ready-tjänst.
 >
 
+>[!IMPORTANT]
+>
+>Content Analytics stöder endast funktioner på engelska.
+>
+
 
 >[!MORELIKETHIS]
 >
 >[Content Analytics-rapportering](report/report.md)
->&#x200B;>[Konfigurera Content Analytics](config/configuration.md)
->&#x200B;>[Beräknar studsar och studsfrekvens i Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=sv#M454)
+>[Konfigurera Content Analytics](config/configuration.md)
+>[Beräknar studsar och studsfrekvens i Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
