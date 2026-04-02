@@ -4,9 +4,9 @@ title: Konfigurera en utfallsvisualisering
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 295e4c9b3b9dff5ba650456c3f62817b30fe1e3d
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -14,46 +14,52 @@ ht-degree: 0%
 # Konfigurera en utfallsvisualisering {#configure-fallout-visualization}
 
 
-Du kan ange kontaktytorna för att skapa en flerdimensionell utfallssekvens. Vanligtvis är en kontaktyta en sida på din webbplats. Kontaktpunkterna är dock inte begränsade till sidor. Du kan t.ex. lägga till händelser, t.ex. enheter, samt unika personer och returbesök. Du kan också lägga till dimensioner, t.ex. en kategori, webbläsartyp eller ett internt sökord.
+Du kan ange **kontaktytor** om du vill skapa en flerdimensionell utfallssekvens. I många fall är en kontaktyta en sida på din webbplats. Kontaktpunkterna är dock inte begränsade till sidor. Du kan t.ex. lägga till händelser, t.ex. enheter, samt unika personer och returbesök. Du kan också lägga till dimensioner, t.ex. en kategori, webbläsartyp eller ett internt sökord.
 
-Du kan till och med lägga till segment inom en kontaktyta. Du kanske vill jämföra segment som iOS- och Android™-användare. Dra de önskade segmenten högst upp i utfallet och information om dessa segment läggs till i utfallsrapporten. Om du bara vill visa de segmenten kan du ta bort baslinjen Alla besök.
+Du kan till och med lägga till segment inom en kontaktyta. Du kanske vill jämföra segment, till exempel iOS- och Android-användare. Dra de önskade segmenten högst upp i utfallet och information om dessa segment läggs till i utfallsrapporten. Om du bara vill visa de segmenten kan du ta bort baslinjen Alla personer.
 
-Det finns ingen begränsning för hur många steg du kan lägga till eller hur många dimensioner som kan användas.
+Bortfallsvisualiseringar har ingen begränsning av antalet kontaktytor som du kan lägga till eller antalet komponenter som du kan använda.
 
-Du kan göra målningar på dimensioner, mätvärden och segment. Anta till exempel att någon tittar på skor, skjorta på en sida och på nästa sida tittar de på skjorta, strumpor. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
+Du kan göra målningar på dimensioner, mätvärden och segment. Anta till exempel att någon tittar på `shoes, shirt` på en sida och på nästa sida tittar de på `shirt, socks`. Nästa produktflödesrapport från skor blir skjorta och strumpa, INTE skjorta.
 
 ## Använd
 
 1. Lägg till en ![ConversionTrnel](/help/assets/icons/ConversionFunnel.svg) **[!UICONTROL Fallout]**-visualisering. Se [Lägga till en visualisering på en panel](../freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
-1. Dra en sida, till exempel hemsidan, från siddimensionen till listrutan *Lägg till kontaktyta* .
+
+1. Dra en komponent till listrutan **[!UICONTROL Add touchpoint]**.
+
+   >[!TIP]
+   >
+   >Du kan lägga till en enda sida i utfallsrapporten, i stället för hela dimensionen. Klicka på högerpilen ![ChevronRight](/help/assets/icons/ChevronRight.svg) på siddimensionen för att välja en viss sida, till exempel **[!UICONTROL home]**, som ska läggas till i utfallsrapporten.
 
    ![Hemsidan från hemsidesdimensionen som dras till fältet Lägg till kontaktpunkt.](assets/fallout-drag.png)
 
-   Håll muspekaren över en kontaktyta för att se utfallet och annan information om den nivån, till exempel namnet på kontaktytan och antalet personer vid den punkten. Och se hur framgångsrik kontaktytan är (och jämför framgångssiffran med andra kontaktytor).
-
-   De cirklade siffrorna i den grå delen av fältet visar utfallet mellan kontaktytor (inte det övergripande utfallet till den punkten). I **[!UICONTROL Touchpoint %]** visas det lyckade fallet från föregående steg till det aktuella steget i utfallsrapporten.
-
-   Du kan också lägga till en sida i utfallsrapporten, i stället för hela dimensionen. Klicka på högerpilen ![ChevronRight](/help/assets/icons/ChevronRight.svg) på siddimensionen för att välja en specifik sida som ska läggas till i utfallsrapporten.
-
 1. Fortsätt lägga till kontaktytor tills sekvensen är klar.
 
-   Du kan **kombinera flera kontaktytor** genom att dra en eller flera ytterligare komponenter till en kontaktyta.
+   De cirklade siffrorna i den grå delen av fältet visar utfallet mellan kontaktytor (inte det övergripande utfallet till den punkten). De cirklade siffrorna i den gröna delen av fältet visar att det lyckades gå igenom från föregående kontaktyta till den aktuella kontaktytan.
 
-   >[!NOTE]
-   >
-   >Flera segment förenas med AND, men flera objekt som dimensionsposter och mätvärden förenas med OR.
+   ![Utfallsvisualisering](assets/fallout-visualization.png)
 
-   ![Sidan:CamerRoll eller sidan: Kamerans kontaktytor är markerade.](assets/fallout-or.png)
+   När du lägger till kontaktytor kan du göra något av följande:
 
-1. Du kan också **begränsa enskilda kontaktytor till nästa händelse** (till skillnad från *så småningom*) i banan. Under varje kontaktyta finns det en väljare med alternativen **[!UICONTROL Eventual path]** och **[!UICONTROL Next event]**, vilket visas här:
+   * Kombinera flera komponenter genom att dra en eller flera ytterligare komponenter till en enda kontaktyta.
 
-   ![Vyn Alla besök visar alternativet för eventuell sökväg markerat. &#x200B;](assets/fallout-nexthit.png)
+     >[!NOTE]
+     >
+     >Flera segment förenas med AND, men flera objekt som dimensionsposter och mätvärden förenas med OR.
 
-   | Alternativ | Beskrivning |
-   |---|---|
-   | **[!UICONTROL Eventual path]** (standard) | Personer räknas som *så småningom* landar på nästa sida i sökvägen, men inte nödvändigtvis på nästa händelse. |
-   | **[!UICONTROL Next event]** | Personer räknas som kommer att landa på nästa sida i banan på nästa händelse. |
+   * Ändra ordning på kontaktpunkterna genom att dra dem till en annan nivå i utfallshierarkin.
 
+   * Kombinera två kontaktytor genom att dra en kontaktyta till en annan. Släpp kontaktytan när du ser ordet **[!UICONTROL Combine]**.
+
+   * Begränsa enskilda kontaktytor till nästa händelse (till skillnad från *så småningom*) i banan. Under varje kontaktyta finns det en väljare med alternativen **[!UICONTROL Eventual path]** och **[!UICONTROL Next event]**, vilket visas här:
+
+     | Alternativ | Beskrivning |
+     |---|---|
+     | **[!UICONTROL Eventual path]** (standard) | Personer räknas som *så småningom* landar på nästa sida i sökvägen, men inte nödvändigtvis på nästa händelse. |
+     | **[!UICONTROL Next event]** | Personer räknas som kommer att landa på nästa sida i banan på nästa händelse. |
+
+   * Håll pekaren över en kontaktyta för att se utfallet och annan information om den nivån. Informationen innehåller kontaktpunktens namn, antalet personer och antalet lyckade försök. Du kan också jämföra framgångssiffran med andra kontaktytor.
 
 ## Inställningar {#settings}
 
@@ -73,7 +79,21 @@ Som en del av visualiseringen är specifika inställningar tillgängliga.
 
 Som en del av visualiseringen finns det specifika alternativ för snabbmenyer.
 
-![Utfallsalternativ](assets/fallout-options.png)
+### Öppna snabbmenyn
+
+Du kommer åt snabbmenyn på något av följande sätt:
+
+* Hovra över en kontaktyta i visualiseringen och välj sedan **[!UICONTROL Click to analyze]**.
+
+  ![Åtkomst till snabbmenyn från hovring](assets/fallout-tooltip-analyze.png)
+
+* Högerklicka på en kontaktyta i visualiseringen.
+
+  ![Utfallsalternativ](assets/fallout-options.png)
+
+### Alternativ på snabbmenyn
+
+Följande snabbmenyalternativ är tillgängliga:
 
 | Alternativ | Beskrivning |
 |--- |--- |
@@ -88,6 +108,6 @@ Som en del av visualiseringen finns det specifika alternativ för snabbmenyer.
 >
 >[Lägg till en visualisering på en panel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
 >[Visualiseringsinställningar](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->[Snabbmenyn Visualisering &#x200B;](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Snabbmenyn Visualisering ](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
